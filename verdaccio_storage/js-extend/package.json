@@ -1,0 +1,204 @@
+{
+	"name": "js-extend",
+	"versions": {
+		"0.0.1": {
+			"name": "js-extend",
+			"version": "0.0.1",
+			"description": "A simple extend function based on underscore",
+			"main": "extend.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/vmattos/js-extend.git"
+			},
+			"keywords": [
+				"extend"
+			],
+			"author": {
+				"name": "Vitor Mattos"
+			},
+			"license": "ISC",
+			"bugs": {
+				"url": "https://github.com/vmattos/js-extend/issues"
+			},
+			"homepage": "https://github.com/vmattos/js-extend",
+			"_id": "js-extend@0.0.1",
+			"dist": {
+				"shasum": "07b4a7e0e83df566fa07157a89d7f2c3f83d6a09",
+				"tarball": "https://registry.npmjs.org/js-extend/-/js-extend-0.0.1.tgz",
+				"integrity": "sha512-HbVVSfcnZ75O60khYiRgLp0OCLFg0V/KpmWphAA6Zidn7jY5IoggrdyjE9wFOnionXvrNYMcYSFf00NsN1XDXQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHzKriyVEVdMtfbnbUIp0e9BNI0qdBgwSeUxZsRJF7k6AiAguLonxYakzkUubMMUYxe/rRDRjOrPfkh1Hw6J7eF9ww=="
+					}
+				]
+			},
+			"_from": "js-extend",
+			"_npmVersion": "1.3.21",
+			"_npmUser": {
+				"name": "vmattos",
+				"email": "mattos.trk@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "vmattos",
+					"email": "mattos.trk@gmail.com"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"0.0.2": {
+			"name": "js-extend",
+			"version": "0.0.2",
+			"description": "A simple extend function based on underscore",
+			"main": "extend.js",
+			"scripts": {
+				"test": "node test/test-runner"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/vmattos/js-extend.git"
+			},
+			"keywords": [
+				"extend"
+			],
+			"author": {
+				"name": "Vitor Mattos"
+			},
+			"license": "ISC",
+			"bugs": {
+				"url": "https://github.com/vmattos/js-extend/issues"
+			},
+			"homepage": "https://github.com/vmattos/js-extend",
+			"devDependencies": {
+				"nodeunit": "~0.8.2"
+			},
+			"_id": "js-extend@0.0.2",
+			"dist": {
+				"shasum": "1d61ac7ef41f3b0641ab009895df41028ae0120b",
+				"tarball": "https://registry.npmjs.org/js-extend/-/js-extend-0.0.2.tgz",
+				"integrity": "sha512-y5MFd1sxDLf1DXeBeMdP/LNpntb+X0Cu2ajxFBzBTMBT1T6PfFVDgNG+iXGV3KqvX3OEQCoyC2AIO9vilaS+tQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIEp03+87X97u83m/ABxnmM0EYuYMRuXdz0kH/SJfuFtCAiEA4a8UTTk5p1qGchWIZwXkKQSvZZrwIG5ShaFosER+M7Q="
+					}
+				]
+			},
+			"_from": "js-extend",
+			"_npmVersion": "1.3.21",
+			"_npmUser": {
+				"name": "vmattos",
+				"email": "mattos.trk@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "vmattos",
+					"email": "mattos.trk@gmail.com"
+				}
+			],
+			"contributors": []
+		},
+		"1.0.1": {
+			"name": "js-extend",
+			"version": "1.0.1",
+			"description": "A simple extend function based on underscore",
+			"main": "extend.js",
+			"scripts": {
+				"test": "node test/test-runner"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/vmattos/js-extend.git"
+			},
+			"keywords": [
+				"extend"
+			],
+			"author": {
+				"name": "Vitor Mattos"
+			},
+			"license": "ISC",
+			"bugs": {
+				"url": "https://github.com/vmattos/js-extend/issues"
+			},
+			"homepage": "https://github.com/vmattos/js-extend",
+			"devDependencies": {
+				"nodeunit": "~0.8.2"
+			},
+			"gitHead": "7023fd69a9e9552688086b8b8006b1fcf916a306",
+			"_id": "js-extend@1.0.1",
+			"_shasum": "50551ab1ac71d4bb302e4040ebbe59033ba2b1f7",
+			"_from": ".",
+			"_npmVersion": "2.13.4",
+			"_nodeVersion": "5.0.0",
+			"_npmUser": {
+				"name": "vmattos",
+				"email": "mattos.trk@gmail.com"
+			},
+			"dist": {
+				"shasum": "50551ab1ac71d4bb302e4040ebbe59033ba2b1f7",
+				"tarball": "https://registry.npmjs.org/js-extend/-/js-extend-1.0.1.tgz",
+				"integrity": "sha512-wUcNh0PcNWCaeRBAAKHFpkdtUXYQo9G2oR9tSdK9UrsUaMoKGesGCEu4SBw6JGp4VXtXZQCZJ5vpHCiiwbat/Q==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIFl5OvrFKHXbf7+7gsCoeCU6z6wg1OLoY6R/DTAzjvvXAiBE008BQu/F7PoAd4v95rP1pNubx2YWBr9vMmaqwrIP0g=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "vmattos",
+					"email": "mattos.trk@gmail.com"
+				}
+			],
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-06-19T05:34:23.576Z",
+		"created": "2013-12-25T01:21:50.642Z",
+		"0.0.1": "2013-12-25T01:21:50.642Z",
+		"0.0.2": "2013-12-25T06:07:25.927Z",
+		"1.0.1": "2016-01-12T21:49:41.854Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "1.0.1"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"42ea7200b25747377fe3023cf4fa8c89\"",
+			"fetched": 1734527736695
+		}
+	},
+	"_distfiles": {
+		"js-extend-0.0.1.tgz": {
+			"url": "https://registry.npmjs.org/js-extend/-/js-extend-0.0.1.tgz",
+			"sha": "07b4a7e0e83df566fa07157a89d7f2c3f83d6a09",
+			"registry": "npmjs"
+		},
+		"js-extend-0.0.2.tgz": {
+			"url": "https://registry.npmjs.org/js-extend/-/js-extend-0.0.2.tgz",
+			"sha": "1d61ac7ef41f3b0641ab009895df41028ae0120b",
+			"registry": "npmjs"
+		},
+		"js-extend-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/js-extend/-/js-extend-1.0.1.tgz",
+			"sha": "50551ab1ac71d4bb302e4040ebbe59033ba2b1f7",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"js-extend-1.0.1.tgz": {
+			"shasum": "50551ab1ac71d4bb302e4040ebbe59033ba2b1f7"
+		}
+	},
+	"_rev": "3-e849c9f00f304b23",
+	"_id": "js-extend",
+	"readme": "js-extend [![Build Status][travis-image]][travis-url]\n=========\n\nSimple extend function based on underscore\n\n## Installation \n\n\t$ npm install js-extend\n\n## Usage\n\n```js\nvar extend = require('js-extend').extend\n\nvar obj1 = { name: 'Jonny' };\nvar obj2 = { lastName: 'Quest' };\n\nextend(obj1, obj2);\n\n// obj1: { name: 'Jonny', lastName: 'Quest' }\n\n```\n\n[travis-image]: https://travis-ci.org/vmattos/js-extend.png\n[travis-url]: https://travis-ci.org/vmattos/js-extend"
+}

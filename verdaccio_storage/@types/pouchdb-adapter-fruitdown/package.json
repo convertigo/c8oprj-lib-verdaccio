@@ -1,0 +1,755 @@
+{
+	"name": "@types/pouchdb-adapter-fruitdown",
+	"versions": {
+		"5.4.1": {
+			"name": "@types/pouchdb-adapter-fruitdown",
+			"version": "5.4.1",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-fruitdown@5.4.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "aef403ed096e3f0e512da4408549bcb7b749977a",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-5.4.1.tgz",
+				"integrity": "sha512-UEVTTTkXSY4+THzHN6MPETCpbiNeD2P5B/bn8RppyT3THq5oYKV0fsgrS9gwSosINamHJrSZX91AIBYORysfRw==",
+				"signatures": [
+					{
+						"sig": "MEUCIE90WUHRfW0eKi0atCoNN6uAac4PhOlqsLodRqgXXIw5AiEA3i+pdHP7uk46VcvAapt/IPZwUR8dB/DBLtSgWsNd3BM=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-fruitdown.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-fruitdown v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-fruitdown-5.4.1.tgz_1470153841018_0.7074934048578143",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.2": {
+			"name": "@types/pouchdb-adapter-fruitdown",
+			"version": "5.4.2",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-fruitdown@5.4.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "012a557c3d190d5afb2f14861c9451ee6c9f7385",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-5.4.2.tgz",
+				"integrity": "sha512-y4DHefXug2I2z4WaEcjsQdW6ZPsec9qKNVbmEsP3eUFYDPs9A9h2lzM49mnkiTAW1mkYiJWkvs6ebXTqrtruGA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQC9Rc6BOCZPyYruDGQ7++8HS1CkT+raaQWMaz46UIffUgIgf7hfyrfo3QcOoF48WoLJ0NCMXrL+eG9G2uWuVhWuctU=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-fruitdown.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-fruitdown v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-fruitdown-5.4.2.tgz_1471621009774_0.9461241241078824",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.3": {
+			"name": "@types/pouchdb-adapter-fruitdown",
+			"version": "5.4.3",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-fruitdown@5.4.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "8b60b97df2b575b12438e3338ee012a4db016e4b",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-5.4.3.tgz",
+				"integrity": "sha512-4TZduO7oodXGEBaswAzZbEVKCFvLakHG1BOTgtN8+1Blb3WBsezqjIqSJafSb0WmHh1WXjk89jXe4k7QXx6j8A==",
+				"signatures": [
+					{
+						"sig": "MEUCIAN0NE2CfjcrcbNs0zv4slNVey7x4UNrfWYCBjBvkW3hAiEA8COlRdNupQ9prsbN7eehDu1DUq4DiggOOppfdBt5WzY=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-fruitdown.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-fruitdown v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-fruitdown-5.4.3.tgz_1472151196569_0.22551722102798522",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.4": {
+			"name": "@types/pouchdb-adapter-fruitdown",
+			"version": "5.4.4",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-fruitdown@5.4.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "efe6ffe5cdd7752bb360de21d24f656554a77659",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-5.4.4.tgz",
+				"integrity": "sha512-VKLTMWeRqkWQXTT3261i/BYE08E97e8gknaHPTLq2TavxBKCibAWkkuozKAIJuRIoezwtc1s8YF9PepBBwz3Iw==",
+				"signatures": [
+					{
+						"sig": "MEUCIA1QrRhTJ3K7hiBPyo8gw1fV7CBqEO6JBhpPvFaQ6WnsAiEAqRHAFpw+jbqecDfH2Ue34AfqjA+S0kKvg/uMSo/0F6g=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-fruitdown v5.4.4",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-fruitdown-5.4.4.tgz_1474308209042_0.48481585644185543",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "7d2bf8c05d6caa29dce1611e87f265a1a35a659c3aed3ebc0455b26a879f4f8c",
+			"contributors": []
+		},
+		"6.1.0": {
+			"name": "@types/pouchdb-adapter-fruitdown",
+			"version": "6.1.0",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-fruitdown@6.1.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "72aa47208e41a214ddf56c5b77b8d79a7eb083f7",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-6.1.0.tgz",
+				"integrity": "sha512-a2erNXU8MhTuqq49L8QJEW+66sSFu2QleJx9P8IbvGAKRLyo9xkKbjqFVtQwM3mR/5Elhgp35rf/LxdOSwot4w==",
+				"signatures": [
+					{
+						"sig": "MEUCIAEizszK6B+DUAQJ1G/MxmgZfLRIlhNbeyl0jRzzh0flAiEAmiEK3RUl22U/MmxARzPS7h6FEkBcCeWy024r3Oze1kw=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-fruitdown",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.0",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-fruitdown-6.1.0.tgz_1492528354938_0.7460166024975479",
+				"host": "packages-18-east.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "752314485584859c4f705e7dc8569e4eca6ea5d07765a2fcb1253112549fd2d0"
+		},
+		"6.1.1": {
+			"name": "@types/pouchdb-adapter-fruitdown",
+			"version": "6.1.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-fruitdown@6.1.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "052b51d38bd6298fec711d4f1c6c91c609b967c0",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-6.1.1.tgz",
+				"integrity": "sha512-Jf2E2HNii9kp7nQwkAwDd1a26PySkXHMTnq3I9lJu34fHyVK8s4anXqZXs/xbarZiAR5PLNehsmcVS3Mdrz4Fg==",
+				"signatures": [
+					{
+						"sig": "MEQCIAPd+nySQc1R20o4um/uq2yMysUuuV2mrT/kaqEBr7N1AiBupQlGlcsHy5FOh+1zzTlaDijx2C58zbTvIMAi9tVEKA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-fruitdown",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-fruitdown-6.1.1.tgz_1497557826807_0.19363619782961905",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "9a09a9478bb37808b201555cb77b04dc785c586fb2da7d4787555a7ba268e06e"
+		},
+		"6.1.2": {
+			"name": "@types/pouchdb-adapter-fruitdown",
+			"version": "6.1.2",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-fruitdown@6.1.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "9cd8b8d40f8a50ab1f4ad60fa1646d7cbba4213f",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-6.1.2.tgz",
+				"integrity": "sha512-Jec2SlofeKi2PIFIXdKtKg8CyFqYlOUIAV+LYtEw0F9izpQsvK1IcagTbl4yLu+X7EdoeDu0mLpveQ1BEiHXlw==",
+				"signatures": [
+					{
+						"sig": "MEUCID5Pz6H2sssBXaYd0NTfc4UPF6TpPnQQPn+r3hovcf+ZAiEAjJtqf4W08C50+MYo8gTFASfZKhNZXzsRAx0lwsm1+Ow=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-fruitdown",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-fruitdown-6.1.2.tgz_1513287294599_0.7918696983251721",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "c22312b7169c8e00d52b4b639321cbd53db31c00be6ab94540fc67dfef2d3c6d"
+		},
+		"6.1.3": {
+			"name": "@types/pouchdb-adapter-fruitdown",
+			"version": "6.1.3",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-fruitdown@6.1.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "9b140ad9645cc56068728acf08ec19ac0046658e",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-6.1.3.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-Wz1Z1JLOW1hgmFQjqnSkmyyfH7by/iWb4abKn684WMvQfmxx6BxKJpJ4+eulkVPQzzgMMSgU1MpnQOm9FgRkbw==",
+				"signatures": [
+					{
+						"sig": "MEQCIA82h30NYaCXV0AWBdlQiKilx/UY2wlK5t0z98QYl5nuAiA5sgd27KnLpjgOHTbR1Vw7VEpSwXG4B8+v59eOtMULPg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 3802,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcZJGrCRA9TVsSAnZWagAARpwP/0fcRanttVfBDCGr+4e9\ntwr9gAqI++M7KPypVaTGz9L6uqP95M/Rf4mC+pQvYNYH3frEn/jMu0TOoc+5\n0TLuLuHqspvx/XmqLbd5WMOYFayWTiw/Bdzpap6Rm58R3+Bz78OJ+QO3bLG+\nv6HsFEW4NNz4Tz8o3wxQerUyF33lu7LGgETynDdoCAG6+8/V+vtZhNK0Vjt6\nDnDSjjMIdojKFAGk4zMWETDY9KVZZuPmwXLwCq2MNwq8drhahGdxve2hCGr4\n8DPPBCfCtc9eo2v7OXdFyaHckXoyIgoGyQX9ySxmkFRa87ckDqHVe9idiGZE\nsA+lHPWgFmIEVV9Yjf3mfklnEMfRIkP3slb1JftvD6DY3+MUEw10E3N73LFL\neP+aoLJmmMMPnnUVUxuEsS20BgPvVwzIBeI3W3TMzwi382P2nIbiHWRxiC3o\nDBLIu8DETGbaCdseWpvuY7I8v3jKrkasb8q7xfajGrKDWNrHFNfFkqqfmAsv\ns+dpdIlFhHCqoHEnWQh47XlQno8Q2xs6CY+DWaij1qbZKXL9REoEc9x9oYt3\nGjueer5LIqeZigzohatCS/RM8SH6zycYkto7OgvQPpz0fbfHvfdK2nIcPTrn\nr9QNoFqzvF33OFNdWc+2LKc2UPuj3NFn6x9MwMl/jqXVrYqv+xepLQHBvntE\nFGLx\r\n=tjWd\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-fruitdown",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-fruitdown_6.1.3_1550094763275_0.8700358349258739",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "45b29e9ea478453bdab2744e83414111ebfdf0ca9301396f56fa3b4047d34750"
+		},
+		"6.1.4": {
+			"name": "@types/pouchdb-adapter-fruitdown",
+			"version": "6.1.4",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-fruitdown@6.1.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-fruitdown",
+			"dist": {
+				"shasum": "29298591084b19bd9e526599c6dd7c133168c749",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-6.1.4.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-NjPzzfEbpS9Els9cZJka2l6R+SQPEPsR6lQqdR7AKmlEqD1FE06HaQWmulVx6SpKf4tZwny5GAucE1WxZkuXNw==",
+				"signatures": [
+					{
+						"sig": "MEUCIHEfKbvOqhPm7eRFnm6ZRB2cVxQ+/NVH8f6lkkStiIZPAiEAmzdv7WlX/337W44iZ+Jjq5u2Mno7edXhLaMaTmu3d3s=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 5011
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-fruitdown"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-fruitdown",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-fruitdown_6.1.4_1695539195396_0.016455229486704415",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "ad55f9f29201a8939be42ffd098b93a541bcaa8c47a26a2d0588805243aab824"
+		},
+		"6.1.5": {
+			"name": "@types/pouchdb-adapter-fruitdown",
+			"version": "6.1.5",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-fruitdown@6.1.5",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-fruitdown",
+			"dist": {
+				"shasum": "6a538bc8868c940ad8f8838b47eaa6600f4fb4cf",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-6.1.5.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-p3BsBmYLbv8gVH9Ca1B45+Ua/hhX1V9o/UCdeAkcjC0Cx8aMnBz5B1oEflVhvuInpTfrwA8v1biLb/CaWBOeMw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCoNCv7MeSGVyyGu1svEQhywZdFlKDfL/qT4fPAlwt2fgIgQiCsjdsz1QvkcHAsv+qT6+KXa+tIBzrrbhb9cfkHg0I=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 4243
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-fruitdown"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-fruitdown",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-fruitdown_6.1.5_1697627752749_0.2837748265297164",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "f63935b85699e641c9c842b1161eb4e0f38db5d2ac36f67b15b21de35e291771"
+		},
+		"6.1.6": {
+			"name": "@types/pouchdb-adapter-fruitdown",
+			"version": "6.1.6",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-fruitdown@6.1.6",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-fruitdown",
+			"dist": {
+				"shasum": "16ec19d9629bce623c8e2654bc15c64d6951e845",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-6.1.6.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-KaFB29hUI97eTtJI6pjv7EQcqhZ63qHWovKgyiE+HZF5fVmdrBbTmnIrbR87AJXcXKy47+oQFJ7rzxY8TalpLQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIB7p8BNqDmICdPBUiQXWXV2KBAwyntMS1Ky3xxNqcaCiAiBUlVrYjy6Y+GuKWyr849Tgb4BGsLjYPtxovpW8pbbxRA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 4243
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-fruitdown"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-fruitdown",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-fruitdown_6.1.6_1699363071042_0.7824100134196292",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "bdfdf0efe1f7133a7b131c3e945af61b0fe80c22e5df04c95eeae426b3c9f2cd"
+		}
+	},
+	"time": {
+		"created": "2016-08-02T16:04:02.917Z",
+		"modified": "2024-11-11T09:31:23.109Z",
+		"5.4.1": "2016-08-02T16:04:02.917Z",
+		"5.4.2": "2016-08-19T15:36:51.713Z",
+		"5.4.3": "2016-08-25T18:53:17.128Z",
+		"5.4.4": "2016-09-19T18:03:29.285Z",
+		"6.1.0": "2017-04-18T15:12:37.029Z",
+		"6.1.1": "2017-06-15T20:17:06.891Z",
+		"6.1.2": "2017-12-14T21:34:54.671Z",
+		"6.1.3": "2019-02-13T21:52:43.458Z",
+		"6.1.4": "2023-09-24T07:06:35.810Z",
+		"6.1.5": "2023-10-18T11:15:53.049Z",
+		"6.1.6": "2023-11-07T13:17:51.227Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"ts2.0": "6.1.0",
+		"ts2.1": "6.1.0",
+		"ts2.2": "6.1.0",
+		"ts2.3": "6.1.3",
+		"ts2.4": "6.1.3",
+		"ts2.5": "6.1.3",
+		"ts2.6": "6.1.3",
+		"ts2.7": "6.1.3",
+		"ts2.8": "6.1.3",
+		"ts2.9": "6.1.3",
+		"ts3.0": "6.1.3",
+		"ts3.1": "6.1.3",
+		"ts3.2": "6.1.3",
+		"ts3.3": "6.1.3",
+		"ts3.4": "6.1.3",
+		"ts3.5": "6.1.3",
+		"ts3.6": "6.1.3",
+		"ts3.7": "6.1.3",
+		"ts3.8": "6.1.3",
+		"ts3.9": "6.1.3",
+		"ts4.0": "6.1.3",
+		"ts4.1": "6.1.3",
+		"ts4.2": "6.1.3",
+		"ts4.3": "6.1.3",
+		"ts4.4": "6.1.3",
+		"ts5.7": "6.1.6",
+		"ts5.6": "6.1.6",
+		"latest": "6.1.6",
+		"ts4.5": "6.1.6",
+		"ts4.6": "6.1.6",
+		"ts4.7": "6.1.6",
+		"ts4.8": "6.1.6",
+		"ts4.9": "6.1.6",
+		"ts5.0": "6.1.6",
+		"ts5.1": "6.1.6",
+		"ts5.2": "6.1.6",
+		"ts5.3": "6.1.6",
+		"ts5.4": "6.1.6",
+		"ts5.5": "6.1.6",
+		"ts5.8": "6.1.6"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"a3ec30569951399b7723829a6892f46b\"",
+			"fetched": 1734527719450
+		}
+	},
+	"_distfiles": {
+		"pouchdb-adapter-fruitdown-5.4.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-5.4.1.tgz",
+			"sha": "aef403ed096e3f0e512da4408549bcb7b749977a",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-fruitdown-5.4.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-5.4.2.tgz",
+			"sha": "012a557c3d190d5afb2f14861c9451ee6c9f7385",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-fruitdown-5.4.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-5.4.3.tgz",
+			"sha": "8b60b97df2b575b12438e3338ee012a4db016e4b",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-fruitdown-5.4.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-5.4.4.tgz",
+			"sha": "efe6ffe5cdd7752bb360de21d24f656554a77659",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-fruitdown-6.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-6.1.0.tgz",
+			"sha": "72aa47208e41a214ddf56c5b77b8d79a7eb083f7",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-fruitdown-6.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-6.1.1.tgz",
+			"sha": "052b51d38bd6298fec711d4f1c6c91c609b967c0",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-fruitdown-6.1.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-6.1.2.tgz",
+			"sha": "9cd8b8d40f8a50ab1f4ad60fa1646d7cbba4213f",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-fruitdown-6.1.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-6.1.3.tgz",
+			"sha": "9b140ad9645cc56068728acf08ec19ac0046658e",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-fruitdown-6.1.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-6.1.4.tgz",
+			"sha": "29298591084b19bd9e526599c6dd7c133168c749",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-fruitdown-6.1.5.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-6.1.5.tgz",
+			"sha": "6a538bc8868c940ad8f8838b47eaa6600f4fb4cf",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-fruitdown-6.1.6.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-fruitdown/-/pouchdb-adapter-fruitdown-6.1.6.tgz",
+			"sha": "16ec19d9629bce623c8e2654bc15c64d6951e845",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-adapter-fruitdown-6.1.6.tgz": {
+			"shasum": "16ec19d9629bce623c8e2654bc15c64d6951e845"
+		}
+	},
+	"_rev": "2-3a0fb588dcd7f0e5",
+	"_id": "@types/pouchdb-adapter-fruitdown",
+	"readme": "[object Object]"
+}

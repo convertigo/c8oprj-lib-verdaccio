@@ -1,0 +1,3319 @@
+{
+	"name": "pouchdb-replication",
+	"versions": {
+		"0.0.0": {
+			"name": "pouchdb-replication",
+			"version": "0.0.0",
+			"keywords": [],
+			"author": {
+				"name": "Nolan Lawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@0.0.0",
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "0993f4e1c4be374dda979db2dd4dc24f54bd1e32",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-0.0.0.tgz",
+				"integrity": "sha512-KxyqeGLWUccBWiIZXjkizeY9dx2K0v4M9R149en/QJklBGR25lz5b31XGUY2EJgkp2MX8CaVUihk+nBDUOEhFw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDUODjahedQBybrHnPPYzDirzlDIDsqfqwTo7f5ozrNFwIgfToa+ryinwDB6JWOFbUoGO2GoFQJYgDWjhJU4S7Hn4Y=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "index.js",
+			"_from": ".",
+			"_shasum": "0993f4e1c4be374dda979db2dd4dc24f54bd1e32",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1"
+			},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"_npmVersion": "3.7.3",
+			"description": "Empty holding package claimed by the PouchDB authors.",
+			"directories": {},
+			"_nodeVersion": "5.9.0",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-0.0.0.tgz_1463426458011_0.3469770513474941",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.0": {
+			"name": "pouchdb-replication",
+			"version": "5.4.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@5.4.0",
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "733d32606b6f7fed92258258a3d541f957c388e3",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-5.4.0.tgz",
+				"integrity": "sha512-D3BBGcUYxcEIr1QI24xvIR1CUfIkMZIALPh3cEwj4b+ZssePUNT9eFJ8osd2TiRe5fPboJywgc2zQwvgaZmYUQ==",
+				"signatures": [
+					{
+						"sig": "MEUCICEmDaUZ5d/9Qr95tHp4V+X/+MoS71JXjlT1dIF1lg7DAiEAhXaWcuGcmWkFqGjigockcQQ9a4azS9RCezxxO6FLnQs=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "733d32606b6f7fed92258258a3d541f957c388e3",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.7.3",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.9.0",
+			"dependencies": {
+				"inherits": "2.0.1",
+				"js-extend": "1.0.1",
+				"pouchdb-utils": "5.4.0",
+				"pouchdb-errors": "5.4.0",
+				"pouchdb-collate": "1.2.0",
+				"pouchdb-promise": "5.4.0",
+				"pouchdb-checkpointer": "5.4.0",
+				"pouchdb-generate-replication-id": "5.4.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-5.4.0.tgz_1465234952136_0.7110914823133498",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.1": {
+			"name": "pouchdb-replication",
+			"version": "5.4.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@5.4.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "7d1310f32d4db0c1af342206fbf58554833eca56",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-5.4.1.tgz",
+				"integrity": "sha512-g+cb0J0DBhDV+rUMKv6If5J+UioFPK7XT0Q63G+F+BCByiEqga4sXaVoRiKbMPxbh56goUuY2/1BDFCtlWUSOw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDEfBU93VWOyThiqUC08s0xiBumftFNsk/8RN4vAFXoZAIgGB2VnFamPA3oPm8EGGYqKd+eecvlhKLqPnQiop5pNnE=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "7d1310f32d4db0c1af342206fbf58554833eca56",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.3",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"inherits": "2.0.1",
+				"js-extend": "1.0.1",
+				"pouchdb-utils": "5.4.1",
+				"pouchdb-errors": "5.4.1",
+				"pouchdb-collate": "1.2.0",
+				"pouchdb-promise": "5.4.1",
+				"pouchdb-checkpointer": "5.4.1",
+				"pouchdb-generate-replication-id": "5.4.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-5.4.1.tgz_1465389839985_0.6807136491406709",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.2": {
+			"name": "pouchdb-replication",
+			"version": "5.4.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@5.4.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "5f8960afb278c25685588c38e2e70bd1f9333a16",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-5.4.2.tgz",
+				"integrity": "sha512-ugfQAwscx0RZPiaOsegpa86te29CwJL4yY5YEc2GyLhpPLbasm0cewD88vWfcGocWNIBwrAwi7SdObBE5RtclQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIHFuzJGwHT3OfCYeD7s7XAoNbYlYb+eSekGlv6BBZkvDAiEAskO6pT3NLwjywYDFSM1pTjBx0KOiyOhcbNFrjrGN+Cg=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "5f8960afb278c25685588c38e2e70bd1f9333a16",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.5",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"inherits": "2.0.1",
+				"js-extend": "1.0.1",
+				"pouchdb-utils": "5.4.2",
+				"pouchdb-errors": "5.4.2",
+				"pouchdb-collate": "1.2.0",
+				"pouchdb-promise": "5.4.2",
+				"pouchdb-checkpointer": "5.4.2",
+				"pouchdb-generate-replication-id": "5.4.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-5.4.2.tgz_1465747274166_0.8452070392668247",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.3": {
+			"name": "pouchdb-replication",
+			"version": "5.4.3",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@5.4.3",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "41bdbc7ec6c5e2d0c0995151c39a0b9c4f7e4743",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-5.4.3.tgz",
+				"integrity": "sha512-ImXqsRgOgDhcmrv4PrzePz+pxwVjQtLg8+rWX6LPVcqlgI1CS9MWbT1E3lA4+zhak2jWi2F1/g/8LITwxu8pxw==",
+				"signatures": [
+					{
+						"sig": "MEUCIFPBMjZ7K+HkvhEtLCVGXq/nYkwrM3VHk76KZ20lBfgMAiEA+VQ8Nhs41Ez1GHoMNoZY/gRQoT7TMc1ghOgx5Gjcvg4=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "41bdbc7ec6c5e2d0c0995151c39a0b9c4f7e4743",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.5",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"inherits": "2.0.1",
+				"js-extend": "1.0.1",
+				"pouchdb-utils": "5.4.3",
+				"pouchdb-errors": "5.4.3",
+				"pouchdb-collate": "1.2.0",
+				"pouchdb-promise": "5.4.3",
+				"pouchdb-checkpointer": "5.4.3",
+				"pouchdb-generate-replication-id": "5.4.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-5.4.3.tgz_1465820288087_0.8625098755583167",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.4": {
+			"name": "pouchdb-replication",
+			"version": "5.4.4",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@5.4.4",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "49004764bc66d5dade88c7971f0cd84cf54c5f44",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-5.4.4.tgz",
+				"integrity": "sha512-oy28TBX4lC8ldvq6WlRa5oKJoP7S65IZzFkEjCZjgkMiE6/iKZGX9N79XQzEB1pgf2feANU3wTQn36xvl7ow9Q==",
+				"signatures": [
+					{
+						"sig": "MEQCIB4dVC+fVm73t5vO2RUmXDXyQzHdVpm+srK9m8n4bp8KAiBKWz7MUOaN1HeaRRKW8Wk3gvnm1ICb2oMduZwzvTHApg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "49004764bc66d5dade88c7971f0cd84cf54c5f44",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.5",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"inherits": "2.0.1",
+				"js-extend": "1.0.1",
+				"pouchdb-utils": "5.4.4",
+				"pouchdb-errors": "5.4.4",
+				"pouchdb-collate": "1.2.0",
+				"pouchdb-promise": "5.4.4",
+				"pouchdb-checkpointer": "5.4.4",
+				"pouchdb-generate-replication-id": "5.4.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-5.4.4.tgz_1466088937159_0.8944681258872151",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.5": {
+			"name": "pouchdb-replication",
+			"version": "5.4.5",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@5.4.5",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "cea39c470149f4a13f6ef0f237973fd588a32ed9",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-5.4.5.tgz",
+				"integrity": "sha512-nEASQblJztuexvydwYo4xqy/XwMni3A3uzRuk3BoiwBBNI6QtGepQCcekCegGJ/H5lhJF3mBbWQiGy68g2EwMg==",
+				"signatures": [
+					{
+						"sig": "MEUCICsXTfcN+brERenpvzcQUphwg3mjLlOM9/QqRkX3+oEHAiEAsXvvArQiVVSw0wn6cFrg+5R6TTaicXMl9y/4irnmw5Y=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "cea39c470149f4a13f6ef0f237973fd588a32ed9",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.5",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.2.2",
+			"dependencies": {
+				"inherits": "2.0.1",
+				"js-extend": "1.0.1",
+				"pouchdb-utils": "5.4.5",
+				"pouchdb-errors": "5.4.5",
+				"pouchdb-collate": "1.2.0",
+				"pouchdb-promise": "5.4.5",
+				"pouchdb-checkpointer": "5.4.5",
+				"pouchdb-generate-replication-id": "5.4.5"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-5.4.5.tgz_1467512369127_0.46173068741336465",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.0": {
+			"name": "pouchdb-replication",
+			"version": "6.0.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.0.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "5e99e6438cad7ac1195dd90ad11472150c2ae590",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.0.tgz",
+				"integrity": "sha512-8Si4tLy0ENfd6SEEr+1FUuoGPuOAkZvJgJIYOrC1seocOZpSZ8n6KqODu5vMKASJqxRFsviP7rUxbH+wrmsrmg==",
+				"signatures": [
+					{
+						"sig": "MEUCICpBxEvkcubx3JJaFUpyVtFMhCHtbJ4or871g5W3PK1mAiEAnbpFT3yxzKtyuoMcfKUZx6b3BHnHV822Cn/ND5E/OIM=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "5e99e6438cad7ac1195dd90ad11472150c2ae590",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"inherits": "2.0.1",
+				"js-extend": "1.0.1",
+				"pouchdb-utils": "6.0.0",
+				"pouchdb-errors": "6.0.0",
+				"pouchdb-collate": "6.0.0",
+				"pouchdb-promise": "6.0.0",
+				"pouchdb-checkpointer": "6.0.0",
+				"pouchdb-generate-replication-id": "6.0.0"
+			},
+			"peerDependencies": {
+				"pouchdb-core": "6.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.0.0.tgz_1472873940688_0.01044226624071598",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.1": {
+			"name": "pouchdb-replication",
+			"version": "6.0.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.0.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "537f1655aafa555047ee01c49413f15e799c9c48",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.1.tgz",
+				"integrity": "sha512-EmShIQfY4XmNJ+VyKXNtbT07LnME3JIKTLDN4zv1xN06XfXQFvTi9xa+mYuz/1pDimx9jRwG5GBQqPSED+HMuQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIGZGaiiLlkkFYM79/S71937YADT0IhbVlOng6ugYho5LAiEAslPTEsQ8C4EgTFuuve2f86mJQOXirVj0bDwGML3ioyo=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "537f1655aafa555047ee01c49413f15e799c9c48",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"inherits": "2.0.1",
+				"js-extend": "1.0.1",
+				"pouchdb-utils": "6.0.1",
+				"pouchdb-errors": "6.0.1",
+				"pouchdb-collate": "6.0.1",
+				"pouchdb-promise": "6.0.1",
+				"pouchdb-checkpointer": "6.0.1",
+				"pouchdb-generate-replication-id": "6.0.1"
+			},
+			"peerDependencies": {
+				"pouchdb-core": "6.0.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.0.1.tgz_1472922164136_0.2821092789527029",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.2": {
+			"name": "pouchdb-replication",
+			"version": "6.0.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.0.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "f3579469b419eb960216209e01e883c2f57e7cbb",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.2.tgz",
+				"integrity": "sha512-mSex/g5i80iu52Hmq6qXP77akTUSq6XrSEmBACZnss6gOp3QphSTEEGDvZr76mRZmb0QWbdMom/JALxPyRQ/5w==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDW/9NdKLbzPpujvBVh7o4d1bSNRZDLT64BhYebOt/PbwIgPnqaL6uWqElZX5DywgkM/n1JqsA7pWjFO90rwo5W+58=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "f3579469b419eb960216209e01e883c2f57e7cbb",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"inherits": "2.0.1",
+				"js-extend": "1.0.1",
+				"pouchdb-utils": "6.0.2",
+				"pouchdb-errors": "6.0.2",
+				"pouchdb-collate": "6.0.2",
+				"pouchdb-promise": "6.0.2",
+				"pouchdb-checkpointer": "6.0.2",
+				"pouchdb-generate-replication-id": "6.0.2"
+			},
+			"peerDependencies": {
+				"pouchdb-core": "6.0.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.0.2.tgz_1473005395181_0.5517484936863184",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.3": {
+			"name": "pouchdb-replication",
+			"version": "6.0.3",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.0.3",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "799af1a9bace20c937807cae42853cd15378b9e9",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.3.tgz",
+				"integrity": "sha512-aKABgHomGKpBYmjxhfHRIwdfKuFu+rWPmZ8eENyRtxZUZ5QSCgkxFBe/CAHxaRBrL8pvrMwSK71maXRP4AXiLg==",
+				"signatures": [
+					{
+						"sig": "MEQCIBWkmr934EYckdkxKWLT+Fu677BS4q1Ny6DFMI/HtnBkAiAWGhebpEsRlAptjKWLZ5BfKN3KQE4xvopGBjEQcZWdmA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "799af1a9bace20c937807cae42853cd15378b9e9",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"inherits": "2.0.1",
+				"js-extend": "1.0.1",
+				"pouchdb-utils": "6.0.3",
+				"pouchdb-errors": "6.0.3",
+				"pouchdb-collate": "6.0.3",
+				"pouchdb-promise": "6.0.3",
+				"pouchdb-checkpointer": "6.0.3",
+				"pouchdb-generate-replication-id": "6.0.3"
+			},
+			"peerDependencies": {
+				"pouchdb-core": "6.0.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.0.3.tgz_1473096946440_0.595422649057582",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.4": {
+			"name": "pouchdb-replication",
+			"version": "6.0.4",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.0.4",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "0d26daeb08b00c79d7fa293883fb49532462a722",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.4.tgz",
+				"integrity": "sha512-OJXinKIyrbAifI7hwfTeMLKLV1TNyAoVFTIYiaz59lpwn0bCPTBTWk2i0qsABeoLK1RgNM7YyYMD9Fv04PgMsw==",
+				"signatures": [
+					{
+						"sig": "MEQCIEc0DmOsYbOssdL2BmDfUbBhff5jqGASbmelkepD83SOAiASgvA8LX3rddzKmkBMNUvqvibIDZdxiEkjSr8wpFdWZw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "0d26daeb08b00c79d7fa293883fb49532462a722",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"inherits": "2.0.1",
+				"js-extend": "1.0.1",
+				"pouchdb-utils": "6.0.4",
+				"pouchdb-errors": "6.0.4",
+				"pouchdb-collate": "6.0.4",
+				"pouchdb-promise": "6.0.4",
+				"pouchdb-checkpointer": "6.0.4",
+				"pouchdb-generate-replication-id": "6.0.4"
+			},
+			"peerDependencies": {
+				"pouchdb-core": "6.0.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.0.4.tgz_1473100008524_0.20326012559235096",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.5": {
+			"name": "pouchdb-replication",
+			"version": "6.0.5",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.0.5",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "fed1c86545fe31288f18754fdc7d708f4e29144d",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.5.tgz",
+				"integrity": "sha512-PldFonzSibxcbXZH6Olm/GBUjIF9CjvdGbSDDc9hucjXro73bT48WWBacI3qJuI4znZPdlj6ia1vHslVXjHKFA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDpv1SyMMKfLdVm/v2UhluYcuYz7GF81UYlzE6N8dwEVwIhAKb5gAUrP5UtWrufdeIaAY43fEfg1FeyleanYd4VRhvU",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "fed1c86545fe31288f18754fdc7d708f4e29144d",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"js-extend": "1.0.1",
+				"pouchdb-utils": "6.0.5",
+				"pouchdb-errors": "6.0.5",
+				"pouchdb-promise": "6.0.5",
+				"pouchdb-checkpointer": "6.0.5",
+				"pouchdb-generate-replication-id": "6.0.5"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.0.5.tgz_1474080233765_0.9780157501809299",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.6": {
+			"name": "pouchdb-replication",
+			"version": "6.0.6",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.0.6",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "75fa74ba4614a37dcb7d3646ade4e72c8a161030",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.6.tgz",
+				"integrity": "sha512-Wp4Wd+dFDakfju94EhVrprYa6VYpemte1sgfG7FutSNhN/VO7aagOhrDc7aJ17aIiY243im5zWEbSdzaYTXVgQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQD4ZsfOfbCi+dpAAlUg43Xa68ZjNVimcqrg4IOK3RpCaAIhALo2O0dVXDHSfbrs4ctXrhJrCSTC5zjJhoEuteK4vbkE",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "75fa74ba4614a37dcb7d3646ade4e72c8a161030",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.7.0",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"js-extend": "1.0.1",
+				"pouchdb-utils": "6.0.6",
+				"pouchdb-errors": "6.0.6",
+				"pouchdb-promise": "6.0.6",
+				"pouchdb-checkpointer": "6.0.6",
+				"pouchdb-generate-replication-id": "6.0.6"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.0.6.tgz_1475238701049_0.6014464551117271",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.7": {
+			"name": "pouchdb-replication",
+			"version": "6.0.7",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.0.7",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "74d28b5ddec67a93d9965f794bf9adcff56c0902",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.7.tgz",
+				"integrity": "sha512-ReK5nin6y0+JuvUDct1xL8VGX/Dc/nyrV6XgmWtdrYMcRndQoXK3ivjwvMekvs97Hh6xzp++LMHHTim1hMry8Q==",
+				"signatures": [
+					{
+						"sig": "MEUCIFM1lrXFyeMwbv410mfWHFmnnQ7l8TErX+zR278qTgCSAiEAkar3emAUXMlWJCwUUOfqh5DM4YRyTHBySVxTSQKToGk=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "74d28b5ddec67a93d9965f794bf9adcff56c0902",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.7.0",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "6.0.7",
+				"pouchdb-errors": "6.0.7",
+				"pouchdb-promise": "6.0.7",
+				"pouchdb-checkpointer": "6.0.7",
+				"pouchdb-generate-replication-id": "6.0.7"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.0.7.tgz_1476575299646_0.33489588438533247",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.1.0": {
+			"name": "pouchdb-replication",
+			"version": "6.1.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.1.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "0882b1b17d769c21e6155a40ae170476b86f156a",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.1.0.tgz",
+				"integrity": "sha512-7wt2AXC71lbSKx2eufy4MdfhCfYJ03WKStnpLz6AOf0jQxnPoszy37ztJd/vgG1MJiBBlM6XWv3vw1Zv27qbWQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIFPPI3qNJ2JIFdc59pEtE1MMml/bs921oAZlhFl54F3xAiAxuHtDUP5cU+OJ4OsCyAX0EL5vWeETt0/CKM49xIqWbA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "0882b1b17d769c21e6155a40ae170476b86f156a",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.9",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "7.2.0",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "6.1.0",
+				"pouchdb-errors": "6.1.0",
+				"pouchdb-promise": "6.1.0",
+				"pouchdb-checkpointer": "6.1.0",
+				"pouchdb-generate-replication-id": "6.1.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.1.0.tgz_1481558832396_0.6262170842383057",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.1.1": {
+			"name": "pouchdb-replication",
+			"version": "6.1.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.1.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "992c145e4172fd037e0bc6a9f9ba83309de3077c",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.1.1.tgz",
+				"integrity": "sha512-VtDPonRmINAF6VQi3OAadPosqYAbo2mMYlzaa5zHcSgxPjJQVy/3q1h0RhWueTXLZ6YH5UN76w7jEqPGxk/6pA==",
+				"signatures": [
+					{
+						"sig": "MEUCIG1+Vhpj8W1fdztTXix05QbfEkPfHsQUVcSD9Te9hyeTAiEAoNLbhrphtc4D2aLVmCczSrOwlp/MMKaRpQtAd40vmOs=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "992c145e4172fd037e0bc6a9f9ba83309de3077c",
+			"scripts": {},
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.0.0",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "6.1.1",
+				"pouchdb-errors": "6.1.1",
+				"pouchdb-promise": "6.1.1",
+				"pouchdb-checkpointer": "6.1.1",
+				"pouchdb-generate-replication-id": "6.1.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.1.1.tgz_1483622024051_0.2923301598057151",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.1.2": {
+			"name": "pouchdb-replication",
+			"version": "6.1.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.1.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "dae716a89eb826130736dcacf60ed570fcf616f4",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.1.2.tgz",
+				"integrity": "sha512-3Bed+2DNhGjOjm5e9aERaBroES172CdzEOd/FZeNl1MkhcIuov7qXGAYknfB0aMaH8dnvLMMFLe2tbJzu31STQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQC7QDnk7m/9c0uyJNKeYm75fl16HVROOshvEJIteZqWhgIgNNg250SD/BCTJr3HUsKr9iPEPTUbdZjU3HDuOzrsuRE=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"_shasum": "dae716a89eb826130736dcacf60ed570fcf616f4",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.9",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "7.2.0",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "6.1.2",
+				"pouchdb-errors": "6.1.2",
+				"pouchdb-promise": "6.1.2",
+				"pouchdb-checkpointer": "6.1.2",
+				"pouchdb-generate-replication-id": "6.1.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.1.2.tgz_1486487344109_0.3629609104245901",
+				"host": "packages-18-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.2.0": {
+			"name": "pouchdb-replication",
+			"version": "6.2.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.2.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "debd7e162557e499c43c25cfd7a1a05ea34bd0df",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.2.0.tgz",
+				"integrity": "sha512-dpjGHX83p5hRfPiKE0Jpjl80pmlcnkMUpwHWFY/ku8Z7BfVBkR4MhOGBK0nZEj3v1qQ9OmrJr7tmSQFdYFBxCA==",
+				"signatures": [
+					{
+						"sig": "MEUCIGebZfdwvrPdJur5jyX1sserB/vIEp1G4hKi5Kv6hgo+AiEAueEu8lZcHlMFNiXcbUi1bta+AoqA/SKwlBpEQRtFFdA=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"_shasum": "debd7e162557e499c43c25cfd7a1a05ea34bd0df",
+			"scripts": {},
+			"_npmUser": {
+				"name": "garrensmith",
+				"email": "garren.smith@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "4.2.0",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "6.9.4",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "6.2.0",
+				"pouchdb-errors": "6.2.0",
+				"pouchdb-promise": "6.2.0",
+				"pouchdb-checkpointer": "6.2.0",
+				"pouchdb-generate-replication-id": "6.2.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.2.0.tgz_1492700797347_0.9691370935179293",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.2.1-prerelease": {
+			"name": "pouchdb-replication",
+			"version": "6.2.1-prerelease",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.2.1-prerelease",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "c89fc177802ed68f8bdf3857ad0f6fea46b7e456",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.2.1-prerelease.tgz",
+				"integrity": "sha512-oOlMVii6mH5f9l9wppTaWMHQSvjHypGOQ8Mb9fX/lNszSztYMhflXTIey78iZ84nFZPtTcHp/Bnf4ZRQD5gKOQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIDNstwZqI+6AsTlQf6ebNGjivsNyhJPpwD6w2TQUtBCSAiEA/g4iDfMuWZBQ6ysCEfqTD7LC+bMYHwU29ns7op39Yms=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"_shasum": "c89fc177802ed68f8bdf3857ad0f6fea46b7e456",
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.2.1-prerelease.tgz_1499942954192_0.754619661718607",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.0": {
+			"name": "pouchdb-replication",
+			"version": "6.3.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.3.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "79af3784a0fd66e3e730aa0c9d258b36a4465a95",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.3.0.tgz",
+				"integrity": "sha512-K9H9Dvs82n20yiynCevDJa50neW9iO1SOz5ANawOlh6UnWwOpHyE11dJu1avEPkIAnyfd2A0046LfPO/243kHw==",
+				"signatures": [
+					{
+						"sig": "MEQCIEUiiJMwSiSrXKfEHcdN4BwVlBSLMmkFKDp5bFKRwlobAiBW2wzVf3ierdm440D2Yhlt2GukJpymU+zMpBGiCMYmUQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"_shasum": "79af3784a0fd66e3e730aa0c9d258b36a4465a95",
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.3.0.tgz_1499943288321_0.2895696465857327",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.1": {
+			"name": "pouchdb-replication",
+			"version": "6.3.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.3.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "7b9e0339ea3dd1a03822d3b0e4e75c8a5e308a0a",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.3.1.tgz",
+				"integrity": "sha512-gpg6jnMWqBBMIscmiRORCuNaRDUeX3ysJRhXybqFFn8up0ip6g/uthvMk7x1EtrOLnOA5e2FiegEuOKVBjRKWA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCWIJQjIMzwn/jOX95PC6jP7XYdDZK4khOXix6jeO7gmgIgBd63kLAoZrGk1FffbrEplmPTmQ3+E5blq62KTbxI5EM=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_shasum": "7b9e0339ea3dd1a03822d3b0e4e75c8a5e308a0a",
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "6.3.1",
+				"pouchdb-errors": "6.3.1",
+				"pouchdb-promise": "6.3.1",
+				"pouchdb-checkpointer": "6.3.1",
+				"pouchdb-generate-replication-id": "6.3.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.3.1.tgz_1499956911136_0.06113273394294083",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.2": {
+			"name": "pouchdb-replication",
+			"version": "6.3.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.3.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "15179131994ffadd37a3563bec30e78be6176bb9",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.3.2.tgz",
+				"integrity": "sha512-65xA6cBOjw4hlzjYNQLJj9FkTe161mfpOmz6FQRP/wS8H07CKPe8R3N/9F4E4AkP2pUBIxWXOHc7ooA0+QTe6w==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDPV3t8a73E1TdfUAK5UXVtKBm2krdwfFUz8nIn5bSFoAIgRPU/dB4LQnJl9wW7f4mLQzeFHFZbnlQlweZDsdeHcx8=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_shasum": "15179131994ffadd37a3563bec30e78be6176bb9",
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "6.3.2",
+				"pouchdb-errors": "6.3.2",
+				"pouchdb-promise": "6.3.2",
+				"pouchdb-checkpointer": "6.3.2",
+				"pouchdb-generate-replication-id": "6.3.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.3.2.tgz_1499958838059_0.7845895462669432",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.3": {
+			"name": "pouchdb-replication",
+			"version": "6.3.3",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.3.3",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "78d62c83c9d21268e0b942ee7bfa03b22276f3a4",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.3.3.tgz",
+				"integrity": "sha512-H6OHrOfo39Xb5Y1+Boyl69a8BgPenw2JHS04mvWTkp1tr1Wu9Te+5j/EABQnAmE+6WPfSae+alablGCj9fOhtg==",
+				"signatures": [
+					{
+						"sig": "MEQCIHxjZ1uMJPWFN1W/1zp//gQqJnyFJjbZvuZBuK+tp3zwAiAqyR4jh+Q8cz5tw4GbWCZFr2/7tGynoxDnOmlkNzO3pA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.0.0",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.0.0",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "6.3.3",
+				"pouchdb-errors": "6.3.3",
+				"pouchdb-promise": "6.3.3",
+				"pouchdb-checkpointer": "6.3.3",
+				"pouchdb-generate-replication-id": "6.3.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.3.3.tgz_1500070616391_0.931174169993028",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.4": {
+			"name": "pouchdb-replication",
+			"version": "6.3.4",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.3.4",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "a1d22ace6f18e0bb459dc152ed0eed71d56534b0",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.3.4.tgz",
+				"integrity": "sha512-9SdVetduqjnxc7FBuTYLvZR7lV8hn5yiarOI2SzLC+0d9FvYVsE7eu2tDe8jGitgSebzTNAtKJPKzrtQ/NxOSA==",
+				"signatures": [
+					{
+						"sig": "MEQCIDIoP4l3TMrEoKEsz6SOT0ivGJmqAf7kM3+uBRWPXDdRAiAmdW96DfqpSuZZU58j67V8XWp65yMW1nEOH44uZ/HZhw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.0.0",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.0.0",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "6.3.4",
+				"pouchdb-errors": "6.3.4",
+				"pouchdb-promise": "6.3.4",
+				"pouchdb-checkpointer": "6.3.4",
+				"pouchdb-generate-replication-id": "6.3.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.3.4.tgz_1500109903071_0.2631193131674081",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.0": {
+			"name": "pouchdb-replication",
+			"version": "6.4.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.4.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "3833773bb80763ec0bfd1f536ca1f3e64d9337de",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.4.0.tgz",
+				"integrity": "sha512-byKBvn1nBj5elz+yIEn6xIhWeN4IUnNBaQ3sgGpaoFGWgQz+/zrSj4HdXg5nbNX3SjouT5ObfDQ3b3N9FqbefQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQD2IOCbJHR3fQwBLEsytKMoFvCQSiEcu69vJOoiK9vHtwIgART+bxKE332F279z7vbbszw6VN+yI48v+jhYj77w4RY=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.3.0",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.5.0",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "6.4.0",
+				"pouchdb-errors": "6.4.0",
+				"pouchdb-promise": "6.4.0",
+				"pouchdb-checkpointer": "6.4.0",
+				"pouchdb-generate-replication-id": "6.4.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.4.0.tgz_1513503555372_0.7739825604949147",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.1": {
+			"name": "pouchdb-replication",
+			"version": "6.4.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.4.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "d16794ec4d94ea38fad2e32b727ed884ab99c1a6",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.4.1.tgz",
+				"integrity": "sha512-dhOFR7/OuXGxOwOeVHhb+JUMIGFBpYiJuq8b0ALGn4jnZ7MdcquelLFhpHPxqxPF0g6xQomClcWE9k/6HtVqpw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCafTiep89R7neZqT2Ku+bL29GwGc8SZj84hpckeKv9mwIgHUOKRAph3t8FmDwMJgvEMVo/kndvto7k6ed2zc6FAlw=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.3.0",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.2.1",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "6.4.1",
+				"pouchdb-errors": "6.4.1",
+				"pouchdb-promise": "6.4.1",
+				"pouchdb-checkpointer": "6.4.1",
+				"pouchdb-generate-replication-id": "6.4.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.4.1.tgz_1513595702093_0.9528212596196681",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.2": {
+			"name": "pouchdb-replication",
+			"version": "6.4.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.4.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "778037212968af18040f3a6177f4033a21e88db8",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.4.2.tgz",
+				"integrity": "sha512-/+pZNA/yd5Uw81RiaUX+vTggoAA+jz1mBjuh/kuS1RgkrWC0ZrBNY+oxGLng/mJ0jnkTnpz+6tY6TOKCpENKTQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCfLbCFzw1kYsX/g2mG13UAKbfKb/L48p7XIIBXkEimVwIgOQjeuV1ZFEZ5fYhGYEXzA0NUUyz+NoGa/nwD4dF8mn0=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.3.0",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.5.0",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "6.4.2",
+				"pouchdb-errors": "6.4.2",
+				"pouchdb-promise": "6.4.2",
+				"pouchdb-checkpointer": "6.4.2",
+				"pouchdb-generate-replication-id": "6.4.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.4.2.tgz_1516796855816_0.6699129042681307",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.3": {
+			"name": "pouchdb-replication",
+			"version": "6.4.3",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@6.4.3",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "33718e2b100883707d56a9cc0ec7acba1a7355dd",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.4.3.tgz",
+				"integrity": "sha512-bH1U0OG1CskQ3Qwt5FSlFwCEGwC2mIrmQsAY9a4RuET71DgE3KxnAUQxsDQKcX7w/sr3ZaEIQRQjRKoHICNhkA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCNoeqPCpTH/z2pjC2W9/sWaijU8ZhtTqzp3RTvY3SwPQIgcC9/uTzbA/k31bq6p1MDpjRq0/clb4U+7kmS6kD9Rrw=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.5.1",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.9.1",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "6.4.3",
+				"pouchdb-errors": "6.4.3",
+				"pouchdb-promise": "6.4.3",
+				"pouchdb-checkpointer": "6.4.3",
+				"pouchdb-generate-replication-id": "6.4.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.4.3.tgz_1517575712093_0.3534001486841589",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.0.0": {
+			"name": "pouchdb-replication",
+			"version": "7.0.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@7.0.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "b71751183dfa9337127d31de588e11e12cde5d9a",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-7.0.0.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-DHeP/8w1Q00yJJKfsXTipv3BPB0UhqZjCPTWvatrtfbtUX6v7MM4RXoq1UefvGbEHrThn3uoVL/MErdR5hvC/g==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDB57V/WIVe5bIkKZhJjjg14vX5Oh/hgVpgvTV6SmIL6AIhAONy7spCsWeMgsQKzaEwAlHpisBWD5UmhnVLQ73b+GuR",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 71520,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbK4WaCRA9TVsSAnZWagAA88MP+wVXdGs5ISvfzaAs7Hgw\ntF/JUs9iHRi6l1C+fU1TPn50wN7hVTURBNSlicjZRKfTrzwJ2S1TqMnKSXur\nI5YY9+VxVqKzgFUOrtGHcl7SidkJKdmjOOagWro4R6tdMaPI5giX3mnu4vwJ\nZcaAhYeCnWI/iVTUcml2i6UQc0IPlm+E5AA6ZkO3tlx3VZ+54A3IENFSvO78\nJF4ye1CVMGRGnLFKijaWZsaqpYdut1Q+BQ9/5/bf1eAQU/jxKKBoXGECVMrK\n40Tot2y7nXB63JrCTlGVywGVuVlGdaCIly1T8LYkrAYMQgEt4Bo/f6bizjt3\nYrmmKDKNgMAuRFYdMDsbHkR2mNyEuD2GwbWGic86XDcy1/SwkRIkm2Sy7QZ5\nzaVSZ9G5VOaTE3hux+ca8pb6HQj67xSbF4VwvBP5epg3j01hMtO947Wanbu3\nk1xy5HWC5KdHZHGpy768EDVfl9sIQ7x7jMT1smWF7IvubPnbgHERKPj0io6H\njpUJmER4LqKx+ntC/pKvrkgwBF5FqFDSH2MsVWDxRY4ZaHpJDApb1xP73mgc\nUObLU2pUQo9WuyxB57S4ppwhHbJMOZJHmhTPG6RNCiDxVpkT4KMF7jAUQT+V\nhwlDt3wDFU3byNzUCUaJsUzI9o93iW6ObLmfLnaTjs3bWGaB+kQsnMVjKi+X\nAKNv\r\n=KFvD\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.1.0",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.3.0",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "7.0.0",
+				"pouchdb-errors": "7.0.0",
+				"pouchdb-checkpointer": "7.0.0",
+				"pouchdb-generate-replication-id": "7.0.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_7.0.0_1529578906151_0.1768438348783672",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.1.0": {
+			"name": "pouchdb-replication",
+			"version": "7.1.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@7.1.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "8f566ec59f30ee8609ff627cc6721f0c547a87aa",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-7.1.0.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-aXNUOBpQ1wGcGZUhFxsrWqRdc8W3vhO9n+LoC/WtXK705WQ234ufpXBSCZR8/VrUsD7cXLY2Fm92R0dEn9zyYw==",
+				"signatures": [
+					{
+						"sig": "MEQCIAphBrqKXdmO6NWn/AZBE+o3jUOaGfzpynR6GBW5DIrjAiA+BEdiaqmvr81Ll9QvR3aq+E94kdGnOgxayFWsE4rtWQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 71520,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdAyPeCRA9TVsSAnZWagAAHdAP/3ByGfMSWq376olSp/el\nmLQVoslO2GWSoFWfCp3SjYFI/aXwNiVFMTzBn9KwMNszA/gap2xoapP6PMwY\nY4CKDrV+4F25iG5ddLKgMn0/62bY+1OSdPrSS7SuwblxHmRfvtsMBdfNptQI\nLtENAPk0LFs2q+CPD9QabbEy/DadJNyvbrEWemF9bflIsvmpORVXun9CDdp9\nQRMcTMRnPbt383iPcMLsAcPTPn/3JY8UbLgWEfnBInYa5pnED0Vi3WKTkcAX\nnGb3mmsUlwh+Q/IEPfuBN4Pl3tZ1i4cPsml/NlEhMCwPZPqToVlEuSODxNLL\nTTZI19sRJxV9EHe9YvKEYCNa1biM0DJeySFNRzL2q1jjp+jBJ8Zg2tpZC/+5\nz3F45p2SvGnlTgd8maa4eItpmV1PMlh9EGaeKsGVsijV9F1dBJgDyqlaFwqI\nAl9nNKPPQo68od+hveC8HQaoYtn0r6nRIu6eJkLROrxdYfEAJ8HFjC6WDSCT\nNhWNkJdjovdQdKnEmA/4q713uTWjupfYgE9YlWmBPzdbii5s3yORIu+G7Ddz\nQBsUy3ZLjvUaoAUw8Ot9J8M9+xL3+uN8KlrKH2vLzHeA3IAd0Z4SB+yX1At2\nBdfHFxdrbUGYnyea15BgnjRU3Lp/xQnvPTr8vx2GzYhLtm6qHOiAQa5OptPI\nq+29\r\n=w+zp\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "garrensmith",
+				"email": "garren.smith@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.9.0",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.15.0",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "7.1.0",
+				"pouchdb-errors": "7.1.0",
+				"pouchdb-checkpointer": "7.1.0",
+				"pouchdb-generate-replication-id": "7.1.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_7.1.0_1560486877548_0.0861868725798225",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.1.1": {
+			"name": "pouchdb-replication",
+			"version": "7.1.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@7.1.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "4596bd8a0756674765608b92e05c279e19ccf3c0",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-7.1.1.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-caIraPaI0AYbr2L3heMWRtH/E3bgTIoGamcFYizjHMsAxvbNBPo4enhHiffGte3P80D7qEwpd3C6l4ZPpkZdwg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDPFR54DrQo8C0F1K5zSUlojfvR/iXnRZ/GixX/Wx0ggAIgbWqXAqfbJO7+KHHp/ZaOp59PN1FSTWZXEQFTEA3EHY4=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 71520,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdAyfLCRA9TVsSAnZWagAAVKAP/0INtlmcKmobDafC91tX\nhvdToyRtRcGW4bacbhsBtZbNuThwEtQgtKaW2+ScakgvuGabfK51EYbL94Y+\nOaQ/cPE2HFfr8TdgTjz/ADny3+DdFBFNLBiqhYlU58yoMgqpLzeq5O75tSG6\n8Rs85GDkM0+OHCgBkYn6+6dEgUCYz6jtTAiviMALLCHwh8CqnwYqIPqtwkq8\nl+1S5yNPXRYESfJt87CVyzZQouu4UfsZGwdlixRZJ276u6XCiNSbOQS8BCpv\n48q/XxEYr/WRh/tpSZgzlDWKQJb92EPQtuCduqqkR5aA5MiiGjg61LdgXl+O\nKOh6SdCZH15KN3Jd3ODlQocluf9DR1s8YmrRLDU9QG69yMjdhSxXoWe2CLva\n8jhAkdqkYQCluzW1n2IpeNUztNwIQCxEdwxkbntB1VkDNzs+tQE1sRFaqaRh\nTAV4gc6KYQr39bY1M2caa1fnqK3yYcKNBlXPKeDHdaVLCxJgwCVacQOQiQEb\n/LB/tvUYMm7mQ1xA/Ys9ic7CBjuD6FvlNHtoeViHMD/5PBbxsFHxxDua3FpB\nm5F+TzNIW4/zejMUYyCkJaST0R5E+lB2PpX6RD//RzvhZtP9ZXJiSEwRZ5VM\nOvpBJ3hUZDvgvvNxFxl9FcmWskDbDPsa4HiyKOFfz0ZPKBvk4lnDJ+21XVkn\nnOvj\r\n=Y/K5\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "garrensmith",
+				"email": "garren.smith@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.9.0",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.15.0",
+			"dependencies": {
+				"inherits": "2.0.3",
+				"pouchdb-utils": "7.1.1",
+				"pouchdb-errors": "7.1.1",
+				"pouchdb-checkpointer": "7.1.1",
+				"pouchdb-generate-replication-id": "7.1.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_7.1.1_1560487883056_0.4167355505618384",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.2.1": {
+			"name": "pouchdb-replication",
+			"version": "7.2.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@7.2.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "c750403e6c46f3fab13ab6b033d4231d2f2ab133",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-7.2.1.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-COp4MN4/oncO5ga1yKxFzSxXgpe5G/P6qmFFeTZwt9ayNwdZYiS8bOyqVcjf1JuYhvP1/Bq8T2/DVVTw49nxeQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDlYX9QfjDNglteuCOhRPdYrIzcPbAAKiPncc58jwm48AIhALe3pv2+E1YwAlw+SXZJnN8BDaQl6vYLRI0SPuaFelNz",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 71520,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeScY8CRA9TVsSAnZWagAAY/sP/0BKcQD6I3O78RaKhGCW\nEM+7Z+s8LxpgDzMMe/w8/CU6gxNpz6d8TdRSn516/JWZZ/fbwvgC7g9crqGI\nwSvolWL4PXFPXuRXzrakOZX6pupE/ApeAHWdMcVO5gNdIrJMbjnULi2IW8P2\nLEpHnzuP+BFG7+GJgqANm/Ee7pVeheDBSyojVj7CiFgFi+ykMatrCssa8WuB\nOtqZv1PE6n7/2nZ42Jeqq/4cN90BBsg8nvXKZPGOLvQOyTMnzrCxlJ6JjS9W\nYROkjTMuNzq6gup5T8MS/a6z2bPsw8PIySK0KoV7x8YG4/bXR6ksfxFiRyo6\nH9HdSstGZQVzVU1F38gHwIoL3vfhwsJ5rhUrimpZS37+cZofcDJGRhs+y6tJ\nmN1CN7S8IkJsX/BVzdmWGQGecOh/rv3f05NJ9eypnG0poCns+xGfhLPdu+lZ\n9t+pyLq4C3e5t4A49MyT9GuetFhRl9NBTX9rzz9TTM2B1vJnDNaDqKiX1XOW\ndcMys+v6zJ42xbdfZx+49YkKVqA10PBIU45KuRHOw/LXnS01v20dDUdr+vB9\nvg7OLH9Tgvyi7EmYY04kt3xBsA9guNoJrD3SQmoK0Kfxl7DXSjI55gqc0xzs\n9TGQefSTP/UM5RIIxV8ax2uYeHAYNuoXojolndDbcRGLdZl9CfwSuXN3vGgS\npQIg\r\n=rpsS\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "garethbowen",
+				"email": "gareth@bowenwebdesign.co.nz"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.12.0",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.16.0",
+			"dependencies": {
+				"inherits": "2.0.4",
+				"pouchdb-utils": "7.2.1",
+				"pouchdb-errors": "7.2.1",
+				"pouchdb-checkpointer": "7.2.1",
+				"pouchdb-generate-replication-id": "7.2.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_7.2.1_1581893180482_0.4239995265181915",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.2.2": {
+			"name": "pouchdb-replication",
+			"version": "7.2.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@7.2.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "927abe24f9e69b68951c7b130e4926f14b984b1c",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-7.2.2.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-+Q2zqXWaHPOut0jGMABplmlML+8jUzkefyxZXgU6bXSbC9kEJCBAkjaFeZsF10HpsQZ9tHZ577g5EOqj7V1lTQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDmlkw9ckaxMEFZtjWkk8H6uF2jtkdu/FD6X7Cw6l737wIhAO43FO0UMafrIFw0zywm9qKf69EgNTpMTDvKU61p6Rcu",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 71438,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfHsw5CRA9TVsSAnZWagAAnBkP+wSm3xi1GwQ7Ula/AhKF\nTwy67OxDzZBW5A6inKrqShFG0LFr2wJiHHTObkSj7nnTd7A+E7nl2sKUQ47I\nBQYiN5c4kPCxz2GDiLLfeYZ/wzjK2JpC2bK3zwSEOMKMYSUOi4Poji0xdiAy\n4tae5D3gB0K+8lrVdVJ6BtrocyrYSR1UDsJm61EoHtEdm5tQgYOytAOXbPhC\ncMf7lgIY4ZR4jp4gUyjKELV0SS1A6ZNp6leA7NkEklcsKLMVcMTGqWtiW+0R\nXPFVVq91AyezUggMsSNgRe7Ft+OvvY7Zo2voNF0BpzUDGwT8PzJUz+BAeQK+\n8sDf/vKDRwBwaPB4D41ycT4XNdT5wCDdMYEGTrSUnK4ry/p/bMD3bxgZrdUa\n+vSZKj5FXDnt4d4qcNmYMox3IuwhTpF7z3FFn/crHjNvRY2rkX0QHmjTZ8Yc\nwXagqFTQ2a2KSVML72qM1C0mf8JJuneft09wlh8sbQ/O22gqhZTABSGQFivB\nYXakvdfjI6W3k0sXh33p6HCiS3UTc8alNVRAcdKP4PIasPpAYve7ZfKw0I3T\n5ZLrzSVZo+GOP2Hp211hWBIsCOE9qnEvXIBlqgKLjzZbUdo8fR8YOmL+hycu\nh+r2TV0hGZrKddYYCAQz+8mWHXDwMWivPisSbBltiKOpqLsH/ZVWin/U82kw\nTjGA\r\n=Wtjp\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.14.4",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "14.4.0",
+			"dependencies": {
+				"inherits": "2.0.4",
+				"pouchdb-utils": "7.2.2",
+				"pouchdb-errors": "7.2.2",
+				"pouchdb-checkpointer": "7.2.2",
+				"pouchdb-generate-replication-id": "7.2.2"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_7.2.2_1595853880695_0.4093169716434024",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.3.0": {
+			"name": "pouchdb-replication",
+			"version": "7.3.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@7.3.0",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "e979be321122adcb3f29c644886875d6679ee7e4",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-7.3.0.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-Z3kwrka9EXrE9kIm0Dw3h8wf8ErKzBJlhlXpDqDmETjC8V7TlEc2EbVXEH6veIt6XdsNQGHMfStVm2HERvTmNA==",
+				"signatures": [
+					{
+						"sig": "MEUCIDuE7slHKAJvFaEXPlMG6uEzI6Pt8f8amvWTHGhJemLEAiEAitrAZ0RUjZoVlfyVFYtgpFkcLY94m998rOIGZAeUsIE=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 72250,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiVu4QACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrtMxAAlj+B40NPF+tijL/siP6307sT1kNp5Hj5PWMc8u3GkKiQ0cw3\r\nBsShI9T714rUt1td7FHJ7u/oD1+h7A2eJIW/x80Y7keahzX2L4nEvCJPnVZA\r\nof1e6MhxoiCrHftqjc3uo+E2YL+Gu72YtHz/4NJ/27eXmN4gOvsrvC6bf4dW\r\nzsV3fHaGYwT+X2BdM8B75xli8vTpjuIanbsHBgJlx7YYlQ/v37CXAhj/7V5V\r\n4T8q7Cvk/czJ56KBr/+yNoZrOyXkJvzuzIrtDYQ9rBTEUaSaOh0I+EJq9vwQ\r\nensgO+ZVxWVUqJmswtoF5cpXGqj5HHF5jYOtN3B4WsxycmOZFfTX/VPqsqCr\r\nceFnxDYB/7tjDbK+/vN4q3pfZs8hqgjAmV3zNl0vsvx0/0PRwvqwiyqNugC2\r\nSXeAXOvtfz+d/m3RrSECid8nLb59LhK4iqKDB5GIcAaziCmKbCbNSEAThc+5\r\nXKSp6k85UNKhWf8DNNliKvHbEZEpO43Nod3Ei9g21xE1kk4Ohwx67+3DY9PG\r\nKCPz4l+1mXCUo76YHt3j9K7GLJjrmNma6XRBb3nYZ1NEStE+A3GP/urbCYBv\r\nIJ7//TCqkmEcCH8KP383KxdFMz8n9+8yL4HvA+b6b9jKnMAfC1+oyUPi2Z4E\r\nKYYy5x8vfNdHaCj1Dq4kPzJij5WCXSVyCYU=\r\n=wwuL\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"gitHead": "7c6753a6fd802191d51adcbcf153c5f646786f4d",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-replication"
+			},
+			"_npmVersion": "8.5.1",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "12.22.5",
+			"dependencies": {
+				"inherits": "2.0.4",
+				"pouchdb-utils": "7.3.0",
+				"pouchdb-errors": "7.3.0",
+				"pouchdb-checkpointer": "7.3.0",
+				"pouchdb-generate-replication-id": "7.3.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_7.3.0_1649864207889_0.31554924183682775",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.3.1": {
+			"name": "pouchdb-replication",
+			"version": "7.3.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@7.3.1",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "710acac1db6953c719ff96ed23023e5b58ac48f3",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-7.3.1.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-FqqPOrhlF7GoYaQQX4PbErxDMaLKblsttt6XKDHbK/kRsFm4zKAat/vChbMaCwXXjPuUmGjgVd3PEeC3I3aCvQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQD6jw1I8DiIEIrPdOAHz1ckICosTKClfBNnMRbExskoHAIhANi1a0xXkj28uzjpsbT90H0yDZzvpROY9hyp7cq8UXdo",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 72250,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjbl9LACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmr/DBAAgFIfgouj/uMwSvtsYi2FNgGLRD/obPfvQO3gxakXi+NHNNlp\r\najgiR/q/s+Spr+i4/uCUtzA2shJJSnQ07xemyova0Fqljjgoqy02j1UGJOFD\r\nts/bcDyeLDqsaHoU2tkXRVzkOaNYsDR9fR7XYymAoWj/9Z8zOCvT/YK4hPS/\r\nyc/7wK/C74iUSs0k8xxl8Iarpj5nzLSuk+jFMtszpMAyYRegBgyode9ZW7xY\r\naY7mljSgCN23O9w/jpuobUgGbaPr1eJ4OgZTjOMCWSSGl8S8KYOCUn03EfVN\r\n/dcvcrMcpqfZdY26OZXlRQWhwM5JpvVpH5KCnTKAlb3s29W+oI+M4b7MRHIs\r\n+tOBW3e5SAJnzN5wDrgX5vmvch9TDquMxeTkR1anw3E9YV917roXG/crrg0o\r\nBNPosJ9tBff4wYGMHXov80udNRlF2vklrccrpbil3MtWRjgTmtBE+OfXepaY\r\nWFooWjMtPlC9247xvxkiI/tDCydDJB2ierGunWjiyUhYYDt949j97n5SG10i\r\n9pjEWcSdLacWgi51En2gMa1xypOz5U2b/1Up59ElNLfGnoVt9oxidd+naZFt\r\nDHtwigQXuBDVMLTeyVw6l9buKWZ7+tsuYxRaSqoIqrPCA1pj/dSHoW4bvznC\r\nUKiGTWJqFYyMKNrlcTDL3LOYx8rb7rPSPgY=\r\n=D6ai\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"gitHead": "e241480180d04552b98db168948b6a5691f7f370",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-replication"
+			},
+			"_npmVersion": "8.11.0",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "16.16.0",
+			"dependencies": {
+				"inherits": "2.0.4",
+				"pouchdb-utils": "7.3.1",
+				"pouchdb-errors": "7.3.1",
+				"pouchdb-checkpointer": "7.3.1",
+				"pouchdb-generate-replication-id": "7.3.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_7.3.1_1668177739699_0.7054052604079921",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"8.0.0": {
+			"name": "pouchdb-replication",
+			"version": "8.0.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@8.0.0",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "e893d9ba76f5714e5d74887b5d1f9203c64a4b2a",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-8.0.0.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-+MpUet4HALgLs2la65p6d9+TuTA+mdTGXnkshg5f6QAWkLorIOzjoJyPIzV8c3JteJWv3FT/7pSag+Oy2PncHw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCG+VX84srgFlxOWj/jdY8m0GSFp6LjwS6qPT1EPQz4EgIhALJMDcC1IJy/L35cESoKJlU05DN0Cjx14XR+nM0pJMGG",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 72883,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjmwiLACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpiHRAAmfFc6kedhlqRqyiFarIcbqq9j1rKc32HRYoWG3fAve7JPIyv\r\noB4pcIbneCo0e/O7N989iE8jaoRDXwvbaMmiWZe/+F/i+btrVshcbQW3/5nP\r\nrC0LwZNmzLrXSfWWDNXewMIzUmW6cEzxugeY3Eh2JipMbKp05U71UPUP0MBt\r\nGcl7y6qmVX/rJgB0oygHD6TJ1vxdWZiD3CFxN+JwqZXcZ82PIv0Mqo/uBkTR\r\n813Q6+MErNoDMFCq/nTIu5xKhY+2wxbrFNPhAy87uYyR67LJjQLZ6LlESvGN\r\nnHRTL1h6N4bdKJeGwotospIeTi1De6PZnqDH1YDGsEAEXrlWHSu5o4iHftMf\r\njGW6yl1e8Afb3hgE75r0m6X4/H0b8CgGBjFZ1yTTat6+U0dcyXAN6LP3SIeN\r\n8Rz0c8kq4OG3KMbKlZQOpVaj+EzgXX9JU7A9YbkPw2Say3UoYRzFjyfQi71i\r\n6cS37WYj8wZ83NsMi+NK95U+DGy3A1xCR73C/1wdP+mI8jIQnk7jYrcfZBiQ\r\nh0iMcEQXE4FySBBWN/mtph2zIG9B3JtJbKF68FCUCM14+SotJLnonnjTlweh\r\nJmgBzaxxnI/U8D4iTkM/crZLaoZ0zGxX0OKBO8G9cAg6ldHcGz5vXdI9Gb8W\r\n1BGUxq1iiPRitRgvvotgcLzjQ4be26VHyAc=\r\n=j4d1\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"gitHead": "fec3c1639e2ed83a31ed530e832a1f4c171b378e",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-replication"
+			},
+			"_npmVersion": "8.11.0",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "16.16.0",
+			"dependencies": {
+				"pouchdb-utils": "8.0.0",
+				"pouchdb-errors": "8.0.0",
+				"pouchdb-checkpointer": "8.0.0",
+				"pouchdb-generate-replication-id": "8.0.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_8.0.0_1671104651413_0.7681618484907204",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"8.0.1": {
+			"name": "pouchdb-replication",
+			"version": "8.0.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-replication@8.0.1",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "31593356ce95564cc340f3e35ac3b02bdf2769d2",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-8.0.1.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-BIWhJsw2si3+HX3U5ElHJ6mv/cp5mA3pHynJYhufmbUe2vdLf4cpc7G5FG/ElMFEs0aoweGXPhFTqfqjykSZQA==",
+				"signatures": [
+					{
+						"sig": "MEQCIFNVaMbffgXVfSdHKbmaR/kyXYd9wOJLTXq4YfslH9lnAiA5h1nAd3sS6Oo9HMcxqt4+OBrMPM39l03bqpUw9jWaZA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 72883,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJj5NRUACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrlkhAAgqSGe3UxDK6uSUi4VQgcFnUcbuyITOdim7JzkJJmHk4TNWL8\r\n9Pn9uRXtGFnevhXHfFbz8ZJ1nSd7ifQEXiizFDvV4b1eTNzRtVYqloEhH9i3\r\nGMa0H3qJg3hfUAypxAaRsRqC0+3dV7xFfpXYFelW9oPA5L5OGAGpEB5p4t6F\r\nAWDr2TOV4gmPwu1vvqfgTiSeoAXHCr+vjRh3ANSgoVnCK4q8KeK9UDGPc0se\r\ntbZuogHqPIYLnfFsQ6015Q8Z1wCpNhwfRVvIdAvluZHdjTzWoc7qgzLiTMSF\r\nT8PF57mvlJb/loaTNHEnhv/lwMtwsLgc2JSJsSlDcCtMfwQp11u0GAgjzi46\r\nPdjvIJ4STLz24AZstWnXVFS5qkyDP3+A6dc1ZJYgjr/gxTS+VvZQT6fuvsFn\r\ns2XemEZSmqWVZsdpayyq/zeyqzLnuYgYFVWxnZFyT67nD8f+jz9AdpJe9dqk\r\nV9PhiIeGXvkPr0TG6EeWOhuRfxzDDMQtIdbmViNGT9FSiWUywLp+2A4R9WOB\r\n6fDMRXa8z95xG3U6j9LYAB16Fq4N6qeWVHzls/zXJCuqXgi4QBKK3HTXahze\r\ntZIrLgY2LluW3MKNT4wbxYad51uHrxd7A0MIo85X9uXTSXPQ8FSsIRirtyCY\r\nUtlhnYh16eSxyCJWYgs/Ve7Z+4b2rD7om2w=\r\n=KxxV\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"gitHead": "3c6e9efe088d8c3004833ac3d782be456bce898a",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-replication"
+			},
+			"_npmVersion": "8.11.0",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "16.16.0",
+			"dependencies": {
+				"pouchdb-utils": "8.0.1",
+				"pouchdb-errors": "8.0.1",
+				"pouchdb-checkpointer": "8.0.1",
+				"pouchdb-generate-replication-id": "8.0.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_8.0.1_1675940948556_0.896825964193789",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"9.0.0": {
+			"name": "pouchdb-replication",
+			"version": "9.0.0",
+			"description": "PouchDB's replication and sync algorithm, as a plugin.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"directory": "packages/node_modules/pouchdb-replication"
+			},
+			"module": "./lib/index.es.js",
+			"dependencies": {
+				"pouchdb-checkpointer": "9.0.0",
+				"pouchdb-errors": "9.0.0",
+				"pouchdb-generate-replication-id": "9.0.0",
+				"pouchdb-utils": "9.0.0"
+			},
+			"_id": "pouchdb-replication@9.0.0",
+			"gitHead": "194c0754bb482824c3cb07d6432c7b95707d0a72",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_nodeVersion": "20.11.1",
+			"_npmVersion": "10.7.0",
+			"dist": {
+				"integrity": "sha512-EZ68KJ3ZUWuPe35NxP6WnRw8J6Zudf0j/tZ/6mOSrCcp3EbtBNt8Ke2FaAThUgiFahVnHD5Y8nd53EGs2DLygg==",
+				"shasum": "ece575fff610b8fc5b1ad50602b79df0ea892dde",
+				"tarball": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-9.0.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 71979,
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQCyJ8fPsCuenBrjXO3xhwp0CR/IfZwVV7qh38xztqKOTgIhAPqiYrKPPL+LpeipjjdI36jAKzHE2l0YfDBiKjUveWi2"
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/pouchdb-replication_9.0.0_1718985579730_0.9799058600353574"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"created": "2016-05-16T19:20:58.570Z",
+		"modified": "2024-06-21T15:59:40.281Z",
+		"0.0.0": "2016-05-16T19:20:58.570Z",
+		"5.4.0": "2016-06-06T17:42:33.956Z",
+		"5.4.1": "2016-06-08T12:44:00.507Z",
+		"5.4.2": "2016-06-12T16:01:18.703Z",
+		"5.4.3": "2016-06-13T12:18:08.659Z",
+		"5.4.4": "2016-06-16T14:55:39.547Z",
+		"5.4.5": "2016-07-03T02:19:29.611Z",
+		"6.0.0": "2016-09-03T03:39:00.940Z",
+		"6.0.1": "2016-09-03T17:02:47.779Z",
+		"6.0.2": "2016-09-04T16:09:55.417Z",
+		"6.0.3": "2016-09-05T17:35:46.664Z",
+		"6.0.4": "2016-09-05T18:26:50.379Z",
+		"6.0.5": "2016-09-17T02:43:53.984Z",
+		"6.0.6": "2016-09-30T12:31:43.416Z",
+		"6.0.7": "2016-10-15T23:48:22.495Z",
+		"6.1.0": "2016-12-12T16:07:12.630Z",
+		"6.1.1": "2017-01-05T13:13:45.886Z",
+		"6.1.2": "2017-02-07T17:09:05.738Z",
+		"6.2.0": "2017-04-20T15:06:37.568Z",
+		"6.2.1-prerelease": "2017-07-13T10:49:15.166Z",
+		"6.3.0": "2017-07-13T10:54:49.515Z",
+		"6.3.1": "2017-07-13T14:41:52.022Z",
+		"6.3.2": "2017-07-13T15:13:59.026Z",
+		"6.3.3": "2017-07-14T22:16:57.331Z",
+		"6.3.4": "2017-07-15T09:11:43.949Z",
+		"6.4.0": "2017-12-17T09:39:16.262Z",
+		"6.4.1": "2017-12-18T11:15:03.019Z",
+		"6.4.2": "2018-01-24T12:27:37.225Z",
+		"6.4.3": "2018-02-02T12:48:33.014Z",
+		"7.0.0": "2018-06-21T11:01:46.268Z",
+		"7.1.0": "2019-06-14T04:34:37.707Z",
+		"7.1.1": "2019-06-14T04:51:23.204Z",
+		"7.2.1": "2020-02-16T22:46:20.605Z",
+		"7.2.2": "2020-07-27T12:44:40.845Z",
+		"7.3.0": "2022-04-13T15:36:48.074Z",
+		"7.3.1": "2022-11-11T14:42:19.923Z",
+		"8.0.0": "2022-12-15T11:44:11.584Z",
+		"8.0.1": "2023-02-09T11:09:08.724Z",
+		"9.0.0": "2024-06-21T15:59:39.950Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "9.0.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"3fecdc449d256606ce909c3cc702999b\"",
+			"fetched": 1734527709926
+		}
+	},
+	"_distfiles": {
+		"pouchdb-replication-0.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-0.0.0.tgz",
+			"sha": "0993f4e1c4be374dda979db2dd4dc24f54bd1e32",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-5.4.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-5.4.0.tgz",
+			"sha": "733d32606b6f7fed92258258a3d541f957c388e3",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-5.4.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-5.4.1.tgz",
+			"sha": "7d1310f32d4db0c1af342206fbf58554833eca56",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-5.4.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-5.4.2.tgz",
+			"sha": "5f8960afb278c25685588c38e2e70bd1f9333a16",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-5.4.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-5.4.3.tgz",
+			"sha": "41bdbc7ec6c5e2d0c0995151c39a0b9c4f7e4743",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-5.4.4.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-5.4.4.tgz",
+			"sha": "49004764bc66d5dade88c7971f0cd84cf54c5f44",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-5.4.5.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-5.4.5.tgz",
+			"sha": "cea39c470149f4a13f6ef0f237973fd588a32ed9",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.0.tgz",
+			"sha": "5e99e6438cad7ac1195dd90ad11472150c2ae590",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.0.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.1.tgz",
+			"sha": "537f1655aafa555047ee01c49413f15e799c9c48",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.0.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.2.tgz",
+			"sha": "f3579469b419eb960216209e01e883c2f57e7cbb",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.0.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.3.tgz",
+			"sha": "799af1a9bace20c937807cae42853cd15378b9e9",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.0.4.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.4.tgz",
+			"sha": "0d26daeb08b00c79d7fa293883fb49532462a722",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.0.5.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.5.tgz",
+			"sha": "fed1c86545fe31288f18754fdc7d708f4e29144d",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.0.6.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.6.tgz",
+			"sha": "75fa74ba4614a37dcb7d3646ade4e72c8a161030",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.0.7.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.0.7.tgz",
+			"sha": "74d28b5ddec67a93d9965f794bf9adcff56c0902",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.1.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.1.0.tgz",
+			"sha": "0882b1b17d769c21e6155a40ae170476b86f156a",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.1.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.1.1.tgz",
+			"sha": "992c145e4172fd037e0bc6a9f9ba83309de3077c",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.1.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.1.2.tgz",
+			"sha": "dae716a89eb826130736dcacf60ed570fcf616f4",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.2.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.2.0.tgz",
+			"sha": "debd7e162557e499c43c25cfd7a1a05ea34bd0df",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.2.1-prerelease.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.2.1-prerelease.tgz",
+			"sha": "c89fc177802ed68f8bdf3857ad0f6fea46b7e456",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.3.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.3.0.tgz",
+			"sha": "79af3784a0fd66e3e730aa0c9d258b36a4465a95",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.3.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.3.1.tgz",
+			"sha": "7b9e0339ea3dd1a03822d3b0e4e75c8a5e308a0a",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.3.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.3.2.tgz",
+			"sha": "15179131994ffadd37a3563bec30e78be6176bb9",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.3.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.3.3.tgz",
+			"sha": "78d62c83c9d21268e0b942ee7bfa03b22276f3a4",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.3.4.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.3.4.tgz",
+			"sha": "a1d22ace6f18e0bb459dc152ed0eed71d56534b0",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.4.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.4.0.tgz",
+			"sha": "3833773bb80763ec0bfd1f536ca1f3e64d9337de",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.4.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.4.1.tgz",
+			"sha": "d16794ec4d94ea38fad2e32b727ed884ab99c1a6",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.4.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.4.2.tgz",
+			"sha": "778037212968af18040f3a6177f4033a21e88db8",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.4.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-6.4.3.tgz",
+			"sha": "33718e2b100883707d56a9cc0ec7acba1a7355dd",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-7.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-7.0.0.tgz",
+			"sha": "b71751183dfa9337127d31de588e11e12cde5d9a",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-7.1.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-7.1.0.tgz",
+			"sha": "8f566ec59f30ee8609ff627cc6721f0c547a87aa",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-7.1.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-7.1.1.tgz",
+			"sha": "4596bd8a0756674765608b92e05c279e19ccf3c0",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-7.2.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-7.2.1.tgz",
+			"sha": "c750403e6c46f3fab13ab6b033d4231d2f2ab133",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-7.2.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-7.2.2.tgz",
+			"sha": "927abe24f9e69b68951c7b130e4926f14b984b1c",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-7.3.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-7.3.0.tgz",
+			"sha": "e979be321122adcb3f29c644886875d6679ee7e4",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-7.3.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-7.3.1.tgz",
+			"sha": "710acac1db6953c719ff96ed23023e5b58ac48f3",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-8.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-8.0.0.tgz",
+			"sha": "e893d9ba76f5714e5d74887b5d1f9203c64a4b2a",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-8.0.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-8.0.1.tgz",
+			"sha": "31593356ce95564cc340f3e35ac3b02bdf2769d2",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-9.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-replication/-/pouchdb-replication-9.0.0.tgz",
+			"sha": "ece575fff610b8fc5b1ad50602b79df0ea892dde",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-replication-6.2.0.tgz": {
+			"shasum": "debd7e162557e499c43c25cfd7a1a05ea34bd0df"
+		}
+	},
+	"_rev": "2-84db1c71bc9f27a0",
+	"_id": "pouchdb-replication",
+	"readme": "pouchdb-replication\n======\n\nPouchDB's replication and sync algorithm, as a plugin.\n\n### Usage\n\n```bash\nnpm install pouchdb-replication\n```\n\n```js\nPouchDB.plugin(require('pouchdb-replication'));\nvar db = new PouchDB('mydb');\ndb.replicate(/* see replicate/sync API docs for full info */);\n```\n\nFor full API documentation and guides on PouchDB, see [PouchDB.com](http://pouchdb.com/). For details on PouchDB sub-packages, see the [Custom Builds documentation](http://pouchdb.com/custom.html).\n\n### Source\n\nPouchDB and its sub-packages are distributed as a [monorepo](https://github.com/babel/babel/blob/master/doc/design/monorepo.md).\n\nFor a full list of packages, see [the GitHub source](https://github.com/pouchdb/pouchdb/tree/master/packages)."
+}

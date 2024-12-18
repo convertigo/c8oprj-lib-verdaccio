@@ -1,0 +1,1540 @@
+{
+	"name": "worker-pouch",
+	"versions": {
+		"0.1.0": {
+			"name": "worker-pouch",
+			"version": "0.1.0",
+			"description": "PouchDB over a web worker",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/worker-pouch.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"worker",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/worker-pouch/issues"
+			},
+			"scripts": {
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && npm run test-browser",
+				"build": "mkdirp dist && npm run browserify && npm run min",
+				"browserify": "browserify client | ./bin/es3ify.js | derequire > dist/pouchdb.worker-pouch.js",
+				"min": "uglifyjs dist//pouchdb.worker-pouch.js -mc > dist//pouchdb.worker-pouch.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"blob-util": "^1.1.1",
+				"debug": "^2.1.3",
+				"inherits": "^2.0.1",
+				"lie": "^2.6.0",
+				"pouchdb": "^4.0.3",
+				"pouchdb-binary-util": "^1.0.0",
+				"workerify": "^0.3.0"
+			},
+			"devDependencies": {
+				"bluebird": "^2.9.24",
+				"browserify": "^9.0.8",
+				"chai": "^1.9.1",
+				"corsproxy": "^0.2.14",
+				"derequire": "^2.0.0",
+				"es3ify": "^0.1.3",
+				"es5-shim": "^4.1.1",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "^2.3.0",
+				"mkdirp": "^0.5.0",
+				"mocha": "^1.18.2",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb-http-proxy": "^0.10.4",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"selenium-standalone": "^3.0.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21"
+			},
+			"browserify": {
+				"transform": [
+					"workerify"
+				]
+			},
+			"gitHead": "dba14e176caf0174c7d2bc8823c0e98367d83614",
+			"homepage": "https://github.com/nolanlawson/worker-pouch#readme",
+			"_id": "worker-pouch@0.1.0",
+			"_shasum": "bd61a1268089a358aa5fb1af4ef9344b163d5242",
+			"_from": ".",
+			"_npmVersion": "2.14.2",
+			"_nodeVersion": "4.0.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "bd61a1268089a358aa5fb1af4ef9344b163d5242",
+				"tarball": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-0.1.0.tgz",
+				"integrity": "sha512-6TcW7dTGznJhYrK/la4I+LIhqIfGSr3rbE3Kan3GYknjfsNj3hXe5QdrGG0OlCTxJv86jVTkJcbD6vmZVrHmMw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCICJ5S7XhraCK4jTjZ3KqrFZcb955EaIbclVab76W0l0JAiEAvk9MCNO/DUPZebf35YgxpDdZXDnZjZbT6VsNNjbM75w="
+					}
+				]
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.1.1": {
+			"name": "worker-pouch",
+			"version": "0.1.1",
+			"description": "PouchDB over a web worker",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/worker-pouch.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"worker",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/worker-pouch/issues"
+			},
+			"scripts": {
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && npm run test-browser",
+				"build": "mkdirp dist && npm run browserify && npm run min",
+				"browserify": "browserify -p bundle-collapser/plugin client | ./bin/es3ify.js | derequire > dist/pouchdb.worker-pouch.js",
+				"min": "UGLIFY=1 browserify -p bundle-collapser/plugin client | ./bin/es3ify.js | derequire | uglifyjs -mc > dist/pouchdb.worker-pouch.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"blob-util": "^1.1.1",
+				"debug": "^2.1.3",
+				"inherits": "^2.0.1",
+				"lie": "^2.6.0",
+				"pouchdb": "^4.0.3",
+				"pouchdb-binary-util": "^1.0.0",
+				"through2": "^2.0.0",
+				"uglifyify": "^3.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^2.9.24",
+				"browserify": "^9.0.8",
+				"bundle-collapser": "1.2.1",
+				"chai": "^1.9.1",
+				"corsproxy": "^0.2.14",
+				"derequire": "^2.0.0",
+				"es3ify": "^0.1.3",
+				"es5-shim": "^4.1.1",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "^2.3.0",
+				"mkdirp": "^0.5.0",
+				"mocha": "^1.18.2",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb-http-proxy": "^0.10.4",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"selenium-standalone": "^3.0.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21"
+			},
+			"browserify": {
+				"transform": [
+					"./lib/workerify"
+				]
+			},
+			"gitHead": "94a7345448fe0a6e5624bf59be4115bed9ee8529",
+			"homepage": "https://github.com/nolanlawson/worker-pouch#readme",
+			"_id": "worker-pouch@0.1.1",
+			"_shasum": "4f28aa71128b11bd2b760a3f2b47f653913bdc2f",
+			"_from": ".",
+			"_npmVersion": "2.14.2",
+			"_nodeVersion": "4.0.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "4f28aa71128b11bd2b760a3f2b47f653913bdc2f",
+				"tarball": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-0.1.1.tgz",
+				"integrity": "sha512-PO4qwuhLb4gQIHzQPTu9ThCyf8upj0kAkMUc1PkPTJ6hfpEA8gIqC2zf5I65QbgylyOXlkLpQoPwdmBJwTiCeg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIDa2ANYIHcFz6tcPawa6CG708zcwbZT7T8FtcNWaV3QEAiEA/21gK4rtS8V9UNIpmXTRBEXNohu28yu3dF3I/UFj6tY="
+					}
+				]
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.1.2": {
+			"name": "worker-pouch",
+			"version": "0.1.2",
+			"description": "PouchDB over a web worker",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/worker-pouch.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"worker",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/worker-pouch/issues"
+			},
+			"scripts": {
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && npm run test-browser",
+				"build": "mkdirp dist && npm run browserify && npm run min",
+				"browserify": "browserify -p bundle-collapser/plugin client | ./bin/es3ify.js | derequire > dist/pouchdb.worker-pouch.js",
+				"min": "UGLIFY=1 browserify -p bundle-collapser/plugin client | ./bin/es3ify.js | derequire | uglifyjs -mc > dist/pouchdb.worker-pouch.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"blob-util": "^1.1.1",
+				"debug": "^2.1.3",
+				"inherits": "^2.0.1",
+				"lie": "^2.6.0",
+				"pouchdb": "^4.0.3",
+				"pouchdb-binary-util": "^1.0.0",
+				"through2": "^2.0.0",
+				"uglifyify": "^3.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^2.9.24",
+				"browserify": "^9.0.8",
+				"bundle-collapser": "1.2.1",
+				"chai": "^1.9.1",
+				"corsproxy": "^0.2.14",
+				"derequire": "^2.0.0",
+				"es3ify": "^0.1.3",
+				"es5-shim": "^4.1.1",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "^2.3.0",
+				"mkdirp": "^0.5.0",
+				"mocha": "^1.18.2",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb-http-proxy": "^0.10.4",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"selenium-standalone": "^3.0.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21"
+			},
+			"browserify": {
+				"transform": [
+					"./lib/workerify"
+				]
+			},
+			"gitHead": "dd1f5235d6cec50c0a3a51c176d39a816381115b",
+			"homepage": "https://github.com/nolanlawson/worker-pouch#readme",
+			"_id": "worker-pouch@0.1.2",
+			"_shasum": "5defd93e416cfe3723b533f6a743531673f03099",
+			"_from": ".",
+			"_npmVersion": "2.14.2",
+			"_nodeVersion": "4.0.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "5defd93e416cfe3723b533f6a743531673f03099",
+				"tarball": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-0.1.2.tgz",
+				"integrity": "sha512-F8GI7TOp5jXiRz2vzoow8hqmlA+zuSLDPoTMbdbyPL0En8gxHgnvvyCXrfLQi0ZKr9Bv+vonRMptkkYyLlFEmA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCICe9UpCWgHhqSfGsvPaktZWS8ZvNPj3+gelVgKWKHBSPAiEAyTLh8AX3CwwQTwWjcEc1qyeru19kZR5Gw7vB9wa2Dwc="
+					}
+				]
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.2.0": {
+			"name": "worker-pouch",
+			"version": "0.2.0",
+			"description": "PouchDB over a web worker",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/worker-pouch.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"worker",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/worker-pouch/issues"
+			},
+			"scripts": {
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && npm run test-browser",
+				"build": "mkdirp dist && npm run browserify && npm run min",
+				"browserify": "browserify -s workerPouch -p bundle-collapser/plugin client | ./bin/es3ify.js | derequire > dist/pouchdb.worker-pouch.js",
+				"min": "UGLIFY=1 browserify -s workerPouch -p bundle-collapser/plugin client | ./bin/es3ify.js | derequire | uglifyjs -mc > dist/pouchdb.worker-pouch.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"blob-util": "^1.1.1",
+				"debug": "^2.1.3",
+				"inherits": "^2.0.1",
+				"lie": "^2.6.0",
+				"pouchdb": "git://github.com/pouchdb/pouchdb.git#9d1d873",
+				"pouchdb-binary-util": "^1.0.0",
+				"through2": "^2.0.0",
+				"uglifyify": "^3.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^2.9.24",
+				"browserify": "^9.0.8",
+				"bundle-collapser": "1.2.1",
+				"chai": "^2.3.0",
+				"chai-as-promised": "^5.1.0",
+				"corsproxy": "^0.2.14",
+				"derequire": "^2.0.0",
+				"es3ify": "^0.1.3",
+				"es5-shim": "^4.1.1",
+				"http-server": "^0.8.5",
+				"istanbul": "^0.2.7",
+				"jshint": "^2.3.0",
+				"mkdirp": "^0.5.0",
+				"mocha": "^2.3.3",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb-http-proxy": "^0.10.4",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.11.1",
+				"selenium-standalone": "^4.7.0",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21"
+			},
+			"browserify": {
+				"transform": [
+					"./lib/workerify"
+				]
+			},
+			"gitHead": "168869713fe79d2cddd1b90db5b7c8f8777f92b6",
+			"homepage": "https://github.com/nolanlawson/worker-pouch#readme",
+			"_id": "worker-pouch@0.2.0",
+			"_shasum": "ee8796eb227569b73bb16f7d5ed4e61172802db8",
+			"_from": ".",
+			"_npmVersion": "3.3.5",
+			"_nodeVersion": "4.0.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "ee8796eb227569b73bb16f7d5ed4e61172802db8",
+				"tarball": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-0.2.0.tgz",
+				"integrity": "sha512-a2GucbcvNbdRu0keenzEBSJurK9bS0QZr1rR1qE6NS8y3iPgdOAxwgSaThRs70Dx4ExwmMvd8cNyd/YBdJqwWQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCf6ywZkuN2XGIikIvXJBLVVRF5Q3E9cV818som+hjQDgIgYeRzVNK1nmqkTqDQA1sTBH+M2tFrcI+MgUATRsCCDUU="
+					}
+				]
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"0.2.1": {
+			"name": "worker-pouch",
+			"version": "0.2.1",
+			"description": "PouchDB over a web worker",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/worker-pouch.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"worker",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/worker-pouch/issues"
+			},
+			"scripts": {
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && npm run test-browser",
+				"build": "mkdirp dist && npm run browserify && npm run min",
+				"browserify": "browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire > dist/pouchdb.worker-pouch.js",
+				"min": "UGLIFY=1 browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire | uglifyjs -mc > dist/pouchdb.worker-pouch.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"blob-util": "^1.1.1",
+				"debug": "^2.1.3",
+				"inherits": "^2.0.1",
+				"lie": "^2.6.0",
+				"pouchdb": "git://github.com/pouchdb/pouchdb.git#4402",
+				"pouchdb-binary-util": "^1.0.0",
+				"through2": "^2.0.0",
+				"uglifyify": "^3.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^2.9.24",
+				"browserify": "^9.0.8",
+				"bundle-collapser": "1.2.1",
+				"chai": "^2.3.0",
+				"chai-as-promised": "^5.1.0",
+				"corsproxy": "^0.2.14",
+				"derequire": "^2.0.0",
+				"es3ify": "^0.1.3",
+				"es5-shim": "^4.1.1",
+				"http-server": "^0.8.5",
+				"istanbul": "^0.2.7",
+				"jshint": "^2.3.0",
+				"mkdirp": "^0.5.0",
+				"mocha": "^2.3.3",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb-http-proxy": "^0.10.4",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.11.1",
+				"selenium-standalone": "^4.7.0",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21"
+			},
+			"browserify": {
+				"transform": [
+					"./lib/workerify"
+				]
+			},
+			"gitHead": "68cb0a7b4671de3c29a25cff8a148a4d5861c431",
+			"homepage": "https://github.com/nolanlawson/worker-pouch#readme",
+			"_id": "worker-pouch@0.2.1",
+			"_shasum": "bd6da061eeca3daea5794df5f9c40b826000fc8d",
+			"_from": ".",
+			"_npmVersion": "3.3.5",
+			"_nodeVersion": "4.0.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "bd6da061eeca3daea5794df5f9c40b826000fc8d",
+				"tarball": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-0.2.1.tgz",
+				"integrity": "sha512-a4OxoVfS3+pZ5+uE6yFQ6LTOU+AUSbdODxB7g9LPMpoWX/q/DT3eDv9OR94uo1hvBOg4GxaOOMkfKEzwE068iA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIC5OsKBmPRmLcJ8Ggbfw/wbdrfHh2+GcUT42gVjNmyslAiEA2qm5pDdQTKOFmVDW/WFAODZynwoV7q5G0A8ZWoBkxuo="
+					}
+				]
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.0.0": {
+			"name": "worker-pouch",
+			"version": "1.0.0",
+			"description": "PouchDB over a web worker",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/worker-pouch.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"worker",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/worker-pouch/issues"
+			},
+			"scripts": {
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && npm run test-browser",
+				"build": "mkdirp dist && npm run browserify && npm run min",
+				"browserify": "browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire > dist/pouchdb.worker-pouch.js",
+				"min": "UGLIFY=1 browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire | uglifyjs -mc > dist/pouchdb.worker-pouch.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"blob-util": "^1.1.1",
+				"debug": "^2.1.3",
+				"inherits": "^2.0.1",
+				"lie": "^2.6.0",
+				"pouchdb": "^5.0.0",
+				"pouchdb-binary-util": "^1.0.0",
+				"through2": "^2.0.0",
+				"uglifyify": "^3.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^2.9.24",
+				"browserify": "^9.0.8",
+				"bundle-collapser": "1.2.1",
+				"chai": "^2.3.0",
+				"chai-as-promised": "^5.1.0",
+				"corsproxy": "^0.2.14",
+				"derequire": "^2.0.0",
+				"es3ify": "^0.1.3",
+				"es5-shim": "^4.1.1",
+				"http-server": "^0.8.5",
+				"istanbul": "^0.2.7",
+				"jshint": "^2.3.0",
+				"mkdirp": "^0.5.0",
+				"mocha": "^2.3.3",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb-http-proxy": "^0.10.4",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.11.1",
+				"selenium-standalone": "^4.7.0",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21"
+			},
+			"browserify": {
+				"transform": [
+					"./lib/workerify"
+				]
+			},
+			"gitHead": "43f97b9375e3b81f4ca4cbdf01e3055b657812c3",
+			"homepage": "https://github.com/nolanlawson/worker-pouch#readme",
+			"_id": "worker-pouch@1.0.0",
+			"_shasum": "b077ada67f86b71bf10b76c718d745720c9d92a5",
+			"_from": ".",
+			"_npmVersion": "3.3.5",
+			"_nodeVersion": "4.0.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "b077ada67f86b71bf10b76c718d745720c9d92a5",
+				"tarball": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-1.0.0.tgz",
+				"integrity": "sha512-gH7jy6HZQB2KiHOOvKLF3oL7Elqq4yvdEDfjbTzY5bgoTqGQ9adceFBY7s3Usg+SXIM1JpT4thYAFZGMrkPKxw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIEmiMshknVQbGahuN8KDcrIol5LoR4XfN1nK2l/hOp3bAiEA5/lSn1tq1tMeiwZzuBziXGaPcFzwcz/FyqFPp1VuNBQ="
+					}
+				]
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.0.1": {
+			"name": "worker-pouch",
+			"version": "1.0.1",
+			"description": "PouchDB over a web worker",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/worker-pouch.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"worker",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/worker-pouch/issues"
+			},
+			"scripts": {
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && npm run test-browser",
+				"build": "mkdirp dist && npm run browserify && npm run min",
+				"browserify": "browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire > dist/pouchdb.worker-pouch.js",
+				"min": "UGLIFY=1 browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire | uglifyjs -mc > dist/pouchdb.worker-pouch.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"blob-util": "^1.1.1",
+				"debug": "^2.1.3",
+				"inherits": "^2.0.1",
+				"lie": "^2.6.0",
+				"pouchdb": "^5.0.0",
+				"pouchdb-binary-util": "^1.0.0",
+				"through2": "^2.0.0",
+				"uglifyify": "^3.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^2.9.24",
+				"browserify": "^9.0.8",
+				"bundle-collapser": "1.2.1",
+				"chai": "^2.3.0",
+				"chai-as-promised": "^5.1.0",
+				"corsproxy": "^0.2.14",
+				"derequire": "^2.0.0",
+				"es3ify": "^0.1.3",
+				"es5-shim": "^4.1.1",
+				"http-server": "^0.8.5",
+				"istanbul": "^0.2.7",
+				"jshint": "2.8.0",
+				"mkdirp": "^0.5.0",
+				"mocha": "^2.3.3",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb-http-proxy": "^0.10.4",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.11.1",
+				"selenium-standalone": "^4.7.0",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21"
+			},
+			"browserify": {
+				"transform": [
+					"./lib/workerify"
+				]
+			},
+			"files": [
+				"lib",
+				"dist"
+			],
+			"gitHead": "afb8e246db5b28c1e543a2ec50b34b1059bd82f9",
+			"homepage": "https://github.com/nolanlawson/worker-pouch#readme",
+			"_id": "worker-pouch@1.0.1",
+			"_shasum": "9f9c1910e52ea17b9b8e405dd1d190e2ad36e1b9",
+			"_from": ".",
+			"_npmVersion": "3.5.3",
+			"_nodeVersion": "5.3.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "9f9c1910e52ea17b9b8e405dd1d190e2ad36e1b9",
+				"tarball": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-1.0.1.tgz",
+				"integrity": "sha512-Ol+lyRXA1mH0iQjPDN4oM19eu0C7u52LrcoG4XBpuGEolxgxxuiC36yV0OGXlFGRqic7tM2ALU3/ZwbJtSuVZw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIF95YgFU2zMc0YT1YKi4I5/l94lJwXRu74/m0gx4bTEqAiA3kF+XyTEawwSGHjcdsy5hKC73eEr1MMT2+L9VaiDOvA=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"1.0.2": {
+			"name": "worker-pouch",
+			"version": "1.0.2",
+			"description": "PouchDB over a web worker",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/worker-pouch.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"worker",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/worker-pouch/issues"
+			},
+			"scripts": {
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && npm run test-browser",
+				"build": "mkdirp dist && npm run browserify && npm run min",
+				"browserify": "browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire > dist/pouchdb.worker-pouch.js",
+				"min": "UGLIFY=1 browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire | uglifyjs -mc > dist/pouchdb.worker-pouch.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"blob-util": "^1.1.1",
+				"debug": "^2.1.3",
+				"inherits": "^2.0.1",
+				"lie": "^2.6.0",
+				"pouchdb": "^5.0.0",
+				"pouchdb-binary-util": "^1.0.0",
+				"through2": "^2.0.0",
+				"uglifyify": "^3.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^2.9.24",
+				"browserify": "^9.0.8",
+				"bundle-collapser": "1.2.1",
+				"chai": "^2.3.0",
+				"chai-as-promised": "^5.1.0",
+				"corsproxy": "^0.2.14",
+				"derequire": "^2.0.0",
+				"es3ify": "^0.1.3",
+				"es5-shim": "^4.1.1",
+				"http-server": "^0.8.5",
+				"istanbul": "^0.2.7",
+				"jshint": "2.8.0",
+				"mkdirp": "^0.5.0",
+				"mocha": "^2.3.3",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb-http-proxy": "^0.10.4",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.11.1",
+				"selenium-standalone": "^4.7.0",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21"
+			},
+			"browserify": {
+				"transform": [
+					"./lib/workerify"
+				]
+			},
+			"files": [
+				"lib",
+				"dist"
+			],
+			"gitHead": "b3fc092f186783a21530c4683ae25686c31297b1",
+			"homepage": "https://github.com/nolanlawson/worker-pouch#readme",
+			"_id": "worker-pouch@1.0.2",
+			"_shasum": "8598656b6ad78870270021ca20ca906c90d67367",
+			"_from": ".",
+			"_npmVersion": "3.7.3",
+			"_nodeVersion": "5.9.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "8598656b6ad78870270021ca20ca906c90d67367",
+				"tarball": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-1.0.2.tgz",
+				"integrity": "sha512-ekuLuX0lCcmL0s8KiMXkHygVbk6hcRzlBanBqnJi6qLLyGk8MovI1rbZ/8FkUZ10vbPIN2m7yaHVNrJLG3fnIA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIGSHiYneWxhtwNHlEBIrrTlswgN00XQxtVSxkHdFtSRLAiA+A4uj+rMdfzAVc5M7KNH9zEV1ytxmRvcpRHpFC4ePhQ=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/worker-pouch-1.0.2.tgz_1462061833983_0.889999974751845"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.0.3": {
+			"name": "worker-pouch",
+			"version": "1.0.3",
+			"description": "PouchDB over a web worker",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/worker-pouch.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"worker",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/worker-pouch/issues"
+			},
+			"scripts": {
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && npm run test-browser",
+				"build": "mkdirp dist && npm run browserify && npm run min",
+				"browserify": "browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire > dist/pouchdb.worker-pouch.js",
+				"min": "UGLIFY=1 browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire | uglifyjs -mc > dist/pouchdb.worker-pouch.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"blob-util": "^1.1.1",
+				"debug": "^2.1.3",
+				"inherits": "^2.0.1",
+				"lie": "^2.6.0",
+				"pouchdb": "^5.0.0",
+				"pouchdb-binary-util": "^1.0.0",
+				"through2": "^2.0.0",
+				"uglifyify": "^3.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^2.9.24",
+				"browserify": "^9.0.8",
+				"bundle-collapser": "1.2.1",
+				"chai": "^2.3.0",
+				"chai-as-promised": "^5.1.0",
+				"corsproxy": "^0.2.14",
+				"derequire": "^2.0.0",
+				"es3ify": "^0.1.3",
+				"es5-shim": "^4.1.1",
+				"http-server": "^0.8.5",
+				"istanbul": "^0.2.7",
+				"jshint": "2.8.0",
+				"mkdirp": "^0.5.0",
+				"mocha": "^2.3.3",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb-http-proxy": "^0.10.4",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.11.1",
+				"selenium-standalone": "^4.7.0",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21"
+			},
+			"browserify": {
+				"transform": [
+					"./lib/workerify"
+				]
+			},
+			"files": [
+				"lib",
+				"dist"
+			],
+			"gitHead": "e4ef5c25794b5942bc9a2e9023519d528f1283cb",
+			"homepage": "https://github.com/nolanlawson/worker-pouch#readme",
+			"_id": "worker-pouch@1.0.3",
+			"_shasum": "1316f3c614c8d82c1fd61dd61d07d3a21ceea711",
+			"_from": ".",
+			"_npmVersion": "3.9.0",
+			"_nodeVersion": "5.9.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "1316f3c614c8d82c1fd61dd61d07d3a21ceea711",
+				"tarball": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-1.0.3.tgz",
+				"integrity": "sha512-YP7E5a8Wk3xUc22yNxR5dSuDsQm3Vx37bqklnafdnP9sba0a5j4mK9+BCSd9y/PCwNQve5GjtXEj/QlgbKIDWA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQCr8RASL08zPQINZ/N9zNAFtGZ3GQH2DceRA46N8zowwgIhANZO3zcA1zVC0tVU2Re5DCvesC8xuE+HrMzvi8Gyd0HF"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/worker-pouch-1.0.3.tgz_1463752701886_0.9368551531806588"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.1.0": {
+			"name": "worker-pouch",
+			"version": "1.1.0",
+			"description": "PouchDB over a web worker",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/worker-pouch.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"worker",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/worker-pouch/issues"
+			},
+			"scripts": {
+				"prepublish": "npm run build",
+				"build-workerified-code": "node bin/build.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && npm run test-browser",
+				"build": "mkdirp dist && run-scripts build-workerified-code browserify min",
+				"browserify": "browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire > dist/pouchdb.worker-pouch.js",
+				"min": "UGLIFY=1 browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire | uglifyjs -mc > dist/pouchdb.worker-pouch.min.js",
+				"dev": "npm run build-workerified-code && browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"build-custom-worker": "browserify test/custom-api/worker.js --debug > test/custom-api/worker-bundle.js",
+				"test-custom-local": "run-scripts build-workerified-code build-custom-worker && zuul --ui mocha-bdd --local 9000 --no-coverage test/custom-api/test.js",
+				"test-custom": "run-scripts build-workerified-code build-custom-worker && zuul --ui mocha-bdd --phantom --no-coverage test/custom-api/test.js"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"blob-util": "^1.1.1",
+				"debug": "^2.1.3",
+				"inherits": "^2.0.1",
+				"js-extend": "^1.0.1",
+				"lie": "^2.6.0",
+				"pouchdb": "^5.0.0",
+				"pouchdb-binary-util": "^1.0.0"
+			},
+			"devDependencies": {
+				"bluebird": "^2.9.24",
+				"browserify": "^9.0.8",
+				"bundle-collapser": "1.2.1",
+				"chai": "^3.5.0",
+				"chai-as-promised": "^5.3.0",
+				"corsproxy": "^0.2.14",
+				"derequire": "^2.0.0",
+				"es3ify": "^0.1.3",
+				"es5-shim": "^4.1.1",
+				"http-server": "^0.8.5",
+				"jshint": "2.8.0",
+				"mkdirp": "^0.5.0",
+				"mocha": "^2.3.3",
+				"phantomjs-prebuilt": "^2.1.7",
+				"pouchdb-http-proxy": "^0.10.4",
+				"request": "^2.36.0",
+				"run-scripts": "^0.4.0",
+				"sauce-connect-launcher": "^0.11.1",
+				"selenium-standalone": "^4.7.0",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21",
+				"zuul": "^3.10.1"
+			},
+			"files": [
+				"lib",
+				"dist",
+				"client",
+				"worker"
+			],
+			"gitHead": "83532e4023bf41f7ea41ea1e0c1d9400bc4c73a7",
+			"homepage": "https://github.com/nolanlawson/worker-pouch#readme",
+			"_id": "worker-pouch@1.1.0",
+			"_shasum": "67485db98667f1f3bb5af6d3c1286213a0b67c25",
+			"_from": ".",
+			"_npmVersion": "3.9.3",
+			"_nodeVersion": "5.11.1",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "67485db98667f1f3bb5af6d3c1286213a0b67c25",
+				"tarball": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-1.1.0.tgz",
+				"integrity": "sha512-54vL/z/dyXHiwt02mnQT0OIkXyDsoeYUnK7IAIK7t/BAWyJjGG2Iysj/5u4BMzMyj0macV0AWqp3pMm7uvfeDQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIA+yGsk8GyCt2cPUJcHHGMtFDTRzkbH3GuXjeUi2sPq9AiA8KDX63W6SPsL35FTuC3c4PKPAv+3GzSwW6+VH8lSvfg=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/worker-pouch-1.1.0.tgz_1463967062800_0.9628117817919701"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.1.1": {
+			"name": "worker-pouch",
+			"version": "1.1.1",
+			"description": "PouchDB over a web worker",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/worker-pouch.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"worker",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/worker-pouch/issues"
+			},
+			"scripts": {
+				"prepublish": "npm run build",
+				"build-workerified-code": "node bin/build.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && npm run test-browser",
+				"build": "mkdirp dist && run-scripts build-workerified-code browserify min",
+				"browserify": "browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire > dist/pouchdb.worker-pouch.js",
+				"min": "UGLIFY=1 browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire | uglifyjs -mc > dist/pouchdb.worker-pouch.min.js",
+				"dev": "npm run build-workerified-code && browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"build-custom-worker": "browserify test/custom-api/worker.js --debug > test/custom-api/worker-bundle.js",
+				"test-custom-local": "run-scripts build-workerified-code build-custom-worker && zuul --ui mocha-bdd --local 9000 --no-coverage test/custom-api/test.js",
+				"test-custom": "run-scripts build-workerified-code build-custom-worker && zuul --ui mocha-bdd --phantom --no-coverage test/custom-api/test.js"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"blob-util": "^1.1.1",
+				"debug": "^2.1.3",
+				"inherits": "^2.0.1",
+				"js-extend": "^1.0.1",
+				"pouchdb-adapter-http": "^5.4.4",
+				"pouchdb-adapter-idb": "^5.4.4",
+				"pouchdb-binary-util": "^1.0.0",
+				"pouchdb-core": "^5.4.4",
+				"pouchdb-mapreduce": "^5.4.4",
+				"pouchdb-promise": "5.4.4",
+				"pouchdb-replication": "^5.4.4"
+			},
+			"devDependencies": {
+				"bluebird": "^2.9.24",
+				"browserify": "^9.0.8",
+				"bundle-collapser": "1.2.1",
+				"chai": "^3.5.0",
+				"chai-as-promised": "^5.3.0",
+				"corsproxy": "^0.2.14",
+				"derequire": "^2.0.0",
+				"es3ify": "^0.1.3",
+				"es5-shim": "^4.1.1",
+				"http-server": "^0.8.5",
+				"jshint": "2.8.0",
+				"mkdirp": "^0.5.0",
+				"mocha": "^2.3.3",
+				"phantomjs-prebuilt": "^2.1.7",
+				"pouchdb-browser": "^5.4.4",
+				"pouchdb-http-proxy": "^0.10.4",
+				"pouchdb-legacy-utils": "^1.0.0",
+				"pouchdb-memory": "^1.0.0",
+				"request": "^2.36.0",
+				"run-scripts": "^0.4.0",
+				"sauce-connect-launcher": "^0.11.1",
+				"selenium-standalone": "^4.7.0",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21",
+				"zuul": "^3.10.1"
+			},
+			"files": [
+				"lib",
+				"dist",
+				"client",
+				"worker"
+			],
+			"gitHead": "3d1cb97e24d289bd1335ae614736626a3189d57b",
+			"homepage": "https://github.com/nolanlawson/worker-pouch#readme",
+			"_id": "worker-pouch@1.1.1",
+			"_shasum": "971be74ca7a4c052f4911998eb5422fade442654",
+			"_from": ".",
+			"_npmVersion": "3.9.5",
+			"_nodeVersion": "5.11.1",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "971be74ca7a4c052f4911998eb5422fade442654",
+				"tarball": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-1.1.1.tgz",
+				"integrity": "sha512-JOlfGnuTefCSOAGnhthBu0bFIUGJi5sshDKl5ueAG56SX/Pr0hRhC7DQkpWso6UqJR5vmV8lUyhQkfnBHxIFRQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQD9OJ/8eFD+H6GcBL5kZ97S88lexsZQxNHHTKean5bx9wIgcS27PW7fUIoVthSu+XM6d2ijCB7ooNB4cnWc1Nxe7Ec="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/worker-pouch-1.1.1.tgz_1466688162661_0.07936474215239286"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"2.0.0": {
+			"name": "worker-pouch",
+			"version": "2.0.0",
+			"description": "PouchDB over a web worker",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/worker-pouch.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"worker",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/worker-pouch/issues"
+			},
+			"scripts": {
+				"prepublish": "npm run build",
+				"build-workerified-code": "node bin/build.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && npm run test-browser",
+				"build": "mkdirp dist && run-scripts build-workerified-code browserify min",
+				"browserify": "browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire > dist/pouchdb.worker-pouch.js",
+				"min": "UGLIFY=1 browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire | uglifyjs -mc > dist/pouchdb.worker-pouch.min.js",
+				"dev": "npm run build-workerified-code && browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"build-custom-worker": "browserify test/custom-api/worker.js --debug > test/custom-api/worker-bundle.js",
+				"test-custom-local": "run-scripts build-workerified-code build-custom-worker && zuul --ui mocha-bdd --local 9000 --no-coverage test/custom-api/test.js",
+				"test-custom": "run-scripts build-workerified-code build-custom-worker && zuul --ui mocha-bdd --phantom --no-coverage test/custom-api/test.js"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"blob-util": "^1.1.1",
+				"debug": "^2.1.3",
+				"inherits": "^2.0.1",
+				"js-extend": "^1.0.1",
+				"pouchdb-adapter-http": "^6.0.0",
+				"pouchdb-adapter-idb": "^6.0.0",
+				"pouchdb-binary-util": "^1.0.0",
+				"pouchdb-core": "^6.0.0",
+				"pouchdb-mapreduce": "^6.0.0",
+				"pouchdb-promise": "^6.0.0",
+				"pouchdb-replication": "^6.0.0"
+			},
+			"devDependencies": {
+				"bluebird": "^2.9.24",
+				"browserify": "^9.0.8",
+				"bundle-collapser": "1.2.1",
+				"chai": "^3.5.0",
+				"chai-as-promised": "^5.3.0",
+				"corsproxy": "^0.2.14",
+				"derequire": "^2.0.0",
+				"es3ify": "^0.1.3",
+				"es5-shim": "^4.1.1",
+				"http-server": "^0.8.5",
+				"jshint": "2.8.0",
+				"mkdirp": "^0.5.0",
+				"mocha": "^2.3.3",
+				"phantomjs-prebuilt": "^2.1.7",
+				"pouchdb-browser": "^6.0.0",
+				"pouchdb-http-proxy": "^0.10.4",
+				"pouchdb-legacy-utils": "^1.0.0",
+				"pouchdb-memory": "^6.0.0",
+				"request": "^2.36.0",
+				"run-scripts": "^0.4.0",
+				"sauce-connect-launcher": "^0.11.1",
+				"selenium-standalone": "^4.7.0",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21",
+				"zuul": "^3.10.1"
+			},
+			"files": [
+				"lib",
+				"dist",
+				"client",
+				"worker"
+			],
+			"gitHead": "37a0efc13f3a75980d360115ff7f3a5b7ac36552",
+			"homepage": "https://github.com/nolanlawson/worker-pouch#readme",
+			"_id": "worker-pouch@2.0.0",
+			"_shasum": "dc2b17577d706f241eeb3cf34665458e28f8b5f9",
+			"_from": ".",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.7.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "dc2b17577d706f241eeb3cf34665458e28f8b5f9",
+				"tarball": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-2.0.0.tgz",
+				"integrity": "sha512-b8NOMY1Wv9vcUSZzFZQRWB7y2JJSYFsZEPi60IKCaZkYDZoSB5Ir/wGBDjwPWEiE97UChINYpg2QwgoDKNYUGA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCICE8ANG9phW2TORsOFvN9Zilq84H0idO6a7kYBBjlW2+AiEAjhSTXUVa9W2WNTSBS5hrPQLGqZ+597XrWY+fj/z4QFE="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-18-east.internal.npmjs.com",
+				"tmp": "tmp/worker-pouch-2.0.0.tgz_1477877773545_0.19645877508446574"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"2.1.0": {
+			"name": "worker-pouch",
+			"version": "2.1.0",
+			"description": "PouchDB over a web worker",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/worker-pouch.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"worker",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/worker-pouch/issues"
+			},
+			"scripts": {
+				"prepublish": "npm run build",
+				"build-workerified-code": "node bin/build.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && npm run test-browser",
+				"build": "mkdirp dist && run-scripts build-workerified-code browserify min",
+				"browserify": "browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire > dist/pouchdb.worker-pouch.js",
+				"min": "UGLIFY=1 browserify -s workerPouch -p bundle-collapser/plugin . | ./bin/es3ify.js | derequire | uglifyjs -mc > dist/pouchdb.worker-pouch.min.js",
+				"dev": "npm run build-workerified-code && browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"build-custom-worker": "browserify test/custom-api/worker.js --debug > test/custom-api/worker-bundle.js",
+				"test-custom-local": "run-scripts build-workerified-code build-custom-worker && zuul --ui mocha-bdd --local 9000 --no-coverage test/custom-api/test.js",
+				"test-custom": "run-scripts build-workerified-code build-custom-worker && zuul --ui mocha-bdd --phantom --no-coverage test/custom-api/test.js"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"blob-util": "^1.1.1",
+				"debug": "^2.1.3",
+				"inherits": "^2.0.1",
+				"js-extend": "^1.0.1",
+				"pouchdb-adapter-http": "6.2.0",
+				"pouchdb-adapter-idb": "6.2.0",
+				"pouchdb-binary-util": "^1.0.0",
+				"pouchdb-core": "6.2.0",
+				"pouchdb-mapreduce": "6.2.0",
+				"pouchdb-promise": "6.2.0",
+				"pouchdb-replication": "6.2.0"
+			},
+			"devDependencies": {
+				"bluebird": "^2.9.24",
+				"browserify": "14.1.0",
+				"bundle-collapser": "1.2.1",
+				"chai": "^3.5.0",
+				"chai-as-promised": "^5.3.0",
+				"corsproxy": "^0.2.14",
+				"derequire": "^2.0.0",
+				"es3ify": "^0.1.3",
+				"es5-shim": "^4.1.1",
+				"http-server": "^0.8.5",
+				"jshint": "2.8.0",
+				"lodash.debounce": "4.0.8",
+				"mkdirp": "^0.5.0",
+				"mocha": "^2.3.3",
+				"phantomjs-prebuilt": "^2.1.7",
+				"pouchdb-browser": "6.2.0",
+				"pouchdb-http-proxy": "^0.10.4",
+				"pouchdb-memory": "6.0.0",
+				"request": "^2.36.0",
+				"run-scripts": "^0.4.0",
+				"sauce-connect-launcher": "^0.11.1",
+				"selenium-standalone": "6.4.1",
+				"uglify-js": "^2.4.13",
+				"watch-glob": "0.1.3",
+				"wd": "^0.2.21",
+				"zuul": "^3.10.1"
+			},
+			"files": [
+				"lib",
+				"dist",
+				"client",
+				"worker"
+			],
+			"gitHead": "ca62717a9356f47cc4985a0d2d552f70605e0ca1",
+			"homepage": "https://github.com/nolanlawson/worker-pouch#readme",
+			"_id": "worker-pouch@2.1.0",
+			"_npmVersion": "5.6.0",
+			"_nodeVersion": "8.9.0",
+			"_npmUser": {
+				"name": "garethbowen",
+				"email": "gareth@bowenwebdesign.co.nz"
+			},
+			"dist": {
+				"integrity": "sha512-QNKY1er1rdL+yG6sWdW1Hm7mWDScuIeiCkwY8KLTOsyMqStDYq1b/Zglgk3Yk15VJ60WPlIZPak0T25feFZLqw==",
+				"shasum": "c9c0a25b125e99087412d6abb4012405d70b34ad",
+				"tarball": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-2.1.0.tgz",
+				"fileCount": 24,
+				"unpackedSize": 613287,
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQCRWtZLg5KO7Hb2ERlMfJYsgsZqNYUXTkGg5tllvEFOEwIhAObQ6UcbFt0KkTCEXaOzIgku8wD95oYfvCBcQp9ya+nw"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"email": "gareth@bowenwebdesign.co.nz",
+					"name": "garethbowen"
+				},
+				{
+					"email": "jkleinsc@github.com",
+					"name": "jkleinsc"
+				},
+				{
+					"email": "nolan@nolanlawson.com",
+					"name": "nolanlawson"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/worker-pouch_2.1.0_1519596202961_0.5594211687548329"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-06-29T03:20:24.536Z",
+		"created": "2015-10-02T04:27:01.381Z",
+		"0.1.0": "2015-10-02T04:27:01.381Z",
+		"0.1.1": "2015-10-02T05:21:30.984Z",
+		"0.1.2": "2015-10-02T05:26:48.499Z",
+		"0.2.0": "2015-10-03T23:40:41.336Z",
+		"0.2.1": "2015-10-06T02:39:34.222Z",
+		"1.0.0": "2015-10-07T03:26:49.502Z",
+		"1.0.1": "2016-01-30T23:31:16.899Z",
+		"1.0.2": "2016-05-01T00:17:16.417Z",
+		"1.0.3": "2016-05-20T13:58:22.584Z",
+		"1.1.0": "2016-05-23T01:31:03.211Z",
+		"1.1.1": "2016-06-23T13:22:46.382Z",
+		"2.0.0": "2016-10-31T01:36:15.705Z",
+		"2.1.0": "2018-02-25T22:03:23.060Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "2.1.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"9e106454bf0b0126df3c5a4af62efaf4\"",
+			"fetched": 1734527740342
+		}
+	},
+	"_distfiles": {
+		"worker-pouch-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-0.1.0.tgz",
+			"sha": "bd61a1268089a358aa5fb1af4ef9344b163d5242",
+			"registry": "npmjs"
+		},
+		"worker-pouch-0.1.1.tgz": {
+			"url": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-0.1.1.tgz",
+			"sha": "4f28aa71128b11bd2b760a3f2b47f653913bdc2f",
+			"registry": "npmjs"
+		},
+		"worker-pouch-0.1.2.tgz": {
+			"url": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-0.1.2.tgz",
+			"sha": "5defd93e416cfe3723b533f6a743531673f03099",
+			"registry": "npmjs"
+		},
+		"worker-pouch-0.2.0.tgz": {
+			"url": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-0.2.0.tgz",
+			"sha": "ee8796eb227569b73bb16f7d5ed4e61172802db8",
+			"registry": "npmjs"
+		},
+		"worker-pouch-0.2.1.tgz": {
+			"url": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-0.2.1.tgz",
+			"sha": "bd6da061eeca3daea5794df5f9c40b826000fc8d",
+			"registry": "npmjs"
+		},
+		"worker-pouch-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-1.0.0.tgz",
+			"sha": "b077ada67f86b71bf10b76c718d745720c9d92a5",
+			"registry": "npmjs"
+		},
+		"worker-pouch-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-1.0.1.tgz",
+			"sha": "9f9c1910e52ea17b9b8e405dd1d190e2ad36e1b9",
+			"registry": "npmjs"
+		},
+		"worker-pouch-1.0.2.tgz": {
+			"url": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-1.0.2.tgz",
+			"sha": "8598656b6ad78870270021ca20ca906c90d67367",
+			"registry": "npmjs"
+		},
+		"worker-pouch-1.0.3.tgz": {
+			"url": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-1.0.3.tgz",
+			"sha": "1316f3c614c8d82c1fd61dd61d07d3a21ceea711",
+			"registry": "npmjs"
+		},
+		"worker-pouch-1.1.0.tgz": {
+			"url": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-1.1.0.tgz",
+			"sha": "67485db98667f1f3bb5af6d3c1286213a0b67c25",
+			"registry": "npmjs"
+		},
+		"worker-pouch-1.1.1.tgz": {
+			"url": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-1.1.1.tgz",
+			"sha": "971be74ca7a4c052f4911998eb5422fade442654",
+			"registry": "npmjs"
+		},
+		"worker-pouch-2.0.0.tgz": {
+			"url": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-2.0.0.tgz",
+			"sha": "dc2b17577d706f241eeb3cf34665458e28f8b5f9",
+			"registry": "npmjs"
+		},
+		"worker-pouch-2.1.0.tgz": {
+			"url": "https://registry.npmjs.org/worker-pouch/-/worker-pouch-2.1.0.tgz",
+			"sha": "c9c0a25b125e99087412d6abb4012405d70b34ad",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"worker-pouch-2.1.0.tgz": {
+			"shasum": "c9c0a25b125e99087412d6abb4012405d70b34ad"
+		}
+	},
+	"_rev": "3-30233a6dee5b0007",
+	"_id": "worker-pouch",
+	"readme": "worker-pouch [![Build Status](https://travis-ci.org/pouchdb-community/worker-pouch.svg)](https://travis-ci.org/pouchdb-community/worker-pouch)\n=====\n\n```js\n// This pouch is powered by Workers!\nvar db = new PouchDB('mydb', {adapter: 'worker'});\n```\n\nAdapter plugin to use PouchDB over [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Worker) and [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API). Transparently proxies all PouchDB API requests to the worker, so that the most expensive database operations are run in a separate thread.\n\nBasically, worker-pouch allows you use the PouchDB API like you normally would, but your UI will suffer fewer hiccups, because any blocking operations (such as IndexedDB or checksumming) are run inside of the worker.\n\nThe worker-pouch adapter passes [the full PouchDB test suite](https://travis-ci.org/pouchdb-community/worker-pouch). It requires PouchDB 5.0.0+.\n\n**Topics**\n\n* [Install](#install)\n* [Usage](#usage)\n  * [Easy Mode](#easy-mode)\n  * [Custom Mode](#custom-mode)\n* [Performance benefits of worker-pouch](#performance-benefits-of-worker-pouch)\n* [Fallback for unsupported browsers](#fallback-for-unsupported-browsers)\n* [Debugging](#debugging)\n* [FAQs](#faqs)\n* [Changelog](#changelog)\n\n\nInstall\n---\n\n    $ npm install worker-pouch\n\nUsage\n---\n\nThis plugin has two modes:\n* [Easy Mode](#easy-mode), for Web Workers, supporting Chrome and Firefox, with a fallback for other browsers, and\n* [Custom Mode](#custom-mode), potentially supporting more browsers, for Service Workers and allowing you to use your own Web Worker.\n\nIn Easy Mode, you don't need to set up the worker yourself, because the script is loaded in a [Blob URL](https://developer.mozilla.org/en-US/docs/Web/API/Blob). Whereas in Custom Mode, you must manage the Web Worker or Service Worker yourself.\n\n### Easy Mode\n\nYou can do Easy Mode either with prebuilt JavaScript or via Browserify/Webpack.\n\n#### Setup via prebuilt JavaScript\n\nThe client JS file is available at `node_modules/worker-pouch/dist/pouchdb.worker-pouch.js`. Or you can just download it from Github above (in which case, it will be available as `window.workerPouch`).\n\nThen include it in your HTML, after PouchDB:\n\n```html\n<script src=\"pouchdb.js\"></script>\n<script src=\"pouchdb.worker-pouch.js\"></script>\n```\n\nThen you can create a worker-powered PouchDB using:\n\n```js\nvar db = new PouchDB('mydb', {adapter: 'worker'});\n```\n\n#### Setup via Browserify/Webpack/etc.\n\nThe same rules apply, but you have to notify PouchDB of the new adapter:\n\n```js\nvar PouchDB = require('pouchdb');\nPouchDB.adapter('worker', require('worker-pouch'));\n```\n\n#### Detecting browser support\n\nUnfortunately, creating workers via Blob URLs is not supported in all browsers. In particular, IE, Edge, Safari, and iOS are not supported. Luckily, Firefox and Chrome are the browsers that [benefit the most from web workers](http://nolanlawson.com/2015/09/29/indexeddb-websql-localstorage-what-blocks-the-dom/). There is also an API to [detect browser support](#fallback-for-unsupported-browsers), which you must use if you would like to support browsers other than Firefox and Chrome.\n\n### Custom Mode\n\nIn this mode, you manage the Web Worker yourself, and you register the two endpoints so that worker-pouch can communicate with the \"backend\" and \"frontend.\"\n\nSince this doesn't require Blob URLs, and because you can use custom PouchDB objects, you can potentially support more browsers this way. It's much more flexible.\n\nThis mode only supports bundling via Browserify/Webpack/etc. There is no prebuilt option.\n\nTo use, you'll need this code on the client side:\n\n```js\n// client-side code\nvar PouchDB = require('pouchdb');\nPouchDB.adapter('worker', require('worker-pouch/client'));\n\nvar worker = new Worker('worker.js');\n\nvar db = new PouchDB('mydb', {\n  adapter: 'worker',\n  worker: worker\n});\n```\n\nNote that you create the `PouchDB` object passing in both `adapter: 'worker'`\nand `worker`, which points to your `Worker` object.\n\nThen you include this code on the worker side:\n\n```js\n// worker-side code\nvar registerWorkerPouch = require('worker-pouch/worker');\nvar PouchDB = require('pouchdb');\n\n// attach to global `self` object\nregisterWorkerPouch(self, PouchDB);\n```\n\nIf you would like to customize how `PouchDB` is created inside of the worker, then you can also pass in a custom PouchDB factory function, which is a function that takes an options object (e.g. `{name: 'mydb', auto_compaction: true}`)\nand returns a `PouchDB` object.\n\nThis is useful in cases where PouchDB's IndexedDB adapter doesn't work inside of a worker ([such as Safari](https://bugs.webkit.org/show_bug.cgi?id=149953)), so for instance you can have the `pouchCreator` function\nreturn an in-memory `PouchDB` object.\n\nHere's an example:\n\n```js\nvar PouchDB = require('pouchdb');\nrequire('pouchdb/extras/memory');\nfunction pouchCreator(opts) {\n  opts.adapter = 'memory'; // force in-memory mode\n  return new PouchDB(opts);\n}\n\nvar registerWorkerPouch = require('worker-pouch/worker');\nregisterWorkerPouch(self, pouchCreator);\n\n```\n\nThe PouchDB worker code will listen for messages from the client side, but should ignore any non-worker-pouch messages, so you are free to still use `worker.postMessage()` as desired.\n\n#### Service Workers\n\nCommunicating with a Service Worker is the same as with a Web Worker.\nHowever, you have to wait for the Service Worker to install and start controlling the page. Here's an example:\n\n```js\nnavigator.serviceWorker.register('sw.js', {\n      scope: './'\n    }).then(function () {\n      if (navigator.serviceWorker.controller) {\n        // already active and controlling this page\n        return navigator.serviceWorker;\n      }\n      // wait for a new service worker to control this page\n      return new Promise(function (resolve) {\n        function onControllerChange() {\n          navigator.serviceWorker.removeEventListener('controllerchange', onControllerChange);\n          resolve(navigator.serviceWorker);\n        }\n        navigator.serviceWorker.addEventListener('controllerchange', onControllerChange);\n      });\n    }).then(function (serviceWorker) { // the worker is ready\n      db = new PouchDB('testdb', {\n        adapter: 'worker',\n        worker: function() {\n          return serviceWorker;\n        }\n      });\n      return db;\n    }).catch(console.log.bind(console));\n  });\n```\n\nThen inside your Service Worker:\n\n```js\n// worker-side code\nvar registerWorkerPouch = require('worker-pouch/worker');\nvar PouchDB = require('pouchdb');\n\n// attach to global `self` object\nregisterWorkerPouch(self, PouchDB);\n\nself.addEventListener('activate', function(event) {\n  event.waitUntil(self.clients.claim()); // activate right now\n});\n```\n\nPerformance benefits of worker-pouch\n----\n\nThese numbers were recorded using [this site](http://nolanlawson.github.io/database-comparison-worker-pouch/). The test involved inserting 10000 PouchDB documents, and was run on a 2013 MacBook Air. Browser data was deleted between each test.\n\n| | Time (ms) | Blocked the DOM? |\n| ----- | ------ | ------ |\n| *Chrome 48* | | |\n| &nbsp;&nbsp;&nbsp;`put()` - normal | 50070 | No |\n| &nbsp;&nbsp;&nbsp;`put()` - worker | 56993 | No |\n| &nbsp;&nbsp;&nbsp;`bulkDocs()` - normal | 2740 | Yes |\n| &nbsp;&nbsp;&nbsp;`bulkDocs()` - worker| 3454 | No |\n| *Firefox 43* |  | |\n| &nbsp;&nbsp;&nbsp;`put()` - normal | 39595 | No |\n| &nbsp;&nbsp;&nbsp;`put()` - worker | 41425 | No |\n| &nbsp;&nbsp;&nbsp;`bulkDocs()` - normal | 1027 | Yes |\n| &nbsp;&nbsp;&nbsp;`bulkDocs()` - worker| 1130 | No |\n\nBasic takeaway: `put()`s avoid DOM-blocking (due to using many smaller transactions), but are much slower than `bulkDocs()`. With worker-pouch, though, you can get nearly all the speed benefit of `bulkDocs()` without blocking the DOM.\n\n(Note that by \"blocked the DOM,\" I mean froze the animated GIF for a significant amount of time - at least a half-second. A single dropped frame was not penalized. Try the test yourself, and you'll see the difference is pretty stark.)\n\nFallback for unsupported browsers\n----\n\nIn Easy Mode, this plugin doesn't support all browsers. So it provides a special API to dianogose whether or not the current browser supports worker-pouch. Here's how you can use it:\n\n```js\nvar workerPouch = require('worker-pouch');\n\nworkerPouch.isSupportedBrowser().then(function (supported) {\n  var db;\n  if (supported) {\n    db = new PouchDB('mydb', {adapter: 'worker'});\n  } else { // fall back to a normal PouchDB\n  db = new PouchDB('mydb');\n  }\n}).catch(console.log.bind(console)); // shouldn't throw an error\n```\n\nThe `isSupportedBrowser()` API returns a Promise for a boolean, which will be `true` if the browser is supported and `false` otherwise.\n\nIf you are using this method to return the PouchDB object *itself* from a Promise, be sure to wrap it in an object, to avoid \"circular promise\" errors:\n\n```js\nvar workerPouch = require('worker-pouch');\n\nworkerPouch.isSupportedBrowser().then(function (supported) {\n  if (supported) {\n    return {db: new PouchDB('mydb', {adapter: 'worker'})};\n  } else { // fall back to a normal PouchDB\n  return {db: new PouchDB('mydb')};\n  }\n}).then(function (dbWrapper) {\n  var db = dbWrapper.db; // now I have a PouchDB\n}).catch(console.log.bind(console)); // shouldn't throw an error\n```\n\nDebugging\n-----\n\nworker-pouch uses [debug](https://github.com/visionmedia/debug) for logging. So in the browser, you can enable debugging by using PouchDB's logger:\n\n```js\nPouchDB.debug.enable('pouchdb:worker:*');\n```\n\nFAQs\n---\n\n#### Wait, doesn't PouchDB already work in a Web Worker or Service Worker?\n\nYes, you can use pure PouchDB inside of a Web Worker or Service Worker. But the point of this plugin is to let you use PouchDB from *outside a Web Worker or Service Worker*, and then have it transparently proxy to another PouchDB that is isolated in a Web Worker or Service Worker.\n\n#### What browsers are supported?\n\nOnly those browsers that 1) Allow service workers or 2) Allow blob URLs for Web Worker scripts and allow IndexedDB inside of a Web Worker. Today, that means Chrome and Firefox.\n\n#### Can I use it with other plugins?\n\nNot right now, although map/reduce is supported.\n\n#### Don't I pay a heavy cost of structured cloning due to worker messages?\n\nYes, but apparently this cost is less than that of IndexedDB, because the DOM is significanty less blocked when using worker-pouch. Another thing to keep in mind is that PouchDB's internal document representation in IndexedDB is more complex than the PouchDB documents you insert. So you clone a small PouchDB object to send it to the worker, and then inside the worker it's exploded into a more complex IndexedDB object. IndexedDB itself has to clone as well, but the more complex cloning is done inside the worker.\n\n#### Does replication occur inside the worker?\n\nIt's a bit subtle. The answer is **yes**, if you do this:\n\n```js\nvar local = new PouchDB('local', {adapter: 'worker'});\nlocal.replicate.to('http://example.com/db');\n```\n\nHowever,  the answer is **no** if you do:\n\n```js\nvar local = new PouchDB('local', {adapter: 'worker'});\nvar remote = new PouchDB('http://example.com/db');\nlocal.replicate.to(remote);\n```\n\nThe reason is that when you create a remote PouchDB using `new PouchDB('http://example.com/db')`, then that runs inside the UI thread. However, when you `.replicate.to('http://example.com/db')`, then that string is passed ver-batim to the worker thread, where `worker-pouch` becomes responsible for creating the remote PouchDB. Hence replication will occur inside of the worker thread.\n\nIn general, if you are very concerned about performance implications of what runs inside of the woker vs what runs outside of the worker, you are encouraged to _not_ use `worker-pouch` and to instead just run PouchDB inside a worker and handle message-passing yourself (might I recommend [promise-worker](https://github.com/nolanlawson/promise-worker)?). This is the only way to really ensure that _all_ PouchDB operations are isolated to the worker.\n\nChangelog\n-----\n\n- 1.1.0\n  - Adds the Custom Mode API\n- 1.0.0\n  - Initial release\n\nBuilding\n----\n\n    npm install\n    npm run build\n\nYour plugin is now located at `dist/pouchdb.worker-pouch.js` and `dist/pouchdb.worker-pouch.min.js` and is ready for distribution.\n\nTesting\n----\n\n### In the browser\n\nRun `npm run dev` and then point your favorite browser to [http://127.0.0.1:8000/test/index.html](http://127.0.0.1:8000/test/index.html).\n\nThe query param `?grep=mysearch` will search for tests matching `mysearch`.\n\n### Automated browser tests\n\nYou can run e.g.\n\n    CLIENT=selenium:firefox npm test\n    CLIENT=selenium:phantomjs npm test\n\nThis will run the tests automatically and the process will exit with a 0 or a 1 when it's done. Firefox uses IndexedDB, and PhantomJS uses WebSQL.\n\n### Running the custom-api tests\n\nRun:\n\n    npm run test-custom\n\nOr to debug:\n\n    npm run test-custom-local"
+}

@@ -1,0 +1,979 @@
+{
+	"name": "@types/pouchdb-find",
+	"versions": {
+		"0.10.0": {
+			"name": "@types/pouchdb-find",
+			"version": "0.10.0",
+			"author": "Jakub Navratil <https://github.com/trubit>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-find@0.10.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "aabd9d59ddc5d01e6a8609078bb68de6346f9ab7",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-0.10.0.tgz",
+				"integrity": "sha512-NrQTwy7j8k5WYATk3O3fupJqR2qQZQqeQNkWKNr/4g2KUg0tolpu2QEtZLhsykTaItIUHDmb/O7b57QYRNzJpw==",
+				"signatures": [
+					{
+						"sig": "MEQCIAnulQEmH80pAK9JApQzMtGkgUJDEk/b1Id7Ue/Ya5AxAiBJKU/T7QzpdOqb0DOx5DBysKE3fIFThWXHTLG3zR3lhA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-find",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-find-0.10.0.tgz_1480459243628_0.888589960988611",
+				"host": "packages-18-east.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "665866dd75c58da94e4c79cc89fcb400de2fd455cc7b81e6f2cd1063a96d7c6f",
+			"contributors": []
+		},
+		"0.10.1": {
+			"name": "@types/pouchdb-find",
+			"version": "0.10.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb-find@0.10.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil"
+				}
+			],
+			"dist": {
+				"shasum": "286d2196135b15be685f3d895f0ac928d0c04eb3",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-0.10.1.tgz",
+				"integrity": "sha512-mFo2fSDgHhqVimBfcOGmYeRiyPNnKaVsBxeC8Ey1A4lOWQnZbZnk/7SLJ15ZPPLyftQOgQA9KHAewK1jrrjRoA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDXWZIu78A23jYlqaSk2rUEJHw4AyN7JZbmZtxXrSAunAIgA185IIRoSXpe8OaneWcZg8BXa/pbVwOQd1mjMxF2uZY=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-find",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-find-0.10.1.tgz_1497557832887_0.36083002225495875",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "d86b186bcaa67970248f8131a8f065d7979bd0cbb33d3f64c2915ebe280b0568"
+		},
+		"6.3.0": {
+			"name": "@types/pouchdb-find",
+			"version": "6.3.0",
+			"license": "MIT",
+			"_id": "@types/pouchdb-find@6.3.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil"
+				}
+			],
+			"dist": {
+				"shasum": "d15372b4fa8355b78e99120f871cf300da01d6af",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.0.tgz",
+				"integrity": "sha512-bEWjwmonPKZDUiwQceu2zox09Ol9EFBxsZ+hFdJTVgUk7Totk0Js32uzAqNUXTNOmmdwVc89Bb+QrP/PuY/81g==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCpGCsnA7vimBArWpRAcCeQRhLY29BVtxm8AdcVGRE+HgIhAOKUW3+Km6wU0ieDBHe+Dt8XcBhiDGLhLKOJCp3B3n8S",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-find",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-find-6.3.0.tgz_1500750697235_0.17018835968337953",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "d09d7d49be22c6072210f52d154d62da1270641b0138e615ba8d708b0db2ae97"
+		},
+		"6.3.1": {
+			"name": "@types/pouchdb-find",
+			"version": "6.3.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb-find@6.3.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				}
+			],
+			"dist": {
+				"shasum": "1e39e31d87613ffc2232276b66e24066a30c6d34",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.1.tgz",
+				"integrity": "sha512-71hq6e9mg8qBfw2VkkDqecT9mh9RnNq5q3+AruO/54JjRQ6MspALXlJz/bPHadv/OxsXJIz/s/kQveqwyVPMdQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIB+SkMTcwlRSVk9ORHa8YwUFxIMAixWvUSRs2jbaPLDaAiAEsu0zkTeJvZx1tm84EB0rSAd8OmeQ+zHjRzJmdh1MuQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-find",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-find-6.3.1.tgz_1508948427936_0.36843781801871955",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "8d14e6959ce0105fc6f4795e744fb00410e303fd6f5b033f7bf87914686b6a62"
+		},
+		"6.3.2": {
+			"name": "@types/pouchdb-find",
+			"version": "6.3.2",
+			"license": "MIT",
+			"_id": "@types/pouchdb-find@6.3.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				}
+			],
+			"dist": {
+				"shasum": "5ae01b99fb69b09737a438b5e2ba68ddf1927a63",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.2.tgz",
+				"integrity": "sha512-ma5L+iIxub8HoVlz6GJk2pir8MOLIboj6beJl3QnHW9R951ebwcVQiPjZZf8+R5ZYPUWibS5ZyYasOb89CxthQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIDdsz3JE6urfqlYUOofwf3sCmsTwef56UVR6/lYacSFuAiB404OZxW8QFpMis/aZSVS/U7vWz44eV9fS+pniqvMhzQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-find",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-find-6.3.2.tgz_1513287307103_0.364653617143631",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "aa43138c412a826ae39623ea739e3f4bceb8d489478a00ed3f1fe7b090d9b544"
+		},
+		"6.3.3": {
+			"name": "@types/pouchdb-find",
+			"version": "6.3.3",
+			"license": "MIT",
+			"_id": "@types/pouchdb-find@6.3.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastian Ramirez",
+					"githubUsername": "tiangolo"
+				}
+			],
+			"dist": {
+				"shasum": "dbad75ba362677d03027ac3e2e5d1361ff296152",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.3.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-VF/t7JzoNxybPQCav0aWmb9TDuqXj7hYhOat/Ys8zITZ1o35FujJOKmBZdV5gtCC2aDQMBjaD6VVUxcwvF8NWA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCz/v7TVoqo7k7rumFvJ+qZHYbjam+NF6j9t3JmerfB0AIhAJcLJYUpFzKaBBiovp97VCNRtuFuKPcPgW4uoLY3UehN",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 9455,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbKvGvCRA9TVsSAnZWagAAFeUP/i4OYGW/D13X2uHBrAl1\neeJrK8KSjzP4xjDTAeu5cXW6xDVJr+gindEk4LZg7Z99ysvehp8DxWYbey69\ndbcckP2JZGbbG6g++tVaOy6ZYSdLRbfo16lgqF0POyjhVaZ0gAVABaGOXNKo\n63y6D1oyRbvBZKRpV41DbFDEyRVYPCWwdGwEFGqhhi1q8b6AlFbzEtvUUbjZ\n9Uc+twFnM5RTeSScy+8bGqLTFZWamHj5yv0gnTYSFKwpjTGs7Q7zhDre7PCh\nB0M8NfvIwqZkod3qau0nFVIolInYBE/UrC83WXkOzsCxdcgwhlP0aTgpL6wa\n5Y3VL9BIknOV94unk4psrVDpAZ1V/Z7W/G8s2gERqDz/HAJJ9vOMfYmy+Z/5\nlULPRxQLEkKDsKA5ODzD75Hr0EQIzA8PTiFdzEu1aWKhx6/R7pj9VXQrZyDU\nbbVg7+7GY/1WyzhiaAvyRkoCKQhZmF7z53qlDk+y/c/ppC+cxQTF+DrQZfYI\nA3WAxV4KbjTYheFB/iJsPiUQr8/SCKuQGiTkN6SE0TDX29YG7CacnMGCbvLK\nHTCBFiQi0/gArfCht9CMv2HQhQHGaGxkfoTyNFGqv2REu47Q7iBv76TM9Hm7\nZ6IL/bkQeLyUL975cIifboS31+u8HJACLLJYAOcUXkmw64s6kagO7Jy9R7i2\nyxSz\r\n=Ccjv\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-find",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-find_6.3.3_1529541039534_0.9473007745134296",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "d3f04d375a9f1f49c7e5b327ad188ff131ff925e3eedda00ed9957ed42f9ba74"
+		},
+		"6.3.4": {
+			"name": "@types/pouchdb-find",
+			"version": "6.3.4",
+			"license": "MIT",
+			"_id": "@types/pouchdb-find@6.3.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastian Ramirez",
+					"githubUsername": "tiangolo"
+				}
+			],
+			"dist": {
+				"shasum": "899256e9cc924ae6ab5414b5a978808f5b003919",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.4.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-yT959pA3JgQns4Z9mlmuuUd6kEg7mSgRnF+XVN/EjFjuhZjKgR79+ia2R/UtUPKLtsm63IX6uHZFSPvkDhU/rA==",
+				"signatures": [
+					{
+						"sig": "MEQCIDI7rG0/vUKF23FlCYUmPCztOE3jqNZpswrsNsw1wpK/AiALUD80gPie2qD8npwaoOtC6ouR2UciydXjdVkrOcdIFA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 9543,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcZJJtCRA9TVsSAnZWagAAn40P+wQspsW6v+1sDupxP17H\nSSmlgP9Ge4dxKPBMwoU8IQxFOXMkcdgXin2w6FlSbRCPwWx53zcF7Zb66lgk\nRJt5XO1k0z0VYQ8z5oxt8flMtwCsaKAWS1/5y5pZ+1j/fkBrpqvSXWGt8eiz\nFeM/kuOafTaJbF4ASibVgZSJDEgw99ZlqCF9tr5ws6AX+xJpg5PDgUrJ+OoJ\n7buTJQz0vWqRIbPnGDaweEy7n4DVB4S+SKwI017jXohjP8R9VjTln9ia+JZk\n8KUFymFiBKIqZBagyoomSCIGFwasHYA6Y4uY/kNAzW601Ivz0khM4tPpiFmR\n4W4RvXPJHafVppTy4Crt06UY+B2kn2ZngZpLacQ9H6qc9oZSFYRuyflBgngb\nMTwVpQvhi3HEjES7J4FTO16kcbNJSDLqkkR6jpl0p+C9MEK8bfZxWciyyVMf\nkYrT6atviCFpZO+0YY3h44E0XRvY87ZCxwkhFmqkfgonZdiMw6jKIKk9fOB4\nmcjAGfGYcgkloHnRZP5Z4GhfLkNn0qJu4d/UQhoVWHMkwCLZC/uf1gsEaoyr\npZk3Cllm4aElYfOvLJ5AMaQCUkMgjDD8orNTxiJNRj+ukmPEL0yVRBntXZFN\nBEqx0XeeDnoM3cuJwpPrZwg0n4athTIjY7kZalaC1t4z0dR1q9lIe9BSikyp\n3nu8\r\n=V+fG\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-find",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-find_6.3.4_1550094956827_0.7998753908079936",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "f24fa11ffe4cf6bcd26a7a7f9bf2fa2c3a6229fc73b3afe50a1d6c80f1cba5ea"
+		},
+		"6.3.5": {
+			"name": "@types/pouchdb-find",
+			"version": "6.3.5",
+			"license": "MIT",
+			"_id": "@types/pouchdb-find@6.3.5",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastian Ramirez",
+					"githubUsername": "tiangolo"
+				}
+			],
+			"dist": {
+				"shasum": "439002c935b9f8cfab67a0faa044d098e566dfe5",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.5.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-YvtUQyi1xmPcx/I7AAWVpaX2uIWCnY9c0MvNyCcHOtdgPj2iG8d4tEZHmD2LJ9wvKoz4f+KV9LPeo6/BnsF22Q==",
+				"signatures": [
+					{
+						"sig": "MEUCIQC51QnsA5XSdCVxtzI4SDd9qOkb24Pzk73OfYKkqGVK9gIgCl6gyRmq5tKTmRba3dNygbMbicszezUIO5whFzJjij4=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 9677,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJePE4qCRA9TVsSAnZWagAA8zkP/3S91UdU2P2+c6G7aS2R\n6rT4p9rkFAg6Hrgn3v1qTre6wx1Roh6S/HS0rfx2Qri3kDRB53rRTtxL7yER\nEVOkLhLaZl1Owq7RQQBi0qPQZZCycKyl1vG3qmgiRCcTeiPtZwun/77zOTJw\nCupONjr7BHNbxkmBrFRvP3BT+8DC+CwXpNnIXvpqxuvZED1NDbwI4oNfyWUV\nkFZJDG10F+wreFSa/CtyisilEVxjTlB5O0FEkuBAPbr5Uf8juMIr6GZ9bIEs\npelNQ3rnk54BER7ByYe/5OY/JAnd+alsRYp9CqWSRJasaMOJ32c9ys+3LFQ9\n5lgLNuuVmf3NCGjT2KHh+FGbXiYs+Fe6tDdTZ8Yw4al+fTL3zgUYoonoP2lX\nqKxI2J+FNRs8prB9IIPJtDE+zZGOPnhdct2WECRagTOXDc7yrX5A8hae7avl\naINUs6w1gk5D36zYihza5ojn4c2lcVHOWUxc9eMoMw5HGuoK1XSYitCtKZTg\nuC2CmqDrLHfE66q/qT/Tf6b35YehlEtX0ODX0P6eMtQ8K8I3vrkDyFSNniyL\ncJ3SfTTvzNPMHYwAEYPNg1A5odzWM9tV+oksFbFtoK+MUdlrPfq2v0s13MEt\ndEfQfN/r5ydFUKamggw+MThRcdA+cmcfTWmidivEQRFUhnsFpj7dyMfnTk5v\ngj+E\r\n=F6RE\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-find"
+			},
+			"description": "TypeScript definitions for pouchdb-find",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.8",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-find_6.3.5_1581010474467_0.9611518083105963",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "ee4da28b20a9b612efdb467be41de89fc6e59fcd98ebf06eb593eef1f8092a28"
+		},
+		"6.3.6": {
+			"name": "@types/pouchdb-find",
+			"version": "6.3.6",
+			"license": "MIT",
+			"_id": "@types/pouchdb-find@6.3.6",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastian Ramirez",
+					"githubUsername": "tiangolo"
+				}
+			],
+			"dist": {
+				"shasum": "a0b7bd980e0b2962750e41bd992d013f643c4d75",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.6.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-qXgkYfmwUIMCtFcX959ywYyFYJp23Er3btfWNwm1wyYpPK9uuJD8Zh7OmcyFLzWKZG7c8eLHVvGGOp4NysHjDg==",
+				"signatures": [
+					{
+						"sig": "MEUCIAeLyDIJlj0AhaDKQ86B3+cThz02bFVN4htLmtxcRt1kAiEAv0Idt9vTwYB6Rl394MPIshQHTotYxa4WBxSvrm4L7lQ=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 9646,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfH9ZACRA9TVsSAnZWagAALdAP/1dTJsH8V4Y65lwK5rPr\nb0zWkg5N2r+UM6wSKkeuWWvbkCjLTm0s2ivxXADN2lvJBlO00K5mU/fJatvQ\nBEG9cNhgIAj0UkAAWegy0h0pHKCtm85PzYXGd94ORN0GU24VEhv/+2tciO8p\na1sz2BSVep1b8QgFXjqR0jgR9k/TL4rjKrfzq0jFH0p70L+fGA4kW1aZsjWW\nxkxekTz4VDR8F5vJhfBhvRH4/VX4D++PCGpc4nPOKieB2v62KuwcwxMuFtVJ\nlFrA17yJNw27CAjrYRivVdDUCSC0jG1yQyzevkkfezyoLuREQUe7RQwDxR22\nCUqWiJJztUrth7pJnlI8YX90I8dx3LTCGS0LoYi8JkgNK6LJ9zAGK7cnYrQm\nxq1c6IUs1IwdDw3P735Yl9ZWz9t+myPRICR/8kkF9gdOQJ1R7CwnR4iC/kaV\nkc5O9suGXqc778ycdqZuz7OyqN2omCb2JoqwU/tnWew3bEDcGvUhZDdxkD0J\nhHgMza/cIK6/quYUFcjVFR/STsnntUzefDrZ4aUr2aGhzMprvvb2FtDkJb5+\nLkQIKGbSOxeL9fyqBwwX++JiS8P+Enm7J46OUJYz1GAglwsZHN8fn8nnb2Vj\njwk85Qw73sQijcXPkBDufBoL/Ef2SZmL5uLQOTSnkSckh1Nc5FRRcQjyeQW3\nxXU+\r\n=Z4UJ\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-find"
+			},
+			"description": "TypeScript definitions for pouchdb-find",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "3.0",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-find_6.3.6_1595921984183_0.1883215705458996",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "ca97ab211073bf57689e3901715955805f77d6182a2ed78ebe71ede17ba39cdf"
+		},
+		"6.3.7": {
+			"name": "@types/pouchdb-find",
+			"version": "6.3.7",
+			"license": "MIT",
+			"_id": "@types/pouchdb-find@6.3.7",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastian Ramirez",
+					"githubUsername": "tiangolo"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-find",
+			"dist": {
+				"shasum": "f713534a53c1a7f3fd8fbbfb74131a1b04711ddc",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.7.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-b2dr9xoZRK5Mwl8UiRA9l5j9mmCxNfqXuu63H1KZHwJLILjoIIz7BntCvM0hnlnl7Q8P8wORq0IskuaMq5Nnnw==",
+				"signatures": [
+					{
+						"sig": "MEUCIBIjI/iVk3KwlDFMXFSGyifWZlh+LoU3MdMjavsnxmRGAiEAhyrUfetA96RhckQe7DSRkbVPXk/SlH2z2SVpVCqx7oI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 10035,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg5eDrCRA9TVsSAnZWagAAI4AP/iqUb4bSPFvOPsL4ejAk\nQI7BWpKzew1UA3ZAEdAvoNadjJcBJMCJ21+JAo/476KtWNQGVddmnIyiVAtV\n3epGcEe18R1uCGTmIuEulgOwugyZgcqTeHSp0dINBOejro7i1P6MGqKM6c1+\nKUMLYe8GnImp5afCPdwC3ENbcED69XV/jdxFj71wlEOrzBflf9PwxrDzdz3p\nKokkhqjws8i2jhbJbjdUS49GEAN3KcVbTlyzTeWDSv6rqEbrGr2l2qemAqUd\nu8sKZvsKAFAfUAOBl1tfqf8oSecayjIegt6PzKiAy6kBQKJBFGa7Tu0iGpnk\ngEzWsusGn4YUdQDXe/VMquI3V0fGyGErwYdJ1Ym1q8Jro0Az17TNp5hDOqf7\n5eAk23/xQCY/KwYVD9GEwfcL2AM7kPKhDsv33TI0zEMLpQiSRBR7WOWI0A+h\ncM76JrOj6u1a2GLMQEA4sX5Zkv+iukOv+1MJ5SIuC8cO/lspvs6YO4FmnAEf\nZEDpc3/HvepoButPRcRzxe7iYeUSmRQyU4r/bHHKP4sg5FOyaew9MkAryQfQ\nWY0RdGORJ8z7PceHtSC6RrGXuJ+pr7TVU6Iip40uP77gniIORt2ghoyshx8q\naBrpMDI2SYyfgvrw2VWFSVsTQwiieWKdoSuv7oRMawaAKLCy54AVxlQcFXVO\nDpy6\r\n=q+XR\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-find"
+			},
+			"description": "TypeScript definitions for pouchdb-find",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "3.6",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-find_6.3.7_1625678059231_0.09049157441009514",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "4f91d1f47f6b319785563d0a4d81e3aa7b0e3cd0641a3f4ea093347fcd0927ef"
+		},
+		"7.3.0": {
+			"name": "@types/pouchdb-find",
+			"version": "7.3.0",
+			"license": "MIT",
+			"_id": "@types/pouchdb-find@7.3.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastian Ramirez",
+					"githubUsername": "tiangolo"
+				},
+				{
+					"url": "https://github.com/kuzmatech",
+					"name": "Samuel Kerr",
+					"githubUsername": "kuzmatech"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-find",
+			"dist": {
+				"shasum": "b917030e9f4bf6e56bf8c3b9fe4b2a25e989009a",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-7.3.0.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-sFPli5tBjGX9UfXioik1jUzPdcN84eV82n0lmEFuoPepWqkLjQcyri0eOa++HYOaNPyMDhKFBqEALEZivK2dRg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDvQZPIRdPve+C840p53pG2Pd6kEwtXk4FJZnqBPtT+QgIgb9TWD6LUmyN8/26RjHqmg+KQgFRvPlblgBtqvxMyXPw=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 10506,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjPQIHACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrR1hAAm/GPM3yqwizXTd4K2uayq+Ms0Qk/JKmr5mc0rIrhW92TMl6z\r\n+sVe8OFtJQCc3fdQksDew3QABOjum396jWwuQ5/TvgWD/jXlcikSUt9akAu5\r\nx7cbQ2uNzzsrx+0w1V3CiAn8QR11qb4nWhCYUkvVU++1oJOpQWG5UgP0V25g\r\n5thlsQptnwEmPWnkXWwfXXEdQQUbtIjk1hsV5JCHPsn8VOJJWORNwIIC/ifi\r\nXjLY1n7zqoomwC8ovJbliOuJ/RwvC0LUpxUxwoiplPhNyvJyo2xZ9z3lsW9h\r\nP8fDXV4HIwCyhlM6Kz189GHsovzTOg2QQKzdKIZw0h8LSoXX56jH6Gpdv9/x\r\nfw1+3sRgGTwa2e3f4V3d7voHvTYbxXtEqgXvfBbT8U1Q+h6mBz0mwv8RmdDh\r\n92YeTgDpgFLM0qmsQ544gTTneTeW3mfqn5MuvqNTxHDyhk4PSteDdQ7fyynT\r\nuN7j/LZ0s5rLL0ie8IU7UYPgzu2jRIhQPeoQKgQRLDyhQhvY8Wn54ky0viF6\r\n52hInz6fx8XEfaRkHQBwJ020ollGRbCiubQCTaP/WjF9xJX7BIIaCUnBaGfK\r\ngh/bbdp3qgy/Oc3dLjCGYzszM61VzbJyNxRgo3DlWR0u5Ov0L+eZjVf2MIWs\r\nj6E3yzUYv8mef6kDzb1IKGU3uGD4PBytHwM=\r\n=EsaW\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-find"
+			},
+			"description": "TypeScript definitions for pouchdb-find",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.1",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-find_7.3.0_1664942599163_0.6842678120432377",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "b87c72de95ad9e7984f7a86596a98803967592b6241ae844f9a451a6277b422a"
+		},
+		"7.3.1": {
+			"name": "@types/pouchdb-find",
+			"version": "7.3.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb-find@7.3.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastian Ramirez",
+					"githubUsername": "tiangolo"
+				},
+				{
+					"url": "https://github.com/kuzmatech",
+					"name": "Samuel Kerr",
+					"githubUsername": "kuzmatech"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-find",
+			"dist": {
+				"shasum": "546e0fb54513b3f5f82ba3bf1dd1152c3822c3a2",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-7.3.1.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-zCN3M74PS+3c/tc6Cu8y8392L1JzBdvKRDtWyeET0gl2zCPyw0DiYHJX6FEjZBJJzQPVFG36RTpvbCA8zx/XHQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDWp2vpdsgvmntVjYgowLPa25R/pnoLhSkF0whAB3tWowIhAJ6tBW7y0z74SCKGudw9uPZv1I8H2BSBiUnNG7o6WRCQ",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 10459
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-find"
+			},
+			"description": "TypeScript definitions for pouchdb-find",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-find_7.3.1_1695539243266_0.7054603890627531",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "16cb3f9e5cbadaefc753463bd18befb389ed291732e566ae51a305d6b08bcdee"
+		},
+		"7.3.2": {
+			"name": "@types/pouchdb-find",
+			"version": "7.3.2",
+			"license": "MIT",
+			"_id": "@types/pouchdb-find@7.3.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastian Ramirez",
+					"githubUsername": "tiangolo"
+				},
+				{
+					"url": "https://github.com/kuzmatech",
+					"name": "Samuel Kerr",
+					"githubUsername": "kuzmatech"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-find",
+			"dist": {
+				"shasum": "8757fece0ade56dd856b773e11f270c489a0e4ec",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-7.3.2.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-H4D+2gpGfoJCXURDJR6dIg6bKpFN3X46CQZEmEOeYSy5xGguEXokU+oKQ3HrIlD9p2eA4aonuh5I8uSTMSLprw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC/PvYdVMcbrwPARR8ha5yfIqoFJoiq4fqi9ms/9FMp+AIhAK8R2iWmP2MrHhYB2yzHoi4RCbb9+Iirsp+SA2Am4Fos",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 10039
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-find"
+			},
+			"description": "TypeScript definitions for pouchdb-find",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-find_7.3.2_1697627829740_0.4131823548187221",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "71c6e05beb266ba33c19f59c91f75e063a457c74d212c473c3f91ac35f6c0e1a"
+		},
+		"7.3.3": {
+			"name": "@types/pouchdb-find",
+			"version": "7.3.3",
+			"license": "MIT",
+			"_id": "@types/pouchdb-find@7.3.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastian Ramirez",
+					"githubUsername": "tiangolo"
+				},
+				{
+					"url": "https://github.com/kuzmatech",
+					"name": "Samuel Kerr",
+					"githubUsername": "kuzmatech"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-find",
+			"dist": {
+				"shasum": "599e388e2a1c4e57ee8aba0d5deca24d37b6978e",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-7.3.3.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-U7zXk67s9Ar+9Pwj5kSbuMnn8zif0AOOIPy4KRFeJ/S/Tk+mNS90soj+3OV21H8xyB7WTxjvS1JLablZC6C6ow==",
+				"signatures": [
+					{
+						"sig": "MEQCIEdT4dH5eDRq+r/NQB505RzrB8+Tg9WsqHz1n/DR1entAiAuEWE8muvrh8xf/TD4YF910P6+XDJTb74JmSbBUS8gPg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 10039
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-find"
+			},
+			"description": "TypeScript definitions for pouchdb-find",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-find_7.3.3_1699363139374_0.8584595151850025",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "6be00c4c663529bd9423a6440e741124e07f43e99a41da16b7553454a86dbbd5"
+		}
+	},
+	"time": {
+		"created": "2016-11-29T22:40:45.655Z",
+		"modified": "2024-11-11T09:31:31.645Z",
+		"0.10.0": "2016-11-29T22:40:45.655Z",
+		"0.10.1": "2017-06-15T20:17:13.043Z",
+		"6.3.0": "2017-07-22T19:11:37.364Z",
+		"6.3.1": "2017-10-25T16:20:28.052Z",
+		"6.3.2": "2017-12-14T21:35:08.139Z",
+		"6.3.3": "2018-06-21T00:30:39.660Z",
+		"6.3.4": "2019-02-13T21:55:57.009Z",
+		"6.3.5": "2020-02-06T17:34:34.592Z",
+		"6.3.6": "2020-07-28T07:39:44.318Z",
+		"6.3.7": "2021-07-07T17:14:19.345Z",
+		"7.3.0": "2022-10-05T04:03:19.377Z",
+		"7.3.1": "2023-09-24T07:07:23.459Z",
+		"7.3.2": "2023-10-18T11:17:09.968Z",
+		"7.3.3": "2023-11-07T13:18:59.616Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"ts2.0": "0.10.0",
+		"ts2.1": "0.10.0",
+		"ts2.2": "0.10.0",
+		"ts2.3": "6.3.4",
+		"ts2.4": "6.3.4",
+		"ts2.5": "6.3.4",
+		"ts2.6": "6.3.4",
+		"ts2.7": "6.3.4",
+		"ts2.8": "6.3.5",
+		"ts2.9": "6.3.5",
+		"ts3.0": "6.3.6",
+		"ts3.1": "6.3.6",
+		"ts3.2": "6.3.6",
+		"ts3.3": "6.3.6",
+		"ts3.4": "6.3.6",
+		"ts3.5": "6.3.6",
+		"ts3.6": "6.3.7",
+		"ts3.7": "6.3.7",
+		"ts3.8": "6.3.7",
+		"ts3.9": "6.3.7",
+		"ts4.0": "6.3.7",
+		"ts4.1": "7.3.0",
+		"ts4.2": "7.3.0",
+		"ts4.3": "7.3.0",
+		"ts4.4": "7.3.0",
+		"ts5.7": "7.3.3",
+		"ts5.6": "7.3.3",
+		"latest": "7.3.3",
+		"ts4.5": "7.3.3",
+		"ts4.6": "7.3.3",
+		"ts4.7": "7.3.3",
+		"ts4.8": "7.3.3",
+		"ts4.9": "7.3.3",
+		"ts5.0": "7.3.3",
+		"ts5.1": "7.3.3",
+		"ts5.2": "7.3.3",
+		"ts5.3": "7.3.3",
+		"ts5.4": "7.3.3",
+		"ts5.5": "7.3.3",
+		"ts5.8": "7.3.3"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"dc2f6fad41b5bfe73788abf3c22cc76f\"",
+			"fetched": 1734527718445
+		}
+	},
+	"_distfiles": {
+		"pouchdb-find-0.10.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-0.10.0.tgz",
+			"sha": "aabd9d59ddc5d01e6a8609078bb68de6346f9ab7",
+			"registry": "npmjs"
+		},
+		"pouchdb-find-0.10.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-0.10.1.tgz",
+			"sha": "286d2196135b15be685f3d895f0ac928d0c04eb3",
+			"registry": "npmjs"
+		},
+		"pouchdb-find-6.3.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.0.tgz",
+			"sha": "d15372b4fa8355b78e99120f871cf300da01d6af",
+			"registry": "npmjs"
+		},
+		"pouchdb-find-6.3.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.1.tgz",
+			"sha": "1e39e31d87613ffc2232276b66e24066a30c6d34",
+			"registry": "npmjs"
+		},
+		"pouchdb-find-6.3.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.2.tgz",
+			"sha": "5ae01b99fb69b09737a438b5e2ba68ddf1927a63",
+			"registry": "npmjs"
+		},
+		"pouchdb-find-6.3.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.3.tgz",
+			"sha": "dbad75ba362677d03027ac3e2e5d1361ff296152",
+			"registry": "npmjs"
+		},
+		"pouchdb-find-6.3.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.4.tgz",
+			"sha": "899256e9cc924ae6ab5414b5a978808f5b003919",
+			"registry": "npmjs"
+		},
+		"pouchdb-find-6.3.5.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.5.tgz",
+			"sha": "439002c935b9f8cfab67a0faa044d098e566dfe5",
+			"registry": "npmjs"
+		},
+		"pouchdb-find-6.3.6.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.6.tgz",
+			"sha": "a0b7bd980e0b2962750e41bd992d013f643c4d75",
+			"registry": "npmjs"
+		},
+		"pouchdb-find-6.3.7.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-6.3.7.tgz",
+			"sha": "f713534a53c1a7f3fd8fbbfb74131a1b04711ddc",
+			"registry": "npmjs"
+		},
+		"pouchdb-find-7.3.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-7.3.0.tgz",
+			"sha": "b917030e9f4bf6e56bf8c3b9fe4b2a25e989009a",
+			"registry": "npmjs"
+		},
+		"pouchdb-find-7.3.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-7.3.1.tgz",
+			"sha": "546e0fb54513b3f5f82ba3bf1dd1152c3822c3a2",
+			"registry": "npmjs"
+		},
+		"pouchdb-find-7.3.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-7.3.2.tgz",
+			"sha": "8757fece0ade56dd856b773e11f270c489a0e4ec",
+			"registry": "npmjs"
+		},
+		"pouchdb-find-7.3.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-find/-/pouchdb-find-7.3.3.tgz",
+			"sha": "599e388e2a1c4e57ee8aba0d5deca24d37b6978e",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-find-7.3.3.tgz": {
+			"shasum": "599e388e2a1c4e57ee8aba0d5deca24d37b6978e"
+		}
+	},
+	"_rev": "2-366d1a62816b865d",
+	"_id": "@types/pouchdb-find",
+	"readme": "[object Object]"
+}

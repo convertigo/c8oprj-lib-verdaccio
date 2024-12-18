@@ -1,0 +1,755 @@
+{
+	"name": "@types/pouchdb-adapter-memory",
+	"versions": {
+		"5.4.1": {
+			"name": "@types/pouchdb-adapter-memory",
+			"version": "5.4.1",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-memory@5.4.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "e439a6bcdc0cf266b75d6a46cf3c6894e576ba95",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-5.4.1.tgz",
+				"integrity": "sha512-MnVPthA0qf//JhTN4Ccnfo6tgYo4bo9zxRS6BjbUI198iI1R9AHCNP/b0I4tHcE4wprOZZ6/ubOgIzdPOb9p4A==",
+				"signatures": [
+					{
+						"sig": "MEUCIHINbQN4KmmOt9ZP8Mop5xjGwY7KyPP7W1bFhKSWltMWAiEA9rgKmR4cYzMqBCvVtojZzTOq7spQ0BNgtQ8JuE21Wys=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-memory.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-memory v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-memory-5.4.1.tgz_1470153855999_0.30994483665563166",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.2": {
+			"name": "@types/pouchdb-adapter-memory",
+			"version": "5.4.2",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-memory@5.4.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "99e328f874466fb590aba750667d305fde6a5046",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-5.4.2.tgz",
+				"integrity": "sha512-TzwdNfs8tRQyKh5pO8eiwUmolqqkHp0179Fk4w8qhT6c+8CDzzAS9b5ZcEQTsZ9uUI75KBRPNCg8uIIVJf1pYQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIG25/xx7/y1Y7wWEk8eSeonqH5Ta+7rsWf/eTQXngTo4AiEAvnzG/ulQNgEJ072S2BbGROnfnAdlRGcnXcdXixspgn4=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-memory.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-memory v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-memory-5.4.2.tgz_1471621021055_0.8262350850272924",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.3": {
+			"name": "@types/pouchdb-adapter-memory",
+			"version": "5.4.3",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-memory@5.4.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "6cc8bee461ec8a046abc4d64a9885317bba923bc",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-5.4.3.tgz",
+				"integrity": "sha512-Kocrt8n/Eia0bN0BAKpeIQvUvxCCiVbt23YD1ptcH/ABMh1s9VpZkduEvifGjjtbKm3MIhcpmwCo5oJy+xQb9Q==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDUjfILDysDGKPh1162q7c6IPAnlRGL8QLFvck4BHs5rAIhAJ/o0HBq7wNYd+jvBQC61O13+HpaTCcWLYHDloCxLcaY",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-memory.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-memory v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-memory-5.4.3.tgz_1472151204969_0.71005749842152",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.4": {
+			"name": "@types/pouchdb-adapter-memory",
+			"version": "5.4.4",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-memory@5.4.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "a7cc1fe0b2d5624b2ce17abd06a34431158716e7",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-5.4.4.tgz",
+				"integrity": "sha512-c05O8bxocHXCNDYGVKuSjxf/HSB2gKRsGIyda1AeSTRU4f5Uvv6xsM5Kwxl/Q9llW1YExKMYQn4KWIShRd//mg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCQuxwCjmvEcZtkQlDZgqZzNP9I/8s9RzbmRXGkz+5fmAIgKcBYMlkiiO+iMuRTHko8gmlGVOUfP7CdMvo56LbwT6U=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-memory v5.4.4",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-memory-5.4.4.tgz_1474308192849_0.5415979691315442",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "0ef1067974da30f08dab8e5968a92562581c1aa0a0039f22f2044244a4f87bc1",
+			"contributors": []
+		},
+		"6.1.0": {
+			"name": "@types/pouchdb-adapter-memory",
+			"version": "6.1.0",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-memory@6.1.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "c6640b5b52869fea64adc2fb904b7e709b5e279a",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-6.1.0.tgz",
+				"integrity": "sha512-yvpATeZuvWaVxYBJSkdfmqf6yry5yo3ARw8YWXQF/9bNSd7ibGmU6PO4eqkp++PtaWT4Ssc47bp2Cvjaw2lk9Q==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCwqOe9dxEKEo4ukRKDdonhOfWNGjwCPUp/Gu9MA24m0gIhAMoGaz3+mZ158DKQIBCZmkbK9iE/xe7n/RZWilYPIse0",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-memory",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.0",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-memory-6.1.0.tgz_1492528359148_0.5285503424238414",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "4df2271cbbda22aa12b82f150a4b3e7f19deb89546e45f5eb0b4c82229d4900d"
+		},
+		"6.1.1": {
+			"name": "@types/pouchdb-adapter-memory",
+			"version": "6.1.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-memory@6.1.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "cf55b70c237fa5bb64f23311a2fcb77183ac36cc",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-6.1.1.tgz",
+				"integrity": "sha512-e7vm2Rb9dZmPH28GodN8YEoxC8ng+Kvg6e1yQ1656ulxc31UOEO8yMaKx7v372/l0n/VKMF+AV4eau7uOq9ksg==",
+				"signatures": [
+					{
+						"sig": "MEQCIAqVvYMxiWHIKW532DdGtapZd8khwVyZPD80ZacF4q17AiBs6yHpOZAOx+J+aNOlIS4RLXe0ECTiZJF4yPl6lbos3w==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-memory",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-memory-6.1.1.tgz_1497557833536_0.16266035474836826",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "4c6d3fe3eadd64513027379fa077e6d0e3add635d7bfa15a3244ef5c3ad0e444"
+		},
+		"6.1.2": {
+			"name": "@types/pouchdb-adapter-memory",
+			"version": "6.1.2",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-memory@6.1.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "93eca978b1aa0f96a020b4a92b43efb7e6a70a09",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-6.1.2.tgz",
+				"integrity": "sha512-qNRBLqOA+NMOHqsw2eHQDtb0PobiEOYPYWwjAgPTeM/5HLo+d7xuOiE9Br0PgnXTJnpu8D4KO6htOgnkEb7x0w==",
+				"signatures": [
+					{
+						"sig": "MEUCIDKPlg8Gn8tSbAja9HOnAEg554sBw29usRMmKDoPQsq4AiEA7gHY/B0J3qR1wY4dfTbmxz6e9oveWMQJMxIW04kiu34=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-memory",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-memory-6.1.2.tgz_1513287302825_0.8661587410606444",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "a91554fb40648df6c9b903d5fc6eb4d90c161d9b2cc74d115d85aeb6b6bf7aca"
+		},
+		"6.1.3": {
+			"name": "@types/pouchdb-adapter-memory",
+			"version": "6.1.3",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-memory@6.1.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "9eabdbc890fcf58960ee8b68b8685f837e75c844",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-6.1.3.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-gVbsIMzDzgZYThFVT4eVNsmuZwVm/4jDxP1sjlgc3qtDIxbtBhGgyNfcskwwz9Zu5Lv1avkDsIWvcxQhnvRlHg==",
+				"signatures": [
+					{
+						"sig": "MEQCIFae2ygCT21G0FFkdQBTD7zddEDHA/lB6xHykN3nsqEqAiB+Au2QTP9UaIK9XbkKVOSeIrsI1xiwL9By6QN0/5JOSw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 3766,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcZJIMCRA9TVsSAnZWagAAXRYP/2bV+kcbzEgcA5R0p2hs\nWd/9AqTxzfoud5pwaiZwmkCJF8+AJWc6aan9a4Kw3VtbWN5DjKF9nWbInhxF\ndyeiRj4cd1VCVLNMAyQMHc7iDCaSkA+TYTxcwOfuA7Hez6e2fhz8ooioydh8\nLTWfVSq8/lkIzAEwj8iaMRxQWLi9KOv2Tz9GVVBzcBR1Dy0+O83f9Y8IkYrf\ncS8Y+Gre3z+Gvmb78PFIuJFOZkYtUA+vpB+mMKKEIZq5u1o58X84ivob4ieS\nNQasIhMy9xLpSvpHrydgLN6Kmp3FHmYl3BR/e6Tu5v5B6obo2AGslawc03fA\nwZuHShRrWS5ytzehPl+1pY5DK5tY4xN8v1eaTyvSPdsB2JL1q1T3TjbubLE3\ngH5Guy9qwI7Ux33zxKNt9wZCd/zaxr1lzLS4wButbsLIflC3wu7LLzEV4Gga\nRg+IeKu6f1mGwhVWCE5Z1GqPTp0t7ZcS7zSF2T62KuqTIePCbBQN3Jq77vvP\nkR9i6F7wnRDvrH8gb8LS/sSlZztpEZmo80An+pRquIyPLCuCtHRPN2ZM80iF\nDhYp0SvbZ2I8ZFhGweO33NCJI1vZHbqIv4g7AvO/PswQO5BwmMZYIfQkJVNV\ni2UJ28OIbsGSj5SIL7PYT1fHTMCJQIXDETAY3uwFDhMgz2uwJg7LsK50cIYu\n8Kki\r\n=lIoq\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-memory",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-memory_6.1.3_1550094859832_0.7036769936855578",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "a81cd209f054db3ae0b29452092e816ff3e43ba31954d4ee480760844a7ad058"
+		},
+		"6.1.4": {
+			"name": "@types/pouchdb-adapter-memory",
+			"version": "6.1.4",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-memory@6.1.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-memory",
+			"dist": {
+				"shasum": "a19bf9e8143c5ab752225c1e5e5b72a43a73d927",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-6.1.4.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-FE08C6I/c+algSlDV9kp66Hv+MZ79q7cTje8x3Fc5H/ZdRzAonvjZ7rvDDLn/vNtRSwy+l/pSjebl+vl+oR9cA==",
+				"signatures": [
+					{
+						"sig": "MEUCIEFIWksV3fdpiX/ibvPbHaVRlXO+QM5Dqe8aBlAgm91oAiEAivdA5Qxp/InLYoHy5s0fm4ZBkr9k+Dqq5Qk3IpjN+UU=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 4945
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-memory"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-memory",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-memory_6.1.4_1695539224589_0.9630201429334979",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "e48701aed0fd6082b3165fcb8abcc9e1a3ef30703e1776a22c6932467797a82c"
+		},
+		"6.1.5": {
+			"name": "@types/pouchdb-adapter-memory",
+			"version": "6.1.5",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-memory@6.1.5",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-memory",
+			"dist": {
+				"shasum": "3f8838ecdd4784cf427f4393f48b05a3ea9ebf64",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-6.1.5.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-n0Ps/SoHgTJ584cwD3YZyOriQa9m0ed4Taleq8deFWp2cV9ZLvt1ehV+5Or82VMSvqYK315RGosuDgSkPsUDng==",
+				"signatures": [
+					{
+						"sig": "MEQCH3VavKJHtjzewPtI5YZ89UxBzaTtHQeEZMIUfBVafJoCIQC7xjFTJA92oZd3o9zw9bwDVWsXCdRS5og90urNDceDnA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 4183
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-memory"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-memory",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-memory_6.1.5_1697627788290_0.4706236642224211",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "2f373d0c5299181fb793ee20cdda0e2cd24af25fd64d852233a192ba72d0921b"
+		},
+		"6.1.6": {
+			"name": "@types/pouchdb-adapter-memory",
+			"version": "6.1.6",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-memory@6.1.6",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-memory",
+			"dist": {
+				"shasum": "7fd68b42ab85ef59ffbcfdf70a8a1a143af4d458",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-6.1.6.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-QCCtW561XuwFACzP/4zYySzs/a4em0EeuQdszen0YOaGV1/fRqJE0dOlmzh8do4sNJomLO6+MFtEzguGljnkgA==",
+				"signatures": [
+					{
+						"sig": "MEQCIGZclWpntOrtsMez/5qjkq9KsrNfNsyqSL5N7T72ezksAiAxlmmizpKrT7v7Kc2whvUvD9rMlMQvHnzEYIb4MtOMKw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 4183
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-memory"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-memory",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-memory_6.1.6_1699363105420_0.4906860794277472",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "2aced5a86aa503623bc2b81e56ef6b1a07bee6dd4f45ac996ddeb763ad911f19"
+		}
+	},
+	"time": {
+		"created": "2016-08-02T16:04:17.027Z",
+		"modified": "2024-11-11T09:31:27.258Z",
+		"5.4.1": "2016-08-02T16:04:17.027Z",
+		"5.4.2": "2016-08-19T15:37:02.804Z",
+		"5.4.3": "2016-08-25T18:53:26.729Z",
+		"5.4.4": "2016-09-19T18:03:13.095Z",
+		"6.1.0": "2017-04-18T15:12:39.368Z",
+		"6.1.1": "2017-06-15T20:17:13.654Z",
+		"6.1.2": "2017-12-14T21:35:02.890Z",
+		"6.1.3": "2019-02-13T21:54:19.995Z",
+		"6.1.4": "2023-09-24T07:07:04.824Z",
+		"6.1.5": "2023-10-18T11:16:28.506Z",
+		"6.1.6": "2023-11-07T13:18:25.577Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"ts2.0": "6.1.0",
+		"ts2.1": "6.1.0",
+		"ts2.2": "6.1.0",
+		"ts2.3": "6.1.3",
+		"ts2.4": "6.1.3",
+		"ts2.5": "6.1.3",
+		"ts2.6": "6.1.3",
+		"ts2.7": "6.1.3",
+		"ts2.8": "6.1.3",
+		"ts2.9": "6.1.3",
+		"ts3.0": "6.1.3",
+		"ts3.1": "6.1.3",
+		"ts3.2": "6.1.3",
+		"ts3.3": "6.1.3",
+		"ts3.4": "6.1.3",
+		"ts3.5": "6.1.3",
+		"ts3.6": "6.1.3",
+		"ts3.7": "6.1.3",
+		"ts3.8": "6.1.3",
+		"ts3.9": "6.1.3",
+		"ts4.0": "6.1.3",
+		"ts4.1": "6.1.3",
+		"ts4.2": "6.1.3",
+		"ts4.3": "6.1.3",
+		"ts4.4": "6.1.3",
+		"ts5.7": "6.1.6",
+		"ts5.6": "6.1.6",
+		"latest": "6.1.6",
+		"ts4.5": "6.1.6",
+		"ts4.6": "6.1.6",
+		"ts4.7": "6.1.6",
+		"ts4.8": "6.1.6",
+		"ts4.9": "6.1.6",
+		"ts5.0": "6.1.6",
+		"ts5.1": "6.1.6",
+		"ts5.2": "6.1.6",
+		"ts5.3": "6.1.6",
+		"ts5.4": "6.1.6",
+		"ts5.5": "6.1.6",
+		"ts5.8": "6.1.6"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"d8600ed46275baf61ebbdc2a9eb3fcf2\"",
+			"fetched": 1734527719174
+		}
+	},
+	"_distfiles": {
+		"pouchdb-adapter-memory-5.4.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-5.4.1.tgz",
+			"sha": "e439a6bcdc0cf266b75d6a46cf3c6894e576ba95",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-memory-5.4.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-5.4.2.tgz",
+			"sha": "99e328f874466fb590aba750667d305fde6a5046",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-memory-5.4.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-5.4.3.tgz",
+			"sha": "6cc8bee461ec8a046abc4d64a9885317bba923bc",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-memory-5.4.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-5.4.4.tgz",
+			"sha": "a7cc1fe0b2d5624b2ce17abd06a34431158716e7",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-memory-6.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-6.1.0.tgz",
+			"sha": "c6640b5b52869fea64adc2fb904b7e709b5e279a",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-memory-6.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-6.1.1.tgz",
+			"sha": "cf55b70c237fa5bb64f23311a2fcb77183ac36cc",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-memory-6.1.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-6.1.2.tgz",
+			"sha": "93eca978b1aa0f96a020b4a92b43efb7e6a70a09",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-memory-6.1.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-6.1.3.tgz",
+			"sha": "9eabdbc890fcf58960ee8b68b8685f837e75c844",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-memory-6.1.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-6.1.4.tgz",
+			"sha": "a19bf9e8143c5ab752225c1e5e5b72a43a73d927",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-memory-6.1.5.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-6.1.5.tgz",
+			"sha": "3f8838ecdd4784cf427f4393f48b05a3ea9ebf64",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-memory-6.1.6.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-memory/-/pouchdb-adapter-memory-6.1.6.tgz",
+			"sha": "7fd68b42ab85ef59ffbcfdf70a8a1a143af4d458",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-adapter-memory-6.1.6.tgz": {
+			"shasum": "7fd68b42ab85ef59ffbcfdf70a8a1a143af4d458"
+		}
+	},
+	"_rev": "2-d6fbedee9804c002",
+	"_id": "@types/pouchdb-adapter-memory",
+	"readme": "[object Object]"
+}

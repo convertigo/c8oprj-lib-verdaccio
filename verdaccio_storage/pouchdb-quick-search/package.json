@@ -1,0 +1,1834 @@
+{
+	"name": "pouchdb-quick-search",
+	"versions": {
+		"0.1.0": {
+			"name": "pouchdb-quick-search",
+			"version": "0.1.0",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "TEST_DB=testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc *.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify index.js -o dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"pouchdb-mapreduce": "nolanlawson/mapreduce#persistence-fork",
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.5.3",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "~2.36.0",
+				"chai": "~1.8.1",
+				"chai-as-promised": "~4.1.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.3.0",
+				"mocha": "~1.18",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb": "git://github.com/pouchdb/pouchdb",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "~0.4.1",
+				"wd": "^0.2.21"
+			},
+			"peerDependencies": {
+				"pouchdb": ">= 2.2.0"
+			},
+			"browser": {
+				"crypto": false
+			},
+			"browserify": {
+				"transform": [
+					"es3ify"
+				]
+			},
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search",
+			"_id": "pouchdb-quick-search@0.1.0",
+			"_shasum": "7db5619da1f7e4e91bef861f21c11cd6e4a02e3b",
+			"_from": ".",
+			"_npmVersion": "1.4.10",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "7db5619da1f7e4e91bef861f21c11cd6e4a02e3b",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-0.1.0.tgz",
+				"integrity": "sha512-pk3x2XPbLkJwd2l6vekKKynaHbT1/RraNyd/egOAWUSslXGwPiMyLeUIUmK7GAo8iZl6EWieRPO4fy7B6dJ1sw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDfnpxsGrQ9A00TDpGyBHLiQnqsfaT0xTJrlYXl/XcYHQIhAIiS4dklLUZBVjc+x5lZ3bt7YiLpxKzsKA/EVa4XB9bs"
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.2.0": {
+			"name": "pouchdb-quick-search",
+			"version": "0.2.0",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "TEST_DB=testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc *.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify index.js -o dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"pouchdb-mapreduce": "nolanlawson/mapreduce#persistence-fork",
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.5.3",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "~2.36.0",
+				"chai": "~1.8.1",
+				"chai-as-promised": "~4.1.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.3.0",
+				"mocha": "~1.18",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb": "git://github.com/pouchdb/pouchdb",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "~0.4.1",
+				"wd": "^0.2.21"
+			},
+			"peerDependencies": {
+				"pouchdb": ">= 2.2.0"
+			},
+			"browser": {
+				"crypto": false
+			},
+			"browserify": {
+				"transform": [
+					"es3ify"
+				]
+			},
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search",
+			"_id": "pouchdb-quick-search@0.2.0",
+			"_shasum": "8e20d1c941f31da7ed61c2d961903ae5bdc5cd65",
+			"_from": ".",
+			"_npmVersion": "1.4.10",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "8e20d1c941f31da7ed61c2d961903ae5bdc5cd65",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-0.2.0.tgz",
+				"integrity": "sha512-k5lU8dBhZf5xVx9TXpvLlSG22DGMK8OrMOOOsoeAfHM6KmBGGKho9DpyL1TEfv+oop0zGngpu+Yuj/4oaJDnUA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIDH+Aiw/OPkdwF7LuMu0XD50TtcDtsxA46jMbudP4x0oAiEA2ljS2u6BSxf1+XgyUorNaTvx9iV3BBVSvDctWpjgqAQ="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.3.0": {
+			"name": "pouchdb-quick-search",
+			"version": "0.3.0",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "TEST_DB=testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc *.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify index.js -o dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"pouchdb-mapreduce": "nolanlawson/mapreduce#persistence-fork",
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.5.3",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "~2.36.0",
+				"chai": "~1.8.1",
+				"chai-as-promised": "~4.1.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.3.0",
+				"mocha": "~1.18",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb": "git://github.com/pouchdb/pouchdb",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "~0.4.1",
+				"wd": "^0.2.21"
+			},
+			"peerDependencies": {
+				"pouchdb": ">= 2.2.0"
+			},
+			"browser": {
+				"crypto": false
+			},
+			"browserify": {
+				"transform": [
+					"es3ify"
+				]
+			},
+			"gitHead": "0529ac1ff2b44d7f33924c761c32e0f007d48974",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search",
+			"_id": "pouchdb-quick-search@0.3.0",
+			"_shasum": "1cc3a4abec73ba95dfe857633d7b98832b45743d",
+			"_from": ".",
+			"_npmVersion": "1.4.13",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "1cc3a4abec73ba95dfe857633d7b98832b45743d",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-0.3.0.tgz",
+				"integrity": "sha512-vxrqJJ6q82kFE14z7ym1K7VmGtx0VUeYc8hw6XP+IF7XmAiMvNsF/9+kD388bbIpeuh9LbOxDucii1BJfSEZWg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCor3NQxl/LiK8l0+7FWXd6zW0cT6IRK8tUGf+e29lPigIgC31A0foeWtqa/xBF1zSoyiDe4FaPrdHoKyh1OQ/o9mw="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.3.1": {
+			"name": "pouchdb-quick-search",
+			"version": "0.3.1",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "TEST_DB=testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc *.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify index.js -o dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.5.4",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-mapreduce": "nolanlawson/mapreduce#persistence-fork",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "~2.36.0",
+				"chai": "~1.8.1",
+				"chai-as-promised": "~4.1.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.3.0",
+				"mocha": "~1.18",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb": "git://github.com/pouchdb/pouchdb",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "~0.4.1",
+				"wd": "^0.2.21"
+			},
+			"peerDependencies": {
+				"pouchdb": ">= 2.2.0"
+			},
+			"browser": {
+				"crypto": false
+			},
+			"browserify": {
+				"transform": [
+					"es3ify"
+				]
+			},
+			"gitHead": "a0d1ee45c9e668476b790161a95a624367458dac",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search",
+			"_id": "pouchdb-quick-search@0.3.1",
+			"_shasum": "65d0c8a445b7655a9d132095774fb001a5aba827",
+			"_from": ".",
+			"_npmVersion": "1.4.13",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "65d0c8a445b7655a9d132095774fb001a5aba827",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-0.3.1.tgz",
+				"integrity": "sha512-7tnOLHkKSwXYeTfMcCaMMZfOxK/NEdAafVdkDOtAeKPYVCcmJgGeLY53n26eb2mZ+ircyFJf95kxfRBMtqEG4w==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQC27PDMVtwn5EYZ7OSdHnIolFpP77hojExccoVeLwtU7QIgVi6jdrQbOsjfPlcppUo/hhCdL9Y2i5l6ZTv1kjRPmlA="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.3.2": {
+			"name": "pouchdb-quick-search",
+			"version": "0.3.2",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "TEST_DB=testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc *.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify index.js -o dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.5.4",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-mapreduce": "nolanlawson/mapreduce#persistence-fork",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "~2.36.0",
+				"chai": "~1.8.1",
+				"chai-as-promised": "~4.1.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.3.0",
+				"mocha": "~1.18",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb": "git://github.com/pouchdb/pouchdb",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "~0.4.1",
+				"wd": "^0.2.21"
+			},
+			"peerDependencies": {
+				"pouchdb": ">= 2.2.0"
+			},
+			"browser": {
+				"crypto": false
+			},
+			"browserify": {
+				"transform": [
+					"es3ify"
+				]
+			},
+			"gitHead": "d346e378a5e2b8fcba6ffcaecc52e52d24444dec",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search",
+			"_id": "pouchdb-quick-search@0.3.2",
+			"_shasum": "de4d121441c1c1a30a251b322973f3f333b307ae",
+			"_from": ".",
+			"_npmVersion": "1.4.13",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "de4d121441c1c1a30a251b322973f3f333b307ae",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-0.3.2.tgz",
+				"integrity": "sha512-yuA4CujF0AhI53+azVu+3DiJKCO/7Mu3+fFFODrF5iAk11YNby6FEEPK5q07DDntHNVFj/IFYpK3oNksAOIpMQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCID2Cd3g05y5berJeEzVrK/knPJLGZ/Qg31b1voDEJlhMAiAV5ACTGeMDBvr35w+PS9fRySbIh+dE8U1Ux8YSZ696Xw=="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.3.3": {
+			"name": "pouchdb-quick-search",
+			"version": "0.3.3",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "TEST_DB=testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc *.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify index.js -o dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.5.5",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-mapreduce": "nolanlawson/mapreduce#persistence-fork",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "~2.36.0",
+				"chai": "~1.8.1",
+				"chai-as-promised": "~4.1.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.3.0",
+				"mocha": "~1.18",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb": "git://github.com/pouchdb/pouchdb",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "~0.4.1",
+				"wd": "^0.2.21"
+			},
+			"browser": {
+				"crypto": false
+			},
+			"browserify": {
+				"transform": [
+					"es3ify"
+				]
+			},
+			"gitHead": "6ced31e626455c06c10a0479ba285d396aebd9d1",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search",
+			"_id": "pouchdb-quick-search@0.3.3",
+			"_shasum": "16c2da45a34e4b1ebe5425238450f91950b764b0",
+			"_from": ".",
+			"_npmVersion": "1.4.13",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "16c2da45a34e4b1ebe5425238450f91950b764b0",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-0.3.3.tgz",
+				"integrity": "sha512-fh8I/aWiERvUrsMCCfKPI0IKNnyygDKHhE7l4EjR2lI/BxDBHAURtkt1Zcn5Dx98Mei11ktNN6sqEnAFP361xA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDd6dFDDlEm4mbtDzTTB8hbfdfujNVdtcXbkOtQeFzGnAIgZ6fCWaOAH90CwxYqlTOMq9WfzK1Vsq8iroPy3IA1lgk="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.3.4": {
+			"name": "pouchdb-quick-search",
+			"version": "0.3.4",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "TEST_DB=testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc *.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify index.js -o dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.5.5",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-mapreduce": "nolanlawson/mapreduce#persistence-fork",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "~2.36.0",
+				"chai": "~1.8.1",
+				"chai-as-promised": "~4.1.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.3.0",
+				"mocha": "~1.18",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb": "git://github.com/pouchdb/pouchdb",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "~0.4.1",
+				"wd": "^0.2.21"
+			},
+			"browser": {
+				"crypto": false
+			},
+			"browserify": {
+				"transform": [
+					"es3ify"
+				]
+			},
+			"gitHead": "66be131dd7d3684bc124e96f7d59a2469e63d4ad",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search",
+			"_id": "pouchdb-quick-search@0.3.4",
+			"_shasum": "5851de370816667d5d495332c7a7bb758150f65d",
+			"_from": ".",
+			"_npmVersion": "1.4.13",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "5851de370816667d5d495332c7a7bb758150f65d",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-0.3.4.tgz",
+				"integrity": "sha512-PhLYMILPRawoT4x1psPmqFCD++3aC8JRLt9tJ4LjHHPY4w0WjVyLsHA9c9ytYIV9w/StB4zZ5Jc2QLU2wlqWzQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDNG1oKIsFmxzHXhO8JCmaBr2zW/iykSzmwrE5kR/Dv8gIhAKl7KlZfYBigDjAAdqbaGG0mNfQOOyNoD49Hqh08wWuX"
+					}
+				]
+			},
+			"contributors": []
+		},
+		"1.0.0": {
+			"name": "pouchdb-quick-search",
+			"version": "1.0.0",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "TEST_DB=testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc *.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify index.js -o dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.5.5",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-mapreduce-no-ddocs": "^2.3.0",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "~2.36.0",
+				"chai": "~1.8.1",
+				"chai-as-promised": "~4.1.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.3.0",
+				"mocha": "~1.18",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb": "git://github.com/pouchdb/pouchdb",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "~0.4.1",
+				"wd": "^0.2.21"
+			},
+			"browser": {
+				"crypto": false
+			},
+			"browserify": {
+				"transform": [
+					"es3ify"
+				]
+			},
+			"gitHead": "948fa78416a13e404572bab8410161156ae57287",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search",
+			"_id": "pouchdb-quick-search@1.0.0",
+			"_shasum": "05bff9e3c541ba2e4bb7e34ff066abb984c9ad96",
+			"_from": ".",
+			"_npmVersion": "1.4.13",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "05bff9e3c541ba2e4bb7e34ff066abb984c9ad96",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.0.0.tgz",
+				"integrity": "sha512-8cQ7w/K4crLNl8oBBxMc8kjdexO7cr6gC7xLW50PDgX84U2MeuEoubXWZTWbWVd/xTXC2b5Is/PoJkEgDwy9tA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIAGK9rpqa9EtSUp9xiWwbtAWk3YhCx2Lwp8MRWQM06tmAiEA7B6ceQGHF7LRyK9DJyGA5LnrvsdTnZUnyL1yKKmAiW0="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"1.0.1": {
+			"name": "pouchdb-quick-search",
+			"version": "1.0.1",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "TEST_DB=testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc *.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify index.js -o dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.5.5",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-mapreduce-no-ddocs": "^2.3.0",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "~2.36.0",
+				"chai": "~1.8.1",
+				"chai-as-promised": "~4.1.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.3.0",
+				"mocha": "~1.18",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb": "git://github.com/pouchdb/pouchdb",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "~0.4.1",
+				"wd": "^0.2.21"
+			},
+			"browser": {
+				"crypto": false
+			},
+			"browserify": {
+				"transform": [
+					"es3ify"
+				]
+			},
+			"gitHead": "f4928daa6159de461ede390ea9308d6b940d9f8f",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search",
+			"_id": "pouchdb-quick-search@1.0.1",
+			"_shasum": "7a7ae7a6bdc99e7e9c0a104dc7534b67ba7b9d99",
+			"_from": ".",
+			"_npmVersion": "1.4.13",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "7a7ae7a6bdc99e7e9c0a104dc7534b67ba7b9d99",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.0.1.tgz",
+				"integrity": "sha512-9oABqUzIfZwG6Y/z9bqWfdWvymZ7eljSAvDT2p77h5JE+lY2SlgMhd6y9iDkg5qDK9eG0Y66Mt/UJpx2DTW7ig==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQD+pHXSc2wul7DXOA285g9tLGjehBF2a4sL/ATpJRLRIAIhAN2FGdeiIan480HlMEgzxZEzByFFRJ6+WNIewaS5YXIr"
+					}
+				]
+			},
+			"contributors": []
+		},
+		"1.0.2": {
+			"name": "pouchdb-quick-search",
+			"version": "1.0.2",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "TEST_DB=testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc *.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify index.js -o dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.5.5",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-mapreduce-no-ddocs": "^2.3.1",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "~2.36.0",
+				"chai": "~1.8.1",
+				"chai-as-promised": "~4.1.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.3.0",
+				"mocha": "~1.18",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb": "git+https://github.com/pouchdb/pouchdb",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "~0.4.1",
+				"wd": "^0.2.21"
+			},
+			"browser": {
+				"crypto": false
+			},
+			"browserify": {
+				"transform": [
+					"es3ify"
+				]
+			},
+			"gitHead": "fb57c003a62ba87ea2d8b7546b8f276fa0e489d0",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search",
+			"_id": "pouchdb-quick-search@1.0.2",
+			"_shasum": "05aec36ef029916b3f891d566b6908ba3e770c14",
+			"_from": ".",
+			"_npmVersion": "2.2.0",
+			"_nodeVersion": "0.10.28",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "05aec36ef029916b3f891d566b6908ba3e770c14",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.0.2.tgz",
+				"integrity": "sha512-LqTSs/yYPCvH1rN8DpvqEKpym/A8YAunbQyBfqfIJ1XkNqXAduDbP2eUaCg/J97KLMNdk+AYUiElX6DJrWjTjQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCj/fCU/CICvF2ASFa464VuXzRExOOgnx52o2ZjSSbpSAIgffrANU5L/SQ7bPdcq8JR+BMc6Emb6+oG8gfsSTMj4rI="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"1.1.0": {
+			"name": "pouchdb-quick-search",
+			"version": "1.1.0",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "TEST_DB=testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc *.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify index.js -o dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.5.5",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-mapreduce-no-ddocs": "^2.3.1",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "~2.36.0",
+				"chai": "~1.8.1",
+				"chai-as-promised": "~4.1.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.3.0",
+				"mocha": "~1.18",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb": "git+https://github.com/pouchdb/pouchdb",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"selenium-standalone": "^3.0.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "~0.4.1",
+				"wd": "^0.2.21"
+			},
+			"browser": {
+				"crypto": false
+			},
+			"browserify": {
+				"transform": [
+					"es3ify"
+				]
+			},
+			"gitHead": "e34623093855a15f106b8502cc26c8e416a1c270",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search",
+			"_id": "pouchdb-quick-search@1.1.0",
+			"_shasum": "08a687bde466edf621fd7c7bf9abb7a7034d04f2",
+			"_from": ".",
+			"_npmVersion": "2.7.0",
+			"_nodeVersion": "0.10.36",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "08a687bde466edf621fd7c7bf9abb7a7034d04f2",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.1.0.tgz",
+				"integrity": "sha512-ytRLtO7mMYSsyEqN5AHGq80w0HvBl0pQqDfQPl0+GhTSUDfVGh67zoSsl1eBQZih7gYslozjof9LjJGHn+MBGA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIEO/1W4c7hx7s7dbKJj14mcJVXhy9BHmEXoAjvL7Bs/bAiBlkX8WrGNdxaU2OlN63A+hAnpWmJuC7rClIFXCtvne1A=="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"1.1.1": {
+			"name": "pouchdb-quick-search",
+			"version": "1.1.1",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "TEST_DB=testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc *.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify index.js -o dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.5.5",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-mapreduce-no-ddocs": "^2.3.1",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "~2.36.0",
+				"chai": "~1.8.1",
+				"chai-as-promised": "~4.1.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.3.0",
+				"mocha": "~1.18",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb": "github:pouchdb/pouchdb",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"selenium-standalone": "^3.0.2",
+				"uglify-js": "^2.4.13",
+				"watchify": "~0.4.1",
+				"wd": "^0.2.21"
+			},
+			"browser": {
+				"crypto": false
+			},
+			"browserify": {
+				"transform": [
+					"es3ify"
+				]
+			},
+			"gitHead": "15188bda17c05f10b974cf31267ca06785f5bede",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search#readme",
+			"_id": "pouchdb-quick-search@1.1.1",
+			"_shasum": "80e4e739fdc3f58d0c1f67c57af692da3b847a67",
+			"_from": ".",
+			"_npmVersion": "3.3.5",
+			"_nodeVersion": "4.0.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "80e4e739fdc3f58d0c1f67c57af692da3b847a67",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.1.1.tgz",
+				"integrity": "sha512-JZ1Eoc1IqQbL2EK7PlM4k0WBmgZ4hXY0Wv+vKmOYjwBGJWsqJvA4X08YUOKBfDWxtf5JoOkxTQ/w5IfDAptmIQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIFGEiIQdGlV3M4jjdP2i1trgHR6tM2IQmiLqWGNsgDMRAiEA5xHvXsJicTH5GYeicOqbEu/9Bl+BrJoC54Qfl/Ihjsc="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"1.1.2": {
+			"name": "pouchdb-quick-search",
+			"version": "1.1.2",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "TEST_DB=testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib/*.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify . -t es3ify -o dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.5.5",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-mapreduce-no-ddocs": "^2.3.1",
+				"pouchdb-promise": "5.4.4",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "^12.0.2",
+				"chai": "^3.5.0",
+				"chai-as-promised": "^5.3.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.8.0",
+				"mocha": "^2.4.5",
+				"phantomjs-prebuilt": "^2.1.7",
+				"pouchdb": "^5.4.0",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.14.0",
+				"selenium-standalone": "^5.1.0",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21"
+			},
+			"lib": [
+				"lib",
+				"dist"
+			],
+			"gitHead": "0b35050f4f49a7d6c27a2026d7aa9ad4d3ab3ee3",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search#readme",
+			"_id": "pouchdb-quick-search@1.1.2",
+			"_shasum": "2881be28d8df96f25c407c8e1b892a6786ca6b95",
+			"_from": ".",
+			"_npmVersion": "3.9.5",
+			"_nodeVersion": "5.11.1",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "2881be28d8df96f25c407c8e1b892a6786ca6b95",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.1.2.tgz",
+				"integrity": "sha512-IBGG798nHNeC4s6Is4+B/0zeEHw21dBj2v/TRoqSPf9KOm15D8Ef6OptDqh0lOEeh0DJBTl1sG5K9iakYSAUzg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDib+JWNKqZOME38FSU/B9Vh2Zgf6FmVsTAmr0jpKQnwgIgP/SsSJswdk7lyPQxEAhH0kJlez3ADThN7h+rE8ZTFdc="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-quick-search-1.1.2.tgz_1466171929766_0.8752566501498222"
+			},
+			"contributors": []
+		},
+		"1.1.3": {
+			"name": "pouchdb-quick-search",
+			"version": "1.1.3",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "TEST_DB=testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib/*.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify . -t es3ify -o dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.5.5",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-mapreduce-no-ddocs": "^2.3.2",
+				"pouchdb-promise": "5.4.4",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "^12.0.2",
+				"chai": "^3.5.0",
+				"chai-as-promised": "^5.3.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.8.0",
+				"mocha": "^2.4.5",
+				"phantomjs-prebuilt": "^2.1.7",
+				"pouchdb-memory": "^1.1.0",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.14.0",
+				"selenium-standalone": "^5.1.0",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21"
+			},
+			"lib": [
+				"lib",
+				"dist"
+			],
+			"gitHead": "edebd910bbf5c2868d32385a2f2395fccead5c66",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search#readme",
+			"_id": "pouchdb-quick-search@1.1.3",
+			"_shasum": "4527bc9ad226c8a5dfaafe86b0cbd2144fd14908",
+			"_from": ".",
+			"_npmVersion": "3.10.2",
+			"_nodeVersion": "5.11.1",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "4527bc9ad226c8a5dfaafe86b0cbd2144fd14908",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.1.3.tgz",
+				"integrity": "sha512-s80uKk7TXmawaMOd0Mh8Ypge482We5J0NLWbuSkUv+cXrEiqXh+eo8LyJed53u2QeS+yqMq6CcmG1u2MwWz7rg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCRo4MPdvEJ/PAFqVBSA1p8/S8sV30iLUA+MjljwmSSigIgFhMHbuX3d3WJkTM8WB636Wd88+7YANZ6FpaGX4AF0hU="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-quick-search-1.1.3.tgz_1467180844334_0.43632829282432795"
+			},
+			"contributors": []
+		},
+		"1.2.0": {
+			"name": "pouchdb-quick-search",
+			"version": "1.2.0",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && bash ./bin/run-test.sh",
+				"build": "mkdirp dist && browserify . -p bundle-collapser/plugin -t es3ify -s PouchQuickSearch > dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.7.1",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-mapreduce-no-ddocs": "^2.3.2",
+				"pouchdb-promise": "5.4.4",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "^12.0.2",
+				"bundle-collapser": "^1.2.1",
+				"chai": "^3.5.0",
+				"chai-as-promised": "^5.3.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.8.0",
+				"mkdirp": "^0.5.1",
+				"mocha": "^2.4.5",
+				"phantomjs-prebuilt": "^2.1.7",
+				"pouchdb-memory": "^1.1.0",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.14.0",
+				"selenium-standalone": "^5.1.0",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21"
+			},
+			"lib": [
+				"lib",
+				"dist"
+			],
+			"gitHead": "372f4228ed5ed7230a55a52c4e7088a231eb234c",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search#readme",
+			"_id": "pouchdb-quick-search@1.2.0",
+			"_shasum": "2d95f89472df41ddae83111e7aa1402bb84677d8",
+			"_from": ".",
+			"_npmVersion": "3.10.5",
+			"_nodeVersion": "6.3.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "2d95f89472df41ddae83111e7aa1402bb84677d8",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.2.0.tgz",
+				"integrity": "sha512-Uv7pyCXRrkYSLyQuFxnRCTI+a1hrOjM0W+2oxdqmaNoad5nUl+tqeKiKqDPENpzUtLBk5YwxNmdwU1BRQSHOpA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIEiUpk4Hse+PutbSFXELim8u9FcgXxwzkHTIJvGkv20UAiEArevPr9bNLofg3mLteqaYX+b4+iUGXCfMrUksMnUCF3o="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-quick-search-1.2.0.tgz_1469203174552_0.9698213411029428"
+			},
+			"contributors": []
+		},
+		"1.2.1": {
+			"name": "pouchdb-quick-search",
+			"version": "1.2.1",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && bash ./bin/run-test.sh",
+				"build": "mkdirp dist && browserify . -p bundle-collapser/plugin -t es3ify -s PouchQuickSearch > dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"json-stable-stringify": "^1.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.7.1",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-mapreduce-no-ddocs": "^2.3.2",
+				"pouchdb-promise": "5.4.4",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "^12.0.2",
+				"bundle-collapser": "^1.2.1",
+				"chai": "^3.5.0",
+				"chai-as-promised": "^5.3.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.8.0",
+				"mkdirp": "^0.5.1",
+				"mocha": "^2.4.5",
+				"phantomjs-prebuilt": "^2.1.7",
+				"pouchdb-memory": "^1.1.0",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.14.0",
+				"selenium-standalone": "^5.1.0",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21"
+			},
+			"lib": [
+				"lib",
+				"dist"
+			],
+			"gitHead": "66eed68e7c61f70964ae168012e09950cf3f51bf",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search#readme",
+			"_id": "pouchdb-quick-search@1.2.1",
+			"_shasum": "e51780686cffb6ea124a291274bfd487f59063fd",
+			"_from": ".",
+			"_npmVersion": "3.10.9",
+			"_nodeVersion": "7.2.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "e51780686cffb6ea124a291274bfd487f59063fd",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.2.1.tgz",
+				"integrity": "sha512-1vGPgZ7OBDvJ/IyWPxjBGSbT+M9StXtiVN3r0qnEB7mLXMdDMZnMM+fdyfI+uOY2gahbmTFK/nNuNqb6mTq3Nw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDgNvXxqwWSIWWMYYrOslHpMxEgl+TESiV6yf+vAnn8GwIgBHTrcBMVWdKH3LMFDaEIwMI84AZ7mID5wMV2PmX4A1E="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-quick-search-1.2.1.tgz_1486660778416_0.25094182626344264"
+			},
+			"contributors": []
+		},
+		"1.3.0": {
+			"name": "pouchdb-quick-search",
+			"version": "1.3.0",
+			"description": "PouchDB Quick Search - persisted full-text search for PouchDB",
+			"main": "lib/index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-quick-search.git"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"plugin",
+				"seed",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-quick-search/issues"
+			},
+			"scripts": {
+				"test-node": "istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc lib test/test.js",
+				"test": "npm run jshint && bash ./bin/run-test.sh",
+				"build": "mkdirp dist && browserify . -p bundle-collapser/plugin -t es3ify -s PouchQuickSearch > dist/pouchdb.quick-search.js && npm run min",
+				"min": "uglifyjs dist/pouchdb.quick-search.js -mc > dist/pouchdb.quick-search.min.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm test --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"json-stable-stringify": "^1.0.1",
+				"lie": "^2.6.0",
+				"lunr": "0.7.1",
+				"md5-jkmyers": "0.0.1",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-mapreduce-no-ddocs": "^2.3.2",
+				"pouchdb-promise": "5.4.4",
+				"uniq": "^1.0.1"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "^12.0.2",
+				"bundle-collapser": "^1.2.1",
+				"chai": "^3.5.0",
+				"chai-as-promised": "^5.3.0",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.8.0",
+				"mkdirp": "^0.5.1",
+				"mocha": "^2.4.5",
+				"phantomjs-prebuilt": "^2.1.7",
+				"pouchdb-memory": "^1.1.0",
+				"request": "^2.36.0",
+				"sauce-connect-launcher": "^0.14.0",
+				"selenium-standalone": "^5.1.0",
+				"uglify-js": "^2.4.13",
+				"watchify": "^3.1.0",
+				"wd": "^0.2.21"
+			},
+			"lib": [
+				"lib",
+				"dist"
+			],
+			"gitHead": "ec2ce7b75f07ea5c3a3216eff20e84621e9ce4e1",
+			"homepage": "https://github.com/nolanlawson/pouchdb-quick-search#readme",
+			"_id": "pouchdb-quick-search@1.3.0",
+			"_shasum": "4b1ab3b830ed188d960362afd26b490f2dd78cec",
+			"_from": ".",
+			"_npmVersion": "3.10.9",
+			"_nodeVersion": "7.2.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "4b1ab3b830ed188d960362afd26b490f2dd78cec",
+				"tarball": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.3.0.tgz",
+				"integrity": "sha512-QO9ajCGjjvfUJgWWC6v/Dn11I/PqZq2rfnWlO6p6LYvC9TIKXwm+BkJkjbR355jLtjYMJtydB+YUaz6P3ufOIA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCICyq+BlWitrhBQOK8afSrCS4StF5vCl2covA4s/htCNWAiEA1xxTy/y1B5G+4F3fq0xpO5mkFxyY9lcpi7qOc9lgiPE="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-quick-search-1.3.0.tgz_1487780709407_0.4386695008724928"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-06-24T12:10:20.537Z",
+		"created": "2014-06-10T01:05:24.194Z",
+		"0.1.0": "2014-06-10T01:05:24.194Z",
+		"0.2.0": "2014-06-12T18:45:17.288Z",
+		"0.3.0": "2014-07-10T00:04:54.189Z",
+		"0.3.1": "2014-07-14T23:14:07.919Z",
+		"0.3.2": "2014-07-15T20:49:06.058Z",
+		"0.3.3": "2014-08-13T01:10:19.022Z",
+		"0.3.4": "2014-08-13T01:13:04.936Z",
+		"1.0.0": "2014-12-07T20:22:06.195Z",
+		"1.0.1": "2014-12-07T20:29:28.489Z",
+		"1.0.2": "2015-01-25T01:28:01.216Z",
+		"1.1.0": "2015-03-22T12:54:03.799Z",
+		"1.1.1": "2015-10-11T19:26:13.717Z",
+		"1.1.2": "2016-06-17T13:58:50.175Z",
+		"1.1.3": "2016-06-29T06:14:07.393Z",
+		"1.2.0": "2016-07-22T15:59:34.785Z",
+		"1.2.1": "2017-02-09T17:19:38.664Z",
+		"1.3.0": "2017-02-22T16:25:09.669Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "1.3.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"af741557aa3ab7096e96f3cacc8c4e35\"",
+			"fetched": 1734527741784
+		}
+	},
+	"_distfiles": {
+		"pouchdb-quick-search-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-0.1.0.tgz",
+			"sha": "7db5619da1f7e4e91bef861f21c11cd6e4a02e3b",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-0.2.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-0.2.0.tgz",
+			"sha": "8e20d1c941f31da7ed61c2d961903ae5bdc5cd65",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-0.3.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-0.3.0.tgz",
+			"sha": "1cc3a4abec73ba95dfe857633d7b98832b45743d",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-0.3.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-0.3.1.tgz",
+			"sha": "65d0c8a445b7655a9d132095774fb001a5aba827",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-0.3.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-0.3.2.tgz",
+			"sha": "de4d121441c1c1a30a251b322973f3f333b307ae",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-0.3.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-0.3.3.tgz",
+			"sha": "16c2da45a34e4b1ebe5425238450f91950b764b0",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-0.3.4.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-0.3.4.tgz",
+			"sha": "5851de370816667d5d495332c7a7bb758150f65d",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.0.0.tgz",
+			"sha": "05bff9e3c541ba2e4bb7e34ff066abb984c9ad96",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.0.1.tgz",
+			"sha": "7a7ae7a6bdc99e7e9c0a104dc7534b67ba7b9d99",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-1.0.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.0.2.tgz",
+			"sha": "05aec36ef029916b3f891d566b6908ba3e770c14",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-1.1.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.1.0.tgz",
+			"sha": "08a687bde466edf621fd7c7bf9abb7a7034d04f2",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-1.1.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.1.1.tgz",
+			"sha": "80e4e739fdc3f58d0c1f67c57af692da3b847a67",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-1.1.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.1.2.tgz",
+			"sha": "2881be28d8df96f25c407c8e1b892a6786ca6b95",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-1.1.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.1.3.tgz",
+			"sha": "4527bc9ad226c8a5dfaafe86b0cbd2144fd14908",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-1.2.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.2.0.tgz",
+			"sha": "2d95f89472df41ddae83111e7aa1402bb84677d8",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-1.2.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.2.1.tgz",
+			"sha": "e51780686cffb6ea124a291274bfd487f59063fd",
+			"registry": "npmjs"
+		},
+		"pouchdb-quick-search-1.3.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-quick-search/-/pouchdb-quick-search-1.3.0.tgz",
+			"sha": "4b1ab3b830ed188d960362afd26b490f2dd78cec",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {},
+	"_rev": "2-5e3e9d3678e9589f",
+	"_id": "pouchdb-quick-search",
+	"readme": "PouchDB Quick Search\n=====\n\n[![Build Status](https://travis-ci.org/nolanlawson/pouchdb-quick-search.svg)](https://travis-ci.org/nolanlawson/pouchdb-quick-search)\n\n```js\nvar pouch = new PouchDB('mydb');\nvar doc = {_id: 'mydoc', title: \"Guess who?\", text: \"It's-a me, Mario!\"};\n\npouch.put(doc).then(function () {\n  return pouch.search({\n    query: 'mario',\n    fields: ['title', 'text'],\n    include_docs: true,\n    highlighting: true\n  });\n}).then(function (res) {\n  console.log(res.rows[0].doc.text); // \"It's-a me, Mario!\"\n  console.log(res.rows[0].highlighting); // {\"text\": \"It's-a me, <strong>Mario</strong>!\"}\n});\n```\n\n([Live demo](http://bl.ocks.org/nolanlawson/5d326f3692bc65cf89fd))\n\nA very efficient and accurate full-text search engine built on top of PouchDB. Analyzes text, indexes it, and provides a simple but powerful API for querying. Ideal for PhoneGap apps or any webapp that needs offline search support.\n\nThis is a local plugin, so it is not designed to work against CouchDB/Cloudant/etc.  If you'd like to search against the server, use the [CouchDB Lucene plugin](https://github.com/rnewson/couchdb-lucene), [Cloudant's search indexes](https://cloudant.com/for-developers/search/), or something similar.\n\nIf you need prefix search (e.g. for autocompletion), then just use PouchDB itself.  The `allDocs()` and `query()` APIs plus `startkey` should give you everything you need for prefix lookup. See the [autosuggestions and prefix search](#autosuggestions-and-prefix-search) section for details.\n\nThe underlying tokenization/stemming/stopword engine is [Lunr][], which is optimized for English text, using a variant of the [Porter stemmer](http://tartarus.org/~martin/PorterStemmer/index.html). To optimize for other languages, check out [lunr-languages](https://github.com/MihaiValentin/lunr-languages) and see the [\"other languages\"](#other-languages) section.\n\nUsage\n--------\n\n#### In the browser\n\nTo use this plugin, include it after `pouchdb.js` in your HTML page:\n\n```html\n<script src=\"pouchdb.js\"></script>\n<script src=\"pouchdb.quick-search.js\"></script>\n```\n\nThis plugin is also available from Bower:\n\n```\nbower install pouchdb-quick-search\n```\n\n#### In Node.js/Browserify/Webpack\n\nJust npm install it:\n\n```\nnpm install pouchdb-quick-search\n```\n\nAnd then attach it to the `PouchDB` object:\n\n```js\nvar PouchDB = require('pouchdb');\nPouchDB.plugin(require('pouchdb-quick-search'));\n```\n\nAPI\n---------\n\n**Topics:**\n\n* [Basic queries](#basic-queries)\n* [Document structure](#document-structure)\n* [Fetching the full documents](#fetching-the-full-documents)\n* [Highlighting](#highlighting)\n* [Pagination](#pagination)\n* [Boosting fields](#boosting-fields)\n* [Minimum should match (mm)](#minimum-should-match-mm)\n* [Filtering documents](#filtering-documents)\n* [Building the index](#building-the-index)\n* [Deleting the index](#deleting-the-index)\n* [Stale queries](#stale-queries)\n* [Other languages](#other-languages)\n* [Multi-language search](#multi-language-search)\n* [Autosuggestions and prefix search](#autosuggestions-and-prefix-search)\n\n\n### Basic queries\n\n```js\npouch.search({\n  query: 'your query here',\n  fields: ['title', 'text']\n}).then(function (res) {\n  // handle results\n}).catch(function (err) {\n  // handle error\n});\n```\n\n**Response:**\n\n```js\n{ rows: \n   [ \n     { id: 'mydoc5', score: 0.08027856564851082 },\n     { id: 'mydoc3', score: 0.044194173824159216 },\n     { id: 'mydoc4', score: 0.044194173824159216 }\n   ],\n  total_rows: 3\n}\n```\n\nIn the simplest case, you call `pouch.search()` with a `query` and a list of document `field`s to search. The results contain a list of matching document `id`s and `score`s, sorted from high to low.\n\nIf any document is missing a field, then it's simply ignored.  You can search one or more fields at a time.\n\nLike most of the PouchDB API, the `search()` function returns a promise. But if you like callbacks, you can also use that style:\n\n```js\npouch.search({\n  query: 'your query here',\n  fields: ['title', 'text']\n}, function (err, res) {\n  if (err) {\n    // handle error\n  } else {\n    // handle results\n  }\n});\n```\n\n### Document structure\n\nYour document fields can be strings or arrays of strings.  Use dots to separate deeply nested fields.  Searching deeply inside arrays is supported.\n\n```js\nvar doc = {\n  _id: 'mydoc',\n  name: 'Princess Peach',\n  likes: ['cakes', 'go-karts', 'turnips'],\n  description: {\n    summary: 'Can float in Mario 2.'\n  } \n};\n\npouch.put(doc).then(function () {\n  return pouch.search({\n    query: 'peach',\n    fields: ['name', 'likes', 'description.summary']\n  });\n});\n```\n\n**Response:**\n\n```js\n{ \n  \"rows\": [ \n    { \n      \"id\": \"mydoc\", \n      \"score\": 0.044194173824159216 \n    } \n  ],\n  \"total_rows\": 1 \n}\n```\n\n### Fetching the full documents\n\nBy default, the results only contain a list of document `id`s and `score`s. You can also use `{include_docs: true}` to get back the full documents:\n\n```js\npouch.search({\n  query: 'kong',\n  fields: ['title', 'text'],\n  include_docs: true\n});\n```\n\n**Response:**\n\n```js\n{\n    \"rows\": [\n        {\n            \"doc\": {\n                \"_id\": \"mydoc5\",\n                \"_rev\": \"1-5252b7faa1062e74ef0881fc908274cd\",\n                \"text\": \"This kong likes to surf!\",\n                \"title\": \"Funky Kong\"\n            },\n            \"id\": \"mydoc5\",\n            \"score\": 0.08027856564851082\n        },\n        {\n            \"doc\": {\n                \"_id\": \"mydoc3\",\n                \"_rev\": \"1-895f4289f96485c86ab62b02603220ae\",\n                \"text\": \"He's the leader of the bunch, you know him well.\",\n                \"title\": \"Donkey Kong\"\n            },\n            \"id\": \"mydoc3\",\n            \"score\": 0.044194173824159216\n        },\n        {\n            \"doc\": {\n                \"_id\": \"mydoc4\",\n                \"_rev\": \"1-00117a7b1d05df952474206e51ff19a5\",\n                \"text\": \"His coconut gun can fire in spurts.\",\n                \"title\": \"Diddy Kong\"\n            },\n            \"id\": \"mydoc4\",\n            \"score\": 0.044194173824159216\n        }\n    ],\n   \"total_rows\": 3\n}\n```\n\n### Highlighting\n\nA very handy option is `{highlighting: true}`, which returns the fields that the query matched, along with the keywords highlighted in context:\n\n```js\npouch.search({\n  query: 'kong',\n  fields: ['title', 'text'],\n  highlighting: true\n});\n```\n\n**Response:**\n\n```js\n{\n    \"rows\": [\n        {\n            \"highlighting\": {\n                \"text\": \"This <strong>kong</strong> likes to surf!\",\n                \"title\": \"Funky <strong>Kong</strong>\"\n            },\n            \"id\": \"mydoc5\",\n            \"score\": 0.08027856564851082\n        },\n        {\n            \"highlighting\": {\n                \"title\": \"Donkey <strong>Kong</strong>\"\n            },\n            \"id\": \"mydoc3\",\n            \"score\": 0.044194173824159216\n        },\n        {\n            \"highlighting\": {\n                \"title\": \"Diddy <strong>Kong</strong>\"\n            },\n            \"id\": \"mydoc4\",\n            \"score\": 0.044194173824159216\n        }\n    ],\n    \"total_rows\": 3\n}\n```\n\nIf you don't like `'<strong></strong>'`, you can also specify your own `highlighting_pre` and `highlighting_post` strings:\n\n```js\npouch.search({\n  query: 'kong',\n  fields: ['title', 'text'],\n  highlighting: true,\n  highlighting_pre: '<em>',\n  highlighting_post: '</em>'\n});\n```\n\n**Response:**\n\n```js\n{\n    \"rows\": [\n        {\n            \"highlighting\": {\n                \"text\": \"This <em>kong</em> likes to surf!\",\n                \"title\": \"Funky <em>Kong</em>\"\n            },\n            \"id\": \"mydoc5\",\n            \"score\": 0.08027856564851082\n        },\n        {\n            \"highlighting\": {\n                \"title\": \"Donkey <em>Kong</em>\"\n            },\n            \"id\": \"mydoc3\",\n            \"score\": 0.044194173824159216\n        },\n        {\n            \"highlighting\": {\n                \"title\": \"Diddy <em>Kong</em>\"\n            },\n            \"id\": \"mydoc4\",\n            \"score\": 0.044194173824159216\n        }\n    ],\n    \"total_rows\": 3\n}\n```\n\n### Pagination\n\nYou can use `limit` and `skip`, just like with the `allDocs()`/`query()` API:\n\n```js\npouch.search({\n  query: 'kong',\n  fields: ['title', 'text'],\n  limit: 10,\n  skip: 20\n});\n```\n\nThe performance concerns for `skip` that apply to `allDocs()`/`query()` do not apply so much here, because no matter what, we have to read in all the doc IDs and calculate their score in order to sort them correctly. In other words, it is guaranteed that you will read the doc IDs of all matching documents into memory, no matter what values you set for `limit` and `skip`.\n\nWhat this will optimize, however, is the attachment of metadata like `doc` and `highlighting` &ndash; it will only be done for the subset of results that you want.\n\n##### `total_rows`\n\nYou will also get back a field, `total_rows`, which tells you how many documents you would have gotten from your query if you hadn't applied `limit`/`skip`. You can use this for a \"how many pages are remaining\" display during pagination.\n\n\n### Boosting fields\n\nFields may be boosted, if you pass in an object rather than an array:\n\n```js\npouch.search({\n  query: 'kong',\n  fields: {\n    'title': 1,\n    'text': 5\n  }\n});\n```\n\nThe default boost is `1`.  Shorter fields are naturally boosted relative to longer fields (see the algorithmic explanation below).\n\n### Minimum should match (mm)\n\nBy default, every term in a query other than stopwords _must_ appear somewhere in the document in order for it to be matched.  If you want to relax this to allow just a subset of the terms to match, use the `mm` (\"minimum should match\") option, which is modeled after [Solr's `mm` option](https://wiki.apache.org/solr/DisMaxQParserPlugin#mm_.28Minimum_.27Should.27_Match.29).\n\nExample 1: docs must contain both the terms `'donkey'` and `'kong'`:\n\n```js\npouch.search({\n  query: 'donkey kong',\n  fields: ['title', 'text']\n});\n```\n\nExample 2: docs must contain either of the terms `'donkey'` and `'kong'`:\n\n```js\npouch.search({\n  query: 'donkey kong',\n  fields: ['title', 'text'],\n  mm: '50%'\n});\n```\n\nExample 3: docs must contain at least one of the three terms `'donkey'`, `'kong'`, and `'country'`:\n\n```js\npouch.search({\n  query: 'donkey kong country',\n  fields: ['title', 'text'],\n  mm: '33%'\n});\n```\n\nThe default `mm` value is `100%`.  All values must be provided as a percentage (ints are okay).\n\n### Filtering documents\n\nIf you only want to index a subset of your documents, you can include a filter function that tells us which documents to skip. The filter function should return `true` for documents you want to index, and `false` for documents you want to skip. (Truthy/falsy values are also okay.)\n\nExample:\n\n```js\npouch.search({\n  query: 'foo',\n  fields: ['title', 'text'],\n  filter: function (doc) {\n    return doc.type === 'person'; // only index persons\n  }\n}).then(function (info) {\n  // handle result\n}).catch(function (err) {\n  // handle error\n});\n```\n\nThe `filter` option, like `fields` and `language`, affects the identity of the underlying index, so it affects building and deleting (see building/deleting below).\n\nThanks to [Jean-Felix Girard](https://github.com/jfgirard) for implementing this feature!\n\n### Building the index\n\nIf you only use the `search()` method as described above, then it will be slow the first time you query, because the index has to be built up.\n\nTo avoid slow performance, you can explicitly tell the search plugin to build up the index using `{build: true}`:\n\n```js\npouch.search({\n  fields: ['title', 'text'],\n  build: true\n}).then(function (info) {\n  // if build was successful, info is {\"ok\": true}\n}).catch(function (err) {\n  // handle error\n});\n```\n\nThis will build up the index without querying it. If the database has changed since you last updated (e.g. new documents were added), then it will simply update the index with the new documents. If nothing has changed, then it won't do anything.\n\nYou must at least provide the `fields` you want to index.  If the language isn't English, you must pass in the `language` option.  Boosts don't matter.\n\n### Deleting the index\n\nIf, for whatever reason, you need to delete an index that's been saved to disk, you can pass in `{destroy: true}` to the `search()` function, and instead of searching, it will delete the external search database.\n\n```js\npouch.search({\n  fields: ['title', 'text'],\n  destroy: true\n});\n```\n\nWhen you do this, you _must_ at least provide the `fields`, because external databases are created and identified based on the fields you want to index.  You should also provide the `language` option if the language is something other than English. I.e., for every unique `fields` combination you want to index (plus `language` if non-English), a separate database will be created especially for that query. If you open up your developer tools, you can see it; it should have a name like `<mydbname>-search-<md5sum>` and look like this:\n\n![extra database created for search](https://raw.githubusercontent.com/nolanlawson/pouchdb-quick-search/master/docs/extra_database.png)\n\n### Stale queries\n\nWhen you search, a [persistent map/reduce index](http://pouchdb.com/api.html#query_database) is created behind the scenes, in order to save the indexed data and provide the fastest possible queries.\n\nThis means you can use the `stale` options, as in the `query()` API, to get faster but less accurate results:\n\n```js\n// return immediately, update the index afterwards\npouch.search({\n  query: 'donkey kong',\n  fields: ['title', 'text'],\n  stale: 'update_after'\n});\n```\n\nor\n\n```js\n// \npouch.search({\n  query: 'donkey kong',\n  fields: ['title', 'text'],\n  stale: 'ok'\n});\n```\n\nMost likely, though, you won't want to do this unless your database is frequently changing.\n\n### Other languages\n\nThe default Lunr pipeline uses the Porter stemmer, which is optimized for English. So for instance, the words \"work,\" \"worked,\" \"working,\" and \"works\" would all resolve to the same stem using the default settings.\n\nObviously other languages have different morphologies (and stopwords), so to support these language, this plugin can integrate with the [lunr-languages](https://github.com/MihaiValentin/lunr-languages) plugin.\n\nTo use another language, first follow the [lunr-languages instructions](https://github.com/MihaiValentin/lunr-languages#how-to-use) to install the language of your choice.\n\nNext, use the `language` option when you search:\n\n```js\npouch.search({\n  query: 'marche', \n  fields: ['text'], \n  include_docs: true,\n  language: 'fr'\n});\n```\n\n**Response:**\n\n```js\n{\n  \"rows\": [\n    {\n       \"doc\": {\n         \"_id\": \"french-doc\",\n         \"_rev\": \"1-997cba2d79a6f803c6040ddbedee642f\",\n         \"text\": \"Ça va marcher.\"\n       },\n       \"id\": \"french-doc\",\n       \"score\": 0.7071067811865475\n    }\n  ],\n  \"total_rows\": 1\n}\n```\n\nYou can still query in English:\n\n```js\npouch.search({\n  query: 'works', \n  fields: ['text'], \n  include_docs: true\n});\n```\n\n**Response:**\n\n```js\n{\n  \"rows\": [\n    {\n      \"doc\": {\n        \"_id\": \"english-doc\",\n        \"_rev\": \"1-48f9b2f4f17fc352fa53a21dca7e188e\",\n        \"text\": \"This will work.\"\n      },\n      \"id\": \"english-doc\",\n      \"score\": 1\n    }\n  ],\n  \"total_rows\": 1\n}\n```\n\nIf you don't specify a `language`, then the default is `'en'`. Under the hood, separate external databases will be created per language (and per `fields` definition), so you may want to keep that in mind if you're using the `destroy` and `build` options.\n\n**Note:** currently the lunr-languages plugin expects a global `lunr` object, so unfortunately you will have to include lunr as an extra dependency in your project and assign it to global (as described in the lunr-languages instructions).  Hopefully this will be fixed in the future.\n\n### Multi-language search\n\nRecently `lunr-languages` developers have added the ability to search in multiple languages at once. To be able to search from several languages:\n\n1) You should include `lunr.multi.js` from the `lunr-languages` repository. (Currently it is available only on master; they haven't tagged a release). \n\n2) Pass an array into `language`, for example:\n\n```js\npouch.search({\n  query: 'marche', \n  fields: ['text'], \n  include_docs: true,\n  language: ['en', 'fr']\n});\n```\n\nThe above code will search using both French and English.\n\n### Autosuggestions and prefix search\n\nWhile the `pouchdb-quick-search` plugin does not provide prefix/autosuggestion support, you can trivially do it in PouchDB itself by using `allDocs()`.\n\nJust create documents with IDs equal to what you want to search for, and then use `startkey`/`endkey` plus the special high unicode character `\\uffff` to search:\n\n```js\npouch.bulkDocs([\n  {_id: 'marin'}, \n  {_id: 'mario'},\n  {_id: 'marth'},\n  {_id: 'mushroom'},\n  {_id: 'zelda'}\n]).then(function () {\n  return pouch.allDocs({\n    startkey: 'mar',\n    endkey: 'mar\\uffff'\n  });\n});\n```\n\nThis will return all documents that start with `'mar'`, which in this case would be `'marin'`, `'mario'`, and `'marth'`.\n\nHow does it work? Well, in PouchDB and CouchDB, doc IDs are [sorted lexiocographically](http://docs.couchdb.org/en/latest/couchapp/views/collation.html), hence the `\\uffff` trick.\n\nNote that to handle uppercase/lowercase, you would have to insert the documents with the `_id`s already lowercase, and then search using lowercase letters as well.\n\n**Note:** You can also accomplish this using [map/reduce queries](http://pouchdb.com/guides/queries.html), and the principle is the same (including the `\\uffff` trick). However, the performance may be worse than `allDocs()` because you are using a secondary index rather than the primary index.\n\nAlgorithm\n----\n\nThis plugin uses the classic search technique of [TF-IDF](https://en.wikipedia.org/wiki/TFIDF), which strikes a nice balance between accuracy and speed. It is probably the most widely deployed search algorithm in the world.\n\nAdditionally, it applies a per-field weighting based on the [DisMax](http://searchhub.org//2010/05/23/whats-a-dismax/) algorithm as used in [Apache Solr](https://lucene.apache.org/solr/), which means that short fields tend to be boosted relative to long fields.  This is useful for things like e.g. web page titles and web page contents, where the words in the titles are usually more significant than words in the contents.  For multi-word queries, this algorithm also has the nice effect of preferring documents that match both words, even across several fields.\n\nFor more information about the algorithms that guided this implementation, refer to the [Lucene Similarity documentation](https://lucene.apache.org/core/3_6_0/api/core/org/apache/lucene/search/Similarity.html).\n\nBuilding\n----\n    npm install\n    npm run build\n\nTesting\n----\n\n### In Node\n\nThis will run the tests in Node using LevelDB:\n\n    npm test\n    \nYou can also check for 100% code coverage using:\n\n    npm run coverage\n\nIf you don't like the coverage results, change the values from 100 to something else in `package.json`, or add `/*istanbul ignore */` comments.\n\n\nIf you have mocha installed globally you can run single test with:\n```\nTEST_DB=local mocha --reporter spec --grep search_phrase\n```\n\nThe `TEST_DB` environment variable specifies the database that PouchDB should use (see `package.json`).\n\n### In the browser\n\nRun `npm run dev` and then point your favorite browser to [http://127.0.0.1:8001/test/index.html](http://127.0.0.1:8001/test/index.html).\n\nThe query param `?grep=mysearch` will search for tests matching `mysearch`.\n\n### Automated browser tests\n\nYou can run e.g.\n\n    CLIENT=selenium:firefox npm test\n    CLIENT=selenium:phantomjs npm test\n\nThis will run the tests automatically and the process will exit with a 0 or a 1 when it's done. Firefox uses IndexedDB, and PhantomJS uses WebSQL.\n\n[lunr]: https://github.com/olivernn/lunr.js"
+}

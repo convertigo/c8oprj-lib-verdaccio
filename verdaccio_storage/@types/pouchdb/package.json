@@ -1,0 +1,1525 @@
+{
+	"name": "@types/pouchdb",
+	"versions": {
+		"0.1.12-alpha": {
+			"name": "@types/pouchdb",
+			"version": "0.1.12-alpha",
+			"author": {
+				"name": "Bill Sears",
+				"email": "https://github.com/MrBigDog2U/"
+			},
+			"license": "MIT",
+			"_id": "@types/pouchdb@0.1.12-alpha",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "aef691f2b7c62e9c2c22bf3afb9617e42f1e07ea",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.12-alpha.tgz",
+				"integrity": "sha512-vUTJWTju2GfLevodddulnMvN/DteAeLzQ3cv4A3VZ//VxMmk7K0eCbWxsXCa3Oqxis1bHghszTGV3e7TCAltxQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIHbeE/RPSdhRWCjOPf8R0sLa+aMajJ50sWE7OWF0q26zAiEAws4MKw4WVfBTTLsigPj5YqEeFrqIDe8I0Y7H2yVb4sI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"_from": "output\\pouchdb",
+			"_shasum": "aef691f2b7c62e9c2c22bf3afb9617e42f1e07ea",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"_resolved": "file:output\\pouchdb",
+			"_npmVersion": "3.8.2",
+			"description": "Type definitions for Pouch 0.1 from https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+			"directories": {},
+			"_nodeVersion": "5.5.0",
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-0.1.12-alpha.tgz_1463510325912_0.750382301164791",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"0.1.13-alpha": {
+			"name": "@types/pouchdb",
+			"version": "0.1.13-alpha",
+			"author": {
+				"name": "Bill Sears",
+				"email": "https://github.com/MrBigDog2U/"
+			},
+			"license": "MIT",
+			"_id": "@types/pouchdb@0.1.13-alpha",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "8a27983a8d7b71d5f1d2a42e0c1bcceabd4cf35f",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.13-alpha.tgz",
+				"integrity": "sha512-RKk2lRkD+GgeXV4O9tybwbqHTmKaWtSLp1rB3wCjg0tXLKe3Qx/knhvQtNPD7I5Yx5WaN8t/T9B4pgOE8PJFnA==",
+				"signatures": [
+					{
+						"sig": "MEQCIDDXj+zfErALVfqXpb4C+UgbL0oSTA8kIv3sfCZmAq0NAiAI7IZB5PfKiAIEX7h01gdD7rgs2USFTss4OqlMHCeV2w==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"_from": "output\\pouchdb",
+			"_shasum": "8a27983a8d7b71d5f1d2a42e0c1bcceabd4cf35f",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"_resolved": "file:output\\pouchdb",
+			"_npmVersion": "3.8.2",
+			"description": "Type definitions for Pouch 0.1 from https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+			"directories": {},
+			"_nodeVersion": "5.5.0",
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-0.1.13-alpha.tgz_1463695393941_0.429414032259956",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"0.1.18-alpha": {
+			"name": "@types/pouchdb",
+			"version": "0.1.18-alpha",
+			"author": {
+				"name": "Bill Sears",
+				"email": "https://github.com/MrBigDog2U/"
+			},
+			"license": "MIT",
+			"_id": "@types/pouchdb@0.1.18-alpha",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "6d83814f253d071f94db671f665d787a3576f863",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.18-alpha.tgz",
+				"integrity": "sha512-n4bq/iW4wExkC2/NDhY7Ot9Xl3vC2w3OhgDHl4sovhULuO6rpXNvpLGf8V/ZgWxaxzzRI4kHIkp2z/GIqLQY/Q==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDqmWNeMnJ3kSV4hgG49hW/NZ0T0h8qeEnVbyYIE95wPgIhAOO+JqY0Q4qZNky2wEp5peO01dUdi0Sz4gyWHvGs+EM1",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"_from": "output\\pouchdb",
+			"_shasum": "6d83814f253d071f94db671f665d787a3576f863",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"_resolved": "file:output\\pouchdb",
+			"_npmVersion": "3.8.2",
+			"description": "TypeScript definitions for Pouch 0.1",
+			"directories": {},
+			"_nodeVersion": "5.5.0",
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-0.1.18-alpha.tgz_1463776011177_0.1004449944011867",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"0.1.19-alpha": {
+			"name": "@types/pouchdb",
+			"version": "0.1.19-alpha",
+			"author": {
+				"name": "Bill Sears",
+				"email": "https://github.com/MrBigDog2U/"
+			},
+			"license": "MIT",
+			"_id": "@types/pouchdb@0.1.19-alpha",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "c1b6e1944899c23380e43334822bad894e6532bb",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.19-alpha.tgz",
+				"integrity": "sha512-4f+wiwbaJAOnFAfH2nFIilEHN/t+gL1EYeWjWRFd/uOoJ/Ff1ywHvjf1EEqlCConEYLtsqM1VF77b9hJ+BJRuA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCJ6cmU6UkLVrjK5j2xVRnpj9gzi8rznkE4glBDUDvr9wIgEUNeMfzRyMdjWd/y6ZTm9U9S1J830EScviGCUX27TcE=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"_from": "output\\pouchdb",
+			"_shasum": "c1b6e1944899c23380e43334822bad894e6532bb",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"_resolved": "file:output\\pouchdb",
+			"_npmVersion": "3.8.2",
+			"description": "TypeScript definitions for Pouch 0.1",
+			"directories": {},
+			"_nodeVersion": "5.5.0",
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-0.1.19-alpha.tgz_1464154967921_0.6234070924110711",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"0.1.20-alpha": {
+			"name": "@types/pouchdb",
+			"version": "0.1.20-alpha",
+			"author": {
+				"name": "Bill Sears",
+				"email": "https://github.com/MrBigDog2U/"
+			},
+			"license": "MIT",
+			"_id": "@types/pouchdb@0.1.20-alpha",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "e113f2afd311555d82c7914cc6b91ae8af673070",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.20-alpha.tgz",
+				"integrity": "sha512-tgfYilgFAU0OsaGCKwCFTxlj4JhQIEL9R5dYDjdBHtZ/MBEGJG6vxjsowAUtpB5NnroXpA/Obxofl+RoKq/B7w==",
+				"signatures": [
+					{
+						"sig": "MEQCIHC0Isl57LrjDUk5DxufDe2nSOBAWgXR2T1u/ap8tpZrAiANlC0mURMCHY+XKPONvxGGS3lICb5WfYLCzjyEPgfc0w==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"_from": "output\\pouchdb",
+			"_shasum": "e113f2afd311555d82c7914cc6b91ae8af673070",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"_resolved": "file:output\\pouchdb",
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.5",
+			"description": "TypeScript definitions for Pouch 0.1",
+			"directories": {},
+			"_nodeVersion": "6.2.2",
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-0.1.20-alpha.tgz_1467404600047_0.012443365529179573",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"0.1.21-alpha": {
+			"name": "@types/pouchdb",
+			"version": "0.1.21-alpha",
+			"author": {
+				"name": "Bill Sears",
+				"email": "https://github.com/MrBigDog2U/"
+			},
+			"license": "MIT",
+			"_id": "@types/pouchdb@0.1.21-alpha",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "8695225bdf823cafc98b6eea1480a65bdadc19db",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.21-alpha.tgz",
+				"integrity": "sha512-FzuqQEG/6bxxbhINpaNEIkhvI/9+8R61OfJAmpXdsv7Jblo12UhYubEujkEwmCDCAmYCoEipdbrQxYleMRaKBg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCyc81rYg+Tm3yrKyuswMLT+ct+wvcSsdk2hBh7obOcBwIgciJ+O8fhAMId+OZd8isM3m+r08+CsriNKqr2rJf7WN4=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"_from": "output\\pouchdb",
+			"_shasum": "8695225bdf823cafc98b6eea1480a65bdadc19db",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"_resolved": "file:output\\pouchdb",
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.7.2",
+			"description": "TypeScript definitions for Pouch 0.1",
+			"directories": {},
+			"_nodeVersion": "6.2.1",
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-0.1.21-alpha.tgz_1467416740930_0.06578521756455302",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"0.1.22-alpha": {
+			"name": "@types/pouchdb",
+			"version": "0.1.22-alpha",
+			"author": {
+				"name": "Bill Sears",
+				"email": "https://github.com/MrBigDog2U/"
+			},
+			"license": "MIT",
+			"_id": "@types/pouchdb@0.1.22-alpha",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "67b78e4415b5a44fb455e583791a842c0ca7efd2",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.22-alpha.tgz",
+				"integrity": "sha512-wKdMozSoxg7X9JS/m6rywqPwOluEPRfUsaWkfNcVT1Zo2XMWL1URYriIg/WZLVEg50AJs2tRKNfm5HS5z4+uAA==",
+				"signatures": [
+					{
+						"sig": "MEQCIHIGJL3vj4OUwi64i0wte7nI5bUaCICIxNjV+VM3jJEEAiB6wa3diBQ9gXeHAqDevyCtSi0YtLYrlMB+XzpqTlODrA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"_from": "output\\pouchdb",
+			"_shasum": "67b78e4415b5a44fb455e583791a842c0ca7efd2",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"_resolved": "file:output\\pouchdb",
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.7.2",
+			"description": "TypeScript definitions for Pouch 0.1",
+			"directories": {},
+			"_nodeVersion": "6.2.1",
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-0.1.22-alpha.tgz_1467429021186_0.2952684632036835",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"0.1.23-alpha": {
+			"name": "@types/pouchdb",
+			"version": "0.1.23-alpha",
+			"author": {
+				"name": "Bill Sears",
+				"email": "https://github.com/MrBigDog2U/"
+			},
+			"license": "MIT",
+			"_id": "@types/pouchdb@0.1.23-alpha",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "b9d7d5b4f7896baea85c143e05cbb5be39261ddb",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.23-alpha.tgz",
+				"integrity": "sha512-CR4i+fx+oTQ1YPS36Wq8lfXymI2LI0LQAbV1Kj+zo39fdeY5ShbLV++8Guivg5bWJYaBhvQz8Y7dHzRjtXfvvA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDgnxzAePVbXITJskQ8mar9kampIl62rBkYA7jbM/IQWgIhAOUTHokz0KCG/c65WQT69SR60TwSpqu7Zq1dJc0h9GtF",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"_from": "output\\pouchdb",
+			"_shasum": "b9d7d5b4f7896baea85c143e05cbb5be39261ddb",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"_resolved": "file:output\\pouchdb",
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.7.2",
+			"description": "TypeScript definitions for Pouch 0.1",
+			"directories": {},
+			"_nodeVersion": "6.2.1",
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-0.1.23-alpha.tgz_1467594193967_0.017245144117623568",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"0.1.24-alpha": {
+			"name": "@types/pouchdb",
+			"version": "0.1.24-alpha",
+			"author": {
+				"name": "Bill Sears",
+				"email": "https://github.com/MrBigDog2U/"
+			},
+			"license": "MIT",
+			"_id": "@types/pouchdb@0.1.24-alpha",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "55fbd0427f293c0d8888bb0bbee10de31bb4b44b",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.24-alpha.tgz",
+				"integrity": "sha512-BVzhMSh2zLKRvlMFJYOuphnJKQTCC/z+9w2T9837+9cXybbJEYjEvLKfIPoIfsmjoCun/8ONAurjT8m/LPpylg==",
+				"signatures": [
+					{
+						"sig": "MEUCIHNfPEP1wkM76jg4bEbnsmmPJHUWb1AMLDVlQBbohAdWAiEAsoogb6FHeBHU3xQ9uvnTx08LkHu7SOquk0ISi5v9Qts=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"_from": "output\\pouchdb",
+			"_shasum": "55fbd0427f293c0d8888bb0bbee10de31bb4b44b",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ryan.cavanaugh@microsoft.com"
+			},
+			"_resolved": "file:output\\pouchdb",
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "TypeScript definitions for Pouch 0.1",
+			"directories": {},
+			"_nodeVersion": "6.3.0",
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-0.1.24-alpha.tgz_1468012224615_0.9323899804148823",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"0.1.25": {
+			"name": "@types/pouchdb",
+			"version": "0.1.25",
+			"author": {
+				"name": "Bill Sears",
+				"email": "https://github.com/MrBigDog2U/"
+			},
+			"license": "MIT",
+			"_id": "@types/pouchdb@0.1.25",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "0461341ce36465a8bc5fd15ef5ffbcec87b67e43",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.25.tgz",
+				"integrity": "sha512-0bp2LysVV7a1tW5IwDKh6FLtMueMpp5+33PPJ041Xco5Ij4AS77OrB2vdkJtUlUddR2GIneQKFIcsflvm99WJg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDJkrHUUTCnqrpAPvoY1EtFQnjvT4XPUEupeG7LVREiNwIgaLD2UOdqRTzJ4gn40sFh+tRcOREFxXpjuQtDMLZgnd0=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"_from": "output\\pouchdb",
+			"_shasum": "0461341ce36465a8bc5fd15ef5ffbcec87b67e43",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"_resolved": "file:output\\pouchdb",
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "TypeScript definitions for Pouch 0.1",
+			"directories": {},
+			"_nodeVersion": "6.3.0",
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-0.1.25.tgz_1468511112214_0.5817576951812953",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.26": {
+			"name": "@types/pouchdb",
+			"version": "5.4.26",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb@5.4.26",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "86f0ceec2873fa45582adb514f5821d78be453de",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-5.4.26.tgz",
+				"integrity": "sha512-M5heO50GCQ673QiMpG6xqa+S+fnDmmEQC/W26Gs3mrHzQObYCTed7Ksn4x0NvKwwjsaHc3T/9mm+9tb4zlviQQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDBvSuUUnHM6YSENa5vilcP6bytlvUcoiTMJbjJt+2yTQIgfsYyL9fNaZqmLc8/6oS7LgM7vz3GbDjtJX9MU2+4Qpo=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-5.4.26.tgz_1470153837200_0.7081927671097219",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.27": {
+			"name": "@types/pouchdb",
+			"version": "5.4.27",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb@5.4.27",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "ea39ca37dde558ff83a560ed382933c771ade77d",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-5.4.27.tgz",
+				"integrity": "sha512-8SkCrAHc3dTnDkXpZQfjJnB0CZ39A2SpdleRHNrec+E7ETb3qI0XbDw6B9PAWm7tN6Xw4Ztrwt7jvW1OvKeaiw==",
+				"signatures": [
+					{
+						"sig": "MEQCIEETPw6GcRX3SfO3V02tSABzwoZTG/fuf4QzwWS0n3ndAiAlXn738g2CmLhGD7y4u0bWds5i8dh/yCGA7GWG3Rys2w==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-5.4.27.tgz_1471621006440_0.7673325564246625",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.28": {
+			"name": "@types/pouchdb",
+			"version": "5.4.28",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb@5.4.28",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "98fdfd25b1ff83d0fafe511155983cc8ecfacaaa",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-5.4.28.tgz",
+				"integrity": "sha512-dAflzDkyGyb/dYUNzAqHBxLkAcJSoh36QKVlfT8CzF0aQxAp1BYn65zGec/IeYJOzp8r2c5LePHkw27Xf37Ozg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDArHQaNtuyZYSlAon0D8Kcm9Po/R5FxQUt9q7sqKYvBgIgD6Nk8U5OCdMV7FNBx1JIGjD/QphCWmeNcLM6929yrC0=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb v5.4.4",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-http": "*",
+				"@types/pouchdb-node": "*",
+				"@types/pouchdb-browser": "*",
+				"@types/pouchdb-mapreduce": "*",
+				"@types/pouchdb-adapter-idb": "*",
+				"@types/pouchdb-replication": "*",
+				"@types/pouchdb-adapter-http": "*",
+				"@types/pouchdb-adapter-memory": "*",
+				"@types/pouchdb-adapter-websql": "*",
+				"@types/pouchdb-adapter-leveldb": "*",
+				"@types/pouchdb-adapter-fruitdown": "*",
+				"@types/pouchdb-adapter-node-websql": "*",
+				"@types/pouchdb-adapter-localstorage": "*"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-5.4.28.tgz_1474308148180_0.5809186885599047",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "e222919b3b165dd3bbd7ecbbff7846b81281ce390ee3a6b6ecac0a0d58c2cff0",
+			"contributors": []
+		},
+		"6.1.0": {
+			"name": "@types/pouchdb",
+			"version": "6.1.0",
+			"license": "MIT",
+			"_id": "@types/pouchdb@6.1.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ryan.cavanaugh@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/AGBrown",
+					"name": "Andy Brown"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "ae3709bb24196dbdf95b04ebdde5f0637db47988",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.1.0.tgz",
+				"integrity": "sha512-ufkUEFJhDi1lLa8ALK0zwSoY4tg11gz/StSh/JIxBIfzb5lCse712RJUdZeLtEPyXWncHkY4RvXbUraMSqUHiw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCOBYJlGVklDxjU7dErO3+LfdzFAIfeS3eXSu9hW6cXkAIhAJsz71FfiWBWwt5DkUD3gBcjuBKpEUl8XKIq+mNW6bv1",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-http": "*",
+				"@types/pouchdb-node": "*",
+				"@types/pouchdb-browser": "*",
+				"@types/pouchdb-mapreduce": "*",
+				"@types/pouchdb-adapter-idb": "*",
+				"@types/pouchdb-replication": "*",
+				"@types/pouchdb-adapter-http": "*",
+				"@types/pouchdb-adapter-memory": "*",
+				"@types/pouchdb-adapter-websql": "*",
+				"@types/pouchdb-adapter-leveldb": "*",
+				"@types/pouchdb-adapter-fruitdown": "*",
+				"@types/pouchdb-adapter-node-websql": "*",
+				"@types/pouchdb-adapter-localstorage": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.0",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-6.1.0.tgz_1492528373694_0.40596456034108996",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "32e3a6b7f023c7e14233c601ad842772f32374bc11e1978a7eb3ec630229c89f"
+		},
+		"6.1.1": {
+			"name": "@types/pouchdb",
+			"version": "6.1.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb@6.1.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/AGBrown",
+					"name": "Andy Brown"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "4a192a9384f5cabf81598236cc31052cf1a200ba",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.1.1.tgz",
+				"integrity": "sha512-fNoYlDhhYOP+G6Xx2cHU50EX8UBqsJUCY7BuhkynYVqM2BcZO31uElTVXgU8oJEuott9N0QcPloEHy7Be9/3fg==",
+				"signatures": [
+					{
+						"sig": "MEQCIDgv5CGUtTSiRaqN5yTa08BgKRClNYZWSiB62WdpHZKPAiBhzRUyDk0plO6L5T3yPuNTP0Pk4/uR90+8KCV1z/EPog==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-http": "*",
+				"@types/pouchdb-node": "*",
+				"@types/pouchdb-browser": "*",
+				"@types/pouchdb-mapreduce": "*",
+				"@types/pouchdb-adapter-idb": "*",
+				"@types/pouchdb-replication": "*",
+				"@types/pouchdb-adapter-http": "*",
+				"@types/pouchdb-adapter-memory": "*",
+				"@types/pouchdb-adapter-websql": "*",
+				"@types/pouchdb-adapter-leveldb": "*",
+				"@types/pouchdb-adapter-fruitdown": "*",
+				"@types/pouchdb-adapter-node-websql": "*",
+				"@types/pouchdb-adapter-localstorage": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-6.1.1.tgz_1497557839005_0.4934009234420955",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "c77eebfd2f28b6964202ed83f1a9a6498c260ffda235e3e3cd0669961711804e"
+		},
+		"6.3.0": {
+			"name": "@types/pouchdb",
+			"version": "6.3.0",
+			"license": "MIT",
+			"_id": "@types/pouchdb@6.3.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/AGBrown",
+					"name": "Andy Brown"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "dbab3dda675c583ccdfd231860643f537d9a9d19",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.3.0.tgz",
+				"integrity": "sha512-7A2lBg/wWotAIeay/xAQ7Vy2XTrBwOyOIK9AgSuxRwZel9K3cexVPCF6/IsFt7Np851oVqW0uSn7fs0bab1kbA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCrW1mxJUQhwVdfNHgG4eda6o0sMcpkiOtugl54zPuuygIgD1FAohIS6N2lqKEoxQreN1fSp00x3Gmtsts9N92HeQI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-http": "*",
+				"@types/pouchdb-node": "*",
+				"@types/pouchdb-browser": "*",
+				"@types/pouchdb-mapreduce": "*",
+				"@types/pouchdb-adapter-idb": "*",
+				"@types/pouchdb-replication": "*",
+				"@types/pouchdb-adapter-http": "*",
+				"@types/pouchdb-adapter-memory": "*",
+				"@types/pouchdb-adapter-websql": "*",
+				"@types/pouchdb-adapter-leveldb": "*",
+				"@types/pouchdb-adapter-fruitdown": "*",
+				"@types/pouchdb-adapter-node-websql": "*",
+				"@types/pouchdb-adapter-localstorage": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-6.3.0.tgz_1501596403455_0.08528719074092805",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "062ed33c316aca1b9c1d4f5650bbb83a9e18ee29a6237fe4c37d50f8165ed969"
+		},
+		"6.3.1": {
+			"name": "@types/pouchdb",
+			"version": "6.3.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb@6.3.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/AGBrown",
+					"name": "Andy Brown",
+					"githubUsername": "AGBrown"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "3419675b979677ba9084ffe5e59b288066571346",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.3.1.tgz",
+				"integrity": "sha512-rZllwlH49lWcQnsikz/EMJJMiA0za0fIIJaSoyui5VzPlw276tmgnlFReFiQxfMrMifkwDl2NJ7hCkEEK7p8Jw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDCqfYFi26nItXoFZOLaapOsFJaJ4hFgzJPrMoAC/Tx+gIhAJr8F6HrlUAWyQqNWr+CJwofPic+Dmsf7vGxB5JOfGcD",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-http": "*",
+				"@types/pouchdb-node": "*",
+				"@types/pouchdb-browser": "*",
+				"@types/pouchdb-mapreduce": "*",
+				"@types/pouchdb-adapter-idb": "*",
+				"@types/pouchdb-replication": "*",
+				"@types/pouchdb-adapter-http": "*",
+				"@types/pouchdb-adapter-memory": "*",
+				"@types/pouchdb-adapter-websql": "*",
+				"@types/pouchdb-adapter-leveldb": "*",
+				"@types/pouchdb-adapter-fruitdown": "*",
+				"@types/pouchdb-adapter-node-websql": "*",
+				"@types/pouchdb-adapter-localstorage": "*"
+			},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-6.3.1.tgz_1507228204435_0.21987733920104802",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "7cd79beb29ad9bd84716465ab0a83c1f6b7707dc539e34d0809de5af29aafee1"
+		},
+		"6.3.2": {
+			"name": "@types/pouchdb",
+			"version": "6.3.2",
+			"license": "MIT",
+			"_id": "@types/pouchdb@6.3.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/AGBrown",
+					"name": "Andy Brown",
+					"githubUsername": "AGBrown"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "fa6f70b98c55c7685867887350e44421d5446592",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.3.2.tgz",
+				"integrity": "sha512-ZiBUj/DX2lxl2pADevFof4e/wUhen6XuN6qmKNINX6yrMi2+gMjJaK/IoIjpMAANB1opw1u5pUhvwv5uflzA/Q==",
+				"signatures": [
+					{
+						"sig": "MEQCIG/xFfDoR5EsTo/+729ibCM5dFvx6O6mtjlH/JW2PUytAiADpKX65agQeUrjZ4lQb75z9/yElpSKcmHivq7DuBJl9A==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-http": "*",
+				"@types/pouchdb-node": "*",
+				"@types/pouchdb-browser": "*",
+				"@types/pouchdb-mapreduce": "*",
+				"@types/pouchdb-adapter-idb": "*",
+				"@types/pouchdb-replication": "*",
+				"@types/pouchdb-adapter-http": "*",
+				"@types/pouchdb-adapter-memory": "*",
+				"@types/pouchdb-adapter-websql": "*",
+				"@types/pouchdb-adapter-leveldb": "*",
+				"@types/pouchdb-adapter-fruitdown": "*",
+				"@types/pouchdb-adapter-node-websql": "*",
+				"@types/pouchdb-adapter-localstorage": "*"
+			},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-6.3.2.tgz_1513287313267_0.03616624907590449",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "cb14b86be466767aef807446a42eee75334dfc2526e4498165e7baed10496638"
+		},
+		"6.3.3": {
+			"name": "@types/pouchdb",
+			"version": "6.3.3",
+			"license": "MIT",
+			"_id": "@types/pouchdb@6.3.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/AGBrown",
+					"name": "Andy Brown",
+					"githubUsername": "AGBrown"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "bb83f6d31f401f7a16b4bbc863e1d9e6ae5b988f",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.3.3.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-SL6TR37gf2nNhzWEtPW4esuQgiD9oimXFAXKZddviig6KUfDcbwQF3TB3A1fhALN6YxYpblGvPX+a88E8clkZg==",
+				"signatures": [
+					{
+						"sig": "MEUCIFndcer4ddvYVWd82JnwYGImPazHFQzVE9hV3Rz71cHAAiEAtYzLoRwwYStTxLiKo+eGowIYA7D0IzA9GKyhoQATtiA=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 4752,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcZJGZCRA9TVsSAnZWagAAP4kP/AnESD5ql6jzUKqXquro\nKO1O8BTrp1hvFynnflSBZQ1R7EVxKZqqpfSi6Lp6Hp22lHLH8FkEoz6Npqeq\n1btirY6sPXE224e+E7ZFZop+YBoCkeU7PC/0w8+SIyzCQymfl/vk28Hyqckq\ni5iUptZgXRQWXrsjNKJUadNi3oANea+s56LC2qjButLGryR6CDdUa1WbddIP\no2nr6OF9OfOOY6lUzQyI+Dr+E2pcRaq3QRPs8C9eTYEAmUP0Yuannh3eaQA2\nXudS9EIUq6aTmP0NWXdVGt2XFTgRjwhSh0NsVuOREVFZRIuUCnuAlCVTeJSZ\ngTJ1Nj8VWXBqYhe4lNCNTH0IZdnas+qikhIF0wuHBa5oUNMwIW+n2gmcQgBj\n6tmE5AItE3eJOuWTh72dv451i3Xfc6WR+Mj669LFOm+XzE6vXZT0FOxuiIjM\n7gZQulvVDyrng9/MldK9AFqLu6fgYUOqAmRMUXYyJ+D6IOA5EIKastdFa3Z5\nHi0v064BpgfCu747E3zVEfsElU8XXtB1FNPlvls5TdbSX85fUNkW8RBOepb9\n/9jAVCW3/5qmfl6SZkvKJJbxC3dU/LqGsc2QilL/Rrv4XZcHYDHoTndI2Ra+\ndDO93Qg8m4ELuf3aHN/u/tEVvjNFDtSUnnirjuwcEGt/X524BjQ5L+MEMf+N\nenVn\r\n=ZB6o\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-http": "*",
+				"@types/pouchdb-node": "*",
+				"@types/pouchdb-browser": "*",
+				"@types/pouchdb-mapreduce": "*",
+				"@types/pouchdb-adapter-idb": "*",
+				"@types/pouchdb-replication": "*",
+				"@types/pouchdb-adapter-http": "*",
+				"@types/pouchdb-adapter-memory": "*",
+				"@types/pouchdb-adapter-websql": "*",
+				"@types/pouchdb-adapter-leveldb": "*",
+				"@types/pouchdb-adapter-fruitdown": "*",
+				"@types/pouchdb-adapter-node-websql": "*",
+				"@types/pouchdb-adapter-localstorage": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb_6.3.3_1550094741998_0.9478650806123172",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "a2b2c15fabb656c07be6021fa54797f646bb66a2a5251dc0e1c2bd8a9464ab65"
+		},
+		"6.4.0": {
+			"name": "@types/pouchdb",
+			"version": "6.4.0",
+			"license": "MIT",
+			"_id": "@types/pouchdb@6.4.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/AGBrown",
+					"name": "Andy Brown",
+					"githubUsername": "AGBrown"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "f9c41ca64b23029f9bf2eb4bf6956e6431cb79f8",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.4.0.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-eGCpX+NXhd5VLJuJMzwe3L79fa9+IDTrAG3CPaf4s/31PD56hOrhDJTSmRELSXuiqXr6+OHzzP0PldSaWsFt7w==",
+				"signatures": [
+					{
+						"sig": "MEUCIHEk97nZsg0u86gDKNanRZnShdzKfOlTZAmFus6rnQvfAiEAky0ddOO5HkRaH6kW/4pmO225UM4JRu7XsUJkdqebGiw=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 4942,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdGibXCRA9TVsSAnZWagAAAI8P/2nI+362l963yPSfRKgR\nKN4QoNVsaAtJDIZmLldFb4OBROYQOk+nLi//e+ZhMBOUx4U0TeTyb1YErcaa\nf2ImuYe1dPlVxlfkuMfQT0tKSNW5Dzt2j0EbaoSlHpDmlZvTSGOTEiXP6aXg\nBwrPHNffD7HbZwsj2M3meiL38nyXkNehoAQB9/LA304MAFNVh8Vz9ljkQ6yU\ngGO7sCL4H2OJKeX06mDwduMPzSPkyZqHbfGDuoYAB8sLEkPQQTjG6220YsC4\nildTB4dGc3eqUnZqf3CwZx8YeVtJn5G+MnAcwsJsTWnt5PkVMEWrY6m0xB9+\nTyTivDAXfSHenNzCZb8IFwGH7EUzx9FAIWMcuurztbgIXd499vZPjeQ/Ovvr\nTDt/NIHLYE1e+jq77d22yEbeshySlq2J5rR1pQ2JAv3iSVjoK9WJH1TZaMHN\nanwg5S/zsKWQsDOYtK27DQEINQ+EHTbf6HOQ7fHIQjzwHhJstHz39TUFlpqz\niZ1F3lyBkdPkEB1pB1K5bSq+qq6V/1Thpw4p3qRbms+P0Ehzq4l4NFVeisbv\nuFJeJbHdtXizEd1ayydV2kbUBEGK+9VFXPC01yQtuZSNuuMMcOKxBneU+9WO\nej0ThVmOu6hEZdKXLFf/GlaIao6vIK4CG8oMZjnkJq/BCPmRnpJ8C81XNdMw\nwlxc\r\n=2Dmt\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb"
+			},
+			"description": "TypeScript definitions for pouchdb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-http": "*",
+				"@types/pouchdb-node": "*",
+				"@types/pouchdb-browser": "*",
+				"@types/pouchdb-mapreduce": "*",
+				"@types/pouchdb-adapter-idb": "*",
+				"@types/pouchdb-replication": "*",
+				"@types/pouchdb-adapter-http": "*",
+				"@types/pouchdb-adapter-memory": "*",
+				"@types/pouchdb-adapter-websql": "*",
+				"@types/pouchdb-adapter-leveldb": "*",
+				"@types/pouchdb-adapter-fruitdown": "*",
+				"@types/pouchdb-adapter-node-websql": "*",
+				"@types/pouchdb-adapter-localstorage": "*",
+				"@types/pouchdb-adapter-cordova-sqlite": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb_6.4.0_1561994966582_0.28833342074111923",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "3080f27eb6ece03e47cb985f9a46b7ea9cc88cde4ea80ea984cbb072a4c198e1"
+		},
+		"6.4.1": {
+			"name": "@types/pouchdb",
+			"version": "6.4.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb@6.4.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/AGBrown",
+					"name": "Andy Brown",
+					"githubUsername": "AGBrown"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb",
+			"dist": {
+				"shasum": "b411659a6b9c79114d72bb02e5fa69b758592fa1",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.4.1.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-GvTXWOup2REK9WttO6nHM81S+ICTssBzpMZ/waD+HBWvbNLGPeg89rOhsKm7YuUjSPRZwYkfldqh8epvaR9JdQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIGR5RuYHmNq0LQgwvsLBLBmjZYnWDBFuDBEjheJQlbQ/AiAqMbL4rk0qvTVvMvsfVq9I2JZ1FMnDypBlVJNeIXZuew==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 6377
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb"
+			},
+			"description": "TypeScript definitions for pouchdb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-http": "*",
+				"@types/pouchdb-node": "*",
+				"@types/pouchdb-browser": "*",
+				"@types/pouchdb-mapreduce": "*",
+				"@types/pouchdb-adapter-idb": "*",
+				"@types/pouchdb-replication": "*",
+				"@types/pouchdb-adapter-http": "*",
+				"@types/pouchdb-adapter-memory": "*",
+				"@types/pouchdb-adapter-websql": "*",
+				"@types/pouchdb-adapter-leveldb": "*",
+				"@types/pouchdb-adapter-fruitdown": "*",
+				"@types/pouchdb-adapter-node-websql": "*",
+				"@types/pouchdb-adapter-localstorage": "*",
+				"@types/pouchdb-adapter-cordova-sqlite": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb_6.4.1_1697627736117_0.8767833461085415",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "22129652c768c25c08c2b2c559146b875effb8d59f4b343cce61f25ee3b6be75"
+		},
+		"6.4.2": {
+			"name": "@types/pouchdb",
+			"version": "6.4.2",
+			"license": "MIT",
+			"_id": "@types/pouchdb@6.4.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/AGBrown",
+					"name": "Andy Brown",
+					"githubUsername": "AGBrown"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb",
+			"dist": {
+				"shasum": "54777533d86f4abd1a3989b272e085323623bbe1",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.4.2.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-YsI47rASdtzR+3V3JE2UKY58snhm0AglHBpyckQBkRYoCbTvGagXHtV0x5n8nzN04jQmvTG+Sm85cIzKT3KXBA==",
+				"signatures": [
+					{
+						"sig": "MEUCIBiyvqov+eMkAleE7SdhdIq/HUp+W4D+QpH0H3u8FJsiAiEArQgv0WNAWwfvd24gbclTJrpHWq2sUMCc9P9JGmHCyQA=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 6377
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb"
+			},
+			"description": "TypeScript definitions for pouchdb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-http": "*",
+				"@types/pouchdb-node": "*",
+				"@types/pouchdb-browser": "*",
+				"@types/pouchdb-mapreduce": "*",
+				"@types/pouchdb-adapter-idb": "*",
+				"@types/pouchdb-replication": "*",
+				"@types/pouchdb-adapter-http": "*",
+				"@types/pouchdb-adapter-memory": "*",
+				"@types/pouchdb-adapter-websql": "*",
+				"@types/pouchdb-adapter-leveldb": "*",
+				"@types/pouchdb-adapter-fruitdown": "*",
+				"@types/pouchdb-adapter-node-websql": "*",
+				"@types/pouchdb-adapter-localstorage": "*",
+				"@types/pouchdb-adapter-cordova-sqlite": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb_6.4.2_1699363053312_0.05673402971191721",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "f5e3120d28a9445c306c8d049dbf7102d6a0906bb272faac318666413c56ed84"
+		}
+	},
+	"time": {
+		"created": "2016-05-17T18:38:49.774Z",
+		"modified": "2024-11-11T09:31:21.561Z",
+		"0.1.12-alpha": "2016-05-17T18:38:49.774Z",
+		"0.1.13-alpha": "2016-05-19T22:03:14.686Z",
+		"0.1.18-alpha": "2016-05-20T20:26:53.170Z",
+		"0.1.19-alpha": "2016-05-25T05:42:50.511Z",
+		"0.1.20-alpha": "2016-07-01T20:23:22.667Z",
+		"0.1.21-alpha": "2016-07-01T23:45:41.518Z",
+		"0.1.22-alpha": "2016-07-02T03:10:21.699Z",
+		"0.1.23-alpha": "2016-07-04T01:03:14.527Z",
+		"0.1.24-alpha": "2016-07-08T21:10:27.287Z",
+		"0.1.25": "2016-07-14T15:45:14.356Z",
+		"5.4.26": "2016-08-02T16:03:58.923Z",
+		"5.4.27": "2016-08-19T15:36:48.410Z",
+		"5.4.28": "2016-09-19T18:02:28.409Z",
+		"6.1.0": "2017-04-18T15:12:53.918Z",
+		"6.1.1": "2017-06-15T20:17:19.101Z",
+		"6.3.0": "2017-08-01T14:06:44.540Z",
+		"6.3.1": "2017-10-05T18:30:04.598Z",
+		"6.3.2": "2017-12-14T21:35:13.321Z",
+		"6.3.3": "2019-02-13T21:52:22.178Z",
+		"6.4.0": "2019-07-01T15:29:26.697Z",
+		"6.4.1": "2023-10-18T11:15:36.296Z",
+		"6.4.2": "2023-11-07T13:17:33.639Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"ts2.0": "6.1.0",
+		"ts2.1": "6.1.0",
+		"ts2.2": "6.1.0",
+		"ts2.3": "6.4.0",
+		"ts2.4": "6.4.0",
+		"ts2.5": "6.4.0",
+		"ts2.6": "6.4.0",
+		"ts2.7": "6.4.0",
+		"ts2.8": "6.4.0",
+		"ts2.9": "6.4.0",
+		"ts3.0": "6.4.0",
+		"ts3.1": "6.4.0",
+		"ts3.2": "6.4.0",
+		"ts3.3": "6.4.0",
+		"ts3.4": "6.4.0",
+		"ts3.5": "6.4.0",
+		"ts3.6": "6.4.0",
+		"ts3.7": "6.4.0",
+		"ts3.8": "6.4.0",
+		"ts3.9": "6.4.0",
+		"ts4.0": "6.4.0",
+		"ts4.1": "6.4.0",
+		"ts4.2": "6.4.0",
+		"ts4.3": "6.4.0",
+		"ts4.4": "6.4.0",
+		"ts5.7": "6.4.2",
+		"ts5.6": "6.4.2",
+		"latest": "6.4.2",
+		"ts4.5": "6.4.2",
+		"ts4.6": "6.4.2",
+		"ts4.7": "6.4.2",
+		"ts4.8": "6.4.2",
+		"ts4.9": "6.4.2",
+		"ts5.0": "6.4.2",
+		"ts5.1": "6.4.2",
+		"ts5.2": "6.4.2",
+		"ts5.3": "6.4.2",
+		"ts5.4": "6.4.2",
+		"ts5.5": "6.4.2",
+		"ts5.8": "6.4.2"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"9dee1a447260da6c033b0439a1333199\"",
+			"fetched": 1734527719615
+		}
+	},
+	"_distfiles": {
+		"pouchdb-0.1.12-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.12-alpha.tgz",
+			"sha": "aef691f2b7c62e9c2c22bf3afb9617e42f1e07ea",
+			"registry": "npmjs"
+		},
+		"pouchdb-0.1.13-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.13-alpha.tgz",
+			"sha": "8a27983a8d7b71d5f1d2a42e0c1bcceabd4cf35f",
+			"registry": "npmjs"
+		},
+		"pouchdb-0.1.18-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.18-alpha.tgz",
+			"sha": "6d83814f253d071f94db671f665d787a3576f863",
+			"registry": "npmjs"
+		},
+		"pouchdb-0.1.19-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.19-alpha.tgz",
+			"sha": "c1b6e1944899c23380e43334822bad894e6532bb",
+			"registry": "npmjs"
+		},
+		"pouchdb-0.1.20-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.20-alpha.tgz",
+			"sha": "e113f2afd311555d82c7914cc6b91ae8af673070",
+			"registry": "npmjs"
+		},
+		"pouchdb-0.1.21-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.21-alpha.tgz",
+			"sha": "8695225bdf823cafc98b6eea1480a65bdadc19db",
+			"registry": "npmjs"
+		},
+		"pouchdb-0.1.22-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.22-alpha.tgz",
+			"sha": "67b78e4415b5a44fb455e583791a842c0ca7efd2",
+			"registry": "npmjs"
+		},
+		"pouchdb-0.1.23-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.23-alpha.tgz",
+			"sha": "b9d7d5b4f7896baea85c143e05cbb5be39261ddb",
+			"registry": "npmjs"
+		},
+		"pouchdb-0.1.24-alpha.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.24-alpha.tgz",
+			"sha": "55fbd0427f293c0d8888bb0bbee10de31bb4b44b",
+			"registry": "npmjs"
+		},
+		"pouchdb-0.1.25.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-0.1.25.tgz",
+			"sha": "0461341ce36465a8bc5fd15ef5ffbcec87b67e43",
+			"registry": "npmjs"
+		},
+		"pouchdb-5.4.26.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-5.4.26.tgz",
+			"sha": "86f0ceec2873fa45582adb514f5821d78be453de",
+			"registry": "npmjs"
+		},
+		"pouchdb-5.4.27.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-5.4.27.tgz",
+			"sha": "ea39ca37dde558ff83a560ed382933c771ade77d",
+			"registry": "npmjs"
+		},
+		"pouchdb-5.4.28.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-5.4.28.tgz",
+			"sha": "98fdfd25b1ff83d0fafe511155983cc8ecfacaaa",
+			"registry": "npmjs"
+		},
+		"pouchdb-6.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.1.0.tgz",
+			"sha": "ae3709bb24196dbdf95b04ebdde5f0637db47988",
+			"registry": "npmjs"
+		},
+		"pouchdb-6.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.1.1.tgz",
+			"sha": "4a192a9384f5cabf81598236cc31052cf1a200ba",
+			"registry": "npmjs"
+		},
+		"pouchdb-6.3.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.3.0.tgz",
+			"sha": "dbab3dda675c583ccdfd231860643f537d9a9d19",
+			"registry": "npmjs"
+		},
+		"pouchdb-6.3.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.3.1.tgz",
+			"sha": "3419675b979677ba9084ffe5e59b288066571346",
+			"registry": "npmjs"
+		},
+		"pouchdb-6.3.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.3.2.tgz",
+			"sha": "fa6f70b98c55c7685867887350e44421d5446592",
+			"registry": "npmjs"
+		},
+		"pouchdb-6.3.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.3.3.tgz",
+			"sha": "bb83f6d31f401f7a16b4bbc863e1d9e6ae5b988f",
+			"registry": "npmjs"
+		},
+		"pouchdb-6.4.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.4.0.tgz",
+			"sha": "f9c41ca64b23029f9bf2eb4bf6956e6431cb79f8",
+			"registry": "npmjs"
+		},
+		"pouchdb-6.4.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.4.1.tgz",
+			"sha": "b411659a6b9c79114d72bb02e5fa69b758592fa1",
+			"registry": "npmjs"
+		},
+		"pouchdb-6.4.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb/-/pouchdb-6.4.2.tgz",
+			"sha": "54777533d86f4abd1a3989b272e085323623bbe1",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-6.4.0.tgz": {
+			"shasum": "f9c41ca64b23029f9bf2eb4bf6956e6431cb79f8"
+		}
+	},
+	"_rev": "2-7c6842818d1c9012",
+	"_id": "@types/pouchdb",
+	"readme": "[object Object]"
+}

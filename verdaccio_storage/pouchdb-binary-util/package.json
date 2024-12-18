@@ -1,0 +1,167 @@
+{
+	"name": "pouchdb-binary-util",
+	"versions": {
+		"1.0.0": {
+			"name": "pouchdb-binary-util",
+			"version": "1.0.0",
+			"description": "Binary utils used in PouchDB",
+			"main": "index.js",
+			"scripts": {
+				"test": "jshint -c .jshintrc index.js"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/pouchdb/binary-util.git"
+			},
+			"keywords": [
+				"blob",
+				"pouchdb"
+			],
+			"author": {
+				"name": "Nolan Lawson",
+				"email": "nolan.lawson@gmail.com"
+			},
+			"license": "Apache 2",
+			"bugs": {
+				"url": "https://github.com/pouchdb/binary-util/issues"
+			},
+			"homepage": "https://github.com/pouchdb/binary-util",
+			"devDependencies": {
+				"jshint": "^2.6.0"
+			},
+			"gitHead": "3139780d8964bbe2c013123e2814b17a84ad99ae",
+			"_id": "pouchdb-binary-util@1.0.0",
+			"_shasum": "47062292dabd4ce4697faa362a6ef16c61a8ad16",
+			"_from": ".",
+			"_npmVersion": "2.5.1",
+			"_nodeVersion": "1.3.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "47062292dabd4ce4697faa362a6ef16c61a8ad16",
+				"tarball": "https://registry.npmjs.org/pouchdb-binary-util/-/pouchdb-binary-util-1.0.0.tgz",
+				"integrity": "sha512-0zDg6uTXQwgjqSIW2mFa3+F2z7a90/4y4iKTEvNoSgp3MwPXucthV+ZjQ0AiK+PGsGqlruXxOWJHg80iRdtFJg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCp/moyoqMQpUYgz2+NuqJ2AJE82OXYp62N1dT4ZxEHOQIgDQfhXlXEwiT1LcMcNyiKfXvyyzjGgLWbU0SswEAgdE8="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"1.0.1": {
+			"name": "pouchdb-binary-util",
+			"version": "1.0.1",
+			"description": "Binary utils used in PouchDB",
+			"main": "index.js",
+			"scripts": {
+				"test": "jshint -c .jshintrc index.js"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/pouchdb/binary-util.git"
+			},
+			"keywords": [
+				"blob",
+				"pouchdb"
+			],
+			"author": {
+				"name": "Nolan Lawson",
+				"email": "nolan.lawson@gmail.com"
+			},
+			"license": "Apache 2",
+			"bugs": {
+				"url": "https://github.com/pouchdb/binary-util/issues"
+			},
+			"homepage": "https://github.com/pouchdb/binary-util",
+			"devDependencies": {
+				"jshint": "^2.6.0"
+			},
+			"gitHead": "0c4e9f5fcf785b6d33fd305301247843a0e73bc2",
+			"_id": "pouchdb-binary-util@1.0.1",
+			"_shasum": "34c9ccf25e3ff6ddeb2abed99a2cf8526826f9cb",
+			"_from": ".",
+			"_npmVersion": "2.7.0",
+			"_nodeVersion": "0.10.36",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				}
+			],
+			"dist": {
+				"shasum": "34c9ccf25e3ff6ddeb2abed99a2cf8526826f9cb",
+				"tarball": "https://registry.npmjs.org/pouchdb-binary-util/-/pouchdb-binary-util-1.0.1.tgz",
+				"integrity": "sha512-BVF1oFXm8BLTcl4r7v/l6HoLnfC1QX4eQTENlIdQUT6k1leM1dDO83mHdhyMSNGQtjPG9t8+T3BTYW654Uxpog==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIBrA5KpmsnvOSwiTNAN3l7y50UkdCsQ4tI6H2Im6F9lwAiAHos5/MNhY0DwwjUp2UtkBYzLEHGZRpmprqbk1CZwrfA=="
+					}
+				]
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-06-24T12:03:38.401Z",
+		"created": "2015-02-22T14:58:01.728Z",
+		"1.0.0": "2015-02-22T14:58:01.728Z",
+		"1.0.1": "2015-04-21T02:40:54.905Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "1.0.1"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"658c09e32e19de3be01e4eb70f8dac14\"",
+			"fetched": 1734527710225
+		}
+	},
+	"_distfiles": {
+		"pouchdb-binary-util-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-binary-util/-/pouchdb-binary-util-1.0.0.tgz",
+			"sha": "47062292dabd4ce4697faa362a6ef16c61a8ad16",
+			"registry": "npmjs"
+		},
+		"pouchdb-binary-util-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-binary-util/-/pouchdb-binary-util-1.0.1.tgz",
+			"sha": "34c9ccf25e3ff6ddeb2abed99a2cf8526826f9cb",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-binary-util-1.0.1.tgz": {
+			"shasum": "34c9ccf25e3ff6ddeb2abed99a2cf8526826f9cb"
+		}
+	},
+	"_rev": "2-f3d294ad6201dea9",
+	"_id": "pouchdb-binary-util",
+	"readme": "pouchdb-binary-util\n=========\n\nDeprecated\n------\n\nThis has been supplanted by the \"extras\" API. If you need any of the binary utils, open\na pull request on PouchDB to expose the util you want in the \"extras.\" See this for\ndetails: https://github.com/pouchdb/pouchdb/pull/3730\n\nBinary utils used in PouchDB."
+}

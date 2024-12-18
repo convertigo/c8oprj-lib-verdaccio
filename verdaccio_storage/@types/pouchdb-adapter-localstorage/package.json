@@ -1,0 +1,755 @@
+{
+	"name": "@types/pouchdb-adapter-localstorage",
+	"versions": {
+		"5.4.1": {
+			"name": "@types/pouchdb-adapter-localstorage",
+			"version": "5.4.1",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-localstorage@5.4.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "41eea21e834475b2078777bca68e44e5d9a47b2c",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-5.4.1.tgz",
+				"integrity": "sha512-e32uop/XHH7JQacVddQMEaDDNKvjSoZbDnUdy6CeOAnAb2q23Vt4SGB6PAbSBMBZGmdYK7Mn14hUL2LzQBJG5g==",
+				"signatures": [
+					{
+						"sig": "MEMCIFmWRbsM1FHW0/fdFy95JfK65XAGcLjTGbSSpzLh1NDXAh9Nf24xZtyurf6NGXj/sG2ZZgowGpQiuJxEKr7tsLoQ",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-localstorage.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-localstorage v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-localstorage-5.4.1.tgz_1470153852633_0.24503272934816778",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.2": {
+			"name": "@types/pouchdb-adapter-localstorage",
+			"version": "5.4.2",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-localstorage@5.4.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "67b0ef5106056c6f5487148239659f279e7e5b11",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-5.4.2.tgz",
+				"integrity": "sha512-tiNOXujVr7ePJteKM4DBH3CkEDIhZ+8Dz0JELJRHqsIYbTo2sVSUaqLI9TFkHORKWT/rcSEsHrpLm2y4ylQJGA==",
+				"signatures": [
+					{
+						"sig": "MEQCIBxeHvki9cgAq/7qrKmLYMBqB0qXLgld9izl+PhfifVbAiBNQOHkXMQp/+6VrMRL2dmCg5IXZ01JmtJXSJdMay7RtQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-localstorage.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-localstorage v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-localstorage-5.4.2.tgz_1471621018465_0.08280249079689384",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.3": {
+			"name": "@types/pouchdb-adapter-localstorage",
+			"version": "5.4.3",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-localstorage@5.4.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "bad06b71be53554cc75ba58c8db8e16daaed87da",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-5.4.3.tgz",
+				"integrity": "sha512-XokHAxergM6XzD6udQBECUlWjDqEIYdyjqU2FuVA3cC72FkVx/zTu6u5VisFvLQCJ4Q3PgkezR06pTQwNm9/FQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDABTVpQaDPKxH6IX3g4bndVnljPzAozmYBdjpsTQterAIhAM0XXinIV73qkawQm+Ns2nAvLyYRHSCgt0u1+fEaFpxL",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-localstorage.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-localstorage v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-localstorage-5.4.3.tgz_1472151202912_0.6831626577768475",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.4": {
+			"name": "@types/pouchdb-adapter-localstorage",
+			"version": "5.4.4",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-localstorage@5.4.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "7fe97e33c0b493f691860eb1bf45ac04c84ea96d",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-5.4.4.tgz",
+				"integrity": "sha512-uI62f3f21Qaokth7ZMxpS4j2eUcF2yXFcpUcnjWdafRvAMTTIo96XOt4Cu6WtsUOcCRuLKHA6XvKxgDFfGZARw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC+OPchQ4zxxMxG+ZSrjJ55g/FJKg8pKadDAxD3VSlMHAIhALd7yjlVBwgbnXEkvOFbKKUv2GCdASE312s10ZH3DQkS",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-localstorage v5.4.4",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-localstorage-5.4.4.tgz_1474308064929_0.8287841083947569",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "40ad427036da8c6ee1d6a3aad93e6e838f893f6dacae93b695455295342362e3",
+			"contributors": []
+		},
+		"6.1.0": {
+			"name": "@types/pouchdb-adapter-localstorage",
+			"version": "6.1.0",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-localstorage@6.1.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "07c4033eca96a44327ca6768b01196cd25c50798",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-6.1.0.tgz",
+				"integrity": "sha512-RTsZ6SILUZPOm4eOA2E+QDJGUE9dcYmiuf80uBgcKXL+Ya8CGM8vKT0RlRciLAK2/HfvDULA0GYBEDjHHEc2wg==",
+				"signatures": [
+					{
+						"sig": "MEQCIF0o6qpU8e5RZJwrxiCt4QG6mrRjXD/iV5SMqgWru5GsAiB5weWC0njgG82xc49/jarnrJgrnnBMlnDex/8PJNKLcA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-localstorage",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.0",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-localstorage-6.1.0.tgz_1492528358432_0.1833898131735623",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "1205d41503f87a4342094b3a3bf1822ac3507ac8477feb38053de9ff0cc19e61"
+		},
+		"6.1.1": {
+			"name": "@types/pouchdb-adapter-localstorage",
+			"version": "6.1.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-localstorage@6.1.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "e4908599e196cf84c147516fe8b37d8040e76543",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-6.1.1.tgz",
+				"integrity": "sha512-Xs+/nS4pOQHzb6kSjwb+rIEItZYRFszuVVmgh0FtfQkJpi8j63QhsNVW+XDyRNJkiKeAzIm1ysDed/+7SDuKOg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDfAwjvaIe7sMjmuXWKotCw7RrlMQ5WkCFKn/qT+RBQkwIgVkiSH9yzYxWo1x1DwZi+tue9NU6Y5nY4IXvzgd9XqLQ=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-localstorage",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-localstorage-6.1.1.tgz_1497557827626_0.4388510319404304",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "9d47715cacc5de2d062aad8c25610f698a9ac25b83f1970bbbac0489a5b80249"
+		},
+		"6.1.2": {
+			"name": "@types/pouchdb-adapter-localstorage",
+			"version": "6.1.2",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-localstorage@6.1.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "3156b6e53131816b565a648ffb44cbbc4ae236af",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-6.1.2.tgz",
+				"integrity": "sha512-mVp5naEHkHtPQiWDSIYaWyQmeYeBirRVJVj73i8oatAvJtdMYGZrWYSxZhxu+zohSX7GUoU0aFknFsGWbHMieQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQD6RtasPnRWaC5fGcEiKzEQpsmxGiCnbx3RyzqoIaIgnAIgVo/zB44ZQcLwITB9DLCQZvYoIQjqwMpywEaRUdEZgeM=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-localstorage",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-localstorage-6.1.2.tgz_1513287295620_0.16945834341458976",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "869aca8f221f5f1969a5311ab6913a1dd44c90a1832ab0401247bd2c8685390c"
+		},
+		"6.1.3": {
+			"name": "@types/pouchdb-adapter-localstorage",
+			"version": "6.1.3",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-localstorage@6.1.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "0dde02ba6b9d6073a295a20196563942ba9a54bd",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-6.1.3.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-oor040tye1KKiGLWYtIy7rRT7C2yoyX3Tf6elEJRpjOA7Ja/H8lKc4LaSh9ATbptIcES6MRqZDxtp7ly9hsW3Q==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDiw1KHDcF1u4S2uENkTjy2T/oiE4u1L1NJ6zljByG6gQIhAPunF8qY22p5q5ph9qonmjWa0QTjrg9/322tK34wQmoJ",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 3838,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcZJH5CRA9TVsSAnZWagAAAwIP/ihnz+Icqous6ffrWWs6\nHQRex+as/3kl5pS7yq00Boz9KHAfc8oz80dpxxIc6PTDiaaD7wJK7uYGNheG\nXkAYT2k6608BtfarUipULBrwhpD+3V7u4IPzX1MXwSXukiJ5HxCk7VVU9izC\n8ETkq7JpBgSQVuRydrH4A1xGdhLvdf1wEvZdBUseEnC2YI/uJ8CyQToATl8A\nobgr4AumauH3m7RnoaIU5PUBpAfW+jwG8a0cKRmH3ejgywrDBfZiZ5R9ptFq\nPFSkBYkOgUj+I1YXnPhtsGyw6y+i0g6yWSlfrm2uHWDg9nEnVrSnodUyprOF\nlC/p7CrklTIEirkRahw/7cbk1rWXC4oSDeDfvZFkSHUbU0mpZP7UIeeh/AlV\nkTeCFHl8tC8pUGCv9oqBrDnZpkOZnN1+XnsPnU2a9aibW5+a5DMY8rYFe6cM\nny0wDyWpRdp8dYsz1bQPbgVh6bt4jBMW/wdR99Q6M+XyNdtZqPyM1kI+mPOA\nGy405qZJeFNkOdNxog6ozBrvjwOXANZpYD8+em/NfPyQy5m/QTWV1O/8xI4h\ndVgM038VUk2WP937aqxXuY7xbqJTqhT2pjxWVjhPgUsTdYmSy9CmmnuLnv5X\nJ07GHYOTRPRTc7TLNc1noH2hnF9VPitKNc3SALWRkls9Kez4Hn1CTLdpnji+\nA9lY\r\n=scv0\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-localstorage",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-localstorage_6.1.3_1550094840902_0.6541222139426028",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "d566b6f7c1fcfa6762725ed270bc83ae64c3d0cb2cbe78021c97f8b11f68774c"
+		},
+		"6.1.4": {
+			"name": "@types/pouchdb-adapter-localstorage",
+			"version": "6.1.4",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-localstorage@6.1.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-localstorage",
+			"dist": {
+				"shasum": "4dc75483b160d80bdc3b87d629dad255d6ea7750",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-6.1.4.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-37vic5XXP2X1CEuK8YQ4EFnujospi0rURPn6FJaLl2Zkm9yB3O70jBM0o2ePR+euy8vIJL7bGm2Rmt09erEn1Q==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC/18CynlY5KdNLF/63I47gUEDvSbwpSQTFl6ac4WE2+gIhAMnsDFzBGnTRXWXc7zNX2dcn/fbrfFHMl21uv2MOkdK1",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 5077
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-localstorage"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-localstorage",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-localstorage_6.1.4_1695539218776_0.8419677175789984",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "6c0417ae29aa682e4305c18168c7b955b477d3e225c1c395e20fe0e95af1fb9b"
+		},
+		"6.1.5": {
+			"name": "@types/pouchdb-adapter-localstorage",
+			"version": "6.1.5",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-localstorage@6.1.5",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-localstorage",
+			"dist": {
+				"shasum": "64e7cf8c743ce4f691fa9c0d5a673f97806c4853",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-6.1.5.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-qeXAYHm1avjgjS9tu6RgB7I9pQdNJ207kfYX6Nj0VsUGRtH2JjWPR16oIPqwvjdO6gVnNArS2MI4K+G6qzobLQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIDazjtb6KI05NfmBVcqkiFOiZxjaQXybZHYfdj7Ao/ctAiA9JL9PgOvtmEIWD6nsHnhA2DGmLkqtcpQSzNOmUeK3UA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 4303
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-localstorage"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-localstorage",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-localstorage_6.1.5_1697627781978_0.8880318086217924",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "049bc22cfcd2bbe0f7d82fcc4ee28044a6c6e3e52514f705517940cfe5b34f78"
+		},
+		"6.1.6": {
+			"name": "@types/pouchdb-adapter-localstorage",
+			"version": "6.1.6",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-localstorage@6.1.6",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-localstorage",
+			"dist": {
+				"shasum": "b7557ee54e19c5896208a767c1419f5735131188",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-6.1.6.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-+HQBCpD80XkKJE64r7uLwzkNRgkvMnhDI5rIFLx3USxdrRph/R3awcEubRFndcgtxzcUaL9iYw9KetgFMUqPrg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQD2CqkQxUoNRXfaglCG1ZRgcyapEaAvNqpycrGL7F4x6gIhAO0YBWAJkjhyGMMjtx04CY31PovVI912Z+EzlfIyIdpB",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 4303
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-localstorage"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-localstorage",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-localstorage_6.1.6_1699363098671_0.04307457293934758",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "1b2811c1f6d20720cc1e1e1f4a55577f5954ee0b99f94aee4ad5273ed623004f"
+		}
+	},
+	"time": {
+		"created": "2016-08-02T16:04:13.643Z",
+		"modified": "2024-11-11T09:31:26.768Z",
+		"5.4.1": "2016-08-02T16:04:13.643Z",
+		"5.4.2": "2016-08-19T15:36:59.633Z",
+		"5.4.3": "2016-08-25T18:53:23.523Z",
+		"5.4.4": "2016-09-19T18:01:07.952Z",
+		"6.1.0": "2017-04-18T15:12:38.662Z",
+		"6.1.1": "2017-06-15T20:17:07.706Z",
+		"6.1.2": "2017-12-14T21:34:55.679Z",
+		"6.1.3": "2019-02-13T21:54:01.039Z",
+		"6.1.4": "2023-09-24T07:06:58.978Z",
+		"6.1.5": "2023-10-18T11:16:22.175Z",
+		"6.1.6": "2023-11-07T13:18:18.941Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"ts2.0": "6.1.0",
+		"ts2.1": "6.1.0",
+		"ts2.2": "6.1.0",
+		"ts2.3": "6.1.3",
+		"ts2.4": "6.1.3",
+		"ts2.5": "6.1.3",
+		"ts2.6": "6.1.3",
+		"ts2.7": "6.1.3",
+		"ts2.8": "6.1.3",
+		"ts2.9": "6.1.3",
+		"ts3.0": "6.1.3",
+		"ts3.1": "6.1.3",
+		"ts3.2": "6.1.3",
+		"ts3.3": "6.1.3",
+		"ts3.4": "6.1.3",
+		"ts3.5": "6.1.3",
+		"ts3.6": "6.1.3",
+		"ts3.7": "6.1.3",
+		"ts3.8": "6.1.3",
+		"ts3.9": "6.1.3",
+		"ts4.0": "6.1.3",
+		"ts4.1": "6.1.3",
+		"ts4.2": "6.1.3",
+		"ts4.3": "6.1.3",
+		"ts4.4": "6.1.3",
+		"ts5.7": "6.1.6",
+		"ts5.6": "6.1.6",
+		"latest": "6.1.6",
+		"ts4.5": "6.1.6",
+		"ts4.6": "6.1.6",
+		"ts4.7": "6.1.6",
+		"ts4.8": "6.1.6",
+		"ts4.9": "6.1.6",
+		"ts5.0": "6.1.6",
+		"ts5.1": "6.1.6",
+		"ts5.2": "6.1.6",
+		"ts5.3": "6.1.6",
+		"ts5.4": "6.1.6",
+		"ts5.5": "6.1.6",
+		"ts5.8": "6.1.6"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"3fba9d179f240e60a8dddb770c2d5daf\"",
+			"fetched": 1734527719201
+		}
+	},
+	"_distfiles": {
+		"pouchdb-adapter-localstorage-5.4.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-5.4.1.tgz",
+			"sha": "41eea21e834475b2078777bca68e44e5d9a47b2c",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-localstorage-5.4.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-5.4.2.tgz",
+			"sha": "67b0ef5106056c6f5487148239659f279e7e5b11",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-localstorage-5.4.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-5.4.3.tgz",
+			"sha": "bad06b71be53554cc75ba58c8db8e16daaed87da",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-localstorage-5.4.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-5.4.4.tgz",
+			"sha": "7fe97e33c0b493f691860eb1bf45ac04c84ea96d",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-localstorage-6.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-6.1.0.tgz",
+			"sha": "07c4033eca96a44327ca6768b01196cd25c50798",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-localstorage-6.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-6.1.1.tgz",
+			"sha": "e4908599e196cf84c147516fe8b37d8040e76543",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-localstorage-6.1.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-6.1.2.tgz",
+			"sha": "3156b6e53131816b565a648ffb44cbbc4ae236af",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-localstorage-6.1.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-6.1.3.tgz",
+			"sha": "0dde02ba6b9d6073a295a20196563942ba9a54bd",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-localstorage-6.1.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-6.1.4.tgz",
+			"sha": "4dc75483b160d80bdc3b87d629dad255d6ea7750",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-localstorage-6.1.5.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-6.1.5.tgz",
+			"sha": "64e7cf8c743ce4f691fa9c0d5a673f97806c4853",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-localstorage-6.1.6.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-localstorage/-/pouchdb-adapter-localstorage-6.1.6.tgz",
+			"sha": "b7557ee54e19c5896208a767c1419f5735131188",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-adapter-localstorage-6.1.6.tgz": {
+			"shasum": "b7557ee54e19c5896208a767c1419f5735131188"
+		}
+	},
+	"_rev": "2-e754b8df9fd14630",
+	"_id": "@types/pouchdb-adapter-localstorage",
+	"readme": "[object Object]"
+}

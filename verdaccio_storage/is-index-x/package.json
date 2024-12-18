@@ -1,0 +1,3837 @@
+{
+	"name": "is-index-x",
+	"versions": {
+		"1.0.0": {
+			"name": "is-index-x",
+			"version": "1.0.0",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"main": "index.js",
+			"engines": {
+				"node": "*"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^1.0.0",
+				"max-safe-integer": "^1.0.1",
+				"safe-to-string-x": "^2.0.1",
+				"to-integer-x": "^2.0.1",
+				"to-number-x": "^1.0.1"
+			},
+			"devDependencies": {
+				"@xotic750/eslint-config-standard-x": "^2.2.1",
+				"browserify": "^14.4.0",
+				"browserify-derequire": "^0.9.4",
+				"cross-env": "^5.0.1",
+				"es5-shim": "^4.5.9",
+				"es6-shim": "^0.35.3",
+				"es7-shim": "^6.0.0",
+				"eslint": "^4.2.0",
+				"eslint-plugin-compat": "^1.0.4",
+				"eslint-plugin-css-modules": "^2.7.2",
+				"eslint-plugin-eslint-comments": "^1.0.2",
+				"eslint-plugin-jsdoc": "^3.1.1",
+				"eslint-plugin-json": "^1.2.0",
+				"eslint-plugin-no-use-extend-native": "^0.3.12",
+				"husky": "^0.13.4",
+				"jasmine-node": "^1.14.5",
+				"jsdoc-to-markdown": "^3.0.0",
+				"json3": "^3.3.2",
+				"make-jasmine-spec-runner-html": "^1.3.0",
+				"ncp": "^2.0.0",
+				"nodemon": "^1.11.0",
+				"nsp": "^2.6.3",
+				"parallelshell": "^3.0.1",
+				"replace-x": "^1.5.0",
+				"rimraf": "^2.6.1",
+				"serve": "^6.0.2",
+				"uglify-js": "^3.0.24"
+			},
+			"scripts": {
+				"clean": "rimraf README.md lib/*",
+				"clean:jasmine": "rimraf tests/index.html tests/run.js",
+				"clean:all": "npm run clean:jasmine && npm run clean",
+				"build": "npm run clean && npm run lint && npm run browserify && npm run uglify && npm run docs && npm test && npm run security",
+				"build:jasmine": "npm run clean:jasmine && make-jasmine-spec-runner-html",
+				"build:setver": "replace-x \" @version .*\" \" @version $(node -p -e \"require('./package.json').version\")\" index.js",
+				"build:name": "replace-x \" @module .*\" \" @module $(node -p -e \"require('./package.json').name\")\" index.js",
+				"build:description": "replace-x \" @file .*\" \" @file $(node -p -e \"require('./package.json').description\")\" index.js",
+				"build:replace": "npm run build:setver && npm run build:name && npm run build:description",
+				"production": "npm run clean:all && npm run build:jasmine && npm run build:replace && npm run build",
+				"start": "parallelshell \"serve\" \"nodemon --watch index.js --exec 'npm run build'\"",
+				"docs:name": "replace-x \"@{PACKAGE-NAME}\" \"$(node -p -e \"require('./package.json').name\")\" README.md",
+				"docs:badges": "ncp badges.html README.md && npm run docs:name",
+				"docs": "npm run docs:badges && jsdoc2md --name-format --example-lang js index.js >> README.md",
+				"lint": "eslint *.js tests/spec/*.js",
+				"lint-fix": "npm run lint -- --fix",
+				"security": "nsp check",
+				"test": "jasmine-node --matchall tests/spec/",
+				"browserify": "browserify -p browserify-derequire -e index.js -o lib/is-index-x.js -u 'crypto' -s returnExports",
+				"uglify": "uglifyjs lib/is-index-x.js -o lib/is-index-x.min.js --config-file .uglifyjsrc.json",
+				"precommit": "npm run production",
+				"prepush": "npm run production"
+			},
+			"gitHead": "e557a17c223f0a58ea01c864dee6f0e520ceedaf",
+			"_id": "is-index-x@1.0.0",
+			"_npmVersion": "5.4.0",
+			"_nodeVersion": "6.11.2",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-BJ7vtw0jvcjBX4UsT7KkpZUliAMX3vJugZimDKy4W6ilGDtvUZ8nYsYnROVrrsjNjg5LJ3MN9NvyRVALfDW/wQ==",
+				"shasum": "55f022f861dbc44a862bc8ea03f6c3666fa168fc",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-1.0.0.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIB89sJVdJwdvTCfysbT8KzAPZKMcvOdJOO1uW6Hf3a3UAiEAkwjva+8egcE+EDUv6FbqNOQOcGJd7NQS5HbXEaFnDUs="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x-1.0.0.tgz_1504401801334_0.27616806025616825"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.1.0": {
+			"name": "is-index-x",
+			"version": "1.1.0",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"main": "index.js",
+			"engines": {
+				"node": "*"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^1.2.0",
+				"max-safe-integer": "^1.0.1",
+				"to-integer-x": "^3.0.0",
+				"to-number-x": "^2.0.0",
+				"to-string-symbols-supported-x": "^1.0.0"
+			},
+			"devDependencies": {
+				"@xotic750/eslint-config-standard-x": "^2.2.1",
+				"browserify": "^14.4.0",
+				"browserify-derequire": "^0.9.4",
+				"cross-env": "^5.0.1",
+				"es5-shim": "^4.5.9",
+				"es6-shim": "^0.35.3",
+				"es7-shim": "^6.0.0",
+				"eslint": "^4.2.0",
+				"eslint-plugin-compat": "^1.0.4",
+				"eslint-plugin-css-modules": "^2.7.2",
+				"eslint-plugin-eslint-comments": "^1.0.2",
+				"eslint-plugin-jsdoc": "^3.1.1",
+				"eslint-plugin-json": "^1.2.0",
+				"eslint-plugin-no-use-extend-native": "^0.3.12",
+				"husky": "^0.13.4",
+				"jasmine-node": "^1.14.5",
+				"jsdoc-to-markdown": "^3.0.0",
+				"json3": "^3.3.2",
+				"make-jasmine-spec-runner-html": "^1.3.0",
+				"ncp": "^2.0.0",
+				"nodemon": "^1.11.0",
+				"nsp": "^2.6.3",
+				"parallelshell": "^3.0.1",
+				"replace-x": "^1.5.0",
+				"rimraf": "^2.6.1",
+				"serve": "^6.0.2",
+				"uglify-js": "^3.0.24"
+			},
+			"scripts": {
+				"clean": "rimraf README.md lib/*",
+				"clean:jasmine": "rimraf tests/index.html tests/run.js",
+				"clean:all": "npm run clean:jasmine && npm run clean",
+				"build": "npm run clean && npm run lint && npm run browserify && npm run uglify && npm run docs && npm test && npm run security",
+				"build:jasmine": "npm run clean:jasmine && make-jasmine-spec-runner-html",
+				"build:setver": "replace-x \" @version .*\" \" @version $(node -p -e \"require('./package.json').version\")\" index.js",
+				"build:name": "replace-x \" @module .*\" \" @module $(node -p -e \"require('./package.json').name\")\" index.js",
+				"build:description": "replace-x \" @file .*\" \" @file $(node -p -e \"require('./package.json').description\")\" index.js",
+				"build:replace": "npm run build:setver && npm run build:name && npm run build:description",
+				"production": "npm run clean:all && npm run build:jasmine && npm run build:replace && npm run build",
+				"start": "parallelshell \"serve\" \"nodemon --watch index.js --exec 'npm run build'\"",
+				"docs:name": "replace-x \"@{PACKAGE-NAME}\" \"$(node -p -e \"require('./package.json').name\")\" README.md",
+				"docs:badges": "ncp badges.html README.md && npm run docs:name",
+				"docs": "npm run docs:badges && jsdoc2md --name-format --example-lang js index.js >> README.md",
+				"lint": "eslint *.js tests/spec/*.js",
+				"lint-fix": "npm run lint -- --fix",
+				"security": "nsp check",
+				"test": "jasmine-node --matchall tests/spec/",
+				"browserify": "browserify -p browserify-derequire -e index.js -o lib/is-index-x.js -u 'crypto' -s returnExports",
+				"uglify": "uglifyjs lib/is-index-x.js -o lib/is-index-x.min.js --config-file .uglifyjsrc.json",
+				"precommit": "npm run production",
+				"prepush": "npm run production"
+			},
+			"gitHead": "d39ceb32cf105906a14b7cbfefd0dabc0b9a3d6f",
+			"_id": "is-index-x@1.1.0",
+			"_npmVersion": "5.4.0",
+			"_nodeVersion": "6.11.2",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-qULKLMepQLGC8rSVdi8uF2vI4LiDrU9XSDg1D+Aa657GIB7GV1jHpga7uXgQvkt/cpQ5mVBHUFTpSehYSqT6+A==",
+				"shasum": "43dac97b3a04f30191530833f45ac35001682ee2",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-1.1.0.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHd7linBalwytu7FXR6YF7opm1riH/WqQxoF/ahu+twhAiAEB1lgbYiXyxfoLNxxkCUFPtYZ6AamXME1/CWGMRi69g=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x-1.1.0.tgz_1508947890234_0.9181205306667835"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"2.0.0": {
+			"name": "is-index-x",
+			"version": "2.0.0",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.2",
+				"max-safe-integer": "^2.0.0",
+				"to-integer-x": "^4.0.8",
+				"to-number-x": "^3.0.8",
+				"to-string-symbols-supported-x": "^2.0.4"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.2",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000983",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.5",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "4ad2600e301404725af4028066b19483d21b9d34",
+			"_id": "is-index-x@2.0.0",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-Qv7JBtyfP2kk3SC4PAMIy/diZeTT28L4PgaHSUSj5ivzgz4Wc8gOCPoFo6KCccTtZ+yPBkV/+ykKrbCEYrgvUA==",
+				"shasum": "9bf2162269cf8eee989a4759c3d3a550062ec59f",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 197512,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLNLkCRA9TVsSAnZWagAA2v0P/RkL5G2RcZYnj6acFDp0\n5IgYz0cJyF4/zAmherRYm7IpCYRjxqb3YjCwLcU1TcV1GP+h+OaIEyQoUh77\n729uiFjZ3U2FWdmgknzzNt1Yn8gajfB0rtMkjGUWucGfpAf7TMwEQP6TXGC4\noMfz3KU5PLEJSwxZOGEGNYxtFUpwDwJfHovNdW61JWWyOPOKiI0LgByEM6KT\nnb7XY/6qp4nqvFo54mMvmxT3vuaYaDyd0MlCGb9eUE6VOxtWWPU+C0SXixfi\nyL2gJdy1Ix4Cmtl7WdcBPL6RsXw64QyVqzjtD3Jude+0sUSDupWHrKNuOfFw\nZWpGfFyORuMjODT5QsmcNfm3kUAY4TdRZ0VsnIslCqlKtpJsoS+y/STNP5i5\nOkxZnkNUUdKVYli70AL8ktt81jw6t4cJXu/mMoNF8KOF/0YO/0W0KzjeQO3y\nylw6GL9WbNOUz3FvbLxFOSNQk58DrIqrtwtpVhAtVR0T9DnpsBAJtjeTZjzm\nPx7Vd1c8WhggYN9Nrsy7Z22ehINvW1K4EFcx/dR/50ihT/N3oJppgWdrktEK\n1i7AbhOHErxSAI3OQ3ZP5/UMbULNuvku90i267vNOY52dCijEGOatKUn9SaZ\ngKQEcl/QW8CqPoGfYnpTNKTvf+5XXrlx/UC9HMS6HBglpEQJ643VWU2m3ODL\nzQwD\r\n=k0F9\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDlZ4KCuivJYOiAc+aqSOGeox96VOLxNtc4HLYJnu3BMwIgJhmteNTtNXk7KSL8nX4MVpCbU5s4HLY3e6jtH8bBEQs="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.0_1563218660067_0.5347990413471959"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.1": {
+			"name": "is-index-x",
+			"version": "2.0.1",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.3",
+				"max-safe-integer": "^2.0.0",
+				"to-integer-x": "^4.0.9",
+				"to-number-x": "^3.0.9",
+				"to-string-symbols-supported-x": "^2.0.5"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.3",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "cf6ca8c2d82d19d0eaa10b8645eb06728dd1470e",
+			"_id": "is-index-x@2.0.1",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-NDEgc7lhAjHrQD1bfNjWvpOOJpfcJZp77awMwQ3isBcuhRYqYfmwaANmKPYC0TMT+Z/yqAFmReF56CuslPKFKg==",
+				"shasum": "ad851ac980b985836b4a965c35f0fb1b785c1497",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 197512,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLa8UCRA9TVsSAnZWagAAL1oP/j8KiQzeoMDQrYdAn6eN\njGrLw+n+mdeCM8MOmYR0MAiHqsTsQTBPHeX+D6kM1diAYFiamjPkqBCmZRk6\nBTsADrkf+L2hZEktkXq3zzHFfwvO1SCoDnaBUewiQPhbncSmp2qpuQEqnVEr\nu74hXFgXP0LWk9cGJfP1K7QZbeVDBMOmLTiDCp1FcS7VFVD/d3TNdJJnZd8G\n8TK/+/AdfZbqphIeCIjjs4h8pkNTqjDv1d0p6MXGAQmFfueuvaap/mER6YaL\nrIas99JNkBbBpFUOwH3hxi5XemJ8dOR0PF8C3YVtGthhi7uYBN9/WY/oYEb0\na2nWColLAqgoTuobUlCSCyljxT0p9XNiUk+r5fN1DKywt6Du0Z5kRWJFleAy\nRhPZql4jGohUxYvFuYo6MPImKFIkKzFD8K2YnUcc1uOPHWtvcsmLtg62NQkm\nIQg0rEHaIn7G2zGJ3rS+1UAoVlJWjtX+X8lbP2fMTHEoAU+wUr3CJkGbUJqM\nrEom/GZbtOtxBxmX8fsSqV3WpK6rWjl9yliNluPL92adi3tVAMROHgUhGJHU\nq+eMNQWVMJo6FikO71EsDQlcQDsAcj6mDY/DBw8sjwXYwNPqYVoybq2najBQ\ncOO5V+GFAzEehVI4yG+duSL9otEd/yz8Qn488vg5GDxZQRS3qrPuOeAnhExW\n1NTC\r\n=Berz\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIFVPEmA2wGY2gi6SHmKsxvxUGW8n+Mea3jwpdv8Z+echAiEAuvTtf4dGlv73RvB8Zo5XlnZrAFfThapkUBz6NC9cK7Y="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.1_1563275027504_0.8248127892215043"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.2": {
+			"name": "is-index-x",
+			"version": "2.0.2",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.4",
+				"max-safe-integer": "^2.0.0",
+				"to-integer-x": "^4.0.10",
+				"to-number-x": "^3.0.10",
+				"to-string-symbols-supported-x": "^2.0.5"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.3",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "f6fc5ae5ed89aafca7926ea2efb61a8925ac0004",
+			"_id": "is-index-x@2.0.2",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-+1yMGdPNz3v30p4VNQgxDT7aIBOc9Uo8AM7rkjqPRfRtEi+t/BgjPn4sq/vi7z/T8rTz9vDTEsxw3o6zsj4tkw==",
+				"shasum": "4a104ab64fe27619f6ef68c85e398b273097cd75",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.2.tgz",
+				"fileCount": 10,
+				"unpackedSize": 197514,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLcYyCRA9TVsSAnZWagAAPZUQAJ3YDu6BMjYXtZ3EtNe0\nK4dFLO0yF3nCahuPRnyZg4PUwRT9KZO+bJckVQUkfMwbeDDcW7NZuUo7gzow\nQpcCSkwcqLdYx4/ROogjvIwbz8HUGKhIU8KdeyipHeO/oecS0NU6Yk4kO64u\n8PNRwp/kCPHquezCMneZmSgmFJvFZqoYKBcIFDJ2WdkTDzGDBQPACp1D4j4Q\nEz/n85Det6OwIyQ+mDGbYHV0uozYGrgdSPi+rjakGep0dvIieHIxhKAmTl0N\n5HGbSxYM45IThCSm9ecM5O0+TP8EaWh+QSaFKg34ZrUyPdx4Htnurs8okRb5\nqOMl+VYG51aUL/3yN0fPatNF+/5W2D4DHbXpueqvgiV0UopjkrN1TlmIS2cf\nmFtk5XW3fKvvZUPFqWlVrHSQwH3QX0A8mZ9LIkdO3OtJFEiqWoyntkMbCRUH\nupCENEKI2N5oQTm2p2VumVLX4jh7GNKe4EeW8aNU0UKmYIavLAl9p6YS1l60\nnilEqdOfDD3KdrZnHlYc94XDWpa3zhd/bdcVesv/fq4/p7AKvfrwP+4pwUaz\nE/JO9KgeiZcQf8nhnY+YM2cqv/FypZIFbq5WmQrKnxL+OJ46fn40Imt8N0rw\nN56AVjEI5SXOZzpoPUoebBda/L+dt8vhdurRa1yLHqf3G2gBSTXHtJ5Wd7SL\naiW1\r\n=FSTI\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQCr9UsNi8jLwFglWkjD9b7jPJ6sBcWoOI8On6JBtUkDowIhANySnsy/0pdoO4zvqK8ndsww9uV1l+f+N8E/rT05Og1y"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.2_1563280946228_0.9795730655216515"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.3": {
+			"name": "is-index-x",
+			"version": "2.0.3",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.5",
+				"max-safe-integer": "^2.0.0",
+				"to-integer-x": "^4.0.11",
+				"to-number-x": "^3.0.11",
+				"to-string-symbols-supported-x": "^2.0.6"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.3",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "5b7dea7bfceb7f4abf2332bc61beb47f4b6533a6",
+			"_id": "is-index-x@2.0.3",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-KHFccSygLr8GQBlpq3fz5yfH1pgyWpevutkLL2FUWnDjagFHtG1VmmS38ITGKujN6/I898iz9SyL6FK2RV+H+A==",
+				"shasum": "bad82d929bf8ba4497ed886554da93c0b2dd82c0",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.3.tgz",
+				"fileCount": 10,
+				"unpackedSize": 197514,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLka/CRA9TVsSAnZWagAAiHcP/3Hm5QI3EnsHozchBxaG\n67ycE4dZKz8qQmrlrGJRwCe7z9PjkSz9OfhncWiV4J0o2OOJiQyFFWxgBOnF\nGcAWhhbBrX9F8QcIwN87OsAvXkmj6yovPqvipRz/1scLmpj4nQuaaMxfNTrs\n0E3dU5qmdQC3pIRaHbXt0MB7QBkyGar/wejoRC7iAVrr6m9CMmRPdyZs13G3\ny1CiyVfq6I4+ZE+9wOT+U5ha9pRgqHwvwC7h/aI6pTreROUkLV2oePFTolup\nAJiYWtogPLHylfuvJKnzaQLDohry/4EO7qzjgMoObGfeebyIkrs7dCw1LaJs\nNDKLoWJbSWPk3RCiwtPXYrBvljAqH03taCdeMbp8KDMyzoyc8fbZ/FCH5jip\nKYLyKXS2plA1sggTb8Y0C9m6cnny7F4KooyxSFmCvIoWPs4Hbk9+oD3NqYYF\nAZjMY6xGKd3JeH6x/x1vpgD4zsjZZsSX7vMpc78I5tQaEHyyU5dstYugW87/\nAq45eAPHPo9bt9HetfAnTwO5LtUqEUj9oFYUn7e1lFWrWVqqErZbvPnMSMUp\npQV3UTiS72wmHh4CSY6CYCT34PVqFAxw5l7fh9KjlPLZTZmHnqeio8NiChyy\n/V8AudRZ4lFKPokLm+bNAtP37Z3qd0a/j3E5uYmHPXe3uFqAoiuPz9JbF2Cy\nqcSU\r\n=ZDqz\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIDyKlCU1on5AzxBnd6XkE+1nVC90BlMtm7y2DobdpT2QAiB5r6yX6FMWDQL5cbo2iNE8jRuiXw1RgX2ofIniBzZ2UA=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.3_1563313854709_0.028244195877653144"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.4": {
+			"name": "is-index-x",
+			"version": "2.0.4",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.7",
+				"max-safe-integer": "^2.0.0",
+				"to-integer-x": "^4.0.13",
+				"to-number-x": "^3.0.13",
+				"to-string-symbols-supported-x": "^2.0.7"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.6",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.9.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "4f5d55527512027fa9fd1faa6514a6804c198366",
+			"_id": "is-index-x@2.0.4",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-/gEDKsb1CeMJmycBaSexN1nORDEDeJ3/NGVgxjAjANGOnGsd0iE4iVGWVs47RpUIaM09WQTQi+n/p+B3NC/J8w==",
+				"shasum": "61eb3a52cbb6b906b6ab73b1ad7a1cc7650b09c5",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.4.tgz",
+				"fileCount": 10,
+				"unpackedSize": 202571,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdL2CiCRA9TVsSAnZWagAAgNoP/3n+Jy9Ts8QTuu4S8lMJ\n+O57cFMuIOkNpReCK1VPiJSHWQABm/yUEaLInLft1sM1wY0BgfD0pljBYmar\nG45RESKWG7+Xegux4DcbP22GhaP/uwepX34fnPeo+about86xr8b/XZHCR/k\n4DB0dYMBFWHF6/FUIXUvSjOQzMuGhR0rEB4O8cspgy/+o5skccw2s8ZJnEoD\nVrkO/ysvKloZh5WXkWQFqxHICdb/s3+OkgE6t0EbqEnzRmw1jD9QMp8yGsRx\nBIqYO/4wDnW/OiVLCh0G2xJOda3FvT03eHHBwHfPCiOSD2XBi69TObkVJe3q\nr6EJGyp+GcYHjt2xdtEJ/XPEWdVtdLL+jRxU7KgEgH88HtVif7tCA7wE4v9s\njDYGIZvxFww5ULuAvtDAOnQ+FfdPYaLobahBPhAMwMSUzEUucmpeVKwk92Wp\ndftFmd+sDYWU9oDdDTeIQWRR28tmxwULbkmiEvVMQkPDpjJIhLFwx2deoTsa\nAJi7K7SIJbI+z4r5Stb9/RE2kNOjHiAE6+e/gAADMaYQzdp+eMr4MFXHD6wG\nq2jUMOeI/Sebp3yMdk1S2UfIRnnNMbp18+dlQovjq5XyL4YzDgBz1f/hZrnm\nepztan1jqUl5B4Ue0+Ilz3Ls1DpsFHK0j2NTsRupdLUx1EgOIIcp0ZL0P+9w\n0zpP\r\n=W904\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIBJyj8JFBPrvb1vXDPxNDLhujyp/yyznNPuMAPaS3lSeAiEA0vdecjos/2Pm6P9yxMrX/567/U5MZDNHTImG7ws8P7k="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.4_1563386018400_0.35989409426531416"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.5": {
+			"name": "is-index-x",
+			"version": "2.0.5",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.8",
+				"to-integer-x": "^4.0.14",
+				"to-number-x": "^3.0.14",
+				"to-string-symbols-supported-x": "^2.0.8"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.7",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.6",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.10.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "0ca385f356b1654d95bbac3f3e2c20ed074c2bf9",
+			"_id": "is-index-x@2.0.5",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-4UVlYqmf1klXzeDadiVGUfUaAwUQpFHzF5/IXwnQ7tbyf17JPQKciJsVpHbDLLPYeSpjmlCL5kJPFrSyiEDFjQ==",
+				"shasum": "a1eca119e6e4d72799cbd534fc51a6257cf47eaf",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.5.tgz",
+				"fileCount": 10,
+				"unpackedSize": 201864,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdL3PKCRA9TVsSAnZWagAAWlAP/0Eo3j1cLEI9isw2h1d0\nOOyS/r0VYqgFIqJJU9Up/9h9BdIfuA5RDQhg0XTenWxwtejQvHnGkvksHSZU\noMlyGuGyGEk0UdRzfiDb2AT8k7xezgXBqUWnTl2WR1lR58Pc2fUZCAUEwxpi\nRzJkPoe9clTj26OZYk2FaFgOxhVIFeX3p4yfRiKdckOgnTIQvtjLNoJpJZQS\nBYv5yu9EupaZqsX/RhlIZLkw+dBu1EKX6OJ3qwTjWchLb4EWR+MaNXRh49Zq\n6kQGX5Pi6Py7YxMGXSb9l06AQ04SiRNBnNt0hICUuyEwPuKcXLH4eeOh2Qso\nHCrJ1s2q/auSvT/SPSRBqmfx6I1MbZa2RVlpfAtvFqNqtrqp48ivA2e72YQD\nvPtGESZ3QdYUSkPQLss3q1WGjOMKckT9zugw2QJVxrLRcHOZwCK0ZqpzA0Qm\n30VM0AIbnWqw33THbOkV0waYd5UeS4VzMx5SnDwlSrgQ3XkjOxGcmwVCIvuz\n+oTSs6nsjgiI4nFR8AwpXTzHdLfTUuG8uy41ITq3YCnEvxvl4T/EJ9JuCVYD\n7n9Xb1CArYYZcTrnRVgggqrUxQ3AAxuuxeA3p4h1aCOryPz2Y3b786msmHTe\nmpXJ54+kwxmwtBdLjDtlGgm0iTHLWMcjcvbAYHFwiqEBuGILw+nKmFe7qMfN\n1KRU\r\n=L3aA\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDYo/u+qKb97cLYU+RD5VDW0IAGPC/5zgKrH1TDoK8gOAIhAPlu3V8QPwSypYywYvw5BQkx7/6AdrAM8eDMNFD6/mJx"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.5_1563390921837_0.15580395542080483"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.6": {
+			"name": "is-index-x",
+			"version": "2.0.6",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.9",
+				"to-integer-x": "^4.0.15",
+				"to-number-x": "^3.0.15",
+				"to-string-symbols-supported-x": "^2.0.9"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.7",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.10.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "79c3f35854ebdcb878ba315e2aa672ad720cfaf9",
+			"_id": "is-index-x@2.0.6",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-ZfUiufinbS4bR6JrYBvtc0ROPWbHsqzlDbb9V2p57zDrmxwvmwgi4qBo1WSsnXsnF4sWNNfcp0HMtK2/9cLnXw==",
+				"shasum": "0037f17844642671bcf9eda9cb73308c547aa580",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.6.tgz",
+				"fileCount": 10,
+				"unpackedSize": 201864,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdL7gSCRA9TVsSAnZWagAAgkMP/iX8OGPvF2ajG6oMCucx\nGvyfe/tArJpdlRvtVJ26DrXGYTZVfFw8yQNZ4gYpWk6nzMNCcAHfDO8P1ApQ\nbofAdH6IC0eNLXWpWQVcGKF7P19R/TljuADDR3Imd4CkfxnZVGWY1E4gxCPR\nbcrrv17wvEmzWiSsLYj9KhTPwnu+0cHGVADiRt3DEgj26YBn5NQkKUxxcu5T\nNAg0b3kydEJZaTL49dX6PYpvo21yNiM8jFafPz1CicmJeutT38IGssCCsi8u\nbzkgQc0CI2quV7/+LnmfHaQDg6TKnNEaXPMt7N5Mtbzk3oSdNrFXPTSGqwOQ\nUoK/1V7W9HgJ++wfcUK6iezFeq6RFSWidpr9ji+Q8ii5jF3A4ZyjOPgmrHjb\nVLf0XZqd+tcmQt/W8NBOOpRJIKXEF3UEVF/NfiDQtlz1ogknWOePXK+37slv\n/m30P36Xtu07iMIbHuRtQ6SoIs+wWKuh3mfrwQhpFwl25yo92RU5nHPIaiii\nmMyrloDIGJkaXSJq3Pmko5GOHosyVkOfSiTDbaz9jYP0FgOLzD51O5jeiRKx\nfewfAXh/Eq+btidxxAePut7u46iJFCCmOq5URrCJoG2vCgUfIlax/LZmSn8p\nMpx2hcALR7gsPYJj48DSjwEED7bma3SFD8J6SN6yGP3Dv8G8zC5u7pUOWNjy\numFD\r\n=vY3A\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIEPlMnuKkLyoWlSV2cIQKKLn/Je+HnZEzr/ojqlXKN6aAiEA1b/Be0FtAlI1tHN6+7JqUXc8i21CkdViw0pwI0x5iHg="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.6_1563408401966_0.12505848152403387"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.7": {
+			"name": "is-index-x",
+			"version": "2.0.7",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.11",
+				"to-integer-x": "^4.0.17",
+				"to-number-x": "^3.0.17",
+				"to-string-symbols-supported-x": "^2.0.11"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.7",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.10.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "d58f6d6224e17bc6086bc63e2b080806ff54a354",
+			"_id": "is-index-x@2.0.7",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-j4FLgKuM1VFwe0C8Fi3n603RpJL09YnKskTjBHkEK5TtwbTfcy2/sG0+t4Ppl2etPn6S4mi/wc7dqb07ntyYxQ==",
+				"shasum": "a55ca724f6c4f49914f32ab9843ec74375b03acc",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.7.tgz",
+				"fileCount": 10,
+				"unpackedSize": 201866,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdMMFrCRA9TVsSAnZWagAAU4UQAIh1iPfGme85homeQVZv\nRw+xNKCP0ZTAaKmsNe2ovYoF4dTlTUXW7L6HSluNtWMNhDOaBBJJlGpd3ANc\nVKfSiFjC2Y+UvxMcEYbnVXMXOLcH3tpBdN69KkrXUiS4DJOB7Kpo5JdelDGW\nddKnqaZ+dSYgDZ1MAagGlYTL2J9+9KQhvq3jd829JK8B7VsZaHis9HWe2X+v\n4dm5p40W5PCLiLAQiIkzWgbaETU5o3mvbKxOYr7myCtVzwwtCZvHC6wry0J/\nqmg3BiTjnzg6xU1VARrvRLMmlMV0GeIuBcQAihDyuXTW63Jo+j/qMR9k9vuR\nOwSDty8naV1elbHgkNhTWyZxEr7Jn2/utm3MaORXk8VEHsFlCaqdtQlUMW+r\n9oqSANnIGQaM7YGMTw56eWfCXJ3Fiqx6H/Zwt/7lTC8UNztV74K0yo0VXlAN\nIEb/2A7KMMkMHA4aM/IH3mVz8RGgqan3QzPUAg4BI/QvGc+Rnvhe9MABU0Fm\nlF6s0vbHmvvMZ9/4DNel2Su5GzHtX/FTmJlreFScY59TLTNAHu1zpTXvdFmS\n02kvxagOvR4woUeRzY1KjnKPfgLbhbsk4H9aLB9NBzy09Hcl7VO/Ov+RbSIA\nBVObDsDdPJ8pHidIQr1P+YLEDyeujkqI5KG4BNSoE4A3/ahPKi7hdiTWNFJA\nbITm\r\n=PKws\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDCOS8dTgedOMjMtt1JlNQPfmYgDVsNCOg1pIxviwVIcAIhANvjK0b6AgfxCRzhjR3dOso+bI6b1f4xDOXndt3vxw4O"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.7_1563476331077_0.9218649040181053"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.8": {
+			"name": "is-index-x",
+			"version": "2.0.8",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.12",
+				"to-integer-x": "^4.0.18",
+				"to-number-x": "^3.0.18",
+				"to-string-symbols-supported-x": "^2.0.12"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.7",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.10.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "9342fd56de228a07b12aa7f68464e7ee43199641",
+			"_id": "is-index-x@2.0.8",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-1M+xoW6eZ7q8wlj2mGzoWAKRLjs+CV6lK8YfosojLsM5bRnp19UIcwkX9CxsnqVh4FWZF09286KJpEJncY95sw==",
+				"shasum": "338ef97a121573eadaffa2ecdc8896793e54731c",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.8.tgz",
+				"fileCount": 10,
+				"unpackedSize": 201866,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdMj8iCRA9TVsSAnZWagAAuvMP/0IsFk6SApx5ypN98oTU\nRr9GVZCs5Ngx3sEFAj0aWyOOKYsLWmYDuorSnPmk+35PSXvc5HhDjeRJ8UPb\nkZ11LDI2ZD1Z/s/ukqdmmmgS3i9dcv4owrsDovUYhLhvJCsgRYSAW07Fsx1s\n3sH3jZpONQJtt1I5bdzU37CQ75cFLbzfyEQQJFySgJ6gR4iCITHU9/cw8DwF\narF/3Yvl5RnnztXTeEIZ07O4hGKJYo29/cj7k3Ip+/4Q8pUH43c2J4gxiaWa\nxgE9fIdJIUnLjfIveB8WuJ76J5tffgT9f/7SFro1OU87wJuH5cEWWtAfJUxS\nGu79li/yTVqCwqG0y17++QiMR1DEpQJmxqMEd8pVRdsc/w7FCaV20ZetJdE1\nIg7kzdrDiESiJvqQwyHbD5nUlVcyz70L9M3Wo3O6pY4DwKqJFoM7M7/qOwqR\nG13sq+U80BcivcyP9OqRGO2UXRy5yMSCICXrFrZl8EpA9C3NBK+YwHyUy2ZA\nOhuHaLftoHNZ3WSL8mxUkQtT+iLvmagsULFdWJSoB5fd7G8zRzjxkJdluJM7\nGZtaz5VfGcQs/anr2e69aejJfDmYmxddgu8jRxs1cGGpcCCuhsZWN2Fi5vVY\nCN9fwpk5ij1au1ynWfNNnBBToXgkUqoXPy/oypnX8uK7DywosRlnwCCYYK0V\nGh5u\r\n=Yd0D\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIHcW2r7hukg032E8Jd2ghrLL1ZcUO4NV+dA1RhR1yF/9AiEApq17981ROTQLgP11IH9VUd48PCEdCpbg9OSHrfu6Gjo="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.8_1563574049370_0.22247371383406067"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.9": {
+			"name": "is-index-x",
+			"version": "2.0.9",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.13",
+				"to-integer-x": "^4.0.19",
+				"to-number-x": "^3.0.19",
+				"to-string-symbols-supported-x": "^2.0.13"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.9",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.0",
+				"eslint-plugin-jsdoc": "^15.6.0",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "25a508a2e5b85b8d04342055c6525b6396e7663a",
+			"_id": "is-index-x@2.0.9",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-q1laXDnuswcpOyI+6FS1GylSA+UYeq5HWzo3WRtpMF3JPrtSvCmPijMN0ZSmQpAP7ECOvGwfC26UWFXgtBsdew==",
+				"shasum": "fb8eb569c7a3bdbc362e690ea3c24d83338e0935",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.9.tgz",
+				"fileCount": 10,
+				"unpackedSize": 201894,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdNO2tCRA9TVsSAnZWagAAxq8P/19MgQrN+VBsfsaM+WtA\nGRr79CbLnsL4gQrVrDA1G5wbeQnsDnZQnZxHJbv+R3ViOHllzupkGzP7bKwE\nbj1SiVSSY/nlqmQWEgKdcAro27kBDxKRDPzlQoukQk9D+5sL6cftc3bf4sou\n9hE5xwmFwjVeHINZXQ0fGttiqKzjHGJ0ylxN2Y28S/Wg26zV8E+OlPq1Tgg0\n8D6qHHQcBub4oEh2/HOr/lzdIcQza0aeFrYsezOkhpPc2yPNjoFfcSV+XwZP\nIVBqDfX1sXBJGm/i/GJIfyCKobHBEIZpFsw+qgmJIYTwleXwU3kiTc8t0ZvL\nHcW1fAgxWZmSGt0AhenDSStyOQBeql5f7+RxHH7SQSsiuar/RVtWbYYCWOwU\noQED7G3XIPkpVIfuBFI2LGbcLXlfr+sb0A/OzoCr0EMBZs16vrt6U7ltWR15\nflmH40PVhURg0AhdNrZOHY19FJPFUWW8Xji/VEtxcngXSRgiHeIxA9dej9gg\niPExKIlL63kSF49BNiplStKaz7Gg+0WG3SSR+D8eyxkWeOK1rZiK0mJFFOZW\n7GmPfWiYhP0Wy4lTxQ10g4lTTcjYDxpCmW7PI22kj84lNGezPnFgA86NRK9R\nT/+03K6/Js5RNLGsfKrlr5fsKHQpbWWkozoc9dKgKYRZgYpvD8IAabjekCdk\n53uk\r\n=2zhu\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIBZY6kHUoHrbKUpg+ONmw4SDg3AQwN5UfKdGaDRVVePSAiEA32b/VipeyzClD4RMqsiPQ03B6OwKdNqxbRpcM0q6ZwQ="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.9_1563749804414_0.5556097958972264"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.10": {
+			"name": "is-index-x",
+			"version": "2.0.10",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.14",
+				"to-integer-x": "^4.0.20",
+				"to-number-x": "^3.0.20",
+				"to-string-symbols-supported-x": "^2.0.14"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.10",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.0",
+				"eslint-plugin-jsdoc": "^15.6.1",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "68d5551e684dcb6d4dd2463dc0210c44a598ea58",
+			"_id": "is-index-x@2.0.10",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-5AGkhlctHOh7cayMU46CaOThpFLtYuKcVvq7xRbfaSzHlDLdb8806e2CtFmjzJt97gJfRAcPKwJfMjgAa+ZX5g==",
+				"shasum": "d018e6945501ff8d68ce64a71aa9befa520f48d2",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.10.tgz",
+				"fileCount": 10,
+				"unpackedSize": 201899,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdNbI9CRA9TVsSAnZWagAA5yoQAIGFhWTTmI4IddrlXNXy\nf215yt6eHehltf6Z+yf7nFCYBJRx1ZLRgUeOv8Hk27c03qVOrqwD8p6lUT7E\n9fA/Tv49n0bY3R7Vsd7Fa3HqcO5E17S5fSz0DwRLxY+DoPokgH2xqzhCSAwX\nXfkCE4f6qK2KOlJqvqwR0WFQoqP01mIlrUT+qvcZO3IDiJ95kWKzqRnnd7QX\nM9gimgWXy7X+wHw4hDPHlbNU0G3ln1HpAAZv73khmzSSAT45OmMXXw+WnLrJ\n1ftFYlGjcvjem/gSsxDNeKBhrFKlEpWP3kIVpXOMKzMGzeaMC/lRxjSQDKHU\nZiXBpraXmEtuXfrtLAEmoiJ060s5iJQzAyzEgpnqRtyY34lja9/Jn40IPWFU\n5Evqx4N52rXhsoRCPHs8yTmgKmB3dnZTYfx9iE/YRx8C08IphyQNQn3Obl1D\nN5mb1wopEdnaWesypJpzAz6Z1dZQzgqc6iis4T9fmVPaQpkLsGEdhd9iF/rF\nC4/YBT5F/nfCd06mHRqk6Dgm5re67qkJ8RvsEOl/UUBWuGEuqorsjA5C4NqO\n0k+K43Ki3Sa0jgWD83JyA59/rHca1/KVgreuSZzz7b54EU2nRSmeQe3p2rDG\nio08ZuXi8KWsjcx0TChaphFZj8bAt3fdpkmBJAe4IAbAIPBW/DDz5+A3BjhZ\nVz2S\r\n=0nKm\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCICPrJenUdaMGr9q+R6ACUo3fx3HD1Dyyxx9eqdSPPw5JAiA4lVYSriSkEFoHgLhsVo2BjNywbpxBP5T0oWYq7tZnSQ=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.10_1563800124568_0.8856835612764737"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.11": {
+			"name": "is-index-x",
+			"version": "2.0.11",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.15",
+				"to-integer-x": "^4.0.21",
+				"to-number-x": "^3.0.21",
+				"to-string-symbols-supported-x": "^2.0.15"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.11",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.6",
+				"eslint-plugin-jsdoc": "^15.7.1",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.37.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "9380792a71d5eee03f620b2b704c05a183a4555d",
+			"_id": "is-index-x@2.0.11",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-Ra86sm4sJEZyfanto2eGkyKVoKaaWTJVghQQvEEKAaUEm8RRJ1zeVLjHnFbYgydcac2TAEUAlsiYs+X+76PtkQ==",
+				"shasum": "4d47ffb45a21066be58c7be72dd502dba75fd107",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.11.tgz",
+				"fileCount": 10,
+				"unpackedSize": 182091,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdN6gTCRA9TVsSAnZWagAApjAQAJ3pUTaiVp1XwrdVRZem\nqVR7+rlHIZLfFDeP/NWlN8TQb0GGLol8pLhzCuE3qBpAGm+QmvsO6UXHzkXj\nr1PLiHKmssCWFdFEIqjzm7+MwHPlavzub0HV+l04VIJa88WAI9Y4VR/iq4zE\nzafovb8qPdD6f8haH6cRGDXi4e1B6XD7ocxRbMg826IU40dc0EhMlU5dRTMe\ngnA4O5JMgdaIzIef5iQbp1DOyhN7sa6Km6wIuHabkSyPVwK3RzQX6Y4D0Qow\nD8NEdGWTu6UNafO+9gRSvnOKZDSmDpJpZ58Pm+BOqgBq2MuF19shQ5QiqSRr\nICy380ov71Ra1tMnumV+NEuX2BQjTbyV4UBOp0fKjlCcqg/q5b1f+F7D1RKD\nECjmCGM+RQ/XFZAIdjG5dN4iqXHMsE41vlMK8NWlmfK0f3XfrOUivifGmE6k\nDZedR5a/caGv9TbaV5doj0AZOwoZAZheJDI7dT4D4bhN8wGc51Yl6/WAfJ6e\nev2azMfVcgZpgtDUEJTwo1ND14+tCHOeRYEC4rY++ifm0J0va6Z2kL1Cbtnf\ng6ImvJkmcc7zqgs+so3nxKiJ6mA+55A9HkZk7hr+4FrPS9saZ73DPmXMhRmr\nFH/zrll4sqcv9ZsxJg/KESf3xJGGj4nltHBOm6DwtGIVxH8XL8oS9x7pGTne\nVr3z\r\n=y0pU\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDOIObyj8UUVMB60ASHT3XAlZ42UOYD4Fgozo93O/k9MAIgZ3r4j+jvZT8g91ro+ywAPQwpX0g3jvagc+zz2136t98="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.11_1563928594182_0.8903715959138376"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.12": {
+			"name": "is-index-x",
+			"version": "2.0.12",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"jsdelivr": "dist/is-index-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.17",
+				"to-integer-x": "^4.0.23",
+				"to-number-x": "^3.0.23",
+				"to-string-symbols-supported-x": "^2.0.17"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.11",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.6",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.37.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "1df0c1f91bc5907349bdeb34a00798aceea0f403",
+			"_id": "is-index-x@2.0.12",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-PWfygb2ewRXN3XXNTwSf0IL/2A25OrUQL9fnPSGEn4AqFKeg4sK2vBXPnCrItY1JhUGfFcNImj4mspZ0Sq/tqA==",
+				"shasum": "ef66b84469083a86fdee161c500582b740928e05",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.12.tgz",
+				"fileCount": 10,
+				"unpackedSize": 182327,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdOIp8CRA9TVsSAnZWagAAYKIP+wfARR0ohZJsa99OIGfN\nrNBBEwRekQDZU+zDA1JzKyjCjVkx1WbgU07XoI8rSzcyon9S8HfM6+2fxtYR\nd4bGWP4BsshmD6BzaR2YHQxeF91mkcuiDVPt27SOegiCYxWH8zWxCjvn5+TO\nHT14CF+ZlStxUOqPYLxksIXQ83w0mQMnJja5vKUqHkZLiZieTcvJFOQGjkS4\niCsNfGKGYAe0BXP+GqW/vuY1g5+IPdiB/VtpDo2/pJf0x0mmRq188JGRruTa\nPt/VFhyaO3ycPMupOidesRXkRIzVaFKCYNrVWjZQD1w3L9lwWiuSScKoyQ8P\nF+qbuzwt6Ueq/1wXgri19cxB2Mvja/gbQBaXwh/XeJKV9bxoN278pXw58vBR\niipfmntBQF6En8WTt2mU88y9VJu8okxl9u89iInPydohxg+1UWviKRiAIhU2\nsuK6hiHFZ4WjW/MZ6jsT7M8rii4d5DGBJ4PCrUPDSDPR22vuiH35IQHRW41p\nCH7NWdbPhmNmmyWnXgiJq3qyIIX/wwGFtYVp0eb8uYu63oxvL9EIiTWGVU0W\nr30e2DIv7SPn8rUndmr4eGkOrshfLKMUkkCkkmlKOic96sBiT89f3asNgMXJ\nFtXdnVq3E0izul7lOgESkloZNZ4y4mucMrXhQFHOvWULvrdziB1nfnepF5uX\n95mY\r\n=buGV\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIGaV2X3gTDG5tGRQnG75/Sh1GA+BO7MYtZ5eJQGS/xGxAiEA0Ji87/RUmMqPMKowSlTGxBFrps7nSTuWQknT0IrVX4o="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.12_1563986555616_0.2053054330021984"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.13": {
+			"name": "is-index-x",
+			"version": "2.0.13",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"jsdelivr": "dist/is-index-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.18",
+				"to-integer-x": "^4.0.24",
+				"to-number-x": "^3.0.24",
+				"to-string-symbols-supported-x": "^2.0.18"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.12",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.6",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.37.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "d4865207b10d4f7ee74b04247f9362a2be1a9126",
+			"_id": "is-index-x@2.0.13",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-R1V/RWN11V5jwLJu/WSTxIK3vEPd8/jBOI6+ybSi05Vok1PhzfrLVVCPiZRIFCN4LDNclS0PZqv/vmMmAYAqPw==",
+				"shasum": "cd791201eab53459af22362160694b46842a9077",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.13.tgz",
+				"fileCount": 10,
+				"unpackedSize": 182327,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdOisGCRA9TVsSAnZWagAAXcwP/RJUaJB+FpA8M3Gm6EUd\nXqZNVb2AYGzzUJKvXlRgS6mXblp0iP1WOV4UK6UhcBDoauRgNyGiHjB7JM6v\ngbGwvci/RINOZVNmVLeRveY4H96RcZuOVUEIcO93MGyBHs1pwTWsgR0q2sK7\nhZtFs/kZQm8AWnx9ZasBbWFghNR/mknDLLmBP+CJVs078ryXiqAMsgJ952Xx\nbGzXjkXJR68x5fnnGtWfwMvnfwot8/eJ9kty/Fuee+dDjlxXL4YNGp29aY6V\neh2PHDYY9VQtr9WU3ssB7gXCnIYnU2fpRGBHIzYWm+VRQlggL6aasC0zpTR+\nzmR5azOEm2yRM7NOcB3R+6dJzIUCvrWxM9c+YPomYQXFJJ3GEbu77rH8IMby\nNAvSmz/11sl3uPnc0NOPd72T3kyPGMAL2U+R6mRVavv+zvQbPdrgFwipxWZ8\nfOCf7AbvuWae+bZX6jJE4NxVd5aNKrE89IXahy1qllJr1h66e2IjL2x/37cc\nipd6VcGxgy1u2nzXQ2INnsGLNaOz2I8Y7IxYFEII2sn18ecnpmsI9U1JguLM\n6BqDvtKKExEs2HzbkQfMH/RbUhWw4TQfH/RBMrb4sWvShZGi+8jmj+KoHDf2\ni13ST57oIJSAcJxHb55jHAtA4iUBGxKwBmRd+0nco2ut0klxb45pRyOgzdvJ\nLmTI\r\n=crH8\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIDTog5/2mUDuC/+9gXlQXeJ2Z1xkanknzjWh74K6vdoGAiEAjwPrbEaTnr2MdXrnCT2JLPswBvz07NcWLse7M0YIP4k="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.13_1564093189864_0.1709747108768025"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.14": {
+			"name": "is-index-x",
+			"version": "2.0.14",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"jsdelivr": "dist/is-index-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.19",
+				"to-integer-x": "^4.0.25",
+				"to-number-x": "^3.0.25",
+				"to-string-symbols-supported-x": "^2.0.19"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.12",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.7",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.38.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "0a9b64d0507269701616b73899eaa998ce752d94",
+			"_id": "is-index-x@2.0.14",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-pEJKB+F8LZ1nkiXr1inPeYkRl47+Mx0qatqgmF7fosVTwatro1VQihulTBuL8l/AaiHDeEmZwRyiVsu12wC4Ag==",
+				"shasum": "1def9ef9ac44f9887787ede95ccffd29ec866e00",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.14.tgz",
+				"fileCount": 10,
+				"unpackedSize": 182560,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdOw5fCRA9TVsSAnZWagAA11EP/2YbybEv3kG6I++Jgcdm\nn06N8z7jv9Z6G5dzCZp6FdOkR9SpXIKR8phl0Xhgxq/nzZ80U0/Lh7QFxst8\nGRjxf99954ISqv2BGEwpoN7vPcxfe2mSlai8/ev68dIP1SCtfLvOOxMsiaqU\nfH2ZNym9QLx4Zi6V5+FwznIqK0RJBjPDK3JiwJsQ7+SPN78dtP0JJ/NBTOKU\nFzyWYBrTT//v/BcXXAEALqJr0QiLMBAxTHAxa5CJkAjRwgLCOEG26PQhfp1w\nKhpYsAseeTocyaz2eOP/bX6fBkCa1FkSMur8P96vkrOpezmh0MBWsu2yU6ll\ncJfYndt9dWWWWEMJqkLQdzKabuB+SsfFl6cpv5F7eVw7Q62NAnnn+oRYx4oK\nhRTPn7rxsL4cTkaTce8/Isam6mw8732AfEpz9bVtUY/pGAzItiV9jOJTuDXW\nr5MrJV7RaYVdn/9+zR9CmGU4P0BTS5zjhqxB2eNZdXJ1eDFEuKy41z6apT3x\nV9/r3WlupFaD4aI+RuMZ+urUqbcmNgJ0xDcFARVUAD5mxjA6nmg4Loi7xBf5\nlzbAvVg5lnNkiXs3XRgN26NpZL19Cdo6j/M/I7yAOSKY1MZkDpRICzos9IEV\nrMVZC0mZy72QxCwAA9vEnB8iKtumNtpTismfDlF5ZOJskgPQws04ZrJGjOfd\n1g5b\r\n=Fta8\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDhNx/ax4/yqGy/E3QqWkw6bHkF8O8hSryU0b2Y0L9AfgIhAJdiO9eT6Owtz94iSKXyulK/lSQlpuxN/E0F7Bw9JEel"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.14_1564151390357_0.592913252684389"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.15": {
+			"name": "is-index-x",
+			"version": "2.0.15",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"jsdelivr": "dist/is-index-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.20",
+				"to-integer-x": "^4.0.26",
+				"to-number-x": "^3.0.26",
+				"to-string-symbols-supported-x": "^2.0.20"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.14",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.14.0",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.38.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "c9213d18e055fc34969cacfeaec33b20e306d661",
+			"_id": "is-index-x@2.0.15",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-APOS1tbNTyRilwQ1hYCnmJjdsg27OJ9f2ZlCsjK46UcQ2+8VpVNTRfL3nxWNjxgAXn86z77VHt0XTdnwYldzzQ==",
+				"shasum": "682d975b864e0dbfc8db3dcb2e5187c36c889c31",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.15.tgz",
+				"fileCount": 10,
+				"unpackedSize": 182566,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdPBAlCRA9TVsSAnZWagAAJogP/1Inwnl2+CP1ONi/80de\nFql421FgYGWxmnIb8QMvFhTBDCtRPfiUUq00qRw1QQMa5h29v5MONAGMzIku\n194cFKoRhV6le6I7s8NMv8pHbP68MFIVQva4iK6ErIBvJ40J+mqdQcut6dDH\n0rPG6/lqjM+sw5hnEqQZsanPjD7ZepHYVMvIRbTm/MeXC2ZvdKEuaJZlCCL0\nfos5IMmsh3MBm0fvDhzLfZZt+TI9r27cVKq8DOlq0oc5lbgiQO+VrRpCLhWl\nAZJxEN8tIsvk4iv9a3i3Pq6YhIF95YQPsFsmB9xZRFzG1FnRPrMRT/WR/S+v\nOGH+gMA3ze3jJdR2EZP7m3HyRcBAnEYhBVGfE4Aefd2gyaRV63MoCSbTXA4E\niBEbrFXPhBjF63DlczyDqeBYm+6JxQfU+H4XzzZCf8FjvT8gP/XhpgvWokuo\nAo55fQHxWiHPSCeHNudkXCx38Kusqri5bBdUlf/6sha3KYWdk9liVAYe1u2X\nbR8rQcmaiSMJzGNutk0nNtoYX3L6kmUPSEgzCY+xIYdk33gK5S4hlJ7el0aj\n5LofCKCnE6+YPy/3TWR7Z5//Sr7AlMKP3DYYLaD6TYJPyIcuSV8L8cKFg1jP\neSafCuaAItodrwdE4ZRgj9sgftWKxgpH37z94Xofgz+A+IMXBqnDjlwUTeYM\n8m83\r\n=hqDl\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCICUReDFnxqZodfjHSfXfdXeSSMKcyjo0aDBXU6CT2oMmAiEAnCFERFQI43W9+mRpIf+6uDJy8RoO1omKYsACW50ssQc="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.15_1564217380770_0.5800077792219942"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.16": {
+			"name": "is-index-x",
+			"version": "2.0.16",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"jsdelivr": "dist/is-index-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.22",
+				"to-integer-x": "^4.0.28",
+				"to-number-x": "^3.0.28",
+				"to-string-symbols-supported-x": "^2.0.21"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.14",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000986",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.14.0",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.38.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "ad92d06979db914219c1ff8f5c955ac3863967b8",
+			"_id": "is-index-x@2.0.16",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-rTTMxJgKDrFf+raz0GkGXDFwU4TrzVUEbNiYptRnnE4cm+kvHQpxxTywunGcJr0e+uSegDnYBo9VoKupt3KMww==",
+				"shasum": "8b1aa8e8eed588b7bdfeaad5f9d1d3a2373e586f",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.16.tgz",
+				"fileCount": 10,
+				"unpackedSize": 182458,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdPGGMCRA9TVsSAnZWagAACM4P/0yfibCkUTgoasxL9vdj\nkUTxHGJtwUpn7HaQyep2hNDBSei1Hz0Ny1zBasHlLFhDhvzqsa/rUM4Ljqxv\nny/U+N59i5DcOLxt3TYFlyO9Q3sQ2ixU9xMWscAM4GuZ0qzPhKDxB+UgXqmu\n3Ze0DsujmDAKECIs7JmvKGiSIaH7yOphiX/FkYa0l1bGAo9VCRJ+Cf7AsPjw\np1y9oH1q3tTzdWTAIiJJ4YffZRjG01rP7hJgOGNdMcRcwjyvfjhGemyJ8MJq\nbkOY/uGYCJuhIv5lC6fmrwQPgMMLk3k6Zg28EaG7TWIQ0muKwIhRpH3RyiAp\n27gjnTQJLgWBETTd+imYnmXHSQSGnFBovtR2Au4bR0/xgoTouKKPBHnGUazN\nySlZwEfmg2JAxaRqSRY93CKuUyBYHLdPuOfwWSEn66ILKmwz/EovGPGYGt0D\njqMQkXHqTZ2Qqnpvptd2zBAzfdIDLIxcq8/PpyVzNv7fQNqXwLEdVfeQ1DeF\nPwc91H5quxmKDcKpUYyXUYXNwxIqOgsSFJHS1RDV91KaVnyA0J8kzxgVsZSu\nvVWQC5i38paVdPVFods8maMzmE6oizKs8+IKv8b2IoJufCDEdE74xltkEBUp\nkQMFxWyJydGzC91s2Y40O6Zwcjoq3jgU5y8k32MgTVGSWCfCJALNP0EzZsCa\njhWt\r\n=/GOm\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHSU61zDKlpn4e4Kaij+iWp092GpMg9VRlqy55JLHMmDAiAR1kjFdMmJAB7fm39PtwTem6h9cqdNW3zwXQeyKfG2TQ=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.16_1564238220061_0.03881703087718513"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.17": {
+			"name": "is-index-x",
+			"version": "2.0.17",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"jsdelivr": "dist/is-index-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.0.23",
+				"to-integer-x": "^4.0.29",
+				"to-number-x": "^3.0.29",
+				"to-string-symbols-supported-x": "^2.0.22"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@types/jest": "^24.0.16",
+				"@types/node": "^12.6.8",
+				"@xotic750/eslint-config-recommended": "^1.0.5",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000988",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.14.1",
+				"eslint-plugin-jsdoc": "^15.8.0",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"nodemon": "^1.19.1",
+				"prettier": "^1.18.2",
+				"rimraf": "^2.6.3",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.4.1",
+				"typescript": "^3.5.3",
+				"webpack": "^4.38.0",
+				"webpack-bundle-analyzer": "^3.4.1",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "9bada433dd55edb28daa248807fcdce11664c473",
+			"_id": "is-index-x@2.0.17",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-6N9s0eGYZza04/ZdRfPEEUYkReBZvvLWJKRDchKwmf8jBbxk6KylnCXZEcI0F1JcXxi71CCHBEsgkPg08HA+mg==",
+				"shasum": "4c970281f6abdbea38d13adfc6cd597028cd5ac4",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.17.tgz",
+				"fileCount": 11,
+				"unpackedSize": 186921,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdQhiRCRA9TVsSAnZWagAAmhkP/1sIUm3ZWNzfc0jOl67S\nWyXaefLt/uIWdzz0iWmED6V/P17JWGOi8rPvGPmgt8BrgPQkrBKULy5tUjBK\nDpGqEMRYwh1sjr7usnsdWzNmWjr5KXmkzLMfECrwt84PCr+Dj2aRdeTj9OwM\nUUahLptQmNDS+hcbnrqI2NAxgvYtEm+esF4i/qH7q+Jt3UsgnnWzNVGMrk6u\nAXxr2eOmz9IR44M75tfAqmc4wnY9CMp/8+6pbX9pmjh7uCNVasT3yHxJOC7T\nuBUKvLCfoL7CLuwCMftoq3IywDkmyaxEqwIgTeEOU1zCiEXJcY8WziyPEAEi\n7DOhK0VMj+Zgkx8OWhDFowK1m0CoNPcyrBpR8ePR/z5s7d09n/K/WDtuYGNT\nleAJoWUIpKwCgSZK57fReqY8WtEFRUdoNZMNWX5JqGxS0u/JOKdbg7bl2yyB\nJLf2oFMerDRicP1K0TbALyGi/M5661uYZW1xXXn8mFC9D9sLX9I9kUS6KEea\nTUu/1aD1tdZP+QxsUOK/fBOjUp8T3GIVRAxAXbpFYld+LVPnXQFRKKm/VJgo\naE64IjTe7IzEARkpVw9FxO84BunLQUXsye921qr1LtLYvsKiAVVD3NKYpC+g\nFhsLJzuj+yM7PCt7Mi7Yqdw7ZKOsezDj/XwWNPFlmFGx+/UoG3WlQWW7zk7L\nEjia\r\n=MngT\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHQZpFrTM4RM/f0yQoih6F95T+V7YdmTP8Xu9/WC/sKeAiBVjjC3H7FGoYECW3n0/EIDYQ2X618Jdw4cEuUP3kwUpQ=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.0.17_1564612752663_0.812950791786627"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.1.0": {
+			"name": "is-index-x",
+			"version": "2.1.0",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"jsdelivr": "dist/is-index-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:ci-coveralls": "npm run test:ci -- --coverage --coverageReporters=text-lcov | coveralls",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.2.0",
+				"to-integer-x": "^4.2.0",
+				"to-number-x": "^3.2.0",
+				"to-string-symbols-supported-x": "^2.1.0"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@types/jest": "^24.0.17",
+				"@types/node": "^12.7.1",
+				"@types/webpack": "^4.32.1",
+				"@xotic750/eslint-config-recommended": "^1.1.2",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000989",
+				"coveralls": "^3.0.6",
+				"cross-env": "^5.2.0",
+				"eslint": "^6.1.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.15.1",
+				"eslint-plugin-jsdoc": "^15.8.0",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^6.0.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"nodemon": "^1.19.1",
+				"prettier": "^1.18.2",
+				"rimraf": "^2.6.3",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.4.1",
+				"typescript": "^3.5.3",
+				"webpack": "^4.39.1",
+				"webpack-bundle-analyzer": "^3.4.1",
+				"webpack-cli": "^3.3.6",
+				"webpack-global-object-x": "^1.0.0",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "da5f94507034f081ede537f3ca8705c9a646df13",
+			"_id": "is-index-x@2.1.0",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-vbNUTX9IIkfI4j7B8hrQt0YQsMDBdqWXEratFNFxshbyUDbsaPTjJOs0Du5bi35bHzOS5vVepg9bKuBcJbK7iQ==",
+				"shasum": "4dca2d09ea0cf103a1ff6f732a72e4e0b2524601",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.1.0.tgz",
+				"fileCount": 11,
+				"unpackedSize": 190790,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdVCcoCRA9TVsSAnZWagAACPwP/RDPqDBxbNMSyD5gqt5E\nWOgjNBUaAogldl+HDr6azWTUK56uKgXeeh4kztZsB/5YeYWMfPWv8SW4sHoj\nRZFdfBHOynJZS88EqeBbb1n4fywOtiCQJ16KGGk0I4j1MqW7RJPaJYLzjIXu\nqQnhixaRGVZPxE26rTZrLIbLea4vpK9cZ7EkccNZmQ6CrTZt7/JtmNahBd8F\nqIyD1lMhqkQNvm7e1l+WI9dwoa499oIpRgfOhqiDyqobQwnNchULXKSNq/cq\n4XDTurcbeP4UqzQ9pXaIwjchf6iQPgk7kdm78H75wC36iqTOC2Ws7/ABqb3c\na3CRUYPqd4KOcMuqcgtej75hRSeYDa5VrBSQdVnDBC5l1qwJ8Qkyn/jazmdA\n4BROD3Cg5Ns583Gab9kk0Gjp134HwZXrbQDTxrL9Zjdnct0oWAbOL52d3dKL\nciOm7ci5e3wgeFYZx5RMq3Ul9+zQY7TbkmBhG6JaRajfZRKPiJKfciyfohBL\nDG2+9SLjtLS9wLKcRdAiwbkqGfCIthP+cZ9nZ9mTKkLRWxwC0RHqTfWRBqOH\nx2jhD0qrg1DI0t6srd6d0m5P26OOWNNR6jVxWs8N4zGlLiXc112i9yZ2lzAC\nVE+26ICDZGAQYmM06SP6UY1xjOG9f5TBPOhqmNDFX+xwi8SdwIQPWryGagI3\nLnLQ\r\n=8dzB\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIDauVxwWYcbGlBH4i58qmS5KLtso2sPqvwvRAz+5ulpQAiAPjPFC5Zc8wYklL50jXIqC9LmiXijH/vinwowBYJqkKw=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.1.0_1565796136123_0.9226964538783733"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.1.1": {
+			"name": "is-index-x",
+			"version": "2.1.1",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"jsdelivr": "dist/is-index-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:ci-coveralls": "npm run test:ci -- --coverage --coverageReporters=text-lcov | coveralls",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.2.1",
+				"to-integer-x": "^4.2.1",
+				"to-number-x": "^3.2.1",
+				"to-string-symbols-supported-x": "^2.1.1"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@types/jest": "^24.0.18",
+				"@types/node": "^12.7.2",
+				"@types/webpack": "^4.39.0",
+				"@xotic750/eslint-config-recommended": "^1.1.5",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000989",
+				"coveralls": "^3.0.6",
+				"cross-env": "^5.2.0",
+				"eslint": "^6.2.1",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.15.1",
+				"eslint-plugin-jsdoc": "^15.8.3",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^6.0.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"jest": "^24.9.0",
+				"jest-cli": "^24.9.0",
+				"jest-file": "^1.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"nodemon": "^1.19.1",
+				"prettier": "^1.18.2",
+				"rimraf": "^3.0.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.4.1",
+				"typescript": "^3.5.3",
+				"webpack": "^4.39.2",
+				"webpack-bundle-analyzer": "^3.4.1",
+				"webpack-cli": "^3.3.7",
+				"webpack-global-object-x": "^1.0.0",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "79fed066dd24167db7be2baa0e8c48623dd71e9c",
+			"_id": "is-index-x@2.1.1",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-4iG5Q+haJLzhx5WVi5AH5a9Ir3fLMFgvLwRLPD92Qh+Q8DdP9gRyIVDys4MmTCcS1somXrLHV5sojvqwSS7ntA==",
+				"shasum": "4e55700e9281396b0ccf419db6e87fd6d49ded8f",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.1.1.tgz",
+				"fileCount": 11,
+				"unpackedSize": 250498,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdXE6RCRA9TVsSAnZWagAA0OQP/3m0iGUiG8mqnscOhaiA\nhSkRisfVkm6Ebo7dyyLDVrR6ACEBqFoHUSwbCHh5q0qcCJy2pB9gSxGJ33Eg\nDfwsMUmE3IM4bXST0mtvMvmKq7F9rOfeXb2ozJOZK0DESvRu0arELEuN7+vz\nzRsDDAdC8Fbtzzh9BzSlwCJUqOxrSQSZ996Tz4vL6ZUk3niMHRqVVYEeIG/K\n55HCphdTHmXslof7aaIvhryYecHdzk8D3o3SvAF4EDzAd5VBvhXrDs/LDgDq\nr8sVbSkEma9ZwWJE2w5L3/dtDIC81bx7BgpCVzW+f5GJKbvqxlFu9DnD6fH/\njXUXaaJs03pf7lAw4HNlN13oAebcjZnM771Q5mpQjjdv1FEKAqzuHfzaJSUM\ncVoLoT+l49pvD4wc9t7yydlWf52FSjnQPiFcXKsRZj2FKebtm7AACbzBRi4n\ncXR+K4jXRhNF5dc8dPsJLs8BlXc6BZP99xjE8qbrG3qp1R8FRXlUJ2nlXWLd\naDkXNNJuD7fY4hmXooqXMFRvrGV0exngLW7OIOMnHDYhWrQvymKWQQV4hFMR\nn9eiRLLnSCDVuPINY2C+wYIz1PiM4repiB83Xrzm7u9wKNtA7WoTdYa2vhNZ\nEhYuVIGJBoji85aP0YA8Qwq6HQKomG+1StWl1TclGnO/8eIhz6hPGTHASTTH\n+WF2\r\n=zeuL\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIEmEnvKxxYeDAOri//AKN1doKYF5Z5YCiwOuwRmKGpnsAiEA4RNlfZf4vuZY838ayHqfWguxe0B0cCrqKIzirEbTEfI="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.1.1_1566330512752_0.7222922610607843"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.1.2": {
+			"name": "is-index-x",
+			"version": "2.1.2",
+			"description": "Determine whether the passed value is a zero based index.",
+			"homepage": "https://github.com/Xotic750/is-index-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"number",
+				"isIndex",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/is-index-x.esm.js",
+			"main": "dist/is-index-x.js",
+			"jsdelivr": "dist/is-index-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/is-index-x.js -o dist/is-index-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:ci-coveralls": "npm run test:ci -- --coverage --coverageReporters=text-lcov | coveralls",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/is-index-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/is-index-x/issues"
+			},
+			"dependencies": {
+				"math-clamp-x": "^3.2.2",
+				"to-integer-x": "^4.2.2",
+				"to-number-x": "^3.2.2",
+				"to-string-symbols-supported-x": "^2.1.2"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@types/jest": "^24.0.18",
+				"@types/node": "^12.7.2",
+				"@types/webpack": "^4.39.1",
+				"@xotic750/eslint-config-recommended": "^1.1.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.3",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000989",
+				"coveralls": "^3.0.6",
+				"cross-env": "^5.2.0",
+				"eslint": "^6.2.2",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^3.0.0",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.15.2",
+				"eslint-plugin-jsdoc": "^15.8.3",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^6.0.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.6.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"jest": "^24.9.0",
+				"jest-cli": "^24.9.0",
+				"jest-file": "^1.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"nodemon": "^1.19.1",
+				"prettier": "^1.18.2",
+				"rimraf": "^3.0.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.4.1",
+				"typescript": "^3.5.3",
+				"webpack": "^4.39.3",
+				"webpack-bundle-analyzer": "^3.4.1",
+				"webpack-cli": "^3.3.7",
+				"webpack-global-object-x": "^1.0.0",
+				"webpack-merge": "^4.2.2"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "2413be47df48aaa5796cfaeac784b6309206e15d",
+			"_id": "is-index-x@2.1.2",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-AaCvzDt3cpJg+gVeOxferhetS4bMH9Npr7MeNNwA6GZlbY5PxWkMQj8HsezyPRg7TLKO9wrnRBSUNqeg6LpgiQ==",
+				"shasum": "808fadf7c2e17b4e5b04cb86e46a95415a6cae9f",
+				"tarball": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.1.2.tgz",
+				"fileCount": 11,
+				"unpackedSize": 250498,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdZrqDCRA9TVsSAnZWagAAWZcP/iGHmOH4h4CMrschbK0l\nwhIRYBAyqH9JNa+ZyQQyT/K/pd4ucZLJI+qSEdJBSIjt9ZcCnbaC5ondCfA6\n4EkpZ9i3oX7EsM6D5PRF9ZCdxVkhIz6mpPiNXoPWkgUb076elqsp2ON/Wi4v\nOXbbh8DUxK7EudocG9cn1K2gnz7696wFf5WdcLTllL2CxYa8sRc73DQYFrbl\nPrOnWcHvU8bcuT1fBagNkVYKxcVk0kCFrwGC7bQEuRGU0iOoR+TR0DN05WLa\nwn/q/cPU4cUbqzGv5N5pTdgFuB+LBQiVJLvXy5OYspdAgij4IU5oBmGggFMV\nIW89J1jVVakZe3hgKMImhqC0cO3p6eOJGEl+e9WiQmh2jtR2cLYxlCpqW3ya\ndT2iBTlk4c76m9CZZm4UFyEkP+H5OkcUsHrWLX9aPEzQMSuWy3RHUVQEi436\nHm1XIwZq4W8Ntgmfx9+MqOIbwpcK2Y+wb+Y1UbLEJyA460GvvkS5VZq3fBAB\nkdbdSlXmX6iKucXQOiZQp9g2+5nAHy574QGJTQUk1Tsqzo3PqlIYl6V4J5je\n8VOE+a7xBiOeatXAVRs50at7OoHVr/JqwPihxh1MqUxTILzpS7OwyDYzAKi9\ndKoyZwouVpb/HTnihFXK3RWyj/dHfv296KMOwmMSLHTqPValjt+16wRQOHw4\n0Nez\r\n=mnqO\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDHh3/m6u9eeG+Bx9H+blHjt25ilRbvjgdVGjz+QxvTtQIgcvZZqaV6RQdjCWk7X6WdPMpmx4zXPQMU4HctPesljEE="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/is-index-x_2.1.2_1567013506423_0.3801250456800187"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-05-06T04:58:58.467Z",
+		"created": "2017-09-03T01:23:22.452Z",
+		"1.0.0": "2017-09-03T01:23:22.452Z",
+		"1.1.0": "2017-10-25T16:11:31.216Z",
+		"2.0.0": "2019-07-15T19:24:20.231Z",
+		"2.0.1": "2019-07-16T11:03:47.643Z",
+		"2.0.2": "2019-07-16T12:42:26.331Z",
+		"2.0.3": "2019-07-16T21:50:54.850Z",
+		"2.0.4": "2019-07-17T17:53:38.498Z",
+		"2.0.5": "2019-07-17T19:15:21.941Z",
+		"2.0.6": "2019-07-18T00:06:42.173Z",
+		"2.0.7": "2019-07-18T18:58:51.216Z",
+		"2.0.8": "2019-07-19T22:07:29.520Z",
+		"2.0.9": "2019-07-21T22:56:44.633Z",
+		"2.0.10": "2019-07-22T12:55:24.697Z",
+		"2.0.11": "2019-07-24T00:36:34.356Z",
+		"2.0.12": "2019-07-24T16:42:35.775Z",
+		"2.0.13": "2019-07-25T22:19:50.085Z",
+		"2.0.14": "2019-07-26T14:29:50.530Z",
+		"2.0.15": "2019-07-27T08:49:40.959Z",
+		"2.0.16": "2019-07-27T14:37:00.205Z",
+		"2.0.17": "2019-07-31T22:39:12.853Z",
+		"2.1.0": "2019-08-14T15:22:16.218Z",
+		"2.1.1": "2019-08-20T19:48:32.920Z",
+		"2.1.2": "2019-08-28T17:31:46.523Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "2.1.2"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"1f0633924eb6eeaff35c20ef1faf29ea\"",
+			"fetched": 1734527712585
+		}
+	},
+	"_distfiles": {
+		"is-index-x-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-1.0.0.tgz",
+			"sha": "55f022f861dbc44a862bc8ea03f6c3666fa168fc",
+			"registry": "npmjs"
+		},
+		"is-index-x-1.1.0.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-1.1.0.tgz",
+			"sha": "43dac97b3a04f30191530833f45ac35001682ee2",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.0.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.0.tgz",
+			"sha": "9bf2162269cf8eee989a4759c3d3a550062ec59f",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.1.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.1.tgz",
+			"sha": "ad851ac980b985836b4a965c35f0fb1b785c1497",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.2.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.2.tgz",
+			"sha": "4a104ab64fe27619f6ef68c85e398b273097cd75",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.3.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.3.tgz",
+			"sha": "bad82d929bf8ba4497ed886554da93c0b2dd82c0",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.4.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.4.tgz",
+			"sha": "61eb3a52cbb6b906b6ab73b1ad7a1cc7650b09c5",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.5.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.5.tgz",
+			"sha": "a1eca119e6e4d72799cbd534fc51a6257cf47eaf",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.6.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.6.tgz",
+			"sha": "0037f17844642671bcf9eda9cb73308c547aa580",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.7.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.7.tgz",
+			"sha": "a55ca724f6c4f49914f32ab9843ec74375b03acc",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.8.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.8.tgz",
+			"sha": "338ef97a121573eadaffa2ecdc8896793e54731c",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.9.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.9.tgz",
+			"sha": "fb8eb569c7a3bdbc362e690ea3c24d83338e0935",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.10.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.10.tgz",
+			"sha": "d018e6945501ff8d68ce64a71aa9befa520f48d2",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.11.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.11.tgz",
+			"sha": "4d47ffb45a21066be58c7be72dd502dba75fd107",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.12.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.12.tgz",
+			"sha": "ef66b84469083a86fdee161c500582b740928e05",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.13.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.13.tgz",
+			"sha": "cd791201eab53459af22362160694b46842a9077",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.14.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.14.tgz",
+			"sha": "1def9ef9ac44f9887787ede95ccffd29ec866e00",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.15.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.15.tgz",
+			"sha": "682d975b864e0dbfc8db3dcb2e5187c36c889c31",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.16.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.16.tgz",
+			"sha": "8b1aa8e8eed588b7bdfeaad5f9d1d3a2373e586f",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.0.17.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.0.17.tgz",
+			"sha": "4c970281f6abdbea38d13adfc6cd597028cd5ac4",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.1.0.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.1.0.tgz",
+			"sha": "4dca2d09ea0cf103a1ff6f732a72e4e0b2524601",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.1.1.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.1.1.tgz",
+			"sha": "4e55700e9281396b0ccf419db6e87fd6d49ded8f",
+			"registry": "npmjs"
+		},
+		"is-index-x-2.1.2.tgz": {
+			"url": "https://registry.npmjs.org/is-index-x/-/is-index-x-2.1.2.tgz",
+			"sha": "808fadf7c2e17b4e5b04cb86e46a95415a6cae9f",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"is-index-x-1.1.0.tgz": {
+			"shasum": "43dac97b3a04f30191530833f45ac35001682ee2"
+		}
+	},
+	"_rev": "2-6f6ae72ab52d354e",
+	"_id": "is-index-x",
+	"readme": "<a\n  href=\"https://travis-ci.org/Xotic750/is-index-x\"\n  title=\"Travis status\">\n<img\n  src=\"https://travis-ci.org/Xotic750/is-index-x.svg?branch=master\"\n  alt=\"Travis status\" height=\"18\">\n</a>\n<a\n  href=\"https://david-dm.org/Xotic750/is-index-x\"\n  title=\"Dependency status\">\n<img src=\"https://david-dm.org/Xotic750/is-index-x/status.svg\"\n  alt=\"Dependency status\" height=\"18\"/>\n</a>\n<a\n  href=\"https://david-dm.org/Xotic750/is-index-x?type=dev\"\n  title=\"devDependency status\">\n<img src=\"https://david-dm.org/Xotic750/is-index-x/dev-status.svg\"\n  alt=\"devDependency status\" height=\"18\"/>\n</a>\n<a\n  href=\"https://badge.fury.io/js/is-index-x\"\n  title=\"npm version\">\n<img src=\"https://badge.fury.io/js/is-index-x.svg\"\n  alt=\"npm version\" height=\"18\">\n</a>\n<a\n  href=\"https://www.jsdelivr.com/package/npm/is-index-x\"\n  title=\"jsDelivr hits\">\n<img src=\"https://data.jsdelivr.com/v1/package/npm/is-index-x/badge?style=rounded\"\n  alt=\"jsDelivr hits\" height=\"18\">\n</a>\n<a\n  href=\"https://bettercodehub.com/results/Xotic750/is-index-x\"\n  title=\"bettercodehub score\">\n<img src=\"https://bettercodehub.com/edge/badge/Xotic750/is-index-x?branch=master\"\n  alt=\"bettercodehub score\" height=\"18\">\n</a>\n<a\n  href=\"https://coveralls.io/github/Xotic750/is-index-x?branch=master\"\n  title=\"Coverage Status\">\n<img src=\"https://coveralls.io/repos/github/Xotic750/is-index-x/badge.svg?branch=master\"\n  alt=\"Coverage Status\" height=\"18\">\n</a>\n\n<a name=\"module_is-index-x\"></a>\n\n## is-index-x\n\nDetermine whether the passed value is a zero based index.\n\n<a name=\"exp_module_is-index-x--module.exports\"></a>\n\n### `module.exports(value, [length])` ⇒ <code>boolean</code> ⏏\n\nThis method determines whether the passed value is a zero based index.\nJavaScript arrays are zero-indexed: the first element of an array is at\nindex 0, and the last element is at the index equal to the value of the\narray's length property minus 1.\n\n**Kind**: Exported function  \n**Returns**: <code>boolean</code> - A Boolean indicating whether or not the given value is a\nzero based index within bounds.\n\n| Param    | Type                                       | Default                       | Description                                          |\n| -------- | ------------------------------------------ | ----------------------------- | ---------------------------------------------------- |\n| value    | <code>number</code> \\| <code>string</code> |                               | The value to be tested for being a zero based index. |\n| [length] | <code>number</code>                        | <code>MAX_SAFE_INTEGER</code> | The length that sets the upper bound.                |\n\n**Example**\n\n```js\nimport isIndex from 'is-index-x';\n\nconsole.log(isIndex(0)); // true\nconsole.log(isIndex(1)); // true\nconsole.log(isIndex('10')); // true\n\nconsole.log(isIndex(-100000)); // false\nconsole.log(isIndex(2 ** 53)); // false\nconsole.log(isIndex(0.1)); // false\nconsole.log(isIndex(Math.PI)); // false\nconsole.log(isIndex(NaN)); // false\nconsole.log(isIndex(Infinity)); // false\nconsole.log(isIndex(-Infinity)); // false\nconsole.log(isIndex(true)); // false\nconsole.log(isIndex(false)); // false\nconsole.log(isIndex([1])); // false\nconsole.log(isIndex(10, 10)); // false\n```"
+}

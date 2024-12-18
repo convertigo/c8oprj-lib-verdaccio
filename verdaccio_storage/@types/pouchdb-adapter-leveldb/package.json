@@ -1,0 +1,755 @@
+{
+	"name": "@types/pouchdb-adapter-leveldb",
+	"versions": {
+		"5.4.1": {
+			"name": "@types/pouchdb-adapter-leveldb",
+			"version": "5.4.1",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-leveldb@5.4.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "fbf74ba0c2a3ff1ac1a31a7e9c22e7523537f46d",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-5.4.1.tgz",
+				"integrity": "sha512-BMjljzTbKVHXdvw6qaAM5fsYr5XdTIOVM1HuY57qmHinXAAeLkohPWkTASLcB9CSe0CcPAEXanZ8UgyVJSfcbA==",
+				"signatures": [
+					{
+						"sig": "MEUCIAjM3pv0+R4Shs3/xt5KEI5y2J+EZmiuOnT32sLWDNymAiEAg3VjPBY3ZNmPLLPNeyxywnqgjc8Snrp3eNzEf+1a0TE=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-leveldb.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-leveldb v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-leveldb-5.4.1.tgz_1470153848815_0.591848042793572",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.2": {
+			"name": "@types/pouchdb-adapter-leveldb",
+			"version": "5.4.2",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-leveldb@5.4.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "97e86a0cf0ac26254ada737f01bc24093e3372d2",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-5.4.2.tgz",
+				"integrity": "sha512-nGoCBbDrPPmeMDnxO/xTHrRD9CBgOLZQZwP3AguL62hjMYNmYf6UN6vHVq96nSsOxumyPw5BZo91jh6/nNtnAQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC2RaSSEkxmrC/X+2H0FWW8FGeaTbHUhFzdMnGmOKv1uQIhAIGxh6kkD20Oz2IWZsjFFO4kVXEJhFOE6glcFwHsC0pH",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-leveldb.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-leveldb v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-leveldb-5.4.2.tgz_1471621015518_0.34740518289618194",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.3": {
+			"name": "@types/pouchdb-adapter-leveldb",
+			"version": "5.4.3",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-leveldb@5.4.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "095df72b8f40d76ea9630b9c6be0f2d01eb34dcc",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-5.4.3.tgz",
+				"integrity": "sha512-MG9wWNi5DkrjJOhZHg36CpDohfQ5q3tkHGsBgc6HfzMVv4LMc4CQTIgxfbh9smA5p6cGN9P5ywVioGkL71tm/A==",
+				"signatures": [
+					{
+						"sig": "MEQCIBz8nHroTh8drQrmaiHvqdlPjdZAcZWFr/bcQje1B9dxAiBC4MlYP1xvJ3gs77BkM3iLpnWqQrnDISzRRnk4FFCWBw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-leveldb.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-leveldb v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-leveldb-5.4.3.tgz_1472151200970_0.5280531181488186",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.4": {
+			"name": "@types/pouchdb-adapter-leveldb",
+			"version": "5.4.4",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-leveldb@5.4.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "09d305071374661e0bb544531b725699a920a04b",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-5.4.4.tgz",
+				"integrity": "sha512-lXpVUDvcrnm2uQ3CgPOCzXCjvfZKsW3gIeeP57LzOnHJBKvNWDVbxofVT4y45hUMoIWkPzE/mNy30j9whdzcjw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDzSqHiUdhLSKKSY6V9QOewprEpztMfAYAOUbS1nt8iZgIhAMz9kflf6WoL6uGqMVME35cUJUXfPRF0E0p16Vto+Tuk",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-leveldb v5.4.4",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-leveldb-5.4.4.tgz_1474308075895_0.1251963716931641",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "56b1543f56dace716c1c03d6cdca30778134f62374c3593a625e42cfc3087c6b",
+			"contributors": []
+		},
+		"6.1.0": {
+			"name": "@types/pouchdb-adapter-leveldb",
+			"version": "6.1.0",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-leveldb@6.1.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "94c7c212390082d8a2924abae5c013f9fb08af61",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-6.1.0.tgz",
+				"integrity": "sha512-Fpr5sljYmGHBwRICnMexsh5sdSxsYIjzbp04hh+sCVBcDnM5IuYNZ201flcw+2tLvE6eBmfsjCYZ0UmWBaIedQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC2viLdl6eHcw4sWh+58acEipEmlpDc/87BR2fMvYkCDAIhANozMcsxkBW83rCtznsGRj7bFdmLECBYRtDXjXi+jcZT",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-leveldb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.0",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-leveldb-6.1.0.tgz_1492528357696_0.9008944281376898",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "067da0a52b16eab81a401b13e2a40a84c62794c086e020ce27d06065ec4ece90"
+		},
+		"6.1.1": {
+			"name": "@types/pouchdb-adapter-leveldb",
+			"version": "6.1.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-leveldb@6.1.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "97382d53d93b48dae278a0b3a4bdcd9e08b01019",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-6.1.1.tgz",
+				"integrity": "sha512-+reVIDr9qSwWZmG0YUvGd3btnwEROfTz8sbytT5u9M3z3TW3crfzTKpLPhE0jzTp/Af0x6T2Dcoj77kqC0tJCA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCnK1FWULMYh3vbL5vSQFi/XKqhgqeqRyGdvcyGHQQ+NAIhAIcRUyfYPUCg5vtbIptsGNJZOydnzJCEURvMAARHQt4u",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-leveldb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-leveldb-6.1.1.tgz_1497557838508_0.44544621044769883",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "2019da40631d686412a074e3c5ace86711aa4e7597f5dd9db1d446017686df2e"
+		},
+		"6.1.2": {
+			"name": "@types/pouchdb-adapter-leveldb",
+			"version": "6.1.2",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-leveldb@6.1.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "94b4949bc7954318451c4da3fc07f6b91004a398",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-6.1.2.tgz",
+				"integrity": "sha512-YZNGO2fKuqbj0o32fVdxOA8jhA4AQkjMU19Gm0ktAeBPvG4fQDKXvVZsQewCDS5i4pfy2OZZ/sOT9nxrB3gnbg==",
+				"signatures": [
+					{
+						"sig": "MEQCIBn1efiS1oW9mMJN6vs5gzCH8TuHyDxQNUXP8xUIWEgMAiBoCSCxpbe6onGZHjwKXLzbdDEcP7TJXGLfhQkc6EPgjw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-leveldb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-leveldb-6.1.2.tgz_1513287298022_0.8215789722744375",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "e815899d02d4b2fd14d723e2ae6a8a7f2e786e92f5cd720b25ceebad16168adf"
+		},
+		"6.1.3": {
+			"name": "@types/pouchdb-adapter-leveldb",
+			"version": "6.1.3",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-leveldb@6.1.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "17c7e75d75b992050bca15991e97fba575c61bb3",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-6.1.3.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-ex8NFqQGFwEpFi7AaZ5YofmuemfZNsL3nTFZBUCAKYMBkazQij1pe2ILLStSvJr0XS0qxgXjCEW19T5Wqiiskg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDPV7Hs3JxJbMDZ+GGfYZZ8sG1expQjJjb/OrlkxJx01gIhAKf+Y4Alu+0fue+gJt1i/eIx9beF140utR4NK53j7UmJ",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 3762,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcZJHkCRA9TVsSAnZWagAAGO0P/iWvWA4egz5j6ZWQIX7q\nmxBQpADcwk9ghPhGbAuQMQCHJ006Ex5UVEi61FiPOWUGt77Hi1fD2V/SDHq2\n/9uSNCGrQVeqR+pRoMJgGaFcEYRANYE/3I8J31RJU2vcW50vWVsb0Cf1CFJ3\n9Rc2hmsiQ6fG22sFeTuQQrD1NYSkIdhLgp/ZhtTvzyNgzxBP2vnHLS8+cM5X\n+KRwX13cVkNqp/Ypz5XHohP5HCY0J1uRQwE/DSwGOjLsbXAkJKC8MHSKb4GX\nz3C1GDJeocpTmZX/XYHJH5nL0fpQT2QE23UsuZAaej0w+v7yQ1vtnD6mMYj8\nMErdxJsV6XM1exe58E5K86FrJ9MdE95guB55aVIZTtN+o6SLjWndNl0P5clw\nmV6Ks8+CLY4TCUngwmJEGzL5qS9C0vVuVrrf43il2H58p8X8hJFQ1s+GIxEB\ngHlcvt0XJ4iqN9hOh3DMNTxVs88QNiKD5a3TkHVxPFrCJ8oo3PnFZp8C6tSa\nc/g5SLlVp+0BtOVO7mJtcLi0kgdTsywKGLi8MyPUGssrnDLMnxsU2U51A+PQ\nRxYXlrQqEnYkBSD5091MTJZ49zVlLcerKotIt64bdBfFvY5D9BZCNCuVwSu4\ndXGhThz4tpgd45HTlt5O4s6T7+HT5rw/4Z/4VMdWcZ2mimivTZAQ0lmBo75d\nVuuS\r\n=pgPU\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-leveldb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-leveldb_6.1.3_1550094819940_0.08922147858753582",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "f993c61c806295d0662f5eb0c8054757a2a7c0dadd9499e75455f2616d87cb9d"
+		},
+		"6.1.4": {
+			"name": "@types/pouchdb-adapter-leveldb",
+			"version": "6.1.4",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-leveldb@6.1.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-leveldb",
+			"dist": {
+				"shasum": "02ce035b61ffce2ebff4c4f921c5031bcf3b97ed",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-6.1.4.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-MgpRKuKvy7HXFqmYkuU3r/o9Qc2J32LbFAMTeZhS8/bEA5mKllOAaOU26jO4KS7656Gcm4Vz6/mbmSSOdprQig==",
+				"signatures": [
+					{
+						"sig": "MEUCIQC+s4LnISR5TFNFRgRYzHeTswOtUlPqbDOL9p8VNQjurQIgGG0qViTDB+t8n2Qe/eNaRUxDtqzlpsql+go8mWrjlTY=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 4967
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-leveldb"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-leveldb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-leveldb_6.1.4_1695539212921_0.48744699395585345",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "a54fbe4752ba4fd625f14c0d1fad64bc7fe38f1e65d6c92ece44cb62077c5f20"
+		},
+		"6.1.5": {
+			"name": "@types/pouchdb-adapter-leveldb",
+			"version": "6.1.5",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-leveldb@6.1.5",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-leveldb",
+			"dist": {
+				"shasum": "622cb78d87339be094cfe5eac6703ed1cb1d7e5c",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-6.1.5.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-a0lZTPSEfojLabv9sOoksKh9zDfW8Q0N5aDAxfNGRH8BtdQ8wSHr3+V8igTdg9kT+OMhdU+G9xC543M2CY5edg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDlc1Zx7Bx0uAEncdnvsrIIQoOumnZrLO3UmSM6N0GmXwIhAPuNb4kApdesvMoA74rjSCY4Ov6mh84OqfkyygrKShVJ",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 4203
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-leveldb"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-leveldb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-leveldb_6.1.5_1697627775447_0.7935509150660998",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "4db1641e325ebe5cb2be9e89772eabee68369610b279223188777e1739bcaddd"
+		},
+		"6.1.6": {
+			"name": "@types/pouchdb-adapter-leveldb",
+			"version": "6.1.6",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-leveldb@6.1.6",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-leveldb",
+			"dist": {
+				"shasum": "ec0070a5747583c5989d060df699e694f961c3e0",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-6.1.6.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-mqeTpA2Ni2U4FA5ISRESy4WwhfUahXViUa3jQpXGdSpruaeHlhTLzZJPyz7/mGlvdAfAFv9Vd5d6ys3ASmMujw==",
+				"signatures": [
+					{
+						"sig": "MEQCIHbsdvQ5HWVSa+hEpVKo/BGaEHP7IHSQ7QuAzetRpkWGAiBDwCf6Gz5j1Eo1wuhSWJwHFt8H2acRzyrjnfexL6WeqQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 4203
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-leveldb"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-leveldb",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-leveldb_6.1.6_1699363091689_0.8480528445970845",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "91e293b9b2c468d706d9130a29709ea5e19b39c4fcd4330b7e7e7feb8f36b27d"
+		}
+	},
+	"time": {
+		"created": "2016-08-02T16:04:10.404Z",
+		"modified": "2024-11-11T09:31:26.492Z",
+		"5.4.1": "2016-08-02T16:04:10.404Z",
+		"5.4.2": "2016-08-19T15:36:57.145Z",
+		"5.4.3": "2016-08-25T18:53:21.500Z",
+		"5.4.4": "2016-09-19T18:01:16.142Z",
+		"6.1.0": "2017-04-18T15:12:37.924Z",
+		"6.1.1": "2017-06-15T20:17:18.602Z",
+		"6.1.2": "2017-12-14T21:34:58.097Z",
+		"6.1.3": "2019-02-13T21:53:40.074Z",
+		"6.1.4": "2023-09-24T07:06:53.100Z",
+		"6.1.5": "2023-10-18T11:16:15.670Z",
+		"6.1.6": "2023-11-07T13:18:11.827Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"ts2.0": "6.1.0",
+		"ts2.1": "6.1.0",
+		"ts2.2": "6.1.0",
+		"ts2.3": "6.1.3",
+		"ts2.4": "6.1.3",
+		"ts2.5": "6.1.3",
+		"ts2.6": "6.1.3",
+		"ts2.7": "6.1.3",
+		"ts2.8": "6.1.3",
+		"ts2.9": "6.1.3",
+		"ts3.0": "6.1.3",
+		"ts3.1": "6.1.3",
+		"ts3.2": "6.1.3",
+		"ts3.3": "6.1.3",
+		"ts3.4": "6.1.3",
+		"ts3.5": "6.1.3",
+		"ts3.6": "6.1.3",
+		"ts3.7": "6.1.3",
+		"ts3.8": "6.1.3",
+		"ts3.9": "6.1.3",
+		"ts4.0": "6.1.3",
+		"ts4.1": "6.1.3",
+		"ts4.2": "6.1.3",
+		"ts4.3": "6.1.3",
+		"ts4.4": "6.1.3",
+		"ts5.7": "6.1.6",
+		"ts5.6": "6.1.6",
+		"latest": "6.1.6",
+		"ts4.5": "6.1.6",
+		"ts4.6": "6.1.6",
+		"ts4.7": "6.1.6",
+		"ts4.8": "6.1.6",
+		"ts4.9": "6.1.6",
+		"ts5.0": "6.1.6",
+		"ts5.1": "6.1.6",
+		"ts5.2": "6.1.6",
+		"ts5.3": "6.1.6",
+		"ts5.4": "6.1.6",
+		"ts5.5": "6.1.6",
+		"ts5.8": "6.1.6"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"32c8a324c3033d3ab36361de4831c46e\"",
+			"fetched": 1734527719279
+		}
+	},
+	"_distfiles": {
+		"pouchdb-adapter-leveldb-5.4.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-5.4.1.tgz",
+			"sha": "fbf74ba0c2a3ff1ac1a31a7e9c22e7523537f46d",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-leveldb-5.4.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-5.4.2.tgz",
+			"sha": "97e86a0cf0ac26254ada737f01bc24093e3372d2",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-leveldb-5.4.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-5.4.3.tgz",
+			"sha": "095df72b8f40d76ea9630b9c6be0f2d01eb34dcc",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-leveldb-5.4.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-5.4.4.tgz",
+			"sha": "09d305071374661e0bb544531b725699a920a04b",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-leveldb-6.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-6.1.0.tgz",
+			"sha": "94c7c212390082d8a2924abae5c013f9fb08af61",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-leveldb-6.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-6.1.1.tgz",
+			"sha": "97382d53d93b48dae278a0b3a4bdcd9e08b01019",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-leveldb-6.1.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-6.1.2.tgz",
+			"sha": "94b4949bc7954318451c4da3fc07f6b91004a398",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-leveldb-6.1.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-6.1.3.tgz",
+			"sha": "17c7e75d75b992050bca15991e97fba575c61bb3",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-leveldb-6.1.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-6.1.4.tgz",
+			"sha": "02ce035b61ffce2ebff4c4f921c5031bcf3b97ed",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-leveldb-6.1.5.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-6.1.5.tgz",
+			"sha": "622cb78d87339be094cfe5eac6703ed1cb1d7e5c",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-leveldb-6.1.6.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-leveldb/-/pouchdb-adapter-leveldb-6.1.6.tgz",
+			"sha": "ec0070a5747583c5989d060df699e694f961c3e0",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-adapter-leveldb-6.1.6.tgz": {
+			"shasum": "ec0070a5747583c5989d060df699e694f961c3e0"
+		}
+	},
+	"_rev": "2-e09afe4b297dbf69",
+	"_id": "@types/pouchdb-adapter-leveldb",
+	"readme": "[object Object]"
+}

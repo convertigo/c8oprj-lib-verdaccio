@@ -1,0 +1,1154 @@
+{
+	"name": "@types/pouchdb-replication",
+	"versions": {
+		"5.4.1": {
+			"name": "@types/pouchdb-replication",
+			"version": "5.4.1",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@5.4.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "cc20c3158c700276f99624a3c74c7c38843d35b4",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-5.4.1.tgz",
+				"integrity": "sha512-tiDIjN5vOlNOiCUX2Kr9huVBAUs5CAle1Ygeqa5xMnlQXL2dxVxRd3C5Mtd7Cy5BSuQdM3mo88IB0w6YesKxrw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC0RJKOsGhVBGQz9yeuJoFduMGU/25LTrDkqPkACYF+BAIhAOy29OhEC9jIKtECWdqeHvAK3C3rstfLT10cdIfWriUH",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-replication.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-replication v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-5.4.1.tgz_1470153889452_0.0911902361549437",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.2": {
+			"name": "@types/pouchdb-replication",
+			"version": "5.4.2",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@5.4.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "d15e27e8473cbce7dfc66eb89bcd8ae4880aaaf4",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-5.4.2.tgz",
+				"integrity": "sha512-uTmj8gUs1/EQQpoYwxSs4nRdahu4bY7yxLR32jpwn4pcjH3Rw+d5oMSsVrIBtEHckt2P4VcRNnPS0ov4YTz4iw==",
+				"signatures": [
+					{
+						"sig": "MEQCIFvJxddkjWO92AGnS8LW61+gfOr/aOZ3B/h+dMbrASrFAiBhFiNAgXtV/cHFd/pR9SW3iArlTd3GpqaAnShFIAznfA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-replication.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-replication v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-5.4.2.tgz_1471621047504_0.832094709854573",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.3": {
+			"name": "@types/pouchdb-replication",
+			"version": "5.4.3",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@5.4.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "e3398e87d71fb0ed3a52d5950e36b27a052b75f1",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-5.4.3.tgz",
+				"integrity": "sha512-79d0RLMj+4OjXpOeVg8K/WeWJCDSNi3VqFp4ewKf6hLEsGMaYLx5YjxGsL8a7yFczNgPuVYD7qHF0LcdJhJViw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC9mGnIQkdS/QZbkX9FWDUX3XSx87KGmw8SDiDpZ3bGigIhAM5O9zjb3cKDRKibLk1Mh0efhraZCXKB3dODgc4BVu+/",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-replication.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-replication v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-5.4.3.tgz_1472151224598_0.9280516365543008",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.4": {
+			"name": "@types/pouchdb-replication",
+			"version": "5.4.4",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@5.4.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "55c3e59c34beb07511f7980dbe4b8e02601b93e6",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-5.4.4.tgz",
+				"integrity": "sha512-dXXGbQ9sXpAlR6EVWpGuFZwuswfAnq6YDUpr2lOv9/dDRKOq2vMbyFxv1P0jgatLCsnKvP0TBP1Ka8bRUF0okQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIEUlEtOoeXsGf4FhX+9HbZ2/Tg/jEr5PXuc95wdqiDN1AiEA6iWvrEG6qt2GJEdVDdQ0zttdoCZ62M1cYIUo3JfKBvc=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-replication v5.4.4",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-5.4.4.tgz_1474308143686_0.25956550100818276",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "ff207b7dabff378c382bc798ba089c5d9597ead79a8557b4466fdb0187bc5458",
+			"contributors": []
+		},
+		"6.0.0": {
+			"name": "@types/pouchdb-replication",
+			"version": "6.0.0",
+			"author": "Jakub Navratil <https://github.com/trubit>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@6.0.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "3d472245b87bc1bfc92c10b23142804489436ccd",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.0.0.tgz",
+				"integrity": "sha512-TJIQAoJKSYztWRbBrcgMIFzIXaGAkriylyA6KbVdil0vXUV84aSKmeGJlrDBc31mESEh0Q0GmOSKakr0nCjbZg==",
+				"signatures": [
+					{
+						"sig": "MEUCIGI426XfZivCclJVqaogXHAGNvV+GsxAqHaip47UcV4eAiEAhu2mmQrC2WhyOqBRfe0WcedVQoTshub6cvratZ8Vk/o=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-replication",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.0.0.tgz_1480459246768_0.41647019516676664",
+				"host": "packages-18-east.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "509021786e90a28140b133bb5c9341fe80137bfbb876560757a161ae1c0fae70",
+			"contributors": []
+		},
+		"6.1.0": {
+			"name": "@types/pouchdb-replication",
+			"version": "6.1.0",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@6.1.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil"
+				}
+			],
+			"dist": {
+				"shasum": "f88258922ab69d26b728bc54716c80f92e0a3af0",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.1.0.tgz",
+				"integrity": "sha512-aTzUKgyP4Qn1PkScI6vB0fGwnNMkvzBqGcAnYqYV/IAbcP8GrHf2Z+FAVFyQftaleGck1CiZK+d3pAGgDNOCbA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCsoTEZ8kHCs1zhrDZPhK5mmh34cxfAlGFVZzr9XE/E7AIhAKNm5VdQYbSruqda3lNQr7MGHCx0juXvvqZq2it2+fYe",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-replication",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.0",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.1.0.tgz_1492528367600_0.7152824795339257",
+				"host": "packages-18-east.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "83a5cd495bbe7a9b8007c108881e1dde8909358a3499734747ff86ade7808e16"
+		},
+		"6.1.1": {
+			"name": "@types/pouchdb-replication",
+			"version": "6.1.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@6.1.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil"
+				}
+			],
+			"dist": {
+				"shasum": "c4f9ae26817d8f43a07df477503982b1696f0bef",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.1.1.tgz",
+				"integrity": "sha512-sagLdIPvBRgaevW03uKFngozPRs4vOcVvTYBHLTSXvv2hxGS5EzBQ5++CRx9SzKp4aUKEMB8GWmylTp4Hfb45Q==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDTGotucnbjxiJSWqIu7NjtZp7wz7gLR895czNRpc0bNQIgEbpewpYPjdAi4fYG6vNJvGGDZXu8OF1eztujev8yJ18=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-replication",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.0",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.1.1.tgz_1495150599771_0.8286818901542574",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "7349a15140aa610e66ce67ad5793510b98dde55aad4f90b326017beb1b947c79"
+		},
+		"6.1.2": {
+			"name": "@types/pouchdb-replication",
+			"version": "6.1.2",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@6.1.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil"
+				}
+			],
+			"dist": {
+				"shasum": "a2c4d20567bc9b159b65da79bb8974d4727311ee",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.1.2.tgz",
+				"integrity": "sha512-bbMwPlJJZFyR+wMLzxiENDQCj6pitYeH5aIK4Dk/Ldm/1aFUbT5oiX5d+TgjsOrPE9eZb0nuQpm+oFx2u7H3uA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCeDLt/cITBj+PW20ElLgp6tHGCF5v8fwp5I1AoC2DJmgIhAPYC77WJEHWW6HJpwrDPKjcvSOPyOKiPp8dz6H/cdfQD",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-replication",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.1.2.tgz_1497557837131_0.7831918718293309",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "2646ee98a975d700e64ba4d24c89deab4dc7338b826bb2657f2be0800ca2eb4f"
+		},
+		"6.1.3": {
+			"name": "@types/pouchdb-replication",
+			"version": "6.1.3",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@6.1.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil"
+				}
+			],
+			"dist": {
+				"shasum": "38d365f7656e3cffae8ea4a04cfa283a9ea16a4b",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.1.3.tgz",
+				"integrity": "sha512-9KcZ1MYxKdxo6IuNNXWX6NKoUnwnkbRDQgB677SnX8Nwg6jRAnz8795EXU9TO3UU6KicUp3G60sSSvfmwFMyOw==",
+				"signatures": [
+					{
+						"sig": "MEQCICdJa0AKBS0AnQuzIvq4ZvT9BlhvXqMTeBXyT9qIWdgFAiArDAInBWMUSqtQoVjHdschGklAkCdbdH6efP51D4fy2w==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-replication",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.1.3.tgz_1497882100305_0.7583557290490717",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "66cc5f7490b96f97433273f17b8a8b84f36d5b122062d2b61da66d11298fbd58"
+		},
+		"6.1.4": {
+			"name": "@types/pouchdb-replication",
+			"version": "6.1.4",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@6.1.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				}
+			],
+			"dist": {
+				"shasum": "95aa826ce5ae612bfc6d320d14fd0ed7ce14b36a",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.1.4.tgz",
+				"integrity": "sha512-5EC+E0xxPFfiVLoc8DM+udSy8BqHBHqUWDTmaMBIIaRBU80AVRP5uJSojdMwcaMRQ63Tqb0/880EgY+QQGGOwg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCclaothV4KAqpspif59V1CaJ/yjisRuWErxoQg83/pFAIgMzvzwOGcvFU9yt9VJcATZNuXDtai8PMNqpCq5ZBEijQ=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-replication",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication-6.1.4.tgz_1513287309152_0.04913407238200307",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "92e8270a99a1846c59aa4a3e677ba52ab48ebc6927204678f76c744816957486"
+		},
+		"6.4.0": {
+			"name": "@types/pouchdb-replication",
+			"version": "6.4.0",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@6.4.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastián Ramírez",
+					"githubUsername": "tiangolo"
+				}
+			],
+			"dist": {
+				"shasum": "94c54e9a0e22643681958859050a98298be8663a",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.0.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-+DEigPn5+Waoi9tL3EB4ES0Ry/3lNCRVzWsvWQNM3CiGWEwulBy8EnpeEbxIL8562XM2znv8+KaQzNy2psMvVQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDiXYZc8+TadrGmD9UvVKN1raYm58wGzyTMlLDirGuE0wIgaHclPg5KRp87zv97Low1RwMAU/9/YQq+YaLyQ2ZBxls=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 12705,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa+1FKCRA9TVsSAnZWagAAsQoP+wZj9GWKT7zlriqf+sao\n1tt2+zdYuxk53VEvFlON9DoNjjk7ZPifFe+lotDwFhixqTyvE4DFmlTrUcYw\ntG7vGElipaNR4CMDpivYoxJiG2j17YftpsatPsTXc4PJ3NM59oIWMKxlfBv5\nADgF5rH5mfze2Bf/Bh5MPT43XyYjdio4slj/tYYpOI2qPeK9SCtsqa1QQfpI\n2NzCZqH6xM3wQydgWq+0yYcs3XrubOjkyKg2p/j5D7JFsk8kbkJQoIP4wTr4\n11KCPn2dYUVZ7FnhUpqoENO8S4x6ehsQzH+VVDVrfbWWQxRSEoqm9OYQNWNr\n1011uKoFQEyAiGcvhRaOVrmYzRWSDgCsvvY0gBIRCmnsuJ2p2+Q/i6ASXVtc\nngtmmEb4wxFZXsyE6kiGNOs/q6mmZ81ob7ZpZ2vZiMXAW2EnIsroIuzdx5Eu\nq5zwljUq8edB97MDp+aExtQzEEZq4hGDUBBfnpNNtiWya38htNSo/cycS8Ml\npil/QNKgZRqgKq3yOAiC3gh+tse8F8PwKZHeRKJhEN5ZyMG5jJZo6vHzcw9x\nn+UUnSLmAj50+TxOyI/h0rmatMP3ZfPhOtzQ8fBkjfJLOTGXCLEyllAO2tV7\nvLWvUkoTJ3qucTTcVwh3rjCKdpvTicT0RPP3Ea3bKTWqMkWcDbBd19SFOmEd\nfqzb\r\n=uAQy\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-replication",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-find": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_6.4.0_1526419785558_0.765097687425641",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "b7d8850c2dc8b56cceb383ca8a903aad9bd700b78154b78b57eaaff000b345bb"
+		},
+		"6.4.1": {
+			"name": "@types/pouchdb-replication",
+			"version": "6.4.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@6.4.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastián Ramírez",
+					"githubUsername": "tiangolo"
+				}
+			],
+			"dist": {
+				"shasum": "6ca5b4a318739d88601b7f010907c12c228129d1",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.1.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-5WCODUKEIVC0gr0KYkIRXod6Ho6y0T3L7CMkqztK0vjgWTJGItJWjOeS3OiVef9xTWHhU3mW1adjmWQ7ygORFg==",
+				"signatures": [
+					{
+						"sig": "MEQCIFESJpmoo6tw0rSIBIQg3K6TJbgeW2z89mVFJRXNQkuGAiAz2hWG0dUiPIXkYXIko+ZkGnUwzvsl5MY2kWyGZWDsUQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 13199,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcGUErCRA9TVsSAnZWagAA6lAQAJ0Z+8JA+PJA0i8etpSF\n9B8sS47iwEViUNYyWj7WM7GrFaiBESdi9QYHQD4AWSu+8m8qSpErEl/B66nC\n9NdCg9DEJ+lP9eSecY0OB+Wg1Y0hd3aj78ySBsi58mXT1hC2Lu6RAQaFuOAN\nNdrN249OrmzcQfxFAQkqsnwbgGIoKt7CKcwPDoX0ozh0Pmg8r2O9WyV9+C1o\nRKIwoWkNb7Y9Im+hAo4CzyzNyBY6YOYR8D7GvJcn6SDuw2bI21Sg/HcTu+pu\ndGINcAMEbcS0GcoUnMxAi9aJ+7XuTx4t6YTge1BdOwx/FN0WAE5a9X8HJdR7\nXYMvsvzfxUD5cnaJ2Yc8VCwEgKHJo9CU/Vy51wOptc1/b3UeRFy2luPbwZS2\n6JOT/woJ9lWiItsW4xGeTmbvcAUKBD8sfSUNBJeXwaxekhhLJ7kHlRWIsoNo\nje0cV6V28NVqAfJlvAyMTMrhvlaHN4go9VB70fRRTDo/wO8hL5ORrJ+7T9sH\nFsq8v94G5im82eZl+tgX+1FHcJB0mZMi9tX8b+Gvbx+IPkEm1Jobhb99WguQ\nfamKisuTYer+1K7G5Usf/tdsvtXMRqO3WKIcyQpJbWl7dU3trUxFInoYeUEQ\nxNjeI0vsEDZB8+05B8We7pDQfkjqD6jAVksZ8VuAvf4se/1UhbFp3j01rFII\nsA3K\r\n=hT9T\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-replication",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-find": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_6.4.1_1545158954727_0.7698961189648672",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "2e32bd692ae054c34ea8c95bc0c8339501e84adbe022fb7e656649922b3f0144"
+		},
+		"6.4.2": {
+			"name": "@types/pouchdb-replication",
+			"version": "6.4.2",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@6.4.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastián Ramírez",
+					"githubUsername": "tiangolo"
+				}
+			],
+			"dist": {
+				"shasum": "e523764cdc9872f6493d5e039ce7bf54ee0a2888",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.2.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-BbuwkCv6nu8RUVjymUvhSw/Oo+VOCWyUpio3ujOoxhVdef/JZ5AUjsotgKWHiG0OtkZ8O5oCbAx5uH1Zf6w9XA==",
+				"signatures": [
+					{
+						"sig": "MEUCIDFiEBfse+2kDXt9/x9ONkvhK+qm/g1/IWgjC1IEdeNMAiEAgpPBIOPxFvbeofHnSVODnnk0U61IOj/LEr54lmChaUE=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 13237,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcZJK8CRA9TVsSAnZWagAAeq4QAIMsuuWnBxd0NxWqLfoU\nbl+Nl7aUmx62ibwEsPMBOdrXKzVByNUcQzq6qT+54nttWPCi6ujjPuFqv4Up\nE8gi/eGjdA24ONPxQX9iU7BSbm53gi8Jv/qtk4f1KvuSsqXLiwiSp+QyrQ2M\ngvDQByPH0+McgnNQMB/HkMkzN8j5oT51AjmA5p6IgCr0TZsGugrgRhv+TYyL\nKcBTb7cQz3CXgi6sjrFuW+/24c1p0RPWUAcErT2dH8VBQzLCVXOVTSDYKN7H\nPtPgjO20aUbk9SIIGQ46uIjctPjuU2tteEuyBAJ3p0BdCCmQk34Stws0vZyD\nRYVmcat3ZrH9AuYfNpdyv+im90uD3xBJqXC6GuxWNj5jXf7K6fgINVaU75Eu\n/UvjP4PQf8gO9YLQMQuWg9iZu9PX2X6FMuX1acWtSIm2HNpdBOOpaZcrYpt3\nzJRO9NT98rBO8NieSXICf6I1R2i4Z6fbT5C+8zOjaWmVuS0LXC6dB5UUZxx7\nwovuuu+NT3hyiVaXwL3Jl7CbwgkNBK8bQ2smDnrFF521nPajBFyWNHxCwPI2\njxNuMBmfejOT70gVMAreL8odtaFt57HOHKtP7G3QtYwPlsb/ZNiX2mKtdt0v\nOBcZVLQ0iwJSdl5XzxGJ0dCbdcbOKv0tEE49G4WWr4sxCB13SuCfjCeWlmF9\nSFKe\r\n=EaHs\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-replication",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-find": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_6.4.2_1550095035498_0.13300547360066428",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "47d9be0ba60bae10687bb2e2dc54c257268cb0f865ab41afc9e48d2db515df63"
+		},
+		"6.4.3": {
+			"name": "@types/pouchdb-replication",
+			"version": "6.4.3",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@6.4.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastián Ramírez",
+					"githubUsername": "tiangolo"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-replication",
+			"dist": {
+				"shasum": "0ebf5ac5bcd1ba7a4988210909d959d11709072a",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.3.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-Dsyy8EhKGBIQAECKelfvufDjRO5Rsy8RlujVllbjHzu3OGu8cNP92/bykeXXC3hTgvrp5Kviqhh9VON1Iw+M3Q==",
+				"signatures": [
+					{
+						"sig": "MEQCIBxN1OF7JlT8wrzK37DgW59u5tF4Dka0B08+zzMXTnZTAiAM5Ph99ilA7+pZRFyWZhiC22b2tz/svsxkDLPNAPl3aQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 13645,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg5eD5CRA9TVsSAnZWagAAdrkP/2x6w6c6o6jgNND9r9XC\ncIb6sLQq+NMDlbMdKm0RzhM0o3hB6TkcE8JfL60F+VCsxT28mUVlhHR6KLlM\nQ36ieoQiWuZ0ce0DC+rpH2lYTKduo1Ucw/89BWlirnMq3ER3hyJzDNBwued+\nSDCCSmIKJl9VAnzUNO2t/L+KRkesYGwU2t5febS+Q0FQWeGw6h3w4nthlCV6\nCWiHbme7FbRyCHKwzpCG+XAu5h9ZcS+WKeqeKOm6Bpa5YZN/zn8jrQvdNCfe\n+bzXUDh+6mW9jB5W6WWyyUc9OyGjCdWw9HZqu24BzJtjkGMhC9YJBvBYzdk6\nwlP6ojVkZSZdrLdPoIuxDB1S+tfCYI0Ibl7iynA6gpPdsTFVwQr4oervPrJh\n6SDMihE578kCkkzT8XfFRvbwySjOVYxnIfd8kcXuRK4LxVT/gpxwxfspH33e\n7uNpNnATV3d2zOzHk9LLOs4GsBY7ZuR3Cs3kdIs+nAgtBk80tDj2Na7gL/vZ\npOsnwLfQFp5cKzkdASxFqrGCBBCGr1oZmU51uakUuP1J4XfPGt2zn9VvQb07\nfR7ZCXtamaWseU7gLRAXVx3LW0hd+YMg/cVcoh+F6OEh7eR58uVEM2w8m/O5\n4y47WuUEVP0yKBO7VIcirUGb67rkxbCmWCYVV1fC6n/lw++LJY+/cmJCX8Du\nIivB\r\n=Bk0q\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-replication"
+			},
+			"description": "TypeScript definitions for pouchdb-replication",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-find": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "3.6",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_6.4.3_1625678072669_0.650748749351671",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "cf2185458db599c08636abc19df37673629a108627acd0c9bded013ce9cc53f4"
+		},
+		"6.4.4": {
+			"name": "@types/pouchdb-replication",
+			"version": "6.4.4",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@6.4.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastián Ramírez",
+					"githubUsername": "tiangolo"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-replication",
+			"dist": {
+				"shasum": "743406c90f13a988fa3e346ea74ce40acd170d00",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.4.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-BsE5LKpjJK4iAf6Fx5kyrMw+33V+Ip7uWldUnU2BYrrvtR+MLD22dcImm7DZN1st2wPPb91i0XEnQzvP0w1C/Q==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDiqyldbH66kWZkmJ6/5NedmQBSpQ5qN7nP/9JjYmgDwQIgbFutJomg4XlVwKBatn6gH3Pu6u7u/HgXylbrbOW3jIs=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 13700,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiQ5cNACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmogFQ/9F/SIfskCQAnBeTHMCVBvAl6RIVvcbDYXnzAkXa0n53+X4vQ2\r\nsYP9212TIj/2NlL5IMY/3ahYguW9YCaNCAKnSR/mS6dlXw53u15J66mMnXvD\r\n+oAAez+G0ne2KOW8HA3fo9ZdCA3iuf4EveJMOPZNzZYv5+7i4f4xfEaUsuql\r\nEeWYE2I6xCs2vJNgsFTG3mZTJWFD1+Q/A0HyjhzTfUKkuEhhggV56xwy3pAb\r\nyL9GujKAXhQ37MDHXw5WCpcQdHQDRoDXV9X3vcab94ni63/4eQWnN1fDSO4g\r\ncqQ6WOB4NP19R+F1eax26TLEn7fh5ylUgg6X6ypmo9hh/J63dLlAhDc7tvHa\r\nb953yc9/8oDzbvh2itN5fmNzAR9fN3+prJ6REzLpi9XeZD4XWhNQB9MPetDT\r\nqy+CNtBTe60uBP3bRF4O6gNjjEgFeYiBK+dDLL2hGh/DhFuiaiYeXwEz1vPD\r\ngV7ZmfH4u7xQ/JT2lA/hY1rj0oLq8CLfdcd/icTdMDRxM1Q75TM20Yalh+g6\r\no9UwrHSrmP+ru5vUkz+IJRLdYXlOESldMwoxtIAqVF6HT3N4YCgb8vliTmS7\r\nN0s1g5oZ0ftSKmSa+hFyN/xYy0pY1ADBUbFNK7vrqvbHxQwaxDJBoGNk5qrQ\r\nth5r6hXzn5E1SJOj0LOv/+fMk8e3RNEbTGk=\r\n=tG1I\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-replication"
+			},
+			"description": "TypeScript definitions for pouchdb-replication",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-find": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "3.9",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_6.4.4_1648596748960_0.2758854631467076",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "43e9b41b69cb0782d0d4a0a636ffffa0d9e9166c0a45a5f7409f1085c67c3176"
+		},
+		"6.4.5": {
+			"name": "@types/pouchdb-replication",
+			"version": "6.4.5",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@6.4.5",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastián Ramírez",
+					"githubUsername": "tiangolo"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-replication",
+			"dist": {
+				"shasum": "29d1bb292971033b9e17dae9a58dc7b98f15a2c4",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.5.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-2sWCIkRDBe1x4Gmsz+7CpZG1fOgGMG7xXzZQ/TftzF+l5olr9Dj76DEcHIl2vACBC54HyuX78yUmZkrPO8PeHA==",
+				"signatures": [
+					{
+						"sig": "MEQCICCsgrz7OZ8l+fgG3aUZ+4uriaCY3i/N8tN6x0XzDTtGAiBlxXS3vf8GyLRu3qf6at/jesdWYNaXOiKPbt77am9zDg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 13747
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-replication"
+			},
+			"description": "TypeScript definitions for pouchdb-replication",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-find": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_6.4.5_1695539266519_0.1510606684301845",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "0ac654d5661ea4865d8fb7d67c7239fa0eb1f0fa55bae740c30dc8626c184a30"
+		},
+		"6.4.6": {
+			"name": "@types/pouchdb-replication",
+			"version": "6.4.6",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@6.4.6",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastián Ramírez",
+					"githubUsername": "tiangolo"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-replication",
+			"dist": {
+				"shasum": "f821882a63e9a50a795ab26ce695cd38cc1b901c",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.6.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-DYsh3X5fnbmMOZ1u0CAZBD8iPkDmHQIJwxjez8S60SHQyFqLUzd4A/OV7C4nNszdcdtGNwhSwoNdfjZe4JX16Q==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCb7BJ4BqCk8KJEwezYQWDFnQcZEYvJ9cLw56FSMkkU4gIhAK87mfMN4f1C5rQux9T+fdpsh/cJdcViphhtevbsiwM6",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 13398
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-replication"
+			},
+			"description": "TypeScript definitions for pouchdb-replication",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-find": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_6.4.6_1697627871901_0.8040750831783448",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "e8f2dc87f4b2082b3290567e3ec5c4e30916bb39d11416abe50ed5f9cf2e2ac0"
+		},
+		"6.4.7": {
+			"name": "@types/pouchdb-replication",
+			"version": "6.4.7",
+			"license": "MIT",
+			"_id": "@types/pouchdb-replication@6.4.7",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/trubit",
+					"name": "Jakub Navratil",
+					"githubUsername": "trubit"
+				},
+				{
+					"url": "https://github.com/tiangolo",
+					"name": "Sebastián Ramírez",
+					"githubUsername": "tiangolo"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-replication",
+			"dist": {
+				"shasum": "09f668fa750e0c4f5fcfc01667be4b29d662f449",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.7.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-slB4zOwri3SAVHioFx/FWC/KqOzzb7nDFtV+qzaKzxkf+U5zTwCbK3uRHaj0d/XQk0DwVeajf1ni3Wiyq3j2OA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQC9q9qwjdDUHjjUa8pdsKajRPzM4dC0coG91M11jPQolQIgSfZTwRndhwXsmdI/ZauyCRXv/L2qXjXAIwiklexYIIA=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 13398
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-replication"
+			},
+			"description": "TypeScript definitions for pouchdb-replication",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-find": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-replication_6.4.7_1699363173228_0.7518802427592552",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "0f00f0719c574114b38d06f5c839c3d151d8a97850119de71b386f6c8b02de25"
+		}
+	},
+	"time": {
+		"created": "2016-08-02T16:04:51.279Z",
+		"modified": "2024-11-11T09:31:35.607Z",
+		"5.4.1": "2016-08-02T16:04:51.279Z",
+		"5.4.2": "2016-08-19T15:37:29.519Z",
+		"5.4.3": "2016-08-25T18:53:45.155Z",
+		"5.4.4": "2016-09-19T18:02:23.921Z",
+		"6.0.0": "2016-11-29T22:40:48.680Z",
+		"6.1.0": "2017-04-18T15:12:50.624Z",
+		"6.1.1": "2017-05-18T23:36:40.007Z",
+		"6.1.2": "2017-06-15T20:17:17.298Z",
+		"6.1.3": "2017-06-19T14:21:40.502Z",
+		"6.1.4": "2017-12-14T21:35:09.657Z",
+		"6.4.0": "2018-05-15T21:29:45.629Z",
+		"6.4.1": "2018-12-18T18:49:14.837Z",
+		"6.4.2": "2019-02-13T21:57:15.606Z",
+		"6.4.3": "2021-07-07T17:14:32.801Z",
+		"6.4.4": "2022-03-29T23:32:29.123Z",
+		"6.4.5": "2023-09-24T07:07:46.720Z",
+		"6.4.6": "2023-10-18T11:17:52.053Z",
+		"6.4.7": "2023-11-07T13:19:33.408Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"ts2.0": "6.1.1",
+		"ts2.1": "6.1.1",
+		"ts2.2": "6.1.1",
+		"ts2.3": "6.4.2",
+		"ts2.4": "6.4.2",
+		"ts2.5": "6.4.2",
+		"ts2.6": "6.4.2",
+		"ts2.7": "6.4.2",
+		"ts2.8": "6.4.2",
+		"ts2.9": "6.4.2",
+		"ts3.0": "6.4.2",
+		"ts3.1": "6.4.2",
+		"ts3.2": "6.4.2",
+		"ts3.3": "6.4.2",
+		"ts3.4": "6.4.2",
+		"ts3.5": "6.4.2",
+		"ts3.6": "6.4.3",
+		"ts3.7": "6.4.3",
+		"ts3.8": "6.4.3",
+		"ts3.9": "6.4.4",
+		"ts4.0": "6.4.4",
+		"ts4.1": "6.4.4",
+		"ts4.2": "6.4.4",
+		"ts4.3": "6.4.4",
+		"ts4.4": "6.4.4",
+		"ts5.7": "6.4.7",
+		"ts5.6": "6.4.7",
+		"latest": "6.4.7",
+		"ts4.5": "6.4.7",
+		"ts4.6": "6.4.7",
+		"ts4.7": "6.4.7",
+		"ts4.8": "6.4.7",
+		"ts4.9": "6.4.7",
+		"ts5.0": "6.4.7",
+		"ts5.1": "6.4.7",
+		"ts5.2": "6.4.7",
+		"ts5.3": "6.4.7",
+		"ts5.4": "6.4.7",
+		"ts5.5": "6.4.7",
+		"ts5.8": "6.4.7"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"7a2364c06bdef54cc02ef46b4fc62215\"",
+			"fetched": 1734527718094
+		}
+	},
+	"_distfiles": {
+		"pouchdb-replication-5.4.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-5.4.1.tgz",
+			"sha": "cc20c3158c700276f99624a3c74c7c38843d35b4",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-5.4.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-5.4.2.tgz",
+			"sha": "d15e27e8473cbce7dfc66eb89bcd8ae4880aaaf4",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-5.4.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-5.4.3.tgz",
+			"sha": "e3398e87d71fb0ed3a52d5950e36b27a052b75f1",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-5.4.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-5.4.4.tgz",
+			"sha": "55c3e59c34beb07511f7980dbe4b8e02601b93e6",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.0.0.tgz",
+			"sha": "3d472245b87bc1bfc92c10b23142804489436ccd",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.1.0.tgz",
+			"sha": "f88258922ab69d26b728bc54716c80f92e0a3af0",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.1.1.tgz",
+			"sha": "c4f9ae26817d8f43a07df477503982b1696f0bef",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.1.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.1.2.tgz",
+			"sha": "a2c4d20567bc9b159b65da79bb8974d4727311ee",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.1.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.1.3.tgz",
+			"sha": "38d365f7656e3cffae8ea4a04cfa283a9ea16a4b",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.1.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.1.4.tgz",
+			"sha": "95aa826ce5ae612bfc6d320d14fd0ed7ce14b36a",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.4.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.0.tgz",
+			"sha": "94c54e9a0e22643681958859050a98298be8663a",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.4.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.1.tgz",
+			"sha": "6ca5b4a318739d88601b7f010907c12c228129d1",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.4.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.2.tgz",
+			"sha": "e523764cdc9872f6493d5e039ce7bf54ee0a2888",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.4.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.3.tgz",
+			"sha": "0ebf5ac5bcd1ba7a4988210909d959d11709072a",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.4.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.4.tgz",
+			"sha": "743406c90f13a988fa3e346ea74ce40acd170d00",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.4.5.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.5.tgz",
+			"sha": "29d1bb292971033b9e17dae9a58dc7b98f15a2c4",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.4.6.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.6.tgz",
+			"sha": "f821882a63e9a50a795ab26ce695cd38cc1b901c",
+			"registry": "npmjs"
+		},
+		"pouchdb-replication-6.4.7.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-replication/-/pouchdb-replication-6.4.7.tgz",
+			"sha": "09f668fa750e0c4f5fcfc01667be4b29d662f449",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-replication-6.4.7.tgz": {
+			"shasum": "09f668fa750e0c4f5fcfc01667be4b29d662f449"
+		}
+	},
+	"_rev": "2-c173143edd5af93f",
+	"_id": "@types/pouchdb-replication",
+	"readme": "[object Object]"
+}

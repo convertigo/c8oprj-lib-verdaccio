@@ -1,0 +1,337 @@
+{
+	"name": "pouchdb-mapreduce-no-ddocs",
+	"versions": {
+		"2.3.0": {
+			"name": "pouchdb-mapreduce-no-ddocs",
+			"version": "2.3.0",
+			"description": "Map Reduce, No DDocs =====",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-mapreduce-no-ddocs.git"
+			},
+			"scripts": {
+				"test-for-coverage": "TEST_DB=testdb,http://localhost:5984/testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-node": "TEST_DB=testdb,http://localhost:5984/testdb mocha --reporter=spec --grep=$GREP test/test.js",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc *.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify index.js -s mapReduce -o dist/pouchdb-mapreduce.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm run test-for-coverage --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"mapreduce",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-mapreduce-no-ddocs/issues"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"pouchdb-collate": "^1.2.0",
+				"pouchdb-extend": "^0.1.0",
+				"spark-md5": "0.0.5"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "~2.36.0",
+				"chai": "~1.8.1",
+				"chai-as-promised": "~4.1.0",
+				"corsproxy": "~0.2.13",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.3.0",
+				"mocha": "~1.18",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb": "git://github.com/pouchdb/pouchdb",
+				"pouchdb-http-proxy": "~0.10.3",
+				"request": "^2.34.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"watchify": "~0.4.1",
+				"wd": "^0.2.21"
+			},
+			"browser": {
+				"crypto": false
+			},
+			"browserify": {
+				"transform": [
+					"es3ify"
+				]
+			},
+			"gitHead": "501d60c0bb9b0add63a0c3f63dc6feed930b2258",
+			"homepage": "https://github.com/nolanlawson/pouchdb-mapreduce-no-ddocs",
+			"_id": "pouchdb-mapreduce-no-ddocs@2.3.0",
+			"_shasum": "91850bf7c7f6ec666d29a4a45b1ff87c8e0bc0f4",
+			"_from": ".",
+			"_npmVersion": "1.4.13",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "91850bf7c7f6ec666d29a4a45b1ff87c8e0bc0f4",
+				"tarball": "https://registry.npmjs.org/pouchdb-mapreduce-no-ddocs/-/pouchdb-mapreduce-no-ddocs-2.3.0.tgz",
+				"integrity": "sha512-+jJ51wnSs+IfTKJObWgfC/cLWegQpkKRMohoO5jc9MfvTZFxBfohFGMDrpAa3hLkNEo/pHCVJXACQAZ0lEqudg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCKPRIbAZuriEuIHLGqYX0RdKxc8Qeo7AcigzwG4PZtYAIgb4qBTbqfLIqizfO6PWK46NrxGcxnKVAWaq3LjmdgA7k="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"2.3.1": {
+			"name": "pouchdb-mapreduce-no-ddocs",
+			"version": "2.3.1",
+			"description": "Map Reduce, No DDocs =====",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/nolanlawson/pouchdb-mapreduce-no-ddocs.git"
+			},
+			"scripts": {
+				"test-for-coverage": "TEST_DB=testdb,http://localhost:5984/testdb istanbul test ./node_modules/mocha/bin/_mocha test/test.js",
+				"test-node": "./bin/test-node.sh",
+				"test-browser": "./bin/test-browser.js",
+				"jshint": "jshint -c .jshintrc *.js test/test.js",
+				"test": "npm run jshint && ./bin/run-test.sh",
+				"build": "mkdir -p dist && browserify index.js -s mapReduce -o dist/pouchdb-mapreduce.js",
+				"dev": "browserify test/test.js > test/test-bundle.js && npm run dev-server",
+				"dev-server": "./bin/dev-server.js",
+				"coverage": "npm run test-for-coverage --coverage && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 100"
+			},
+			"keywords": [
+				"pouch",
+				"pouchdb",
+				"mapreduce",
+				"couch",
+				"couchdb"
+			],
+			"author": "",
+			"license": "Apache",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-mapreduce-no-ddocs/issues"
+			},
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"es3ify": "^0.1.3",
+				"inherits": "~2.0.1",
+				"lie": "^2.6.0",
+				"pouchdb-collate": "^1.2.0",
+				"pouchdb-extend": "^0.1.0",
+				"pouchdb-upsert": "^1.0.2",
+				"spark-md5": "0.0.5"
+			},
+			"devDependencies": {
+				"bluebird": "^1.0.7",
+				"browserify": "~2.36.0",
+				"chai": "~1.8.1",
+				"chai-as-promised": "~4.1.0",
+				"corsproxy": "~0.2.13",
+				"http-server": "~0.5.5",
+				"istanbul": "^0.2.7",
+				"jshint": "~2.3.0",
+				"memdown": "^1.0.0",
+				"mocha": "~1.18",
+				"phantomjs": "^1.9.7-5",
+				"pouchdb": "git+https://github.com/pouchdb/pouchdb",
+				"pouchdb-http-proxy": "~0.10.3",
+				"pouchdb-server": "^0.6.4",
+				"request": "^2.34.0",
+				"sauce-connect-launcher": "^0.4.2",
+				"watchify": "~0.4.1",
+				"wd": "^0.2.21"
+			},
+			"browser": {
+				"crypto": false
+			},
+			"browserify": {
+				"transform": [
+					"es3ify"
+				]
+			},
+			"gitHead": "8052079820d689cf2778d75f16c1a5c94a788192",
+			"homepage": "https://github.com/nolanlawson/pouchdb-mapreduce-no-ddocs",
+			"_id": "pouchdb-mapreduce-no-ddocs@2.3.1",
+			"_shasum": "63a407981bfd50ca905daadb409e3b3fa1c793e0",
+			"_from": ".",
+			"_npmVersion": "2.2.0",
+			"_nodeVersion": "0.10.28",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "63a407981bfd50ca905daadb409e3b3fa1c793e0",
+				"tarball": "https://registry.npmjs.org/pouchdb-mapreduce-no-ddocs/-/pouchdb-mapreduce-no-ddocs-2.3.1.tgz",
+				"integrity": "sha512-JrO3B+Ok6CCrIOAcB49Llv2gRZTFxQL/+sLNeesmR4ymd3cArFU9z7cdG+BJZmHEN66CHj/XORrQ5bgfSGhwmA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQCCNBs3hdqDtMyu006ykfcJiAmfMzxpB3hlbUlfhq6qMAIhAP0VLU/iH19YkIQdBUtNWAH/JRFvAg+eOj4/MtYgni4N"
+					}
+				]
+			},
+			"contributors": []
+		},
+		"2.3.2": {
+			"name": "pouchdb-mapreduce-no-ddocs",
+			"version": "2.3.2",
+			"description": "PouchDB's map/reduce query API as a plugin.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"scripts": {
+				"build": "node bin/build-module.js ./",
+				"prepublish": "npm run build",
+				"test": "npm run build && mocha --bail test/test.js",
+				"test-phantom": "npm run build && zuul --no-coverage --phantom --ui mocha-bdd test/test.js",
+				"test-coverage": "istanbul cover ./node_modules/mocha/bin/_mocha test/test.js && istanbul check-coverage --lines 100 --function 100 --statements 100 --branches 99",
+				"test-local": "npm run build && zuul --no-coverage --local 9000 --ui mocha-bdd test/test.js"
+			},
+			"files": [
+				"lib",
+				"src"
+			],
+			"dependencies": {
+				"inherits": "2.0.1",
+				"pouchdb-binary-utils": "5.4.4",
+				"pouchdb-collate": "1.2.0",
+				"pouchdb-errors": "5.4.4",
+				"pouchdb-mapreduce-utils": "5.4.4",
+				"pouchdb-md5": "5.4.4",
+				"pouchdb-promise": "5.4.4",
+				"pouchdb-utils": "5.4.4",
+				"scope-eval": "0.0.3",
+				"spark-md5": "2.0.2"
+			},
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js"
+			},
+			"devDependencies": {
+				"chai": "^3.5.0",
+				"chai-as-promised": "^5.3.0",
+				"denodeify": "^1.2.1",
+				"istanbul": "^0.4.4",
+				"lie": "^3.0.4",
+				"mkdirp": "^0.5.1",
+				"mocha": "^2.5.3",
+				"phantomjs-prebuilt": "^2.1.7",
+				"pouchdb-memory": "^1.1.0",
+				"rimraf": "^2.5.2",
+				"rollup": "^0.33.0",
+				"rollup-plugin-node-resolve": "^1.7.1"
+			},
+			"gitHead": "45817e01fd6d83d3e4e6a2df3f94b41ef4925fc2",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-mapreduce-no-ddocs@2.3.2",
+			"_shasum": "7265a3fd06e7ece6af1b77b14a108e833d7a9cf7",
+			"_from": ".",
+			"_npmVersion": "3.10.2",
+			"_nodeVersion": "5.11.1",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "7265a3fd06e7ece6af1b77b14a108e833d7a9cf7",
+				"tarball": "https://registry.npmjs.org/pouchdb-mapreduce-no-ddocs/-/pouchdb-mapreduce-no-ddocs-2.3.2.tgz",
+				"integrity": "sha512-2rq1Lf9JWlsvNMpyQtCYQjacisgn23FWU3axhiSexHCCh8J7jCbUn4CCEg2QhFpN7nJj/nonjXzA3fwdHNgRlA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDsChaGfDatyvQ2ZcT9Q6PfN4bu1zXYUIeXfML3P4KFzwIhAJD2EvM2ANtotDRBcnvQ4R4Ec33c5Tac8M6iSS5ZNIpG"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-mapreduce-no-ddocs-2.3.2.tgz_1467180509083_0.5509589319117367"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-06-24T12:08:38.455Z",
+		"created": "2014-12-07T20:13:27.909Z",
+		"2.3.0": "2014-12-07T20:13:27.909Z",
+		"2.3.1": "2015-01-24T23:25:26.639Z",
+		"2.3.2": "2016-06-29T06:08:31.659Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "2.3.2"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"b9a078c1c61c121a6f4e0c1b0ea1b1ce\"",
+			"fetched": 1734527741186
+		}
+	},
+	"_distfiles": {
+		"pouchdb-mapreduce-no-ddocs-2.3.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-mapreduce-no-ddocs/-/pouchdb-mapreduce-no-ddocs-2.3.0.tgz",
+			"sha": "91850bf7c7f6ec666d29a4a45b1ff87c8e0bc0f4",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-no-ddocs-2.3.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-mapreduce-no-ddocs/-/pouchdb-mapreduce-no-ddocs-2.3.1.tgz",
+			"sha": "63a407981bfd50ca905daadb409e3b3fa1c793e0",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-no-ddocs-2.3.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-mapreduce-no-ddocs/-/pouchdb-mapreduce-no-ddocs-2.3.2.tgz",
+			"sha": "7265a3fd06e7ece6af1b77b14a108e833d7a9cf7",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-mapreduce-no-ddocs-2.3.2.tgz": {
+			"shasum": "7265a3fd06e7ece6af1b77b14a108e833d7a9cf7"
+		}
+	},
+	"_rev": "3-40c4c831d78d6bf9",
+	"_id": "pouchdb-mapreduce-no-ddocs",
+	"readme": "pouchdb-mapreduce-utils ![semver non-compliant](https://img.shields.io/badge/semver-non--compliant-red.svg)\n======\n\nPouchDB utilities used by pouchdb-mapreduce.\n\n### Usage\n\n```bash\nnpm install --save-exact pouchdb-mapreduce-utils\n```\n\nFor full API documentation and guides on PouchDB, see [PouchDB.com](http://pouchdb.com/). For details on PouchDB sub-packages, see the [Custom Builds documentation](http://pouchdb.com/custom.html).\n\n### Warning: semver-free zone!\n\nThis package is conceptually an internal API used by PouchDB or its plugins. It does not follow semantic versioning (semver), and rather its version is pegged to PouchDB's. Use exact versions when installing, e.g. with `--save-exact`.\n\n### Source\n\nPouchDB and its sub-packages are distributed as a [monorepo](https://github.com/babel/babel/blob/master/doc/design/monorepo.md).\n\nFor a full list of packages, see [the GitHub source](https://github.com/pouchdb/pouchdb/tree/master/packages)."
+}

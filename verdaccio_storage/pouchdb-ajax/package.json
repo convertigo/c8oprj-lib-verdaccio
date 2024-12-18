@@ -1,0 +1,2904 @@
+{
+	"name": "pouchdb-ajax",
+	"versions": {
+		"1.0.0": {
+			"name": "pouchdb-ajax",
+			"version": "1.0.0",
+			"description": "Ajax module used in PouchDB",
+			"main": "index.js",
+			"scripts": {
+				"test": "jshint -c .jshintrc *.js"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/pouchdb/ajax.git"
+			},
+			"keywords": [
+				"ajax",
+				"pouchdb"
+			],
+			"author": {
+				"name": "Nolan Lawson",
+				"email": "nolan.lawson@gmail.com"
+			},
+			"license": "Apache 2",
+			"bugs": {
+				"url": "https://github.com/pouchdb/ajax/issues"
+			},
+			"homepage": "https://github.com/pouchdb/ajax",
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"pouchdb-extend": "^0.1.2",
+				"pouchdb-binary-util": "^1.0.0",
+				"pouchdb-errors": "^1.0.0",
+				"request": "~2.28.0"
+			},
+			"devDependencies": {
+				"jshint": "^2.6.0"
+			},
+			"browser": {
+				"request": "./request-browser.js",
+				"./buffer.js": "./buffer-browser.js"
+			},
+			"gitHead": "77423f8426575c715f39d7e6c19461fb3a28a9e0",
+			"_id": "pouchdb-ajax@1.0.0",
+			"_shasum": "4aa5b92848efd6c7b5ee0a1a0877cba8ae8171b2",
+			"_from": ".",
+			"_npmVersion": "2.5.1",
+			"_nodeVersion": "1.3.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "4aa5b92848efd6c7b5ee0a1a0877cba8ae8171b2",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-1.0.0.tgz",
+				"integrity": "sha512-ff06EDzUWW/2hzr/t1tR8du4qsfWaJHhqbDDidT1g3hZcXOGl8Khrinu9TV9W2iwDrLnpA1q5Df3ULSFKRDt5A==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIGyaHK9cA2NyMW35elU7yhGp/+sNONzQ57epLqDgOis+AiEAwt6T0C5onTazm/GfvvFuHF2jeE3h8n8MATHqpPbsIJU="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"1.0.1": {
+			"name": "pouchdb-ajax",
+			"version": "1.0.1",
+			"description": "Ajax module used in PouchDB",
+			"main": "index.js",
+			"scripts": {
+				"test": "jshint -c .jshintrc *.js"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/pouchdb/ajax.git"
+			},
+			"keywords": [
+				"ajax",
+				"pouchdb"
+			],
+			"author": {
+				"name": "Nolan Lawson",
+				"email": "nolan.lawson@gmail.com"
+			},
+			"license": "Apache 2",
+			"bugs": {
+				"url": "https://github.com/pouchdb/ajax/issues"
+			},
+			"homepage": "https://github.com/pouchdb/ajax",
+			"dependencies": {
+				"argsarray": "0.0.1",
+				"pouchdb-extend": "^0.1.2",
+				"pouchdb-binary-util": "^1.0.0",
+				"pouchdb-errors": "^1.0.0",
+				"request": "~2.28.0"
+			},
+			"devDependencies": {
+				"jshint": "^2.6.0"
+			},
+			"browser": {
+				"request": "./request-browser.js",
+				"./buffer.js": "./buffer-browser.js"
+			},
+			"gitHead": "eb186047dedf94693f5e72908d50e7b2076305b0",
+			"_id": "pouchdb-ajax@1.0.1",
+			"_shasum": "d6cf6bfba35a718672652cdd182ec998b9ce3465",
+			"_from": ".",
+			"_npmVersion": "2.7.0",
+			"_nodeVersion": "0.10.36",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				}
+			],
+			"dist": {
+				"shasum": "d6cf6bfba35a718672652cdd182ec998b9ce3465",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-1.0.1.tgz",
+				"integrity": "sha512-U2RyGPLQfRoafBYA6DgLelaJrGyqPkwc4gOXsgzv8nS+8yEs4WxuG3Y4fqoIDW6T6u4gFcZ5fkB3r8Bkqc9BDA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQCVAVh5uEWqBeFdM8ianBW4qyzjDGqJQb25DhudeOAI2wIhAIYaQzi72amZE55TkjK5EBhVODRalOSq91onRffWPe23"
+					}
+				]
+			},
+			"contributors": []
+		},
+		"5.4.0": {
+			"name": "pouchdb-ajax",
+			"version": "5.4.0",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-binary-utils": "5.4.0",
+				"pouchdb-errors": "5.4.0",
+				"pouchdb-promise": "5.4.0",
+				"pouchdb-utils": "5.4.0",
+				"request": "2.72.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@5.4.0",
+			"scripts": {},
+			"_shasum": "e24dbde845ec4651f8d2959df64c225fa4c01820",
+			"_from": ".",
+			"_npmVersion": "3.7.3",
+			"_nodeVersion": "5.9.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "e24dbde845ec4651f8d2959df64c225fa4c01820",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-5.4.0.tgz",
+				"integrity": "sha512-w9TxG0birNmPSQAXkxTkzHfh1KHu/IESUoyC7bWWvjJG6OqXcCttc5K24wRed0G+DVZxl+LVyqopcl4vLhsxuQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIElhFi5gOLoefw82mtXXynHNhcjOoQXGHdhrjh/I54rPAiEAj3g80u4wrQf47ebTOiJRzgmFFOEXtXTbg2F/aJaTULU="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-5.4.0.tgz_1465234865755_0.8976238381583244"
+			},
+			"contributors": []
+		},
+		"5.4.1": {
+			"name": "pouchdb-ajax",
+			"version": "5.4.1",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-binary-utils": "5.4.1",
+				"pouchdb-errors": "5.4.1",
+				"pouchdb-promise": "5.4.1",
+				"pouchdb-utils": "5.4.1",
+				"request": "2.72.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@5.4.1",
+			"scripts": {},
+			"_shasum": "363446d97df6602d1ed5f4cc772f715ada8d6919",
+			"_from": ".",
+			"_npmVersion": "3.9.3",
+			"_nodeVersion": "5.11.1",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "363446d97df6602d1ed5f4cc772f715ada8d6919",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-5.4.1.tgz",
+				"integrity": "sha512-9qEFEVZU3Ccu3j013wvpe+RlqYiZqvlgMlO18MdLQUfDq5aKptWCl6V888IoXgmXdn0OqLNu9RfuS7r0Neb4GA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIB+yNNG4A/iNqLEVXVCU7h+0N3IF5iLTUWDT+IrvAhW2AiAejDRSsfOPdJ4X2sO91/4VVq3Vz6YhKvBQ+DsTkgkQsw=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-5.4.1.tgz_1465389791287_0.22085707681253552"
+			},
+			"contributors": []
+		},
+		"5.4.2": {
+			"name": "pouchdb-ajax",
+			"version": "5.4.2",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-binary-utils": "5.4.2",
+				"pouchdb-errors": "5.4.2",
+				"pouchdb-promise": "5.4.2",
+				"pouchdb-utils": "5.4.2",
+				"request": "2.72.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@5.4.2",
+			"scripts": {},
+			"_shasum": "52187b6a2dc87f4044f10ac371e90998449c59a6",
+			"_from": ".",
+			"_npmVersion": "3.9.5",
+			"_nodeVersion": "5.11.1",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "52187b6a2dc87f4044f10ac371e90998449c59a6",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-5.4.2.tgz",
+				"integrity": "sha512-030brB85pbbIU8unI5UnIbBVgvoBTrgFFNDjb0+7aGyou2uqUts14lB7wPUC1lk47bOwmLcqB9A7yHg/YuZi2w==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIDFKFGSSmkcoUAivpi6s/xb4S/lp597//wUO75OCmeNBAiEAi52PACZ/KHcYe5iYufnI6QWWSyTXZZbRFeFsmxIpX18="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-5.4.2.tgz_1465747217408_0.9769574636593461"
+			},
+			"contributors": []
+		},
+		"5.4.3": {
+			"name": "pouchdb-ajax",
+			"version": "5.4.3",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-binary-utils": "5.4.3",
+				"pouchdb-errors": "5.4.3",
+				"pouchdb-promise": "5.4.3",
+				"pouchdb-utils": "5.4.3",
+				"request": "2.72.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@5.4.3",
+			"scripts": {},
+			"_shasum": "7aef7c24a9b11522727c98d1dd86021bd4deff58",
+			"_from": ".",
+			"_npmVersion": "3.9.5",
+			"_nodeVersion": "5.11.1",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "7aef7c24a9b11522727c98d1dd86021bd4deff58",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-5.4.3.tgz",
+				"integrity": "sha512-2LdHJyKUaXqFjAuKLfhHpAV/Mra7Sb7DE9uVLFKquFa/du95HHvZ8yKEInAVe2HO5LNTJim8a2/jyTwHPEVB7w==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCICgF5yrDKsa33tmcoBHRVLaeAsrb+T1MjBcW3Ji7kxU5AiEAtY1vCLyxj5L/wcQfEwq3xDKBHFW0eIoVAQZPK4PUWtM="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-5.4.3.tgz_1465820216913_0.7117076686117798"
+			},
+			"contributors": []
+		},
+		"5.4.4": {
+			"name": "pouchdb-ajax",
+			"version": "5.4.4",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-binary-utils": "5.4.4",
+				"pouchdb-errors": "5.4.4",
+				"pouchdb-promise": "5.4.4",
+				"pouchdb-utils": "5.4.4",
+				"request": "2.72.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@5.4.4",
+			"scripts": {},
+			"_shasum": "2e4443f62f5171dd5d982b5961011dac345a7402",
+			"_from": ".",
+			"_npmVersion": "3.9.5",
+			"_nodeVersion": "5.11.1",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "2e4443f62f5171dd5d982b5961011dac345a7402",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-5.4.4.tgz",
+				"integrity": "sha512-XLCS/ysj1RE4hlgPGdR9Oy/bhqzNSffiHX/2Wyqvzj2xDsjJfPKFRsMAlMbFU4Uv+8jA8JY73sNtsgQa0tU1eA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDpsV5+q9RV0GIdGD2ga2s0Jr8FiWT2L+bOwSEBm6EM+wIgTg2B/P0T5OixTp+tuOMOQVy91d4oH/L8AfsP7OtPiO0="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-5.4.4.tgz_1466088889506_0.9838399263098836"
+			},
+			"contributors": []
+		},
+		"5.4.5": {
+			"name": "pouchdb-ajax",
+			"version": "5.4.5",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-binary-utils": "5.4.5",
+				"pouchdb-errors": "5.4.5",
+				"pouchdb-promise": "5.4.5",
+				"pouchdb-utils": "5.4.5",
+				"request": "2.72.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@5.4.5",
+			"scripts": {},
+			"_shasum": "4091bc83a44706ef6537ba62ce3b39ca58c76d8e",
+			"_from": ".",
+			"_npmVersion": "3.9.5",
+			"_nodeVersion": "6.2.2",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "4091bc83a44706ef6537ba62ce3b39ca58c76d8e",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-5.4.5.tgz",
+				"integrity": "sha512-XW4SY67SYLUDEQcM0eS9Eh1BHLeK8XyNB/ICrJA695y9dVIyIMpSwMjZJl7ewQnhyiA5+1h2XK0o8DVuEfhgOg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHmh5vUGV/96Lyd+KPXM7TMQGIG30ypL28NwkffK0oS2AiAAnke03MZdwJoULNrpsplMGjsYp5Y77ScwGH5bFgrOFA=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-5.4.5.tgz_1467512322781_0.0041951939929276705"
+			},
+			"contributors": []
+		},
+		"6.0.0": {
+			"name": "pouchdb-ajax",
+			"version": "6.0.0",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-binary-utils": "6.0.0",
+				"pouchdb-errors": "6.0.0",
+				"pouchdb-promise": "6.0.0",
+				"pouchdb-utils": "6.0.0",
+				"request": "2.72.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.0.0",
+			"scripts": {},
+			"_shasum": "b313f7153f4202658f8feae377cf4b8cfd24404d",
+			"_from": ".",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.5.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "b313f7153f4202658f8feae377cf4b8cfd24404d",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.0.tgz",
+				"integrity": "sha512-Nx26s5x8ffx4xlVjORR2HA4anPNyB5m+ONy9gWjB2tis1PwPBrCzY+3CoMG+4wf3PScE/0c+yqc8R6xJv8Npxw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDgqhriebN705s9TW+sKA5MAXKcpcbMPGZDmuSRCZbjuQIgMA0hmWjdgju8ibjitNN5bdYICLcTeiGa84K6SLvL0vM="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-6.0.0.tgz_1472873878656_0.8308605751954019"
+			},
+			"contributors": []
+		},
+		"6.0.1": {
+			"name": "pouchdb-ajax",
+			"version": "6.0.1",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-binary-utils": "6.0.1",
+				"pouchdb-errors": "6.0.1",
+				"pouchdb-promise": "6.0.1",
+				"pouchdb-utils": "6.0.1",
+				"request": "2.74.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.0.1",
+			"scripts": {},
+			"_shasum": "c1f6ea6dbd13dcdcac60067bdd3b19cce1bbfded",
+			"_from": ".",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.5.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "c1f6ea6dbd13dcdcac60067bdd3b19cce1bbfded",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.1.tgz",
+				"integrity": "sha512-zbmXgP8c3mJDZry5+CHUwO4YOLkeS4XsF6qsMcbOfQoCA5oH4S3TWvCjSX7Y3KisHe/FPEXENkaNJ2vBLrkzhg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDVphUoiNuBG7ckCIivmc7cnW+4U5ToCdY/N2y4rI8pgAIhAJi5uLUrDInSUmtHKENEsfM53nzxGH9HOpsT4XHCBGa+"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-6.0.1.tgz_1472922068658_0.12350789667107165"
+			},
+			"contributors": []
+		},
+		"6.0.2": {
+			"name": "pouchdb-ajax",
+			"version": "6.0.2",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-binary-utils": "6.0.2",
+				"pouchdb-errors": "6.0.2",
+				"pouchdb-promise": "6.0.2",
+				"pouchdb-utils": "6.0.2",
+				"request": "2.74.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.0.2",
+			"scripts": {},
+			"_shasum": "5566a18f3dd1bef0bd4cff26e66e3f138f5be0cd",
+			"_from": ".",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.5.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "5566a18f3dd1bef0bd4cff26e66e3f138f5be0cd",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.2.tgz",
+				"integrity": "sha512-JKw66h5tShXt8Mun686/IG8eX+N8SypxI5F9+OjZE+TIirS5xzUb9+qgNToP2/ozc+0CHr0PieEGGlH2W5fU1Q==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIAXzFKV1xzx4HKeaDj29Kf1vWMBh8k7JT6NumDDA5KZbAiEAryfyUYY0Jmx9cMcSaxhmERZAocAH7TKc5vElmDgcBmE="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-6.0.2.tgz_1473005329960_0.6680657798424363"
+			},
+			"contributors": []
+		},
+		"6.0.3": {
+			"name": "pouchdb-ajax",
+			"version": "6.0.3",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-binary-utils": "6.0.3",
+				"pouchdb-errors": "6.0.3",
+				"pouchdb-promise": "6.0.3",
+				"pouchdb-utils": "6.0.3",
+				"request": "2.74.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.0.3",
+			"scripts": {},
+			"_shasum": "1a915527b30ab37791a1ea3d7c270a105909c1f6",
+			"_from": ".",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.5.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "1a915527b30ab37791a1ea3d7c270a105909c1f6",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.3.tgz",
+				"integrity": "sha512-UG6lD8RfAdA+2H6eUHQCRikruTw33zJJM1yYu/RibsJUhI2cG+5NLiFgRf7bRpD2jGHkrz/F4PvCavW9RilcXw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCRoYZ2E3bwwSm2YiJ82T2phWg9yuhc97kqePTRhiCbKQIgXZiufjpvfemy8wXzQGJeckAJoAQ0eKrzG7dw2gRyh78="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-6.0.3.tgz_1473096902146_0.016407147515565157"
+			},
+			"contributors": []
+		},
+		"6.0.4": {
+			"name": "pouchdb-ajax",
+			"version": "6.0.4",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-binary-utils": "6.0.4",
+				"pouchdb-errors": "6.0.4",
+				"pouchdb-promise": "6.0.4",
+				"pouchdb-utils": "6.0.4",
+				"request": "2.74.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.0.4",
+			"scripts": {},
+			"_shasum": "7dfdc0373ad68493ee5eec6de2b6edc137418800",
+			"_from": ".",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.5.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "7dfdc0373ad68493ee5eec6de2b6edc137418800",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.4.tgz",
+				"integrity": "sha512-4Sx6amfQXAQJcn8KG3qjLa+bolr+vBb+CC0h4j+WWyWmWvSulbjCr8YWb6zxn8bP9taynt0lF8VsOnCOhKjZmw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDGyiDirUIQI8DjbtCMEjMEItoOTGUDBsdeIzotCt3IDQIgMFI2c3WbTrN6CJd5ZZgxNstxIQB5junPJT4a+uh2cAM="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-6.0.4.tgz_1473099962496_0.6907520042732358"
+			},
+			"contributors": []
+		},
+		"6.0.5": {
+			"name": "pouchdb-ajax",
+			"version": "6.0.5",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-binary-utils": "6.0.5",
+				"pouchdb-errors": "6.0.5",
+				"pouchdb-promise": "6.0.5",
+				"pouchdb-utils": "6.0.5",
+				"request": "2.74.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.0.5",
+			"scripts": {},
+			"_shasum": "55d2b1886edff89f738d54370dd69273f589714f",
+			"_from": ".",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.5.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "55d2b1886edff89f738d54370dd69273f589714f",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.5.tgz",
+				"integrity": "sha512-qTMLY+5JvaEBKcwqB6I3scmLgvfR2pIld7C/SkmMMF5O54Bh7RRIlaJzt7P0sNh9DPILZmYXujlc5Cf46u5+5Q==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIGpukrt/F6D9kwKK3I9ZhT+skODdvep36hOqf/1tTyVWAiEA9UksWSTFvD7iNtI7E+aechliEWwkMJE7ji68LA0cjuw="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-6.0.5.tgz_1474080183141_0.2454234731849283"
+			},
+			"contributors": []
+		},
+		"6.0.6": {
+			"name": "pouchdb-ajax",
+			"version": "6.0.6",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-binary-utils": "6.0.6",
+				"pouchdb-errors": "6.0.6",
+				"pouchdb-promise": "6.0.6",
+				"pouchdb-utils": "6.0.6",
+				"request": "2.74.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.0.6",
+			"scripts": {},
+			"_shasum": "3ad134f7c9170611afa806c0f2709ba799390c9c",
+			"_from": ".",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.7.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "3ad134f7c9170611afa806c0f2709ba799390c9c",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.6.tgz",
+				"integrity": "sha512-K3wQ911h6rZsehrebUBWTU3ShPEzUswmrgA9OWDQeWxvOJZnWisSrayA0xPAiQajmnIB/LCh37QN0/zSA8G96A==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIAkT3R0vIQvXSx58hxPxnVCdgFoYYbbgUpwiHnksCf4fAiEAsnpQGrg93wnmJPF13uLs855nPBMUuHbdgaAH9wngUXg="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-6.0.6.tgz_1475238653769_0.11357426946051419"
+			},
+			"contributors": []
+		},
+		"6.0.7": {
+			"name": "pouchdb-ajax",
+			"version": "6.0.7",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"pouchdb-binary-utils": "6.0.7",
+				"pouchdb-errors": "6.0.7",
+				"pouchdb-promise": "6.0.7",
+				"pouchdb-utils": "6.0.7",
+				"request": "2.74.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.0.7",
+			"scripts": {},
+			"_shasum": "7d2d7ae429075fc581b44329eb4999ebe6e9595a",
+			"_from": ".",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.7.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "7d2d7ae429075fc581b44329eb4999ebe6e9595a",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.7.tgz",
+				"integrity": "sha512-M7743uEFISFf1NpFBhCjo0oSzMJX4sSa75DFEW8edZYMo7sFuUoTGyh9LpnrMwV1h++Nu+rUjitmwO0WlIYBlA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIAlQIdWEm0aWj73+/1OdCJDVRLaE0SnWZMzVXpjmemQwAiEA4h4Sn6WgLrnFEQX78rIjGnMndfBO0Rnp5z2ayRbEI4o="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-6.0.7.tgz_1476575246637_0.6873784058261663"
+			},
+			"contributors": []
+		},
+		"6.1.0": {
+			"name": "pouchdb-ajax",
+			"version": "6.1.0",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"buffer-from": "0.1.1",
+				"pouchdb-binary-utils": "6.1.0",
+				"pouchdb-errors": "6.1.0",
+				"pouchdb-promise": "6.1.0",
+				"pouchdb-utils": "6.1.0",
+				"request": "2.78.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.1.0",
+			"scripts": {},
+			"_shasum": "42cf881ff65be5c00734af401a5d25b7f16da935",
+			"_from": ".",
+			"_npmVersion": "3.10.9",
+			"_nodeVersion": "7.2.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "42cf881ff65be5c00734af401a5d25b7f16da935",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.1.0.tgz",
+				"integrity": "sha512-C9+YlPGiUQwHds9gigVacoFrhHX2E/kJ9jQKAjzz3Qt0KK4k32KreCoD/1Ir1+Q1eIbGf0cqsWb+Nmfq7gakcw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQC1bKLX6B4+znOMKnYiGUfXqVbUYTfsgcaYTj0tjcVi1gIhAN3bw0AifZSd3VJ7ISnfuo7+CmT5V8AH6U0KTfsM/+PW"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-6.1.0.tgz_1481558776068_0.6762931684497744"
+			},
+			"contributors": []
+		},
+		"6.1.1": {
+			"name": "pouchdb-ajax",
+			"version": "6.1.1",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"files": [
+				"lib",
+				"src"
+			],
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"dependencies": {
+				"buffer-from": "0.1.1",
+				"pouchdb-binary-utils": "6.1.1",
+				"pouchdb-errors": "6.1.1",
+				"pouchdb-promise": "6.1.1",
+				"pouchdb-utils": "6.1.1",
+				"request": "2.79.0"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.1.1",
+			"scripts": {},
+			"_shasum": "a423ccc000877566ef5f705e415b355f6e523ba1",
+			"_from": ".",
+			"_npmVersion": "3.8.6",
+			"_nodeVersion": "6.0.0",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "a423ccc000877566ef5f705e415b355f6e523ba1",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.1.1.tgz",
+				"integrity": "sha512-ASLv0t1B1y3cVLCncwM18UfEXZcoEG6Y9zE/TTQgk8zWWykGg2DFEHjsQvNPgpDnxjqlKPGYrUyHfyuZsz+6jw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDqUq1EmFEIa2ZNvUx9H19hiYbNXDncDOJc5C/2IOMlFAIhAMw+1x4TBG/s7cyMddbFRpFVoloMuvfYgI2NRzpW5zkl"
+					}
+				]
+			},
+			"_npmOperationalInternal": {
+				"host": "packages-18-east.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-6.1.1.tgz_1483621953154_0.1961600580252707"
+			},
+			"contributors": []
+		},
+		"6.1.2": {
+			"name": "pouchdb-ajax",
+			"version": "6.1.2",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"dependencies": {
+				"buffer-from": "0.1.1",
+				"pouchdb-binary-utils": "6.1.2",
+				"pouchdb-errors": "6.1.2",
+				"pouchdb-promise": "6.1.2",
+				"pouchdb-utils": "6.1.2",
+				"request": "2.79.0"
+			},
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.1.2",
+			"scripts": {},
+			"_shasum": "ad3af8b16ed6b7508c0a6a1098fca4af62e2f118",
+			"_from": ".",
+			"_npmVersion": "3.10.9",
+			"_nodeVersion": "7.2.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "ad3af8b16ed6b7508c0a6a1098fca4af62e2f118",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.1.2.tgz",
+				"integrity": "sha512-bwb3dEwc/Ork9KiLX5dnkPCfRiH9XYpQz11Y/qfo7tEZFQDeJouBNM34EzxUQIQcHA4szXAWGSkYFIiU+AYZYw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDcq73FumIKpEXgpCjVSnjK1bvJJ5X3G1+IeQ46FKzDvgIhAOHihyaYGduD1+ziqhVtPtYs+JMPauQJvfdYDSzE/ei8"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-18-east.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-6.1.2.tgz_1486487302162_0.17655193526297808"
+			},
+			"contributors": []
+		},
+		"6.2.0": {
+			"name": "pouchdb-ajax",
+			"version": "6.2.0",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"dependencies": {
+				"buffer-from": "0.1.1",
+				"pouchdb-binary-utils": "6.2.0",
+				"pouchdb-errors": "6.2.0",
+				"pouchdb-promise": "6.2.0",
+				"pouchdb-utils": "6.2.0",
+				"request": "2.80.0"
+			},
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.2.0",
+			"scripts": {},
+			"_shasum": "62a133f8b95ce8aa856b8169d4d6e60142631e63",
+			"_from": ".",
+			"_npmVersion": "4.2.0",
+			"_nodeVersion": "6.9.4",
+			"_npmUser": {
+				"name": "garrensmith",
+				"email": "garren.smith@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "62a133f8b95ce8aa856b8169d4d6e60142631e63",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.2.0.tgz",
+				"integrity": "sha512-/Ffy3MnbuQ3JV/Jbej5wYmy4H0H92tRTHNujCwigbHbxsoxQvgtjx2pHst1+1ckGhS0OAPcZnnrIdZThq9SgHg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIGspKsQ8FAc4ElWBBkSicZpOBOWnYagA0XPVd92XHBwnAiAX+1f0uAnM63OFBUWw+hvenVhad/MyBglY4N+o1mcFeg=="
+					}
+				]
+			},
+			"_npmOperationalInternal": {
+				"host": "packages-18-east.internal.npmjs.com",
+				"tmp": "tmp/pouchdb-ajax-6.2.0.tgz_1492700721636_0.08451874274760485"
+			},
+			"contributors": []
+		},
+		"6.2.1-prerelease": {
+			"name": "pouchdb-ajax",
+			"version": "6.2.1-prerelease",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.2.1-prerelease",
+			"scripts": {},
+			"_shasum": "6e83ea591a329b7cc74e0dafb93035c80a7e739d",
+			"_from": ".",
+			"_npmVersion": "3.8.6",
+			"_nodeVersion": "5.11.1",
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"dist": {
+				"shasum": "6e83ea591a329b7cc74e0dafb93035c80a7e739d",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.2.1-prerelease.tgz",
+				"integrity": "sha512-NdoHvujmOFxexdIJUIImFzxN9ikU0PNwERm5J+CNLhU6YaPhfObtsj6eQJNtpuW4jZqAD0d3i5djmufGjgdaBQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDQMkBSpR2FwzKhEsnGzKRvIWZiZyA0TyRA0zqEc7T8JQIgQuFqUdwWltPPYidrxr/yaYmRXlh+w1KZ0NtMK0lkkqs="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/pouchdb-ajax-6.2.1-prerelease.tgz_1499942894666_0.423831824446097"
+			},
+			"contributors": []
+		},
+		"6.3.0": {
+			"name": "pouchdb-ajax",
+			"version": "6.3.0",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./src/index.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/applyTypeToBuffer": "./src/applyTypeToBuffer-browser",
+				"./src/createBlobOrBufferFromParts": "./src/createBlobOrBufferFromParts-browser",
+				"./src/createMultipartPart": "./src/createMultipartPart-browser",
+				"./src/defaultBody": "./src/defaultBody-browser",
+				"./src/explainError": "./src/explainError-browser",
+				"./src/prequest.js": "./src/prequest-browser.js",
+				"./src/request.js": "./src/request-browser.js"
+			},
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.3.0",
+			"scripts": {},
+			"_shasum": "301fad0ca5b2c06efc444ae8accfdb74bcfe59b9",
+			"_from": ".",
+			"_npmVersion": "3.8.6",
+			"_nodeVersion": "5.11.1",
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"dist": {
+				"shasum": "301fad0ca5b2c06efc444ae8accfdb74bcfe59b9",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.3.0.tgz",
+				"integrity": "sha512-1A+MIzJJu8p0sJkXj0yGJAeKGFCiWmBdKDCa67EMagyq/aSw5UG7ZfaIEEg1AEXO57gTVkqde6g/URiQDmmnoQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIG6gvonXb448oKDXWX6W9u6+Vfd4qgYBWY088ktGkeFPAiEAv04EN7w9uQGswaxBvuiAiOlOFqSVtAvyy5QQLM6MkiM="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/pouchdb-ajax-6.3.0.tgz_1499943222320_0.741050184937194"
+			},
+			"contributors": []
+		},
+		"6.3.1": {
+			"name": "pouchdb-ajax",
+			"version": "6.3.1",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"dependencies": {
+				"buffer-from": "0.1.1",
+				"pouchdb-binary-utils": "6.3.1",
+				"pouchdb-errors": "6.3.1",
+				"pouchdb-promise": "6.3.1",
+				"pouchdb-utils": "6.3.1",
+				"request": "2.80.0"
+			},
+			"module": "./lib/index.es.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.3.1",
+			"scripts": {},
+			"_shasum": "7853e89be6397365dbf2cbf195a3d7b694f86511",
+			"_from": ".",
+			"_npmVersion": "3.8.6",
+			"_nodeVersion": "5.11.1",
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"dist": {
+				"shasum": "7853e89be6397365dbf2cbf195a3d7b694f86511",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.3.1.tgz",
+				"integrity": "sha512-gimSEDZ7NaLnRBctwYytnK6Cwe7/eZ/P91XdNRdXbLqMKXnSbwzuZBpB1vf12aV+1iZPDP1LHftKLcpZ8ZuKgQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIFO6ZhzDK0YMPXnFO/XmYcrj6YXPMn2jOR3nFS/bEXHUAiEA9x5dX3C0kVBRCgEPwhbktwF5FU2NTuX9wSURoU153TI="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/pouchdb-ajax-6.3.1.tgz_1499956841730_0.3991323197260499"
+			},
+			"contributors": []
+		},
+		"6.3.2": {
+			"name": "pouchdb-ajax",
+			"version": "6.3.2",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"dependencies": {
+				"buffer-from": "0.1.1",
+				"pouchdb-binary-utils": "6.3.2",
+				"pouchdb-errors": "6.3.2",
+				"pouchdb-promise": "6.3.2",
+				"pouchdb-utils": "6.3.2",
+				"request": "2.80.0"
+			},
+			"module": "./lib/index.es.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.3.2",
+			"scripts": {},
+			"_shasum": "70a0b21d70c6f49465ea8c74ae8d37976e30c9c7",
+			"_from": ".",
+			"_npmVersion": "3.8.6",
+			"_nodeVersion": "5.11.1",
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"dist": {
+				"shasum": "70a0b21d70c6f49465ea8c74ae8d37976e30c9c7",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.3.2.tgz",
+				"integrity": "sha512-7rv/KFkLp+HzzSWMzHEwU1PDRffjmUv/LUyYgOPJEV48xd6ui+XN3yAbLi80s/IMTJedpekOdpPUAoqo96qlJw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDfyTKmWaGt+Kh9RubSu7yLgw3fs4IvUuciWEIFpHIfZAIgeagbpdoXE10riy5YlH/Ajuve94ZV/8jgn65aAW7aNMw="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/pouchdb-ajax-6.3.2.tgz_1499958772911_0.5925102334003896"
+			},
+			"contributors": []
+		},
+		"6.3.3": {
+			"name": "pouchdb-ajax",
+			"version": "6.3.3",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"dependencies": {
+				"buffer-from": "0.1.1",
+				"pouchdb-binary-utils": "6.3.3",
+				"pouchdb-errors": "6.3.3",
+				"pouchdb-promise": "6.3.3",
+				"pouchdb-utils": "6.3.3",
+				"request": "2.80.0"
+			},
+			"module": "./lib/index.es.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.3.3",
+			"_npmVersion": "5.0.0",
+			"_nodeVersion": "8.0.0",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"dist": {
+				"integrity": "sha512-vzBMk+5m0xRpV0AwwZpOnVfN0cyEesvAZm/obdg/Wzw3Ug3x+XumwUCWw4fDrVy8n+isGPjnEXRkPHoLo+rJzw==",
+				"shasum": "348faf8eb2340e37bbe35e2b8b934761021604a3",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.3.3.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIDHytXry7vhfzRF3cLOjRqK2OSAYJylfCra+w9MKpmLGAiBCvNOi96ZvmKQXqiiV7zPMPZnS3tDfXLMdc6HxzTfC8w=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/pouchdb-ajax-6.3.3.tgz_1500070548689_0.3716919266153127"
+			},
+			"contributors": []
+		},
+		"6.3.4": {
+			"name": "pouchdb-ajax",
+			"version": "6.3.4",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"dependencies": {
+				"buffer-from": "0.1.1",
+				"pouchdb-binary-utils": "6.3.4",
+				"pouchdb-errors": "6.3.4",
+				"pouchdb-promise": "6.3.4",
+				"pouchdb-utils": "6.3.4",
+				"request": "2.80.0"
+			},
+			"module": "./lib/index.es.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.3.4",
+			"_npmVersion": "5.0.0",
+			"_nodeVersion": "8.0.0",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"dist": {
+				"integrity": "sha512-Rhjioj5rRHqBM3pr2WE0l89GPrbJ5UmUwGCybUt0yxQ03BvQH52GPu399vcl2PUzFe9gUNMUwxcz1rNRGDiwsA==",
+				"shasum": "a673f82a423a9e59ca7e4e4c5e3fc3fa9b1ffd2f",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.3.4.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQCaJcs6TqoW+FSpVJNeHfXZuChhLDFessZ5TvGwc3F2OgIhAJCzwDmHxlRQmEffVFs3jhayW54nLqgNZrT7pZ/mmKGG"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/pouchdb-ajax-6.3.4.tgz_1500109829358_0.5598255007062107"
+			},
+			"contributors": []
+		},
+		"6.4.0": {
+			"name": "pouchdb-ajax",
+			"version": "6.4.0",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"dependencies": {
+				"buffer-from": "0.1.1",
+				"pouchdb-binary-utils": "6.4.0",
+				"pouchdb-errors": "6.4.0",
+				"pouchdb-promise": "6.4.0",
+				"pouchdb-utils": "6.4.0",
+				"request": "2.80.0"
+			},
+			"module": "./lib/index.es.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.4.0",
+			"_npmVersion": "5.3.0",
+			"_nodeVersion": "8.5.0",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"dist": {
+				"integrity": "sha512-NDvTR9SC/9A9gpZxA5PcpJnqguASBkcRnG6R+Kl3Zsebl0irCwQ3TQk05ALdYP/qxexwMQ5OOnvYHmBk8LgRfg==",
+				"shasum": "b2c89e7ee052c9b65344f916d05cdc1756325dbb",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.4.0.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQCS33SDMmeoUw+5CmzjWYF3a4+VaoGZJ84GX3NFr4YDKgIhAIXiTH5Y0NUWrd/dvnEU3aVUAxeCSf2tNFbKfJqM7bbU"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/pouchdb-ajax-6.4.0.tgz_1513503490352_0.3647484229877591"
+			},
+			"contributors": []
+		},
+		"6.4.1": {
+			"name": "pouchdb-ajax",
+			"version": "6.4.1",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"dependencies": {
+				"buffer-from": "0.1.1",
+				"pouchdb-binary-utils": "6.4.1",
+				"pouchdb-errors": "6.4.1",
+				"pouchdb-promise": "6.4.1",
+				"pouchdb-utils": "6.4.1",
+				"request": "2.80.0"
+			},
+			"module": "./lib/index.es.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.4.1",
+			"_npmVersion": "5.3.0",
+			"_nodeVersion": "8.2.1",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"dist": {
+				"integrity": "sha512-IwDZmgsgxfpKHzjAj6oflu9qncAisynXzkOH17DH11cxD+uTyYy9XYnFpNSR+kEjY2BUxkBbstdcGjZI8Qy7Cg==",
+				"shasum": "1ce0216a6affdec55e0b7cb16f3f1b5996340ec2",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.4.1.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDh8+Rq7Wn/KjR6xb6HSiJPzK7p4mxVdRaFeGJWdG/NzgIhAKwKGnEnBOsUAFI4bUoxh92MJcRuusgminRcKp62R36I"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/pouchdb-ajax-6.4.1.tgz_1513595627332_0.9383394455071539"
+			},
+			"contributors": []
+		},
+		"6.4.2": {
+			"name": "pouchdb-ajax",
+			"version": "6.4.2",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"dependencies": {
+				"buffer-from": "0.1.1",
+				"pouchdb-binary-utils": "6.4.2",
+				"pouchdb-errors": "6.4.2",
+				"pouchdb-promise": "6.4.2",
+				"pouchdb-utils": "6.4.2",
+				"request": "2.83.0"
+			},
+			"module": "./lib/index.es.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.4.2",
+			"_npmVersion": "5.3.0",
+			"_nodeVersion": "8.5.0",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"dist": {
+				"integrity": "sha512-knymD2cWefc7/oxGLRBlIy7EjjU5JGnBc0tOOy81TaJ8qMK6CxcYha0+ev8Z0SLrlLOAzJhAaClvtzVmcNh4PQ==",
+				"shasum": "845c15c2de33800fc6185db53ee2510db2b51dec",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.4.2.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCL4yz48uBrmyvEtxr2IFxccvg9vtkwSOhfwy+J7XakKQIgCfRq65Pc20rMC0EMYOC4f/ZrPqUhUOkxE9bjq4uJ34E="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/pouchdb-ajax-6.4.2.tgz_1516796790338_0.3017186401411891"
+			},
+			"contributors": []
+		},
+		"6.4.3": {
+			"name": "pouchdb-ajax",
+			"version": "6.4.3",
+			"description": "PouchDB's ajax() method.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git"
+			},
+			"jsnext:main": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"dependencies": {
+				"buffer-from": "0.1.1",
+				"pouchdb-binary-utils": "6.4.3",
+				"pouchdb-errors": "6.4.3",
+				"pouchdb-promise": "6.4.3",
+				"pouchdb-utils": "6.4.3",
+				"request": "2.83.0"
+			},
+			"module": "./lib/index.es.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_id": "pouchdb-ajax@6.4.3",
+			"_npmVersion": "5.5.1",
+			"_nodeVersion": "8.9.1",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"dist": {
+				"integrity": "sha512-3ySZrbEYjbosXShWFLk3xW8prrrUOG8z5aXKy+6lK/nokqdpqGj9NQX/gffy15VcDswbJyQtKpVQRevQlLuAGA==",
+				"shasum": "642aea957925cb9fcd6493d2f39820c34bca3e88",
+				"tarball": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.4.3.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIEsMw5rhrDvt4KIjUVCipx0kqcDPdY9a3bbsW3M04Dy0AiEAmP1+hE/Jhg1ulhIW2C5AiLkJoFU65al3396isEWTdhI="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/pouchdb-ajax-6.4.3.tgz_1517575649082_0.0738802244886756"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-06-24T12:02:56.460Z",
+		"created": "2015-02-22T15:17:42.316Z",
+		"1.0.0": "2015-02-22T15:17:42.316Z",
+		"1.0.1": "2015-04-21T02:16:28.977Z",
+		"5.4.0": "2016-06-06T17:41:07.398Z",
+		"5.4.1": "2016-06-08T12:43:14.435Z",
+		"5.4.2": "2016-06-12T16:00:21.979Z",
+		"5.4.3": "2016-06-13T12:17:01.075Z",
+		"5.4.4": "2016-06-16T14:54:49.964Z",
+		"5.4.5": "2016-07-03T02:18:43.351Z",
+		"6.0.0": "2016-09-03T03:37:58.911Z",
+		"6.0.1": "2016-09-03T17:01:12.385Z",
+		"6.0.2": "2016-09-04T16:08:53.383Z",
+		"6.0.3": "2016-09-05T17:35:04.016Z",
+		"6.0.4": "2016-09-05T18:26:02.725Z",
+		"6.0.5": "2016-09-17T02:43:03.391Z",
+		"6.0.6": "2016-09-30T12:30:53.998Z",
+		"6.0.7": "2016-10-15T23:47:26.857Z",
+		"6.1.0": "2016-12-12T16:06:16.299Z",
+		"6.1.1": "2017-01-05T13:12:33.726Z",
+		"6.1.2": "2017-02-07T17:08:23.943Z",
+		"6.2.0": "2017-04-20T15:05:23.556Z",
+		"6.2.1-prerelease": "2017-07-13T10:48:15.595Z",
+		"6.3.0": "2017-07-13T10:53:43.331Z",
+		"6.3.1": "2017-07-13T14:40:42.743Z",
+		"6.3.2": "2017-07-13T15:12:53.764Z",
+		"6.3.3": "2017-07-14T22:15:49.763Z",
+		"6.3.4": "2017-07-15T09:10:30.295Z",
+		"6.4.0": "2017-12-17T09:38:10.447Z",
+		"6.4.1": "2017-12-18T11:13:48.186Z",
+		"6.4.2": "2018-01-24T12:26:31.266Z",
+		"6.4.3": "2018-02-02T12:47:30.006Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "6.4.3"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"5656a54af4340cde3d050dc32b3e7549\"",
+			"fetched": 1734527740621
+		}
+	},
+	"_distfiles": {
+		"pouchdb-ajax-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-1.0.0.tgz",
+			"sha": "4aa5b92848efd6c7b5ee0a1a0877cba8ae8171b2",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-1.0.1.tgz",
+			"sha": "d6cf6bfba35a718672652cdd182ec998b9ce3465",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-5.4.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-5.4.0.tgz",
+			"sha": "e24dbde845ec4651f8d2959df64c225fa4c01820",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-5.4.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-5.4.1.tgz",
+			"sha": "363446d97df6602d1ed5f4cc772f715ada8d6919",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-5.4.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-5.4.2.tgz",
+			"sha": "52187b6a2dc87f4044f10ac371e90998449c59a6",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-5.4.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-5.4.3.tgz",
+			"sha": "7aef7c24a9b11522727c98d1dd86021bd4deff58",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-5.4.4.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-5.4.4.tgz",
+			"sha": "2e4443f62f5171dd5d982b5961011dac345a7402",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-5.4.5.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-5.4.5.tgz",
+			"sha": "4091bc83a44706ef6537ba62ce3b39ca58c76d8e",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.0.tgz",
+			"sha": "b313f7153f4202658f8feae377cf4b8cfd24404d",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.0.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.1.tgz",
+			"sha": "c1f6ea6dbd13dcdcac60067bdd3b19cce1bbfded",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.0.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.2.tgz",
+			"sha": "5566a18f3dd1bef0bd4cff26e66e3f138f5be0cd",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.0.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.3.tgz",
+			"sha": "1a915527b30ab37791a1ea3d7c270a105909c1f6",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.0.4.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.4.tgz",
+			"sha": "7dfdc0373ad68493ee5eec6de2b6edc137418800",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.0.5.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.5.tgz",
+			"sha": "55d2b1886edff89f738d54370dd69273f589714f",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.0.6.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.6.tgz",
+			"sha": "3ad134f7c9170611afa806c0f2709ba799390c9c",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.0.7.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.0.7.tgz",
+			"sha": "7d2d7ae429075fc581b44329eb4999ebe6e9595a",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.1.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.1.0.tgz",
+			"sha": "42cf881ff65be5c00734af401a5d25b7f16da935",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.1.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.1.1.tgz",
+			"sha": "a423ccc000877566ef5f705e415b355f6e523ba1",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.1.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.1.2.tgz",
+			"sha": "ad3af8b16ed6b7508c0a6a1098fca4af62e2f118",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.2.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.2.0.tgz",
+			"sha": "62a133f8b95ce8aa856b8169d4d6e60142631e63",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.2.1-prerelease.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.2.1-prerelease.tgz",
+			"sha": "6e83ea591a329b7cc74e0dafb93035c80a7e739d",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.3.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.3.0.tgz",
+			"sha": "301fad0ca5b2c06efc444ae8accfdb74bcfe59b9",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.3.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.3.1.tgz",
+			"sha": "7853e89be6397365dbf2cbf195a3d7b694f86511",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.3.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.3.2.tgz",
+			"sha": "70a0b21d70c6f49465ea8c74ae8d37976e30c9c7",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.3.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.3.3.tgz",
+			"sha": "348faf8eb2340e37bbe35e2b8b934761021604a3",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.3.4.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.3.4.tgz",
+			"sha": "a673f82a423a9e59ca7e4e4c5e3fc3fa9b1ffd2f",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.4.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.4.0.tgz",
+			"sha": "b2c89e7ee052c9b65344f916d05cdc1756325dbb",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.4.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.4.1.tgz",
+			"sha": "1ce0216a6affdec55e0b7cb16f3f1b5996340ec2",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.4.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.4.2.tgz",
+			"sha": "845c15c2de33800fc6185db53ee2510db2b51dec",
+			"registry": "npmjs"
+		},
+		"pouchdb-ajax-6.4.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-ajax/-/pouchdb-ajax-6.4.3.tgz",
+			"sha": "642aea957925cb9fcd6493d2f39820c34bca3e88",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-ajax-6.2.0.tgz": {
+			"shasum": "62a133f8b95ce8aa856b8169d4d6e60142631e63"
+		}
+	},
+	"_rev": "3-8331182799400d9b",
+	"_id": "pouchdb-ajax",
+	"readme": "pouchdb-ajax ![semver non-compliant](https://img.shields.io/badge/semver-non--compliant-red.svg)\n======\n\nPouchDB's ajax() method.\n\n### Usage\n\n```bash\nnpm install --save-exact pouchdb-ajax\n```\n\nFor full API documentation and guides on PouchDB, see [PouchDB.com](http://pouchdb.com/). For details on PouchDB sub-packages, see the [Custom Builds documentation](http://pouchdb.com/custom.html).\n\n### Warning: semver-free zone!\n\nThis package is conceptually an internal API used by PouchDB or its plugins. It does not follow semantic versioning (semver), and rather its version is pegged to PouchDB's. Use exact versions when installing, e.g. with `--save-exact`.\n\n### Source\n\nPouchDB and its sub-packages are distributed as a [monorepo](https://github.com/babel/babel/blob/master/doc/design/monorepo.md).\n\nFor a full list of packages, see [the GitHub source](https://github.com/pouchdb/pouchdb/tree/master/packages)."
+}

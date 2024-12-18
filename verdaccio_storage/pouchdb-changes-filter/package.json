@@ -1,0 +1,1982 @@
+{
+	"name": "pouchdb-changes-filter",
+	"versions": {
+		"0.0.0": {
+			"name": "pouchdb-changes-filter",
+			"version": "0.0.0",
+			"author": {
+				"name": "Nolan Lawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@0.0.0",
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "73c25d98c19117925aee7c3d8e96093fcf05c7d8",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-0.0.0.tgz",
+				"integrity": "sha512-9QamSFtBK5+OAUjbD4fQ4rLZLi1BqwFke8zXutEbtKF5NLLB/gR4tTpdQ+v9dh803mUcFjHBD30CmTZwZ0QTEA==",
+				"signatures": [
+					{
+						"sig": "MEQCIB//nwf5nuMVjLnWOw/RDMKirZgCRoBZqCHceoYExfBsAiAEnv8csyg61PDZkr4SJKRKIhUVs9AbaCozqfMMINdxww==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "index.js",
+			"_from": ".",
+			"_shasum": "73c25d98c19117925aee7c3d8e96093fcf05c7d8",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"_npmVersion": "3.10.9",
+			"description": "placeholder for pouchdb-changes-filter package",
+			"directories": {},
+			"_nodeVersion": "7.2.0",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter-0.0.0.tgz_1490639053891_0.5633677705191076",
+				"host": "packages-18-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.2.0": {
+			"name": "pouchdb-changes-filter",
+			"version": "6.2.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@6.2.0",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "62649554cef2c9e7e846c452eb0d35ce0811a5e8",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.2.0.tgz",
+				"integrity": "sha512-PETu8D0YwXE/2myUUabTI5wFRRATJMuQa1M1hGkVRBJBTnlyTYnhPl33oL+AqHCg58fPXwIJN9o9wMjdHONpSQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIHO9Ls/zjmuaZh7zn00vO3ynbXMrilWKIgm52aN/0VQ0AiBLgRlOUeXuUxgVWDvkXIprXSU3Rl7IUyYIxsyVKKnp3w==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"_shasum": "62649554cef2c9e7e846c452eb0d35ce0811a5e8",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"scripts": {},
+			"_npmUser": {
+				"name": "garrensmith",
+				"email": "garren.smith@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "4.2.0",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "6.9.4",
+			"dependencies": {
+				"pouchdb-utils": "6.2.0",
+				"pouchdb-errors": "6.2.0",
+				"pouchdb-selector-core": "6.2.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter-6.2.0.tgz_1492700734034_0.46175382449291646",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.2.1-prerelease": {
+			"name": "pouchdb-changes-filter",
+			"version": "6.2.1-prerelease",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@6.2.1-prerelease",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "8f59df8ac903054b7e8ca0d8983feabf309bb0e4",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.2.1-prerelease.tgz",
+				"integrity": "sha512-DwONUQy8AMkxKIW6Q5QMu53Bp9BvAJaxc75MzDtEmgclJSiLa3tsIdjamP+BJw5+F2nDrhmQZ4JPYQdOmGVaBQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIFgKxsLqdY5YGrRLhCkkCGvtGgz1PJFUuIxFBIJhpZMBAiEAtT7d2GAcWLjeU8s5g4BLSAGS63vOTMyWb1+CHY9D46g=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"_shasum": "8f59df8ac903054b7e8ca0d8983feabf309bb0e4",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/evalView.js": "./src/evalView-browser.js",
+				"./src/evalFilter.js": "./src/evalFilter-browser.js"
+			},
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter-6.2.1-prerelease.tgz_1499942904643_0.6710747354663908",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.0": {
+			"name": "pouchdb-changes-filter",
+			"version": "6.3.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@6.3.0",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "c19faa3f26231fcebbdeb90369dae4afd993bf7e",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.3.0.tgz",
+				"integrity": "sha512-OrGDnjxJ47ALHiAbXzTAPv7S65mRn5TisVjvIB5XAjsuLeSi/2vZ2+BENsbqXuEIK1PxpR9oJj7LtdMUKmV30w==",
+				"signatures": [
+					{
+						"sig": "MEQCIGp3vrtyTjZ37PosuI2o9LDFP/QnOjZZrBxsSpzfpmjsAiA6n58W+c2/HQIWY09CwAltQHgxrUTklvlDz8S04Ch8TQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"_shasum": "c19faa3f26231fcebbdeb90369dae4afd993bf7e",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./src/evalView.js": "./src/evalView-browser.js",
+				"./src/evalFilter.js": "./src/evalFilter-browser.js"
+			},
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter-6.3.0.tgz_1499943233513_0.10436899494379759",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.1": {
+			"name": "pouchdb-changes-filter",
+			"version": "6.3.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@6.3.1",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "228ea847664525d9fad5bba0eb8fb6779b04a7a7",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.3.1.tgz",
+				"integrity": "sha512-imT6LseU5snzL3MxsBtmW7Y3RGIb8F9TkiQlo+xBsihwG1iidl2JrtE02WjJ3q0hmTpupHTxhYXJaqTos9KdUw==",
+				"signatures": [
+					{
+						"sig": "MEQCIG0XsdK2oJiOCwaTpD0d0gmbG7CjG74yaBKUXDj861nAAiBORrjo0R0EvLQqE6oLJwv2UvTYgbSV3QRq+gpET1eGKg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_shasum": "228ea847664525d9fad5bba0eb8fb6779b04a7a7",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"pouchdb-utils": "6.3.1",
+				"pouchdb-errors": "6.3.1",
+				"pouchdb-selector-core": "6.3.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter-6.3.1.tgz_1499956852834_0.2096550075802952",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.2": {
+			"name": "pouchdb-changes-filter",
+			"version": "6.3.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@6.3.2",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "853fc415a8ffc60ec8397bd26cd1370ef8b6c0b7",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.3.2.tgz",
+				"integrity": "sha512-Bn6+wjgs/DxxtATYNEPRUfweKbrswtKRBFIkFuDVR8CC+0he7RNAuDXtGP8gg+AXjl+04+wnIgSx07XByW03WA==",
+				"signatures": [
+					{
+						"sig": "MEQCIGhDOyre8NljI4vTnWyFtVcys9gfvVmgVrJa5CWV+DSJAiAhJ8T3Yunv0E4Zw9Cx3FSptf8NFQsj8aOEsgioxrZyIg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_shasum": "853fc415a8ffc60ec8397bd26cd1370ef8b6c0b7",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"pouchdb-utils": "6.3.2",
+				"pouchdb-errors": "6.3.2",
+				"pouchdb-selector-core": "6.3.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter-6.3.2.tgz_1499958783727_0.4220092981122434",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.3": {
+			"name": "pouchdb-changes-filter",
+			"version": "6.3.3",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@6.3.3",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "049385d304e4a410770e827841c8b9ae9a49e57f",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.3.3.tgz",
+				"integrity": "sha512-Y/6tRt5ajZUWDgFhZqEH+u9FgLyVRn0uBplaN8KdmYDE9rKeN3gfktnQvtk1Mt1q96aA+220I9elvPbtdD/BDw==",
+				"signatures": [
+					{
+						"sig": "MEQCID1+yn0d1cCIguVCXfuehSOg8g72J+Iu421oRXukpiDRAiArt5soxbMDez6GeYc2RIogQcsMOTjuoRtzLpKk0wVEcg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.0.0",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.0.0",
+			"dependencies": {
+				"pouchdb-utils": "6.3.3",
+				"pouchdb-errors": "6.3.3",
+				"pouchdb-selector-core": "6.3.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter-6.3.3.tgz_1500070561417_0.735942053841427",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.4": {
+			"name": "pouchdb-changes-filter",
+			"version": "6.3.4",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@6.3.4",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "00947871a18a365a7a730a92ed29471ee5b44442",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.3.4.tgz",
+				"integrity": "sha512-6Q9koC6ZalYHjc5zUWw33Gg26CFokU/NoMCkvxgJe1tugquMc3f20Hvi2vjnIdwL2VwTpYcFrxEQ/5SlEGTf6Q==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCz3AtF0vcxPEFpNVaqNbtqw+MePXUvXXiXIkCqe/XKogIgdcrueYezAoVNfDjyGKR4b24gV33vmUATzJC/GLKRvRE=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.0.0",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.0.0",
+			"dependencies": {
+				"pouchdb-utils": "6.3.4",
+				"pouchdb-errors": "6.3.4",
+				"pouchdb-selector-core": "6.3.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter-6.3.4.tgz_1500109843173_0.2932721332181245",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.0": {
+			"name": "pouchdb-changes-filter",
+			"version": "6.4.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@6.4.0",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "a79963b84aa90dc9a6383f561b164ea3c9e147e1",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.4.0.tgz",
+				"integrity": "sha512-uaaBh/Eal77ieeJpTsylRmfbFFXxuzZsVCLWgXCcO3vgzsEA40SMB2LAcSoNJ8hOjPeZ5TVnT/izEiS7rUG2bQ==",
+				"signatures": [
+					{
+						"sig": "MEUCICf26aaBgm6IFgucMvF+nfZquOXHyy1Mb6PgY1+wNBTdAiEAqhUueAwhrzMOEcICT/N+OyMcJZvqbnylmy/sr7/LHSY=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.3.0",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.5.0",
+			"dependencies": {
+				"pouchdb-utils": "6.4.0",
+				"pouchdb-errors": "6.4.0",
+				"pouchdb-selector-core": "6.4.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter-6.4.0.tgz_1513503503005_0.02033255179412663",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.1": {
+			"name": "pouchdb-changes-filter",
+			"version": "6.4.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@6.4.1",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "6ab66bc044681a49fee18d158a0cd114f7e75f37",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.4.1.tgz",
+				"integrity": "sha512-FFaLghZrgPv3eCz6x8++xWF2KGSVQnpuMScMmTFAlNBRBtzVdVhqhiRcARoIx3S3lrlFlxc/0hV5VuNiJYUlEQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCl6DUfpqDncxJHJBvTqSdtc33wzWVzpGVg/XfRQMDU6QIgeX+gmwnhpFvtf+67Z3JpwapiPAnz2WmJtYB23ZRHwf4=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.3.0",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.2.1",
+			"dependencies": {
+				"pouchdb-utils": "6.4.1",
+				"pouchdb-errors": "6.4.1",
+				"pouchdb-selector-core": "6.4.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter-6.4.1.tgz_1513595641279_0.5551426575984806",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.2": {
+			"name": "pouchdb-changes-filter",
+			"version": "6.4.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@6.4.2",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "7f5a94a6cc552ac0f3515b4d29351eb49fb51569",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.4.2.tgz",
+				"integrity": "sha512-p+kXmJT2vevQFsKM0QnrXFe6XJ/Sd455lvlNY7Kk6oum0CFM/by862yU8qGFxkMHxyaQKjJi0E7SCOGUdpf15g==",
+				"signatures": [
+					{
+						"sig": "MEUCIQC8CqWvKSDnEVi7FxkMQh2XWwYbCAgaa6ZE2m1Gt/E6aQIga5s+WRTMMzrvLzyjvNM/mbTZAnGAOqY6/u4nbaq5sBU=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.3.0",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.5.0",
+			"dependencies": {
+				"pouchdb-utils": "6.4.2",
+				"pouchdb-errors": "6.4.2",
+				"pouchdb-selector-core": "6.4.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter-6.4.2.tgz_1516796803527_0.801519526168704",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.3": {
+			"name": "pouchdb-changes-filter",
+			"version": "6.4.3",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@6.4.3",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "01fcf9dbc9d742fe5060624bb39bc459a3d11a1a",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.4.3.tgz",
+				"integrity": "sha512-u90MocOmysuwXmKsz8dgDKGrbzYY/M2POghqGqy6PMUI3vzq4YEwGB/gWym06alI1pQzMKjpZ20KTzwRDC/6zQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIF9LbBZ9N+AsPXzPJZKB/yIhSyKAznm5PlQA6xeljlyDAiB63XtnApP7lGteG46D57TAGsSzSxVQ53TSE9VlFR2yXw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.5.1",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.9.1",
+			"dependencies": {
+				"pouchdb-utils": "6.4.3",
+				"pouchdb-errors": "6.4.3",
+				"pouchdb-selector-core": "6.4.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter-6.4.3.tgz_1517575660143_0.34798774332739413",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.0.0": {
+			"name": "pouchdb-changes-filter",
+			"version": "7.0.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@7.0.0",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "05d2969da278b0c0d5b37ce3883b787b87f0c216",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-7.0.0.tgz",
+				"fileCount": 7,
+				"integrity": "sha512-b7T+lA50VzaxleccpmhNJLdFiGiYKmcIP3hVg+74xQO7vqJ+GEp8nanKX/UBs1Hr3TxUrCT/4JXTxVNkgUxO0A==",
+				"signatures": [
+					{
+						"sig": "MEUCIHL0uJfCYf2pWQmyAfB0ZeIEbbV/lPJXDbyKBtp9yuFNAiEAxYwUBg0K1+e44KKReiyuPzqlq/FJc6+b7SBUqltiIVM=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 29053,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbK4UuCRA9TVsSAnZWagAAooMP/2L/RwlBu/437plfCmDv\n6PC9AGQf6vV4GygSHRJPSOnzewc90gU9SubHRiIgix2kTXLX9FgNydCqjGjw\nVfKTUf6l/LaPrjp/ek6588B2DH8tZfumePa1S6DMVpDlNnqbMnyBl2IuasiK\nEcGY59vkFRipiOjrUiARs7J2dSQ08PuUErZM50/JUwh56xauKFCDc5RmhXNV\nkP9SCHPBu7ER7CEJOlFL9jsOF9ub0XqVbYpED+FQ7uiPDa5lzmjVV9N4Po3u\nsjqDPg+kyH2QUgE9Tva4o1iYZ0wlbl8dRHNm0oNKAQpiBEu2XMGSy9Dy1cZu\nGcA8axOiDd1bypDEo1nGPyhparFa276krbBJytU6DfMSNjmlnJaEdCuDAcRV\nR+SMM6fIa38dhZYHDUrJs/UUdN/4vVqkn7jTj5endhqxRuaVrxCQG4t+Xd1i\nx6by4HDkYUyJ6xaKDdWB1D3Rio7siN2KBIDqRG5u6TknnQM5PKOibQ+pp9HB\nHuGddg7QrIigXTdMku+6n2R+3ck7Ys8UJquq+BMWOpsLv6QxCc8pdY5GuWW5\nhbvwp09mtE2RiDSrqfChsq6j9GRe9o14UI69ge3/7hn83bzHmvuqeQj44433\nUw+57iU83Ro3L1NeoMor3R5qV3mRLcPM1l+Lb/kWNcIrwIUTugXfptELyKjb\nRl+C\r\n=Wz3X\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.1.0",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.3.0",
+			"dependencies": {
+				"pouchdb-utils": "7.0.0",
+				"pouchdb-errors": "7.0.0",
+				"pouchdb-selector-core": "7.0.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter_7.0.0_1529578798510_0.23658863886690895",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.1.0": {
+			"name": "pouchdb-changes-filter",
+			"version": "7.1.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@7.1.0",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "5219582e4193615662dc6449d16959c351959b2b",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-7.1.0.tgz",
+				"fileCount": 7,
+				"integrity": "sha512-USdtNnKEXCZGpSdd7z4tGvpvf+I9ta4FxbXX5YiHE/LpyqqgENNKoVHve3nCRzAysVPuR9u2BUkZ7WKJpAw/Xg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDMhv/Is5IvXzPFoQNZ9yYMis3MPg50A7d5QO/NRmC7DwIhAOPCBbH6Nav36SrkpNI9IMBkLKQQVZGDhCLICpvPlAQZ",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 29053,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdAofTCRA9TVsSAnZWagAA0HUQAKHsN7NKESkuhR/m++QO\ndt0s0O5+27vOPf3ScQng4kzQBRCdUx+L8RphdJoDZwOjjBTnEx2DzofNks3E\nv1VnbkCCTIplvRrAutQIsJHlK8R2hrWeaou/W8jHGRPHTt83dmsQ0Ggj2pcu\nIRcM0Q+6GPnWwPntedKZ2Jp4MkpmZFNGKo9FrmEqCg2UbHttvHyacD6ZR0wa\nng6T5M1XjuxDkvoSZfWtKe/gheWU3T2AA2QBhR8KLx/JKzhyeW+Lg8yW8ydB\n3lGPq78j+Hb6htdPOEl6a+b2luTx4XwyG+vyEb/mV00bYNIB8CXvjB26ioEe\n/J6XD8B4auYJEesT4zjq/ujs4TKze8eMjmH7Y4P94hGVZkklyhD0COltowne\n06enpS/VXzfN8GJDOz629oliInE4AdGhYljcYxmsq9todVOTm7A0/snvzCkh\nU50X4BvkR/C3xg6LsE0WXzyIHpMD9nXpn/3m49Mzr65JbqAYVB4D4/fMfkYi\nZgXRsi6eBfJNuZg4K9cDHzqQ4BwQZpKc+ZJizrfu7+eqUQQsu4yczWMO7wig\nZ9srvU9ozbnbtwl0X+SPcKIsI02GUGg/YxgLuE0CVmTsGN+iP38O0U4xs9it\nCQTvZO+ztN3IkpwvsfweCI6Q5vuSKPUKa7Zstwuc6eoiX4UrYZ+eG5+X+mbn\nV8M0\r\n=Kk85\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"_npmUser": {
+				"name": "garrensmith",
+				"email": "garren.smith@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.9.0",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.15.0",
+			"dependencies": {
+				"pouchdb-utils": "7.1.0",
+				"pouchdb-errors": "7.1.0",
+				"pouchdb-selector-core": "7.1.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter_7.1.0_1560446930959_0.3378613009121343",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.1.1": {
+			"name": "pouchdb-changes-filter",
+			"version": "7.1.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@7.1.1",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "6a759ddc143946784ef6806bfeecdf6ff717888a",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-7.1.1.tgz",
+				"fileCount": 7,
+				"integrity": "sha512-rMdnIbQhkTbfHpOkML3AUEood7N0xfpD3CIDavmqS0BQAScOjVbOvb43uGhsUY1J4FF7QsOK8q/j/E0ODzk/Wg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDQPWJB9hl9gVuuexTeN1XwxwyTo3OPdJXqfBummbZsHgIhAImdWcMuVlWaK0ulC1HZACeNigs1frio0PKxL4yQ177Q",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 29053,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdAyd5CRA9TVsSAnZWagAAP5MQAJPXB4+Er2zLXQDMqkFq\nFMwMWz3nfj9bfCrd5dFlwpteECQFLr9NCR0968DqwGwqO3Du5tWQWhcwCIXA\nhaxssauXW1rj0X25Lw/Wx3TVq/blJpZx3qDRYz37Isa/EEMIuPCHksc3thX9\nQTPZ6WdDBtMgkT+HvZ8aKHYwSvNt5KXMb5KNTd63erLM+MaM/CaouoSZZeDs\nZrS1/NO/F/5dhlQ6wRSYuXgbl+jZPbg3qLP8mALV5NnfnVRMj8z5dN2c0fHn\n6lxQ1e06f4g33wDVqrhOtIB45uS6UGFgEjpBrhoccdulU3xgmefGHRe4Bldh\nFEVDFKKuUVZ7WSQcV7O5XE8Skm7jQLollMulscvzm0yzFsMMhb7cOPuhMepf\nbpjtCVX1MGbVMAb9i6/ieHdvaeC+5o/sKpFdieS6+VJHE9DgDFSDUSGB6F/t\nqjBOeuTCQ5NFHklsIeFk6pEz1bjWCmmpEUaNQLNF3AfaQS3SP4pQAjrDfpWe\nU6CP8iW79GPyEx5k85paC59XbfJLAWREQdXJFNQ06JtRt0n/uF/1DPLNtqFl\nbPekXs80u1/qVIn4RWJwc2VV/mN0e42wIVG+v7rGpgPDBaneVIu2Km6pkQwW\nomjztHx+MZCkwe+/uv8hpT+ZA0YUlrNZvwIfADKswP3yqA2zpezhirb6WMA5\nT3sK\r\n=sWCD\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"_npmUser": {
+				"name": "garrensmith",
+				"email": "garren.smith@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.9.0",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.15.0",
+			"dependencies": {
+				"pouchdb-utils": "7.1.1",
+				"pouchdb-errors": "7.1.1",
+				"pouchdb-selector-core": "7.1.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter_7.1.1_1560487800477_0.8064113012707219",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.2.1": {
+			"name": "pouchdb-changes-filter",
+			"version": "7.2.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@7.2.1",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "649698295f20c7b2864166a57caedb1e06f86f2f",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-7.2.1.tgz",
+				"fileCount": 7,
+				"integrity": "sha512-cXrkDSIqgG3WniIHac97OzFDHnN00RL26X9t0RoTCZo7s3wZ8lCunIPWaZLu5GoaueLzkKqyaBTNISe6wK0AhQ==",
+				"signatures": [
+					{
+						"sig": "MEUCID8pAGxQJvQFNA1na/dV8pICb+jXE+4eE81lE8/GThRxAiEA14vCmOmMsvz/YN9qsN5bf2+iLgxbCVXJ5gZTtpFQUHI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 29053,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeScWmCRA9TVsSAnZWagAAOegP/2q+zWId/3h4CiF6nmfk\nzV3sJXU6gTs1wWvcGGeoIYMWnySukj9/ilfBzHYQweFYEI317fNgRxigp/5B\nFnJ8Ytv1/BpNw9EByIdUp567m2uN9mK7bT7lNKSPTD9plYqFWKe5Kduh2W8l\n6sPjUPdKPKw9UYhDsVHTQNjYBdcT2dAIysH/J5QhLTQLzpO6SvVGLtJkozHZ\n+gJimtWNTonIE9BMjjEidX/ZtLfksqlSH26e5fc/vGuTpngRNGVbjZh36S0M\nn+dznVazmomTkWK4fVcDDNy2QS1BBC1Ka7sxFRyJUmkpuQh62M3kh8tk2vyJ\n1AUStxQSqC1E8+E/6iCw8MMMwukq9RUolkiGP1X5QZAkhzWOevlZkedqVbj0\n+lYXBkSpOMI2JPkaArl23ovSDTVydvEOPbz+0WsB9HA42v2h+7ctrEEw1laB\nYROecIL53wmDH/UGC8tzLEPJvNzbUasnu9yskPfHl9wIf9DdYORy3h+jTNTh\nBrAooNIKkgW4NbHHQOnuSHXRTbSc99So0FesRlEj7HPUKQSdnGduVDvKQfJs\nfGiNpeqsWnuqDnR5tvD/hQgxyf2rZyjE8bkM06ABDsdUU0G18Kw+/EtoEsfl\nMV3913UEcAd0qR09CX0fxcp6QAuD+uF7n6ZpglL1MTmkNN7zZpM7zVJO8NAy\nK4+T\r\n=x/E3\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"_npmUser": {
+				"name": "garethbowen",
+				"email": "gareth@bowenwebdesign.co.nz"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.12.0",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.16.0",
+			"dependencies": {
+				"pouchdb-utils": "7.2.1",
+				"pouchdb-errors": "7.2.1",
+				"pouchdb-selector-core": "7.2.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter_7.2.1_1581893029956_0.9416086083609769",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.2.2": {
+			"name": "pouchdb-changes-filter",
+			"version": "7.2.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@7.2.2",
+			"maintainers": [
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "e4d1ad5a9b57bd2d756e1ee2814463c4a91822b6",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-7.2.2.tgz",
+				"fileCount": 7,
+				"integrity": "sha512-1txJnTtL/C7zrq+spLt3pH9EDHTWmLLwp2zx8zUQrkt6eQtuLuXUI7G84xe+hfpU0rQvUzp/APYMnko0/6Rw0A==",
+				"signatures": [
+					{
+						"sig": "MEQCIDHFBlp3q/EsWZ9ABlA4NQZxxNfY+XHzACDNp3cYonhlAiBWml/7ob/c8Bf30OkB7Sh17j72cPqGu4av+UXvnpnPwA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 29053,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfHsv5CRA9TVsSAnZWagAAgjUQAIHqqsOhbf4ElVMd3wBA\n4Iy1HVBOMUKaKD0D/HA6G2TgANUeJeyCCHQ+fYBANjJ22zWQTZbqY3yVHOGi\nEXIIR9UsAtGDS3o6+sftxHEYVVgJ10pWxb+LLwmzZh6p2ZwiGf3V2hweGSwM\nfu+X1b6+iVK0FEwojCmTTb5llCg7/QFDsGMqLuJBv57p5D01xZfzOs8yf+i2\nCaP68xz1r+Do2KOPuR3oAfP3clRYpeiWxdCB0bnoH3fx8ux+vGiq9R8yOsL3\nQPNoteku/x+FUGSzQbAez/s1cfZnWlAPIU9x3IdzBw7h+sU6cl6jcSWfLiZF\noVVZdmd2kLQIH71ITXKeE53T3ry8Ur13ZNLL3/YbTu8UERv7JekB86AVVuMQ\nTQAFxAJnrPmg9jxtFdNAXWB45X84Shz/Y/ts9rOOlu8hrrBIGB8+HgnPnlyS\n4ZCsC+laVnyHKC64VhAJPigi/SiX6iEGhqqtQ4NsO+3t/6UtneYcKXFUifoP\n1o5wxCDX8OaUNT3S0lLTxYupjEy8kdwkpEUYNQdgJqq1mTNACpUWVioH3m7z\n83fNlaDZP7l/PLRlWVV+85r334jLPf/TgEOHapQhpB99slDOICT9ymlftzkD\nECBjSJ62J/02835TQRHon3pY819e4CzO1y7YemvXYHPKrP/0atLVYad308ao\n1wJ1\r\n=OlxD\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.14.4",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "14.4.0",
+			"dependencies": {
+				"pouchdb-utils": "7.2.2",
+				"pouchdb-errors": "7.2.2",
+				"pouchdb-selector-core": "7.2.2"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter_7.2.2_1595853817359_0.7457518563470926",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.3.0": {
+			"name": "pouchdb-changes-filter",
+			"version": "7.3.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@7.3.0",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "c21075143ff764038faaed41622d184b761b78e1",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-7.3.0.tgz",
+				"fileCount": 7,
+				"integrity": "sha512-9E/EC9BP9dH9sfqUBdcWlR5HHeDdWqP82MmdEtg5c8spgxttYPwqrPfSHa7T2n55IRnaIoQbVyndmfAoz9GsOw==",
+				"signatures": [
+					{
+						"sig": "MEUCIAFVhPcDQRKSs/rHpmkrFST0uGej0Zw6DYO1GWfGqKHpAiEA2nmLNYDnrUK74/+2Sz5H39Wi89r5c3cOuvmNlgU4eZI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 29158,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiVuraACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmq/CA//a2l5NV2994rA93HhEBlw06Bg44Okax1HMf3SaTCx4qHoCjvz\r\nrDPW9aU+t5Q+4S1qthdkYrae8xnXbNiLU/8EOplvL26VmDqkbmFs8FOEjjE3\r\nDCbnZevaRmVeZf2KMRUQe/k7Q3CRMZeA/yH9IKtrlCX3ciFn9TNPNxGobL7a\r\n6dCn0AZMGOm8VHCcIDYVSCrwBP9Z/FjMZ8w/vVoRzEx1ZDzAXDc/91pceAo1\r\ntRW0r+ZmN2J2oOuWK4l1rxyvKflQeiis/G2wsMGdQPaarqsxEoaglvSdm8xj\r\nQttdObWcoc+IDwveqzq/ft6xJrPHq7a42pf+CjcRO0tlIMBomusyEyfUzd9E\r\nDQs398oMA4ubXeSCkDb1CU//3gu2wnqdmQ5rVQNeiDt8T0TwWf32/4GT9MCQ\r\nMwhCXPLs0CPX2l8Dih87vO3UfyeZRirvkHjn7iMSQuy9RAQ6O3Rxt2zolAFz\r\nh3GjqDkcoItF+oP/JZQG39b2LqEzjQXGYKCzP+FWNAnhrIOpoAv50QDKfMlZ\r\nMCL859h2fsa7GgXDgx4kldv9Ew9+BCJsoyjECK4GA7DIaZEel4ot3UZgRJm1\r\nOTfSeZAASyz4vTzMaemDn1nrTY8e4dQ5ieqhwwrVtFMEn02xWfIeT3eFrZ0T\r\nQ4IhWmP8O38iaKKlFN0jIa6HcNq5pCMvS8E=\r\n=fzS3\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"gitHead": "7c6753a6fd802191d51adcbcf153c5f646786f4d",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-changes-filter"
+			},
+			"_npmVersion": "8.5.1",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "12.22.5",
+			"dependencies": {
+				"pouchdb-utils": "7.3.0",
+				"pouchdb-errors": "7.3.0",
+				"pouchdb-selector-core": "7.3.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter_7.3.0_1649863385851_0.27100384983167847",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.3.1": {
+			"name": "pouchdb-changes-filter",
+			"version": "7.3.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@7.3.1",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "2f39f16089141493f05ac88bc0d31638cf95463f",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-7.3.1.tgz",
+				"fileCount": 7,
+				"integrity": "sha512-C31zsslhlxyFdlKPdZ0013Z4GIsWjoSTgptfamrPnXEtOS6EX4jLtcmiGURCIXmZlcDGKRm8qWHL3vikwITalA==",
+				"signatures": [
+					{
+						"sig": "MEUCIElVunTSsLjG5U07aSsto8dE5cMWUat6kqI964DvY63kAiEAtRRX/LLtUHbcGpaAcRFFMyE/nTxO2G+XNEEmPP4qsWM=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 29158,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjbl6gACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrkBg//cSDvi4dTebI90j0IYW9mkEShrO7CBVcuNKiyLh8w9WX6kRIZ\r\nymo5WfXDxQsYsk/TB/e253ZEPaBjASL4EgZ2H4VDTAaxEKRxlXpRvMKOW0pg\r\n9jRPfGI8+6OijC0v/w+520fm+HP+RSw98E3t7YbVlLn+uubX6cuuzuWRE7kL\r\njlx0wDaCzDnSGZykjxPdWHoyfMH6JPoaCpqzqpVk42eK4VIZ72JcAF66B3FB\r\nR6T72rt8G9PjWUAUbaSuWIbmAO7jEZ8TXrYcc7DaC0dGy8q2V2YU3OX2u5Zm\r\n69T5K98Ch/bClzUNbh8PHKHQHjB8h5EdsRp1OHNdzinAaA5E5nro7/Q1PJ0s\r\nnJN8Twe7JnOc54WWK3H6ICoYNNmatX5JYhIVc5LosoJGxUtmw5Vg+8M9HgTr\r\nEg6uYPpXvOdRmGCwTdayoEI/jCd68BgjrgGVeYR8CmSlt6mWveTOW+YjTVDe\r\nleO1mSDvOlcn6nzpUs4ig4PRUKgS4IQC+QPMcXn1ZAf32x5k0rdksL9QJIpK\r\nR5smhwAOJ1tBKM/enOPAcYQcC9/J8vJ/VJAAeOeTbKW7RBEsy+zudVjwZGeV\r\nk8t39zthrC807HAHXqrSNQuV1kVptAdaAtBA0XoM1Gwi1MyWN+ulm5aPYwNg\r\n2yGnnVOTwRFQ01TxgJtT74Z1v1iAHNJ7HOY=\r\n=dOF9\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"gitHead": "e241480180d04552b98db168948b6a5691f7f370",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-changes-filter"
+			},
+			"_npmVersion": "8.11.0",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "16.16.0",
+			"dependencies": {
+				"pouchdb-utils": "7.3.1",
+				"pouchdb-errors": "7.3.1",
+				"pouchdb-selector-core": "7.3.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter_7.3.1_1668177568730_0.22593517892313764",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"8.0.0": {
+			"name": "pouchdb-changes-filter",
+			"version": "8.0.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@8.0.0",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "b58ba22d9ec69bd28e056be1cb36a071885629a4",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-8.0.0.tgz",
+				"fileCount": 7,
+				"integrity": "sha512-AZSlvfSgKNUsCW6OdxU3ZZRk+q2bfoDmpGQBn3QrGGlVP8sf4QYIOmy48XseKCQazlKOcP6is8NUuqrlCx7b5w==",
+				"signatures": [
+					{
+						"sig": "MEQCIFuOOaDVHNHXPC5DFhfCsB5BBSRMeRp/XZ9UBjet5TdsAiBKCAz4HA95WaPEZiNgypdtsuEbS8BUQkICNMLwrHFoZA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 29158,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjmwfUACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrSsQ//Ujjslfo2Ilzoi/FFBodsQc9G8r/CqgfZPxQIZIllqpc4ev0S\r\nnAN/rDzG3eSj95GL++ZMp05eFkzRbNUVvt0NM6JJ1MrMMXBDCL4S5omzFz5N\r\nlc1lxMFnbzB3uIPH7o04Q4AO8BtJYLu31aQkdO+VJcdEC5abCih774E4SjrS\r\n/OUizTpP25yC/BwzjDjp7msxDMwEZ4tKjHAx88NaokQ0cV0ZxNPGX6bcs7C3\r\nzwhNJCsM4j7S6e/9TZwZdxjvE+F74uuE5yGNh/5TYlZzYvFjnk2DIS3+FtXU\r\nX37+r/Dl2a3IsipvTTfoxwlA7I3nhQFpuGy9g3DjaHtYvtS0VRSIDgqkOqbV\r\n1d1ROMPvy2PkBlcnLa69R497UvUh+8kOeSk1F+jvtN8fon2un5L47ERG3Ls0\r\nPJDEnBIRQJVG2r6ptE3wneV3RJY28CSWD27QzzaSJXa5NtY6fgKHfJcBOg18\r\ncgxAxApSDwckho8zdy5v/am7ZRsAN0QPKO7J2oCC5zibomHlc0omPMBieBoS\r\nreDIz/KBOq0HvZa5+Pnc/B4M1uXpvGQzsmdtFTYk5l8K9mL5H4LRVsqtN4vi\r\nEHitD6uFlmpYqVo+SSjWBSmmPpkV0q292acIOhP9L6jcnOfym+IjPMbh1BJj\r\nydpZJ6+bYjLLDkUrVBR+jPiUg5A4dbK1Uw8=\r\n=HAOo\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"gitHead": "fec3c1639e2ed83a31ed530e832a1f4c171b378e",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-changes-filter"
+			},
+			"_npmVersion": "8.11.0",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "16.16.0",
+			"dependencies": {
+				"pouchdb-utils": "8.0.0",
+				"pouchdb-errors": "8.0.0",
+				"pouchdb-selector-core": "8.0.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter_8.0.0_1671104468460_0.4922939835987703",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"8.0.1": {
+			"name": "pouchdb-changes-filter",
+			"version": "8.0.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-changes-filter@8.0.1",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "commandoline",
+					"email": "marten@marten-de-vries.nl"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "691b71b209dda12e950672ce44de2680606a98e4",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-8.0.1.tgz",
+				"fileCount": 7,
+				"integrity": "sha512-UKgH6YRA9PnvIGHb0FuDEEqeTewgHugbbBt5vpVo0QmbWKxNiau/JiTC9mY5Hj9l7ghaIUpO0TFG95a6RXWsQA==",
+				"signatures": [
+					{
+						"sig": "MEUCIAMoi45nYFICol7yOYR4WfTDxiVo7HAHKKYkUvIscS5WAiEA8DFw2OpAmIRtuPmGR6bC5CaPLmRWsK2GWtH3aLa+LFk=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 29158,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJj5NOIACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpAWw/8D1PFR43L5hLBihpZ21K/Y1zZDJ3DqP2IKhM/ehKqrQZ9TzEJ\r\nuJZ6D/4kwVWVtONAWi6dGwjZH2W1jVv2FA+55Iz/lnKt1LOuqzCudhzwnoW+\r\ngW2mUl1RfnOx/SQMfjnnOzQUaXrZMTjrmtk8GikbnMzLOirHJW3ap6XvvExR\r\nmIy+TodMNdFU0aYiRohviD5oaNaK+jYTkipxhCEbhd5U+mR6bjl8+C+r0Bv3\r\ncY0WJvm4mTDf/OK/YjhfMjEs1k/Edue7knN5NrA4QrUhhVePXSFM0DdFmqeG\r\ncjR43EDFvmCWzHlrViCFspjlvXD80huKknk+IAbfh+TP7vj23DbaVFiwuCaH\r\n+gSPBgkWsXLspIHwn44j2pamDBhJ327uR4v2M6Zk6GWbGWEkPTL7PZ1RYKiy\r\nqBaYQuWeZAWtOYhl+4xsaWWIegth+FnakU11Pu3Kkbi9++TaroippzfIqJpe\r\nMd8NcI9jDre9BShfgns5dFuBu69OLIB+UyAPL7YTZsD1qfc4t0a1MYneiyRf\r\nlhSNqynMS/CK9GwuoNbH4W4nplToN8aPOviPZkN8P3UJkmCDCA7olIvlEwRl\r\n15XIYLoUL60Ay82E9ERDxf5D4Il0iFEo7tZwidZOk4jpR1GMaEjF8dS1AK9c\r\nQ4Jn1nfAPcTfPmoFcQp1AViO1m8GwkSvaYo=\r\n=R0AB\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"gitHead": "3c6e9efe088d8c3004833ac3d782be456bce898a",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-changes-filter"
+			},
+			"_npmVersion": "8.11.0",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "16.16.0",
+			"dependencies": {
+				"pouchdb-utils": "8.0.1",
+				"pouchdb-errors": "8.0.1",
+				"pouchdb-selector-core": "8.0.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-changes-filter_8.0.1_1675940744186_0.8898876377269893",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"9.0.0": {
+			"name": "pouchdb-changes-filter",
+			"version": "9.0.0",
+			"description": "Adds \"filter\", \"selector\", etc. to PouchDB's changes/replicate/sync APIs",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"directory": "packages/node_modules/pouchdb-changes-filter"
+			},
+			"module": "./lib/index.es.js",
+			"browser": {
+				"./lib/index.js": "./lib/index-browser.js",
+				"./lib/index.es.js": "./lib/index-browser.es.js"
+			},
+			"dependencies": {
+				"pouchdb-errors": "9.0.0",
+				"pouchdb-selector-core": "9.0.0",
+				"pouchdb-utils": "9.0.0"
+			},
+			"_id": "pouchdb-changes-filter@9.0.0",
+			"gitHead": "194c0754bb482824c3cb07d6432c7b95707d0a72",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_nodeVersion": "20.11.1",
+			"_npmVersion": "10.7.0",
+			"dist": {
+				"integrity": "sha512-ig0fo0WLgIjAniFJ19Uw1Y+oxiypqC+Skhd8BCETRVXOhLBzueRwEQR4thffyo0UayYVqldJfSR5wHSDvEVk/A==",
+				"shasum": "24016be7a968b5935a81be394dc370a062c7bd25",
+				"tarball": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-9.0.0.tgz",
+				"fileCount": 7,
+				"unpackedSize": 28924,
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIFsZISqUpRFxMGGbCxIFKPykNTxHE601F0k6oQvoRSI/AiEAgpCqp+ZhK2/J/a+MRxGcb3fRm4yU9s8Qukwypdim0Zs="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/pouchdb-changes-filter_9.0.0_1718985220904_0.9258061333115477"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"created": "2017-03-27T18:24:15.645Z",
+		"modified": "2024-06-21T15:53:41.305Z",
+		"0.0.0": "2017-03-27T18:24:15.645Z",
+		"6.2.0": "2017-04-20T15:05:34.250Z",
+		"6.2.1-prerelease": "2017-07-13T10:48:25.529Z",
+		"6.3.0": "2017-07-13T10:53:54.376Z",
+		"6.3.1": "2017-07-13T14:40:53.838Z",
+		"6.3.2": "2017-07-13T15:13:04.692Z",
+		"6.3.3": "2017-07-14T22:16:02.392Z",
+		"6.3.4": "2017-07-15T09:10:44.679Z",
+		"6.4.0": "2017-12-17T09:38:24.012Z",
+		"6.4.1": "2017-12-18T11:14:01.369Z",
+		"6.4.2": "2018-01-24T12:26:43.754Z",
+		"6.4.3": "2018-02-02T12:47:40.246Z",
+		"7.0.0": "2018-06-21T10:59:58.608Z",
+		"7.1.0": "2019-06-13T17:28:51.082Z",
+		"7.1.1": "2019-06-14T04:50:00.670Z",
+		"7.2.1": "2020-02-16T22:43:50.140Z",
+		"7.2.2": "2020-07-27T12:43:37.454Z",
+		"7.3.0": "2022-04-13T15:23:05.995Z",
+		"7.3.1": "2022-11-11T14:39:28.894Z",
+		"8.0.0": "2022-12-15T11:41:08.611Z",
+		"8.0.1": "2023-02-09T11:05:44.346Z",
+		"9.0.0": "2024-06-21T15:53:41.078Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "9.0.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"f7c74af6e79d8a839f6dd5b960c15a40\"",
+			"fetched": 1734527710299
+		}
+	},
+	"_distfiles": {
+		"pouchdb-changes-filter-0.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-0.0.0.tgz",
+			"sha": "73c25d98c19117925aee7c3d8e96093fcf05c7d8",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-6.2.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.2.0.tgz",
+			"sha": "62649554cef2c9e7e846c452eb0d35ce0811a5e8",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-6.2.1-prerelease.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.2.1-prerelease.tgz",
+			"sha": "8f59df8ac903054b7e8ca0d8983feabf309bb0e4",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-6.3.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.3.0.tgz",
+			"sha": "c19faa3f26231fcebbdeb90369dae4afd993bf7e",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-6.3.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.3.1.tgz",
+			"sha": "228ea847664525d9fad5bba0eb8fb6779b04a7a7",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-6.3.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.3.2.tgz",
+			"sha": "853fc415a8ffc60ec8397bd26cd1370ef8b6c0b7",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-6.3.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.3.3.tgz",
+			"sha": "049385d304e4a410770e827841c8b9ae9a49e57f",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-6.3.4.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.3.4.tgz",
+			"sha": "00947871a18a365a7a730a92ed29471ee5b44442",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-6.4.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.4.0.tgz",
+			"sha": "a79963b84aa90dc9a6383f561b164ea3c9e147e1",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-6.4.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.4.1.tgz",
+			"sha": "6ab66bc044681a49fee18d158a0cd114f7e75f37",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-6.4.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.4.2.tgz",
+			"sha": "7f5a94a6cc552ac0f3515b4d29351eb49fb51569",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-6.4.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-6.4.3.tgz",
+			"sha": "01fcf9dbc9d742fe5060624bb39bc459a3d11a1a",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-7.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-7.0.0.tgz",
+			"sha": "05d2969da278b0c0d5b37ce3883b787b87f0c216",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-7.1.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-7.1.0.tgz",
+			"sha": "5219582e4193615662dc6449d16959c351959b2b",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-7.1.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-7.1.1.tgz",
+			"sha": "6a759ddc143946784ef6806bfeecdf6ff717888a",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-7.2.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-7.2.1.tgz",
+			"sha": "649698295f20c7b2864166a57caedb1e06f86f2f",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-7.2.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-7.2.2.tgz",
+			"sha": "e4d1ad5a9b57bd2d756e1ee2814463c4a91822b6",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-7.3.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-7.3.0.tgz",
+			"sha": "c21075143ff764038faaed41622d184b761b78e1",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-7.3.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-7.3.1.tgz",
+			"sha": "2f39f16089141493f05ac88bc0d31638cf95463f",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-8.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-8.0.0.tgz",
+			"sha": "b58ba22d9ec69bd28e056be1cb36a071885629a4",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-8.0.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-8.0.1.tgz",
+			"sha": "691b71b209dda12e950672ce44de2680606a98e4",
+			"registry": "npmjs"
+		},
+		"pouchdb-changes-filter-9.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-changes-filter/-/pouchdb-changes-filter-9.0.0.tgz",
+			"sha": "24016be7a968b5935a81be394dc370a062c7bd25",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-changes-filter-6.2.0.tgz": {
+			"shasum": "62649554cef2c9e7e846c452eb0d35ce0811a5e8"
+		}
+	},
+	"_rev": "2-7db09eef40a9858a",
+	"_id": "pouchdb-changes-filter",
+	"readme": "pouchdb-changes-filter\n======\n\nPlugin to add the ability to use the `\"filter\"`, `\"selector\"`, `\"doc_ids\"`, `\"query_params\"`, and `\"query\"` fields in the `changes()`, `replicate()`, and `sync()` APIs.\n\nThis is extract as a separate plugin because 1) it's fairly heavyweight, and 2) it contains `eval()`, which some environments disallow. So if you're not using filtered changes/replication, then you don't need this module.\n\n### Usage\n\n```bash\nnpm install pouchdb-changes-filter\n```\n\n```js\nvar PouchDB = require('pouchdb');\nvar changesFilter = require('pouchdb-changes-filter');\nPouchDB.plugin(changesFilter);\n```\n\nFor full API documentation and guides on PouchDB, see [PouchDB.com](http://pouchdb.com/). For details on PouchDB sub-packages, see the [Custom Builds documentation](http://pouchdb.com/custom.html).\n\n### Source\n\nPouchDB and its sub-packages are distributed as a [monorepo](https://github.com/babel/babel/blob/master/doc/design/monorepo.md).\n\nFor a full list of packages, see [the GitHub source](https://github.com/pouchdb/pouchdb/tree/master/packages)."
+}

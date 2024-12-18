@@ -1,0 +1,213 @@
+{
+	"name": "pouchdb-extend",
+	"versions": {
+		"0.1.0": {
+			"name": "pouchdb-extend",
+			"version": "0.1.0",
+			"description": "extend() method taken from JQuery 1.9.0 for use in PouchDB",
+			"main": "index.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/nolanlawson/pouchdb-extend.git"
+			},
+			"keywords": [
+				"pouchdb",
+				"extends"
+			],
+			"author": {
+				"name": "Nolan Lawson",
+				"email": "nolan.lawson@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/pouchdb-extend/issues"
+			},
+			"homepage": "https://github.com/nolanlawson/pouchdb-extend",
+			"_id": "pouchdb-extend@0.1.0",
+			"_shasum": "56dab07d56830f26f83bd414375126db972e6e73",
+			"_from": ".",
+			"_npmVersion": "1.4.10",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "56dab07d56830f26f83bd414375126db972e6e73",
+				"tarball": "https://registry.npmjs.org/pouchdb-extend/-/pouchdb-extend-0.1.0.tgz",
+				"integrity": "sha512-1Il6gNNt9paAdLbFmhdnwFWD99lpjucA4NCCSN73YxfrV+0jc/HRzxFXxnXIy5VuxQxrl72DHix9QlMHWWRgLA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIDFhQuM1D285ZkrEkTbidMGPfkH1Gk8y8Wjin0+ZVX5IAiB2kwI/bmYgPX2xHRRehxEPOu5BLYfIe+9GkdO9Ws+Odw=="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.1.1": {
+			"name": "pouchdb-extend",
+			"version": "0.1.1",
+			"description": "extend() method taken from JQuery 1.9.0 for use in PouchDB",
+			"main": "index.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/pouchdb/pouchdb-extend.git"
+			},
+			"keywords": [
+				"pouchdb",
+				"extends"
+			],
+			"author": {
+				"name": "Nolan Lawson",
+				"email": "nolan.lawson@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb-extend/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb-extend",
+			"gitHead": "a4da15b9f48f48b223c5495508edfa69e73ef581",
+			"_id": "pouchdb-extend@0.1.1",
+			"_shasum": "2a1d7418e13500e88fb5520a8306d466cee11a2b",
+			"_from": ".",
+			"_npmVersion": "1.4.13",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "2a1d7418e13500e88fb5520a8306d466cee11a2b",
+				"tarball": "https://registry.npmjs.org/pouchdb-extend/-/pouchdb-extend-0.1.1.tgz",
+				"integrity": "sha512-kWTB66UZDKfSieWoL36sdAdhfrwXXVRsJA5xYpgpoUkScO3bfk1dgf4IueE6ahCbHkmsPGCDOUz/7aXkgsos/g==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIBau5XHhS94J955cdOgn84VLrKlWokOJVTAZcHv+TgKPAiEAvYTsxt+pDjsD+3OZzpQdIMq/BWM6I3Qeq6F0NHZThVc="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.1.2": {
+			"name": "pouchdb-extend",
+			"version": "0.1.2",
+			"description": "extend() method taken from JQuery 1.9.0 for use in PouchDB",
+			"main": "index.js",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "https://github.com/pouchdb/pouchdb-extend.git"
+			},
+			"keywords": [
+				"pouchdb",
+				"extends"
+			],
+			"author": {
+				"name": "Nolan Lawson",
+				"email": "nolan.lawson@gmail.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb-extend/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb-extend",
+			"gitHead": "d6658a3ebc77791a36893a658d7b178765c17d61",
+			"_id": "pouchdb-extend@0.1.2",
+			"_shasum": "d1ce511bf704ed2e29f7bf428a416acfffa124b8",
+			"_from": ".",
+			"_npmVersion": "1.4.13",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "cwmma",
+					"email": "calvin.metcalf@gmail.com"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				}
+			],
+			"dist": {
+				"shasum": "d1ce511bf704ed2e29f7bf428a416acfffa124b8",
+				"tarball": "https://registry.npmjs.org/pouchdb-extend/-/pouchdb-extend-0.1.2.tgz",
+				"integrity": "sha512-aGWbcFJNQLAdv30hExdFE8fhjsoOsyxv5s1TBNPSc6noTu4MX9n0s3h+YhWyJaE75SOTFbpmimuvXx9qONjI8w==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIGzyVes5UIQrNuuY76KiBBfz9qE999Cuen+n1CnIeD1RAiEA3bofXiP161Dz2KJJITax2Py2vxMirl0o5X83TIbFyfQ="
+					}
+				]
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-06-24T12:06:20.420Z",
+		"created": "2014-05-23T05:22:48.646Z",
+		"0.1.0": "2014-05-23T05:22:48.646Z",
+		"0.1.1": "2014-08-29T15:03:58.033Z",
+		"0.1.2": "2014-09-04T05:59:49.234Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "0.1.2"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"522b7a657fe6375b11a0a206c1414fc2\"",
+			"fetched": 1734527709556
+		}
+	},
+	"_distfiles": {
+		"pouchdb-extend-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-extend/-/pouchdb-extend-0.1.0.tgz",
+			"sha": "56dab07d56830f26f83bd414375126db972e6e73",
+			"registry": "npmjs"
+		},
+		"pouchdb-extend-0.1.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-extend/-/pouchdb-extend-0.1.1.tgz",
+			"sha": "2a1d7418e13500e88fb5520a8306d466cee11a2b",
+			"registry": "npmjs"
+		},
+		"pouchdb-extend-0.1.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-extend/-/pouchdb-extend-0.1.2.tgz",
+			"sha": "d1ce511bf704ed2e29f7bf428a416acfffa124b8",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-extend-0.1.2.tgz": {
+			"shasum": "d1ce511bf704ed2e29f7bf428a416acfffa124b8"
+		}
+	},
+	"_rev": "2-e5408eae634a0a95",
+	"_id": "pouchdb-extend",
+	"readme": "pouchdb-extend\n===============\n\nextend() method taken from JQuery 1.9.0 for use in PouchDB\n\nWe use this because other extend libraries have been shown \nto not play nicely with Ember.js and IndexedDB\n(see [pouchdb/pouchdb#2158](https://github.com/pouchdb/pouchdb/issues/2158))."
+}

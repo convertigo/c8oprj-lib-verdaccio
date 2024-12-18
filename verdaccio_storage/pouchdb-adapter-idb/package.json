@@ -1,0 +1,3338 @@
+{
+	"name": "pouchdb-adapter-idb",
+	"versions": {
+		"5.4.0": {
+			"name": "pouchdb-adapter-idb",
+			"version": "5.4.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@5.4.0",
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "3dfd7bcce75a8a65c86ccccab4d2fb1df0d616d9",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-5.4.0.tgz",
+				"integrity": "sha512-JVzNxN8zGPPBcWnD7cZGWymVG6tMh1V2EGv8MtyDchIWF1cOzYh3w9oLzqWFzJtsgw7Cro1gn4Lo+WjqhML78Q==",
+				"signatures": [
+					{
+						"sig": "MEUCIEqcNX9XBsK5B2xafYURnNRVgcb3Yip0Kit94dZhSFXDAiEAmy9Lh4Dulj8SAhUhVTWEEGVKERMgAxDIhQXapSlv4oU=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "3dfd7bcce75a8a65c86ccccab4d2fb1df0d616d9",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.7.3",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.9.0",
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-json": "5.4.0",
+				"pouchdb-merge": "5.4.0",
+				"pouchdb-utils": "5.4.0",
+				"pouchdb-errors": "5.4.0",
+				"pouchdb-promise": "5.4.0",
+				"pouchdb-collections": "1.0.1",
+				"pouchdb-binary-utils": "5.4.0",
+				"pouchdb-adapter-utils": "5.4.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-5.4.0.tgz_1465234813126_0.3508747792802751",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.1": {
+			"name": "pouchdb-adapter-idb",
+			"version": "5.4.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@5.4.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "7f05d811bf474650c703ec36add0499921159028",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-5.4.1.tgz",
+				"integrity": "sha512-JWO9z6sVlMHD/VajMvlX2E07NWzIUnxb5MUct2vIqRwOFfczWgNnYzKhR5nbLymlHxXGaNJJP1fmfIsTsEfunA==",
+				"signatures": [
+					{
+						"sig": "MEQCIGO0VZQ8Ps39/tn3oAjW9iyp6KSkSC3h4HD6A/mHpK0aAiBe4SKRFLHQ9n+1+IWFIVpd/KLg0KoX+myDY4nWX5ft1A==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "7f05d811bf474650c703ec36add0499921159028",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.3",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-json": "5.4.1",
+				"pouchdb-merge": "5.4.1",
+				"pouchdb-utils": "5.4.1",
+				"pouchdb-errors": "5.4.1",
+				"pouchdb-promise": "5.4.1",
+				"pouchdb-collections": "1.0.1",
+				"pouchdb-binary-utils": "5.4.1",
+				"pouchdb-adapter-utils": "5.4.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-5.4.1.tgz_1465389760466_0.5930229681544006",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.2": {
+			"name": "pouchdb-adapter-idb",
+			"version": "5.4.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@5.4.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "4a87910c44949b09eb1f6ee30345ba6135f7508f",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-5.4.2.tgz",
+				"integrity": "sha512-ghEDWfbDU6LQs1gXarxS1No1h9FSbE/stcChe8Ah7f/QU6U0Ph6k0OODM/EKAVxDwWiSYZGgv5CcludJXbIF6A==",
+				"signatures": [
+					{
+						"sig": "MEYCIQD1Exy50mm4Cb+4f57yxiQCN2B+CU0dZdHl7rYfCCDxXwIhAM40NXdwjOQbXSWt+5SHtL6GQAkfU5IM1GJXZX8jfexJ",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "4a87910c44949b09eb1f6ee30345ba6135f7508f",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.5",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-json": "5.4.2",
+				"pouchdb-merge": "5.4.2",
+				"pouchdb-utils": "5.4.2",
+				"pouchdb-errors": "5.4.2",
+				"pouchdb-promise": "5.4.2",
+				"pouchdb-collections": "1.0.1",
+				"pouchdb-binary-utils": "5.4.2",
+				"pouchdb-adapter-utils": "5.4.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-5.4.2.tgz_1465747172702_0.5128835861105472",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.3": {
+			"name": "pouchdb-adapter-idb",
+			"version": "5.4.3",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@5.4.3",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "e3a925b7e9eeef0ac413b61be706bb5b8b77e2c6",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-5.4.3.tgz",
+				"integrity": "sha512-gk6KDtl6C+y718isepgwOlHGFMqcXbmP6DQ3T6v2WonhAJwHRwoplz8JfYlJgSKCaRk3PjDPu/ZXOfY3lgOD4w==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDPvk9D/aBB0ZDFLaLWSK55XF+WxWv0l4Sn5MbVqj8v8gIgMnGV3BQPvFSima5hgOoe8lSVM2xtKRSi+xCoXMjpcgg=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "e3a925b7e9eeef0ac413b61be706bb5b8b77e2c6",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.5",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-json": "5.4.3",
+				"pouchdb-merge": "5.4.3",
+				"pouchdb-utils": "5.4.3",
+				"pouchdb-errors": "5.4.3",
+				"pouchdb-promise": "5.4.3",
+				"pouchdb-collections": "1.0.1",
+				"pouchdb-binary-utils": "5.4.3",
+				"pouchdb-adapter-utils": "5.4.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-5.4.3.tgz_1465820178394_0.4744384833611548",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.4": {
+			"name": "pouchdb-adapter-idb",
+			"version": "5.4.4",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@5.4.4",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "cc714b39a6b3ed5f4c441434de9503aa22645fc1",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-5.4.4.tgz",
+				"integrity": "sha512-zLR1OvEwHDlB5BHWV3Ko+GokqWYxaHlbKp8hrKuNRV0zT31iMguyc++b+gDdx55RWZIq0qgBwL8BY32BqCFRXg==",
+				"signatures": [
+					{
+						"sig": "MEUCIDUVhHsRENPlM9+jeDLDuhGdCHJtMafmS6+agkTfPxyYAiEAiOoeSH7RErXtoBYGcsYT6EafKSEoRXBsE0pMD8trRg8=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "cc714b39a6b3ed5f4c441434de9503aa22645fc1",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.5",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-json": "5.4.4",
+				"pouchdb-merge": "5.4.4",
+				"pouchdb-utils": "5.4.4",
+				"pouchdb-errors": "5.4.4",
+				"pouchdb-promise": "5.4.4",
+				"pouchdb-collections": "1.0.1",
+				"pouchdb-binary-utils": "5.4.4",
+				"pouchdb-adapter-utils": "5.4.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-5.4.4.tgz_1466088863647_0.6677574519999325",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.5": {
+			"name": "pouchdb-adapter-idb",
+			"version": "5.4.5",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@5.4.5",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "06e37d23933eeb08536d6971d2ab794b627ae5b2",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-5.4.5.tgz",
+				"integrity": "sha512-WgwBEKaJO+PYGGvEKO7lk1jguypqxBnf30nkgJr1QGYCq3VXGQdbQUcYFKQQSJyIFAvNrITIXSs5SFsU/Ig/wA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCyn6K3XC6Quir/mNL/xs8FjUDBznrUGsvePMmLV2/6cgIhAIcGhIfjek5wrB9VZyVwnm+KRn/e1a6zddW+H0xJoZZO",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "06e37d23933eeb08536d6971d2ab794b627ae5b2",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.5",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.2.2",
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-json": "5.4.5",
+				"pouchdb-merge": "5.4.5",
+				"pouchdb-utils": "5.4.5",
+				"pouchdb-errors": "5.4.5",
+				"pouchdb-promise": "5.4.5",
+				"pouchdb-collections": "1.0.1",
+				"pouchdb-binary-utils": "5.4.5",
+				"pouchdb-adapter-utils": "5.4.5"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-5.4.5.tgz_1467512287355_0.9177132688928396",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.0": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.0.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.0.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "747bed9d929f35a158fc3210d848fda0ddac48dd",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.0.tgz",
+				"integrity": "sha512-8r2Cvclq67zGfYSKZw9mbLosQtx6t8EUPrYewWDgLNUA8Sb1niU1dOKnkosIAdKYG4z/YaQhdriLc8ChHRgUxg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCIxykEqQ3jE89CS3ndqRU43GDaigtrBPKYfnq6EYXX9QIhAO0OpY2ZfaMpWhKVLsyiynViElpF5lp9uMgamqyvZK96",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "747bed9d929f35a158fc3210d848fda0ddac48dd",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-json": "6.0.0",
+				"pouchdb-merge": "6.0.0",
+				"pouchdb-utils": "6.0.0",
+				"pouchdb-errors": "6.0.0",
+				"pouchdb-promise": "6.0.0",
+				"pouchdb-collections": "6.0.0",
+				"pouchdb-binary-utils": "6.0.0",
+				"pouchdb-adapter-utils": "6.0.0"
+			},
+			"peerDependencies": {
+				"pouchdb-core": "6.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.0.0.tgz_1472873844360_0.39129905379377306",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.1": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.0.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.0.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "a43aac744d1b91d80ad7ce99910c459097514608",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.1.tgz",
+				"integrity": "sha512-h2kvLOc1345BzAwod79TEnIorsEt5cVkdZfwIGFN/ax88SK/1kmUbK7ORcEbBli+eaon76nFnOTfqhIiF28riw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDLMTmvGcWH3ISGgi0LjG43SJf3AgHHAI4HKNoexwLqqQIhAKey8kXkS9wHfg9W3av4/74p47hGOKCmQPcWLpirglan",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "a43aac744d1b91d80ad7ce99910c459097514608",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-json": "6.0.1",
+				"pouchdb-merge": "6.0.1",
+				"pouchdb-utils": "6.0.1",
+				"pouchdb-errors": "6.0.1",
+				"pouchdb-promise": "6.0.1",
+				"pouchdb-collections": "6.0.1",
+				"pouchdb-binary-utils": "6.0.1",
+				"pouchdb-adapter-utils": "6.0.1"
+			},
+			"peerDependencies": {
+				"pouchdb-core": "6.0.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.0.1.tgz_1472922046615_0.9940791295375675",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.2": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.0.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.0.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "f02fd46deb874006b2464ca27f390a9385e4887f",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.2.tgz",
+				"integrity": "sha512-XxnrMzt7O9v7cWXcmLq5GwcbpWfuTf9N3Omp03eygLI708WCS6oZe6ekTsJ2cr42/Vd9fJmL7bNTxIExgu1jKQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDIUdejMVg34jx77tPM3kvL7FUfm0Gmf2n6HTRvt1mgwAIhAPrF/Fo06hVOJl4e/I478rVTJYD+qZIuoLggkIPBRr76",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "f02fd46deb874006b2464ca27f390a9385e4887f",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-json": "6.0.2",
+				"pouchdb-merge": "6.0.2",
+				"pouchdb-utils": "6.0.2",
+				"pouchdb-errors": "6.0.2",
+				"pouchdb-promise": "6.0.2",
+				"pouchdb-collections": "6.0.2",
+				"pouchdb-binary-utils": "6.0.2",
+				"pouchdb-adapter-utils": "6.0.2"
+			},
+			"peerDependencies": {
+				"pouchdb-core": "6.0.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.0.2.tgz_1473005289694_0.3905523894354701",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.3": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.0.3",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.0.3",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "73967f3910146da7595bb068fe2e1bab3f69c88c",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.3.tgz",
+				"integrity": "sha512-lU/Kh480/gw0sp2MEQ0NXuNMdeY3+Waj3yBP6764YxHZ+XxQlcBQERe/NrlqzVTTOOUyBzO88NhRKU8spk9Qjg==",
+				"signatures": [
+					{
+						"sig": "MEQCIFvDVgg8aMi5ZZ0zmNPcU6dYJ++id9SoZS7Bo9Po71W6AiBkmWsba6ykM7tuwF+nI9+C9r2PdVhszE8SXdRzW09Q1Q==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "73967f3910146da7595bb068fe2e1bab3f69c88c",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-json": "6.0.3",
+				"pouchdb-merge": "6.0.3",
+				"pouchdb-utils": "6.0.3",
+				"pouchdb-errors": "6.0.3",
+				"pouchdb-promise": "6.0.3",
+				"pouchdb-collections": "6.0.3",
+				"pouchdb-binary-utils": "6.0.3",
+				"pouchdb-adapter-utils": "6.0.3"
+			},
+			"peerDependencies": {
+				"pouchdb-core": "6.0.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.0.3.tgz_1473096880264_0.09999651601538062",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.4": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.0.4",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.0.4",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "9a503eee2e08189bb09406ffc7d0a411fe2432ac",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.4.tgz",
+				"integrity": "sha512-kjNxx5iu5wlwGgmqsmUysd6vv+0pOd7F4tqkXqyczHe7JsvBfIImLbrvyFGNC4HrVx+oKU02BrvWvzEmXtY5kA==",
+				"signatures": [
+					{
+						"sig": "MEQCIAVnxWvyxavrTGHgiadsk4dXWHDpHT3eprbdmKHQ0dyZAiB/9/Fqcumm1l9m+iokgh96npWF5XLEVN/CrDHxVoBF8A==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "9a503eee2e08189bb09406ffc7d0a411fe2432ac",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-json": "6.0.4",
+				"pouchdb-merge": "6.0.4",
+				"pouchdb-utils": "6.0.4",
+				"pouchdb-errors": "6.0.4",
+				"pouchdb-promise": "6.0.4",
+				"pouchdb-collections": "6.0.4",
+				"pouchdb-binary-utils": "6.0.4",
+				"pouchdb-adapter-utils": "6.0.4"
+			},
+			"peerDependencies": {
+				"pouchdb-core": "6.0.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.0.4.tgz_1473099928225_0.5199648791458458",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.5": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.0.5",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.0.5",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "18519f2985f3d9d3ab50d824ff6d2d4d8340ff01",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.5.tgz",
+				"integrity": "sha512-brOwKMuau2urSiejdLeSLlhMSvBK/36zhzh/QZT0ZpDxS31oWPSXzA6ynLDrvZJ06hmJIXCZfQwLqgaHmYi1Rg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCq2SKVTdf8uoVFLEC82hAHW0RC320tBUdbwdzqtYShUgIgB02omD1aEP9n2JXH7zXyd/U9CpbQla3pc0FtjaEpM+A=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "18519f2985f3d9d3ab50d824ff6d2d4d8340ff01",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-json": "6.0.5",
+				"pouchdb-merge": "6.0.5",
+				"pouchdb-utils": "6.0.5",
+				"pouchdb-errors": "6.0.5",
+				"pouchdb-promise": "6.0.5",
+				"pouchdb-collections": "6.0.5",
+				"pouchdb-binary-utils": "6.0.5",
+				"pouchdb-adapter-utils": "6.0.5"
+			},
+			"peerDependencies": {
+				"pouchdb-core": "6.0.5"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.0.5.tgz_1474080148393_0.7075828840024769",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.6": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.0.6",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.0.6",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "18b27cf14f23043b71d91fadfdbbc89f4cb961bc",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.6.tgz",
+				"integrity": "sha512-ajl4y/priMk35bfCiE+fC8Tqne5T4kkK1qm02M99UkG8jKq5B2G6lAACdYSFoOJEAezA6TpSC7MP7+LCxVvvzA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDvYlJMQhoxwMZweRZOiQG/5BkBlcdjwysqkbY+8IqENgIgDO4uDuNUJhVpb2VLBOfus3gQ0uKK6cSC11HEY+/3J40=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "18b27cf14f23043b71d91fadfdbbc89f4cb961bc",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.7.0",
+			"dependencies": {
+				"js-extend": "1.0.1",
+				"pouchdb-json": "6.0.6",
+				"pouchdb-merge": "6.0.6",
+				"pouchdb-utils": "6.0.6",
+				"pouchdb-errors": "6.0.6",
+				"pouchdb-promise": "6.0.6",
+				"pouchdb-collections": "6.0.6",
+				"pouchdb-binary-utils": "6.0.6",
+				"pouchdb-adapter-utils": "6.0.6"
+			},
+			"peerDependencies": {
+				"pouchdb-core": "6.0.6"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.0.6.tgz_1475238622087_0.03980349819175899",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.7": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.0.7",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.0.7",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "cb043f47dc7ac231309604c333e329aa03cc6e4a",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.7.tgz",
+				"integrity": "sha512-qqdDyA85tm0Hg86IVIah3aC3DuCATvCLO/6HABLUBquHn4YKsFaquCwr5huBUPE3jNEWYzX/99brjjeODhzpPA==",
+				"signatures": [
+					{
+						"sig": "MEUCICWT2FtwpyQua+siFNPxFAf5YsxetOOwCs6XN79BfaSxAiEA5t/5elrL9nKk502zTCxR83Bj7jhprBKiO4oLj045f88=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "cb043f47dc7ac231309604c333e329aa03cc6e4a",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.7.0",
+			"dependencies": {
+				"pouchdb-json": "6.0.7",
+				"pouchdb-merge": "6.0.7",
+				"pouchdb-utils": "6.0.7",
+				"pouchdb-errors": "6.0.7",
+				"pouchdb-promise": "6.0.7",
+				"pouchdb-collections": "6.0.7",
+				"pouchdb-binary-utils": "6.0.7",
+				"pouchdb-adapter-utils": "6.0.7"
+			},
+			"peerDependencies": {
+				"pouchdb-core": "6.0.7"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.0.7.tgz_1476575223873_0.5415200081188232",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.1.0": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.1.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.1.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "67fd54e951e7391436ef16bf8b9fb8feb76b8471",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.1.0.tgz",
+				"integrity": "sha512-UJ2ifHK04D6VLS6fSXPFijS64cCLVqA0+LMbK0AEj9uiRc1ZTVopuXC9hAIJBtzUx9WHkn9uq67jXsFqthpf4g==",
+				"signatures": [
+					{
+						"sig": "MEQCIB17h3eA2ye5/sg/BO0/VhjrWFJ4AAsC52OBDYAy5FruAiBfUbkZRi30r9FiPnwc6YQkrpeHv8U88WyRaoRofZt/bw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "67fd54e951e7391436ef16bf8b9fb8feb76b8471",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.9",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "7.2.0",
+			"dependencies": {
+				"pouchdb-json": "6.1.0",
+				"pouchdb-merge": "6.1.0",
+				"pouchdb-utils": "6.1.0",
+				"pouchdb-errors": "6.1.0",
+				"pouchdb-promise": "6.1.0",
+				"pouchdb-collections": "6.1.0",
+				"pouchdb-binary-utils": "6.1.0",
+				"pouchdb-adapter-utils": "6.1.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.1.0.tgz_1481558747961_0.8437424097210169",
+				"host": "packages-18-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.1.1": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.1.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.1.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "9681f861630f22053f43eaf949b48b55f26fcebe",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.1.1.tgz",
+				"integrity": "sha512-kuxD/2ER50YdeDNWDKZJRsnTrVVY81BBaoUO4L5PkquNn4sp1LrKCmTuL98eSDi6Z59vO5JICNKs+s87rcmLXg==",
+				"signatures": [
+					{
+						"sig": "MEUCICqPmOyFgO2R1Lts49ogk7ZcN4v84N5vfCw6TJXDBk6AAiEAjq7V3rVTCvyzzYmr+gg1DgdvW+tV7TQgId+OfW7U09A=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "9681f861630f22053f43eaf949b48b55f26fcebe",
+			"scripts": {},
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.0.0",
+			"dependencies": {
+				"pouchdb-json": "6.1.1",
+				"pouchdb-merge": "6.1.1",
+				"pouchdb-utils": "6.1.1",
+				"pouchdb-errors": "6.1.1",
+				"pouchdb-promise": "6.1.1",
+				"pouchdb-collections": "6.1.1",
+				"pouchdb-binary-utils": "6.1.1",
+				"pouchdb-adapter-utils": "6.1.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.1.1.tgz_1483621920397_0.5794616148341447",
+				"host": "packages-18-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.1.2": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.1.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.1.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "06f0f432705f6e9ae89c2aba6f08f0b7a0d83eff",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.1.2.tgz",
+				"integrity": "sha512-SBOmP2oOoJPfzDV6uyZn72EDDuKNhVYz/KepTPIfetRZgGYw8ALs5da6gFl/9Ss7/MqNs1Irqz2bhXlbEa+L2g==",
+				"signatures": [
+					{
+						"sig": "MEQCIGzkGcMVJrsuulJ+eTDRCicateB0pxbnku11y2E7upx+AiBIBM67VKuxELf9ivoZMQuAtRRnrteSx2DszQ+xMeBIZw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"_shasum": "06f0f432705f6e9ae89c2aba6f08f0b7a0d83eff",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.9",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "7.2.0",
+			"dependencies": {
+				"pouchdb-json": "6.1.2",
+				"pouchdb-merge": "6.1.2",
+				"pouchdb-utils": "6.1.2",
+				"pouchdb-errors": "6.1.2",
+				"pouchdb-promise": "6.1.2",
+				"pouchdb-collections": "6.1.2",
+				"pouchdb-binary-utils": "6.1.2",
+				"pouchdb-adapter-utils": "6.1.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.1.2.tgz_1486487278550_0.7187914019450545",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.2.0": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.2.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.2.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "288e46e45d0d6c0133c5759d0c419a96996362ea",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.2.0.tgz",
+				"integrity": "sha512-JfQyl9q0DNX/987kc+clUU62Xh1ErHoswJB1gqoWt2emUudgH60+QBfznsmy0RlcGoZGviuUqdsm8VER7iMqJQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQC9KhChCmqVBp+ihqyUhTPJJ3RbXEXi8RFPJ9Yt+vQTfAIgJELs6WZADp4uqqQXsdt4DJmX2ZTjJeDGq904TOgsZOM=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"_shasum": "288e46e45d0d6c0133c5759d0c419a96996362ea",
+			"scripts": {},
+			"_npmUser": {
+				"name": "garrensmith",
+				"email": "garren.smith@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "4.2.0",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "6.9.4",
+			"dependencies": {
+				"pouchdb-json": "6.2.0",
+				"pouchdb-merge": "6.2.0",
+				"pouchdb-utils": "6.2.0",
+				"pouchdb-errors": "6.2.0",
+				"pouchdb-promise": "6.2.0",
+				"pouchdb-collections": "6.2.0",
+				"pouchdb-binary-utils": "6.2.0",
+				"pouchdb-adapter-utils": "6.2.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.2.0.tgz_1492700692714_0.38499629870057106",
+				"host": "packages-18-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.2.1-prerelease": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.2.1-prerelease",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.2.1-prerelease",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "fb964b53769120343f9920d2ac3a20d46216cc06",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.2.1-prerelease.tgz",
+				"integrity": "sha512-tp83tIZdpchrjOq5ipxJxJvHrUbxZ53QwkQw8/V9pCCE1aXGb1N8FriiZbWr0Q8fJmFCOW1VyyNpY5esQ1kwRA==",
+				"signatures": [
+					{
+						"sig": "MEQCIErPw7Akpg5bwfgXjlf9Ik81Z2WAoTilz2Ku8r6gi59WAiAYF3KcBPNUQSpm8RShOhotLF/B/snGHSUd0wZdvYJzDg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"_shasum": "fb964b53769120343f9920d2ac3a20d46216cc06",
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.2.1-prerelease.tgz_1499942823560_0.845901157008484",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.0": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.3.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.3.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "97b793bd3024d1f9a40ba7df6f948037ea12739f",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.3.0.tgz",
+				"integrity": "sha512-jJlyFNhjHttqq7nrq2b5uUNdY5Sx/DH8/4VUCBDDVv8z5rbYSzJGYIzalx9mN9531uIUYQIFKfRHEcPXbcwNwA==",
+				"signatures": [
+					{
+						"sig": "MEUCIAHFUa52ed2Qsu5Md5oaCmdPI+rF/vvdWrGmP14tKu0DAiEA0HVNTOSfWHPXTfb+Puep2WKIXRCfr+QRQPmSPlntaDU=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"_shasum": "97b793bd3024d1f9a40ba7df6f948037ea12739f",
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.3.0.tgz_1499943188936_0.842547012725845",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.1": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.3.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.3.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "ddb26f17c970ee64a5766b0f8ab66b2de66135cc",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.3.1.tgz",
+				"integrity": "sha512-dRm+Iq6VKpNYZyDKYLzroHvykokt+//GR37qlcSXcrlReDzMWuYAeG5+Qklsy07kok9kSxOuZyE3YctAZ4fd8Q==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDx2G0krFj3hmFDgRhRgy5f74duvTIpwQBSkIFZZDETrwIhALXQBNCercx4yVb6f4PVa2dFZeAE+ecCs74QTtLgu7J0",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_shasum": "ddb26f17c970ee64a5766b0f8ab66b2de66135cc",
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"pouchdb-json": "6.3.1",
+				"pouchdb-merge": "6.3.1",
+				"pouchdb-utils": "6.3.1",
+				"pouchdb-errors": "6.3.1",
+				"pouchdb-promise": "6.3.1",
+				"pouchdb-collections": "6.3.1",
+				"pouchdb-binary-utils": "6.3.1",
+				"pouchdb-adapter-utils": "6.3.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.3.1.tgz_1499956806649_0.1762079473119229",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.2": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.3.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.3.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "b8db2c0ec09af7bd72e15f4b75f87d5c107c4f4d",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.3.2.tgz",
+				"integrity": "sha512-kwl03IxZkL3ddWvbDCHjRPewW1OB8Kv6ibUfo9NEGYeQFK8gYwl+RotxJ515RPR03hMr4wy26iiXVdEDZ+ozUA==",
+				"signatures": [
+					{
+						"sig": "MEUCIGDjgmG3ASMQEmKhYzHf/a7FmFfn6WnOZT9GKtWlxL8uAiEAlddrRIonElI4SD6oWUVduKi7lqaus7E3zQNKFiJ1tVw=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_shasum": "b8db2c0ec09af7bd72e15f4b75f87d5c107c4f4d",
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"pouchdb-json": "6.3.2",
+				"pouchdb-merge": "6.3.2",
+				"pouchdb-utils": "6.3.2",
+				"pouchdb-errors": "6.3.2",
+				"pouchdb-promise": "6.3.2",
+				"pouchdb-collections": "6.3.2",
+				"pouchdb-binary-utils": "6.3.2",
+				"pouchdb-adapter-utils": "6.3.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.3.2.tgz_1499958738087_0.1290056831203401",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.3": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.3.3",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.3.3",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "7f6a59687ca9012c36b85ba82bfdb7b2200df773",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.3.3.tgz",
+				"integrity": "sha512-hYY3+WopP5A0fuef0CefVFXFhbGcfSQl2cS7qgn26wmwXOJp7BaUNg9+SMZ2dvl95vvGD3zWep/HX9hQ6giCmQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQD2961hwAe2yc7dpjFL0/g9ha7j6gqiGecvbLMa7j5RkQIgIypmgcfUo4tGEam+l1dwBtTDvxU56DbuLaOWApALFrg=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.0.0",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.0.0",
+			"dependencies": {
+				"pouchdb-json": "6.3.3",
+				"pouchdb-merge": "6.3.3",
+				"pouchdb-utils": "6.3.3",
+				"pouchdb-errors": "6.3.3",
+				"pouchdb-promise": "6.3.3",
+				"pouchdb-collections": "6.3.3",
+				"pouchdb-binary-utils": "6.3.3",
+				"pouchdb-adapter-utils": "6.3.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.3.3.tgz_1500070511806_0.967442829394713",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.4": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.3.4",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.3.4",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "a9e5f5fd71fdf4403f9e6f84c20c00a9da6e6923",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.3.4.tgz",
+				"integrity": "sha512-pNZjf6Qosno7vhIMxTccOmHGmJ4zwoAA289Gg0twcIYstK24IIDLHqed81gciVQZ5s+/oWsiAX3n6UFMDY967Q==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCqFnXEgMz7ZFqaMvgpIvCWnLpaFUkoxAc9AXPGkNLnVgIgF8NZjrwIBP+Wzv9PPwohWnY22eP52RbYJpo3PV/d7+s=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.0.0",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.0.0",
+			"dependencies": {
+				"pouchdb-json": "6.3.4",
+				"pouchdb-merge": "6.3.4",
+				"pouchdb-utils": "6.3.4",
+				"pouchdb-errors": "6.3.4",
+				"pouchdb-promise": "6.3.4",
+				"pouchdb-collections": "6.3.4",
+				"pouchdb-binary-utils": "6.3.4",
+				"pouchdb-adapter-utils": "6.3.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.3.4.tgz_1500109796615_0.26267385855317116",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.0": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.4.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.4.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "3f65b1f290e0f2ccb5c76ef95514977b00a5dac4",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.4.0.tgz",
+				"integrity": "sha512-3a6h5TOsqeO6m9kZ10RQscLMAz/Oou1GGBRqmQa9giY7P5G7FcKTCdsDsPz968gQ4tjp4tNeo+6E8tA+MJ2NFA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDwy+AcvKhBcDuPE05C8q2e7YXW58Zjo3dlOGdYkSEWKgIgRUUt+2LwI6/3sHC3uA//l1+ZMQl4yeHM921Ly984PC4=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.3.0",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.5.0",
+			"dependencies": {
+				"pouchdb-json": "6.4.0",
+				"pouchdb-merge": "6.4.0",
+				"pouchdb-utils": "6.4.0",
+				"pouchdb-errors": "6.4.0",
+				"pouchdb-promise": "6.4.0",
+				"pouchdb-collections": "6.4.0",
+				"pouchdb-binary-utils": "6.4.0",
+				"pouchdb-adapter-utils": "6.4.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.4.0.tgz_1513503462801_0.5125622465275228",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.1": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.4.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.4.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "91a60c2f7bf2221b34a22f10a9328101960b82b5",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.4.1.tgz",
+				"integrity": "sha512-wCaBsn2sw6mz6VpP6WEHupt8sh37miZp9BpvrOJbICpSxbFne5K4GrwMBMPVCczSbo10oHhJpknUbuCTXyWHvw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCYaZC0W8KvEsa5Lft1Nw9V9puUhOP2WiIw7PwJ4WTfyAIhANlUDsWaROsk8Dm2wXDFL/tKofCdim2DxgRAn3Obv0PM",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.3.0",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.2.1",
+			"dependencies": {
+				"pouchdb-json": "6.4.1",
+				"pouchdb-merge": "6.4.1",
+				"pouchdb-utils": "6.4.1",
+				"pouchdb-errors": "6.4.1",
+				"pouchdb-promise": "6.4.1",
+				"pouchdb-collections": "6.4.1",
+				"pouchdb-binary-utils": "6.4.1",
+				"pouchdb-adapter-utils": "6.4.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.4.1.tgz_1513595591803_0.569460284197703",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.2": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.4.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.4.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "79e61b2a3ea168cd6fa721abaacbf559cbc4815f",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.4.2.tgz",
+				"integrity": "sha512-aJcNh3Ji4uwKlR43kQ05MIL9JlWKSpV5M6Tue0XDqbG1KaUbe9lCN0C4XG6bsmRRtE6FVHtrJ37gzah7AJdUjw==",
+				"signatures": [
+					{
+						"sig": "MEUCIBnuSPS25sNKcVdkHkSd9aLo0vyvSO3bO/HzfBeHikZKAiEA0G2i+QyDotIMMGgzsF/74Zh5NKRNUD1VEPVTQHQgiOw=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.3.0",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.5.0",
+			"dependencies": {
+				"pouchdb-json": "6.4.2",
+				"pouchdb-merge": "6.4.2",
+				"pouchdb-utils": "6.4.2",
+				"pouchdb-errors": "6.4.2",
+				"pouchdb-promise": "6.4.2",
+				"pouchdb-collections": "6.4.2",
+				"pouchdb-binary-utils": "6.4.2",
+				"pouchdb-adapter-utils": "6.4.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.4.2.tgz_1516796759946_0.8213555833790451",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.3": {
+			"name": "pouchdb-adapter-idb",
+			"version": "6.4.3",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@6.4.3",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "5610ca073aedf75723371de6fd906b7eb5962d0c",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.4.3.tgz",
+				"integrity": "sha512-AV/6P6oDQsFodBkI1aKthjxgdaIZhpivrSUHMkZFHO1tKGIUJL47uQgFl9EiTAl1Fnb/d3l9CKo7A8Gr/Ak7Kg==",
+				"signatures": [
+					{
+						"sig": "MEQCIANR0AdMo8ZE01noPdif0LAltPN1wsUPNAQvzFalBePeAiAUlSN78BWqcVYAjnrwZyFLh/DJvz+nNa5REF8Bu953KQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.5.1",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.9.1",
+			"dependencies": {
+				"pouchdb-json": "6.4.3",
+				"pouchdb-merge": "6.4.3",
+				"pouchdb-utils": "6.4.3",
+				"pouchdb-errors": "6.4.3",
+				"pouchdb-promise": "6.4.3",
+				"pouchdb-collections": "6.4.3",
+				"pouchdb-binary-utils": "6.4.3",
+				"pouchdb-adapter-utils": "6.4.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb-6.4.3.tgz_1517575620345_0.22447929810732603",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.0.0": {
+			"name": "pouchdb-adapter-idb",
+			"version": "7.0.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@7.0.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "3ed6584bcc5490e8cea602935ff9db2542a2a243",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.0.0.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-T6uhetqLjNM5J+9utx2+M7ff+N7izJ/2NfplaVhZJI2XwiaRZU5Zl/Y5vqTCBTDOw6ZhJIMmF1Y4jfZQs0wmnQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIGV2u2dav8ofIRrdmbQMSciXqbIvLeGczgAU2OndpyfVAiEA76K5f8Ak8JuceRi4K0cNbptidBTXWKE9wxEJnJNYIVU=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 126449,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbK4TlCRA9TVsSAnZWagAAOrYP/3Dz4jDmCqBQ3KCD4ndW\nRhR0GGXgbVMr0EPV7piifdFclvHLDtl2RTZvDvkLcfsR3ix77qF6oF42d5kY\n9qFOLcDf25I8JxJ6FLLwnm6gm8CQiSIcZIZR+ffmIcB+xpoE3hB2utCIVN3J\nBgEZW1ENsJVzpYINF/kWMuI7jKDMJO8z9z72wHk2Qpkj0b4F3IeMB/s+gbBr\naUwuvit1pyyMcjZTTJ9B6b8gNtiftmkp3gyhxkbDgRw/YcuytQA49qLcKCHy\nXI8sah0dDilrn1Fm8N/5ixlWI+PSRfRzQjGSpa0h88qgt06nlTVBHnoESp7k\n7fNhNirKEg5rzXU3niAx377PAD0dk4zD7RpkgkdzPAUieUW19q7lo5S/WVgS\nnxTnPjsh4SV2z0XCQmg0xcVjh3kwedgnJu6yzqf559kfseDS0LpoeV8JsLYy\n2Rx2FeOgUSJFSxQCD5YFZAiAKXm1WqTvseiP6GbI5HYgH3yIWCAr1Qtyx3la\nGyPZsSvUwn8UCl6Xu4zOOJAFLGVK8Ect6JhTTKtD/Y+2vgbo+1Ylb2jAlYq7\nmSFOYjpgMQCEzn17563rGJIMm0CHDYFXgv0tGLHsyvd5pFzn1d95VRtoBuIo\nesEJwank9+SROiDQicyqh9FpgGT4s86Oem9QH9p4LsVOA8d2LlbtD4isK7uJ\nygot\r\n=YG4t\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.1.0",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.3.0",
+			"dependencies": {
+				"pouchdb-json": "7.0.0",
+				"pouchdb-merge": "7.0.0",
+				"pouchdb-utils": "7.0.0",
+				"pouchdb-errors": "7.0.0",
+				"pouchdb-collections": "7.0.0",
+				"pouchdb-binary-utils": "7.0.0",
+				"pouchdb-adapter-utils": "7.0.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb_7.0.0_1529578725458_0.24906080551322018",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.1.0": {
+			"name": "pouchdb-adapter-idb",
+			"version": "7.1.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@7.1.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "d3feb3cb72b7a413d5a23e1af78bda1b4f317a54",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.1.0.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-sH+FHQHgtIyXR396st/ylJNvnCxr8JAe8E6An7+6rRQbDhmXs04GsjA1hdiDICv1XsHmUtm1u3R4+iWmVcOC6g==",
+				"signatures": [
+					{
+						"sig": "MEQCIBnzYmABpXHJu2SuTV2skV+J234pN5K7lUb8BKXAUktOAiAcwBVaLDpmrvc3K17XW4TxQluzocyB6e8i35rLWRxbzw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 126449,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdAoerCRA9TVsSAnZWagAAWV8P/A1Dr2uTNGPH5HG345iT\nXZMaxGjdHB+C8PkFkScei0k9jqk4blxAG8AF/L5nCWSkuLlVDsK3JhS6ZvhT\nTx5GKMTMzGKX4SJu3Iww3lSDsPRWoU3y/6wwZdelumLe+wIUmaF/L48mPDVa\ni9pfzhmfLdbWagGStJybY7Ur9IjCyC1+sN6P7P4YNKP3LFK0IYXh0wBIjZvh\njZIoeJvnFzQ2OKRdGtu3TORqHKK2jc7ZEXdz+aYY6TqVHYVANB7ojZnDN3Qh\nO5oVCsHAJtXILUp/c5YO/G/IeEpwOCG+PqCe18o9Am+UE1vcDqEmLowRny0v\nFI8nzczxBS4nU+Q6FMtdiziMB1npzif7lA3o491K2vXrvpYyvvm+a+5dVeMk\nYlRv5sm4zAjqLapz7TB946i3BHU0CEN9GPXFX5CG4qCjiZdeUuwyqa4MIh+s\nQNV6pnEylHOmz5PtHZiJjROByDtLTAfs3sQ14gkP5xlmkXuYZeAJN7Tmm/1b\nxcj8C33fETQU2hlc2cFLOgwYR5imeUjnw25/Y0nb0HjKtusiqVHlz70eOCz7\nkG5PXqmpchR6N0EIMaEhtAzfFxs3cz962BW4hp9WGaoUDs30jpecUmsathR0\nfgSAKl4nxUoRclUAR8Y4169HldqhtZWVUECOBMhfQXRoupftgAQ1Po29Qw5s\n+ZPo\r\n=lOQF\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "garrensmith",
+				"email": "garren.smith@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.9.0",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.15.0",
+			"dependencies": {
+				"pouchdb-json": "7.1.0",
+				"pouchdb-merge": "7.1.0",
+				"pouchdb-utils": "7.1.0",
+				"pouchdb-errors": "7.1.0",
+				"pouchdb-collections": "7.1.0",
+				"pouchdb-binary-utils": "7.1.0",
+				"pouchdb-adapter-utils": "7.1.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb_7.1.0_1560446890983_0.6743647435818358",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.1.1": {
+			"name": "pouchdb-adapter-idb",
+			"version": "7.1.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@7.1.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "1c62edc4a0f5713422daa488ddcdcc5bfe68d130",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.1.1.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-GtJhxg1i8waNX11fpibUOcgK0BoDm9ad+R4/mIP05OU7H6P77EVqlWyuJ+i3H0A5Vpwhndcmkpn45LbStTfepQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIDGctzO4YXCBU3/H+IzDDyZJmnPXQjxprwZOYk9m9Q2hAiBLonyrRFlSdpYjCTtn3UDqhMm5b4Bj/B8rmC/COsLnfg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 126449,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdAydQCRA9TVsSAnZWagAAezIP+gIggzb6baCREjlfWABD\nlvfp1wQbCjq09wQTpZWwb6rIZORemrsgCJU0P8gk+Id2YWTB1uc/45Ok0Lsl\nu69GMyWxu/btujWFIbjz/2js+wtE0bNF783xZM0WZ+dvbXvGJ/3JYN16Yz7a\nAOeub6Zrv39Y0h9S6YOYItvzRNPoBhjCdIOCs5luR5/TQwcOWOCWhSs66Ve2\n6k12ymEXQy8JLNZH5+DaFDsGYTO7nDoyoQi1vtRO7hCYt9kTP72vCnmkFz6E\nM+QUtcmvuLQTQU4KdRyOWLPSKnMYjziZqMAykqH2OESLwa/BYT1kJW4J3H0O\neRRNegXSOc8E5pEnlI1hCUIFF5DY2vi8XGzK64+yiHODketsoei+BDsw4Ed8\nS6MZWy2PTqmRxogq87xmehmU/fku6VN56QW2exxBBfdBMPHxbuW201RLr1xY\nwKrXeLu7yQzrEvWHZHnWqJi+aw9/FFqwAZtSoRNT/gTFC/lt7XzmE4Awyd//\nYsG6AVKWmous23KekVXK9H9UEOM8Yp2U9kHiJkoOOrdqJ7pUaeNLaBZhog6N\ne0wKSNhN2wozwFkh9MlTeXp87LS+r2tn+wNQaO34YrOa/WcPFvOZSxijX2bE\nV0dHADzLYDnuN519Pd8xD4s/TOhVzIc4Zv4q+pFyQYTD0Whj7k4bln32WsgJ\njJjM\r\n=sX2o\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "garrensmith",
+				"email": "garren.smith@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.9.0",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.15.0",
+			"dependencies": {
+				"pouchdb-json": "7.1.1",
+				"pouchdb-merge": "7.1.1",
+				"pouchdb-utils": "7.1.1",
+				"pouchdb-errors": "7.1.1",
+				"pouchdb-collections": "7.1.1",
+				"pouchdb-binary-utils": "7.1.1",
+				"pouchdb-adapter-utils": "7.1.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb_7.1.1_1560487759199_0.5251195358642877",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.2.1": {
+			"name": "pouchdb-adapter-idb",
+			"version": "7.2.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@7.2.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "43acdaccebd180c78e7dd45a6d207a6483653465",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.2.1.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-wr6clFBxehmJdtr9mdl+LE51W572wdA8dm2CN8s2E4jmHgP4juj/kY+XBP2kGStdu20VxL9gF97599VSt1BsOQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIBA/oDf2kZr8nnzRBu9soHoXYlRQh3xMd4Og+OJeA/SJAiEAzKQ+p9L5opYthkHdzqhAKOFctslOmTF/TwnvotzOl+0=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 127041,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeScUyCRA9TVsSAnZWagAAciMP/3uWDVAh5tUbd4mzqLP4\njZI05tqsRVo+MYv2l/PpaeJJi4Tzey0RQQJg0zB4VynX0aYmmTBCLGlA/GKi\nJeJF/fdoJ5y7y8WmyWuUNSkOLN+r0a4xq2GxK7Saz1Q01kAe01dTjQe5tav2\n3wZCFbVQvplLATtGzx9IDi7LBBC+M/pubUVcsWKHrH1Zw83Ekttl9N+m3Y+h\nVdkmfN4UF3qPep80XRceIFpTRN67uaQOtDk4pbfTS+OrzQplq/MTBtrxO2hW\n9MEX7OKvnbMROZb+FoLVVNA+At1kYGNXZ+RM45NHFsXOw2yT6uS4eJWzHmap\nOXSw5OZDpJnxDD00t1Yk1ZuHzVHkBH7yN7qMtOKQsbqF/z4NgxyfEzsq5eVX\n5YmmpFQH40AOcSD9bal9kKee7pBaUOorZBf/LySdcuckH9ad4queM0FVYtq1\nmlPYFpmL4VBaltDR/Q+VxIAMA3cwjHbslIEidROqkqk3n+YpbP9uYfTlPMWE\nycy3e4jecnTHvH0rl0oZb9HrrKvcN6tDa+n0AG0D1hfhFOjyEOVUW9Cpl7/Z\nONM9ZWjQeleeniDbs9z/jjtaLecw+DwDV+fLxC/Pa0gAgAegCSKEWNNhnZyO\nXEOVoihMYCuWTdYir+0Zmg0k9NA1NV/9TUhXqyaVofdpRfvXadm4A7Qnddr8\nHBWl\r\n=dUaF\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "garethbowen",
+				"email": "gareth@bowenwebdesign.co.nz"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.12.0",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.16.0",
+			"dependencies": {
+				"pouchdb-json": "7.2.1",
+				"pouchdb-merge": "7.2.1",
+				"pouchdb-utils": "7.2.1",
+				"pouchdb-errors": "7.2.1",
+				"pouchdb-collections": "7.2.1",
+				"pouchdb-binary-utils": "7.2.1",
+				"pouchdb-adapter-utils": "7.2.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb_7.2.1_1581892913556_0.1295614925087445",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.2.2": {
+			"name": "pouchdb-adapter-idb",
+			"version": "7.2.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@7.2.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "0a4b6c6f6639f93e2e50cb20d50b5fb6eaf1e80e",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.2.2.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-swSVQFm/p5CPKP0zyOmtv/hFpTyjtDlPAKTpxH4gEm9V+K30kDZ8ciAHaCkGEBSfWfZFYUI8/VOnAL2L0WIIeA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCh0UP1bmx5SR+kidc353wlOx5KAOEGrXAhLGrYa2WSoAIhAKUPW7eQhlnIDzkfHtk/kONzUAxfeb6Or61TbC4VFBAa",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 127041,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfHsvTCRA9TVsSAnZWagAA7tkQAJAzj51CcAmybRx+wQLd\nr67VMGK4tDSy1p8cF9J8ntAdpkBNUnOcuAGEpJixi8X/Ga/KhxqElGhLINzH\nLazFks5hO1YhjafpTzMY7nCa7fTgBxhZz343X3fNF8tS4cEN8l9V0xdfaEJL\nH4+fPKcIlqtPc3/lH5ZTZcwsZShNpr66RSC4u9F1GWBhMzIqAY7hyw6xEtZF\nmTTrCFQFSWecFw/gzYAtOmfSG6QejG6UaBFaRx3StawAHC1cbxyYJ0EWEqkE\nchg9OxuTFnrPrqHBM2rR/5epV4E7BuL5enKSND+lNo7KNJzGp3JzHCbrZn/u\ncX8mZm5XyTyfB14/LFkBq+iELN6/XxK498m5Wy5dL7wHbV1z9sV0yHBv/lBV\nqksYJ2NelRuGrLpFmYBOvSYZffPc65BTBuKhgyTT8KWg3pYmZBznrdD/zQsI\n27ImyzyJvmrVZnNx6MLPCM/pPs2kbt6u5o3xUrNTsaqe4l0LZD1Tlug88NtF\nPjcYeXq1oHTuca20bYxvfKBtJc/769a0QfGJFlCgzZNRZ9vxEBNZsVkmqHt6\nNeDcb1N1SGVY8ZAxCl09ef7yTXDMxs0IPddk/f9F1PtEBEP43nPgFSW8azgc\nOhYDPeSvqgiucibggAr7Vb9m2B36s1gLDUNRjTuebTDkXqWQ6TCzcVCYhVk/\nwDCf\r\n=6Ot1\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.14.4",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "14.4.0",
+			"dependencies": {
+				"pouchdb-json": "7.2.2",
+				"pouchdb-merge": "7.2.2",
+				"pouchdb-utils": "7.2.2",
+				"pouchdb-errors": "7.2.2",
+				"pouchdb-collections": "7.2.2",
+				"pouchdb-binary-utils": "7.2.2",
+				"pouchdb-adapter-utils": "7.2.2"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb_7.2.2_1595853779296_0.2994225479436392",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.3.0": {
+			"name": "pouchdb-adapter-idb",
+			"version": "7.3.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@7.3.0",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "41939b4b3d8c6a2d1ad21df16c81a7c2e124b41d",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.3.0.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-qMy0lrB+LyOFyFUo7Gfr5VvSM1IXyP2c9N2XwmMSSaTib/OsNnBqLj8AWrgPEnzvEkDgImBkk34e5F6MlUFRyA==",
+				"signatures": [
+					{
+						"sig": "MEUCIHZGQynK5VGmsgSmLM4F5BN/wZTWWbCYYZ+V2vyKhO1WAiEAipRwoIDLnmBhKRt5jU+OnR9FXI3RNZufb1MKjeH0jhM=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 127971,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiVuqHACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmr1NBAAitQfl1DwVUxBfQVKpPKolzgt7kmn1KtJAjgkTL2PF9ZWXXZK\r\nxfCBblGN7/oEn/NLMAX73/MgA91/b/dUB68GLjHp0l6f4rDU4Es6Eo2lboH2\r\nYdGp+pip68uuh1pp9HZHAiYrIHoB4i1X1aKyQJmcOgkBlSnwcnaMoiV3B6qP\r\n5LvysE0rqoE3cIYs/714eP8CgUnKknukxJ+2K+AJCVxkjdK8EoITRfy21U1m\r\nOWNpuDlrJz0gZNhEmSP14g1bIWcc052OYT6NGCmAqgtCJ4fUxXngDVUFNUhC\r\nu+L+vXXqSgp5/T8O88l6I9QMS1btlEW9R6+KpwnZgwgh/drO4Un/5rdLIgwn\r\nRyT9+4PEHWgRZESJz1TfvDX5vDg9WGCqP5N+RL2aXY8yS1kxaGsN+2nn7RvC\r\n9CdScnOpMAnS7jc3CoV5MeGlatnmhcW7BXuJGlu8MhfnB4yHzfbtIiQsmrMJ\r\n5FXImE8GzTJhEUxA8HgpaZwbdHV0NFumUU7prwieqj784Z9p2zbc5g9fgIAq\r\n7PovmGBcab6+WGPgEKF14dBqUSQp+efCym7dPvCIgiBRLEHu3o/8LAkjbGvZ\r\ndDZ+pfeTo40FFinqTcOew1PdeT+dW6WrbiZ/jqkEisvPSy0S69OiEnXy0fYx\r\noELZUYkfKuqQ4wdqRR1LJo+D+v4QMj4HfoM=\r\n=jyWa\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"gitHead": "7c6753a6fd802191d51adcbcf153c5f646786f4d",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-adapter-idb"
+			},
+			"_npmVersion": "8.5.1",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "12.22.5",
+			"dependencies": {
+				"pouchdb-json": "7.3.0",
+				"pouchdb-merge": "7.3.0",
+				"pouchdb-utils": "7.3.0",
+				"pouchdb-errors": "7.3.0",
+				"pouchdb-collections": "7.3.0",
+				"pouchdb-binary-utils": "7.3.0",
+				"pouchdb-adapter-utils": "7.3.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb_7.3.0_1649863303219_0.6611620834324852",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.3.1": {
+			"name": "pouchdb-adapter-idb",
+			"version": "7.3.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@7.3.1",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "2d307f995523769344d1d3fa7da676f07ef1709f",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.3.1.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-lTlj64QhCvmxrjNowQRuy9FACSrG8j7YIlBiGfmwjOmcfVnU2GP5LLW3CWnkQxsBZ4SL7eg2icB2vOXKLMiADQ==",
+				"signatures": [
+					{
+						"sig": "MEUCID/9lCMvQAEXfMOrmnrahiNj85xkpiJYDj949oz5msDNAiEA9SGrmAkP+dfNlUyu5AYIDPrT9adXrJzNUFruiWuPh/8=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 127971,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjbl5FACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmoZrg/+J8RpXp05bH1EvH0W9gxX+7l4SUQ74MT3VysNxKULSq+fuOzw\r\nZ/ydxARHZ2+79Wj5CMIfEZPKpnC0TIm0pWqS5Rtq2UWy1LhO0fO0otmONcxt\r\nEjs0g5P8tZReBR2tRzCzScthGGkOyaTdITQGtw21dH7Q5EijHZVuGJz56qI/\r\n3woaQt8mU25va+YwgyH4vaU8ZvIJ8y505xRUPAwY1QOgbSohPdWnfKfdGWdB\r\nbLiM6iESm1uj0GkyXofFVjUPUvLK5x18hcXIfpn0A+0xlvy2rhyvpbNdaD/p\r\nb+aLkYpwqqxf1BruYR3u7kpRa59U1DIX69uHybN7OTCCwt8WJL4gtjdZz0D7\r\nM0qP4bt2LXhW+V9zqOyllYEqhmo3CZuK+VnofMBUfbo+sPPQ/W0m6TBFi7/l\r\nApgsDauNmIk/Akli+r/VWFtLONoT4GUFNmpzPzAy5cbTDHDl8UusUeXpWoFx\r\nC66oQrP4S0gikIuTa94S6H85qo16G87DAPfF1RN6qa9r0QaSmbRHtrRNCB2U\r\nRgXoo9g/81iFQLHCiKoUkjKjaQWtPGOxqvD+blxK04V8V3/djAGehjiamrwP\r\nJdmRM2MME0mUBOBYJrcJD+sbxupaMpxeG/TgZPc5U2G2SOPK4siLcWvarIKf\r\nLHZ5OTxwMFNEI1C9D0nR6hz4DJZ7zJ479KU=\r\n=MqbB\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"gitHead": "e241480180d04552b98db168948b6a5691f7f370",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-adapter-idb"
+			},
+			"_npmVersion": "8.11.0",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "16.16.0",
+			"dependencies": {
+				"pouchdb-json": "7.3.1",
+				"pouchdb-merge": "7.3.1",
+				"pouchdb-utils": "7.3.1",
+				"pouchdb-errors": "7.3.1",
+				"pouchdb-collections": "7.3.1",
+				"pouchdb-binary-utils": "7.3.1",
+				"pouchdb-adapter-utils": "7.3.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb_7.3.1_1668177476920_0.8206143738837399",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"8.0.0": {
+			"name": "pouchdb-adapter-idb",
+			"version": "8.0.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@8.0.0",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "b10a8b8d28b0690018ba48e5724e26d5148f9d64",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-8.0.0.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-AzpgfrkSGIvo0MrdxkaPEqMzwJd+xB6F78XN/K++Tdhww6l5eZZ15eFGmZCzJ5IoohtAtm28v8lSMTYo6elEoA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCyUzbqm3v66OfcE0wStsjO3EIOqJM7BkeEOBVZEtERkgIhAOZT7pMdQap+sDEScr8VUPOuys3Kjeyb9HOQ+5lFpIsi",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 127971,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjmwdEACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmpfWw/+Jdk69LIbAACK2M4xxPODth7NrO6XVLch4WX7vfy4ypIL7bBn\r\niTY9XdeDdN5zHqTPl3x+L75toUTAHPF9FD/JSjyyOKGKPaq8Qw87E0u3Llk+\r\n9QJqjSCb/iZXWi1Nvk6MUTGjtajKYnQwtNsGR+4hHCd1JgbFLLMPdE7HgWX0\r\nT2Z+RvUe24lhq6FhqZlU1JBdP3ZjZlqQCDk9EAVpbyFMjn0dFKn7kv9uPPIW\r\nhj0xNY7VAe/UMQe4UACtloSxwCe3Sol8hz4C4jb95Wxshtqp/tVaPkI6zrjf\r\nknQsmLLaVRWLUu/7LJXiTnVWywJUgPUUWqPbS1t+JonMn28SqNTb/6HVVvuC\r\nB8deWAPw0dc+hdh2lvmnjURfySUaJnr8+UKE+vji4dz0nPyaMYHG11l6wkQ8\r\nUhTALGBo4yTxFLXRtNBuM1n4/u2tb1RjbimXQCyvzJY75mllV1nT2P5K9ajw\r\nZOh0bABNVY6sGUACLArRvxcfi0gIswlcD5qoVCwEoQG8fCvbNmYoEMiT35B8\r\nqJviHVxLIEys3Bvao+9jYo+A0A5UPs7SJuDwjhN6UQWIKanji1VC8HMQvFHd\r\nv9vpzlkMKuY1S6PJrNFPQnoJ0QSieqpeYtEsz3TIlU1BJY3hC8XP0AqMDIW8\r\nHJbHJ/IrbymP9o5HixAzeqdCqOcaE5mfLbg=\r\n=+1Tx\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"gitHead": "fec3c1639e2ed83a31ed530e832a1f4c171b378e",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-adapter-idb"
+			},
+			"_npmVersion": "8.11.0",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "16.16.0",
+			"dependencies": {
+				"pouchdb-json": "8.0.0",
+				"pouchdb-merge": "8.0.0",
+				"pouchdb-utils": "8.0.0",
+				"pouchdb-errors": "8.0.0",
+				"pouchdb-collections": "8.0.0",
+				"pouchdb-binary-utils": "8.0.0",
+				"pouchdb-adapter-utils": "8.0.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb_8.0.0_1671104324228_0.7391250303702659",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"8.0.1": {
+			"name": "pouchdb-adapter-idb",
+			"version": "8.0.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-adapter-idb@8.0.1",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "3902770e62071b4cffd8e2ef6d4726fe3440dc51",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-8.0.1.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-i/zdye2v+7AigiHZs4T3dUyW6WboAiFEB+ofHjAhFX3c9nPS1tbdzaNQsE4S42m8Rt/bb55WwPQpUTdzt47Mhw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCCsFM5PcOylkYJIOHl8+9Uk6TqpKZhUPQQm2QGTmq85gIgRmnUNgY8Cw9/TdHLNJHn38v6VFXWUuMbQxtB+oayXzU=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 127971,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJj5NLyACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmr8HhAAo+eYyhJShQ9/n/ayq0WcfcekEE1/WrPlLLysI9TLo8pszDiO\r\njoazb89ERvX0XaM9lWTYqXUgRwXGzQDWp+T9VClURgdMicto1vRcOF4vj6lZ\r\nsvLXkafV3HCU3PL2Uzhmkp3SnTiiTuDEyXpns5fI/Almhh9wUNYPMxrDjdGc\r\n7DrmFtZLilWlM0kqFdUah7XYQLJNBDORmcreXVP3BqtsWakYNIUa1l48fWsP\r\nY5aNd5QuUitzDFoeMpogDQ24fuq7KZIIrP8IRbIjq2owFr5NntcKkRNV6K6u\r\nEv8ipQiR3r7ROZGW/hT19vh8T/iadzkNaDQIIbqBcK+LbTluStsijnUrBwbB\r\nRtg7DmQ6arUoBZZXCRgP8XXvq3xLm3lp37f//Z1yz4pYGmyi3GaXItOvAMge\r\nd4bT/cSJI7onhjpGC2pAC6vFBxkzxcniECVbC/cHHHrRZBl6ZhSe9RmAiuK8\r\nzpcG+/pgPSC80fg/4dd5d1Jplake4Se2jDwbBHwOwXC1QO0EO9ErhmSu93+S\r\nOrSCQrS0rSRlaNeWG4DOll4zFd6KD2QfQXycotrZb2JY/kw9EmU+oS+FWe4J\r\nfKeUqJcCsdT4eddreJj1wIpy3TUnP4u8DyGZMXD9S83z6HBdl+ZyXRX2dkCq\r\n6phKOI1RZm3yN5uxSCCnGqXv5bOHRUGxBUA=\r\n=HF0v\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"gitHead": "3c6e9efe088d8c3004833ac3d782be456bce898a",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-adapter-idb"
+			},
+			"_npmVersion": "8.11.0",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "16.16.0",
+			"dependencies": {
+				"pouchdb-json": "8.0.1",
+				"pouchdb-merge": "8.0.1",
+				"pouchdb-utils": "8.0.1",
+				"pouchdb-errors": "8.0.1",
+				"pouchdb-collections": "8.0.1",
+				"pouchdb-binary-utils": "8.0.1",
+				"pouchdb-adapter-utils": "8.0.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-idb_8.0.1_1675940593904_0.07040715005925668",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"9.0.0": {
+			"name": "pouchdb-adapter-idb",
+			"version": "9.0.0",
+			"description": "PouchDB adapter using IndexedDB as its data store.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"directory": "packages/node_modules/pouchdb-adapter-idb"
+			},
+			"module": "./lib/index.es.js",
+			"dependencies": {
+				"pouchdb-adapter-utils": "9.0.0",
+				"pouchdb-binary-utils": "9.0.0",
+				"pouchdb-errors": "9.0.0",
+				"pouchdb-json": "9.0.0",
+				"pouchdb-merge": "9.0.0",
+				"pouchdb-utils": "9.0.0"
+			},
+			"_id": "pouchdb-adapter-idb@9.0.0",
+			"gitHead": "194c0754bb482824c3cb07d6432c7b95707d0a72",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_nodeVersion": "20.11.1",
+			"_npmVersion": "10.7.0",
+			"dist": {
+				"integrity": "sha512-2oLlgwMyOQwdKuzrEmOv8T7jFVgX7JgT4Cr81zX3eiiRClp7xXGgjv41ZRdVCAbM530sIN8BudafaQRVFKRVmA==",
+				"shasum": "8539114307f62e668b13e141c0fbbf71f312d8fd",
+				"tarball": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-9.0.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 123835,
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIEnBYyAhi0XMV2Y4tKQudluLpyTQb6qPWchX1o51kt10AiEApt/rLOutZJDzHfjGm2fSK4l3lTNHX7LGyv1sRZErPfg="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/pouchdb-adapter-idb_9.0.0_1718984895234_0.07868845592890206"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"created": "2016-06-06T17:40:15.872Z",
+		"modified": "2024-06-21T15:48:15.688Z",
+		"5.4.0": "2016-06-06T17:40:15.872Z",
+		"5.4.1": "2016-06-08T12:42:43.759Z",
+		"5.4.2": "2016-06-12T15:59:33.290Z",
+		"5.4.3": "2016-06-13T12:16:18.931Z",
+		"5.4.4": "2016-06-16T14:54:25.843Z",
+		"5.4.5": "2016-07-03T02:18:11.104Z",
+		"6.0.0": "2016-09-03T03:37:27.753Z",
+		"6.0.1": "2016-09-03T17:00:46.847Z",
+		"6.0.2": "2016-09-04T16:08:09.918Z",
+		"6.0.3": "2016-09-05T17:34:42.010Z",
+		"6.0.4": "2016-09-05T18:25:30.286Z",
+		"6.0.5": "2016-09-17T02:42:31.386Z",
+		"6.0.6": "2016-09-30T12:30:24.362Z",
+		"6.0.7": "2016-10-15T23:47:04.105Z",
+		"6.1.0": "2016-12-12T16:05:49.987Z",
+		"6.1.1": "2017-01-05T13:12:00.974Z",
+		"6.1.2": "2017-02-07T17:07:58.768Z",
+		"6.2.0": "2017-04-20T15:04:54.693Z",
+		"6.2.1-prerelease": "2017-07-13T10:47:04.625Z",
+		"6.3.0": "2017-07-13T10:53:09.936Z",
+		"6.3.1": "2017-07-13T14:40:07.616Z",
+		"6.3.2": "2017-07-13T15:12:19.480Z",
+		"6.3.3": "2017-07-14T22:15:12.853Z",
+		"6.3.4": "2017-07-15T09:09:57.695Z",
+		"6.4.0": "2017-12-17T09:37:43.925Z",
+		"6.4.1": "2017-12-18T11:13:12.806Z",
+		"6.4.2": "2018-01-24T12:26:01.110Z",
+		"6.4.3": "2018-02-02T12:47:01.334Z",
+		"7.0.0": "2018-06-21T10:58:45.554Z",
+		"7.1.0": "2019-06-13T17:28:11.123Z",
+		"7.1.1": "2019-06-14T04:49:19.402Z",
+		"7.2.1": "2020-02-16T22:41:53.664Z",
+		"7.2.2": "2020-07-27T12:42:59.404Z",
+		"7.3.0": "2022-04-13T15:21:43.386Z",
+		"7.3.1": "2022-11-11T14:37:57.109Z",
+		"8.0.0": "2022-12-15T11:38:44.399Z",
+		"8.0.1": "2023-02-09T11:03:14.127Z",
+		"9.0.0": "2024-06-21T15:48:15.458Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "9.0.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"a3098b8c8bafa5f19d9fbd4caa656132\"",
+			"fetched": 1734527710221
+		}
+	},
+	"_distfiles": {
+		"pouchdb-adapter-idb-5.4.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-5.4.0.tgz",
+			"sha": "3dfd7bcce75a8a65c86ccccab4d2fb1df0d616d9",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-5.4.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-5.4.1.tgz",
+			"sha": "7f05d811bf474650c703ec36add0499921159028",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-5.4.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-5.4.2.tgz",
+			"sha": "4a87910c44949b09eb1f6ee30345ba6135f7508f",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-5.4.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-5.4.3.tgz",
+			"sha": "e3a925b7e9eeef0ac413b61be706bb5b8b77e2c6",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-5.4.4.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-5.4.4.tgz",
+			"sha": "cc714b39a6b3ed5f4c441434de9503aa22645fc1",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-5.4.5.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-5.4.5.tgz",
+			"sha": "06e37d23933eeb08536d6971d2ab794b627ae5b2",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.0.tgz",
+			"sha": "747bed9d929f35a158fc3210d848fda0ddac48dd",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.0.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.1.tgz",
+			"sha": "a43aac744d1b91d80ad7ce99910c459097514608",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.0.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.2.tgz",
+			"sha": "f02fd46deb874006b2464ca27f390a9385e4887f",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.0.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.3.tgz",
+			"sha": "73967f3910146da7595bb068fe2e1bab3f69c88c",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.0.4.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.4.tgz",
+			"sha": "9a503eee2e08189bb09406ffc7d0a411fe2432ac",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.0.5.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.5.tgz",
+			"sha": "18519f2985f3d9d3ab50d824ff6d2d4d8340ff01",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.0.6.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.6.tgz",
+			"sha": "18b27cf14f23043b71d91fadfdbbc89f4cb961bc",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.0.7.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.0.7.tgz",
+			"sha": "cb043f47dc7ac231309604c333e329aa03cc6e4a",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.1.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.1.0.tgz",
+			"sha": "67fd54e951e7391436ef16bf8b9fb8feb76b8471",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.1.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.1.1.tgz",
+			"sha": "9681f861630f22053f43eaf949b48b55f26fcebe",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.1.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.1.2.tgz",
+			"sha": "06f0f432705f6e9ae89c2aba6f08f0b7a0d83eff",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.2.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.2.0.tgz",
+			"sha": "288e46e45d0d6c0133c5759d0c419a96996362ea",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.2.1-prerelease.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.2.1-prerelease.tgz",
+			"sha": "fb964b53769120343f9920d2ac3a20d46216cc06",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.3.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.3.0.tgz",
+			"sha": "97b793bd3024d1f9a40ba7df6f948037ea12739f",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.3.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.3.1.tgz",
+			"sha": "ddb26f17c970ee64a5766b0f8ab66b2de66135cc",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.3.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.3.2.tgz",
+			"sha": "b8db2c0ec09af7bd72e15f4b75f87d5c107c4f4d",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.3.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.3.3.tgz",
+			"sha": "7f6a59687ca9012c36b85ba82bfdb7b2200df773",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.3.4.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.3.4.tgz",
+			"sha": "a9e5f5fd71fdf4403f9e6f84c20c00a9da6e6923",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.4.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.4.0.tgz",
+			"sha": "3f65b1f290e0f2ccb5c76ef95514977b00a5dac4",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.4.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.4.1.tgz",
+			"sha": "91a60c2f7bf2221b34a22f10a9328101960b82b5",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.4.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.4.2.tgz",
+			"sha": "79e61b2a3ea168cd6fa721abaacbf559cbc4815f",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-6.4.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-6.4.3.tgz",
+			"sha": "5610ca073aedf75723371de6fd906b7eb5962d0c",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-7.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.0.0.tgz",
+			"sha": "3ed6584bcc5490e8cea602935ff9db2542a2a243",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-7.1.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.1.0.tgz",
+			"sha": "d3feb3cb72b7a413d5a23e1af78bda1b4f317a54",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-7.1.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.1.1.tgz",
+			"sha": "1c62edc4a0f5713422daa488ddcdcc5bfe68d130",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-7.2.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.2.1.tgz",
+			"sha": "43acdaccebd180c78e7dd45a6d207a6483653465",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-7.2.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.2.2.tgz",
+			"sha": "0a4b6c6f6639f93e2e50cb20d50b5fb6eaf1e80e",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-7.3.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.3.0.tgz",
+			"sha": "41939b4b3d8c6a2d1ad21df16c81a7c2e124b41d",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-7.3.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-7.3.1.tgz",
+			"sha": "2d307f995523769344d1d3fa7da676f07ef1709f",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-8.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-8.0.0.tgz",
+			"sha": "b10a8b8d28b0690018ba48e5724e26d5148f9d64",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-8.0.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-8.0.1.tgz",
+			"sha": "3902770e62071b4cffd8e2ef6d4726fe3440dc51",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-idb-9.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-adapter-idb/-/pouchdb-adapter-idb-9.0.0.tgz",
+			"sha": "8539114307f62e668b13e141c0fbbf71f312d8fd",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-adapter-idb-6.2.0.tgz": {
+			"shasum": "288e46e45d0d6c0133c5759d0c419a96996362ea"
+		}
+	},
+	"_rev": "2-122e00d3ec5155e2",
+	"_id": "pouchdb-adapter-idb",
+	"readme": "pouchdb-adapter-idb\n======\n\nPouchDB adapter using IndexedDB as its data store. Designed to run in the browser. Its adapter name\nis `'idb'`.\n\n### Usage\n\n```bash\nnpm install pouchdb-adapter-idb\n```\n\n```js\nPouchDB.plugin(require('pouchdb-adapter-idb'));\nvar db = new PouchDB('mydb', {adapter: 'idb'});\n```\n\nFor full API documentation and guides on PouchDB, see [PouchDB.com](http://pouchdb.com/). For details on PouchDB sub-packages, see the [Custom Builds documentation](http://pouchdb.com/custom.html).\n\n### Source\n\nPouchDB and its sub-packages are distributed as a [monorepo](https://github.com/babel/babel/blob/master/doc/design/monorepo.md).\n\nFor a full list of packages, see [the GitHub source](https://github.com/pouchdb/pouchdb/tree/master/packages)."
+}

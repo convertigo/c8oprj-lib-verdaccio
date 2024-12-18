@@ -1,0 +1,222 @@
+{
+	"name": "native-or-lie",
+	"versions": {
+		"1.0.0": {
+			"name": "native-or-lie",
+			"version": "1.0.0",
+			"description": "Exports native Promises if available, else lie",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/nolanlawson/native-or-lie.git"
+			},
+			"keywords": [],
+			"author": {
+				"name": "Nolan Lawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/native-or-lie/issues"
+			},
+			"homepage": "https://github.com/nolanlawson/native-or-lie#readme",
+			"dependencies": {
+				"lie": "*"
+			},
+			"files": [],
+			"gitHead": "f7e43c047a4a8141e8532db2c4fa60cae51b4b93",
+			"_id": "native-or-lie@1.0.0",
+			"scripts": {},
+			"_shasum": "14f8783f4b26257780be75142fa145375c50d980",
+			"_from": ".",
+			"_npmVersion": "3.5.3",
+			"_nodeVersion": "5.3.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "14f8783f4b26257780be75142fa145375c50d980",
+				"tarball": "https://registry.npmjs.org/native-or-lie/-/native-or-lie-1.0.0.tgz",
+				"integrity": "sha512-n56jc8oy4FqU0l9FKhT46j4bFxou1p5rPpd5kV9R3aTqoWZ8H/SlAJD9Bp6fYdkoN2PfarO2nKy/r2l2ZnlfLA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIA+83I5CEdjsg/MQ3GEYQicmorGeP1FmIR1RC9hlFEDQAiEAzDA68ADJuacIO73eDUYz4Rx6OP702CpZ9Bw+bgVDsc4="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-13-west.internal.npmjs.com",
+				"tmp": "tmp/native-or-lie-1.0.0.tgz_1457277782559_0.7667066936846823"
+			},
+			"contributors": []
+		},
+		"1.0.1": {
+			"name": "native-or-lie",
+			"version": "1.0.1",
+			"description": "Exports native Promises if available, else lie",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/nolanlawson/native-or-lie.git"
+			},
+			"keywords": [],
+			"author": {
+				"name": "Nolan Lawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/native-or-lie/issues"
+			},
+			"homepage": "https://github.com/nolanlawson/native-or-lie#readme",
+			"dependencies": {
+				"lie": "*"
+			},
+			"files": [
+				"index.js"
+			],
+			"gitHead": "6a2055e06f1bd443c7acf0520108331ca5509032",
+			"_id": "native-or-lie@1.0.1",
+			"scripts": {},
+			"_shasum": "91a26382e98b91d657da47ffec3b4532ba317ebb",
+			"_from": ".",
+			"_npmVersion": "3.7.3",
+			"_nodeVersion": "5.9.0",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "91a26382e98b91d657da47ffec3b4532ba317ebb",
+				"tarball": "https://registry.npmjs.org/native-or-lie/-/native-or-lie-1.0.1.tgz",
+				"integrity": "sha512-R8zubu7HjzkFL5efPWv3Dx1d0OpOjLM/cFkaUSLO0rfIABJCgFYvCkIUInTSmag2GSxLiHiJ8zVOiFWM13PQAg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIGqsa0QKRYVqLakgqzy/ovolQLoLIVM0ijnftvZvFYGQAiEA7M20gjMX6KnTd3s6OxlS1WNcLIp9IOVi3XwYojOC7+0="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/native-or-lie-1.0.1.tgz_1458324813677_0.9216202038805932"
+			},
+			"contributors": []
+		},
+		"1.0.2": {
+			"name": "native-or-lie",
+			"version": "1.0.2",
+			"description": "Exports native Promises if available, else lie",
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/nolanlawson/native-or-lie.git"
+			},
+			"keywords": [],
+			"author": {
+				"name": "Nolan Lawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"license": "Apache-2.0",
+			"bugs": {
+				"url": "https://github.com/nolanlawson/native-or-lie/issues"
+			},
+			"homepage": "https://github.com/nolanlawson/native-or-lie#readme",
+			"dependencies": {
+				"lie": "*"
+			},
+			"files": [
+				"index.js"
+			],
+			"gitHead": "b9baeeeaae32bb2cdc0118b8c4ae7a2987bf10f0",
+			"_id": "native-or-lie@1.0.2",
+			"scripts": {},
+			"_shasum": "c870ee0ba0bf0ff11350595d216cfea68a6d8086",
+			"_from": ".",
+			"_npmVersion": "3.10.3",
+			"_nodeVersion": "6.2.2",
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"dist": {
+				"shasum": "c870ee0ba0bf0ff11350595d216cfea68a6d8086",
+				"tarball": "https://registry.npmjs.org/native-or-lie/-/native-or-lie-1.0.2.tgz",
+				"integrity": "sha512-NRScvp3VMZMF0jDONlecZpXT8TG35Aa3vMRtgMQpk3yoys88mntStpZ4+gRv5DK+8fbihmbHLI4yoWYVkWUuSA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDqQgdpoaVqxgiwltb5BY+TvwjzZ32AZpzZsMxVF2dDBwIgRCoYq8Bk2U/uvvDBh9b0SS4Jh5ya2bjemEtEw29+t+o="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/native-or-lie-1.0.2.tgz_1471369420266_0.746358634904027"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-06-20T20:51:15.265Z",
+		"created": "2016-03-06T15:23:05.705Z",
+		"1.0.0": "2016-03-06T15:23:05.705Z",
+		"1.0.1": "2016-03-18T18:13:35.891Z",
+		"1.0.2": "2016-08-16T17:43:43.958Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "1.0.2"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"d17e90800502765fcbdb61c8ea4c7cfb\"",
+			"fetched": 1734527711296
+		}
+	},
+	"_distfiles": {
+		"native-or-lie-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/native-or-lie/-/native-or-lie-1.0.0.tgz",
+			"sha": "14f8783f4b26257780be75142fa145375c50d980",
+			"registry": "npmjs"
+		},
+		"native-or-lie-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/native-or-lie/-/native-or-lie-1.0.1.tgz",
+			"sha": "91a26382e98b91d657da47ffec3b4532ba317ebb",
+			"registry": "npmjs"
+		},
+		"native-or-lie-1.0.2.tgz": {
+			"url": "https://registry.npmjs.org/native-or-lie/-/native-or-lie-1.0.2.tgz",
+			"sha": "c870ee0ba0bf0ff11350595d216cfea68a6d8086",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"native-or-lie-1.0.2.tgz": {
+			"shasum": "c870ee0ba0bf0ff11350595d216cfea68a6d8086"
+		}
+	},
+	"_rev": "2-95465829d04819d7",
+	"_id": "native-or-lie",
+	"readme": "native-or-lie\n======\n\nReturns native `Promise` if available, otherwise [lie](https://github.com/calvinmetcalf/lie)."
+}

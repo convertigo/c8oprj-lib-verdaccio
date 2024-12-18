@@ -1,0 +1,451 @@
+{
+	"name": "validate.io-undefined",
+	"versions": {
+		"0.0.0": {
+			"name": "validate.io-undefined",
+			"version": "0.0.0",
+			"description": "Validates if a value is undefined.",
+			"author": {
+				"name": "Athan Reines",
+				"email": "kgryte@gmail.com"
+			},
+			"contributors": [
+				{
+					"name": "Athan Reines",
+					"email": "kgryte@gmail.com"
+				}
+			],
+			"scripts": {
+				"test": "mocha",
+				"test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+				"coveralls": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coveralls/coverage --report lcovonly -- -R spec && cat ./reports/coveralls/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./reports/coveralls"
+			},
+			"main": "./lib",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/validate-io/undefined.git"
+			},
+			"keywords": [
+				"validate.io",
+				"validate",
+				"validation",
+				"validator"
+			],
+			"bugs": {
+				"url": "https://github.com/validate-io/undefined/issues"
+			},
+			"dependencies": {},
+			"devDependencies": {
+				"chai": "1.x.x",
+				"mocha": "1.x.x",
+				"coveralls": "^2.11.1",
+				"istanbul": "^0.3.0"
+			},
+			"licenses": [
+				{
+					"type": "MIT",
+					"url": "http://www.opensource.org/licenses/MIT"
+				}
+			],
+			"gitHead": "798eb0ec52f02687127bd022409dede78a467a5b",
+			"homepage": "https://github.com/validate-io/undefined",
+			"_id": "validate.io-undefined@0.0.0",
+			"_shasum": "47ba2ac57a48b4bdab2dae093f61a8b90521c5df",
+			"_from": ".",
+			"_npmVersion": "1.5.0-alpha-1",
+			"_npmUser": {
+				"name": "kgryte",
+				"email": "kgryte@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "kgryte",
+					"email": "kgryte@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "47ba2ac57a48b4bdab2dae093f61a8b90521c5df",
+				"tarball": "https://registry.npmjs.org/validate.io-undefined/-/validate.io-undefined-0.0.0.tgz",
+				"integrity": "sha512-cgpqhksTz3Ikdo12a119K3mrtuNhvDM71Jlq0XxILMhYDqN3LtwEMBCp/pLAhfHkk86WSfMJGkG3dui4UT5brw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDpH6iNh2OMH35QmoLe8DH7fs62hcLS8rNaxlp/+rvPUgIhAM8YwHs0IHXx0YPP22LB2pWbm2SBv8lqeXQRYWkbmIA1"
+					}
+				]
+			}
+		},
+		"1.0.0": {
+			"name": "validate.io-undefined",
+			"version": "1.0.0",
+			"description": "Validates if a value is undefined.",
+			"author": {
+				"name": "Athan Reines",
+				"email": "kgryte@gmail.com"
+			},
+			"contributors": [
+				{
+					"name": "Athan Reines",
+					"email": "kgryte@gmail.com"
+				}
+			],
+			"scripts": {
+				"test": "mocha",
+				"test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+				"coveralls": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coveralls/coverage --report lcovonly -- -R spec && cat ./reports/coveralls/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./reports/coveralls"
+			},
+			"main": "./lib",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/validate-io/undefined.git"
+			},
+			"keywords": [
+				"validate.io",
+				"validate",
+				"validation",
+				"validator"
+			],
+			"bugs": {
+				"url": "https://github.com/validate-io/undefined/issues"
+			},
+			"dependencies": {},
+			"devDependencies": {
+				"chai": "1.x.x",
+				"mocha": "1.x.x",
+				"coveralls": "^2.11.1",
+				"istanbul": "^0.3.0"
+			},
+			"licenses": [
+				{
+					"type": "MIT",
+					"url": "http://www.opensource.org/licenses/MIT"
+				}
+			],
+			"gitHead": "5f8e742d734f989726131c78d1e3a91051d1c316",
+			"homepage": "https://github.com/validate-io/undefined",
+			"_id": "validate.io-undefined@1.0.0",
+			"_shasum": "6e47fcd2878d2165de251e055f89d2ea48da08d6",
+			"_from": ".",
+			"_npmVersion": "1.5.0-alpha-1",
+			"_npmUser": {
+				"name": "kgryte",
+				"email": "kgryte@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "kgryte",
+					"email": "kgryte@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "6e47fcd2878d2165de251e055f89d2ea48da08d6",
+				"tarball": "https://registry.npmjs.org/validate.io-undefined/-/validate.io-undefined-1.0.0.tgz",
+				"integrity": "sha512-pXHGd/J+Gd0vgmL+tEP43twh06Il+CXBClWZ+CVZUCmnkEPEndORVvj8rI4lGKHYYNwFW7kE/nQKuhFLrQsKEg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDtHujRnd8SMCYCcelaEe/2KsHa1pQ+Ni/iqBYnqeFP/gIhAPHPX3vcOoDjbPGusZYujU0hEUTYSsLDkvduiTkstuaa"
+					}
+				]
+			}
+		},
+		"1.0.1": {
+			"name": "validate.io-undefined",
+			"version": "1.0.1",
+			"description": "Validates if a value is undefined.",
+			"author": {
+				"name": "Athan Reines",
+				"email": "kgryte@gmail.com"
+			},
+			"contributors": [
+				{
+					"name": "Athan Reines",
+					"email": "kgryte@gmail.com"
+				}
+			],
+			"scripts": {
+				"test": "mocha",
+				"test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+				"coveralls": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coveralls/coverage --report lcovonly -- -R spec && cat ./reports/coveralls/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./reports/coveralls"
+			},
+			"main": "./lib",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/validate-io/undefined.git"
+			},
+			"keywords": [
+				"validate.io",
+				"validate",
+				"validation",
+				"validator",
+				"undefined",
+				"void"
+			],
+			"bugs": {
+				"url": "https://github.com/validate-io/undefined/issues"
+			},
+			"dependencies": {},
+			"devDependencies": {
+				"chai": "1.x.x",
+				"mocha": "1.x.x",
+				"coveralls": "^2.11.1",
+				"istanbul": "^0.3.0",
+				"jshint": "^2.5.10",
+				"jshint-stylish": "^1.0.0"
+			},
+			"licenses": [
+				{
+					"type": "MIT",
+					"url": "http://www.opensource.org/licenses/MIT"
+				}
+			],
+			"gitHead": "6bd97aea9a23d6f195135f14fa9bed8dd105c6e4",
+			"homepage": "https://github.com/validate-io/undefined",
+			"_id": "validate.io-undefined@1.0.1",
+			"_shasum": "1c22eb4dde0cb06e623954b274f40164493ec61e",
+			"_from": ".",
+			"_npmVersion": "1.5.0-alpha-1",
+			"_npmUser": {
+				"name": "kgryte",
+				"email": "kgryte@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "kgryte",
+					"email": "kgryte@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "1c22eb4dde0cb06e623954b274f40164493ec61e",
+				"tarball": "https://registry.npmjs.org/validate.io-undefined/-/validate.io-undefined-1.0.1.tgz",
+				"integrity": "sha512-a4PAvv1p2cHqFfp69xbXsaC2RBFYZgI4akbOVD+J/Cp6tAgFMRz7OyeIBur6JcGmtmTu4Lh1q/RuPkWjGwTuJA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIDFISTRcy2AOh6l303AG9C7xkLX7vX61wAcOTfZi//5BAiAa7TBsOMt1C+VnyO7Fvze7HByrx/8z/GUnyQ16z4tRCg=="
+					}
+				]
+			}
+		},
+		"1.0.2": {
+			"name": "validate.io-undefined",
+			"version": "1.0.2",
+			"description": "Validates if a value is undefined.",
+			"author": {
+				"name": "Athan Reines",
+				"email": "kgryte@gmail.com"
+			},
+			"contributors": [
+				{
+					"name": "Athan Reines",
+					"email": "kgryte@gmail.com"
+				}
+			],
+			"scripts": {
+				"test": "mocha",
+				"test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+				"coveralls": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coveralls/coverage --report lcovonly -- -R spec && cat ./reports/coveralls/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./reports/coveralls"
+			},
+			"main": "./lib",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/validate-io/undefined.git"
+			},
+			"keywords": [
+				"validate.io",
+				"validate",
+				"validation",
+				"validator",
+				"undefined",
+				"void",
+				"is",
+				"type",
+				"check",
+				"isundefined",
+				"valid"
+			],
+			"bugs": {
+				"url": "https://github.com/validate-io/undefined/issues"
+			},
+			"dependencies": {},
+			"devDependencies": {
+				"chai": "1.x.x",
+				"mocha": "1.x.x",
+				"coveralls": "^2.11.1",
+				"istanbul": "^0.3.0",
+				"jshint": "^2.5.10",
+				"jshint-stylish": "^1.0.0"
+			},
+			"licenses": [
+				{
+					"type": "MIT",
+					"url": "http://www.opensource.org/licenses/MIT"
+				}
+			],
+			"gitHead": "21ad410630f1d5c07a516274bbaa057f56f0fb09",
+			"homepage": "https://github.com/validate-io/undefined",
+			"_id": "validate.io-undefined@1.0.2",
+			"_shasum": "9c79a0d0d3872636ec17c147999677462db14560",
+			"_from": ".",
+			"_npmVersion": "1.5.0-alpha-1",
+			"_npmUser": {
+				"name": "kgryte",
+				"email": "kgryte@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "kgryte",
+					"email": "kgryte@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "9c79a0d0d3872636ec17c147999677462db14560",
+				"tarball": "https://registry.npmjs.org/validate.io-undefined/-/validate.io-undefined-1.0.2.tgz",
+				"integrity": "sha512-wjjv664WAwUwEqUnWxsTFPjiTU1PMmvc8aUfmW9Ku+oXltfo7biUJ1Hr6r05L4qiaDzXfYVOMaKwvNj0ZtEYnw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQD5Qv2kJH5pa7xlg+mdH5s2K/TZCgsjcmd3+AaENXdFZQIgdVZbo+W1xlEPeK/vsqf+qVCnRqCwSNHaQS4eJv883LQ="
+					}
+				]
+			}
+		},
+		"1.0.3": {
+			"name": "validate.io-undefined",
+			"version": "1.0.3",
+			"description": "Validates if a value is undefined.",
+			"author": {
+				"name": "Athan Reines",
+				"email": "kgryte@gmail.com"
+			},
+			"contributors": [
+				{
+					"name": "Athan Reines",
+					"email": "kgryte@gmail.com"
+				}
+			],
+			"scripts": {
+				"test": "mocha",
+				"test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+				"coveralls": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coveralls/coverage --report lcovonly -- -R spec && cat ./reports/coveralls/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./reports/coveralls"
+			},
+			"main": "./lib",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/validate-io/undefined.git"
+			},
+			"keywords": [
+				"validate.io",
+				"validate",
+				"validation",
+				"validator",
+				"undefined",
+				"void",
+				"is",
+				"type",
+				"check",
+				"isundefined",
+				"valid"
+			],
+			"bugs": {
+				"url": "https://github.com/validate-io/undefined/issues"
+			},
+			"dependencies": {},
+			"devDependencies": {
+				"chai": "1.x.x",
+				"mocha": "1.x.x",
+				"coveralls": "^2.11.1",
+				"istanbul": "^0.3.0",
+				"jshint": "^2.5.10",
+				"jshint-stylish": "^1.0.0"
+			},
+			"licenses": [
+				{
+					"type": "MIT",
+					"url": "http://www.opensource.org/licenses/MIT"
+				}
+			],
+			"gitHead": "f651e5960b06b165b56dc3efd11f0941ecb970b0",
+			"homepage": "https://github.com/validate-io/undefined",
+			"_id": "validate.io-undefined@1.0.3",
+			"_shasum": "7e27fcbb315b841e78243431897671929e20b7f4",
+			"_from": ".",
+			"_npmVersion": "1.5.0-alpha-1",
+			"_npmUser": {
+				"name": "kgryte",
+				"email": "kgryte@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "kgryte",
+					"email": "kgryte@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "7e27fcbb315b841e78243431897671929e20b7f4",
+				"tarball": "https://registry.npmjs.org/validate.io-undefined/-/validate.io-undefined-1.0.3.tgz",
+				"integrity": "sha512-1f+1CWE7oVr/d6AmziF188jCPx9mcib80R6iMYdc6hZp2H8clWYohY53HEWgLG557uVe7S/w/CyD3i6TpoK52Q==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDfKjrM6g4fvmI/14kwW0FNpMYVjEBOKoVTtw4T2CaJnwIgGJuI78wpPzKe5rJpaiMneh7YFns3IrL0d44q1AtG4wQ="
+					}
+				]
+			}
+		}
+	},
+	"time": {
+		"modified": "2022-06-28T08:36:02.357Z",
+		"created": "2014-08-31T06:49:10.030Z",
+		"0.0.0": "2014-08-31T06:49:10.030Z",
+		"1.0.0": "2014-09-01T18:31:10.929Z",
+		"1.0.1": "2015-02-20T05:13:48.469Z",
+		"1.0.2": "2015-02-20T11:01:06.958Z",
+		"1.0.3": "2015-03-08T08:57:15.907Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "1.0.3"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"9363757e232057452df8169e5f3df7b8\"",
+			"fetched": 1734527704782
+		}
+	},
+	"_distfiles": {
+		"validate.io-undefined-0.0.0.tgz": {
+			"url": "https://registry.npmjs.org/validate.io-undefined/-/validate.io-undefined-0.0.0.tgz",
+			"sha": "47ba2ac57a48b4bdab2dae093f61a8b90521c5df",
+			"registry": "npmjs"
+		},
+		"validate.io-undefined-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/validate.io-undefined/-/validate.io-undefined-1.0.0.tgz",
+			"sha": "6e47fcd2878d2165de251e055f89d2ea48da08d6",
+			"registry": "npmjs"
+		},
+		"validate.io-undefined-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/validate.io-undefined/-/validate.io-undefined-1.0.1.tgz",
+			"sha": "1c22eb4dde0cb06e623954b274f40164493ec61e",
+			"registry": "npmjs"
+		},
+		"validate.io-undefined-1.0.2.tgz": {
+			"url": "https://registry.npmjs.org/validate.io-undefined/-/validate.io-undefined-1.0.2.tgz",
+			"sha": "9c79a0d0d3872636ec17c147999677462db14560",
+			"registry": "npmjs"
+		},
+		"validate.io-undefined-1.0.3.tgz": {
+			"url": "https://registry.npmjs.org/validate.io-undefined/-/validate.io-undefined-1.0.3.tgz",
+			"sha": "7e27fcbb315b841e78243431897671929e20b7f4",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"validate.io-undefined-1.0.3.tgz": {
+			"shasum": "7e27fcbb315b841e78243431897671929e20b7f4"
+		}
+	},
+	"_rev": "2-a6cf91ced7bed1a6",
+	"_id": "validate.io-undefined",
+	"readme": "undefined\n===\n[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]\n\n> Validates if a value is undefined.\n\n\n## Installation\n\n``` bash\n$ npm install validate.io-undefined\n```\n\nFor use in the browser, use [browserify](https://github.com/substack/node-browserify).\n\n\n## Usage\n\n``` javascript\nvar isUndefined = require( 'validate.io-undefined' );\n```\n\n#### isUndefined( value )\n\nValidates if a `value` is `undefined`.\n\n``` javascript\nvar value;\n\nvar bool = isUndefined( value );\n// returns true\n```\n\n\n## Examples\n\n``` javascript\nvar isUndefined = require( 'validate.io-undefined' );\n\nconsole.log( isUndefined( undefined ) );\n// returns true\n\nconsole.log( isUndefined( null ) );\n// returns false\n```\n\n\nTo run the example code from the top-level application directory,\n\n``` bash\n$ node ./examples/index.js\n```\n\n\n## Tests\n\n### Unit\n\nUnit tests use the [Mocha](http://mochajs.org) test framework with [Chai](http://chaijs.com) assertions. To run the tests, execute the following command in the top-level application directory:\n\n``` bash\n$ make test\n```\n\nAll new feature development should have corresponding unit tests to validate correct functionality.\n\n\n### Test Coverage\n\nThis repository uses [Istanbul](https://github.com/gotwarlost/istanbul) as its code coverage tool. To generate a test coverage report, execute the following command in the top-level application directory:\n\n``` bash\n$ make test-cov\n```\n\nIstanbul creates a `./reports/coverage` directory. To access an HTML version of the report,\n\n``` bash\n$ make view-cov\n```\n\n\n---\n## License\n\n[MIT license](http://opensource.org/licenses/MIT). \n\n\n## Copyright\n\nCopyright &copy; 2014. Athan Reines.\n\n\n[npm-image]: http://img.shields.io/npm/v/validate.io-undefined.svg\n[npm-url]: https://npmjs.org/package/validate.io-undefined\n\n[travis-image]: http://img.shields.io/travis/validate-io/undefined/master.svg\n[travis-url]: https://travis-ci.org/validate-io/undefined\n\n[coveralls-image]: https://img.shields.io/coveralls/validate-io/undefined/master.svg\n[coveralls-url]: https://coveralls.io/r/validate-io/undefined?branch=master\n\n[dependencies-image]: http://img.shields.io/david/validate-io/undefined.svg\n[dependencies-url]: https://david-dm.org/validate-io/undefined\n\n[dev-dependencies-image]: http://img.shields.io/david/dev/validate-io/undefined.svg\n[dev-dependencies-url]: https://david-dm.org/dev/validate-io/undefined\n\n[github-issues-image]: http://img.shields.io/github/issues/validate-io/undefined.svg\n[github-issues-url]: https://github.com/validate-io/undefined/issues"
+}

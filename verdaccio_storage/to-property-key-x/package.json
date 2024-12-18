@@ -1,0 +1,4538 @@
+{
+	"name": "to-property-key-x",
+	"versions": {
+		"1.0.0": {
+			"name": "to-property-key-x",
+			"version": "1.0.0",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"main": "index.js",
+			"engines": {
+				"node": "*"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^1.4.0",
+				"to-primitive-x": "^1.0.0",
+				"to-string-x": "^1.4.0"
+			},
+			"devDependencies": {
+				"@xotic750/eslint-config-standard-x": "^2.2.1",
+				"browserify": "^14.4.0",
+				"browserify-derequire": "^0.9.4",
+				"cross-env": "^5.0.1",
+				"es5-shim": "^4.5.9",
+				"es6-shim": "^0.35.3",
+				"es7-shim": "^6.0.0",
+				"eslint": "^4.2.0",
+				"eslint-plugin-compat": "^1.0.4",
+				"eslint-plugin-css-modules": "^2.7.2",
+				"eslint-plugin-eslint-comments": "^1.0.2",
+				"eslint-plugin-jsdoc": "^3.1.1",
+				"eslint-plugin-json": "^1.2.0",
+				"eslint-plugin-no-use-extend-native": "^0.3.12",
+				"husky": "^0.13.4",
+				"jasmine-node": "^1.14.5",
+				"jsdoc-to-markdown": "^3.0.0",
+				"json3": "^3.3.2",
+				"make-jasmine-spec-runner-html": "^1.3.0",
+				"ncp": "^2.0.0",
+				"nodemon": "^1.11.0",
+				"nsp": "^2.6.3",
+				"parallelshell": "^3.0.1",
+				"replace-x": "^1.5.0",
+				"rimraf": "^2.6.1",
+				"serve": "^6.0.2",
+				"uglify-js": "^3.0.24"
+			},
+			"scripts": {
+				"clean": "rimraf README.md lib/*",
+				"clean:jasmine": "rimraf tests/index.html tests/run.js",
+				"clean:all": "npm run clean:jasmine && npm run clean",
+				"build": "npm run clean && npm run lint && npm run browserify && npm run uglify && npm run docs && npm test && npm run security",
+				"build:jasmine": "npm run clean:jasmine && make-jasmine-spec-runner-html",
+				"build:setver": "replace-x \" @version .*\" \" @version $(node -p -e \"require('./package.json').version\")\" index.js",
+				"build:name": "replace-x \" @module .*\" \" @module $(node -p -e \"require('./package.json').name\")\" index.js",
+				"build:description": "replace-x \" @file .*\" \" @file $(node -p -e \"require('./package.json').description\")\" index.js",
+				"build:replace": "npm run build:setver && npm run build:name && npm run build:description",
+				"production": "npm run clean:all && npm run build:jasmine && npm run build:replace && npm run build",
+				"start": "parallelshell \"serve\" \"nodemon --watch index.js --exec 'npm run build'\"",
+				"docs:name": "replace-x \"@{PACKAGE-NAME}\" \"$(node -p -e \"require('./package.json').name\")\" README.md",
+				"docs:badges": "ncp badges.html README.md && npm run docs:name",
+				"docs": "npm run docs:badges && jsdoc2md --name-format --example-lang js index.js >> README.md",
+				"lint": "eslint *.js tests/spec/*.js",
+				"lint-fix": "npm run lint -- --fix",
+				"security": "nsp check",
+				"test": "jasmine-node --matchall tests/spec/",
+				"browserify": "browserify -p browserify-derequire -e index.js -o lib/to-property-key-x.js -u 'crypto' -s returnExports",
+				"uglify": "uglifyjs lib/to-property-key-x.js -o lib/to-property-key-x.min.js --config-file .uglifyjsrc.json",
+				"precommit": "npm run production",
+				"prepush": "npm run production"
+			},
+			"gitHead": "fb5aac5fb0f6761ed38b26206fb950b25ec3b154",
+			"_id": "to-property-key-x@1.0.0",
+			"_npmVersion": "5.3.0",
+			"_nodeVersion": "6.11.2",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-4Xiy33qTrao28KoV3czdXJAcTHzKJVx4IlLpQOpHH14tFxgMcuCvp2lhoVuXUWvSpMOHWhoTf4Uu14BoHnhqYw==",
+				"shasum": "13f89d1d0c449374832e429f0131d3d1cb28037c",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-1.0.0.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDHfUB6Cl1YCJS8FNJtYXoKY+PI9NzbHOrI2pJpEb/bTQIgdKG2mTxdk/xPHsrlfPgX0lRNTtkMeN0TtYckMFcqJ88="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x-1.0.0.tgz_1503940510561_0.020920077338814735"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"2.0.0": {
+			"name": "to-property-key-x",
+			"version": "2.0.0",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"main": "index.js",
+			"engines": {
+				"node": "*"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^1.4.0",
+				"to-primitive-x": "^1.0.0",
+				"to-string-x": "^1.4.0"
+			},
+			"devDependencies": {
+				"@xotic750/eslint-config-standard-x": "^2.2.1",
+				"browserify": "^14.4.0",
+				"browserify-derequire": "^0.9.4",
+				"cross-env": "^5.0.1",
+				"es5-shim": "^4.5.9",
+				"es6-shim": "^0.35.3",
+				"es7-shim": "^6.0.0",
+				"eslint": "^4.2.0",
+				"eslint-plugin-compat": "^1.0.4",
+				"eslint-plugin-css-modules": "^2.7.2",
+				"eslint-plugin-eslint-comments": "^1.0.2",
+				"eslint-plugin-jsdoc": "^3.1.1",
+				"eslint-plugin-json": "^1.2.0",
+				"eslint-plugin-no-use-extend-native": "^0.3.12",
+				"husky": "^0.13.4",
+				"jasmine-node": "^1.14.5",
+				"jsdoc-to-markdown": "^3.0.0",
+				"json3": "^3.3.2",
+				"make-jasmine-spec-runner-html": "^1.3.0",
+				"ncp": "^2.0.0",
+				"nodemon": "^1.11.0",
+				"nsp": "^2.6.3",
+				"parallelshell": "^3.0.1",
+				"replace-x": "^1.5.0",
+				"rimraf": "^2.6.1",
+				"serve": "^6.0.2",
+				"uglify-js": "^3.0.24"
+			},
+			"scripts": {
+				"clean": "rimraf README.md lib/*",
+				"clean:jasmine": "rimraf tests/index.html tests/run.js",
+				"clean:all": "npm run clean:jasmine && npm run clean",
+				"build": "npm run clean && npm run lint && npm run browserify && npm run uglify && npm run docs && npm test && npm run security",
+				"build:jasmine": "npm run clean:jasmine && make-jasmine-spec-runner-html",
+				"build:setver": "replace-x \" @version .*\" \" @version $(node -p -e \"require('./package.json').version\")\" index.js",
+				"build:name": "replace-x \" @module .*\" \" @module $(node -p -e \"require('./package.json').name\")\" index.js",
+				"build:description": "replace-x \" @file .*\" \" @file $(node -p -e \"require('./package.json').description\")\" index.js",
+				"build:replace": "npm run build:setver && npm run build:name && npm run build:description",
+				"production": "npm run clean:all && npm run build:jasmine && npm run build:replace && npm run build",
+				"start": "parallelshell \"serve\" \"nodemon --watch index.js --exec 'npm run build'\"",
+				"docs:name": "replace-x \"@{PACKAGE-NAME}\" \"$(node -p -e \"require('./package.json').name\")\" README.md",
+				"docs:badges": "ncp badges.html README.md && npm run docs:name",
+				"docs": "npm run docs:badges && jsdoc2md --name-format --example-lang js index.js >> README.md",
+				"lint": "eslint *.js tests/spec/*.js",
+				"lint-fix": "npm run lint -- --fix",
+				"security": "nsp check",
+				"test": "jasmine-node --matchall tests/spec/",
+				"browserify": "browserify -p browserify-derequire -e index.js -o lib/to-property-key-x.js -u 'crypto' -s returnExports",
+				"uglify": "uglifyjs lib/to-property-key-x.js -o lib/to-property-key-x.min.js --config-file .uglifyjsrc.json",
+				"precommit": "npm run production",
+				"prepush": "npm run production"
+			},
+			"gitHead": "582f5f8fb9a3f62e413da35aa651948b5914830e",
+			"_id": "to-property-key-x@2.0.0",
+			"_npmVersion": "5.3.0",
+			"_nodeVersion": "6.11.2",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-qWWLDk9uoVQo6BXrRmA1RYY8bb4YDKZQj5PihHrE2HuWSswEuIX93cM36zlPwYCwKq554+03uJybmYC6wOdpKw==",
+				"shasum": "e22ac1e26dc4036f319678d0a4d9bee25db4c33c",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-2.0.0.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIFDlyCrKDfGHDOeWXyWBEIVg3p8+Vmz9w/z+fRikHxIyAiBJE26YPBHQ/G9cDbUpFfyZKzeP4/q2Sx+HvFwMh7qV+Q=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x-2.0.0.tgz_1504096412255_0.04984740889631212"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"2.0.1": {
+			"name": "to-property-key-x",
+			"version": "2.0.1",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"main": "index.js",
+			"engines": {
+				"node": "*"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^1.4.1",
+				"to-primitive-x": "^1.0.1",
+				"to-string-x": "^1.4.1"
+			},
+			"devDependencies": {
+				"@xotic750/eslint-config-standard-x": "^2.2.1",
+				"browserify": "^14.4.0",
+				"browserify-derequire": "^0.9.4",
+				"cross-env": "^5.0.1",
+				"es5-shim": "^4.5.9",
+				"es6-shim": "^0.35.3",
+				"es7-shim": "^6.0.0",
+				"eslint": "^4.2.0",
+				"eslint-plugin-compat": "^1.0.4",
+				"eslint-plugin-css-modules": "^2.7.2",
+				"eslint-plugin-eslint-comments": "^1.0.2",
+				"eslint-plugin-jsdoc": "^3.1.1",
+				"eslint-plugin-json": "^1.2.0",
+				"eslint-plugin-no-use-extend-native": "^0.3.12",
+				"husky": "^0.13.4",
+				"jasmine-node": "^1.14.5",
+				"jsdoc-to-markdown": "^3.0.0",
+				"json3": "^3.3.2",
+				"make-jasmine-spec-runner-html": "^1.3.0",
+				"ncp": "^2.0.0",
+				"nodemon": "^1.11.0",
+				"nsp": "^2.6.3",
+				"parallelshell": "^3.0.1",
+				"replace-x": "^1.5.0",
+				"rimraf": "^2.6.1",
+				"serve": "^6.0.2",
+				"uglify-js": "^3.0.24"
+			},
+			"scripts": {
+				"clean": "rimraf README.md lib/*",
+				"clean:jasmine": "rimraf tests/index.html tests/run.js",
+				"clean:all": "npm run clean:jasmine && npm run clean",
+				"build": "npm run clean && npm run lint && npm run browserify && npm run uglify && npm run docs && npm test && npm run security",
+				"build:jasmine": "npm run clean:jasmine && make-jasmine-spec-runner-html",
+				"build:setver": "replace-x \" @version .*\" \" @version $(node -p -e \"require('./package.json').version\")\" index.js",
+				"build:name": "replace-x \" @module .*\" \" @module $(node -p -e \"require('./package.json').name\")\" index.js",
+				"build:description": "replace-x \" @file .*\" \" @file $(node -p -e \"require('./package.json').description\")\" index.js",
+				"build:replace": "npm run build:setver && npm run build:name && npm run build:description",
+				"production": "npm run clean:all && npm run build:jasmine && npm run build:replace && npm run build",
+				"start": "parallelshell \"serve\" \"nodemon --watch index.js --exec 'npm run build'\"",
+				"docs:name": "replace-x \"@{PACKAGE-NAME}\" \"$(node -p -e \"require('./package.json').name\")\" README.md",
+				"docs:badges": "ncp badges.html README.md && npm run docs:name",
+				"docs": "npm run docs:badges && jsdoc2md --name-format --example-lang js index.js >> README.md",
+				"lint": "eslint *.js tests/spec/*.js",
+				"lint-fix": "npm run lint -- --fix",
+				"security": "nsp check",
+				"test": "jasmine-node --matchall tests/spec/",
+				"browserify": "browserify -p browserify-derequire -e index.js -o lib/to-property-key-x.js -u 'crypto' -s returnExports",
+				"uglify": "uglifyjs lib/to-property-key-x.js -o lib/to-property-key-x.min.js --config-file .uglifyjsrc.json",
+				"precommit": "npm run production",
+				"prepush": "npm run production"
+			},
+			"gitHead": "59f20933d4d186d5b83242be699946ffacba123f",
+			"_id": "to-property-key-x@2.0.1",
+			"_npmVersion": "5.4.0",
+			"_nodeVersion": "6.11.2",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-ccIUkUCML03zRkNk+2k8jxzObOepBZiL9Z4qVeK0c0e/CXsvF8rVAhgnNe7W+qdCOSB8vcq/FTBZL6/ccGKfsg==",
+				"shasum": "2a9657d3e90f86c9304ac09025df5c8c8251e3f5",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-2.0.1.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIBrwh7seeUOD19JzluJtLQgUOigkpKE/T4zF6yda+il7AiBpRF8v1F7wwd0cGIOidkU1TB75PTaIY4ACfkts8CAqXg=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x-2.0.1.tgz_1504292820491_0.15726950974203646"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"2.0.2": {
+			"name": "to-property-key-x",
+			"version": "2.0.2",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"main": "index.js",
+			"engines": {
+				"node": "*"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^1.4.1",
+				"to-primitive-x": "^1.1.0",
+				"to-string-x": "^1.4.2"
+			},
+			"devDependencies": {
+				"@xotic750/eslint-config-standard-x": "^2.2.1",
+				"browserify": "^14.4.0",
+				"browserify-derequire": "^0.9.4",
+				"cross-env": "^5.0.1",
+				"es5-shim": "^4.5.9",
+				"es6-shim": "^0.35.3",
+				"es7-shim": "^6.0.0",
+				"eslint": "^4.2.0",
+				"eslint-plugin-compat": "^1.0.4",
+				"eslint-plugin-css-modules": "^2.7.2",
+				"eslint-plugin-eslint-comments": "^1.0.2",
+				"eslint-plugin-jsdoc": "^3.1.1",
+				"eslint-plugin-json": "^1.2.0",
+				"eslint-plugin-no-use-extend-native": "^0.3.12",
+				"husky": "^0.13.4",
+				"jasmine-node": "^1.14.5",
+				"jsdoc-to-markdown": "^3.0.0",
+				"json3": "^3.3.2",
+				"make-jasmine-spec-runner-html": "^1.3.0",
+				"ncp": "^2.0.0",
+				"nodemon": "^1.11.0",
+				"nsp": "^2.6.3",
+				"parallelshell": "^3.0.1",
+				"replace-x": "^1.5.0",
+				"rimraf": "^2.6.1",
+				"serve": "^6.0.2",
+				"uglify-js": "^3.0.24"
+			},
+			"scripts": {
+				"clean": "rimraf README.md lib/*",
+				"clean:jasmine": "rimraf tests/index.html tests/run.js",
+				"clean:all": "npm run clean:jasmine && npm run clean",
+				"build": "npm run clean && npm run lint && npm run browserify && npm run uglify && npm run docs && npm test && npm run security",
+				"build:jasmine": "npm run clean:jasmine && make-jasmine-spec-runner-html",
+				"build:setver": "replace-x \" @version .*\" \" @version $(node -p -e \"require('./package.json').version\")\" index.js",
+				"build:name": "replace-x \" @module .*\" \" @module $(node -p -e \"require('./package.json').name\")\" index.js",
+				"build:description": "replace-x \" @file .*\" \" @file $(node -p -e \"require('./package.json').description\")\" index.js",
+				"build:replace": "npm run build:setver && npm run build:name && npm run build:description",
+				"production": "npm run clean:all && npm run build:jasmine && npm run build:replace && npm run build",
+				"start": "parallelshell \"serve\" \"nodemon --watch index.js --exec 'npm run build'\"",
+				"docs:name": "replace-x \"@{PACKAGE-NAME}\" \"$(node -p -e \"require('./package.json').name\")\" README.md",
+				"docs:badges": "ncp badges.html README.md && npm run docs:name",
+				"docs": "npm run docs:badges && jsdoc2md --name-format --example-lang js index.js >> README.md",
+				"lint": "eslint *.js tests/spec/*.js",
+				"lint-fix": "npm run lint -- --fix",
+				"security": "nsp check",
+				"test": "jasmine-node --matchall tests/spec/",
+				"browserify": "browserify -p browserify-derequire -e index.js -o lib/to-property-key-x.js -u 'crypto' -s returnExports",
+				"uglify": "uglifyjs lib/to-property-key-x.js -o lib/to-property-key-x.min.js --config-file .uglifyjsrc.json",
+				"precommit": "npm run production",
+				"prepush": "npm run production"
+			},
+			"gitHead": "daf8782a7a75ab7551c34cd89ba3046674345d6a",
+			"_id": "to-property-key-x@2.0.2",
+			"_npmVersion": "5.4.0",
+			"_nodeVersion": "6.11.2",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-YISLpZFYIazNm0P8hLsKEEUEZ3m8U3+eDysJZqTu3+B9tQp+2TrMpaEGT8Agh4fZ5LSoums60/glNEzk5ozqrg==",
+				"shasum": "b19aa8e22faa0ff7d1c102cfbc657af73413cfa1",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-2.0.2.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDt95H7wijtT6vC+reW79rt520joRMq0gg0Y2dGpJmXIgIgZAHxKU3b8QDB4Kklm5S6vIQsfGxsNFbyUMOn5itRMu8="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x-2.0.2.tgz_1506521264067_0.8964386021252722"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"3.0.0": {
+			"name": "to-property-key-x",
+			"version": "3.0.0",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.3",
+				"to-primitive-x": "^2.0.5",
+				"to-string-x": "^2.0.15"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.2",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000983",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.5",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "41098bc7bdf7ee53021ceeac768b29e27e130644",
+			"_id": "to-property-key-x@3.0.0",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-SUQG7Mlwx1Po2RxJjaf+I9xEayvlWmbSDeUvtYcq0LMvEM56JD+lCPGiV/Oicr5go1pPxpkvTC9ZOXS8n1z3dQ==",
+				"shasum": "7ae6f1ffa63238cf8df130400ff0fa5603b7e622",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 147468,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLETCCRA9TVsSAnZWagAA7MwQAKHeYEtIrA/QFc5hk503\nr0dHR0bd0P9oy+l5SwLsglfZEF2+5TYbOv1sCU6+RUyySk1MEJzg12BWL4U8\nCS9TcjBnFYArVFv8WGF9bwOnFBQCXX/Gg0MY/j30MLFOtbMIgl4Tv32hgHc2\nERpo3Zjj2XwQSDtFU/Y3RYaKy0InfoEaaC7m0QduFR+eJPNfm7+WjmrSsaoS\npjpD25dUFDLQOkJI+N3THKj9EK5gXxhzVk49RCU8naksJ9HetnHnlKhgOj6x\nqQj5E6Gy1wNUKuCh3cGYt56fTZDzSGsUvOQ1hFHy2hMvEGIHms336coqW0q3\nUbgmHlnY6OE91nc2d9XieUX94LO5KVheesn+Hq9+YYrrOKM7B7FPRwodTB48\n8c3xvodux2pGUuQ+wD18mxNB08zysFvECPR1KkM1h6fI0KYwN69HQXy+Yn1l\nIajr4VvgrMcEsk2Pqmg1nX26X4hYaEk0TGFWziO/c30P6T2anyTPj4FbErym\nvHq+ihhiaduDrs7M2sgeE/OidH3H1sNjcWpZuiZHtxr9miLScG7axtia8o4d\nYHERw1PfWNA4fqfC+I6CHJByd5BHKZBDrxAn1yalkUsqfa3uNMYsfh/nit3L\nnChXX5KMxXkzOQnqpeH/BpOqaDr/fSx07NDY0cBf66GXEqbf7AP3N7wugyDQ\nFa+o\r\n=3RGl\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDhJgMoHs0FdTNJkrixhWXXXDO+SGjO183yAC1yirrO6QIgTgOUkdggLUSAq1/s9DjVtI2LtYUBniI84G336ui/boM="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.0_1563182273747_0.154549440868482"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.1": {
+			"name": "to-property-key-x",
+			"version": "3.0.1",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.4",
+				"to-primitive-x": "^2.0.6",
+				"to-string-x": "^2.0.16"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.2",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000983",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.5",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "9f46a0c744527b758b0c1cbb187e684a183ae641",
+			"_id": "to-property-key-x@3.0.1",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-XSqdZ1G8WhWZqDOKGb1v0VF1XshqHKXLUjMi5M7l3yfw9vSFrM4r8PpODCgmockdE9/NuheJk5w5eJL22fz8dg==",
+				"shasum": "156caec96c03df04c7b0d5ea2d10eafed8646782",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 147468,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLFz2CRA9TVsSAnZWagAARB0P/2nv2uTz9fQHM/SI8Pnf\nmW+9g4iBOzfXoVFCvXO4o+slRk3VCf/b8IIwqbmBzZtZ5KVGFhtuhzgR8NLS\nrAlYFGPVFhUq/BbI9m1LMV2Je0wTKHOcvutzGE4d3tkaIu5agtoc9HCrYFxQ\nFJFTMYKkGjfBs5/N7giBIBVbIn2YhG/9xNkqNxxFGx72T5ti9pIznYP9AJ4j\n4cWMcltIMdVp/X54YIIOWpVEg9Zn9mM8cjhJZLnC53Qxd+hY+rmsefU8531I\nnvTZcxGjiQXLjAQidAtR2XRZT7dOGIds7ymC60aGwYs/RAHLrUCYp98LsYBa\nmBGPfr+oRUACqH/07xzKm/9I7TbtPFx+Do/MM8HD0ytAYjD2U4QSNuRnBtIZ\nD0lq7e3LGeL4U3/FSrjLA+v9aVKEqZr5iqzL6OFQ7LGseC5YT9YVbMkd56Dd\nWCuJBmrAyFvCnRrCMrNBJGag8SgCIkkDM58leocXQecONKaG6EcNxg8bFYqK\nuTm7aINHUmVNHRdfRVaW+bdVc86zVozsNTyFyalfcSiKiopVOg7QxOklL/LX\nYuuaOedHNcTQ5DW4ct8V0quBuBHwI24QiS4umlX97U0/q+th3jP+VGnAJIfo\n0YlTLj477cpaFY1bTtQMHCM9m9/Kdd7LQQzYLDeuGFkaioEGnEcvcmf+oZ1r\nFleY\r\n=ixs+\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDfGeZHQXCDRL/cL0MqC7x63tV9o0bTQUbL7STbtYPvsgIgZZeChAUrp68Cb1oZwpVu47esceKz1ZCBKCniWad8Cuw="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.1_1563188469718_0.15803386510639394"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.2": {
+			"name": "to-property-key-x",
+			"version": "3.0.2",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.4",
+				"to-primitive-x": "^2.0.7",
+				"to-string-x": "^2.0.16"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.2",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000983",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.5",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "e46260e825def00a9c988292cfc69905a38cf0f3",
+			"_id": "to-property-key-x@3.0.2",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-BCShUyhlkRTXg24rTLPlnqF4oIEuiEEfanbKxm6JuhfeINuoTlIo+tAneJXaHCkCKby4B2EmbgDW7Hn/KnKxIw==",
+				"shasum": "1b89683769654511c399cdadde127566f3c0e34d",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.2.tgz",
+				"fileCount": 10,
+				"unpackedSize": 147468,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLHG4CRA9TVsSAnZWagAAgWkQAIUe0ce9CDXRZ6/21PG6\nuWcl85Li9bPCHW3297T6T42xnlsnMk1md0Hahw8x66xFkzxerKmvfbx/TmFy\n30GkRF6KJU/WzFXH8Rar4JQkT8604Yzxp94oigStGD8xu9h4xPC27PUnYtSo\nUUa4v2BnAVhSG5V52KY+WywRXjDhyAOZTMRaLvtArYH3VINNkVbJKf8BvQ0Y\nOfp61yD8mLXa9XqAjziDEQT/poZUzuGZZnyTE7Tt+7+jpioe8T3FCdk4KZfA\nICPgmOyRCoLz1ChXucpis0/J6ch1NKWgf/dQoN7Zz7gomhAFuX/i0dvsNvW/\nzeOFxxl/Ik7g2YqqPvLVYP4yNES7sxWCt9979JOl+0zZ31H4BA4+gzCK8uZ2\n6v6KEAnQ8Wn9+vNdfdfLdKWPNqsAEt68U5DzTooE9avKp7w6U1+c0leMYZr7\nudGIzrj6b5ZgXq1vfy3Pk5wH3AVn/Xl0Ut0wRfLC2otnOs/0BUuyNCAwFFt1\nWZmu1YftoObCV75m+PiE6GRIEpCwtc782UFQx0pbfkjh0utxFjPk/e3ihfeo\n58ceyFSXqESuDbKq963cBftfEr40riMS6V7tIkVXr5OkrfCjDdqyW/Q0c2RN\nxorZ4Jz37TPLDKFZ3/qv14yISnQ6OP71GeiA+SX5bsG+IIs6a1HuMfkC9luY\nsLN9\r\n=n1Zj\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQCGkfViUkY/y+ALbPBhErXLX+Hm3o7Sde8nW7tmP62HpwIhAIWR3HwLUR1yrW3IiOXjPGXyxhlKg7wlgGEPvciX0o0A"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.2_1563193783385_0.8473492642604954"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.3": {
+			"name": "to-property-key-x",
+			"version": "3.0.3",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.5",
+				"to-primitive-x": "^2.0.8",
+				"to-string-x": "^2.0.17"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.3",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "55e28d3f8fb51fdf4ce65688fd59e39a215a9aa0",
+			"_id": "to-property-key-x@3.0.3",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-6JuAogYwFvSZcOtSuF2jupaPsCufdzSzdipDqt0RPyKZODxyFRtbhfTHkHUI1r2h6kQtgEj7KxQ/FovLK79R8g==",
+				"shasum": "600954c5f8947e9acb72c2e2eac7644f233120fd",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.3.tgz",
+				"fileCount": 10,
+				"unpackedSize": 147468,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLaxECRA9TVsSAnZWagAAd2AP/1K+Epgz0Bm3kW6iTkcE\n6tCeSxnzyWUfeiOpBwzyz9PSq4IU4fbfNEmePkVghILeFKDlBLBAp9gj9Qlh\nSef/EgQgikC71erOV9n9JS/ITgoQpzyiN2CvkWDvPnBUqst+CHpkjCjT5L04\nAR0jpK9g7jE5jqQ2Y5mAhnl8sKb/8qwET+Iw6/72hImsPpjtwJLgnzif/YV0\n1gM6dacgLCNBYatueNWOvhr8DirOpUL50rpWWHq0/iWz7L+L8Nw++cqm7pwX\n9ZHMjYZJZ8JnbyXAg53nDdfNOwj2dwukNTuBJqKozH5zh14epolPzjgqkzS6\nuipmsB14Mh2l4IwNKaP5ilNdHL8h5e8MGLAgjVX/sGRfbzNJK9gkaURWcm7l\nY5SiGJXIlPpoGIUlPTmtVEuZNgAQGaDhS2Fx+PRk0JvMs1qR+FNzUtivb/5T\nPKFtdlHsAmN48feMh8+bPzlXR4OvWy+tLuEP9NEdBXwn3B68g//xeTBbukM8\nYlHtfupG7KUsYQT0H1IwFeFmye4FV1sPUFfRydlRJD5a1B3XKkYCv+VINThM\noQT6/SdUHcZz87dZDPFeVO2rS2lVpNFkSP+q5CWAFB7KgLUv4ELsvi7b5mqM\nYfbuAE/5aGm5coyxjtaopV/kUdPzd8WR1BOIaM/A+EuGiSJnV0ekm2NaeM6J\nSPtt\r\n=fGYB\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQCkJ99ZXMcGpo72AqxZblCPtySJ/JU3DE9KaNuN1SLEcwIhAPfSBw+4lnJZrTT+K28o4lpydjHWMkgn3r2t5cLHiYW1"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.3_1563274307617_0.08904600168267818"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.4": {
+			"name": "to-property-key-x",
+			"version": "3.0.4",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.5",
+				"to-primitive-x": "^2.0.9",
+				"to-string-x": "^2.0.17"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.3",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "7fb116993fbef0fe04e314f5180bef4f8af04fa4",
+			"_id": "to-property-key-x@3.0.4",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-ib0lkLcsZMNX6GwQUChp1RuLApOVlIY5xlVvcNxNUtmwQfB7r7HkIjm/E7X9Gi0HfpU+g8YzeMrYI1MuDB95sw==",
+				"shasum": "1801f753ffb2a149a479f06ed09c44cf8b120d27",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.4.tgz",
+				"fileCount": 10,
+				"unpackedSize": 147468,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLcOPCRA9TVsSAnZWagAAkj8P/AqNKQh8nw4ho9Zylgow\n8rMfNsuSL4w+U4BvG47Qw6g6vhrp4v06uJDSjZ4VDC1lWjsQpY4eB/Hzr0Jn\niW0ofgWFs8r9pSsC8MxHcBty2HTsl14yUpOu0ad0SbAmIH4rxXqCNG9Frm06\nYyMCNDrJZ8L3J4o/YKwYMfaYFb/QmMkfUFLXoF1dKNPROxYKCS7sBDqKmkXm\n6YHSDkWZ02PbUVwrabq0rJwu8aUMVcKSGzZ4cKI+XRVYi5Px+hdtqDOwisou\nK1SfNnTDf1nHCnyNLHhEyO46qdudFrtWrcmPJ05u2Pf/1JuzwvtzhOEUE3xE\nuqG2otC4gQhKsfGnYsNaApDRy6Tf60zwfIQbf/I1oOoTx6wPJK2kRn5spJlO\nBl+EzC57ilzderVyEPy3FyguxExHE9hjsfyVfVR1lyqzF1LJS3BVOB+OtWgN\niR7dUfl3C+sTTj4ZMAwOqSy6f0DZlzIiG0Fs0YHC4nOiuxrV1aUEOkZOICLh\nJes3YrnLsQb5X2Yt22T47ffqauBEfcUooD1TQ13FweSNg2jWQf6CffIOEJDL\nQUOojFTCRA0J6G79DpmxYsk1S4vZuBD/n2oxzctfmw9L9Wy1BM5wlLXydle2\npD7Qj0OoAdGqcwhW8AklN3qFKNE8icOu2Tw0mIVPLkgaOEauwV1049WhYN99\nykIb\r\n=wCkH\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCICuN+B51eFr7VFXAXVNv0G0EdQiYplIwPnpcRyHqJTQJAiA//PsR0DkhUnVAbX9+d6LbR51+jxoLcJ8WvNlXGccNPw=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.4_1563280271430_0.22290911589455198"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.5": {
+			"name": "to-property-key-x",
+			"version": "3.0.5",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.6",
+				"to-primitive-x": "^2.0.10",
+				"to-string-x": "^2.0.18"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.3",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "86a192693ebbfeaa3b49ab0d28e608e5d5072be8",
+			"_id": "to-property-key-x@3.0.5",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-9VUv5osRnuo0xnYb4GwInG3gOkLpBlV7grKu887ju4Yl1G3hwvghYGdcrdtduMgI7OfWw49KEf19Ck6lo3SzDw==",
+				"shasum": "842b13692f6ff4eaf1bc68f87493e816c475ebf9",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.5.tgz",
+				"fileCount": 10,
+				"unpackedSize": 147469,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLkE/CRA9TVsSAnZWagAA2lYP/2vXe/IiDSO7Mc6SVZTe\npLuanVRF6OAU1QL92U03/1PogOUp33YMaz5lD2+XzmmlWg794wzhWDJ1Vs/B\n1QJCuHlsTNoNJGsJfp5E2qDzHjqvfE9iW5iSqv5D9c5rt7B0dsfGizJabCwb\nyv7PF3PRSfZLiBqF0C+pVJuwaxjKnolNnmZ+UjHgBde//2mBAzQDWME2GRp8\nCQklDGG2xaQ7CXpLG1PplbVpPh8paemrAzSDkRDpC0NEzC9mQ/9DPAmYh+uX\naMNq0nQgN51u7R4/c2IJoXhR7RPWmERmexaUD/+ueqwiPDyhgLNqOPhngmzd\nV0yZjA+jtrzfmjyyfVZSIh1S61ePjePT0d1oFJngsZckGuBsVIzQD+B7ER07\nrDddaBqBKC/2BPg6gXB2UKS8mM8N+drKeergwt0Oy1UkGY9F/FlRdqMXs67R\n5jhdZxB9CZYmX58KOm72p6nI9unXcD4Z5CsEz/DwVcVQBbEHxLNSIM1wnmN8\nT9TwjmSRqcDtXz2CcPRsWAIS7rgb6z21qCG7/gxj3u453qdK4/7aQ8Xg8Xrk\n+ys3cHYxEkg0RtE78EUeCqfGKzUOQ5qZqqkSZpftXvweq4OjsHLeUKZK34M0\nBB5HGdrFRgQYXeazxpaZ1QfpQl8rCYy3gYauBitmNo1XQFpYKtq5ZVfnQkOM\nMJVu\r\n=4d36\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCS4qKhdmqdZs8Xsey2CCQYAspR1Dtwr9/CnK0ywoC0twIgdX/hWJAbLOs6EOwMklx/WuMRnArsLPq8oI26VGufIK0="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.5_1563312447070_0.0892249904538378"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.6": {
+			"name": "to-property-key-x",
+			"version": "3.0.6",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.7",
+				"to-primitive-x": "^2.0.11",
+				"to-string-x": "^2.0.19"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.6",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.9.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "a90f3211b28561fdd72bce0ec15759a2f679dca1",
+			"_id": "to-property-key-x@3.0.6",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-hXeOMQitraa74rfWQy+jHI1onblctu3ZncUuBAbmEBKqTMXtqOtAQqRcTa1R9jfmQ0mnvgz88ZtWPPCvND4shQ==",
+				"shasum": "3185e72fd0dca4b465fda4c0c2f3ff6f22e10a63",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.6.tgz",
+				"fileCount": 10,
+				"unpackedSize": 150393,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdL1U6CRA9TVsSAnZWagAALq0P/jHGcBi0Cgsrg9yrPP2R\nOsWs5lMYSNSG6yPb73Y5OFNnPgIzJ4BLBOgsDROueQQbZqcBO/VfaasBkmfn\n6IAmbXO05oRDohlinLh4nZ3MFPQG3k0z6W4YpHokBgAhZe4Vs67kOi2heJoi\ndP9G0sUdMbFJOSul0PGvVSTSOLfHxPNvGmK8PeTcEQXrzq0DPYSrvG4AfPI6\noPPT4I+9D+Eqo8sZFWYl83jfGLjqhUn17sijrry7/+v1Ah5B7H1V6kmktCah\nHQv5qC4iuJwlvxGiYjtuUx0Im1ijCQcHsFmLwKWYlZVkf1yAHiYc0yMQKsXm\nNTmcZgW9mNpplpyISUV68bM0SWj1cBiEhla8V+i0GWgu13ezpwYbamjAsPMM\n6bvEjr+j7QFtwCpe/xicJpiWAKpBa8ghvTl3TOB4IzGHvDAMh7FjKXl+IsXb\nNb3zXjo1/qE3vwW6ke/ryYm6ry7nrEqA/ni8j9BredUG+M1LkwA/f38+5evO\nOQb0UHhBJf36R4gkFZt8oJ739z3pQ8zl+tYSFrXWJXCR+iW5qPmY2fGO9P8d\nsgoneK7cXji5/BpClKj+FXFB7f0tMxVcMoyxRIlNOdrpZjo76WGak9N+/Gv5\nOw/qdvCVoE4OOjfrePadsATpGcc/Zw+21hTaRtcSxkZRH8dISl+UCLONQWcP\nr3C1\r\n=pf9G\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIB/xsGXS8NmwjGYTpcM5kBVCKWhWryhLdG983YpAt2xWAiAPW5LM0qxacZ9Wv/Gb/TjkKMB5ujsavx6/NvFbpOnxeA=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.6_1563383097729_0.7986969632900087"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.7": {
+			"name": "to-property-key-x",
+			"version": "3.0.7",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.7",
+				"to-primitive-x": "^2.0.12",
+				"to-string-x": "^2.0.19"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.6",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.9.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "b999bde0103730eea39eb1b146422db8fe1595a0",
+			"_id": "to-property-key-x@3.0.7",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-ekeE7XtVGMbJJOgiTg2l4EgfyTouO+XtM1GhxgnTyMVdz8Es0rUgWQ/lTC4OkqTYVO6BP74DOBwAWXJQz3zmAQ==",
+				"shasum": "0edea88eab783ccff39735e1993e30dfec4b975f",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.7.tgz",
+				"fileCount": 10,
+				"unpackedSize": 150393,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdL1ynCRA9TVsSAnZWagAABukP/jw3pt/3Z6akN93BOW3e\nBS08v/jbX7gwsDmzWCqujb+yFHO67UgHCvsxP/aUBFg5W0zllhpaBReMQ+cq\nBICUcoNGOjhiLh1pMLNvMCQ8Q0UnbzIu2ET7hVqOgHJGSQqm+mRT7XbC1KhS\nYqleF+OWCmBYqWxRiY9VqIs4O7sf2HQkoSgSEXEsfL876wJV043laC/DAs1u\ngarRuBQryWpm9mrSLauOx/kwYs8zXSDhdJwjiz4aHCAwnlzFO/A2CHapBYg/\n9GnBHssWAtU1kPxQdD6DbNQQ9MSpNd3/iEFEv/gnfTtTNBsPjbdVn8vZQ2VW\nCVF6pI/UESZ/YeuE8ZGfGHjxr2SRKdekB4DFyeJ2/cwLiG1X0hrQf/tz0Gsz\neBA/cFlR4vtlF2nGr3jy9J35EmuoDuWCqGCXxMtIcvNsDs9jYb7yal+fjxba\nEAoGe1KYVgWxzZEHrWQ3xm3dhWfIzJr8b996l2Gc2HOEuqhkN85GVUDh6/JD\nC9yLcTYnjPCFFw5I2yjaiOI1tVrDKq25oyDmY+FS5//bDQ4Bp2yewbAxXvIx\nuk0a1FjePC9Dyz/af4OBaBWmhhg4GZHj5BJbRJ2NETTYTeTKf32LPruumpdl\nqYL2QwUazEjdoRAfx9TrR2+3CA3hW875eo7QUYDOa2vPeTbkV6cGSqtJmjUe\nbrsn\r\n=5Elv\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDcZGU9d1Bi1aix7TuATBrA9mTwKrlJyEAu1anpBGYq2QIhAJPhKNYOtfgtdtPLvt2ETDqDGDq1ZEzo7ktKzErkREkD"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.7_1563384998752_0.6936779213599862"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.8": {
+			"name": "to-property-key-x",
+			"version": "3.0.8",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.8",
+				"to-primitive-x": "^2.0.13",
+				"to-string-x": "^2.0.20"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.7",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.6",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.10.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "29ca49a743a8eee18001bcf4a00dfe6813ad0817",
+			"_id": "to-property-key-x@3.0.8",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-YKfXsy13IojFpJu7L36SLA4b2hJlGtJS0r2fkC3NlOAKONk5mKMFVWHjNw4Vof7Gk3QD7XRR4/U+D/fZZ5Irpw==",
+				"shasum": "317dad482693f0596101552f224996dcdaa18c8f",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.8.tgz",
+				"fileCount": 10,
+				"unpackedSize": 150394,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdL2xZCRA9TVsSAnZWagAAU2sP/jM/FM/xzsomylJEJpXG\nPpKh7LYcS2qDozAgMcPWUCEovAOjcnFCd5NgDjztg7ysMMed+QUy0ie81AOC\netydlGUW1RknNRB9n5zV6Tcl9NyNhqBnz1tF7v+DAGI2qNUoCcu6jMAvmzS6\n5txBnZLHH/yejh6Ants6uwgyvOo9cUX5WG2hmNEU95yb2bq2akd7I7rwFPgr\n6Uz32SRqwIIM6jHKpuckhe1M6BvTCqVq4h0yvxION4/j/jcB9DQ9F7up3kSo\ndsTylcoyQdSGbqFtPnbIdQVVuUQkD2cFj/zs5MlE+uvF2O6fMxtK/myPrfyh\nH/+fAxlqptaxuWv2LZlSavPR5MQVewQ2Ts4o9GY7TbuWsaluynFO52K7SZzm\nqDcwRFc3VPlIvJcx9iGM4B78c6Hh4X2dX9y3jJ2yUDbnL7waE3vBjQZbDdam\nAEYIaTj1tU+p0KQUvzmAxza0f8JX4oJJJI3+R79cAvEaHDdzd8DhKsiYO4f+\nVYvRijsdrLwSRNwxxPDExG1/ibED6XqXzPMOq86EKZKkzQETaJcofp68NEJ/\n7V8Efo2ynyo/CMhhGuOZu2Xkt4CNAcFMfX1mJMPo+36B+enAkGAB54jaMCHJ\nAwrbpvNSWkS0L+aTKRibElziy0a/32CIwDk5ZHext3TKv2eUz7lkCAkV3gPS\nl5UR\r\n=i4kC\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIBXVspHQfH60/kqCEkDjoqRkbVBovNrWJ7L3zbeiYI1bAiEA/+2z82VuZ8wAN+21FbRMFEv6vhkmtTgaCU7+WFMn5yo="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.8_1563389016788_0.8373752779305683"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.9": {
+			"name": "to-property-key-x",
+			"version": "3.0.9",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.9",
+				"to-primitive-x": "^2.0.14",
+				"to-string-x": "^2.0.21"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.7",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.10.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "e942931e2cebddddeca63552cdf39ec2a882ed91",
+			"_id": "to-property-key-x@3.0.9",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-loObYlw7rMH9rsysMqzYJss3v/o9WRxSznpS/NfXoR6IclPZRXoPQd+bxMHB1SrNk3LFcLPPNb929xaEi6QkyA==",
+				"shasum": "73ebb97dfcbfa472f494b498942ae1ef55e783e3",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.9.tgz",
+				"fileCount": 10,
+				"unpackedSize": 150394,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdL7SYCRA9TVsSAnZWagAA+N0QAJuQyuBcT36+stqDtBGS\nWqP2kyv/dYIeUVZ2KyBHbsygdw4WcqfYPA4psl2M06frv9pK2AwOXFChee4H\nr4TCjJKcqgQDfjtRJiXTqQ09UGOovrS3lkz2tMlc9Bb+5wBLxATkgzO0G77C\nuB/mBM8bVct+nWhkGCy+3ALXQoO95URnQ9hvyS8mVMX3OwHIigfQ/pCt3QnA\nKybqSALRyj+o1BbKntioU+rY7qzb0izIyuyC3hUSMCmTRAzxerjrpPS7vJEw\n3C/YsFuFE9FEo5qiNroTaCj5f80AqZXnhgYYRM9l3PBoDgIRiYzzG+UdSVfZ\nGIiv/n7tl4rVdNjd9MjZpdkPxSCGTFMSmilxUIqvl1h1RH+3A34CMrBzcQq2\n+zP+1lz7Hv9XA/30s8/p0m9WZxO8lsGi0XCf52fSFUsCDillSereQqXU9/Nq\nEhoAa4gzuLtbz8N+X+OLzv1MgwKK97stk9XrGSTERAqj5WqbHbYpqIIkVfG3\naxnfAULdAVeHDBk2tnyDxoUayma7KGQD59NFnTPH0R/qEDPSTr0mlXPRg0X/\nFK4kcmKByCgDAKWF9wn0NcDFYvKNwCmTfdsCgCEhPESKf8c3gQcPJqJfXNUF\nHRJH2QVMlAGc4a4V7BqbU4Ryy1P6BxsXTB79bBGkpdrCiDWiQ+uHnrhewTGj\nynnD\r\n=TUng\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCfdWOcg2Uu0Ln5ulIP5Hkc6IlrLNjlkqBbpZlOk5+/pgIgCccf/aTYHp7HOz4ixR3czhYoUNx/wQXd8nUAWdeh/OM="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.9_1563407512342_0.6332753192617071"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.10": {
+			"name": "to-property-key-x",
+			"version": "3.0.10",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.11",
+				"to-primitive-x": "^2.0.16",
+				"to-string-x": "^2.0.23"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.7",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.10.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "aaa4324591aa712f17f9cb0624daeacaa9246654",
+			"_id": "to-property-key-x@3.0.10",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-mOZxUPfmPthC5tP8oHpk/nTxEiLs1lefGrYedNZFCHlBASZuc3+P1BgmUBFnxC14xadFUJIA54yLOZLZ7aExJA==",
+				"shasum": "a6111c83c3818f0af3b90becd88dbeef62935f3a",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.10.tgz",
+				"fileCount": 10,
+				"unpackedSize": 150398,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdML66CRA9TVsSAnZWagAAYCAP+wX+kqUtZSKXamjTCw92\nSfzQMmaPQXPSWSM359pxyN+Gfgt513hRV1IXicyHy7EjmNul77LOStGhlq1v\n/GKaHPNlPEuCOB32tmQjtT8BEwBLTu7RguQYUvGJM2/u/1/0h4p0W2GgF71B\nECUaIlmZ/jufqq2XzNedXXMfFKPzvTI06tHp1wUy4IFiW6jVHIj39Tqj3w/z\nqaBnqUbyXJAhLDBJjeVH/2xP5+K0jdb9PoZcfiRX58wsrxjVLL8pAI8SB9LP\nHfHv/wlXl5LKft4SJUwmhsoIK5rdTuMC1bvxqBw144q9nodIUKa7kFI93JZy\nUl/ih4g2MdliSpmURQrraTS5TCh9FP6YgeEqzDCV4yOWs1H9+aTqS1d231Sg\n5woF1/D8p7+7NmkWr/8BXtsv0Myz0ho3GNaOpezMzA+8iGSPpQdvwsYSbl1R\n8vHe0YvrA29LVcq8KCk68NKbwyBFcRjrr3zA/FauQFS0Vco1B2SxMnZ8vrCr\nUVdbtkFJXpOQmR+w31ZCnP3gcPS0+hCCwV0oRetlghu39kmFIYXf13bs3jcY\ndhNcNU43yMDRh6cINvyjo9l6hKM8ChCT8zxpOfaxF8CHNmsIVxGlm/guC7Bp\nYZKh2HFvXh3n4gHdKvHLhw+Kcf/wYiUh9WpTU4zGuqjARPcJsQb9Q9HZpf4I\nqHiA\r\n=G/ui\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHlFw5JOl8Bp8XTRwG6CPGeXIDuq0pZr4MCuzNFlQDyPAiAsbAeBWEL77BKAfwys2WBGLXa8UN4JHqn2CwidS2NGaw=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.10_1563475641845_0.9558932445692325"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.11": {
+			"name": "to-property-key-x",
+			"version": "3.0.11",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.12",
+				"to-primitive-x": "^2.0.17",
+				"to-string-x": "^2.0.24"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.7",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.10.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "f5741658e32b0230e6a26e109fdc770fbcb59a72",
+			"_id": "to-property-key-x@3.0.11",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-hjigGN9y8/cerYG3MSrteN/7BdkbqFZuK+RrfILRYUtE7de5coqW8AvgD4kmVWFJGTmzJHy8lG3oYXf0o6HacA==",
+				"shasum": "ad1b19fdf4acada7e62719d1311a41cd80b9a9aa",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.11.tgz",
+				"fileCount": 10,
+				"unpackedSize": 150398,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdMjyECRA9TVsSAnZWagAAksMP+wY9IOU14SCy/cMC/KyA\nMa9HD8mr/AxwGEQufarOaMVmy4iOeE5LRxqviOdR0ASa1wG7SOsg3pOsq9pS\n4H0X62Jhs3lBLA12wb/NNbUVj64guChk1XpeYhRhWXbnCkiXi9HBGWGEWxcg\ne9RUZCYvJqBKTYKqRScFUDFP9HI9qRo0g4SQbJjRcaFyoGsmU5V5ycs+U6h8\nObpZqIn794wSK6T1ymLz/mm+qoTJzdjKTc9nsH6xFskCe/tATuIZB0cM0u/A\n1da9yv392/SwT9vWWYInLKHRxy1/o2BxCbhIAsSKic3HQ4Toavd2oR5WDaoS\nV/MffYsK+3fY/E3aXO+cPl6ySpoWlHWSY0yIRLSC8Nyjc6ZFJlx8q3w0b8UJ\nRToO5TK+Xt4rz1ET3kBlNDEpmSlLItMrmmsLnyy4tRJuqOVRQeX9KjDLdR6f\nGgtBhgZvEykdvo8lfNeaZIKexlOZ5FamiHYLatNM2lIUo+mDFcPdUkylPRtD\nevd8+A58EbV58B8cGq6nZ7d9CbcJK8k3y7u90wgQgXFIE3wVr2XHmf11sEdT\n96C/WP0GB/EsPjyRjPRw8X0BLEcN/NNIPucgwb/2KAdpZUhNGyco5NAVhHpx\npDT12OgYous3OfmXWKDXyQ8TVtcNbNVcdg09OyEp3P0wEiQEEcpppUeYTH6d\n/U0u\r\n=dqKo\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDEYFQ4DUQSgceqHWDV9RFYArlbyJhfE/WnOLmJgABXkwIhAMC3mhVush5+JxhwLSr3AwKpQ1c6pPFt5GE5jdAf8Uho"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.11_1563573380308_0.37452562207306994"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.12": {
+			"name": "to-property-key-x",
+			"version": "3.0.12",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.13",
+				"to-primitive-x": "^2.0.18",
+				"to-string-x": "^2.0.26"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.9",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.0",
+				"eslint-plugin-jsdoc": "^15.6.0",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "e1563175ebae7fbdb5bf49835ef829c58e3ceff1",
+			"_id": "to-property-key-x@3.0.12",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-z+weKepl5WFK+Pkdxdad+z5FNS64w+2UnFX3J3j3eKl+OxIukBLSPzISCDdxtb8qDica5Jb13Afyyb049Bu8Sg==",
+				"shasum": "41820237743598b43bbb96b5ba1da83d82770754",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.12.tgz",
+				"fileCount": 10,
+				"unpackedSize": 150426,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdNOrACRA9TVsSAnZWagAA5gYP/AxSJOE0HQ1t9LewWMrH\nxK8nwhBTf71rJJ9L5IaHrqveyPSDLqRn26Lh61VOpPXomfoB3ZVkuWvA7VmB\nei0aJs0tN8lz04kQHJ8j0XHS/uNaXCm8OPcvblP5Ih21L+cRuaSKW8cnnCLC\naT7F4pycI42ItWwP3E7HT5DygH2yh11FKHL3ZjN2QAzkzseyQxTziisDGTAw\nsl9kt+n9/YIwgcMe+zu2fhsQSTDF91CQWP22PysGjiOkK5Iln74sCS67Tk3S\nt3VXOwuP3ugRbRDMrvvhzkSUpZK01yFFyWFdcW8qcFVVJMLplJ0/o5bAO9gA\nNn48zBgaerstqo6pLs6ig8nh4E3Id3fgjb9HXbkhIkZU46ZLLe8mCbiUVefx\nI6dswh8p6OXxEvcuzZ1v0+LRb2+VkjeNY5FJc7X7s36QzGi7Gs2vmYlKrkcO\nRRhskP5FIROHKVCkpJeIyaaagSR+fFwaAf63708RVpkDJQUsKrCpVK665hsH\nXbkfA65t+Awsz47LIdmQHtv8pv/zp+TTBdWSRMeNixoakEfdI6v3bKJHvFAk\nSEh6IhDQ4vUutx3pWfx84WrRjxwrvm1E1ep4zpeQEG+91+B4b7p5R6YRi4V0\nRLrb4Dxs0btDWuL5rxTUYeFjjhg6uwlpbZWsF+yxf6QUqnAawMcw+sw/KE/U\nZj05\r\n=Td//\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDYstgOMupII7aggU9aC/lvKFQwz6S5vhmsWS/5M55q8QIgQQuB6ZB36si/xiE5YVektRMXaGifuqQfNud46kSCBGo="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.12_1563749055342_0.7780783477669058"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.13": {
+			"name": "to-property-key-x",
+			"version": "3.0.13",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.14",
+				"to-primitive-x": "^2.0.19",
+				"to-string-x": "^2.0.27"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.10",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.0",
+				"eslint-plugin-jsdoc": "^15.6.1",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "550342eb65f6ab0f27bcbe891e7905f633f7b6d6",
+			"_id": "to-property-key-x@3.0.13",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-SH0LSsNmiwLELqEafWacOaKeLLCFbV+f1Bm7EYwryTExGTiLZcGnu+xr7e9i6abYUlmg7T8ki2MtirdNhePapg==",
+				"shasum": "bf9f98cf5fb5fcdc04371f8e05d328c12535a0c2",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.13.tgz",
+				"fileCount": 10,
+				"unpackedSize": 150428,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdNa8uCRA9TVsSAnZWagAAi4QP/220rrAxhKrS4PCQohyO\nOQLo4JCWD/7No7GzIHPcyFkUc6gd4XiRjswCrQXL73c4/aZehs0UNxrAyIT4\nFiQqiIFg/82j3QCfHdSylDKiQwBtr4NxJQdlmt8BdpCZl9Gdcrh54n/hWSeH\nreWKTJ3LQzAh4rKFxQohj90f17keUhpyzfAHA+vgFr06hgdr85pkOCO3rkcz\n8ug17SBI5++YMc6Ld6WVFHvZACxCCN+b5NGAfbAm638udqL+gEx17SPCqq9p\n5nunx7URp1EvtuaewWWrU5eEvwzJIhrGvLFfFGd1x/AWw0WkRgFsO+T5uzMN\n1C7RLrH948dExRVluNUuPNtmEFM5Wk3tHtlbzYkeSloVFpz/ayw2ZokalfLs\n527Qmx5sWFdhZsYPARKN97f2itJC/SPXeCrAmTtjik6mYel4Fuj+/+hnnhDw\nka7DNYBqOY1nj0TiHfugl3J4r4B/zLBq2IHIRXPB0R/ZdVgWYO7fMUjcQCv5\nXYUec2QUS8QNlRPWiKkm+9jG6hIBhS9RExwK98WPWa5zEJ/5Q5Se5Ue6YQp8\nJxanTHiIeOP67u6oHt4r9gzHASoor253qjo8hSGRhhHKpcoQNOHRMK+hwRIG\nj2tI/adA6a61Gh0XsePXxpZBHadnoUsHAs33uh5wN8gYlSsr/cFXe+surfI0\nJmdl\r\n=h694\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDh/7oEOXDkx1wcSQ3tDlcRhD+pUFcYEHdWU5Lmi49xdQIgcwWp5H6duIqSztlo6ZaNaAQ1Osqe5/D4DCafPjxNHAU="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.13_1563799341757_0.3836630223672668"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.14": {
+			"name": "to-property-key-x",
+			"version": "3.0.14",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.15",
+				"to-primitive-x": "^2.0.20",
+				"to-string-x": "^2.0.28"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.11",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.6",
+				"eslint-plugin-jsdoc": "^15.7.1",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.37.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "15f4e257f62d3ea3be93425b3e3864c1e8345fdd",
+			"_id": "to-property-key-x@3.0.14",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-7B2VwrzpqhrAxXQp3eo+a0z4eapaLvEnew+KgmpCzsE6dJvJSkm/QXA7Qry+hLf4OCE90B8m5eNwN3gXr20Hiw==",
+				"shasum": "1bd252b551e7b55e09a3b3981252379bf2acd82d",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.14.tgz",
+				"fileCount": 10,
+				"unpackedSize": 143164,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdN6UVCRA9TVsSAnZWagAA1ckP/1WlcCaP79L9Lg2ujPNc\nICsSG/xVGR4swhrk00DLbvUFcxeweBP16P5nQSaBgnjhzPG28iSGftznhXNB\nxPCM6fBUJt5hdeKYiFtGDjZtTZiwGg+ZbHgNnltu2lWZeLkoGZmN+An+vn10\nrfRAK11slNY3wLiKT3vmNLBqzfY7cYbHxkNOBONcmDzx11n/mkCg7ej9H9TW\nidfLQyvgUOT8m/4dzeVIEVq20T48UrfpfskXAN/SkfSZd228qn+mNwOyzNah\nnzx+0Y0Gt9sVQzkhGeefFpMfQZS75WvCwdDZ1RzWmXrLi/KagCIDpcb6qqyE\nAV6dnU9kEpG1jGQc2zuihR8QJVs3KquMAfUOqBRgRErL4dH8xm0TcjboOnJq\nbaFf0mbwQhLljx7atqZgIQXUyt/FlvfxXW5dKv9BBRxbmISPP3dVXzViD6oZ\nX4aJIrtcY8b68tyHODVo4BNEEJ2TFiZlvCKW/jfTEzSROFmCuBlZgAlym8Lc\nnBDF6OoivGNNn11hRiYpRpa4mLyOoYGdDbbwlhcjmvZVz3rRrCf99yJf+AuX\n7TNZ2oaynYYgz3xvdXV03PXtXO/JDghLcmov4UjdiIHOKU9uxQu/WUj/3iyp\nemaON3Hecxrytyz5SEMQz/GDthloR95dqiA9TjwISH2P+ihCjstxyno/y0zo\n3Up/\r\n=gMi/\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDNdVEy5d7Q7LXpOoJP6d8UggpqYTtkTVvkj/gMJsCO1gIgA6jkqLTizRzm40ZzMAvoILuOpJgwvvRVRHsyn0xxx9M="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.14_1563927828462_0.9349295862054972"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.15": {
+			"name": "to-property-key-x",
+			"version": "3.0.15",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"jsdelivr": "dist/to-property-key-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.17",
+				"to-primitive-x": "^2.0.22",
+				"to-string-x": "^2.0.30"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.11",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.6",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.37.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "b2089850aa1cbe861df674964d56e1a9667818eb",
+			"_id": "to-property-key-x@3.0.15",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-bIcLNWsjoUDvg7E03gMmSMLGfyp9EH3rKAYuNMyOLtSQy1sxQ4UDhFqufSgxQw6rfLI1KsuujIu2Mw51gP/9Sw==",
+				"shasum": "5ec5b018f3b3b44455687ffa18c49c2f8861496d",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.15.tgz",
+				"fileCount": 10,
+				"unpackedSize": 143421,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdOIeYCRA9TVsSAnZWagAAnPYP/0wltrT62rzUQqb+u+Yn\nTEb4szMBovTKQeHKrBhy1h9N8OAE94bPuBhsPJwpEOMGBWGWZrM6abPRRGse\n/vEx8IxREisf9nwt3UkzS3LFFesqYBUt7XAEZ743DCGu5PwIAtVtjb7f/pri\nBRMM4A5hFpYZBXmOct/xOsd8r2Rkrz9pvlt4UHOQr37qpVQjjFwXi1cjJVGn\ncf1BO/J3e/2jlqqDAEXbpa+clpmcQMOVsfXdLEOGa2iJxDkKu1p408Psbdm8\ndAdh+/cDxLl/0RxlksXb4h69pUfzh7iIgDEcoAyZYiP3R8dwySrz2dMn7o2H\nl352G0PRYWPNvDGtGVLRSXSKeiVuHez9B7mcrPt3Lrlp9ssVaWDDKYCGvHfJ\nsV3a0eHuJRBUlqhWTh3gooXVQ/ZkAO2nD+/sXpzNzr0yPS9qXZWhGPDBpb5Y\nBGtenM5IugewStSO9hufNw9Jvc4GjDsosTc544USyQ308K68J4e2oA0Waxu1\nJ8mNzWjIJjWev82GGRLTr4aIDwQ93Wcf87gw9oZ24Lvw3kDH2/HLwXXH7/Tx\nKex1qSanQ5r09OM7ZBeqTW8r7MiRZQ+Mx/qDlKGuuRtjK5gTvF9TAmaqAFXy\nKI6lPgmZ6dVmy7OkkfHnYzUgqv55cLSo+xIXeVoZR3X9Jj393ZqTJHGavVHY\nvYL+\r\n=fLoS\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQC8ffKVf1Ft3S1MStQbuqSq+dnXQdVDTF36NfyXA3T0twIgBNNYN5e1yfljlgk2TlikJrN/AKgOcdpv3fCKYgxreCU="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.15_1563985816218_0.10624402144504042"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.16": {
+			"name": "to-property-key-x",
+			"version": "3.0.16",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"jsdelivr": "dist/to-property-key-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.18",
+				"to-primitive-x": "^2.0.23",
+				"to-string-x": "^2.0.31"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.12",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.6",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.37.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "4b04ac5c5e7a53cdb168a096e1fa58363de0997d",
+			"_id": "to-property-key-x@3.0.16",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-q+qNfM0BKsjl/G3+DlOVAd/z+Hs9ebJs470DiskqK9NlmbUMTjK18HhE0fXdebOzm+z0vdN61zsNQy3FzILZ/g==",
+				"shasum": "3bbbff813d018c68e39c1536bd7fcfd978a8babf",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.16.tgz",
+				"fileCount": 10,
+				"unpackedSize": 143421,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdOidaCRA9TVsSAnZWagAAhqAP/RoVo288jdQC1lXtUDnN\nl7EH3xrW107yLh0kNhKOXP+crdyr5SY0X6094zDKi5bHya9UMFP95o7Mik/p\nd8k8SzPUB4oO+iOWaaTY+jMcIIxYRH1rTVUFnitPXswp0h1hBE8r5dNnEQmM\nAcqGAqmGU5GzbInLToa5yDMKihscTIzXyZLDWp8pCXXBjaS6b+i1rF6AxgfG\nQIQAkMTEhDkMVQXU0HKpxSZnRYYqVNqaKuz3Ahw/vsTlnHoorya0XPEkMOiA\nEg4rhul+b1FlB0dfuAaTVXZ9Ky/A25960lE1SnoJh6e4JSPqHu24Z7O71eJL\nNBKwcf/BMbpyubMeASbkIn676VuPCEUW4KSlEGutbqaD+Y+qXaSJUpCIAR4T\nMa4IwJG5f/qnOKuUC8w23Q6ws9uL/MXWOJ+26E9ZwQqUAfYiaXums04QxOr0\nbH7z5H8Dno3IDenrCT4+xKLQAZ3k4jSmLMgqaPwVOO+22D9c5irSd31MVy/K\nWOJWzM/lmaw7fcsKL4RWLBGJYmtTSQ53UIcwOZMshDu/YUuR/gNVHVOKo42t\npbKo3vLhaJdM9kEXE+YwrmDQmiZbE8NM3FMpg3rpip/rinGaq8pEh7/dSJWn\nU+gdN2BZmSr+HbFwhb9I9djcKbqj10lBwLNwAzpuOZM0uqZwYnXuuvYLklG/\nPBwm\r\n=mzkF\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQD3oKqG9p4p4WxknfGfolhmqUJTbyi1aKVC3nYoW/XfJQIgDY1dOohxkHYhoqMf2P0e/FLaDcu+EL67wBK/4zHJtdY="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.16_1564092249286_0.3712574212119053"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.17": {
+			"name": "to-property-key-x",
+			"version": "3.0.17",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"jsdelivr": "dist/to-property-key-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.19",
+				"to-primitive-x": "^2.0.24",
+				"to-string-x": "^2.0.32"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.12",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.7",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.38.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "b71fe356269ae61b067124cd7ba102aa6ee2c763",
+			"_id": "to-property-key-x@3.0.17",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-bKrkwn494sgX4fokMQ4wX8zih4RpbsOWCNeNG5zmxLnyQvgE/QswTnQtNX+Z+TMn4s1olt951tZIA7T+5mF4Mg==",
+				"shasum": "72e27e7188d93629cbce408f4ea0af6a17f93e1d",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.17.tgz",
+				"fileCount": 10,
+				"unpackedSize": 143668,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdOwsVCRA9TVsSAnZWagAAX3YP/i/P3k8X7qc3RreI35Az\ncc2yvv125ZqanYKKI7ZD/8AwQmuLsNH1EXFgYW10gCFK5QCU6WIa9ZNbz1KN\ny9bIuXfP+ts8a4pVvu3HOo+HuVvzmv+Ov+PRO5PKVIP8zJ5E3bQboeUSnTSh\nD1JG9KGxo0iXv5ssZ4TZQ+fk4juyvdJTZgPRl8v/YyCWi79kfZNOAXzrd277\nyslFlDZ0XH8pnMdd0bWh2QFid7BvKZmqqmZmsOXIUgiFw30hNZKvdciozlqf\nd4VgUTApCJiSG5FSkWbn/cayFIA2+t9OzKi2hen2B2fokbWRnJkwMYA3G0/P\npxe3mxV/97HV8jqbXgadEK7IVgwX+Dx5tSoxcSVwWkEpbLo/1yeZRSdPQZXF\n+sTOAQzJ/Os6hbDhPHW+y6lG/cMsFHjm0wzLQNHyO4aiHmRx7WUKf07Q8VLH\nk6b3Uqh3/tsdTU4ze8X/yJ2xYWjR3Ds6e6KKcgarJLzKJGuPxIr3iEQy3BNw\nXQYRL9UqNCO1RCj7YoqC0a4p070fN2teIzP3z4ED0OdKl6QzqyZMRFmHGNf4\n2nsLAaki5QuoNEtLLIwZJqmyWp+rniqzqQEvuKFjoryapkcgXb/e6Ozpw25p\nLD1vMlYl65sjrKSWRuzR+g4I/f3QKuGQm2Rw0vZEofSKx8IqqyEaA4qXTJ4E\nC/AY\r\n=oTj/\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIG2H6umzJI/4IFfYe5gr4XkWJswXnxjKtGU4x8eQaSlIAiAcnuJWPYTuhn8UtyW5tOIpjGF/q4MeAIIvZU1KvPVOfw=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.17_1564150548280_0.9268643397997818"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.18": {
+			"name": "to-property-key-x",
+			"version": "3.0.18",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"jsdelivr": "dist/to-property-key-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.20",
+				"to-primitive-x": "^2.0.25",
+				"to-string-x": "^2.0.33"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.14",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.14.0",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.38.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "f8620fa3375674939b03f9bec92c46a35e6373cd",
+			"_id": "to-property-key-x@3.0.18",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-iVAInasp0yfM8sgRVGASkolMhus6qCbTi7jVWF2sPYbn32DfxAR+dYxb5kZp+cWV7UgpI4OjGxotRqLbN+Ic4A==",
+				"shasum": "c8ba1dfbc33adbe82a1f01373301570f88c5bd93",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.18.tgz",
+				"fileCount": 10,
+				"unpackedSize": 143674,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdO6PGCRA9TVsSAnZWagAAb6oP/1JupkIya3utsJb6qy08\nngNvOR/5QHMdEDzzBWqFItUlWNKJIJDFUOACxaQj1Rr0MKwRNoVVJeW92DPp\nU+8c3/EZQOrmwNC2bNNTbZLBtYLELj40WLLP2cI5yNqiBLSderCnAR2YtbUw\nAVpNXalf4Tj+2RVjfY2n28zGcBEwvj3qjvN6NVkM/psMY91vNIeDGV4tw7zW\nEh7NeKVnbZFg8eLtNETqu9sLJwmsTmJ1iAOuZRvUv99hy8/abUkS4g0zB2Hj\nxRH5yVEkzsMZm9sfxizW8O5PpjdfP4efkZhcxI/KXM5CV8JLtq+VQ+k92d/U\nPScMDLRTwNdSNcfeeTj4BGqNazB5r2kDN2ToHfayerA5CpAfMMmeiiiZaMDx\nGKIZ+5Kzo1in+oqomon98tENUY9F6NzJylscXzmuGNukhf2pwBaAqM8txlsR\nge0zSNRjzwJU1F47NqDp8PbmelW4uilYlvvpirDbTeJzDxISMpg3t19mLtdo\nj3GsbP931OaTRm0PoOdnAYNqamm3a9Sa1G88WqB2tOhWmxhtPS7GOjj/9fBB\nO8qKlOT/QdHcy5umPHUPkr02qnO7GPxNKQDUlcjsN0Y5k8jYFrFmSyEIZGGW\nkCi4qa5jOFnKz4lM6dOQiOam+MI3ZFV8dwvjTZABfDNMph8jhTqs/6U9W9D0\n/9mP\r\n=bXo5\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQC517T3lfix++jtUp/GbZwKxAQHT83MoQlz6Crm0N7tbwIhAOJ2fCDEeBPweIJElvuRqkc1mfij7sItQ3L+nVrRjGTM"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.18_1564189636098_0.37952595718771454"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.19": {
+			"name": "to-property-key-x",
+			"version": "3.0.19",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"jsdelivr": "dist/to-property-key-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.21",
+				"to-primitive-x": "^2.0.26",
+				"to-string-x": "^2.0.34"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.14",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000986",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.14.0",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.38.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "0bbacb76db72ce6ce577e612f5dbf635e54f93a4",
+			"_id": "to-property-key-x@3.0.19",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-aFZ2WudvIhg9n2qRTqkGT2Eumo8xZe2+O4H06pCdkRXGC9OvUa3O/6pZFLNvtCYmBPBPI6XiZUmLDhR1hSh38A==",
+				"shasum": "9355af27b3af89959d4b6bfa77be75bd70277d7c",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.19.tgz",
+				"fileCount": 10,
+				"unpackedSize": 143674,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdPF31CRA9TVsSAnZWagAA86gP/AzwsdGjbsWA9r4jxvi3\n2yIXu7GuKZTdJDkW2quLMu6yFYkcpcry9ncZg7vZRlrJWgk64jzRJv4b9DLw\nW8OX6+aq21Mt9X57WOl+TQGskQ15otc7Dh1c4hzB2qzBPF3mA+Q3P+hjk0Rb\ntLoaUDD3kSFQThp6JLrYCgne4Yqs0MoQFu+Tc1dhBhbj5t42eI3SIRnYQmSd\nBvFNTZMhUVuUxUgNdRRQaxy3RD1jiIhLXFfDplLWAucLFDzzdI9MKjjcgzQ7\nKvGQmfBIutkbsxndrInNFPFyT6j6QwzYZZAGKmvZD9/0+F/r+8mkR+RHABHa\n8bON1cS8zGGQSqlygcYcyaHJ2+yr2HfsViK7libUXeLnNTPKsP+RxUWJOIEv\n8W43QL0gXy3tj9xTS0ZXezdSov+Avav4vQ6/PgKg2fCxgrCzHpvjzIzWWE9a\nMI4mO09BAD2959X61Cqcjz2kxwU4Gyohe+V8uqOQTb/xcZxB56YMVTniUxrz\nsSAsCEmok44tJ32444dZC8AnVLc01Kj7WLCLMn7EpvjsVXjYqRHdwF04yfjf\nyLOAuD/X87Jq6ylmkvEmfEVjJwDxZFR8KrAkuhmtKUd2hgXHTguUuvkWT8X/\nYkarIm5yg+EcUCFPRebaPyYowT/62lukRniOwnzucd7qXcYJ1uoP68rmDQGV\nDlAg\r\n=C3lQ\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIGcn6Dwk++eIuWvWswFB28EH0UOwAoDkoFP7bwvk0aLvAiEAsrMdYl859tcm4GqBJrmrh9qKP0UaZGMAiPAO3BlJGGU="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.19_1564237300490_0.1475486616823063"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.20": {
+			"name": "to-property-key-x",
+			"version": "3.0.20",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"jsdelivr": "dist/to-property-key-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.0.22",
+				"to-primitive-x": "^2.0.27",
+				"to-string-x": "^2.0.35"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@types/jest": "^24.0.16",
+				"@types/node": "^12.6.8",
+				"@xotic750/eslint-config-recommended": "^1.0.5",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000988",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.14.1",
+				"eslint-plugin-jsdoc": "^15.8.0",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"nodemon": "^1.19.1",
+				"prettier": "^1.18.2",
+				"rimraf": "^2.6.3",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.4.1",
+				"typescript": "^3.5.3",
+				"webpack": "^4.38.0",
+				"webpack-bundle-analyzer": "^3.4.1",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "de1e79c848c10f1299c857fde62060e31aa57946",
+			"_id": "to-property-key-x@3.0.20",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-hEUfv+eh+Ow5JxCbbgfC1FUkzPKz55au0FromBmPZNxZYofQkjeoWYlttmvWZ8tmljbXnGzq9uao5uB34YXiEw==",
+				"shasum": "5c9c9991541c37db2b7d7a61e4ee3fd01b3ca36b",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.20.tgz",
+				"fileCount": 11,
+				"unpackedSize": 145029,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdQhWyCRA9TVsSAnZWagAACpwP/2DHAMFHEWCS6dTdvWzV\n7H0Bn6uwq1U2hIeEaZEaa0ZlCta04ugVf7knX+VFF5SAmcb0QTtbvPoOX1+1\nxi3xCMsPs77FTi5WpL68HdDYWwmcEEpH7ZLRorErCg3yjgzjb88G7LiKzRcA\na+g1LrgOlXbjUv3FW7v+4oF0yz/3IvOj64tu8uxiTE30S27qFCVnukgH4U50\neuoh7vijwJO354+3o7I0KjC/6N1V5IeWkptpSLAJNUcPZaVZmzwFDWEGElud\n25ww1ATgiUO6W79IyKgcnbwdFgETMefFW+MHnGSBoi34BrcQ3OwaM1zigkP8\ndQ40eo1EXfE+isgASCg7t4U5y1MF4zPa5iwWGGy6/xnNp01sUR88JDmTQDh3\nv6i49/XaU5RlHOgal/JFNxlGNsnh9Bg7uGm0ea+egmREpo/Fu/XhPkI1kHVl\nYIRV/OFipwWhq0TKJMIcZNPa38DOAPvW/uecl5WsOXmYpnZbOoNQTsjU2Xwz\nmzg53rBhFWqHarVGimIV8fB9UyC7RBCtJhmbz//Inhdj2exZMvaVZfUxbJOp\npKJ9OwTp+J2RLuya8xraRi1siskAVY3VqwF0s2mxlIC2yARe370AwIV9ScLQ\nzg6PVAjZ03iAc2fScDgAefofJrn2SUP4y3XUvnAtKQj+OMILrCgnGSXjp1Kw\nZSa7\r\n=QFo+\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQClS1GEYqeVkkNh3Tk354ik8PrcgZjf++PD4dTcNWqpJgIgBSFVJb2AyPUpbciyzTNwG13h2ncJrcgP1YV2/SK3OKI="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.0.20_1564612017807_0.1365370885842232"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.1.0": {
+			"name": "to-property-key-x",
+			"version": "3.1.0",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"jsdelivr": "dist/to-property-key-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:ci-coveralls": "npm run test:ci -- --coverage --coverageReporters=text-lcov | coveralls",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.1.0",
+				"to-primitive-x": "^2.1.0",
+				"to-string-x": "^2.1.0"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@types/jest": "^24.0.17",
+				"@types/node": "^12.7.1",
+				"@types/webpack": "^4.32.1",
+				"@xotic750/eslint-config-recommended": "^1.1.2",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000989",
+				"coveralls": "^3.0.6",
+				"cross-env": "^5.2.0",
+				"eslint": "^6.1.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.15.1",
+				"eslint-plugin-jsdoc": "^15.8.0",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^6.0.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"nodemon": "^1.19.1",
+				"prettier": "^1.18.2",
+				"rimraf": "^2.6.3",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.4.1",
+				"typescript": "^3.5.3",
+				"webpack": "^4.39.1",
+				"webpack-bundle-analyzer": "^3.4.1",
+				"webpack-cli": "^3.3.6",
+				"webpack-global-object-x": "^1.0.0",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "479a3fda2f06198f7629745b2e293713250cdf7e",
+			"_id": "to-property-key-x@3.1.0",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-dnR+3oCzQ7vlBhTE+nvS2kVwZS0zSwsp1ne0tHVnI5cY2U/vP5u/E40luwR/ipuZj4FCvH5twAoCLQ7TV8+RHg==",
+				"shasum": "897bcf06ee60ef6650eaa75e3bec5c4e13fceeb4",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.1.0.tgz",
+				"fileCount": 11,
+				"unpackedSize": 148619,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdVCL2CRA9TVsSAnZWagAAM8gP/iTYk+Bi/7zO10rsAI0P\nwewK2kXdLnV0ijO72gStB0g3shq2NRqOD391cjsUNBmAN14T6d2XE+IKRB7S\nJ5KDs0ANbE54ii1aUbm0FRccbLsuzK2iSZaWw9iY3MhEoL8LZNrGDl7WA+jP\nU9lVmyMH6SpxG/dRONqErGn7xwJg8na8YLfjRugoA3sNv14N94QHK2UM82q+\nKxg4Kk5Os28R83IQmU1fpYJHOzzNkm7R5ii9+Du9lKBEk7bFkleZ86zfbLxT\ns9T3HFvhXM3zH2mz9dVBe7A8FEPWt8jok6uy/QA6OVgKZ5F/rA6WtW2XA2Cv\nubZGbXJUoVvY2En+b2wpolDB9mVUmtoyJOKlSH7vVmH7hjHiyHiTu0VYLs+u\nR5lMohQQZvou3tLsiVRvDk+kbLKbip+ph+8rzx6t/7LJhzU/0L7m2e3Ap3k/\noftAcEjYarCaqA4aApVF62hhIiFSl2PGv0r2C6o8oneE0u5KAgv0lWgCGlbJ\no6+wQBT/d5oPZP8SBtYMNRgWf6HMBBS/lFci3T0PpqS65+r0LPF7gf5vaCP/\nAEF5paNagUchovKv9hGK7KxP+Lidjshrw8cx+fSeqPzXrjWoZw7Vdw3H5t0Z\n+Q7p0ISNaEaxhff7JYD/83CzUsJLq5vie4RoUOV/iJCndSgGsjtwlWQSmKko\nDBsS\r\n=HL4f\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQCaCt4DQj+nxveNqMjaG23ejKis1OsskikeHh7vbgh3fQIhAIzIVrUqsncFdSgRxReKMh4aSbGu/VwzqI7iFYTcVt3Z"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.1.0_1565795062115_0.806738280577465"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.1.1": {
+			"name": "to-property-key-x",
+			"version": "3.1.1",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"jsdelivr": "dist/to-property-key-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:ci-coveralls": "npm run test:ci -- --coverage --coverageReporters=text-lcov | coveralls",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.1.1",
+				"to-primitive-x": "^2.1.1",
+				"to-string-x": "^2.1.0"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@types/jest": "^24.0.18",
+				"@types/node": "^12.7.2",
+				"@types/webpack": "^4.39.0",
+				"@xotic750/eslint-config-recommended": "^1.1.5",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000989",
+				"coveralls": "^3.0.6",
+				"cross-env": "^5.2.0",
+				"eslint": "^6.2.1",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.15.1",
+				"eslint-plugin-jsdoc": "^15.8.3",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^6.0.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"jest": "^24.9.0",
+				"jest-cli": "^24.9.0",
+				"jest-file": "^1.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"nodemon": "^1.19.1",
+				"prettier": "^1.18.2",
+				"rimraf": "^3.0.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.4.1",
+				"typescript": "^3.5.3",
+				"webpack": "^4.39.2",
+				"webpack-bundle-analyzer": "^3.4.1",
+				"webpack-cli": "^3.3.7",
+				"webpack-global-object-x": "^1.0.0",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "14e1b99a1cb04ba1b94354856711d3d2d9c68118",
+			"_id": "to-property-key-x@3.1.1",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-4OFhRWuYWT9gV/VHLswYWU4gScEUo/3ylZrI3TGei58ob8dSKkdSm5xdzOyBZ+HrUCEWP5prQYpfg9vGoPOlRQ==",
+				"shasum": "42a3901ab01adef3e5287c9c76796d90c8a8b341",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.1.1.tgz",
+				"fileCount": 11,
+				"unpackedSize": 207816,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdXEsxCRA9TVsSAnZWagAArgQP/0bB4TA858r4kbi5nEqa\nPtzcGFy+pmb7Ocm2XHXjXMnJNszkWDRprQhdrz25pVBCTBZC3LbTd+2Sv7q5\nMT2SfFEvCNdF1kJoqOfimPqQfpJa7kXocrBJqjZ3yMWyPd2qf2USbVtL9+Sv\n+ugFLKnNRM0t1J+qLTEd/aYcqE4HxLWCFesOI3ijgrayi9om17kZ7CvwD6Jn\nRDlT82YUz2uxoAy4Z7YoCEcwooebJZ78smPvtl4fTOsECxLP7nT8aJR1EsKv\naMkrvFPAqmtHQHH0VUYMCYJeRtWSmSKjfa3+EOTMH+ofbrJqGbeEQbQqrrqM\nyGNElKQqVXOvM1wtj//tDGK5MaW7fyUt49HJWlryVKoNuk8wheyFpAiL8WiX\ncTsbWijVj7yuy39wuKfcTB6PXQ/QxqeIPvdwzm1UJJAMIvQYILDgW/2YwA+X\nl8X5pHEdJ8AnNpkiLWw5/VwC03NLigs2ta12Fp0qULvQ/EhHSRY7MeadDzQC\nUTGok5gxQLmkDV3+/E2dRm0DlXUfORVqwZ0NgUbAlnzjK/A5K0dMa8GDIG8A\ndeK961jjfVwQab9lyxFrIUnPYhrCXrlDiR6Be8G+Sf6+Q6q/rPZgmGEmVRTt\nglQglKttuGnLGFII+EpR8HlTvgKun7Mhp1+0w4AU3rVWztGatzGQ4ksrjhqv\nFAwi\r\n=jJ+x\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDgpFUn3DCvd84nYjqzg0hr3x+m++3DTBia70DUP/CdmgIgQjLQnUA8eJnoe5erWMDahITkbZHeZHyBllEn9SWdvSw="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.1.1_1566329648554_0.18858148419923282"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.1.2": {
+			"name": "to-property-key-x",
+			"version": "3.1.2",
+			"description": "Converts argument to a value that can be used as a property key.",
+			"homepage": "https://github.com/Xotic750/to-property-key-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"toPropertyKey",
+				"abstract",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/to-property-key-x.esm.js",
+			"main": "dist/to-property-key-x.js",
+			"jsdelivr": "dist/to-property-key-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/to-property-key-x.js -o dist/to-property-key-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:ci-coveralls": "npm run test:ci -- --coverage --coverageReporters=text-lcov | coveralls",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/to-property-key-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/to-property-key-x/issues"
+			},
+			"dependencies": {
+				"has-symbol-support-x": "^2.1.2",
+				"to-primitive-x": "^2.1.2",
+				"to-string-x": "^2.1.1"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@types/jest": "^24.0.18",
+				"@types/node": "^12.7.2",
+				"@types/webpack": "^4.39.1",
+				"@xotic750/eslint-config-recommended": "^1.1.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.3",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000989",
+				"coveralls": "^3.0.6",
+				"cross-env": "^5.2.0",
+				"eslint": "^6.2.2",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^3.0.0",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.15.2",
+				"eslint-plugin-jsdoc": "^15.8.3",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^6.0.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.6.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"jest": "^24.9.0",
+				"jest-cli": "^24.9.0",
+				"jest-file": "^1.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"nodemon": "^1.19.1",
+				"prettier": "^1.18.2",
+				"rimraf": "^3.0.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.4.1",
+				"typescript": "^3.5.3",
+				"webpack": "^4.39.3",
+				"webpack-bundle-analyzer": "^3.4.1",
+				"webpack-cli": "^3.3.7",
+				"webpack-global-object-x": "^1.0.0",
+				"webpack-merge": "^4.2.2"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "3263a8408bba945d1e6ec87263d590cf37d76f9d",
+			"_id": "to-property-key-x@3.1.2",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-DHgewI2SIkHGpB5jGeesfSaEN88N0P6A83mYCd28IN5T9FkaKtb7jvqAajey1Vv20GcKAcPiL8hlEeeWdbaE4g==",
+				"shasum": "5a633ba82f967553f479950e78ee45810de76281",
+				"tarball": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.1.2.tgz",
+				"fileCount": 11,
+				"unpackedSize": 207816,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdZrc7CRA9TVsSAnZWagAAtdEP/j9D398QUsScJuDmW92r\nBsBMjkt/NxPkejCYFA0Kz+DFlKvs/EObluA1XvsUeS8vHbbUpb3Lo3YV8aiE\nxneNzH8YnxIPYx4zzjTG7+/y+mPrbAGFMGjUmaP2Uf8KWXUMFwa8NWHIiH/x\nsjSSmtIuaKoO35ArBeDFWAdv1th59b5hfHCUNocrGfGjiB4+CERukiKYusg9\nS8MWtRa9jQVRe/d6HN6rqyqFvQjz1ZP5504g7p7b2MBeKmzBSXu1xKgs3Yn/\n+2pnVTcU2AtamjGLlmK1wIi5uECKdVpHGRIzfsVLok1P0UHOBsD6IgLOAdGi\nlIuaVI3KRs5Kb/u88u3dP38SDObGGEuAfbnd9ZYH1ZaHELYLNEoDA5MSRl4X\ndIuXL1wzvgoN0PK8BkhoSuUTaYRPeWmPuwjwJst2KnQ6sPUez8mvKl+waRbU\n2dV5r+y9kcb3cNusUnr8lhRrYZcBPWtLw054XQDZogcVskF6Qs6zFX8XzJq3\npM6G1bYOnxZeED9btDdcZ1ypSSyF0YgL/SI4X62WmMx/Y51atUGKSGF4MWds\nQzgQtPSSftcUeaNfwMxY/vwlC7/4e5HjhbvOdwAmfTRvDoeNTDr01QKA/NGQ\nFBx+moR8ODg3Vshw5uVmnozSCYX2JI8jWwTNPTX2uA0vqKCWbxGQ+a6S0j2O\nerfo\r\n=WC33\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCICdqmS3749eUq4MZyCxVLRmorO7tg9WNmP/Z5QIdEnevAiBcquwbCbCqqwdIbqEVNCCh/5Jde+xQsYOGI9BJadsBug=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/to-property-key-x_3.1.2_1567012666956_0.9355831992150745"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-05-21T23:58:53.972Z",
+		"created": "2017-08-28T17:15:11.698Z",
+		"1.0.0": "2017-08-28T17:15:11.698Z",
+		"2.0.0": "2017-08-30T12:33:33.259Z",
+		"2.0.1": "2017-09-01T19:07:01.634Z",
+		"2.0.2": "2017-09-27T14:07:45.100Z",
+		"3.0.0": "2019-07-15T09:17:53.896Z",
+		"3.0.1": "2019-07-15T11:01:09.879Z",
+		"3.0.2": "2019-07-15T12:29:43.605Z",
+		"3.0.3": "2019-07-16T10:51:47.789Z",
+		"3.0.4": "2019-07-16T12:31:11.531Z",
+		"3.0.5": "2019-07-16T21:27:27.167Z",
+		"3.0.6": "2019-07-17T17:04:57.861Z",
+		"3.0.7": "2019-07-17T17:36:38.926Z",
+		"3.0.8": "2019-07-17T18:43:37.070Z",
+		"3.0.9": "2019-07-17T23:51:52.477Z",
+		"3.0.10": "2019-07-18T18:47:21.986Z",
+		"3.0.11": "2019-07-19T21:56:20.493Z",
+		"3.0.12": "2019-07-21T22:44:15.491Z",
+		"3.0.13": "2019-07-22T12:42:21.995Z",
+		"3.0.14": "2019-07-24T00:23:48.641Z",
+		"3.0.15": "2019-07-24T16:30:16.335Z",
+		"3.0.16": "2019-07-25T22:04:09.395Z",
+		"3.0.17": "2019-07-26T14:15:48.450Z",
+		"3.0.18": "2019-07-27T01:07:16.248Z",
+		"3.0.19": "2019-07-27T14:21:40.668Z",
+		"3.0.20": "2019-07-31T22:26:58.050Z",
+		"3.1.0": "2019-08-14T15:04:22.271Z",
+		"3.1.1": "2019-08-20T19:34:08.721Z",
+		"3.1.2": "2019-08-28T17:17:47.147Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "3.1.2"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"36ae849a9a23f812da70577a1941cbda\"",
+			"fetched": 1734527706217
+		}
+	},
+	"_distfiles": {
+		"to-property-key-x-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-1.0.0.tgz",
+			"sha": "13f89d1d0c449374832e429f0131d3d1cb28037c",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-2.0.0.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-2.0.0.tgz",
+			"sha": "e22ac1e26dc4036f319678d0a4d9bee25db4c33c",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-2.0.1.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-2.0.1.tgz",
+			"sha": "2a9657d3e90f86c9304ac09025df5c8c8251e3f5",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-2.0.2.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-2.0.2.tgz",
+			"sha": "b19aa8e22faa0ff7d1c102cfbc657af73413cfa1",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.0.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.0.tgz",
+			"sha": "7ae6f1ffa63238cf8df130400ff0fa5603b7e622",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.1.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.1.tgz",
+			"sha": "156caec96c03df04c7b0d5ea2d10eafed8646782",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.2.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.2.tgz",
+			"sha": "1b89683769654511c399cdadde127566f3c0e34d",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.3.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.3.tgz",
+			"sha": "600954c5f8947e9acb72c2e2eac7644f233120fd",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.4.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.4.tgz",
+			"sha": "1801f753ffb2a149a479f06ed09c44cf8b120d27",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.5.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.5.tgz",
+			"sha": "842b13692f6ff4eaf1bc68f87493e816c475ebf9",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.6.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.6.tgz",
+			"sha": "3185e72fd0dca4b465fda4c0c2f3ff6f22e10a63",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.7.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.7.tgz",
+			"sha": "0edea88eab783ccff39735e1993e30dfec4b975f",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.8.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.8.tgz",
+			"sha": "317dad482693f0596101552f224996dcdaa18c8f",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.9.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.9.tgz",
+			"sha": "73ebb97dfcbfa472f494b498942ae1ef55e783e3",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.10.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.10.tgz",
+			"sha": "a6111c83c3818f0af3b90becd88dbeef62935f3a",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.11.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.11.tgz",
+			"sha": "ad1b19fdf4acada7e62719d1311a41cd80b9a9aa",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.12.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.12.tgz",
+			"sha": "41820237743598b43bbb96b5ba1da83d82770754",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.13.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.13.tgz",
+			"sha": "bf9f98cf5fb5fcdc04371f8e05d328c12535a0c2",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.14.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.14.tgz",
+			"sha": "1bd252b551e7b55e09a3b3981252379bf2acd82d",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.15.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.15.tgz",
+			"sha": "5ec5b018f3b3b44455687ffa18c49c2f8861496d",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.16.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.16.tgz",
+			"sha": "3bbbff813d018c68e39c1536bd7fcfd978a8babf",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.17.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.17.tgz",
+			"sha": "72e27e7188d93629cbce408f4ea0af6a17f93e1d",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.18.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.18.tgz",
+			"sha": "c8ba1dfbc33adbe82a1f01373301570f88c5bd93",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.19.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.19.tgz",
+			"sha": "9355af27b3af89959d4b6bfa77be75bd70277d7c",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.0.20.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.0.20.tgz",
+			"sha": "5c9c9991541c37db2b7d7a61e4ee3fd01b3ca36b",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.1.0.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.1.0.tgz",
+			"sha": "897bcf06ee60ef6650eaa75e3bec5c4e13fceeb4",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.1.1.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.1.1.tgz",
+			"sha": "42a3901ab01adef3e5287c9c76796d90c8a8b341",
+			"registry": "npmjs"
+		},
+		"to-property-key-x-3.1.2.tgz": {
+			"url": "https://registry.npmjs.org/to-property-key-x/-/to-property-key-x-3.1.2.tgz",
+			"sha": "5a633ba82f967553f479950e78ee45810de76281",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"to-property-key-x-2.0.2.tgz": {
+			"shasum": "b19aa8e22faa0ff7d1c102cfbc657af73413cfa1"
+		}
+	},
+	"_rev": "2-d7e8435d1d93a01b",
+	"_id": "to-property-key-x",
+	"readme": "<a\n  href=\"https://travis-ci.org/Xotic750/to-property-key-x\"\n  title=\"Travis status\">\n<img\n  src=\"https://travis-ci.org/Xotic750/to-property-key-x.svg?branch=master\"\n  alt=\"Travis status\" height=\"18\">\n</a>\n<a\n  href=\"https://david-dm.org/Xotic750/to-property-key-x\"\n  title=\"Dependency status\">\n<img src=\"https://david-dm.org/Xotic750/to-property-key-x/status.svg\"\n  alt=\"Dependency status\" height=\"18\"/>\n</a>\n<a\n  href=\"https://david-dm.org/Xotic750/to-property-key-x?type=dev\"\n  title=\"devDependency status\">\n<img src=\"https://david-dm.org/Xotic750/to-property-key-x/dev-status.svg\"\n  alt=\"devDependency status\" height=\"18\"/>\n</a>\n<a\n  href=\"https://badge.fury.io/js/to-property-key-x\"\n  title=\"npm version\">\n<img src=\"https://badge.fury.io/js/to-property-key-x.svg\"\n  alt=\"npm version\" height=\"18\">\n</a>\n<a\n  href=\"https://www.jsdelivr.com/package/npm/to-property-key-x\"\n  title=\"jsDelivr hits\">\n<img src=\"https://data.jsdelivr.com/v1/package/npm/to-property-key-x/badge?style=rounded\"\n  alt=\"jsDelivr hits\" height=\"18\">\n</a>\n<a\n  href=\"https://bettercodehub.com/results/Xotic750/to-property-key-x\"\n  title=\"bettercodehub score\">\n<img src=\"https://bettercodehub.com/edge/badge/Xotic750/to-property-key-x?branch=master\"\n  alt=\"bettercodehub score\" height=\"18\">\n</a>\n<a\n  href=\"https://coveralls.io/github/Xotic750/to-property-key-x?branch=master\"\n  title=\"Coverage Status\">\n<img src=\"https://coveralls.io/repos/github/Xotic750/to-property-key-x/badge.svg?branch=master\"\n  alt=\"Coverage Status\" height=\"18\">\n</a>\n\n<a name=\"module_to-property-key-x\"></a>\n\n## to-property-key-x\n\nConverts argument to a value that can be used as a property key.\n\n**Version**: 2.0.2  \n**Author**: Xotic750 <Xotic750@gmail.com>  \n**License**: [MIT](https://opensource.org/licenses/MIT)  \n**Copyright**: Xotic750  \n<a name=\"exp_module_to-property-key-x--module.exports\"></a>\n\n### `module.exports(argument)` ⇒ <code>string</code> \\| <code>symbol</code> ⏏\n\nThis method Converts argument to a value that can be used as a property key.\n\n**Kind**: Exported function  \n**Returns**: <code>string</code> \\| <code>symbol</code> - The converted argument.  \n**Throws**:\n\n- <code>TypeError</code> If argument is not a symbol and is not coercible to a string.\n\n| Param    | Type            | Description                               |\n| -------- | --------------- | ----------------------------------------- |\n| argument | <code>\\*</code> | The argument to onvert to a property key. |\n\n**Example**\n\n```js\nimport toPropertyKey from 'to-property-key-x';\n\nconsole.log(toPropertyKey()); // 'undefined'\nconsole.log(toPropertyKey(1)); // '1'\nconsole.log(toPropertyKey(true)); // 'true'\n\nconst symbol = Symbol('a');\nconsole.log(toPropertyKey(symbol)); // symbol\n\ntoPropertyKey(Object.create(null)); // TypeError\n```"
+}

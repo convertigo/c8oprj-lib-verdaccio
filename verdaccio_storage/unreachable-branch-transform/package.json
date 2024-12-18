@@ -1,0 +1,787 @@
+{
+	"name": "unreachable-branch-transform",
+	"versions": {
+		"0.0.2": {
+			"name": "unreachable-branch-transform",
+			"version": "0.0.2",
+			"description": "Browserify transform (and jstransform visitor) to comment out unreachable code branches",
+			"keywords": [
+				"browserify",
+				"browserify-transform",
+				"transform",
+				"minify",
+				"unreachable"
+			],
+			"homepage": "https://github.com/zertosh/unreachable-branch-transform",
+			"author": {
+				"name": "Andres Suarez",
+				"email": "zertosh@gmail.com"
+			},
+			"bugs": {
+				"url": "https://github.com/zertosh/unreachable-branch-transform/issues"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/zertosh/unreachable-branch-transform.git"
+			},
+			"main": "index.js",
+			"scripts": {
+				"test": "tape test/*.js"
+			},
+			"license": "MIT",
+			"dependencies": {
+				"jstransform": "^6.3.2",
+				"through2": "^0.6.2"
+			},
+			"devDependencies": {
+				"tape": "^3.0.0"
+			},
+			"gitHead": "0a3b8db2f68db857af9fe179d70fb8241cfccce8",
+			"_id": "unreachable-branch-transform@0.0.2",
+			"_shasum": "c1817986f8822477d0270b7c6af564bd4bf3b6ba",
+			"_from": ".",
+			"_npmVersion": "1.4.28",
+			"_npmUser": {
+				"name": "zertosh",
+				"email": "zertosh@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "zertosh",
+					"email": "zertosh@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "c1817986f8822477d0270b7c6af564bd4bf3b6ba",
+				"tarball": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.0.2.tgz",
+				"integrity": "sha512-BE8fm4EbOJ5D/DoPnOioRoJHs+g1h2skEhErUvhI/ly8lLYbxhaP2LFzgWrgGivJlmePyPszs4DSee0T2vqkvw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCICz5CLuQBmxcDN95Gh/WfVEDRQkHVL5IrOq2r7MGsOXVAiAS1EDFer2ZZHy/Bfm5Z9x1G7GkvM+1SbVRMlQ5OCSxKg=="
+					}
+				]
+			},
+			"deprecated": "Incorrect version number",
+			"contributors": []
+		},
+		"0.1.0": {
+			"name": "unreachable-branch-transform",
+			"version": "0.1.0",
+			"description": "Browserify transform (and jstransform visitor) to comment out unreachable code branches",
+			"keywords": [
+				"browserify",
+				"browserify-transform",
+				"transform",
+				"minify",
+				"unreachable"
+			],
+			"homepage": "https://github.com/zertosh/unreachable-branch-transform",
+			"author": {
+				"name": "Andres Suarez",
+				"email": "zertosh@gmail.com"
+			},
+			"bugs": {
+				"url": "https://github.com/zertosh/unreachable-branch-transform/issues"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/zertosh/unreachable-branch-transform.git"
+			},
+			"main": "index.js",
+			"scripts": {
+				"test": "tape test/*.js"
+			},
+			"license": "MIT",
+			"dependencies": {
+				"jstransform": "^6.3.2",
+				"through2": "^0.6.2"
+			},
+			"devDependencies": {
+				"tape": "^3.0.0"
+			},
+			"gitHead": "41585ad53874629c5a6f6fcaaf75b6f6c5cb3e47",
+			"_id": "unreachable-branch-transform@0.1.0",
+			"_shasum": "7120bdc64feec2853fd76b182e2bc9b762afe421",
+			"_from": ".",
+			"_npmVersion": "1.4.28",
+			"_npmUser": {
+				"name": "zertosh",
+				"email": "zertosh@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "zertosh",
+					"email": "zertosh@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "7120bdc64feec2853fd76b182e2bc9b762afe421",
+				"tarball": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.1.0.tgz",
+				"integrity": "sha512-eBk6BqwUXlqYNp1mkF3gAw9V9eSbn/YSLOFXOEcWc9maiHUyEKvscrJFib6gcjbo84D4ZBW67OMPpFT/SxHaPA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCzpCIAlFYiiqCiN2+2vDoLk9JnXe9gSZA8ImEXKX22gQIgNUPT8Ec+KacZyW+3lq+qKSSj3r7nOg+fSIkOvPzoevk="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.2.0": {
+			"name": "unreachable-branch-transform",
+			"version": "0.2.0",
+			"description": "Browserify transform to remove unreachable code",
+			"keywords": [
+				"browserify",
+				"browserify-transform",
+				"transform",
+				"minify",
+				"unreachable"
+			],
+			"homepage": "https://github.com/zertosh/unreachable-branch-transform",
+			"license": "MIT",
+			"author": {
+				"name": "Andres Suarez",
+				"email": "zertosh@gmail.com"
+			},
+			"files": [
+				"README.md",
+				"LICENSE",
+				"lib/common.js",
+				"lib/evaluator.js",
+				"index.js",
+				"unreachableBranchTransformer.js"
+			],
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/zertosh/unreachable-branch-transform.git"
+			},
+			"scripts": {
+				"test": "mocha test/*.js"
+			},
+			"dependencies": {
+				"recast": "^0.9.15",
+				"through2": "^0.6.2"
+			},
+			"devDependencies": {
+				"mocha": "^2.1.0"
+			},
+			"gitHead": "8539262ea930f2d2e820e147724080c24a1536d9",
+			"bugs": {
+				"url": "https://github.com/zertosh/unreachable-branch-transform/issues"
+			},
+			"_id": "unreachable-branch-transform@0.2.0",
+			"_shasum": "218ee5970c58452ab9f317d05b3eaaa8fd6ef817",
+			"_from": ".",
+			"_npmVersion": "1.4.28",
+			"_npmUser": {
+				"name": "zertosh",
+				"email": "zertosh@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "zertosh",
+					"email": "zertosh@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "218ee5970c58452ab9f317d05b3eaaa8fd6ef817",
+				"tarball": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.2.0.tgz",
+				"integrity": "sha512-YcIClYclScyd3gXJt0eOnELGLVlwhhVPxTP/QdHQjgnuTrGkWRKLiy4rrVeCPfvayGjZT12MG1mU6vxjIL4XPg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIC23ql5HxTcnCvbW69cWz3r7LnEAHIsdh54taazf/HHAAiEAhr7LvYR5OcXuOXod+sZBoJK7QDsnBaQZ4X59zOeuCWc="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.2.1": {
+			"name": "unreachable-branch-transform",
+			"version": "0.2.1",
+			"description": "Browserify transform to remove unreachable code",
+			"keywords": [
+				"browserify",
+				"browserify-transform",
+				"transform",
+				"minify",
+				"unreachable"
+			],
+			"homepage": "https://github.com/zertosh/unreachable-branch-transform",
+			"license": "MIT",
+			"author": {
+				"name": "Andres Suarez",
+				"email": "zertosh@gmail.com"
+			},
+			"files": [
+				"README.md",
+				"LICENSE",
+				"lib/common.js",
+				"lib/evaluator.js",
+				"index.js",
+				"unreachableBranchTransformer.js"
+			],
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/zertosh/unreachable-branch-transform.git"
+			},
+			"scripts": {
+				"test": "mocha test/*.js"
+			},
+			"dependencies": {
+				"recast": "^0.10.1",
+				"through2": "^0.6.2"
+			},
+			"devDependencies": {
+				"mocha": "^2.1.0"
+			},
+			"gitHead": "70f3f8a539a39ebbbbafb6017fe1ed5d02fceae1",
+			"bugs": {
+				"url": "https://github.com/zertosh/unreachable-branch-transform/issues"
+			},
+			"_id": "unreachable-branch-transform@0.2.1",
+			"_shasum": "1345f188ec6539d312025ba8f361042148f71eba",
+			"_from": ".",
+			"_npmVersion": "1.4.28",
+			"_npmUser": {
+				"name": "zertosh",
+				"email": "zertosh@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "zertosh",
+					"email": "zertosh@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "1345f188ec6539d312025ba8f361042148f71eba",
+				"tarball": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.2.1.tgz",
+				"integrity": "sha512-QVPqXTaews3qXk3Lyrl8cFOsG8ls4wcxFKcBsm8Am8vrCZ5Pg9pQOP7IocIUW9Xlu7uoLsQimJAi517P1znkow==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIAzM2N0VW3qlP5Vm4qHh9J1ACwZ0qGZ5w5pYDj4Q9X21AiA2I5ZFDSRwxAUhfaHGocsNCEZHvB6YKAdHyjtL71YNHw=="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.2.2": {
+			"name": "unreachable-branch-transform",
+			"version": "0.2.2",
+			"description": "Browserify transform to remove unreachable code",
+			"keywords": [
+				"browserify",
+				"browserify-transform",
+				"transform",
+				"minify",
+				"unreachable"
+			],
+			"homepage": "https://github.com/zertosh/unreachable-branch-transform",
+			"license": "MIT",
+			"author": {
+				"name": "Andres Suarez",
+				"email": "zertosh@gmail.com"
+			},
+			"files": [
+				"README.md",
+				"LICENSE",
+				"lib/common.js",
+				"lib/evaluator.js",
+				"index.js",
+				"unreachableBranchTransformer.js"
+			],
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/zertosh/unreachable-branch-transform.git"
+			},
+			"scripts": {
+				"test": "mocha test/*.js"
+			},
+			"dependencies": {
+				"recast": "^0.10.1",
+				"through2": "^0.6.2"
+			},
+			"devDependencies": {
+				"mocha": "^2.1.0"
+			},
+			"gitHead": "1faede36ca38f3de7c0b941080d3a5e0672e618d",
+			"bugs": {
+				"url": "https://github.com/zertosh/unreachable-branch-transform/issues"
+			},
+			"_id": "unreachable-branch-transform@0.2.2",
+			"_shasum": "d710f9080b059dbae421fde44d9fdc038c7f490b",
+			"_from": ".",
+			"_npmVersion": "1.4.28",
+			"_npmUser": {
+				"name": "zertosh",
+				"email": "zertosh@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "zertosh",
+					"email": "zertosh@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "d710f9080b059dbae421fde44d9fdc038c7f490b",
+				"tarball": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.2.2.tgz",
+				"integrity": "sha512-cqoCsAsr3fehiukIil/i+qG0D24rQRD9SynY1uJ5p6VK8RjhVelwJDRc/3kdsDGgP18qcRoRpzA9uOBenVXQBw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHcD+DpcCSa9v2M6mgR9A2mFNVGeBcJNKhyf/RvHBcNWAiBGklnif09pCWxw+Xc6h/gX0pdIMwsiz8IJG+/nOgF/2A=="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.2.3": {
+			"name": "unreachable-branch-transform",
+			"version": "0.2.3",
+			"description": "Browserify transform to remove unreachable code",
+			"keywords": [
+				"browserify",
+				"browserify-transform",
+				"transform",
+				"minify",
+				"unreachable"
+			],
+			"homepage": "https://github.com/zertosh/unreachable-branch-transform",
+			"license": "MIT",
+			"author": {
+				"name": "Andres Suarez",
+				"email": "zertosh@gmail.com"
+			},
+			"files": [
+				"README.md",
+				"LICENSE",
+				"index.js",
+				"unreachableBranchTransformer.js"
+			],
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/zertosh/unreachable-branch-transform.git"
+			},
+			"scripts": {
+				"test": "mocha test/*.js"
+			},
+			"dependencies": {
+				"esmangle-evaluator": "^1.0.0",
+				"recast": "^0.10.1",
+				"through2": "^0.6.2"
+			},
+			"devDependencies": {
+				"mocha": "^2.1.0"
+			},
+			"gitHead": "3bf0a76e5877ba6522211944aa64385c81eec313",
+			"bugs": {
+				"url": "https://github.com/zertosh/unreachable-branch-transform/issues"
+			},
+			"_id": "unreachable-branch-transform@0.2.3",
+			"_shasum": "ec1ebd24c4e13bc40bf9d70d8309e2b4cde58eb6",
+			"_from": ".",
+			"_npmVersion": "1.4.28",
+			"_npmUser": {
+				"name": "zertosh",
+				"email": "zertosh@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "zertosh",
+					"email": "zertosh@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "ec1ebd24c4e13bc40bf9d70d8309e2b4cde58eb6",
+				"tarball": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.2.3.tgz",
+				"integrity": "sha512-sC1tzgcokfmS1WbdNYWHihhqA6a5x6p7Te17lCPKGuewYOEWiL8J2AH1JcwGNCOgn5iFt9Y2prJFCIyp9yNuYQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCICjn98hUf1D4MMRuskYAFObLQMeVck6bxVFrPVaY1hh+AiEA28r/4Ev15OD4PJpwosBB1xo10IUBVU6FeEE8BZKWzXg="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.3.0": {
+			"name": "unreachable-branch-transform",
+			"version": "0.3.0",
+			"description": "Browserify transform to remove unreachable code",
+			"keywords": [
+				"browserify",
+				"browserify-transform",
+				"transform",
+				"minify",
+				"unreachable"
+			],
+			"homepage": "https://github.com/zertosh/unreachable-branch-transform",
+			"license": "MIT",
+			"author": {
+				"name": "Andres Suarez",
+				"email": "zertosh@gmail.com"
+			},
+			"files": [
+				"README.md",
+				"LICENSE",
+				"index.js",
+				"unreachableBranchTransformer.js"
+			],
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/zertosh/unreachable-branch-transform.git"
+			},
+			"scripts": {
+				"test": "mocha test/*.js"
+			},
+			"dependencies": {
+				"esmangle-evaluator": "^1.0.0",
+				"recast": "^0.10.1",
+				"through2": "^0.6.2"
+			},
+			"devDependencies": {
+				"mocha": "^2.1.0"
+			},
+			"gitHead": "d0bf6e12f07b2d4677cca810e0c91a5820f7eddf",
+			"bugs": {
+				"url": "https://github.com/zertosh/unreachable-branch-transform/issues"
+			},
+			"_id": "unreachable-branch-transform@0.3.0",
+			"_shasum": "d99cc4c6e746d264928845b611db54b0f3474caa",
+			"_from": ".",
+			"_npmVersion": "2.12.0",
+			"_nodeVersion": "0.10.38",
+			"_npmUser": {
+				"name": "zertosh",
+				"email": "zertosh@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "zertosh",
+					"email": "zertosh@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "d99cc4c6e746d264928845b611db54b0f3474caa",
+				"tarball": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.3.0.tgz",
+				"integrity": "sha512-vza0JqnYAxuiynTpibnaaJsQ/FOKo7oJSXnWT96gIGsvQOfv0QHil8dRcRqONFnYK3YXaqVdbGz36bgCAm0qVg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIEeHoldCWCOjq7ovUfZdiAkSG9fFzPLhGdppYNTkx5JiAiBySEsF8v3zq0lxHwDT0I06ev67zqwjgd7W58Per1lEIQ=="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.4.0": {
+			"name": "unreachable-branch-transform",
+			"version": "0.4.0",
+			"description": "Browserify transform to remove unreachable code",
+			"keywords": [
+				"browserify",
+				"browserify-transform",
+				"transform",
+				"minify",
+				"unreachable"
+			],
+			"homepage": "https://github.com/zertosh/unreachable-branch-transform",
+			"license": "MIT",
+			"author": {
+				"name": "Andres Suarez",
+				"email": "zertosh@gmail.com"
+			},
+			"files": [
+				"README.md",
+				"index.js",
+				"unreachableBranchTransformer.js"
+			],
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/zertosh/unreachable-branch-transform.git"
+			},
+			"dependencies": {
+				"esmangle-evaluator": "^1.0.0",
+				"recast": "^0.10.1"
+			},
+			"devDependencies": {
+				"browserify": "^11.0.1",
+				"tap": "^1.0.2"
+			},
+			"scripts": {
+				"test": "tap test/*.js"
+			},
+			"gitHead": "48937ff91be015b84c60f65383e315c327767786",
+			"bugs": {
+				"url": "https://github.com/zertosh/unreachable-branch-transform/issues"
+			},
+			"_id": "unreachable-branch-transform@0.4.0",
+			"_shasum": "a23e76e634dceef4fd952d7b2481fc7064db511f",
+			"_from": ".",
+			"_npmVersion": "2.13.3",
+			"_nodeVersion": "3.2.0",
+			"_npmUser": {
+				"name": "zertosh",
+				"email": "zertosh@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "zertosh",
+					"email": "zertosh@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "a23e76e634dceef4fd952d7b2481fc7064db511f",
+				"tarball": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.4.0.tgz",
+				"integrity": "sha512-QL61csLUrBen0pi1kgMiWMLx8mZXAfQbrxlQ1kDG3W0QbUQ0mOT+Ye+KbaDrYPXiWAfa24F2S6HU7qQDxpq4sQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDBcVVYhyUM7WBX5wbD6GIq0vBksqNToHRYCSrzpkzVKgIgJJshkBFtrJhkvqdEx0v8ykx/lVD28OhYeoMa772/9Us="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.5.0": {
+			"name": "unreachable-branch-transform",
+			"version": "0.5.0",
+			"description": "Browserify transform to remove unreachable code",
+			"keywords": [
+				"browserify",
+				"browserify-transform",
+				"transform",
+				"minify",
+				"unreachable"
+			],
+			"homepage": "https://github.com/zertosh/unreachable-branch-transform",
+			"license": "MIT",
+			"author": {
+				"name": "Andres Suarez",
+				"email": "zertosh@gmail.com"
+			},
+			"files": [
+				"README.md",
+				"index.js",
+				"unreachableBranchTransformer.js"
+			],
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/zertosh/unreachable-branch-transform.git"
+			},
+			"dependencies": {
+				"esmangle-evaluator": "^1.0.0",
+				"recast": "^0.10.1"
+			},
+			"devDependencies": {
+				"browserify": "^11.0.1",
+				"tap": "^1.0.2"
+			},
+			"scripts": {
+				"test": "tap test/*.js"
+			},
+			"gitHead": "6bf05b32ae5f96af0b25d7b68f70bc12b5be266e",
+			"bugs": {
+				"url": "https://github.com/zertosh/unreachable-branch-transform/issues"
+			},
+			"_id": "unreachable-branch-transform@0.5.0",
+			"_shasum": "e29d452b9ae665e9de0e25a025294c419a02315b",
+			"_from": ".",
+			"_npmVersion": "2.14.2",
+			"_nodeVersion": "4.0.0",
+			"_npmUser": {
+				"name": "zertosh",
+				"email": "zertosh@gmail.com"
+			},
+			"maintainers": [
+				{
+					"name": "zertosh",
+					"email": "zertosh@gmail.com"
+				}
+			],
+			"dist": {
+				"shasum": "e29d452b9ae665e9de0e25a025294c419a02315b",
+				"tarball": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.5.0.tgz",
+				"integrity": "sha512-VvRIes7mEIdJuLbjBYeAkFljxIqmvkj2bOkYw7NEFvUvoFn4Pv3d21Ji7kgJ9OxhSRmXUO6BImXb42Kpwdlm+A==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDwwh5TaI1BHsWYCDXTmJO7Rv4/HMFkahI+KA9CQcKxxwIgVe9W2St5b2cTQLRiybiO76PHBCc/XWK+SPAv+PHSA5Y="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.5.1": {
+			"name": "unreachable-branch-transform",
+			"version": "0.5.1",
+			"description": "Browserify transform to remove unreachable code",
+			"keywords": [
+				"browserify",
+				"browserify-transform",
+				"transform",
+				"minify",
+				"unreachable"
+			],
+			"homepage": "https://github.com/zertosh/unreachable-branch-transform",
+			"license": "MIT",
+			"author": {
+				"name": "Andres Suarez",
+				"email": "zertosh@gmail.com"
+			},
+			"files": [
+				"README.md",
+				"index.js",
+				"unreachableBranchTransformer.js"
+			],
+			"main": "index.js",
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/zertosh/unreachable-branch-transform.git"
+			},
+			"dependencies": {
+				"esmangle-evaluator": "^1.0.0",
+				"recast": "^0.11.4"
+			},
+			"devDependencies": {
+				"browserify": "^13.0.0",
+				"tap": "^5.7.1"
+			},
+			"scripts": {
+				"test": "tap test/*.js"
+			},
+			"gitHead": "9b47a0aea78a873a4d3efb4e48d0455ed8d72d01",
+			"bugs": {
+				"url": "https://github.com/zertosh/unreachable-branch-transform/issues"
+			},
+			"_id": "unreachable-branch-transform@0.5.1",
+			"_shasum": "5e0a5da810b4f4cc6866afc28b59aa6e8c84db5d",
+			"_from": ".",
+			"_npmVersion": "3.8.3",
+			"_nodeVersion": "5.10.1",
+			"_npmUser": {
+				"name": "zertosh",
+				"email": "zertosh@gmail.com"
+			},
+			"dist": {
+				"shasum": "5e0a5da810b4f4cc6866afc28b59aa6e8c84db5d",
+				"tarball": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.5.1.tgz",
+				"integrity": "sha512-PeNvjMFlwA9pYOpX0ndHMZcB1CTLxeqJ+PrSynOLkeboYNYLwgBd4It9AXl2EH2hQ3ZnXizF6V/2wXLZiJb2ZQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQC1rLAa6N+Nbb+awPbRZ+ToUOGcErqS4BfINcg3jmE/VAIhALkckTsAVQRkXWotYro9Nmy7d8RL8hiufP525Nvxq4YD"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "zertosh",
+					"email": "zertosh@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-16-east.internal.npmjs.com",
+				"tmp": "tmp/unreachable-branch-transform-0.5.1.tgz_1460612866423_0.1859290194697678"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-06-28T05:16:36.074Z",
+		"created": "2014-09-28T23:27:12.402Z",
+		"0.0.2": "2014-09-28T23:27:12.402Z",
+		"0.1.0": "2014-09-28T23:28:47.471Z",
+		"0.2.0": "2015-01-24T04:14:39.704Z",
+		"0.2.1": "2015-03-01T16:31:09.152Z",
+		"0.2.2": "2015-03-06T18:53:09.828Z",
+		"0.2.3": "2015-03-22T20:38:11.163Z",
+		"0.3.0": "2015-06-27T22:58:57.872Z",
+		"0.4.0": "2015-08-30T15:55:20.170Z",
+		"0.5.0": "2015-09-18T18:54:54.738Z",
+		"0.5.1": "2016-04-14T05:47:49.580Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "0.5.1"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"ed093e9b94239cd9025abd9213fee1dd\"",
+			"fetched": 1734527705428
+		}
+	},
+	"_distfiles": {
+		"unreachable-branch-transform-0.0.2.tgz": {
+			"url": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.0.2.tgz",
+			"sha": "c1817986f8822477d0270b7c6af564bd4bf3b6ba",
+			"registry": "npmjs"
+		},
+		"unreachable-branch-transform-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.1.0.tgz",
+			"sha": "7120bdc64feec2853fd76b182e2bc9b762afe421",
+			"registry": "npmjs"
+		},
+		"unreachable-branch-transform-0.2.0.tgz": {
+			"url": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.2.0.tgz",
+			"sha": "218ee5970c58452ab9f317d05b3eaaa8fd6ef817",
+			"registry": "npmjs"
+		},
+		"unreachable-branch-transform-0.2.1.tgz": {
+			"url": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.2.1.tgz",
+			"sha": "1345f188ec6539d312025ba8f361042148f71eba",
+			"registry": "npmjs"
+		},
+		"unreachable-branch-transform-0.2.2.tgz": {
+			"url": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.2.2.tgz",
+			"sha": "d710f9080b059dbae421fde44d9fdc038c7f490b",
+			"registry": "npmjs"
+		},
+		"unreachable-branch-transform-0.2.3.tgz": {
+			"url": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.2.3.tgz",
+			"sha": "ec1ebd24c4e13bc40bf9d70d8309e2b4cde58eb6",
+			"registry": "npmjs"
+		},
+		"unreachable-branch-transform-0.3.0.tgz": {
+			"url": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.3.0.tgz",
+			"sha": "d99cc4c6e746d264928845b611db54b0f3474caa",
+			"registry": "npmjs"
+		},
+		"unreachable-branch-transform-0.4.0.tgz": {
+			"url": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.4.0.tgz",
+			"sha": "a23e76e634dceef4fd952d7b2481fc7064db511f",
+			"registry": "npmjs"
+		},
+		"unreachable-branch-transform-0.5.0.tgz": {
+			"url": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.5.0.tgz",
+			"sha": "e29d452b9ae665e9de0e25a025294c419a02315b",
+			"registry": "npmjs"
+		},
+		"unreachable-branch-transform-0.5.1.tgz": {
+			"url": "https://registry.npmjs.org/unreachable-branch-transform/-/unreachable-branch-transform-0.5.1.tgz",
+			"sha": "5e0a5da810b4f4cc6866afc28b59aa6e8c84db5d",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"unreachable-branch-transform-0.2.3.tgz": {
+			"shasum": "ec1ebd24c4e13bc40bf9d70d8309e2b4cde58eb6"
+		},
+		"unreachable-branch-transform-0.3.0.tgz": {
+			"shasum": "d99cc4c6e746d264928845b611db54b0f3474caa"
+		}
+	},
+	"_rev": "3-7d5f245e3575968d",
+	"_id": "unreachable-branch-transform",
+	"readme": "unreachable-branch-transform\n============================\n\n[![Build Status](https://travis-ci.org/zertosh/unreachable-branch-transform.svg?branch=master)](https://travis-ci.org/zertosh/unreachable-branch-transform)\n\nRemoves unreachable code branches in `if` statements, ternaries `?`, and logical operations `||` `&&`, where the test is determinable (like comparing two constants). This is similar to what [UglifyJS](https://github.com/mishoo/UglifyJS2)'s \"dead_code\" compressor option does, but without the extra code transformations.\n\nWhen combined with something like [envify](https://github.com/hughsk/envify) and [browserify](https://github.com/substack/node-browserify), you can perform conditional `require` calls without including more code than you need.\n\n#### Install ####\n\n```bash\nnpm install unreachable-branch-transform\n```\n\n#### Example outputs #####\n\n```js\n// original \nvar transport = process.env.TARGET === 'client' ? require('ajax') : require('fs');\n\n// after envify\nvar transport = 'server' === 'client' ? require('ajax') : require('fs');\n// then after unreachable-branch-transform\nvar transport = require('fs');\n```\n\n```js\n// original\nif (process.env.NODE_ENV === 'development') {\n  console.log('in dev mode');\n} else {\n  console.log('in some other mode');\n}\n\n// after envify\nif ('production' === 'development') {\n  console.log('in dev mode');\n} else {\n  console.log('in some other mode');\n}\n\n// then after unreachable-branch-transform\n{\n  console.log('in some other mode');\n}\n```\n\n#### Usage\n\n\n\n* `unreachable-branch-transform` can be used a [browserify](https://github.com/substack/node-browserify) transform. Just include it like any other transform.\n* `unreachable-branch-transform` can also be used on raw code by calling the `transform` function exposed by requiring the package.\n\n#### Frequently asked questions ####\n\n##### Why are `undefined` equality references not removed?\n\nIf you have a branch with the format\n\n```javascript\nif (undefined === 'production') {\n  /* ... */\n}\n```\n\nit will not be removed. Unfortunately, `undefined` is _not_ a constant in older browser runtimes and can be reassigned. In this case, it could be possible that `undefined` does indeed equal `'production`'.\n\nCredit\n------\n`esmangle-evaluator` is from the [esmangle](https://github.com/Constellation/esmangle) project."
+}

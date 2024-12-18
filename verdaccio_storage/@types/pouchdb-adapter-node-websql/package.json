@@ -1,0 +1,689 @@
+{
+	"name": "@types/pouchdb-adapter-node-websql",
+	"versions": {
+		"5.4.1": {
+			"name": "@types/pouchdb-adapter-node-websql",
+			"version": "5.4.1",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-node-websql@5.4.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "91367104830ab13c31323a7e65c6c825940cf987",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-5.4.1.tgz",
+				"integrity": "sha512-Wwbw7oTbEUrZ7P5XktaBqvMWGrKaenYcEsPyFtUu7nF7/qjoVS22R4tMAO5hy+6sKChqAo82zAs6TZ16T3BYVQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDSDkdR7+nsObVQCkJK8SoMblI4vhMi5UZZR2JaMpIIugIgPTnG2jOW+0CKtidDZKehR4aFkDgzDMQ02mIoPCvQdnI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-node-websql.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-node-websql v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-node-websql-5.4.1.tgz_1470153859155_0.22830163221806288",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.2": {
+			"name": "@types/pouchdb-adapter-node-websql",
+			"version": "5.4.2",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-node-websql@5.4.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "97dfa1e4577739a39d3fdba29bfed37ceb0c9235",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-5.4.2.tgz",
+				"integrity": "sha512-32tC5YvNPkJ8T3Xkw04CHOnKn8fB5ImWVKlmpcjARiKwQLf/A+nxnU/NAn3SmMIX1UJQKdF6hLo5bdhlB7/PZw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC7N9J2cQqXdwRxDt9jmm9enUHAnMG8M62JjwOPGIzXiAIhAJSKVJ8a922/RwLxl+qHK1fI2TWGVoX/Gs254maSgo47",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-node-websql.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-node-websql v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-node-websql-5.4.2.tgz_1471621024129_0.05301111424341798",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.3": {
+			"name": "@types/pouchdb-adapter-node-websql",
+			"version": "5.4.3",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-node-websql@5.4.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "368998f542a7d9badcddc74f82eb9846a5092c0b",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-5.4.3.tgz",
+				"integrity": "sha512-DBIfmYyALgmGZAyFQzXsRwAcdGLhNcbnTbQLa0BvpZ/O3UV3BL6pN+GxADQagwTANSPDXJW1qMf0e4ESKMj2Qw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDa6hVwUuoHpkvebAYqUg+WB8+jihv8QaQ4w05fW4quewIgB2qz/usOX0UzDXljUXYEFYahCPeNefCK6/Yz5bdAGnY=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-adapter-node-websql.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-node-websql v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-node-websql-5.4.3.tgz_1472151208180_0.20940664876252413",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.4": {
+			"name": "@types/pouchdb-adapter-node-websql",
+			"version": "5.4.4",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-node-websql@5.4.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "f6098174f1f39bc12cd3c3bffc2e7d6171036913",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-5.4.4.tgz",
+				"integrity": "sha512-EWMF2j1g62uI7mpoL4DV/3CP+eXNcbl+S+cmuo4Gt81y4uETjio5YlEIdeOSkqQy49KuZbEUxrUrzjTFIIQlXA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQD3fWVs9IDAGZSQmabLveEv8SjSBJRXk9iXejiKvFAPkAIgZgCqmZpqU5HpcG9rEh+vpCBO9AJoOy7vjBFgrUqenks=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-node-websql v5.4.4",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-adapter-websql": "*"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-node-websql-5.4.4.tgz_1474308193454_0.6036696282681078",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "02905fe64d2862c2cbe36613218785a776820f6649d710fde2eb3e2fa97ae46b",
+			"contributors": []
+		},
+		"6.1.0": {
+			"name": "@types/pouchdb-adapter-node-websql",
+			"version": "6.1.0",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-node-websql@6.1.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "af0fae7eb52f6733c9ae58145cc3d8252353d9c5",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-6.1.0.tgz",
+				"integrity": "sha512-gKZvNX/68jtwQ/B/x7BKgYJxu3VfxGTm0UTxYhXKqaTzJ4ZGhEenJmfwpbk5UClFgDu3McW6Fx112H3vCiSm7A==",
+				"signatures": [
+					{
+						"sig": "MEQCICNJHdRn7nMYOLpqp2zjfHfRYcFr2jZhJLJmBonFXvkGAiAgOLkviBS7fKvUeLm7/YhoesrSQi88DQmRcvZU6y8mIg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-node-websql",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-adapter-websql": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.0",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-node-websql-6.1.0.tgz_1492528360315_0.339360625250265",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "d812774c7975a7b2ab26f145e0acb35f0325b71266594d05bcf2fa402930f800"
+		},
+		"6.1.1": {
+			"name": "@types/pouchdb-adapter-node-websql",
+			"version": "6.1.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-node-websql@6.1.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "021fd1c1baf02aac2f52d5a1e5a015aef3d5bb21",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-6.1.1.tgz",
+				"integrity": "sha512-B4riat3ExtUGEbj+D4xMc4VLveGmXnyKpJlsigkr7eU9bD3mwc+E38cTqusU+yYzuwSg8ybQI1iiAfGdDic3SA==",
+				"signatures": [
+					{
+						"sig": "MEUCIGEdC1JsUhAwFh+KXx/hbd4ZoIraKN9BmGrrzrAWyu/HAiEA11LNxnHBg3AW6VpDFtuWGtvlYNdZiyu5Rlsq8UJWnv4=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-node-websql",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-adapter-websql": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-node-websql-6.1.1.tgz_1497557829233_0.41037060623057187",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "8d72f17590189fc04e9b246dc54d9a110f73c942a1b8d12088f21481e370deb0"
+		},
+		"6.1.2": {
+			"name": "@types/pouchdb-adapter-node-websql",
+			"version": "6.1.2",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-node-websql@6.1.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "a0ca40ac19c9c66d9b381f68c90b57bbb3a21fbc",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-6.1.2.tgz",
+				"integrity": "sha512-GY0Zq92lkQtOoIFeMMPfXnhO0jAh3es/BlqB9vbPqxoTLTxC40oeVg8RPP4ODbGRI5nyMvhX7kvJr7HEMExZCA==",
+				"signatures": [
+					{
+						"sig": "MEUCIAG5UhAWAfv6Bmu5/OFxNkqPS4jGmFSKKfHsdCiVLBQ5AiEAgN1av3ff5D7qItVWaDz69QmnFQ8CWKA/l46Xe86q6H8=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-node-websql",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-adapter-websql": "*"
+			},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-node-websql-6.1.2.tgz_1513287301588_0.38066170481033623",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "ba7b374d06f1653697b9ca1a0469760f154214a6a668a33c146d7fba7bcc43c7"
+		},
+		"6.1.3": {
+			"name": "@types/pouchdb-adapter-node-websql",
+			"version": "6.1.3",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-node-websql@6.1.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "aa18bc68af8cf509acd12c400010dcd5fab2243d",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-6.1.3.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-F/P+os6Jsa7CgHtH64+Z0HfwIcj0hIRB5z8gNhF7L7dxPWoAfkopK5H2gydrP3sQrlGyN4WInF+UJW/Zu1+FKg==",
+				"signatures": [
+					{
+						"sig": "MEQCIHGtiP3O9BSv+4Ytys+SApVz3fKx7SK+tH6p6PA5Y1tWAiAlxQYpBM3FwzM9e+a0RA4yAYuDh+HzEwb7b/CYO+vHGQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 3440,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcZJIgCRA9TVsSAnZWagAACekP/3azDKaQq/4jVh6b+at4\nBK65VnJfI6TH5bj/aksR5YZlw1NypCekpQPFfwzBs6vmg09OPPgLGAzPQFbN\nH911yhgVb4AiEWq8gkfa3BCEZ21q5ENn6NFv5zmcQintkaMDoFOZZjmviADz\nEJPhWZqzb4RAwB7hEEYj/aZy7cX6+XLmtG6YVKexRxu09JeL9Lv0U5yDtvof\n9GgVlOkv7xKLmU21d3QhNk+u18kg3mjJ/+9g0cfPipNEF+oGZhE229+BQ0O5\nBmTAb0dHAmVlk1AwtEr5kHsKakOmGNFHi9LrMH7PkHd0ZMxjLiqLkQZygthL\nqMLYRo1LbsZUP4DoQPdEpiU7dabX0j68kXdvpYQoUG4OFEiR2woCOo6Y5+uy\nSR+tLVrEf6gcv/GiZvrtOE6hoeOonbLIOUUhzUZ2F0cqE/MBOzL3uB/GAFaL\nhewpesHaR+tyDPVkecqi/aXo9kMMx6lxK8a7HIpTZK243qwbmLDS2oDdTXeB\noY3dKhye3FUqt1cMC0e2k1QQqLBAud8/BYv0jPZa7vKOsnnjk/CFtrX9KFo1\nbza0LXS5jH+pzjyyVCkR9K56Y9Azw403CTdeGBFYUb2Bqr1sVDSKIoXpcHgT\ncWLBSK33xg68TaPAan3VwFi3vpeE5w8X4EAaNx+S4PHIGyTfidY1ghvw5eW7\nEQ37\r\n=TbIx\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-node-websql",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-adapter-websql": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-node-websql_6.1.3_1550094879997_0.8513571570506495",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "ccce8daa56b0d821b7fee4841a3bf8eaf956856d81c1ac2cb9b5f50dcec913cd"
+		},
+		"6.1.4": {
+			"name": "@types/pouchdb-adapter-node-websql",
+			"version": "6.1.4",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-node-websql@6.1.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-node-websql",
+			"dist": {
+				"shasum": "e0b0751c1719944d2285eb1d7caa30d1906e2844",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-6.1.4.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-Jpt9a0jv0RHPwPMaaAfZvSxUkuburTSmZL/ksWkm7Efx/Ui8VFPEA/bT8ulHkkWtKWjoCCI79pceeY/xEpeYqw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCbu9lkwddVB52zQpQXNcx5xxTH3i5K9h20ivUggdOq5AIgcHZl9CjSASzHeh+aXZqwIFSRIIs3lziYkHw7JScbV5U=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 3583
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-node-websql"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-node-websql",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-adapter-websql": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-node-websql_6.1.4_1697627795244_0.7700533093497257",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "609ccac2560b3af1175c345b93beed42f9742577696b2eba24ed6e8b8d7ecd2f"
+		},
+		"6.1.5": {
+			"name": "@types/pouchdb-adapter-node-websql",
+			"version": "6.1.5",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-node-websql@6.1.5",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-node-websql",
+			"dist": {
+				"shasum": "ab9f46e061e4dad34df6a169d56905ae8b5f6b50",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-6.1.5.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-yi68syUvHs4OM3mzKlh4zfpov64KITIAnxi387zgdby6SEfAJzWPC0dfH77iEVRDGCrKb3cKTNkl/UGHnphaow==",
+				"signatures": [
+					{
+						"sig": "MEQCIE+dM7X4AEQqV2eQHHKe2I4Tp9nJ4cht3/3aYXMBLTxgAiByYfGR3D/5C4CLdJZCwGShilmH4BU2PLOWmq1+Vru/dw==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 3583
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-node-websql"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-node-websql",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*",
+				"@types/pouchdb-adapter-websql": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-node-websql_6.1.5_1699363111729_0.9357227264826491",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "ecf2dad09b7648256a3e54f915e80ef143818064962a969e747ac197d92cabe9"
+		}
+	},
+	"time": {
+		"created": "2016-08-02T16:04:21.004Z",
+		"modified": "2024-11-11T09:31:30.076Z",
+		"5.4.1": "2016-08-02T16:04:21.004Z",
+		"5.4.2": "2016-08-19T15:37:05.939Z",
+		"5.4.3": "2016-08-25T18:53:28.764Z",
+		"5.4.4": "2016-09-19T18:03:13.678Z",
+		"6.1.0": "2017-04-18T15:12:40.552Z",
+		"6.1.1": "2017-06-15T20:17:09.393Z",
+		"6.1.2": "2017-12-14T21:35:01.654Z",
+		"6.1.3": "2019-02-13T21:54:40.098Z",
+		"6.1.4": "2023-10-18T11:16:35.491Z",
+		"6.1.5": "2023-11-07T13:18:31.938Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"ts2.0": "6.1.0",
+		"ts2.1": "6.1.0",
+		"ts2.2": "6.1.0",
+		"ts2.3": "6.1.3",
+		"ts2.4": "6.1.3",
+		"ts2.5": "6.1.3",
+		"ts2.6": "6.1.3",
+		"ts2.7": "6.1.3",
+		"ts2.8": "6.1.3",
+		"ts2.9": "6.1.3",
+		"ts3.0": "6.1.3",
+		"ts3.1": "6.1.3",
+		"ts3.2": "6.1.3",
+		"ts3.3": "6.1.3",
+		"ts3.4": "6.1.3",
+		"ts3.5": "6.1.3",
+		"ts3.6": "6.1.3",
+		"ts3.7": "6.1.3",
+		"ts3.8": "6.1.3",
+		"ts3.9": "6.1.3",
+		"ts4.0": "6.1.3",
+		"ts4.1": "6.1.3",
+		"ts4.2": "6.1.3",
+		"ts4.3": "6.1.3",
+		"ts4.4": "6.1.3",
+		"ts5.7": "6.1.5",
+		"ts5.6": "6.1.5",
+		"latest": "6.1.5",
+		"ts4.5": "6.1.5",
+		"ts4.6": "6.1.5",
+		"ts4.7": "6.1.5",
+		"ts4.8": "6.1.5",
+		"ts4.9": "6.1.5",
+		"ts5.0": "6.1.5",
+		"ts5.1": "6.1.5",
+		"ts5.2": "6.1.5",
+		"ts5.3": "6.1.5",
+		"ts5.4": "6.1.5",
+		"ts5.5": "6.1.5",
+		"ts5.8": "6.1.5"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"c5d59ee3f1ed2b7a624a509ac478737e\"",
+			"fetched": 1734527718910
+		}
+	},
+	"_distfiles": {
+		"pouchdb-adapter-node-websql-5.4.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-5.4.1.tgz",
+			"sha": "91367104830ab13c31323a7e65c6c825940cf987",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-node-websql-5.4.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-5.4.2.tgz",
+			"sha": "97dfa1e4577739a39d3fdba29bfed37ceb0c9235",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-node-websql-5.4.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-5.4.3.tgz",
+			"sha": "368998f542a7d9badcddc74f82eb9846a5092c0b",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-node-websql-5.4.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-5.4.4.tgz",
+			"sha": "f6098174f1f39bc12cd3c3bffc2e7d6171036913",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-node-websql-6.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-6.1.0.tgz",
+			"sha": "af0fae7eb52f6733c9ae58145cc3d8252353d9c5",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-node-websql-6.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-6.1.1.tgz",
+			"sha": "021fd1c1baf02aac2f52d5a1e5a015aef3d5bb21",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-node-websql-6.1.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-6.1.2.tgz",
+			"sha": "a0ca40ac19c9c66d9b381f68c90b57bbb3a21fbc",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-node-websql-6.1.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-6.1.3.tgz",
+			"sha": "aa18bc68af8cf509acd12c400010dcd5fab2243d",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-node-websql-6.1.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-6.1.4.tgz",
+			"sha": "e0b0751c1719944d2285eb1d7caa30d1906e2844",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-node-websql-6.1.5.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-node-websql/-/pouchdb-adapter-node-websql-6.1.5.tgz",
+			"sha": "ab9f46e061e4dad34df6a169d56905ae8b5f6b50",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-adapter-node-websql-6.1.5.tgz": {
+			"shasum": "ab9f46e061e4dad34df6a169d56905ae8b5f6b50"
+		}
+	},
+	"_rev": "2-156631e6c403da43",
+	"_id": "@types/pouchdb-adapter-node-websql",
+	"readme": "[object Object]"
+}

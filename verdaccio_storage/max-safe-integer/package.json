@@ -1,0 +1,273 @@
+{
+	"name": "max-safe-integer",
+	"versions": {
+		"1.0.0": {
+			"name": "max-safe-integer",
+			"version": "1.0.0",
+			"description": "ES6 Number.MAX_SAFE_INTEGER ponyfill",
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/sindresorhus/max-safe-integer.git"
+			},
+			"author": {
+				"name": "Sindre Sorhus",
+				"email": "sindresorhus@gmail.com",
+				"url": "sindresorhus.com"
+			},
+			"engines": {
+				"node": ">=0.10.0"
+			},
+			"scripts": {
+				"test": "node test.js"
+			},
+			"files": [
+				"index.js"
+			],
+			"keywords": [
+				"es6",
+				"es2015",
+				"ecmascript",
+				"harmony",
+				"ponyfill",
+				"polyfill",
+				"shim",
+				"number",
+				"safe",
+				"is",
+				"integer",
+				"max"
+			],
+			"devDependencies": {
+				"ava": "0.0.4"
+			},
+			"gitHead": "e481404081842afb02efd847a03c4efa190551ea",
+			"bugs": {
+				"url": "https://github.com/sindresorhus/max-safe-integer/issues"
+			},
+			"homepage": "https://github.com/sindresorhus/max-safe-integer#readme",
+			"_id": "max-safe-integer@1.0.0",
+			"_shasum": "4662073a02c7e02d38153e25795489b20be6f01a",
+			"_from": ".",
+			"_npmVersion": "2.9.0",
+			"_nodeVersion": "0.10.38",
+			"_npmUser": {
+				"name": "sindresorhus",
+				"email": "sindresorhus@gmail.com"
+			},
+			"dist": {
+				"shasum": "4662073a02c7e02d38153e25795489b20be6f01a",
+				"tarball": "https://registry.npmjs.org/max-safe-integer/-/max-safe-integer-1.0.0.tgz",
+				"integrity": "sha512-zDp6LJ8gj9zM3s9i+/mZMY73P70CAFXT0swlROCfWM583skJcmDTov2wjfR8qDDvzHWWtsKEyGQLPxZ8iJc1Xw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQD0MaKvbkjk9RK9OOL0lMP8CfIH1H05wtl+9ErzKa9BxAIhAOOEnM+8RaBaCqayRW0sHaVUJ8HGCU9PboqkrNjAU/ws"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "sindresorhus",
+					"email": "sindresorhus@gmail.com"
+				}
+			],
+			"directories": {},
+			"contributors": []
+		},
+		"1.0.1": {
+			"name": "max-safe-integer",
+			"version": "1.0.1",
+			"description": "ES2015 Number.MAX_SAFE_INTEGER ponyfill",
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/sindresorhus/max-safe-integer.git"
+			},
+			"author": {
+				"name": "Sindre Sorhus",
+				"email": "sindresorhus@gmail.com",
+				"url": "sindresorhus.com"
+			},
+			"engines": {
+				"node": ">=0.10.0"
+			},
+			"scripts": {
+				"test": "xo && ava"
+			},
+			"files": [
+				"index.js"
+			],
+			"keywords": [
+				"es2015",
+				"ponyfill",
+				"polyfill",
+				"shim",
+				"number",
+				"safe",
+				"is",
+				"integer",
+				"max"
+			],
+			"devDependencies": {
+				"ava": "*",
+				"xo": "*"
+			},
+			"gitHead": "eef7c83a74aaef9da40adddffbb46b019560837a",
+			"bugs": {
+				"url": "https://github.com/sindresorhus/max-safe-integer/issues"
+			},
+			"homepage": "https://github.com/sindresorhus/max-safe-integer#readme",
+			"_id": "max-safe-integer@1.0.1",
+			"_shasum": "f38060be2c563d8c02e6d48af39122fd83b6f410",
+			"_from": ".",
+			"_npmVersion": "2.15.9",
+			"_nodeVersion": "4.5.0",
+			"_npmUser": {
+				"name": "sindresorhus",
+				"email": "sindresorhus@gmail.com"
+			},
+			"dist": {
+				"shasum": "f38060be2c563d8c02e6d48af39122fd83b6f410",
+				"tarball": "https://registry.npmjs.org/max-safe-integer/-/max-safe-integer-1.0.1.tgz",
+				"integrity": "sha512-CHZ/Nopqh46UtA0YvLclxj9F95qExLmTnMS5fnYlXvX4zj1RUOC3cPaGEOMhdPE8SSudSQ6wkQUJLA5E/WeL4A==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCICp8c3k/8F1wivC3JkIxLbWzUWxTk7cO7gGN2VAp0i+0AiEAvnzgeOvAW+9fb8DiqEGtRqdmJWn/D+IVnPFRKt3haek="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "sindresorhus",
+					"email": "sindresorhus@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/max-safe-integer-1.0.1.tgz_1475212612480_0.31415139720775187"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"2.0.0": {
+			"name": "max-safe-integer",
+			"version": "2.0.0",
+			"description": "ES2015 Number.MAX_SAFE_INTEGER ponyfill",
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/sindresorhus/max-safe-integer.git"
+			},
+			"author": {
+				"name": "Sindre Sorhus",
+				"email": "sindresorhus@gmail.com",
+				"url": "sindresorhus.com"
+			},
+			"engines": {
+				"node": ">=0.10.0"
+			},
+			"scripts": {
+				"test": "xo && ava"
+			},
+			"keywords": [
+				"es2015",
+				"ponyfill",
+				"polyfill",
+				"shim",
+				"number",
+				"safe",
+				"is",
+				"integer",
+				"max"
+			],
+			"devDependencies": {
+				"ava": "*",
+				"xo": "*"
+			},
+			"gitHead": "1b60f3ed783d38332fcb91757aaa07cee45a754c",
+			"bugs": {
+				"url": "https://github.com/sindresorhus/max-safe-integer/issues"
+			},
+			"homepage": "https://github.com/sindresorhus/max-safe-integer#readme",
+			"_id": "max-safe-integer@2.0.0",
+			"_npmVersion": "6.4.1",
+			"_nodeVersion": "8.12.0",
+			"_npmUser": {
+				"name": "sindresorhus",
+				"email": "sindresorhus@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-KHbkq5uDZ5U5KHeP91m5fRCNARpa++rJV3JNBctT/y/9XQJt7Bw9CwOJp6IRESgEKvGyzax5hGauAeULDtxGLw==",
+				"shasum": "f5ba7226ea1860a7866deb4fe6f82c83dd4e08e8",
+				"tarball": "https://registry.npmjs.org/max-safe-integer/-/max-safe-integer-2.0.0.tgz",
+				"fileCount": 4,
+				"unpackedSize": 2560,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb5HsqCRA9TVsSAnZWagAAT/cQAIh/qXH+lNWhaBXhmkAF\nWuY7nqX5KMvqxXbLL0MP0/2/AIMIuKHmZdMk9JHjGbWCAqUgvtNrc1N/lL4g\nsXvQawU0/dTGfot4BCmVX3n2G6wMWfKQ67Cwkn3o3Ea5ZRl9k78SnWp8Vm5L\na/Ao8u8poRu6XlltGxmjBfN3AkkR+rHO2NYGzUDWbyPzl26eFkDPJqv9N+dO\nfuz5ThPu9I5UY/3tvXZR1diSTBkHQa1Y5E74rB80QjSXuhGFpimURgy+TlvQ\nhCSfoclmrBlc8XEZK6wZ9vyOtzsV9tf+4JZZ2ahq4Rjso/TrLEycpiBOW81w\n0TRjVyOhc16+ExtlNdPWQn3n/HXwLyoxYvNFHEMUD8e+CRH39xFNbHp5LKGL\nNrmCvCMiA8QJPXRbum/040C+d0ywQIvVZg7ZI32sZBtJoUz/+qC6DbjYhnWB\nC2I2Cme2P5aDvTPC8FoT+MV11lDXyruAQFff1rZ52RbJJodmAZkmnNn+DHf6\ngGbxBa34rqzjUw1Z5x8KTRqj+q+tGG7JINTQhfajkeLVJ21aj3JvJdX1ZpA2\nmTDRYiY0oiLcQSd4q8xU4kYZYdvzas+xXGkXlCCnho2cSsqPyu4lrqk3VSSg\nEpuKN3myuCLCZOLWX7kN0oNvmwvcjZVX75aQ1mOLUcIZclXyFN519+IcaXTH\n5CEP\r\n=YoPR\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIBhDjsxXr1fb74zOO+kdrokbyNAKOUUa4+sZBl7BhvukAiEAhSVp0Hu3sp4SfdhFBdqanDt0SwpBLG/H3bV4EU+DOuc="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "sindresorhus",
+					"email": "sindresorhus@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/max-safe-integer_2.0.0_1541700393912_0.8305595274134274"
+			},
+			"_hasShrinkwrap": false,
+			"deprecated": "This package is no longer relevant as ES2015 support is widespread.",
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-06-19T16:59:25.076Z",
+		"created": "2015-05-04T20:12:19.815Z",
+		"1.0.0": "2015-05-04T20:12:19.815Z",
+		"1.0.1": "2016-09-30T05:16:52.706Z",
+		"2.0.0": "2018-11-08T18:06:34.074Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "2.0.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"86dfa5bbf13a63256e73318f283bce94\"",
+			"fetched": 1734527711625
+		}
+	},
+	"_distfiles": {
+		"max-safe-integer-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/max-safe-integer/-/max-safe-integer-1.0.0.tgz",
+			"sha": "4662073a02c7e02d38153e25795489b20be6f01a",
+			"registry": "npmjs"
+		},
+		"max-safe-integer-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/max-safe-integer/-/max-safe-integer-1.0.1.tgz",
+			"sha": "f38060be2c563d8c02e6d48af39122fd83b6f410",
+			"registry": "npmjs"
+		},
+		"max-safe-integer-2.0.0.tgz": {
+			"url": "https://registry.npmjs.org/max-safe-integer/-/max-safe-integer-2.0.0.tgz",
+			"sha": "f5ba7226ea1860a7866deb4fe6f82c83dd4e08e8",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"max-safe-integer-1.0.1.tgz": {
+			"shasum": "f38060be2c563d8c02e6d48af39122fd83b6f410"
+		}
+	},
+	"_rev": "2-09f554d42776fc89",
+	"_id": "max-safe-integer",
+	"readme": "# Deprecated\n\nThis package is no longer relevant as ES2015 support is widespread.\n\n---\n\n# max-safe-integer [![Build Status](https://travis-ci.org/sindresorhus/max-safe-integer.svg?branch=master)](https://travis-ci.org/sindresorhus/max-safe-integer) [![](https://img.shields.io/badge/status-unicorn-ff69b4.svg)](https://youtu.be/RW6Lp3Y3Vxs?t=16)\n\n> ES2015 [`Number.MAX_SAFE_INTEGER`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER) [ponyfill](https://ponyfill.com)\n\n\n## Install\n\n```\n$ npm install --save max-safe-integer\n```\n\n\n## Usage\n\n```js\nvar MAX_SAFE_INTEGER = require('max-safe-integer');\n\nconsole.log(MAX_SAFE_INTEGER);\n//=> 9007199254740991\n```\n\n\n## License\n\nMIT © [Sindre Sorhus](http://sindresorhus.com)"
+}

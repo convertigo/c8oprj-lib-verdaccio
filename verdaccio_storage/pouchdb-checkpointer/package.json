@@ -1,0 +1,3178 @@
+{
+	"name": "pouchdb-checkpointer",
+	"versions": {
+		"0.0.0": {
+			"name": "pouchdb-checkpointer",
+			"version": "0.0.0",
+			"keywords": [],
+			"author": {
+				"name": "Nolan Lawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@0.0.0",
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"dist": {
+				"shasum": "10f7b39502e8cfe53deec8d46b2eccddce93bd12",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-0.0.0.tgz",
+				"integrity": "sha512-/M4C7GgYXcwgh6GqyrM2kLYp26Q5qJ/i8EuWEVrMg2bPxXV64w3TXUH9pFfJZCSOZ9DKLmUOkFe7KsGcLLSh2g==",
+				"signatures": [
+					{
+						"sig": "MEUCIDLa7LNzpMpLA1z5hNx4Bca7+/ClHoUFm7AjJkqObn3LAiEAzfMKNhAFFx8xKsUUFsE7UhpqljSDFNCh8bASeSe74SI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "index.js",
+			"_from": ".",
+			"_shasum": "10f7b39502e8cfe53deec8d46b2eccddce93bd12",
+			"scripts": {
+				"test": "echo \"Error: no test specified\" && exit 1"
+			},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"_npmVersion": "3.7.3",
+			"description": "Empty holding package claimed by the PouchDB authors.",
+			"directories": {},
+			"_nodeVersion": "5.9.0",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-0.0.0.tgz_1463426476332_0.8027656141202897",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.0": {
+			"name": "pouchdb-checkpointer",
+			"version": "5.4.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@5.4.0",
+			"maintainers": [
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "f74eb06b92d4b2df3003f4ab5c63bd84d99903d3",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-5.4.0.tgz",
+				"integrity": "sha512-tEsFLDs+Q5tHNF8H92XRniQANHMatszhl5QxoisRH9wougR3wmqGAmcJey4xAT5iLL8trIaPK4tJ/FJg6OqTTA==",
+				"signatures": [
+					{
+						"sig": "MEUCIH1avFPrNMEwhWZSGohav4g6SCYOkhwOs0cG7twqmMZHAiEAxHx/DHJRpGy/82X1UcUnDWyyezyv6N/t2ZD0t0lW3Y4=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "f74eb06b92d4b2df3003f4ab5c63bd84d99903d3",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.7.3",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.9.0",
+			"dependencies": {
+				"pouchdb-utils": "5.4.0",
+				"pouchdb-collate": "1.2.0",
+				"pouchdb-promise": "5.4.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-5.4.0.tgz_1465234883154_0.21525833127088845",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.1": {
+			"name": "pouchdb-checkpointer",
+			"version": "5.4.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@5.4.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "5981ae8dd66dda5a88e600b7c8971df027ca2970",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-5.4.1.tgz",
+				"integrity": "sha512-b10INxZKWAzIe/gjPU2uQYPmwbR/onOZiB4fDK1H9QnSyMxnl0UGDZQzJEK7MdYxvdP5SMnpSbGrlLv5wM3eJQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIB+uMprSbwP9ApcZ01yJmKMd5n+uaH/c3v+nMHM5BiztAiEAnqnkf5UqBMj8LMgGZ11ew0zQ7Ek1w2tnqHPZzAoGFak=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "5981ae8dd66dda5a88e600b7c8971df027ca2970",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.3",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"pouchdb-utils": "5.4.1",
+				"pouchdb-collate": "1.2.0",
+				"pouchdb-promise": "5.4.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-5.4.1.tgz_1465389802046_0.1373214900959283",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.2": {
+			"name": "pouchdb-checkpointer",
+			"version": "5.4.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@5.4.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "c20220525a31b48afa5a14ed918480b8b3ac69b6",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-5.4.2.tgz",
+				"integrity": "sha512-jd0gJOp7/vyR6sspI/9Blfyh/tZimyBe3m6iTQR7d2C/VbYGRbPCOCguvC0yj9+N60WPHAw+PeaTFZury394Ew==",
+				"signatures": [
+					{
+						"sig": "MEUCICSv7ov10nlHnebsenkjLMdmWz7mR7HRl544ZOnI2i3FAiEA8+O8z9gzw3yxz1QRPXN1DVF2gedLoHlrS/cricAp0FQ=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "c20220525a31b48afa5a14ed918480b8b3ac69b6",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.5",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"pouchdb-utils": "5.4.2",
+				"pouchdb-collate": "1.2.0",
+				"pouchdb-promise": "5.4.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-5.4.2.tgz_1465747231079_0.18000303371809423",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.3": {
+			"name": "pouchdb-checkpointer",
+			"version": "5.4.3",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@5.4.3",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "ffc4be830946e399c6d50d3bdc5cadf2742594cd",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-5.4.3.tgz",
+				"integrity": "sha512-nb198VYUx2S4W9l4fr0JUAe5MeUJic9AweFVcg/5e1ERb0IY6onnTe+RNaK8er6yuxb40NeMQLeVB60jEhB6IQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCk6ucgiSOchYOg5DsTP3ohUYdCI8iYObW9tLyqZbpB4gIhAJ4RjZ7LPSWW0J9hKqj8RLEiggdDiMe9vkDG41d9VH19",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "ffc4be830946e399c6d50d3bdc5cadf2742594cd",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.5",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"pouchdb-utils": "5.4.3",
+				"pouchdb-collate": "1.2.0",
+				"pouchdb-promise": "5.4.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-5.4.3.tgz_1465820234795_0.6485427368897945",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.4": {
+			"name": "pouchdb-checkpointer",
+			"version": "5.4.4",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@5.4.4",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "748e3decc2421f47f448cda965e7a8f6846cd7da",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-5.4.4.tgz",
+				"integrity": "sha512-1na7cVOTv1vj7VjucCFwwcnFN/9Uaq+kW6v1WMQa+6TQiDIw5ugJpcP0S+CHSaY2EEEDSt4vpkGJ/pTybPcEbQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQD6h85Dn40UdUlKR6x+c19CMrlVqhhv5fh0pWktoCdClAIhAOD1NXU1FczvzVykdeQF9PcQvu3+5DJlegyHqzF/KlKz",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "748e3decc2421f47f448cda965e7a8f6846cd7da",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.5",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"pouchdb-utils": "5.4.4",
+				"pouchdb-collate": "1.2.0",
+				"pouchdb-promise": "5.4.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-5.4.4.tgz_1466088898870_0.975363771431148",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.5": {
+			"name": "pouchdb-checkpointer",
+			"version": "5.4.5",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@5.4.5",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "55a28eb4530c9a92e57c5138eaf5d22352d71a50",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-5.4.5.tgz",
+				"integrity": "sha512-AMoBxzxe0Fkq61SAetPmxZ8tCALgSmsf0+ih7yHLmzsEmxdgeMVuwpWdJWyjAB21W0GEia/+49Lbegn2BwT4uA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDuEhU7UD/pzPudI1xulkdN4XWQkZBRhgROTjGS4nZJogIhALMcYRHhzupUM4L/Q89xqwP8ykG+0IZZ4pSugh0uyvjd",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "55a28eb4530c9a92e57c5138eaf5d22352d71a50",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.9.5",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.2.2",
+			"dependencies": {
+				"pouchdb-utils": "5.4.5",
+				"pouchdb-collate": "1.2.0",
+				"pouchdb-promise": "5.4.5"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-5.4.5.tgz_1467512329364_0.07992684468626976",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.0": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.0.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.0.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "534d3e7a7158826be3ea498f419fea1874dfa3d3",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.0.tgz",
+				"integrity": "sha512-az6KtqF4/7YmDSDBt2oWslMOxRrwySk0irzpRi10OejbQV7wdgnQbK/C4tXVN1rzLYprsLHtLTx17jRrLO2iaA==",
+				"signatures": [
+					{
+						"sig": "MEQCIHznWdMFEA5QSfPDyeNbjgcexYFhecpJ6WdFV2XlzOQnAiBNLDW/M8ybMXVj8au4HrI3GERnDUhdhcMM+MO1O/S2HQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "534d3e7a7158826be3ea498f419fea1874dfa3d3",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"pouchdb-utils": "6.0.0",
+				"pouchdb-collate": "6.0.0",
+				"pouchdb-promise": "6.0.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.0.0.tgz_1472873886924_0.4912231240887195",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.1": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.0.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.0.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "8c292e86360d8c2d438ffd4e54046ba046316213",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.1.tgz",
+				"integrity": "sha512-JHckei8UTt1YDaxnXedYpwly3WmgsEYFj5VOC8MMMQXwIx4tqfjUiDtF05+oVUwRNDYZPnEu41sK94CGYBCbwA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDziBR5km/pritgG3r9DE66IQcR2QtxrMbNL6DH6UvR5QIgf17Ho6nVWh8Q96xE1qGYbMtodRxQWYXsU0RVa/KNT4U=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "8c292e86360d8c2d438ffd4e54046ba046316213",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"pouchdb-utils": "6.0.1",
+				"pouchdb-collate": "6.0.1",
+				"pouchdb-promise": "6.0.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.0.1.tgz_1472922082948_0.9749228868167847",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.2": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.0.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.0.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "c3415d1dd1c60c1f7dbd857de9f730917ff564b2",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.2.tgz",
+				"integrity": "sha512-HYs85QG5cvHBCYbUQWgWtRvUyyKMOH1vuOeazF+yeoe2yYYG43KaLUNkMhvtQiZb1t4jyAzepccAyMGVXS1BsA==",
+				"signatures": [
+					{
+						"sig": "MEUCID3+Ehcr7/zm7/X2wCXaMgj+dpFd9zUZj1+7QhaLNXC4AiEAuzZqKRdlbU9B0ZXROKTRySuasLRAkjNZ6kMFt15Xkao=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "c3415d1dd1c60c1f7dbd857de9f730917ff564b2",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"pouchdb-utils": "6.0.2",
+				"pouchdb-collate": "6.0.2",
+				"pouchdb-promise": "6.0.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.0.2.tgz_1473005346363_0.971461086999625",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.3": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.0.3",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.0.3",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "684cdc2b2ab7545cf57617627430121e0b477cfb",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.3.tgz",
+				"integrity": "sha512-8iEwwMr3mDrwHypieZW49hu3Z6sEyK7kxgUclSMR2LZXjI/zZzkElJ2xqgYfsfUHmUP9FycNOlttilFDozxMIQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIDGSsS845J+KOjscCDxuHzJl1COWLSquFkkEkYUlYP6BAiEAiC26EkBJRSpOXY9iPEu4Kddtk9MpDwGvNibbe1AmDSw=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "684cdc2b2ab7545cf57617627430121e0b477cfb",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"pouchdb-utils": "6.0.3",
+				"pouchdb-collate": "6.0.3",
+				"pouchdb-promise": "6.0.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.0.3.tgz_1473096910291_0.7852449987549335",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.4": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.0.4",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.0.4",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "63ea2f0d50df2da1bdeee36e46c2d7dac3bb1aac",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.4.tgz",
+				"integrity": "sha512-AV5+Fz/AYqmBYAY+bGJ44wRNJeGW9YF75rm9zfsSQLB0axcE/+3RcqjLBisLbOOClzbqs9+/sr3e6wjIVcqkvA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCJmp801nH15YH1Khx+b19qIc1obgr8rqTqf2Tpe0yZpwIgWgA0qeGOj3oAtWTYBT0AprnVyl2jkpuE9M5vLol64JI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "63ea2f0d50df2da1bdeee36e46c2d7dac3bb1aac",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"pouchdb-utils": "6.0.4",
+				"pouchdb-collate": "6.0.4",
+				"pouchdb-promise": "6.0.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.0.4.tgz_1473099975156_0.893501013983041",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.5": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.0.5",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.0.5",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "e540e333b3b064609a0bd199ac91ec364ac9bb48",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.5.tgz",
+				"integrity": "sha512-719HQ8y+uiP6vaoQyorIR56APPj1SkQm3QiwtMxie9R+EDMQrhsgEk6Ano8nNxHFeOwPccgfvXAV4XuwISoCfA==",
+				"signatures": [
+					{
+						"sig": "MEUCIC3JGxnlT7ttUSZnszPvM0m5lNSLfVKFzFN4p64fHZi+AiEAqfxRjEXxHwxdExNPTeHhTwngt1uwN4VJ/PGC/LR7XWE=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "e540e333b3b064609a0bd199ac91ec364ac9bb48",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.5.0",
+			"dependencies": {
+				"pouchdb-utils": "6.0.5",
+				"pouchdb-collate": "6.0.5",
+				"pouchdb-promise": "6.0.5"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.0.5.tgz_1474080193836_0.9406069153919816",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.6": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.0.6",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.0.6",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "05284d84fd5f4d29c00a50ee5f3d3fe86ae07a27",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.6.tgz",
+				"integrity": "sha512-uLjxUtiSDBA0iLJzWJ6LMUuCW25jtOLvNYgcqg0NuBnwjxbQuGnhPTJw9FwvqaV6bQddlpltUf9DHHAiioJcOg==",
+				"signatures": [
+					{
+						"sig": "MEUCICJaxhTGRK6fbQq/d7cA1eZ2S13ywKo8rwyva0KF5Wh0AiEA1psM5hINJtQUsu8sFz647B1MM3ggnxV4beEmZH2wMsc=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "05284d84fd5f4d29c00a50ee5f3d3fe86ae07a27",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.7.0",
+			"dependencies": {
+				"pouchdb-utils": "6.0.6",
+				"pouchdb-collate": "6.0.6",
+				"pouchdb-promise": "6.0.6"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.0.6.tgz_1475238660295_0.7901607488747686",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.0.7": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.0.7",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.0.7",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "258020c761c327db0da63e5b5afd58190926c189",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.7.tgz",
+				"integrity": "sha512-iuUuGdLzkN6oyJygBLJ+rqSbHok+D+RkWpon11AY4XV3YTeDQyly8xBN6qK8MLTjYkw4zsYv56TTjZjeP+c5eA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCTFmrP0gSK8xQJFSsJG5GAm0ev3Pu84G32MS/v11nslgIhAL8uWjYp7sTEagtUcbbWMxyL+YFqcfVQ09xys9RxbenP",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "258020c761c327db0da63e5b5afd58190926c189",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.3",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.7.0",
+			"dependencies": {
+				"pouchdb-utils": "6.0.7",
+				"pouchdb-collate": "6.0.7",
+				"pouchdb-promise": "6.0.7"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.0.7.tgz_1476575259524_0.5512292236089706",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.1.0": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.1.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.1.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "4acce2800063ddd77b137fb9efefa63583475643",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.1.0.tgz",
+				"integrity": "sha512-CmrjbfVUcAmoUsj+wFi71afTNsc1lhHg865EG0ALBVvmO1hSAbol8kU1TPlZpiWdUxeZUOG/nClZgqNjZ0WEvA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDprL3TjyYaEFpoaHV5J1JAiipdMkEWF5+vYB1FrcP1/AIgd3s5WJQk4YfbrGBTwZW6cZuIrlfcxsYbZcvMIY0E3Wk=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "4acce2800063ddd77b137fb9efefa63583475643",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.9",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "7.2.0",
+			"dependencies": {
+				"pouchdb-utils": "6.1.0",
+				"pouchdb-collate": "6.1.0",
+				"pouchdb-promise": "6.1.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.1.0.tgz_1481558787191_0.008473848458379507",
+				"host": "packages-18-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.1.1": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.1.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.1.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "256965e4db99868f57a1bf6be091a58921134ecb",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.1.1.tgz",
+				"integrity": "sha512-G8p+tdNn98jT3TmuwY3SFtugqXd9E2lZFoiGud+dPM+cl8xtf+i7Ut3Fl+/VRSsH7Xh47HxocXC91OV/36134A==",
+				"signatures": [
+					{
+						"sig": "MEUCIB8zb8doNOMrvuMErjVmoXa1qEKzd7zZHzkG4iykbewOAiEAkLifmu6zUM8QWYMTjvcAiBhL6LIKoDTSIyRtZIv/kkk=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"src"
+			],
+			"_shasum": "256965e4db99868f57a1bf6be091a58921134ecb",
+			"scripts": {},
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "6.0.0",
+			"dependencies": {
+				"pouchdb-utils": "6.1.1",
+				"pouchdb-collate": "6.1.1",
+				"pouchdb-promise": "6.1.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.1.1.tgz_1483621970962_0.6654713326133788",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.1.2": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.1.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.1.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "e94120ce3bf86a59d4db62d331ca8ef9d1218792",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.1.2.tgz",
+				"integrity": "sha512-NJAVBpHl+7WNIiuUUNT2jd5mijpzLZYrMs53cucDzVZ3CwFrjMP1XaPadFFVhgmYb8RtxQKl3aPoT1398oRmhg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCE5yCwPAc/LkL/YYVV2bhQvqRV+ZQtX6/DKhSpB4wjBQIgR+tgujY92DCzO1mW2a+PowCgG6LG8YwrDVLvxEV2trY=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"_shasum": "e94120ce3bf86a59d4db62d331ca8ef9d1218792",
+			"scripts": {},
+			"_npmUser": {
+				"name": "nolanlawson",
+				"email": "nolan@nolanlawson.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.10.9",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "7.2.0",
+			"dependencies": {
+				"pouchdb-utils": "6.1.2",
+				"pouchdb-collate": "6.1.2",
+				"pouchdb-promise": "6.1.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.1.2.tgz_1486487311800_0.5845033805817366",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.2.0": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.2.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.2.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "c0d73cfd27dddf64f7f6a43042739fe55089d589",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.2.0.tgz",
+				"integrity": "sha512-1lIUKHDEORLl7j6r8M+M+6VqRFm2VxfbAz0hEIHdVcWiqAOPWQqrIjRTc66QmebLu34K3ghePlmgEUoYThwoMQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIBGW8a5VLLBHZmfNQzRkPizbFcNXzO0gsD6SHqFNTyYYAiEA2bAYRjoq8pZPnfo9t3mD7W2JoNZU3yBj2W+x67cPr8g=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"_shasum": "c0d73cfd27dddf64f7f6a43042739fe55089d589",
+			"scripts": {},
+			"_npmUser": {
+				"name": "garrensmith",
+				"email": "garren.smith@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "4.2.0",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "6.9.4",
+			"dependencies": {
+				"pouchdb-utils": "6.2.0",
+				"pouchdb-collate": "6.2.0",
+				"pouchdb-promise": "6.2.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.2.0.tgz_1492700736625_0.7142446453217417",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"6.2.1-prerelease": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.2.1-prerelease",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.2.1-prerelease",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "fffaf16867aee3c129dfe44de4ebb3ee3d9c15dc",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.2.1-prerelease.tgz",
+				"integrity": "sha512-IzhB3KieLrYMNQl3VDzC36Gmic3tHQuV0QSlPpzBmh6Obx1kjXp37GjevpIAizLcAgxCEJKo6SpFJauUCH9RQA==",
+				"signatures": [
+					{
+						"sig": "MEUCICttq/YsPAySaB6o6Ejjccva8UAJe25h0cjEkxHYGE4ZAiEA3GsrjPViB4FNbSQQ2STfPjGR60Wj4RbmjzCpjIdhJQA=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"_shasum": "fffaf16867aee3c129dfe44de4ebb3ee3d9c15dc",
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.2.1-prerelease.tgz_1499942907597_0.16098129702731967",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.0": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.3.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.3.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "f391709cb011aed070b80e3ea64ca507b74f5f71",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.3.0.tgz",
+				"integrity": "sha512-PUBXuw3Gnc25GQsc/V+gkse6fYb4Om7hdtVm3cglfBjSg6ezZbbye2UJIgLdWgtpyVf66ot7e+Wn9SR0oRE8Uw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCreM3KsmhGfqq+7NlAmvMCkx5fTh7hQUXMXM8QUBLVOgIhAIRccTlXKb7wANWxfK482/YDU2dOSPt/AJO4Bm/KL3ch",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"_shasum": "f391709cb011aed070b80e3ea64ca507b74f5f71",
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./src/index.js",
+			"_nodeVersion": "5.11.1",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.3.0.tgz_1499943237058_0.4675457961857319",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.1": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.3.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.3.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "aefe6134f0e0c2170a41e43bccd6b27268bc28db",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.3.1.tgz",
+				"integrity": "sha512-hzfd6ci58GbrGY2gWevUPDrnokjA2aF1w26x3OEjItv8EDsrqqUb/a8pkNZkA77ZF9FFLcPlHPfsrRCYgPAmPQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCNfOLRni3iGQi/EmG4vucVUCNPSf/Jmkg4Qa0ngobkkQIgLOiMCiZeqNtmQmEyMg4bLTdrzKFi69jV0mpEwJ1CE6g=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_shasum": "aefe6134f0e0c2170a41e43bccd6b27268bc28db",
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"pouchdb-utils": "6.3.1",
+				"pouchdb-collate": "6.3.1",
+				"pouchdb-promise": "6.3.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.3.1.tgz_1499956856124_0.6945837724488229",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.2": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.3.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.3.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "acedace03ae016c1b929faa72c5cdd1cb95771b7",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.3.2.tgz",
+				"integrity": "sha512-DzC6n+hJQkuIbc1NLb3/wRlt4eI+BMrb6x5B1P8xh6Ap6OTB8vnI2RmeEoWPIS8sLWJf4C8T+hTsyajawyYZ1Q==",
+				"signatures": [
+					{
+						"sig": "MEQCIBsmk/e4S+/ItcUaeAKdn9La02ex8xZwzE6vlHShdfVXAiB13lkf+Xay+itQmetXAHF1M4zN05MPcjFqma4HNyHMWQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"_from": ".",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_shasum": "acedace03ae016c1b929faa72c5cdd1cb95771b7",
+			"scripts": {},
+			"_npmUser": {
+				"name": "willholley",
+				"email": "willholley@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "3.8.6",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "5.11.1",
+			"dependencies": {
+				"pouchdb-utils": "6.3.2",
+				"pouchdb-collate": "6.3.2",
+				"pouchdb-promise": "6.3.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.3.2.tgz_1499958786988_0.6307757685426623",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.3": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.3.3",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.3.3",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "fe0bb0bf5b1819e50689a7a70984d8b17a7c0ff9",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.3.3.tgz",
+				"integrity": "sha512-3Js9eDVYX+Wia0H2oTWZj3xN0HNUI11yRCH/Z7DkhOV+1u8GYmYeilKUnjsd3/Gl4kcabOf+alt79JPOzDp2OQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQC4uYQ45sI+/m/WuF0edV5kO9YAyL9V/IXa8cllba6UpwIgbdc6ypBhOoUijvVRhsO5Pk4/Dr+ENNoYMwoa1dDOmb8=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.0.0",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.0.0",
+			"dependencies": {
+				"pouchdb-utils": "6.3.3",
+				"pouchdb-collate": "6.3.3",
+				"pouchdb-promise": "6.3.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.3.3.tgz_1500070564489_0.7834939809981734",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.3.4": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.3.4",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.3.4",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "9e2368fd043fd45a79813ce4f8b45e186cb189b0",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.3.4.tgz",
+				"integrity": "sha512-Mp8SQpsp1955TKX2OJ9a94tBb+imtRnX8WYCSgM57f/tCHwq7c23ZZaCNIpPG+2ujDn+wiugifqeWtZs7TAYLA==",
+				"signatures": [
+					{
+						"sig": "MEQCIDVV6mgRyLeY9TI6I50nj3qNVfEhhk9QXncSjhnIYHEKAiA9u9g7gGwu9y2UKBOY2yKhu4/Qj0m8/i+mIQoCn4Bepg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.0.0",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.0.0",
+			"dependencies": {
+				"pouchdb-utils": "6.3.4",
+				"pouchdb-collate": "6.3.4",
+				"pouchdb-promise": "6.3.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.3.4.tgz_1500109847063_0.468463089549914",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.0": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.4.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.4.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "beb73d8b51b9edce0b5f09ca05762cc340bbfd1a",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.4.0.tgz",
+				"integrity": "sha512-/S8kctLtip3O9B90Yw2d2VluNvikn7zzccHunIcFCZscJnbTMkMtDoV9aBrMkiHCyVxThyywkGtQNvRR3LVs+A==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDZp+xJBAU4IHJ35XxpzCM6WGqPqdX90AF8kRexWei9QQIhALL0NranlbyKZx4pi6OBbE26utyZk5PxrbS5S4Za8izc",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.3.0",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.5.0",
+			"dependencies": {
+				"pouchdb-utils": "6.4.0",
+				"pouchdb-collate": "6.4.0",
+				"pouchdb-promise": "6.4.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.4.0.tgz_1513503505694_0.506604518275708",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.1": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.4.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.4.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "ecf6f5da39b9416c04b3e8bc84cc98e21adfc0ec",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.4.1.tgz",
+				"integrity": "sha512-1i1OtbSIto335+EMByQe8oAOiRiOmgW8iAB1zsXk8EEG7TyfwQqCHm/s56C/0ujAEcNMvG/nhzkEIkUqwkYU8w==",
+				"signatures": [
+					{
+						"sig": "MEQCICeYmlBRwhrORjdu51GkGSBbB2eqNLusv8ADXs5/l4zUAiALQrO5iALixxMPHKcm4vGQZ2mVANgun1dCis9ISpJReg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.3.0",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.2.1",
+			"dependencies": {
+				"pouchdb-utils": "6.4.1",
+				"pouchdb-collate": "6.4.1",
+				"pouchdb-promise": "6.4.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.4.1.tgz_1513595643681_0.024491073563694954",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.2": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.4.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.4.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "8f57d8062ddcc9528940e2ef6c802930ec3453a3",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.4.2.tgz",
+				"integrity": "sha512-+Pwpx1Z69QPgNFQlzXTvDPg775VwiUOjzz+c6K8ZJcUgjMJ4l7EhbeX7z0K4RGnk2osynDz+3tocustXO/1w9A==",
+				"signatures": [
+					{
+						"sig": "MEUCIAtGAkZKNMdqvM7TIvS85DI1WSSynkxKqEXmifnGTBRtAiEA2RpLaryqYqWuTx3fJAA+MFItuJBT3unE9/Br9MKGu6Y=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.3.0",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.5.0",
+			"dependencies": {
+				"pouchdb-utils": "6.4.2",
+				"pouchdb-collate": "6.4.2",
+				"pouchdb-promise": "6.4.2"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.4.2.tgz_1516796805475_0.25372198689728975",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"6.4.3": {
+			"name": "pouchdb-checkpointer",
+			"version": "6.4.3",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@6.4.3",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "af0e429ca3fe8b86000412f4fc6e9ea98d956992",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.4.3.tgz",
+				"integrity": "sha512-4FmuhYeJPA73pjxLhAsMbPyXNMRRXf0QYTNEbBiTXo8Oks6NOQUBAm/vD6xnI1eY/SC6Am6QHqXjhkhNQceUhA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCVXaO7dnawEyRZwvLOIWAhnfXlFwLeU2OpMxJAvWrKxAIgAf50taAuc6NB81aBVpSimNl+lsYuuSUTTe5Eeaf+XRo=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "5.5.1",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "8.9.1",
+			"dependencies": {
+				"pouchdb-utils": "6.4.3",
+				"pouchdb-collate": "6.4.3",
+				"pouchdb-promise": "6.4.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer-6.4.3.tgz_1517575662532_0.811672625830397",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.0.0": {
+			"name": "pouchdb-checkpointer",
+			"version": "7.0.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@7.0.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "e02b98f18c7a50fb01c31c865b735d0d9dc7be1d",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-7.0.0.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-XwSTOpOBGHlivBdnSMCRIhO7VFw16m/oMfFJaZqKHVA4P6KKWnwwmgLFkec8DqC+OqQumxol55TCdhvfvv9asA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDR1CMixJRTUfyplr7p9TCrf6y8Qg8X+8tp+LmOCvlzNwIhAKNqVXo//7tfIIcMpSTMnQHGNkMOBT8tvTXTuVQ8xCsM",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 27409,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbK4U2CRA9TVsSAnZWagAAV24P/3gCwjMci6+3PDe745ix\n5wXhm3gkxeeCL7WrLUyLs6PaXEXPKH5cMn/j//6ED9vY1Cr7Q/jCHGA8cXvs\nBRZoCNLTCFHI/fJUP9+mkS7WcVSDNnGf3cAe8uZwkF5GELpf51A5LDJpU8Ar\ngvByS1K4aCkW6cgD15j8Ghkach60pUJXX9ndC/Xc4EDqKZODza3hOtmhX5PC\nsVAhEOCU7y3dOCofWPRhBgxWtOvwP/PAv1ObC3181HiF24G1l47UGRFplmzm\nfw/cdU90UNgAhDuB1EaC4CmSrckQBQSQoBgBYnkPrWrztWsrPNFxVs8nfjhd\nhkksls4tU2b3tZJlkrAfuJ1a41pLYgL5faKklhrymV8gRD+AALcBlP+dzZfY\nYvui6YQOG0FpzbF9JyKd4SKceudk7zj6M/oM5uVKitYAWtgxTCqdaOa0/8z2\nlacpoa3St9GMqLA+pcJGHfadqq8A5qLracJBZkduqVRWujbWmrkArh4n4gkD\n694x1DuThoqiG1XjiRIcQ//dq9ZLMdT9cIAsFTwF+5jwZajMmEO0+m8AkU+R\nNF7ZrYjugYv+R03/P6esWoc+ohmqQiGSqXs+CWUjktnw3zn2v8UU5wi4eBUT\nPK0t9oeVlJwBfi/lr5sYQpylZZGzn908fn5UvYD0K4/ZKdxhX3sfrwUtKPv4\nx+CM\r\n=DoxI\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"files": [
+				"lib",
+				"dist",
+				"tonic-example.js"
+			],
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.1.0",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.3.0",
+			"dependencies": {
+				"pouchdb-utils": "7.0.0",
+				"pouchdb-collate": "7.0.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer_7.0.0_1529578805841_0.8878447483093499",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.1.0": {
+			"name": "pouchdb-checkpointer",
+			"version": "7.1.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@7.1.0",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "f62bcbe01c8b380e3bab92aa16477c182e15ed22",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-7.1.0.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-nlSDO8Eov6I04TvH+xwfNUsUIw8ggKZxdx2NOKYAxqn4Yk6z7t94vcIoeJqpxz3EsV+C05IDM+jdFhc8IrxnYA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCpcMR23y8rUTTU0Jpqt9Dhi/3BKQ3tSi6+P6NVemhBewIhAO7WNg/NUFbJedDABCnEj3Hdi7vSz6hXZaVftxIwLeoR",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 27409,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdAofYCRA9TVsSAnZWagAABkgQAKG+aHf4Piwk26EiyGZ1\ndVcw3rMNB+2YmGpeugVSZ5qthmKb6ZIrjGOMKnXPoyV0VQRisQo1CpaIyqpT\n6OQNwLTftaFSSV2GGTII7DpaEYBtJvAbG8SjCNrTl0tnHZmm9RjdAG3aN3eD\nW3IjKoxIGVzEWMKuPtV3jJg5CgE+LisBwY19Ja6MZYqgpJayffKNyvhzfr/X\nnj+AgT6VUg9UoEnze8XQldoJJZUEfkFjtclYAMfyvroTbmghNrGHERZVBU2+\nqnbaWVgjwnt/3kIS9osVJIpx6q4F5b5ipnyM0gQdCQSRJmhohbz36uwbtRTA\nNZy0Ajiwmh5Yd+eJ3M6ek24AEy9hDZbINDvQykxPT2Jz5f8TOYAoQdIs47Hd\nEgZ/c6/CBMlCL5FBqC81Nxsm/OfwkUuws8L19oVlj5Ibn4z2zsoGOinP+G0D\nbKPhI/HayiRpUhF3pUftUyEYiJcLhgItwqmCC6ka9DVa/kHdaXc71bufsdmb\ngrqm0oOKj4WX6Dt8O5Ca6owEvb9ne9jrPluDsyaDiQWQWj3T1uc/0ynl7avV\nqFgKM36/Kp6IUABbHc7uW0DwMFrdXrngA9yrdzGu3CKlV0ucyWKAXfYGHrBd\npn/PD84Ux+SECG0kxP0mSzBnH2qi4tsRlOBdQ9xe/korzXNgChq6BAXAquk2\ncZnf\r\n=uX74\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "garrensmith",
+				"email": "garren.smith@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.9.0",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.15.0",
+			"dependencies": {
+				"pouchdb-utils": "7.1.0",
+				"pouchdb-collate": "7.1.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer_7.1.0_1560446935519_0.06924405827075386",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.1.1": {
+			"name": "pouchdb-checkpointer",
+			"version": "7.1.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@7.1.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "27399997a8245e6e333aef9a5ebbe0f7c146247a",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-7.1.1.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-ckJ/Y5gI+sEDZ9w4A4wTt2aOcX39BeqQwfMU7HSUMVzmPfIOVTk1N/8PyeVibgL3WNJswYFDdH1Sa/xbdS/jQw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDQU9B/484ww2taRyr/+0o3iSxKD6keuMqxnVM0DOqVWAIgfxf4w4dcR5LjkW9W8edGTBGyY2hzOfiDGGQal3J/7eQ=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 27409,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdAyeACRA9TVsSAnZWagAA1owQAJYZ6IIT87VYHVIa/sRO\n+AGOn21VHMLISigO1Hm4nUcX4C7t3ej6VptbX2+umBpwP2TXVZmCXD6UWZD8\n0l9mvVg4XfrmsMT2gB7Fzscl15Q4aZUCgLUfeOW/YJBHwhzo1Jldzw82wSDV\nxQ7dStoPZaFPIwEisM/rgzh/WXCfnuQCUZAqDh3fJ1baGGQzsAOyqIOS98ow\nnf4/4WxC9C2hzVnpyaCODAq4DHm1bzCDOrpiVwkVXjQZlhxPJDZJDJM+NVVC\n2Eacx92HtjQTeI3o/6O8/2Upk0udEvSFkZoO5lLJzqNSno8frOfUINYevVkS\nEo+NDExP/l2cM0rGXrmQmI9MK/fA/xRJJvnp+I5DMcXmxb+J+lNivXy7RSm0\nH5A0NB0ELakj3BWuao9yg/0ME6V/zXND+aFP1ylXmKTGfY2pdIcfYTwPqRl/\nNcpMMUbJI/JbPFiIvQo66GMvjFizrO3GxhuoOS+uUdi6J00AYbPbEU3bxoPU\nphsn6CH4uHqx4i15lGNbxrGOamlfGp52jB32PwK7Z6Lk/J1k0IsYnpei0ebE\nwlmC3ufHaGHdtofHrUmwFDwCgdCnn5gwGR4FlKAPJ79FpwgnlpO+qmFYVl88\nVxvDHHvQjydF2EA6Pvu++WAQRPRtVv8VyMrCnoyhyEJxay294EqCSa3ELGF9\nFRwR\r\n=CB4i\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "garrensmith",
+				"email": "garren.smith@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.9.0",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.15.0",
+			"dependencies": {
+				"pouchdb-utils": "7.1.1",
+				"pouchdb-collate": "7.1.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer_7.1.1_1560487806799_0.5699540008334201",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.2.1": {
+			"name": "pouchdb-checkpointer",
+			"version": "7.2.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@7.2.1",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "143ae5f59f815fb034074e0c478bd99499b58658",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-7.2.1.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-Mtq8CFyjEuc7If/j9wHmuSspwPC7BPbcf/8/Hm3fbK7fiwasVEcshEcjx7wkUNgkHiBM/t9cYwrLc8PZSMAu3g==",
+				"signatures": [
+					{
+						"sig": "MEUCIEV1SCI4UIFTCCyBZUmWg4f6uY1Wkm1/Z1nI6W+eIB5EAiEA6IiGCTMyw33pNqUZNVdlDjPBbJCDesGGK7IV4hEWc6g=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 27409,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeScWtCRA9TVsSAnZWagAACXgP+QASBztV6W3foXHthr63\nUbWFsTQ0nh2MAoV/dsl2xn8hwKAjk2II2dJKM0QvGkpoqpetLGr7yHC6kleD\nOnN2yhvdWtp+soHhl+sNdtcdu/VHSJxx843OrOw1w5khFvE652kMGdUr4bXl\nOLXYtfG6mw0cMV8ugbfTVRxhfHI8f5sfeIbglNQshRGFl4nq2L/R2/8rEcm2\nbGdjnOyP0VCqjisAwuQ3HZTjoxWheQUV3rzF3LXd4n5FfBnh+/4ZBG3PnSB0\nH4s4m+M+oEiSkpCCpq+5ez5wm9kXH+e1pZpl+Y6r719hSSfz4wppGDmZLimd\n/VBcDxwWXy5mpHA4VxlOF4HyS87ScSOIxe/6gU+ef2FBJufTHPirhXy03ULS\n/K8DkXAhC13r18rL8iA151gyiqZvcoLCSQwPKDUGMHRqoTB7Pm5xhzbiq5G+\nEAtUgMmHpMoELiJZ5hbfCC6qdmsWfl7J2bbAixCNpOnQp6i+P2MRDOqMyNGJ\njyDcHNRjeYc3qIcjE3E2P+ag4IfOuiQisWDO0TBQI5dg4icc91HE14VQ95DU\nNXHLDXN/X8J5eNdQaJnFRw0jDZsb3u/s9Z75rXJcdYF+4owfzt7RWl2teym5\ngulFSEkNHdQA3tA5+cN/oYJRljPrdif47mvaTvd8JoF6L2l8DU0F24f9i4Ss\n2iH3\r\n=lrQt\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "garethbowen",
+				"email": "gareth@bowenwebdesign.co.nz"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.12.0",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "10.16.0",
+			"dependencies": {
+				"pouchdb-utils": "7.2.1",
+				"pouchdb-collate": "7.2.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer_7.2.1_1581893037180_0.957472023684544",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.2.2": {
+			"name": "pouchdb-checkpointer",
+			"version": "7.2.2",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@7.2.2",
+			"maintainers": [
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nickcolley",
+					"email": "nickcolley7@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "8ecc8edf94dbb866a4c79f5e787a018cdeb9f475",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-7.2.2.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-O2i0vjLnZwcuSI41omrdaiyPWofCRLPBs+Sw5ad/GtYQbvxRt0CJEqYCrOaDnAsgIVoRG5PK/9gDzszv2CQsvg==",
+				"signatures": [
+					{
+						"sig": "MEQCIGrCcwoKvb9jhaz2STt1+zSs0KIHSDBhYlINA9Us/+iSAiBa2tsAfg6xPV24syAurS3OtlR5I3dR43B0Fk7V0062SA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 27409,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfHswACRA9TVsSAnZWagAAG5UP/RUfgnljafFUoxjvDv5o\nt3g7gFB3NDbnvxDsVj5Z/qM213Z5juUyn8LTlEQ0k2/bg2xHvwQ/7KbCnBU1\nnH1ZHq3nwmtTYjHXzUVhnz1cNSeB7+BaqJjNkz5TYzPCkpxK1W6k8QdS5wgz\njYTt0DME2DUMlRUhyp1aP5JIc+sBLP2rZdpL9T9mvHmfb6PH04szRYsxYFm2\nsTSZIBZDC4mR4cgl8sYzrltuEwiWLZMgeAQZqIQrYGXYzyzx7KoWhwHxDa3s\nB4Z7eOz+TYyp0DTh86wSd04APIcFX6GXpvrL4vohhPHV9eJAYASjm+bnNoDE\ntnQbQXX5ikiwbfdXn3GiGvAtk5vUK+oZjHks6ShczchtrHk3XULbl5vUEvko\nW+8DcDOaSId/JSNga7dlCx8VQo9ltK1vZ26tVh3JmXUv+3hsqPDYnPlfH2bE\niDHFmtMzGZfHapBquy/zFRBFQCbwuG4NEyRNVoEKNBIwWO/TXmoG6AOUpcD/\nWo+x+hN6ZBysTuIvaZ9AQsPROZK3dELO4FlCaOjOCWdg9bIU9qBTIJ4o+qGv\nwaft4/d/Z1gLVJwNML+BY+T5we5GCY3CkUZkgwi7po0MLPFT7caN4srCg0kF\nUMjPETOk9YwGdXAmZQfLqBeyjQMOTxC4u+8CVQb+jcsplSzieUPElr+r5zXE\nBz0+\r\n=G/kX\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"_npmUser": {
+				"name": "daleharvey",
+				"email": "dale@arandomurl.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git"
+			},
+			"_npmVersion": "6.14.4",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "14.4.0",
+			"dependencies": {
+				"pouchdb-utils": "7.2.2",
+				"pouchdb-collate": "7.2.2"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer_7.2.2_1595853824515_0.5853609267091071",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.3.0": {
+			"name": "pouchdb-checkpointer",
+			"version": "7.3.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@7.3.0",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "95a6d46a7273f0d930f0e13a0cc3939751173fb4",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-7.3.0.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-ioK7O9iBM/VJ4lJ0hAQ9zt57wZyBcVJnraEX0uN+FVTVh07xNIM8GhMRNE/rfHYXcT5a5uS0Ody6Q66JXaDzZA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQD12yTT3sAASlY4Bg2LbdNdK0w5BhcRfrDNI1o0MaWS0QIgTrqvdw/62YKPBCJVjB+OIAknEn3smKJnLbJcjpMJFHE=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 27512,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiVuyrACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmqULw/+PggOUyNWpHrBaAJc2uC5N0fAb2wJ1QrzDkEHfcwxfaJn+9Xf\r\nOR/7Mpqn1yXT8vlos+/EAGD9fYD368yJFucjBSBQ4tyM1l2wRBM+dAUcJy8+\r\nJRrBnxNquKyatZ0uB2Fh44T0UvwjvWVZu2O9GuWwAgtx70xp4NK9pmTP/oqd\r\nlZb3kEuIAUmZLoPi4JYkG31lNNYtiTHpCGwD20pzFXWKWXOHVAOWeD7swtNA\r\n0XtCwc0VisYxoRx/iE6dUg1+JwqPjR5snQoDJglSerEAuZmPD3+bFvUNJw1u\r\nEGAfXJLvlLSURSPFLnKXwnJaP98kT3yC3JtHswCTp/xDC0ujG7m7tnP8rpW6\r\n7YE1CPvxaaOQeuCveM8Pv5cyHpM+ykOExeD5Tvg1rroaVm01IgsdQUqKyYr+\r\n0ZN+yFuAZOJcGTs3k4iEoboq2mbhTL7gclHjwDmCwWill7rEAoWYbkalA2vA\r\n/u2a1g6NOULUo2N2o59v6cm2aTfda8kB0rKVdivi9YDDo6EF43Fti71QgfWi\r\nHnU9ZICoQ81xaJKkVyK6dNLVPChgJcVM3zhTbgYxpU3V5gnGcoBtemrQkmk6\r\njEmXCYw54krZSE+OiATuIM2qHQ0LHNqVsJ9xDSHuVwnYunKnSl29zMQDPANh\r\nKfK/w0j56k2vmHMwGVT7nGJpR6AnayBstko=\r\n=FH9i\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"gitHead": "7c6753a6fd802191d51adcbcf153c5f646786f4d",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-checkpointer"
+			},
+			"_npmVersion": "8.5.1",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "12.22.5",
+			"dependencies": {
+				"pouchdb-utils": "7.3.0",
+				"pouchdb-collate": "7.3.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer_7.3.0_1649863850963_0.9279041256060272",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.3.1": {
+			"name": "pouchdb-checkpointer",
+			"version": "7.3.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@7.3.1",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "75fd26c30e39f7011ee7c5e3137e0795b0bd8e2f",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-7.3.1.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-iP7h/J7DM2eNHX8Ggb8mb1rFG2l8IDpG536oEAvcq7bDxtt0BzokWt/EQb0wCms8nR0MAEslHPHPxNBdsp8R7w==",
+				"signatures": [
+					{
+						"sig": "MEQCICFD+vGufnlhz096akj9EzXHQSd+8kVuZgyonLolUiaTAiBRs14F4xxLzW4ohSMH2yVyBAS0YMdTOAonztlTsy5gjQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 27512,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjbl6qACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmr+8w//bgVUJJ3E/BLZlz6q58lYQSWKibbK2sYE4vi4ZRY3luLUWL8y\r\nnGuShflRJtLklqtfAdhiDQgy4++2GymrimuWZ3/0yx+D/UGipibLywNgrNJq\r\nCW5Z8nwXeg4Tm3IjBMYPXlcg3RT/o+SKImCPPAqjiyhHMPBlC5gmO2U+coYW\r\nlXG+fsSpTViXnG+U294o0vb6U6geLwUwxA4VksQ+f70soDG9MyUyWebc8J8C\r\n9aAn2Eg6Ry27e0nzzZPhLHvNh5DS1Do81bBrPJ/JmxkACXuRc5jGuLx+YYqq\r\nz9ZMArsemd+Gc8R+QvSWWaTGWOgFJ0h6BxyG7AYY9QwyNNYto7aaDxaIDZZ5\r\nKwYi+DRlYxng4kRV8HmfR3ztUaxclnOrdhNUJX041hHm2sbu2Zh1lA0rXu2S\r\nOUYxjrIBimx9UQQRJiu+DP1dKAnan6vV2Bk5VH2mwKaa7c4qV5MpWppGzj0t\r\nJs52MBX1VQp/40CxDi7HONgPLW197TaRe/kN/iYmVKwE9ug2KwFko9updeQ3\r\nWxFwISRqeCSkjk6DhzXvMERBXtLpovnsp3YI3sj6lAW6EetLbmDseFBc1Nyc\r\nR+g/RYvJ6C78NvLZ9wr7V3M/oHfpDX/67A/yPZFt+jT6C53YCnYZ1L9jTdBF\r\nu0ECZB9VnJMQQMPW0RozVpDja4nbIJrNYIw=\r\n=D8lC\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"gitHead": "e241480180d04552b98db168948b6a5691f7f370",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-checkpointer"
+			},
+			"_npmVersion": "8.11.0",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "16.16.0",
+			"dependencies": {
+				"pouchdb-utils": "7.3.1",
+				"pouchdb-collate": "7.3.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer_7.3.1_1668177577904_0.22295836538246205",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"8.0.0": {
+			"name": "pouchdb-checkpointer",
+			"version": "8.0.0",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@8.0.0",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "748099f944a5d45533fbd576b0e1302582cfa8b6",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-8.0.0.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-yNobJXhbuPYnsr4eOSQlz8HPcdczUAQkr8/AR67JCLlDB2lZ7lrUU7lcK0t6d4Ok9ocTGvot8dwixlPBc0gtOg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDcSvMy6LZlLgBmsiygT1E3Gl/33evjttM7pwo3tPrsegIhALZebHaVBGQ5I8C9vLi+9A2W8ORbnSE7rOqw6vFr29Do",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 28100,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjmwfbACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmr0lg/+NKLHezBqt1SJZt1CDpW0BuPtC02uqN82cs0Tggq+reESwY0q\r\ncLiHTI80G+OJrp+0Vhe7JZFvMd4K6TYpesz1slX/gRjrhYHAsJWAySSz7tBd\r\n109b35iwMl27DF+Th6a4ESCSWNXuaybhIoNk8mCYfvadTH+Fbsa2OKSRaNc3\r\n/RTdePGwFysg/vQJ1+sKi2ato/zeQzoqW47ReDLALKK0QzIsjAs+cpAFuMLg\r\nXFhYCNp48LMXrWQ8j8v6QfzV5zVZ+xgILDkTmKmKiq/PF6wcx2GpbGvrk9IR\r\n0emlHyPKmI+wa0pKMN8fnHFfwzy0Q1MtF4YzbKLNDj6WuTbiIA3pHZsjXlj+\r\nPu8C11kSaxBZkCiETiCYnZOLCDRFrNoqEosD3wNWJv7iPSv+9K1ybZmzalFq\r\njSn7J058IlrXnewc++iMesWz3RQqXM6t56g0JjdSTMucV8ri7bGdgwPHYbOE\r\n/5WI3+xA0lVZr0ErE6sK2LagLBi+zqn6pQWZMg2kcT6PNNdx4kZcF9QiDLkx\r\nXhz3P645D3Ah2hQvUigdbXY4dZzHmLkr2+h7pDyPtBk2og0klR/0iCZVMjNl\r\n7281cTcnICuE0Mx7XEEuS/kNuEn9Wu6kQpiWo83f8U05+VybGLci6jGCSYye\r\nXnfti40/qgGQsGjaVZNAOwhbyHV31KsROB0=\r\n=I5X6\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"gitHead": "fec3c1639e2ed83a31ed530e832a1f4c171b378e",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-checkpointer"
+			},
+			"_npmVersion": "8.11.0",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "16.16.0",
+			"dependencies": {
+				"pouchdb-utils": "8.0.0",
+				"pouchdb-collate": "8.0.0"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer_8.0.0_1671104475542_0.8993508763001339",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"8.0.1": {
+			"name": "pouchdb-checkpointer",
+			"version": "8.0.1",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"_id": "pouchdb-checkpointer@8.0.1",
+			"maintainers": [
+				{
+					"name": "jcoglan",
+					"email": "jcoglan@gmail.com"
+				},
+				{
+					"name": "albaherreriasdev",
+					"email": "albaherreriasdev@gmail.com"
+				},
+				{
+					"name": "jan",
+					"email": "jan@apache.org"
+				},
+				{
+					"name": "daleharvey",
+					"email": "dale@arandomurl.com"
+				},
+				{
+					"name": "pouchdb-user",
+					"email": "dale+pouchdb@arandomurl.com"
+				},
+				{
+					"name": "garethbowen",
+					"email": "gareth@bowenwebdesign.co.nz"
+				},
+				{
+					"name": "garrensmith",
+					"email": "garren.smith@gmail.com"
+				},
+				{
+					"name": "nolanlawson",
+					"email": "nolan@nolanlawson.com"
+				},
+				{
+					"name": "willholley",
+					"email": "willholley@apache.org"
+				}
+			],
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"dist": {
+				"shasum": "beb4f922b8dbd59f851fe95c7fe540d69f870bf8",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-8.0.1.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-zWIFEpQqY/7Fx75VkWtxbMYlL5gzPN9SUYqFCCUPPIThEM3evREI/4u4V0ayNkd9Ma3OGyItsj0D1ibBghWenA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDo0PEHbtqOhokE3UMQnb7aUOtcNkclzUSlMYCCUI/cOAIhANcVsLsWoENd4IW9ABXWHUy8LRTeLzo4Rg4CBeLeVx42",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 28100,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJj5NOXACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmrEFBAAjBxOuTb4mGpnnsIG51jNvjYSDmpHZeerx/vzllnjEv5DjRas\r\n3KRmzsX7Afi92vNym6+0fGI8/DE+9lHAwfF9PJcEOqWPxJ56MFpl6LhDL7Bl\r\nx4j4Tv2U4SKKpitGFcQgcywInMqp+J9WmYJ7f/p4c1t7vlM/0kW5jpsPJmh0\r\nva/4d1k79ObJM6Qho0Iii5U+cLX3RJyBjuFqxiLXZwFEwuJUEm1Nnoy24mm2\r\nnRXZTFgIQVJAlcA1bZvI5Oh+MRcQF1ItWn4c4HWGV2SlqsVkzSmieGs67VvJ\r\nJN4aR5/8WUNtH/aWfTfztZ6xr1NzckC4W2s7UgQJMC0qqof/UyZraYqFOX2U\r\nzGdVnz4sHJtdyK8FRYHPNFeaRVEJl3Gw91rNAONp60Io46jFe+1+/sexGKY3\r\nu2Do25Eo9uPhbml5k5aqfm9SoZyN/91GPUB5P1jDwl+aBGiUi+xRCLCWqEpM\r\nfA3E2+gTunVwHVOhvaLYT9Pj7Dsexwh+YuSmfgqSCzsmCtkUd9HSVG0KIyxA\r\nUVy07v4Ni28vaToIPBLqpO5P9RBExFP7wOqrgA570jq5h5Zk9MpJb5ycwiNw\r\nrLjRuFV4YdPKy5YNW5ZnYd3m6AiQB40q7GVS0Bi3t1WkqdCzjbV1M4Fn7lFT\r\n8wiuNu+fWjhFpoMfZFazPv3ExmbzbShHD/4=\r\n=ZnEA\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "./lib/index.js",
+			"module": "./lib/index.es.js",
+			"gitHead": "3c6e9efe088d8c3004833ac3d782be456bce898a",
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"repository": {
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"type": "git",
+				"directory": "packages/node_modules/pouchdb-checkpointer"
+			},
+			"_npmVersion": "8.11.0",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"directories": {},
+			"jsnext:main": "./lib/index.es.js",
+			"_nodeVersion": "16.16.0",
+			"dependencies": {
+				"pouchdb-utils": "8.0.1",
+				"pouchdb-collate": "8.0.1"
+			},
+			"_hasShrinkwrap": false,
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-checkpointer_8.0.1_1675940758876_0.06749553995194124",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"9.0.0": {
+			"name": "pouchdb-checkpointer",
+			"version": "9.0.0",
+			"description": "PouchDB tool to write a checkpoint, e.g. during replication.",
+			"main": "./lib/index.js",
+			"keywords": [],
+			"author": {
+				"name": "Dale Harvey",
+				"email": "dale@arandomurl.com"
+			},
+			"license": "Apache-2.0",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/pouchdb/pouchdb.git",
+				"directory": "packages/node_modules/pouchdb-checkpointer"
+			},
+			"module": "./lib/index.es.js",
+			"dependencies": {
+				"pouchdb-collate": "9.0.0",
+				"pouchdb-utils": "9.0.0"
+			},
+			"_id": "pouchdb-checkpointer@9.0.0",
+			"gitHead": "194c0754bb482824c3cb07d6432c7b95707d0a72",
+			"bugs": {
+				"url": "https://github.com/pouchdb/pouchdb/issues"
+			},
+			"homepage": "https://github.com/pouchdb/pouchdb#readme",
+			"_nodeVersion": "20.11.1",
+			"_npmVersion": "10.7.0",
+			"dist": {
+				"integrity": "sha512-yu1OlWw78oTHKOkg1GoxxF2qB7YUsjK3rUDJOChMs/sVlZwOTZ4mGdWFPBr3udxSGvR77E+g89kpdmAWhPpHvA==",
+				"shasum": "abf6a82c46f8515019c6665e4418434c61323a8e",
+				"tarball": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-9.0.0.tgz",
+				"fileCount": 5,
+				"unpackedSize": 28848,
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDrqm8RIPGirG6pdTK3AHj9ucYCT3QaQawHrRxrnZB6rgIhAIYjy/niZaNhm5nThDv0rHJbfA9EliMVlVQlgpgmjqDh"
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "albaherreriasdev",
+				"email": "albaherreriasdev@gmail.com"
+			},
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/pouchdb-checkpointer_9.0.0_1718985249869_0.11876982584570972"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"created": "2016-05-16T19:21:16.874Z",
+		"modified": "2024-06-21T15:54:10.299Z",
+		"0.0.0": "2016-05-16T19:21:16.874Z",
+		"5.4.0": "2016-06-06T17:41:25.679Z",
+		"5.4.1": "2016-06-08T12:43:25.335Z",
+		"5.4.2": "2016-06-12T16:00:35.423Z",
+		"5.4.3": "2016-06-13T12:17:19.163Z",
+		"5.4.4": "2016-06-16T14:55:01.203Z",
+		"5.4.5": "2016-07-03T02:18:49.891Z",
+		"6.0.0": "2016-09-03T03:38:07.159Z",
+		"6.0.1": "2016-09-03T17:01:26.624Z",
+		"6.0.2": "2016-09-04T16:09:09.971Z",
+		"6.0.3": "2016-09-05T17:35:11.925Z",
+		"6.0.4": "2016-09-05T18:26:15.383Z",
+		"6.0.5": "2016-09-17T02:43:16.561Z",
+		"6.0.6": "2016-09-30T12:31:02.246Z",
+		"6.0.7": "2016-10-15T23:47:39.741Z",
+		"6.1.0": "2016-12-12T16:06:28.991Z",
+		"6.1.1": "2017-01-05T13:12:52.956Z",
+		"6.1.2": "2017-02-07T17:08:32.018Z",
+		"6.2.0": "2017-04-20T15:05:36.840Z",
+		"6.2.1-prerelease": "2017-07-13T10:48:28.459Z",
+		"6.3.0": "2017-07-13T10:53:57.944Z",
+		"6.3.1": "2017-07-13T14:40:57.083Z",
+		"6.3.2": "2017-07-13T15:13:08.077Z",
+		"6.3.3": "2017-07-14T22:16:05.681Z",
+		"6.3.4": "2017-07-15T09:10:48.040Z",
+		"6.4.0": "2017-12-17T09:38:25.825Z",
+		"6.4.1": "2017-12-18T11:14:03.778Z",
+		"6.4.2": "2018-01-24T12:26:45.633Z",
+		"6.4.3": "2018-02-02T12:47:43.478Z",
+		"7.0.0": "2018-06-21T11:00:05.913Z",
+		"7.1.0": "2019-06-13T17:28:55.627Z",
+		"7.1.1": "2019-06-14T04:50:06.934Z",
+		"7.2.1": "2020-02-16T22:43:57.286Z",
+		"7.2.2": "2020-07-27T12:43:44.621Z",
+		"7.3.0": "2022-04-13T15:30:51.137Z",
+		"7.3.1": "2022-11-11T14:39:38.086Z",
+		"8.0.0": "2022-12-15T11:41:15.669Z",
+		"8.0.1": "2023-02-09T11:05:59.041Z",
+		"9.0.0": "2024-06-21T15:54:10.051Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "9.0.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"342506ec92994242694dc93e347be247\"",
+			"fetched": 1734527710245
+		}
+	},
+	"_distfiles": {
+		"pouchdb-checkpointer-0.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-0.0.0.tgz",
+			"sha": "10f7b39502e8cfe53deec8d46b2eccddce93bd12",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-5.4.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-5.4.0.tgz",
+			"sha": "f74eb06b92d4b2df3003f4ab5c63bd84d99903d3",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-5.4.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-5.4.1.tgz",
+			"sha": "5981ae8dd66dda5a88e600b7c8971df027ca2970",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-5.4.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-5.4.2.tgz",
+			"sha": "c20220525a31b48afa5a14ed918480b8b3ac69b6",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-5.4.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-5.4.3.tgz",
+			"sha": "ffc4be830946e399c6d50d3bdc5cadf2742594cd",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-5.4.4.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-5.4.4.tgz",
+			"sha": "748e3decc2421f47f448cda965e7a8f6846cd7da",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-5.4.5.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-5.4.5.tgz",
+			"sha": "55a28eb4530c9a92e57c5138eaf5d22352d71a50",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.0.tgz",
+			"sha": "534d3e7a7158826be3ea498f419fea1874dfa3d3",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.0.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.1.tgz",
+			"sha": "8c292e86360d8c2d438ffd4e54046ba046316213",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.0.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.2.tgz",
+			"sha": "c3415d1dd1c60c1f7dbd857de9f730917ff564b2",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.0.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.3.tgz",
+			"sha": "684cdc2b2ab7545cf57617627430121e0b477cfb",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.0.4.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.4.tgz",
+			"sha": "63ea2f0d50df2da1bdeee36e46c2d7dac3bb1aac",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.0.5.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.5.tgz",
+			"sha": "e540e333b3b064609a0bd199ac91ec364ac9bb48",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.0.6.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.6.tgz",
+			"sha": "05284d84fd5f4d29c00a50ee5f3d3fe86ae07a27",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.0.7.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.0.7.tgz",
+			"sha": "258020c761c327db0da63e5b5afd58190926c189",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.1.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.1.0.tgz",
+			"sha": "4acce2800063ddd77b137fb9efefa63583475643",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.1.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.1.1.tgz",
+			"sha": "256965e4db99868f57a1bf6be091a58921134ecb",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.1.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.1.2.tgz",
+			"sha": "e94120ce3bf86a59d4db62d331ca8ef9d1218792",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.2.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.2.0.tgz",
+			"sha": "c0d73cfd27dddf64f7f6a43042739fe55089d589",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.2.1-prerelease.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.2.1-prerelease.tgz",
+			"sha": "fffaf16867aee3c129dfe44de4ebb3ee3d9c15dc",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.3.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.3.0.tgz",
+			"sha": "f391709cb011aed070b80e3ea64ca507b74f5f71",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.3.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.3.1.tgz",
+			"sha": "aefe6134f0e0c2170a41e43bccd6b27268bc28db",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.3.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.3.2.tgz",
+			"sha": "acedace03ae016c1b929faa72c5cdd1cb95771b7",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.3.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.3.3.tgz",
+			"sha": "fe0bb0bf5b1819e50689a7a70984d8b17a7c0ff9",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.3.4.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.3.4.tgz",
+			"sha": "9e2368fd043fd45a79813ce4f8b45e186cb189b0",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.4.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.4.0.tgz",
+			"sha": "beb73d8b51b9edce0b5f09ca05762cc340bbfd1a",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.4.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.4.1.tgz",
+			"sha": "ecf6f5da39b9416c04b3e8bc84cc98e21adfc0ec",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.4.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.4.2.tgz",
+			"sha": "8f57d8062ddcc9528940e2ef6c802930ec3453a3",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-6.4.3.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-6.4.3.tgz",
+			"sha": "af0e429ca3fe8b86000412f4fc6e9ea98d956992",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-7.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-7.0.0.tgz",
+			"sha": "e02b98f18c7a50fb01c31c865b735d0d9dc7be1d",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-7.1.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-7.1.0.tgz",
+			"sha": "f62bcbe01c8b380e3bab92aa16477c182e15ed22",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-7.1.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-7.1.1.tgz",
+			"sha": "27399997a8245e6e333aef9a5ebbe0f7c146247a",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-7.2.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-7.2.1.tgz",
+			"sha": "143ae5f59f815fb034074e0c478bd99499b58658",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-7.2.2.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-7.2.2.tgz",
+			"sha": "8ecc8edf94dbb866a4c79f5e787a018cdeb9f475",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-7.3.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-7.3.0.tgz",
+			"sha": "95a6d46a7273f0d930f0e13a0cc3939751173fb4",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-7.3.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-7.3.1.tgz",
+			"sha": "75fd26c30e39f7011ee7c5e3137e0795b0bd8e2f",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-8.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-8.0.0.tgz",
+			"sha": "748099f944a5d45533fbd576b0e1302582cfa8b6",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-8.0.1.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-8.0.1.tgz",
+			"sha": "beb4f922b8dbd59f851fe95c7fe540d69f870bf8",
+			"registry": "npmjs"
+		},
+		"pouchdb-checkpointer-9.0.0.tgz": {
+			"url": "https://registry.npmjs.org/pouchdb-checkpointer/-/pouchdb-checkpointer-9.0.0.tgz",
+			"sha": "abf6a82c46f8515019c6665e4418434c61323a8e",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-checkpointer-7.2.2.tgz": {
+			"shasum": "8ecc8edf94dbb866a4c79f5e787a018cdeb9f475"
+		},
+		"pouchdb-checkpointer-6.2.0.tgz": {
+			"shasum": "c0d73cfd27dddf64f7f6a43042739fe55089d589"
+		}
+	},
+	"_rev": "3-0508d9eb4f19a925",
+	"_id": "pouchdb-checkpointer",
+	"readme": "pouchdb-checkpointer ![semver non-compliant](https://img.shields.io/badge/semver-non--compliant-red.svg)\n======\n\nPouchDB tool to write a checkpoint, e.g. during replication.\n\n### Usage\n\n```bash\nnpm install --save-exact pouchdb-checkpointer\n```\n\nFor full API documentation and guides on PouchDB, see [PouchDB.com](http://pouchdb.com/). For details on PouchDB sub-packages, see the [Custom Builds documentation](http://pouchdb.com/custom.html).\n\n### Warning: semver-free zone!\n\nThis package is conceptually an internal API used by PouchDB or its plugins. It does not follow semantic versioning (semver), and rather its version is pegged to PouchDB's. Use exact versions when installing, e.g. with `--save-exact`.\n\n### Source\n\nPouchDB and its sub-packages are distributed as a [monorepo](https://github.com/babel/babel/blob/master/doc/design/monorepo.md).\n\nFor a full list of packages, see [the GitHub source](https://github.com/pouchdb/pouchdb/tree/master/packages)."
+}

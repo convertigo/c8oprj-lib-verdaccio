@@ -451,3 +451,17 @@ tplProjectName: mobilebuilder_tpl_8_3_0_ngx
           /** Ionic CSS Variables **/
           
           
+↓AppEvent [ngx.components.UIAppEvent-1734513803952]: 
+  appEvent: onAppInit
+  ↓InstallVerdaccio [ngx.components.UICustomAction-1734513819541]: 
+    package_dependencies: 
+      - xmlizable: 
+        - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+        - com.twinsoft.convertigo.beans.common.XMLVector: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.XMLVector
+            - com.twinsoft.convertigo.beans.common.XMLVector: 
+              - java.lang.String: 
+                - ↑value: verdaccio
+              - java.lang.String: 
+                - ↑value: latest

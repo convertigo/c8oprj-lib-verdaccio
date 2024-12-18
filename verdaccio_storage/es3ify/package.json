@@ -1,0 +1,475 @@
+{
+	"name": "es3ify",
+	"versions": {
+		"0.1.0": {
+			"name": "es3ify",
+			"version": "0.1.0",
+			"description": "Browserify transform to convert ES5 syntax to be ES3-compatible.",
+			"main": "index.js",
+			"dependencies": {
+				"esprima-fb": "~3001.0001.0000-dev-harmony-fb",
+				"jstransform": "~3.0.0",
+				"through": "~2.3.4"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/spicyj/es3ify.git"
+			},
+			"homepage": "https://github.com/spicyj/es3ify",
+			"author": {
+				"name": "Ben Alpert",
+				"email": "ben@benalpert.com",
+				"url": "http://benalpert.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/spicyj/es3ify/issues"
+			},
+			"_id": "es3ify@0.1.0",
+			"dist": {
+				"shasum": "77a687e3d69f912a46306b2d7383d0cffff307f9",
+				"tarball": "https://registry.npmjs.org/es3ify/-/es3ify-0.1.0.tgz",
+				"integrity": "sha512-k6dr67VL7QgZuZoqMO0o1VebhcpmqrxAJt40Y9Wr9Pdqwn0Tx392sgA1nZVgPjHnxHtwc3dKyknWgdaXFcJj1Q==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHQVpCmUYzzHtj9ZRtkv4hnADm9yA8GBikpAz0amai5/AiBKIcj3lBEhIXa61Ii4ZUQf8a1wUaoVH9CzTyHM7Twcuw=="
+					}
+				]
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.11",
+			"_npmUser": {
+				"name": "spicyj",
+				"email": "ben@benalpert.com"
+			},
+			"maintainers": [
+				{
+					"name": "spicyj",
+					"email": "ben@benalpert.com"
+				}
+			],
+			"contributors": []
+		},
+		"0.1.2": {
+			"name": "es3ify",
+			"version": "0.1.2",
+			"description": "Browserify transform to convert ES5 syntax to be ES3-compatible.",
+			"main": "index.js",
+			"dependencies": {
+				"esprima-fb": "~3001.0001.0000-dev-harmony-fb",
+				"jstransform": "~3.0.0",
+				"through": "~2.3.4"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/spicyj/es3ify.git"
+			},
+			"homepage": "https://github.com/spicyj/es3ify",
+			"author": {
+				"name": "Ben Alpert",
+				"email": "ben@benalpert.com",
+				"url": "http://benalpert.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/spicyj/es3ify/issues"
+			},
+			"_id": "es3ify@0.1.2",
+			"dist": {
+				"shasum": "073a533e85c8ff32c1dcdbf4aa338bb8f4746c40",
+				"tarball": "https://registry.npmjs.org/es3ify/-/es3ify-0.1.2.tgz",
+				"integrity": "sha512-rK18baolyg884yrqpwtVZXXS/WIqGSfmRcd6jZL+9sLENVZY4dQmvTUdmUr77HKZlbNrITdv0UL3lYRSe1f7wQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIGM2OdOHnD6pB4AlZLRfwG+ZuH/t6c4WE2p09fvG6du+AiAevmRlRZYbGgtp5YNLbPBRrn6/EmDOD5Lf2Tuk2Bng3A=="
+					}
+				]
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.11",
+			"_npmUser": {
+				"name": "spicyj",
+				"email": "ben@benalpert.com"
+			},
+			"maintainers": [
+				{
+					"name": "spicyj",
+					"email": "ben@benalpert.com"
+				}
+			],
+			"contributors": []
+		},
+		"0.1.3": {
+			"name": "es3ify",
+			"version": "0.1.3",
+			"description": "Browserify transform to convert ES5 syntax to be ES3-compatible.",
+			"main": "index.js",
+			"dependencies": {
+				"esprima-fb": "~3001.0001.0000-dev-harmony-fb",
+				"jstransform": "~3.0.0",
+				"through": "~2.3.4"
+			},
+			"devDependencies": {
+				"jasmine-node": "~1.13.1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/spicyj/es3ify.git"
+			},
+			"scripts": {
+				"test": "jasmine-node spec"
+			},
+			"homepage": "https://github.com/spicyj/es3ify",
+			"author": {
+				"name": "Ben Alpert",
+				"email": "ben@benalpert.com",
+				"url": "http://benalpert.com"
+			},
+			"license": "MIT",
+			"bugs": {
+				"url": "https://github.com/spicyj/es3ify/issues"
+			},
+			"_id": "es3ify@0.1.3",
+			"dist": {
+				"shasum": "686d59b9a5fbd190a3427df3fa9289b4c730a6be",
+				"tarball": "https://registry.npmjs.org/es3ify/-/es3ify-0.1.3.tgz",
+				"integrity": "sha512-5mJUOa16i+fq6UvdnJdduV1ve9pPLSRM+ikFoMndah/hulIDnVuyUalvS/YxBWa2wrLgBSL5X1hSlMpzrU1XKw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQCSEfIQc88MoXwroJ2CRs5i1l9KO2tytC1THYBF+He1JwIhALEy5lOJ4XVAuKWxmYoV42+sJVxfG0R7MKie/4skMg33"
+					}
+				]
+			},
+			"_from": ".",
+			"_npmVersion": "1.3.11",
+			"_npmUser": {
+				"name": "spicyj",
+				"email": "ben@benalpert.com"
+			},
+			"maintainers": [
+				{
+					"name": "spicyj",
+					"email": "ben@benalpert.com"
+				}
+			],
+			"contributors": []
+		},
+		"0.1.4": {
+			"name": "es3ify",
+			"version": "0.1.4",
+			"description": "Browserify transform to convert ES5 syntax to be ES3-compatible.",
+			"main": "index.js",
+			"dependencies": {
+				"esprima-fb": "~3001.0001.0000-dev-harmony-fb",
+				"jstransform": "~3.0.0",
+				"through": "~2.3.4"
+			},
+			"devDependencies": {
+				"jasmine-node": "~1.13.1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/spicyj/es3ify.git"
+			},
+			"scripts": {
+				"test": "jasmine-node spec"
+			},
+			"homepage": "https://github.com/spicyj/es3ify",
+			"author": {
+				"name": "Ben Alpert",
+				"email": "ben@benalpert.com",
+				"url": "http://benalpert.com"
+			},
+			"license": "MIT",
+			"gitHead": "98f57487d9c1b0701d7fffe02a022feeb6d08c95",
+			"bugs": {
+				"url": "https://github.com/spicyj/es3ify/issues"
+			},
+			"_id": "es3ify@0.1.4",
+			"_shasum": "ad9fa5df1ae34f3f31e1211b5818b2d51078dfd1",
+			"_from": ".",
+			"_npmVersion": "2.2.0",
+			"_nodeVersion": "0.10.35",
+			"_npmUser": {
+				"name": "spicyj",
+				"email": "ben@benalpert.com"
+			},
+			"maintainers": [
+				{
+					"name": "spicyj",
+					"email": "ben@benalpert.com"
+				}
+			],
+			"dist": {
+				"shasum": "ad9fa5df1ae34f3f31e1211b5818b2d51078dfd1",
+				"tarball": "https://registry.npmjs.org/es3ify/-/es3ify-0.1.4.tgz",
+				"integrity": "sha512-CzrDTeqaMBrtjfNhIoHtf2GcjhyozGyJ478x6C+WeLMm+WSQOZ3/qb0MO0TnHqmUTdVRAkGroPmx+cWqMhomKQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIASDnKcVNoezkkqE105rK/jlrjmeH2S5lhl5lVTZdXNXAiAMVn3194ERUn5LMx6x0BuRtvoevA1CU1ayUzkaO19dNQ=="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.2.0": {
+			"name": "es3ify",
+			"version": "0.2.0",
+			"description": "Browserify transform to convert ES5 syntax to be ES3-compatible.",
+			"main": "index.js",
+			"dependencies": {
+				"esprima": "^2.7.1",
+				"jstransform": "~3.0.0",
+				"through": "~2.3.4"
+			},
+			"devDependencies": {
+				"jasmine-node": "~1.13.1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/spicyj/es3ify.git"
+			},
+			"scripts": {
+				"test": "jasmine-node spec"
+			},
+			"homepage": "https://github.com/spicyj/es3ify",
+			"author": {
+				"name": "Ben Alpert",
+				"email": "ben@benalpert.com",
+				"url": "http://benalpert.com"
+			},
+			"license": "MIT",
+			"gitHead": "c813251b829401126cbc746eadc7a633feb80074",
+			"bugs": {
+				"url": "https://github.com/spicyj/es3ify/issues"
+			},
+			"_id": "es3ify@0.2.0",
+			"_shasum": "bf1b0769f6501c7f51b1c27863b0a10d9b81045f",
+			"_from": ".",
+			"_npmVersion": "2.14.4",
+			"_nodeVersion": "4.1.0",
+			"_npmUser": {
+				"name": "spicyj",
+				"email": "ben@benalpert.com"
+			},
+			"maintainers": [
+				{
+					"name": "spicyj",
+					"email": "ben@benalpert.com"
+				}
+			],
+			"dist": {
+				"shasum": "bf1b0769f6501c7f51b1c27863b0a10d9b81045f",
+				"tarball": "https://registry.npmjs.org/es3ify/-/es3ify-0.2.0.tgz",
+				"integrity": "sha512-cIIpCIDZTuzhB+atV4twTEAMrLjd4yT+qCZbXwzqQ6ifZ3ULVZMTgaeurGfJa/F30ft540uO7Cmzn4NzpLbpCQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHv24vRNDrqZDn6zjTRHoBxLFuHKkZmdXDf18oY1CD7zAiAHg4j7mO6upsX5iYAlrflXuAQyuWJoP4h4ERu8QaXHMQ=="
+					}
+				]
+			},
+			"contributors": []
+		},
+		"0.2.1": {
+			"name": "es3ify",
+			"version": "0.2.1",
+			"description": "Browserify transform to convert ES5 syntax to be ES3-compatible.",
+			"main": "index.js",
+			"dependencies": {
+				"esprima": "^2.7.1",
+				"jstransform": "~3.0.0",
+				"through": "~2.3.4"
+			},
+			"devDependencies": {
+				"jasmine-node": "~1.13.1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/spicyj/es3ify.git"
+			},
+			"scripts": {
+				"test": "jasmine-node spec"
+			},
+			"homepage": "https://github.com/spicyj/es3ify",
+			"author": {
+				"name": "Ben Alpert",
+				"email": "ben@benalpert.com",
+				"url": "http://benalpert.com"
+			},
+			"license": "MIT",
+			"gitHead": "bf87c0424bca35a4d3adb9b9d011cccabc5bff39",
+			"bugs": {
+				"url": "https://github.com/spicyj/es3ify/issues"
+			},
+			"_id": "es3ify@0.2.1",
+			"_shasum": "82ab969e6024887f9240cb742cf19e62c9eb9f0a",
+			"_from": ".",
+			"_npmVersion": "2.14.4",
+			"_nodeVersion": "4.1.0",
+			"_npmUser": {
+				"name": "spicyj",
+				"email": "ben@benalpert.com"
+			},
+			"maintainers": [
+				{
+					"name": "spicyj",
+					"email": "ben@benalpert.com"
+				}
+			],
+			"dist": {
+				"shasum": "82ab969e6024887f9240cb742cf19e62c9eb9f0a",
+				"tarball": "https://registry.npmjs.org/es3ify/-/es3ify-0.2.1.tgz",
+				"integrity": "sha512-131BPRQXIHtmTOPbTTUuhhX+pqZO/G1iOvgwbsYZGpT/9FzmiR0BOpv0NPByAa9YNctaN2dvn2QiGiP0vnnhZw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDrI5eb2Pw1ZE8lPACHrycFpW+LMcfFqvCtUcbr8PsZlgIgItt5g0a89xc9rKAbg7VNPFfOTyxgy92B8THw6gszOnM="
+					}
+				]
+			},
+			"_npmOperationalInternal": {
+				"host": "packages-9-west.internal.npmjs.com",
+				"tmp": "tmp/es3ify-0.2.1.tgz_1455033391794_0.06102270865812898"
+			},
+			"contributors": []
+		},
+		"0.2.2": {
+			"name": "es3ify",
+			"version": "0.2.2",
+			"description": "Browserify transform to convert ES5 syntax to be ES3-compatible.",
+			"main": "index.js",
+			"dependencies": {
+				"esprima": "^2.7.1",
+				"jstransform": "~11.0.0",
+				"through": "~2.3.4"
+			},
+			"devDependencies": {
+				"jasmine-node": "~1.13.1"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git://github.com/spicyj/es3ify.git"
+			},
+			"scripts": {
+				"test": "jasmine-node spec"
+			},
+			"homepage": "https://github.com/spicyj/es3ify",
+			"author": {
+				"name": "Ben Alpert",
+				"email": "ben@benalpert.com",
+				"url": "http://benalpert.com"
+			},
+			"license": "MIT",
+			"gitHead": "23f6090deab3e67ba81960f62110494f5ba74e90",
+			"bugs": {
+				"url": "https://github.com/spicyj/es3ify/issues"
+			},
+			"_id": "es3ify@0.2.2",
+			"_shasum": "5dae3e650e5be3684b88066513d528d092629862",
+			"_from": ".",
+			"_npmVersion": "2.14.19",
+			"_nodeVersion": "4.1.0",
+			"_npmUser": {
+				"name": "spicyj",
+				"email": "ben@benalpert.com"
+			},
+			"maintainers": [
+				{
+					"name": "spicyj",
+					"email": "ben@benalpert.com"
+				}
+			],
+			"dist": {
+				"shasum": "5dae3e650e5be3684b88066513d528d092629862",
+				"tarball": "https://registry.npmjs.org/es3ify/-/es3ify-0.2.2.tgz",
+				"integrity": "sha512-QQ6yXmQM/cfWYj9/DM3hPRcHBZdWCoJU+35CoaMqw53sH2uqr29EZ0ne1PF/3LIG/cmawn1SbCPqcZE+siHmwg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIAHaLtaO3/sdMfOXXzMtiAD6Lm7B9cTOgjhdYsPvQ9bNAiEA0r2omreHMG9DbjZDahx8lZMIz+gpYH7JGhl5Qfh+IPk="
+					}
+				]
+			},
+			"_npmOperationalInternal": {
+				"host": "packages-12-west.internal.npmjs.com",
+				"tmp": "tmp/es3ify-0.2.2.tgz_1461965434396_0.28231128118932247"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-06-17T08:53:16.994Z",
+		"created": "2014-02-15T23:25:41.739Z",
+		"0.1.0": "2014-02-15T23:25:42.815Z",
+		"0.1.1": "2014-02-16T00:29:59.765Z",
+		"0.1.2": "2014-02-16T00:31:37.955Z",
+		"0.1.3": "2014-03-06T07:58:17.201Z",
+		"0.1.4": "2015-07-29T23:25:41.917Z",
+		"0.2.0": "2016-01-22T20:44:56.122Z",
+		"0.2.1": "2016-02-09T15:56:33.151Z",
+		"0.2.2": "2016-04-29T21:30:34.828Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "0.2.2"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"13a7cd8d9be88f8dfbc794e444170513\"",
+			"fetched": 1734527713726
+		}
+	},
+	"_distfiles": {
+		"es3ify-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/es3ify/-/es3ify-0.1.0.tgz",
+			"sha": "77a687e3d69f912a46306b2d7383d0cffff307f9",
+			"registry": "npmjs"
+		},
+		"es3ify-0.1.2.tgz": {
+			"url": "https://registry.npmjs.org/es3ify/-/es3ify-0.1.2.tgz",
+			"sha": "073a533e85c8ff32c1dcdbf4aa338bb8f4746c40",
+			"registry": "npmjs"
+		},
+		"es3ify-0.1.3.tgz": {
+			"url": "https://registry.npmjs.org/es3ify/-/es3ify-0.1.3.tgz",
+			"sha": "686d59b9a5fbd190a3427df3fa9289b4c730a6be",
+			"registry": "npmjs"
+		},
+		"es3ify-0.1.4.tgz": {
+			"url": "https://registry.npmjs.org/es3ify/-/es3ify-0.1.4.tgz",
+			"sha": "ad9fa5df1ae34f3f31e1211b5818b2d51078dfd1",
+			"registry": "npmjs"
+		},
+		"es3ify-0.2.0.tgz": {
+			"url": "https://registry.npmjs.org/es3ify/-/es3ify-0.2.0.tgz",
+			"sha": "bf1b0769f6501c7f51b1c27863b0a10d9b81045f",
+			"registry": "npmjs"
+		},
+		"es3ify-0.2.1.tgz": {
+			"url": "https://registry.npmjs.org/es3ify/-/es3ify-0.2.1.tgz",
+			"sha": "82ab969e6024887f9240cb742cf19e62c9eb9f0a",
+			"registry": "npmjs"
+		},
+		"es3ify-0.2.2.tgz": {
+			"url": "https://registry.npmjs.org/es3ify/-/es3ify-0.2.2.tgz",
+			"sha": "5dae3e650e5be3684b88066513d528d092629862",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"es3ify-0.1.4.tgz": {
+			"shasum": "ad9fa5df1ae34f3f31e1211b5818b2d51078dfd1"
+		},
+		"es3ify-0.2.2.tgz": {
+			"shasum": "5dae3e650e5be3684b88066513d528d092629862"
+		}
+	},
+	"_rev": "3-7396f56284071f4e",
+	"_id": "es3ify",
+	"readme": "# es3ify\n\nBrowserify transform to convert quote reserved words in property keys for compatibility with ES3 JavaScript engines like IE8. In addition, trailing commas in array and object literals are removed.\n\n```javascript\n// In\nvar x = {class: 2,};\nx.class = [3, 4,];\n\n// Out:\nvar x = {\"class\": 2};\nx[\"class\"] = [3, 4];\n```\n\nRun tests with:\n\n```sh\nnpm install -g jasmine-node\njasmine-node spec\n```"
+}

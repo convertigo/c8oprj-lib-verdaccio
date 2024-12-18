@@ -1,0 +1,1147 @@
+{
+	"name": "@types/pouchdb-mapreduce",
+	"versions": {
+		"5.4.1": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "5.4.1",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@5.4.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "321f42749950ba385fdfd2fc30ef0771f1fe5506",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-5.4.1.tgz",
+				"integrity": "sha512-DcwLKYhOUuLmgti+qNQAIAaAGi8xQyfnKkyk3kzLetM1m75RPW3WTnGzDPU3ottfPPb4OJzlZgIv7G4+Wsg2cg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC/0kgX7dRUVxJwfwnw5veSOMlZIMhSbSaQFAjhAxAEeAIhALKBwvYxjtrCAUW6JxruUc0kMLYwxLQfA0jZw6Fl4hta",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-mapreduce.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce-5.4.1.tgz_1470153882001_0.01280772709287703",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.2": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "5.4.2",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@5.4.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "c52b3321337ee905b1f4345444b5c584e9fcb3ee",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-5.4.2.tgz",
+				"integrity": "sha512-/rzcQIr0GHMY05WAa7Gv1OMpSutu4hgi2WNvJ5GyLllMNqTD6MXeiNkuPuYJEn7VwPwrcyYhkceEB2iW/O3v7w==",
+				"signatures": [
+					{
+						"sig": "MEUCIQD8Bq/D3FMLc4nplDpUyCs2rQh/hS6HXGvwGAu9GPZehwIgMSRVICKDLbtHn3/FomZOr4K/kDwRbIvw9ww3D5K5prA=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-mapreduce.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce-5.4.2.tgz_1471621042382_0.4717813797760755",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.3": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "5.4.3",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@5.4.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "8432d93cad4f6be980f7d86b486820a6001b485d",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-5.4.3.tgz",
+				"integrity": "sha512-g+jTOAD7SlNkbtdcOvYQagpyLrf4EKMnZOvid1oW23f8j/7dXqqyimgQ7/sbJJ+80Hqs/idqJgZ6vzdUUkXKPQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIAghNS2TnTF80UR90cTvbkiAeyQwc83FcJv7Wr7nrPdkAiEA4EdeQxXDqqFw2d1z+6DAwr+260mh00ulQXT8arMAlgk=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "pouchdb-mapreduce.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce v5.4.4",
+			"directories": {},
+			"dependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce-5.4.3.tgz_1472151222642_0.6727459579706192",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"contributors": []
+		},
+		"5.4.4": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "5.4.4",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@5.4.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "364e041b84e2d153eb5941b74dec6d3b0e8ec49d",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-5.4.4.tgz",
+				"integrity": "sha512-KfD84SRLmgqhvUT4E63ChYtP+5EvI7kC1oTrZRVk5TCqA5GmKGLl0br7VXYOYviJwtL8DAhpqXIi44G4XFlLSg==",
+				"signatures": [
+					{
+						"sig": "MEUCICdjImKjjE0l2/HRQCvWlVYkcKtVo51EkUXPys47kD8iAiEAt477FI+qytEefmriVCdpwDS3ec1LSVrIMP7rhm4OgMI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce v5.4.4",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce-5.4.4.tgz_1474308088773_0.5103610926307738",
+				"host": "packages-16-east.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "0817dc4baad19dda2ca050a20518c3f6e30b245b42a4dbc7910c155913a8bb89",
+			"contributors": []
+		},
+		"5.4.5": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "5.4.5",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@5.4.5",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "40556df0b905c02ce56ef763fa22f2ffe1945830",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-5.4.5.tgz",
+				"integrity": "sha512-4f73Tu8TbeaP67Aa4kruAefDUXubXR9zT3C+md5jegJpDw8aUQlOVwgL+Hx+AzTGyO4+5dQM0AgmW/D+2cdiIA==",
+				"signatures": [
+					{
+						"sig": "MEQCIDEhQqRBmL2WbKuTYGI+d7vUND9A+u3HDLjyTqJyhgfPAiAV+XxB+6Gai8JLgAHJuGRvU7PSNoXeLLLnMQjiyEPs+g==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"typings": "index.d.ts",
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce v5.4.4",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce-5.4.5.tgz_1479486265653_0.42408526479266584",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "a8756b908d3004f0ef63de911da7cb7ba1658d71352555a4f566f24f46b01501",
+			"contributors": []
+		},
+		"5.4.6": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "5.4.6",
+			"author": "Andy Brown <https://github.com/AGBrown>, Brian Geppert <https://github.com/geppy>, Frederico Galvão <https://github.com/fredgalvao>",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@5.4.6",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"dist": {
+				"shasum": "90bdf2ac365ff7e55e76748e9472f3de3daf1ed9",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-5.4.6.tgz",
+				"integrity": "sha512-07nKj8Ky1aODXo/QazbMcNKnJJdQ+1J3TaLeVQCrvqOk4pSrzCOLReshytAvt919/uM/zNGXEm7AKw/mTeNSNg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDrOwQup+fKfwBNBa0GuQ91KuB0yP11A9W5Ed66rd2guQIgKUL1uhpp3danyqQkE1qtyOPvM9tR6qhUoeNuZhJ7/4I=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.0",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce-5.4.6.tgz_1482886059498_0.9751819800585508",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "f191560a9dce2522d22f379ec1c51700af3a9ed62a2e8e619bfa1bd1311a46f5",
+			"contributors": []
+		},
+		"6.1.0": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "6.1.0",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@6.1.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "e1c105a2bc255bb558ae2f415fac1a39555f63f3",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.0.tgz",
+				"integrity": "sha512-7kZ+CWr63O91guRoLTjShZ4oxlr2vpAGcZPaVntOtLgvdXU9HA+dfnPjFA3VL+hnNU2tDrxzPUq9ATRHAXeKCQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCb1hDlGZ0C1PZd7SERQ3cXj4YwYvsSuIbDowTU7tSj7QIgAQWc6o7HkDaSC4SP+oN8oxxVhjLZknYHKZ/blvq/nj4=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.0",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce-6.1.0.tgz_1492528371388_0.09514413308352232",
+				"host": "packages-12-west.internal.npmjs.com"
+			},
+			"typesPublisherContentHash": "32cd0f01510c40518f7e9f3bc23197b2d9aba827bd60fa23779c44942bba7e92"
+		},
+		"6.1.1": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "6.1.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@6.1.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "2a4c7a8cbdd2678541f62c74c20175c0dd5b8aa7",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.1.tgz",
+				"integrity": "sha512-2ssZVjoMqVjak8HYSTf8b8cUTP7ExywJGI547k3kJJQPzn7mBnD0zRIHpar2Pz5b/1hBZ+HoYveTygXsnigWjA==",
+				"signatures": [
+					{
+						"sig": "MEUCIFMZPOIgBTts5DYNrIEPv2FUYc2W0wD+kGfKVZqWfnIVAiEA/wIO/MQHcqWsvMWistMDQqxDPS0wMKQFJkc2CZc7QSo=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"peerDependencies": {},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce-6.1.1.tgz_1497557835396_0.08954869164153934",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "f39585673d92d2924c861e3184b3eb12fab83de6bf4c8a4a8a2ffb4c45d98740"
+		},
+		"6.1.2": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "6.1.2",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@6.1.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão"
+				}
+			],
+			"dist": {
+				"shasum": "d0bd1369c06055ee655f9ec76eb43c52ba3034b1",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.2.tgz",
+				"integrity": "sha512-AYzR0NMioc2KdEeArAfZP8FXBsKydpjewPB/7AnAK9nirSjdTWQavCyrYK1KIM1MShaeguRBGPKg3KYxdV9/lw==",
+				"signatures": [
+					{
+						"sig": "MEQCIECA/U4eHgl1mPXwyP4naW1mEKSQLxapwaYLAzGItZSHAiAWstWfwVnsbv+7bvpYqAorMvwjHHJNKdiGPNHnnUrwHA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce-6.1.2.tgz_1503352860094_0.2764510300476104",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "7c454bb5bc7fbed6aa4241c251f665dceae551a32dfcb162ef745f748c82d831"
+		},
+		"6.1.3": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "6.1.3",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@6.1.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "6db81f82567e5cdbf7c9d98a271296206f63b862",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.3.tgz",
+				"integrity": "sha512-ZXA5bZO/fHQgYfdTj04frxFEi6DWiflcfFoUAeyiBzyVeCsSIkdHS2UwBjbu9Szcci3jKT8U9d3mruLwsRmOaQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDFQvfc2j/tAzLXpz4K0M2FhpItXlHawj8vgLPhLvcangIhAOz5+Req1TNHBAf120qR1YydpSYxw1BuDi2oZhC+wnZ7",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				]
+			},
+			"main": "",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce-6.1.3.tgz_1513287310731_0.6633664323017001",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "ff19324a3699f1ce6d742ddb818ac43e8394dc249c108aa3794abaea3dbd8f0b"
+		},
+		"6.1.4": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "6.1.4",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@6.1.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"dist": {
+				"shasum": "bc747eacd4e734a7486e9f4ef895fad7c45485e9",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.4.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-c8cZ8E9zEl7ZMcrE5jaF2qOm+cxQ01+B0NG9oGHVX3Mj5G8m4oIBAUELJmJw9LvEq3r9nXXn6g9TvvN8NiRalg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCbGdm3d8FHXjakPqzNoVkEW6ETC0ovL/pcU+YMc5p/1AIhANgsq9H6KBYcvjrZqQ6qVdlUaT1BIjmRVgMDlf1rabCJ",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 8782,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcZJKTCRA9TVsSAnZWagAA1zIP/0AiQvGlSOX2cNzQv8YB\nfuESOiTUrfpK6X4cViiUtjAww9LpBW2rBrtgiOWGU2yi2Xivv8mEoIx/Cm7M\nNM6ai9z8sRgIlmk8gGO5r0P7FU63LJEId/pQ+ma638ZOhqkBe5puW1L2CDNo\nFUx5HaE7s54Jd9Avgxaxg7erUd912v7R2c1KcgCNOEa1J/e9D+4ZytQhuXJm\nbj71mYwAeur4M3r5MQzylue/44cK+i8TQmCWvyBpMtC2QvaK5O7nsXDjg5p9\nzBi1sc4yXQBkYs+6GDcV8gqe4w422la9uBbeo+1VuLb0EwKRX3uIjp3C2Hvi\naQBFfjB1b15CsJQc1OefJViXs9fufO9C4L5FVtwxWgqFU15DS1ISoh5TFK+k\n84Z6ZolXWf0ZFkuX+NhCsl67OpOn3sNjKUaFoA0Q2XjyadRcJeuJ7ra/Xt4r\nporFPLAy5ogmaykuhRrYYoZPz7UizpKttP67TfyLdVaXDu/3jPu+HyAhUkix\nvYuPbit8VXCh7nCP4FXVi/Atsr8JRfBqcySwIpkZ7zMmhC6U0A250lZk4v0E\n77CeQPiQ5//snPjX5C5+CL4lF+cTz3gcfXKHSfIqrDR3yzqTsEnTVH0V7LSj\nV2dhsDW40EYnRLcjkJSmlxnA4Gs5CI0kBQmJnMqQBe39MojCBmv0SlV8Xkkz\n6hcz\r\n=FikU\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce_6.1.4_1550094994432_0.22761300268889362",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "0010c2b1086cef7aac05ed8385d0ef9ff5781d7a31ead494dfb4c09b67ce5b60"
+		},
+		"6.1.5": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "6.1.5",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@6.1.5",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-mapreduce",
+			"dist": {
+				"shasum": "10e7dba184d317db0160d89d739a57de1e328f3f",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.5.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-nE4uggwt2W5pe8I6Tnbd626EmGWSV6w8tiYwAnAO6g5ncZGYtM4Cye9O1LWLGVpalw0iIpyfQZfH3pMxSbHx/w==",
+				"signatures": [
+					{
+						"sig": "MEQCIBC7l+R9CkacZ15uGILvEWS3mFTle6GPNVaWAryubY6PAiAH2LXNWuGPQPiPu47rSP5alRMT1sKMa6SjI16pgbpiEA==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 9138,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg52e9CRA9TVsSAnZWagAAbcsP/jhk8KVs5YeZX8fIL2uK\n5xKp6RJBFDae6+baEjzcZ7ycXWzw+aX500kWxA8FUu6Rl7bLzXVKjyEfVnK2\nvp4wla4ez/C8FfkM3Vrd4gRiybtJ8JKMBKKoXH17DarWsHdFer6zpx9+d00f\ntNgKMu7C7RX19pCqJU80TFPLU1wYK8NKq04tsy06I0NwIPkhbZ0XDtoMxYpe\nt3GDc8nZ4k/mC1939yC4K6LVo/9xVgaA+M+mrTAJLOdYIOAB8akk9Dwjp/vU\n4jVMOV+Z8WpYY/LJly/SYlGn8gkKpWWQVR1FKPutJQY4ldli3VtvsHfwUxBK\niKnOYP0ZS8dfNu919eP1GYJrKhm+wecpNuKDQQoAFB5xWYhBVOLU92j2QUbp\neF3yNwu35cw88UFCfQFscFtxtDcszFdWmr73g9yaan4DDUuFAYCyhd/1VWGA\n6rkQtwjmpYHjvk65xgnT2ILyf7Q6FQ+r4fOeojs+ubWVnGUXAx9F/enc47sE\nFLA1O2i5pLDSYx/YKASYafSF9GnySpYEOz5wJDxOKMohcxKcy7M0D4zwb04d\ns7tqTmFQR4fJ/8ye8TvMduzAmsM80scYPViw3a32zbMp5iLjvUCq1a7G3FEn\nhnhRaq5HqgGUN/pjYycJ3CeRbtpnCme8sFIyOJRLQMvtxI16xfo0tWhEDy63\n9b7i\r\n=dLMY\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-mapreduce"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "3.6",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce_6.1.5_1625778109364_0.6335963678680243",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "a4170652d2d6cc555a57e151fa1c04ce2a7b975dfe8c382d25db1d74a8b8018e"
+		},
+		"6.1.6": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "6.1.6",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@6.1.6",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-mapreduce",
+			"dist": {
+				"shasum": "710cc2030c04daecfc0355d1e696a862028bb531",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.6.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-YubC1pKmQGbPrZzYP5vUNrlafMTkO2+AZIumLB39Lkw1rYFxa4pwiKlygtDgJD2Gy+6A5Nu3ShTPrB3kPOXFyg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCIMwHFpRgco+8OUe+nkIMYvUNNSEIh3Ex43h6mnYr+6QIgSuNM9orcgAcIiJ7Hq4hqXPLWsgwSzjXKHv6pGzWR4dc=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 9349,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJhn+S+CRA9TVsSAnZWagAA1wsP/jLr6ZKiFptazK5Pvkg0\nl0VFj83w03kbZLqCuqhiVRjfIhJyy4ow/CWrrl1n6uSznWqT0PbjSLDvRTY/\nu0KLll1Mr5ZGYbBZi6s0DVNODN5D1qwLtqG+5s0cgzFXWmppkgcqTxYaTaUj\notpgRVVc6XTGwOyfmZUGYvUBTQRc8/R0auIg0ec4GLOg+WqlsEL0M1E/w2dO\nmYKTySP19q7bmQjf9wkpDVUYk9L/fEcdnF2ZE4NSCJzNCoKHs+wtIa+DDGea\n8e4S4B5Dxsj8Wxxl7YRK/KxUUjWzi0k5TikgL37XYRPQxFdFZeXWBkB1Ln1/\nmmOPTMF+334+lRDPwGNnPBysaNQ4ghhlJxOt2SRSsTQqQt2KXyHWu4+OcApA\n0MRXP+ZnOYS9FGaP7HzI4rbnOUekTuEtZ7OQq2wKoZ2C0M2iz8A1jWUnMcXC\n/Zul3faqK1YOI+V6QqAWBEcqufLP8A464bI7pVKKp5W4MWKrGqS+CoP2pK4E\nafrjn31sj/Ow60aTq7E0S//JSyL118NgdH7/AXQKWVzJKISm3czjdimk+HL9\niucxyIsSdpryVgnN5Da/IUHI26NkoZsI78eUYGrW2kjrA09t9IyKQZWV02EJ\npN0eA9E16kbSpz+ofYLJTycaV4GgfAD32arXSZv96p8rLvGf49zCVkBlEHZr\nOMx8\r\n=06y+\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-mapreduce"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "3.8",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce_6.1.6_1637868734193_0.9720762512538856",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "a30868c791c547babefa9bef3a84ba54dde055bf1d54666851ffd5c657d83749"
+		},
+		"6.1.7": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "6.1.7",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@6.1.7",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-mapreduce",
+			"dist": {
+				"shasum": "9ab32d1e0f234f1bf6d1e4c5d7e216e9e23ac0a3",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.7.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-WzBwm7tmO9QhfRzVaWT4v6JQSS/fG2OoUDrWrhX87rPe2Pn6laPvdK5li6myNRxCoI/l5e8Jd+oYBAFnaiFucA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCrgaXNMkThMOOMfKBbRRkEKwDqaTSdVXCpJ5PMytmmyQIhAObuTs4dPH1WIgO5FFAXgibiNAQZrjyLHYeEl6ouRZQu",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 9449,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJiQ5cIACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmodHA//f+HDIGjasJujXdjXVtSayeE6m7fOb0tenAJPnNOo6Net2UPx\r\nyxjAe36IIpImmwlu5wlxLW8SqTHKc5VLjtiQLFlN1i0N+aWXjxU8tUTONDmy\r\nAfJUupNIn1AsUPjB406/6boI97rnojQZQxFYNbNSTqAtT2xhXiH1RNpBqIr5\r\nMoiKhcZx8BVH2zyucducZah6IjGT6v/Ujnjbes8pb6JWafb5y6Mqjvdnixo1\r\nQib5WA3FSbGKAPKN3qPhkq0RRDk48SqLC+oVjH6sZN5Ra9tgtLcTtgcInK/f\r\n0G9RSXqsubDVUnDlu61Imt7xPj+IgPzSd4DDM3zRNB195z+UH6J/b106pkk8\r\nK5fRp+uttOhEHX9Di79LZOQk0TpiqKxCBLpGdZejVtil8IDI4sFDmdWUWCR7\r\nUwRzWIo2S3c12gWeBFHGvIbHzw6OfXiFe8FFJaIJK2IfKChUhcoa6J5Ulbck\r\nbUiPwoTtw70jP0tenh21Jb5hI8MIejNS/NpHzgbulsZwWod76A1mlKcuoRVS\r\n2sz1ckDJqbAasvwuZ03S1o7xKo6ENwArKOm+PEOP8hZtbP35q3FwdSHgbLUv\r\nkFWkIHzHNdOKhENPdryLuFb0drJ6J9Dh5FoaCWee4uoIj6DLkQ2Au3NnmqY9\r\ntBa6Yg4OoF5CKdqIYS6RCY8bdsTDblCgeJI=\r\n=jbEl\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-mapreduce"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "3.9",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce_6.1.7_1648596744217_0.1680603530889211",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "bdc6916041fe26212881ffa5856a908d2abd05d033b812f26c451e017a0fbb3d"
+		},
+		"6.1.8": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "6.1.8",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@6.1.8",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-mapreduce",
+			"dist": {
+				"shasum": "50a2310c7aaf8e99ba9f8d877e056eed3c7146a7",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.8.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-/p2LR9rz3OXOogIhQ+ulkxu35tXM88UnxlcxY2iPwvoBOZLO01QMMdbQWeDo/M7p3R1YJuW75+N4SPQElbEKUw==",
+				"signatures": [
+					{
+						"sig": "MEUCIGPUd3QZ66COAkY4qHsW6DZ4hJ0W3dJ4GXGUHAjD7W0iAiEAlera33+DuRfSx2Yn4CeTFsE0+jw2b8TbUTeVs2j1+Uo=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 9598
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-mapreduce"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce_6.1.8_1695539254801_0.7357621618852954",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "6b5041b85fd235f0a497323161fe8451c4f7f3bea1dd292b43d44991228383a4"
+		},
+		"6.1.9": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "6.1.9",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@6.1.9",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-mapreduce",
+			"dist": {
+				"shasum": "e4f834c714a73d266299888c75214ca6c85fadf3",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.9.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-dsgLocavfxj4exjUETKU5ffKYhjzdBfkTDSctVSWLUqjKsUuAqHCcot6ECxkUVuD6Tejv0Y8rGi3If5xzGb5Vw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCnL4ULGxkOQSKY9bbRYg96+SvLtPAftRTwZviSlwED1QIgduzPBY999CCp2+a5Pt33x+I21zJhne4Sl80fGCRu2PI=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 9210
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-mapreduce"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce_6.1.9_1697627854823_0.6058013281193506",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "35c7013ffc5f250bb6c84e57c5f4324d4ef099fa9171092f5acd788b60a0d631"
+		},
+		"6.1.10": {
+			"name": "@types/pouchdb-mapreduce",
+			"version": "6.1.10",
+			"license": "MIT",
+			"_id": "@types/pouchdb-mapreduce@6.1.10",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-mapreduce",
+			"dist": {
+				"shasum": "2668c32a79920dbaed4ac335fa0fc4b986a0cb38",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.10.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-AgYVqCnaA5D7cWkWyzZVuk0137N4yZsmIQTD/i3DmuMxYYoFrtWUoQu0tbA52SpTRGdL8ubQ7JFQXzA13fA6IQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDR7+yxNkWFj6z6QfPhwDqhRay+hX8d8TLG7aTFDJEekAIhANHI4JOIptqRfnYneHUDkIfK1xZlc0DpxqC9SHjgljiQ",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 9211
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-mapreduce"
+			},
+			"description": "TypeScript definitions for pouchdb-mapreduce",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-mapreduce_6.1.10_1699363160341_0.0590415618042317",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "22eb5f78f7c85b195d009240368f146ff5125eb777e5cbdd699d997bf463b144"
+		}
+	},
+	"time": {
+		"created": "2016-08-02T16:04:43.009Z",
+		"modified": "2024-11-11T09:31:34.600Z",
+		"5.4.1": "2016-08-02T16:04:43.009Z",
+		"5.4.2": "2016-08-19T15:37:23.626Z",
+		"5.4.3": "2016-08-25T18:53:43.200Z",
+		"5.4.4": "2016-09-19T18:01:32.125Z",
+		"5.4.5": "2016-11-18T16:24:25.884Z",
+		"5.4.6": "2016-12-28T00:47:39.712Z",
+		"6.1.0": "2017-04-18T15:12:51.672Z",
+		"6.1.1": "2017-06-15T20:17:15.477Z",
+		"6.1.2": "2017-08-21T22:01:00.260Z",
+		"6.1.3": "2017-12-14T21:35:10.811Z",
+		"6.1.4": "2019-02-13T21:56:34.577Z",
+		"6.1.5": "2021-07-08T21:01:49.716Z",
+		"6.1.6": "2021-11-25T19:32:14.330Z",
+		"6.1.7": "2022-03-29T23:32:24.463Z",
+		"6.1.8": "2023-09-24T07:07:34.996Z",
+		"6.1.9": "2023-10-18T11:17:34.984Z",
+		"6.1.10": "2023-11-07T13:19:20.525Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"ts2.0": "6.1.0",
+		"ts2.1": "6.1.0",
+		"ts2.2": "6.1.0",
+		"ts2.3": "6.1.4",
+		"ts2.4": "6.1.4",
+		"ts2.5": "6.1.4",
+		"ts2.6": "6.1.4",
+		"ts2.7": "6.1.4",
+		"ts2.8": "6.1.4",
+		"ts2.9": "6.1.4",
+		"ts3.0": "6.1.4",
+		"ts3.1": "6.1.4",
+		"ts3.2": "6.1.4",
+		"ts3.3": "6.1.4",
+		"ts3.4": "6.1.4",
+		"ts3.5": "6.1.4",
+		"ts3.6": "6.1.5",
+		"ts3.7": "6.1.5",
+		"ts3.8": "6.1.6",
+		"ts3.9": "6.1.7",
+		"ts4.0": "6.1.7",
+		"ts4.1": "6.1.7",
+		"ts4.2": "6.1.7",
+		"ts4.3": "6.1.7",
+		"ts4.4": "6.1.7",
+		"ts5.7": "6.1.10",
+		"ts5.6": "6.1.10",
+		"latest": "6.1.10",
+		"ts4.5": "6.1.10",
+		"ts4.6": "6.1.10",
+		"ts4.7": "6.1.10",
+		"ts4.8": "6.1.10",
+		"ts4.9": "6.1.10",
+		"ts5.0": "6.1.10",
+		"ts5.1": "6.1.10",
+		"ts5.2": "6.1.10",
+		"ts5.3": "6.1.10",
+		"ts5.4": "6.1.10",
+		"ts5.5": "6.1.10",
+		"ts5.8": "6.1.10"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"3b82d5f5a4b335e67c6f01dfddfbe9ba\"",
+			"fetched": 1734527718884
+		}
+	},
+	"_distfiles": {
+		"pouchdb-mapreduce-5.4.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-5.4.1.tgz",
+			"sha": "321f42749950ba385fdfd2fc30ef0771f1fe5506",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-5.4.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-5.4.2.tgz",
+			"sha": "c52b3321337ee905b1f4345444b5c584e9fcb3ee",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-5.4.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-5.4.3.tgz",
+			"sha": "8432d93cad4f6be980f7d86b486820a6001b485d",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-5.4.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-5.4.4.tgz",
+			"sha": "364e041b84e2d153eb5941b74dec6d3b0e8ec49d",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-5.4.5.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-5.4.5.tgz",
+			"sha": "40556df0b905c02ce56ef763fa22f2ffe1945830",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-5.4.6.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-5.4.6.tgz",
+			"sha": "90bdf2ac365ff7e55e76748e9472f3de3daf1ed9",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-6.1.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.0.tgz",
+			"sha": "e1c105a2bc255bb558ae2f415fac1a39555f63f3",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-6.1.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.1.tgz",
+			"sha": "2a4c7a8cbdd2678541f62c74c20175c0dd5b8aa7",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-6.1.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.2.tgz",
+			"sha": "d0bd1369c06055ee655f9ec76eb43c52ba3034b1",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-6.1.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.3.tgz",
+			"sha": "6db81f82567e5cdbf7c9d98a271296206f63b862",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-6.1.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.4.tgz",
+			"sha": "bc747eacd4e734a7486e9f4ef895fad7c45485e9",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-6.1.5.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.5.tgz",
+			"sha": "10e7dba184d317db0160d89d739a57de1e328f3f",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-6.1.6.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.6.tgz",
+			"sha": "710cc2030c04daecfc0355d1e696a862028bb531",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-6.1.7.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.7.tgz",
+			"sha": "9ab32d1e0f234f1bf6d1e4c5d7e216e9e23ac0a3",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-6.1.8.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.8.tgz",
+			"sha": "50a2310c7aaf8e99ba9f8d877e056eed3c7146a7",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-6.1.9.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.9.tgz",
+			"sha": "e4f834c714a73d266299888c75214ca6c85fadf3",
+			"registry": "npmjs"
+		},
+		"pouchdb-mapreduce-6.1.10.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-mapreduce/-/pouchdb-mapreduce-6.1.10.tgz",
+			"sha": "2668c32a79920dbaed4ac335fa0fc4b986a0cb38",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-mapreduce-6.1.10.tgz": {
+			"shasum": "2668c32a79920dbaed4ac335fa0fc4b986a0cb38"
+		}
+	},
+	"_rev": "2-f0156dcca19b954f",
+	"_id": "@types/pouchdb-mapreduce",
+	"readme": "[object Object]"
+}

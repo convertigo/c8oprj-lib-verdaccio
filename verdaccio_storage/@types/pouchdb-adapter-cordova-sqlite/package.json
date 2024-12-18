@@ -1,0 +1,456 @@
+{
+	"name": "@types/pouchdb-adapter-cordova-sqlite",
+	"versions": {
+		"1.0.0": {
+			"name": "@types/pouchdb-adapter-cordova-sqlite",
+			"version": "1.0.0",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-cordova-sqlite@1.0.0",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				},
+				{
+					"url": "https://github.com/coffeymatt",
+					"name": "Matthew Paul",
+					"githubUsername": "coffeymatt"
+				}
+			],
+			"dist": {
+				"shasum": "6ede3773ab22a548ca30e9efb8b659e100aea1db",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-cordova-sqlite/-/pouchdb-adapter-cordova-sqlite-1.0.0.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-NsqpEYKunBS/BPvttlOVQ5Me6LdU6UYZB0Qak3XS/AvLeIRdF61MZ/czSuL/ozydYr6bikewt6dvlpCK1HWG9Q==",
+				"signatures": [
+					{
+						"sig": "MEQCIDvqT7jqwX7KS+ryh1TMZhgDgkWL/rsjsx5IXUgGQYfmAiAMbl9no2G8D0w+T0+NOvKN+c2gxpRM3nVBLDlFwyN4cg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 4677,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdGibtCRA9TVsSAnZWagAA67kP/3JoJjYgRw2b8PyHxNxn\nT9iT/EzE3lHrac53OgvFZRn/nnZfTCYcj3F3KrIuTRLCi8Fg1CyvhUsVDoxC\nwLyByMo/0XIt8o41zv0NGKqhxZTjQ9GMPyxXZN2PlIpo7QQmO/IFL+OafuWt\nIMt5bE5FgkfTJ1GNslRzTCb6fxMFL06dOonnKJUqTDA/4YnGSuRzCSA01fb8\nZRHHGFmhe2tuFFjfXqOZI0tq2yjiM/lJp531K3XB4AqjOVOqhgDh8ZfzZB/S\nHxNSZhXhiLQmsj/Y6gjNDmvrkvOI4RawqyhFAH4SxzvX78X2rIvMI47LOI3R\n8wUd4Hu6JdO9qRc2+FH+PR5zbzoTCw5Ylq2vVoDVck2olw+HH/t2S33YF6WB\npMOcB+yWqWSNiYHvUh7FHUi6FVKFxLX42Y7GdVyGskZbogpi8dQnguM/0wCY\nLwQ68pfrdejHt0ffXOwlWv01Vc+8HDoZBUhCGfSrwzOHEaCy4Si8GcmDC42B\nyXQpJcgIaVMvH8It3dEu5rzPmT1rpV2h5vkdyqUYxks9QxnqAHA2jgceYJM4\nXaFkG9rG76kChBcoAU3FGzRHl1d6MGdYA0ggMzoiIxBsqmyYxzq26AtdwJlv\nPluRxZUCCcIoPFe6Ow5T7gkFT5+/t/s71V6qIqCvAB5kdq5OH+W/utExkXVV\n+1QS\r\n=nvmd\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-cordova-sqlite"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-sqlite",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "2.3",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-cordova-sqlite_1.0.0_1561994988623_0.7883699995646714",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "2e76a39575e4f76487d0e1323de7f44c9cf4ca0e97e7eb64f617f6088c03e5d1"
+		},
+		"1.0.1": {
+			"name": "@types/pouchdb-adapter-cordova-sqlite",
+			"version": "1.0.1",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-cordova-sqlite@1.0.1",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				},
+				{
+					"url": "https://github.com/coffeymatt",
+					"name": "Matthew Paul",
+					"githubUsername": "coffeymatt"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-cordova-sqlite",
+			"dist": {
+				"shasum": "49e5ee6df7cc0c23196fcb340f43a560e74eb1d6",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-cordova-sqlite/-/pouchdb-adapter-cordova-sqlite-1.0.1.tgz",
+				"fileCount": 4,
+				"integrity": "sha512-nqlXpW1ho3KBg1mUQvZgH2755y3z/rw4UA7ZJCPMRTHofxGMY8izRVw5rHBL4/7P615or0J2udpRYxgkT3D02g==",
+				"signatures": [
+					{
+						"sig": "MEUCIDHrQKuo48tJbcaLhWtwwP0tezSuvCwNT4BMBhn260P4AiEAgKzkKVb3rE68ep30AsLCVMAiIZbKlHP+mGTVlgy89iU=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 6630,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJg52eQCRA9TVsSAnZWagAABH0P+gO1M/Ihfx5/VCMK47N2\nGJick6RKQ/Fxn45IVk9eFbsheFW3SCUR4u2fJbw7KgCnXEvsB7TNwoKKpzzw\nTjDxPTugVQ3MJyEevxStffA5vJYHMCo4vveTHev6Ndmos59b0ylGg+ZpIXHq\nvRM90mVpL1Q9pi+BR2gwZX3+091lh2XtTA3fOqkAmOd74YSFusQH6lbmM32p\nZniU98OK0Mzj0GnWqaiy4APo5+QOvQKxQCvptnQ6e53rPMBSRwektibpei6u\nH/HNs+R+lk/aLuxmsnhc+XAyt71Y3IiWqOvHexOJlShbw4MvBBoiR9DcFwgc\nkp5kTuF3Bj52SZyNsCYkSugBkYwzzQb7clHJhIHnP/bit3Ar4J+rpLK8jDmR\nA3TFwKuUbTSo7UfHyFYt7p8nRJuIUQhFSqEihcV9x6nZ0N2N6v1xH0qSLZuZ\nuB7UOIp7ENbPE9M1Qk6ksLCFrh2iWSyPKIf39r8cDc8VdAnLueHD8BElaS9j\nor2u3fIvWeE2wk0k1m51xIcvRD4YDA+65OPxkr06N4vlP86x+mZsblfJEdQI\nH62vm9rNtTtObHT1DpunRY3bI+TlH1yVQ1NgRJ7GgprE5bYaIjJoMIRxB1A4\nQ7f7Tnx7EsUMH8gn7/5FcUHqeL8gxgWoj/kjdr++dQMInUgfeVLW/ou/F9QN\n6BOh\r\n=1u1P\r\n-----END PGP SIGNATURE-----\r\n"
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-cordova-sqlite"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-sqlite",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "3.6",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-cordova-sqlite_1.0.1_1625778063990_0.7738362759783903",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "6b546a41948d57edb87a7fd961eeb673255cf4fe44395ed27f409b02f26e0fa4"
+		},
+		"1.0.2": {
+			"name": "@types/pouchdb-adapter-cordova-sqlite",
+			"version": "1.0.2",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-cordova-sqlite@1.0.2",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				},
+				{
+					"url": "https://github.com/coffeymatt",
+					"name": "Matthew Paul",
+					"githubUsername": "coffeymatt"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-cordova-sqlite",
+			"dist": {
+				"shasum": "0b61618adfcf7d9033e280f44a0b4f246ab248c8",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-cordova-sqlite/-/pouchdb-adapter-cordova-sqlite-1.0.2.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-5QvEjCGvABdBV0sFxkyBB2X+aqKTSO9FNE7xe0n8xarEx78lUnir6elDTWDOSmZsPYnoSztEoMcvOfaLil5iow==",
+				"signatures": [
+					{
+						"sig": "MEUCIDu5hKsDt9zRFF8+ojtVzZ7zp1WNpvwlTOFf9xUbPbr0AiEAlkE+ToMav1CBil7H+yVrNAAMobKqSu15F5ioqLWkeq8=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 6566
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-cordova-sqlite"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-sqlite",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-cordova-sqlite_1.0.2_1695539189320_0.31261206247824225",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "39619cf1e2a8ee87bbc344faffa088846295e9f4cd7d57f31bb34221a8264ace"
+		},
+		"1.0.3": {
+			"name": "@types/pouchdb-adapter-cordova-sqlite",
+			"version": "1.0.3",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-cordova-sqlite@1.0.3",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				},
+				{
+					"url": "https://github.com/coffeymatt",
+					"name": "Matthew Paul",
+					"githubUsername": "coffeymatt"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-cordova-sqlite",
+			"dist": {
+				"shasum": "80c3c9833869f89700c50754224d38c643e8a7b0",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-cordova-sqlite/-/pouchdb-adapter-cordova-sqlite-1.0.3.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-xQTzjPW5AgtUzobByDY2VgIXeQ5QRN0BZumufvj6Y2c0lw9UZFHGgHQPe6eCVbGmZneaWhTKw+HutS4gILFzqw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDlDLZfIwbh4eU6MXKgUaaboJXCfMjRGT7nHFgVX98KFQIgBSd7Ymafkp5jzzAJlOfzg+Q21GU8g+DhiZHHpbRJtss=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 5590
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-cordova-sqlite"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-cordova-sqlite",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-cordova-sqlite_1.0.3_1697627745591_0.009441751381004115",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "0e425e9bff703d4592e0d9a561c85a33284355b53bc17a76fee4d4e54664fda7"
+		},
+		"1.0.4": {
+			"name": "@types/pouchdb-adapter-cordova-sqlite",
+			"version": "1.0.4",
+			"license": "MIT",
+			"_id": "@types/pouchdb-adapter-cordova-sqlite@1.0.4",
+			"maintainers": [
+				{
+					"name": "types",
+					"email": "ts-npm-types@microsoft.com"
+				}
+			],
+			"contributors": [
+				{
+					"url": "https://github.com/spaulg",
+					"name": "Simon Paulger",
+					"githubUsername": "spaulg"
+				},
+				{
+					"url": "https://github.com/geppy",
+					"name": "Brian Geppert",
+					"githubUsername": "geppy"
+				},
+				{
+					"url": "https://github.com/fredgalvao",
+					"name": "Frederico Galvão",
+					"githubUsername": "fredgalvao"
+				},
+				{
+					"url": "https://github.com/coffeymatt",
+					"name": "Matthew Paul",
+					"githubUsername": "coffeymatt"
+				}
+			],
+			"homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/pouchdb-adapter-cordova-sqlite",
+			"dist": {
+				"shasum": "c16847ba4e7bf284d520999ca39942fffbc72642",
+				"tarball": "https://registry.npmjs.org/@types/pouchdb-adapter-cordova-sqlite/-/pouchdb-adapter-cordova-sqlite-1.0.4.tgz",
+				"fileCount": 5,
+				"integrity": "sha512-1MGjmAMux3OIyJ+iXfhJ5hNIzS+KjGJ05O3bF5Gen5TiJUFNK1bOp3VVV9SxXgz+hGwnBruBAWdAqhbB6ZHhSA==",
+				"signatures": [
+					{
+						"sig": "MEUCIDSFnwHvMlPhH7ONw8MpeDeirJ/wOXcETKZrgpaEiB3DAiEAlYxnot6mUX9ogj2ICCs6lOqtRGnuQ5XFP2OP40buBoA=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 5590
+			},
+			"main": "",
+			"types": "index.d.ts",
+			"scripts": {},
+			"_npmUser": {
+				"name": "types",
+				"email": "ts-npm-types@microsoft.com"
+			},
+			"repository": {
+				"url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+				"type": "git",
+				"directory": "types/pouchdb-adapter-cordova-sqlite"
+			},
+			"description": "TypeScript definitions for pouchdb-adapter-cordova-sqlite",
+			"directories": {},
+			"dependencies": {
+				"@types/pouchdb-core": "*"
+			},
+			"_hasShrinkwrap": false,
+			"typeScriptVersion": "4.5",
+			"_npmOperationalInternal": {
+				"tmp": "tmp/pouchdb-adapter-cordova-sqlite_1.0.4_1699363062640_0.01929517368388356",
+				"host": "s3://npm-registry-packages"
+			},
+			"typesPublisherContentHash": "9edd91412df60146aa29fef25f68138f36c1084ea2b094f1e9a945e11396fed5"
+		}
+	},
+	"time": {
+		"created": "2019-07-01T15:29:48.427Z",
+		"modified": "2024-11-11T09:31:22.846Z",
+		"1.0.0": "2019-07-01T15:29:48.828Z",
+		"1.0.1": "2021-07-08T21:01:04.125Z",
+		"1.0.2": "2023-09-24T07:06:29.544Z",
+		"1.0.3": "2023-10-18T11:15:45.853Z",
+		"1.0.4": "2023-11-07T13:17:42.846Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"ts2.3": "1.0.0",
+		"ts2.4": "1.0.0",
+		"ts2.5": "1.0.0",
+		"ts2.6": "1.0.0",
+		"ts2.7": "1.0.0",
+		"ts2.8": "1.0.0",
+		"ts2.9": "1.0.0",
+		"ts3.0": "1.0.0",
+		"ts3.1": "1.0.0",
+		"ts3.2": "1.0.0",
+		"ts3.3": "1.0.0",
+		"ts3.4": "1.0.0",
+		"ts3.5": "1.0.0",
+		"ts3.6": "1.0.1",
+		"ts3.7": "1.0.1",
+		"ts3.8": "1.0.1",
+		"ts3.9": "1.0.1",
+		"ts4.0": "1.0.1",
+		"ts4.1": "1.0.1",
+		"ts4.2": "1.0.1",
+		"ts4.3": "1.0.1",
+		"ts4.4": "1.0.1",
+		"ts5.7": "1.0.4",
+		"ts5.6": "1.0.4",
+		"latest": "1.0.4",
+		"ts4.5": "1.0.4",
+		"ts4.6": "1.0.4",
+		"ts4.7": "1.0.4",
+		"ts4.8": "1.0.4",
+		"ts4.9": "1.0.4",
+		"ts5.0": "1.0.4",
+		"ts5.1": "1.0.4",
+		"ts5.2": "1.0.4",
+		"ts5.3": "1.0.4",
+		"ts5.4": "1.0.4",
+		"ts5.5": "1.0.4",
+		"ts5.8": "1.0.4"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"64e57dc203170682f80cb649e2f3360a\"",
+			"fetched": 1734527719445
+		}
+	},
+	"_distfiles": {
+		"pouchdb-adapter-cordova-sqlite-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-cordova-sqlite/-/pouchdb-adapter-cordova-sqlite-1.0.0.tgz",
+			"sha": "6ede3773ab22a548ca30e9efb8b659e100aea1db",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-cordova-sqlite-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-cordova-sqlite/-/pouchdb-adapter-cordova-sqlite-1.0.1.tgz",
+			"sha": "49e5ee6df7cc0c23196fcb340f43a560e74eb1d6",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-cordova-sqlite-1.0.2.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-cordova-sqlite/-/pouchdb-adapter-cordova-sqlite-1.0.2.tgz",
+			"sha": "0b61618adfcf7d9033e280f44a0b4f246ab248c8",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-cordova-sqlite-1.0.3.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-cordova-sqlite/-/pouchdb-adapter-cordova-sqlite-1.0.3.tgz",
+			"sha": "80c3c9833869f89700c50754224d38c643e8a7b0",
+			"registry": "npmjs"
+		},
+		"pouchdb-adapter-cordova-sqlite-1.0.4.tgz": {
+			"url": "https://registry.npmjs.org/@types/pouchdb-adapter-cordova-sqlite/-/pouchdb-adapter-cordova-sqlite-1.0.4.tgz",
+			"sha": "c16847ba4e7bf284d520999ca39942fffbc72642",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"pouchdb-adapter-cordova-sqlite-1.0.4.tgz": {
+			"shasum": "c16847ba4e7bf284d520999ca39942fffbc72642"
+		}
+	},
+	"_rev": "2-734c804120c4baa7",
+	"_id": "@types/pouchdb-adapter-cordova-sqlite",
+	"readme": "[object Object]"
+}

@@ -1,0 +1,4221 @@
+{
+	"name": "property-is-enumerable-x",
+	"versions": {
+		"1.0.0": {
+			"name": "property-is-enumerable-x",
+			"version": "1.0.0",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"main": "index.js",
+			"engines": {
+				"node": "*"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^1.4.1",
+				"to-property-key-x": "^2.0.1"
+			},
+			"devDependencies": {
+				"@xotic750/eslint-config-standard-x": "^2.2.1",
+				"browserify": "^14.4.0",
+				"browserify-derequire": "^0.9.4",
+				"cross-env": "^5.0.1",
+				"es5-shim": "^4.5.9",
+				"es6-shim": "^0.35.3",
+				"es7-shim": "^6.0.0",
+				"eslint": "^4.2.0",
+				"eslint-plugin-compat": "^1.0.4",
+				"eslint-plugin-css-modules": "^2.7.2",
+				"eslint-plugin-eslint-comments": "^1.0.2",
+				"eslint-plugin-jsdoc": "^3.1.1",
+				"eslint-plugin-json": "^1.2.0",
+				"eslint-plugin-no-use-extend-native": "^0.3.12",
+				"husky": "^0.13.4",
+				"jasmine-node": "^1.14.5",
+				"jsdoc-to-markdown": "^3.0.0",
+				"json3": "^3.3.2",
+				"make-jasmine-spec-runner-html": "^1.3.0",
+				"ncp": "^2.0.0",
+				"nodemon": "^1.11.0",
+				"nsp": "^2.6.3",
+				"parallelshell": "^3.0.1",
+				"replace-x": "^1.5.0",
+				"rimraf": "^2.6.1",
+				"serve": "^6.0.2",
+				"uglify-js": "^3.0.24"
+			},
+			"scripts": {
+				"clean": "rimraf README.md lib/*",
+				"clean:jasmine": "rimraf tests/index.html tests/run.js",
+				"clean:all": "npm run clean:jasmine && npm run clean",
+				"build": "npm run clean && npm run lint && npm run browserify && npm run uglify && npm run docs && npm test && npm run security",
+				"build:jasmine": "npm run clean:jasmine && make-jasmine-spec-runner-html",
+				"build:setver": "replace-x \" @version .*\" \" @version $(node -p -e \"require('./package.json').version\")\" index.js",
+				"build:name": "replace-x \" @module .*\" \" @module $(node -p -e \"require('./package.json').name\")\" index.js",
+				"build:description": "replace-x \" @file .*\" \" @file $(node -p -e \"require('./package.json').description\")\" index.js",
+				"build:replace": "npm run build:setver && npm run build:name && npm run build:description",
+				"production": "npm run clean:all && npm run build:jasmine && npm run build:replace && npm run build",
+				"start": "parallelshell \"serve\" \"nodemon --watch index.js --exec 'npm run build'\"",
+				"docs:name": "replace-x \"@{PACKAGE-NAME}\" \"$(node -p -e \"require('./package.json').name\")\" README.md",
+				"docs:badges": "ncp badges.html README.md && npm run docs:name",
+				"docs": "npm run docs:badges && jsdoc2md --name-format --example-lang js index.js >> README.md",
+				"lint": "eslint *.js tests/spec/*.js",
+				"lint-fix": "npm run lint -- --fix",
+				"security": "nsp check",
+				"test": "jasmine-node --matchall tests/spec/",
+				"browserify": "browserify -p browserify-derequire -e index.js -o lib/property-is-enumerable-x.js -u 'crypto' -s returnExports",
+				"uglify": "uglifyjs lib/property-is-enumerable-x.js -o lib/property-is-enumerable-x.min.js --config-file .uglifyjsrc.json",
+				"precommit": "npm run production",
+				"prepush": "npm run production"
+			},
+			"gitHead": "c20a9a47ef5749abe2bac7f3492af75919517b0a",
+			"_id": "property-is-enumerable-x@1.0.0",
+			"_npmVersion": "5.4.0",
+			"_nodeVersion": "6.11.2",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-2zNKvVLCMewM8O+gJGqRMPDPfcPkMhKL1tpG8O8/wF2fzczae1RncyatcwmkEuVBZJR97LT2wF83Az+C0BG1iQ==",
+				"shasum": "ffc0de8eeec70d1997890ccd298c8c7c31a2102d",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-1.0.0.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCkijEXIJFXNABUeVUxwXtNwAuOwTuRuoxJsEzlGSKINAIgMOYs49hDLMtmSV6SjSYb72a/F5t7mRffaFNALnZFPy4="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x-1.0.0.tgz_1504388845320_0.9489075432065874"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.0.1": {
+			"name": "property-is-enumerable-x",
+			"version": "1.0.1",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"main": "index.js",
+			"engines": {
+				"node": "*"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^1.4.1",
+				"to-property-key-x": "^2.0.1"
+			},
+			"devDependencies": {
+				"@xotic750/eslint-config-standard-x": "^2.2.1",
+				"browserify": "^14.4.0",
+				"browserify-derequire": "^0.9.4",
+				"cross-env": "^5.0.1",
+				"es5-shim": "^4.5.9",
+				"es6-shim": "^0.35.3",
+				"es7-shim": "^6.0.0",
+				"eslint": "^4.2.0",
+				"eslint-plugin-compat": "^1.0.4",
+				"eslint-plugin-css-modules": "^2.7.2",
+				"eslint-plugin-eslint-comments": "^1.0.2",
+				"eslint-plugin-jsdoc": "^3.1.1",
+				"eslint-plugin-json": "^1.2.0",
+				"eslint-plugin-no-use-extend-native": "^0.3.12",
+				"husky": "^0.13.4",
+				"jasmine-node": "^1.14.5",
+				"jsdoc-to-markdown": "^3.0.0",
+				"json3": "^3.3.2",
+				"make-jasmine-spec-runner-html": "^1.3.0",
+				"ncp": "^2.0.0",
+				"nodemon": "^1.11.0",
+				"nsp": "^2.6.3",
+				"parallelshell": "^3.0.1",
+				"replace-x": "^1.5.0",
+				"rimraf": "^2.6.1",
+				"serve": "^6.0.2",
+				"uglify-js": "^3.0.24"
+			},
+			"scripts": {
+				"clean": "rimraf README.md lib/*",
+				"clean:jasmine": "rimraf tests/index.html tests/run.js",
+				"clean:all": "npm run clean:jasmine && npm run clean",
+				"build": "npm run clean && npm run lint && npm run browserify && npm run uglify && npm run docs && npm test && npm run security",
+				"build:jasmine": "npm run clean:jasmine && make-jasmine-spec-runner-html",
+				"build:setver": "replace-x \" @version .*\" \" @version $(node -p -e \"require('./package.json').version\")\" index.js",
+				"build:name": "replace-x \" @module .*\" \" @module $(node -p -e \"require('./package.json').name\")\" index.js",
+				"build:description": "replace-x \" @file .*\" \" @file $(node -p -e \"require('./package.json').description\")\" index.js",
+				"build:replace": "npm run build:setver && npm run build:name && npm run build:description",
+				"production": "npm run clean:all && npm run build:jasmine && npm run build:replace && npm run build",
+				"start": "parallelshell \"serve\" \"nodemon --watch index.js --exec 'npm run build'\"",
+				"docs:name": "replace-x \"@{PACKAGE-NAME}\" \"$(node -p -e \"require('./package.json').name\")\" README.md",
+				"docs:badges": "ncp badges.html README.md && npm run docs:name",
+				"docs": "npm run docs:badges && jsdoc2md --name-format --example-lang js index.js >> README.md",
+				"lint": "eslint *.js tests/spec/*.js",
+				"lint-fix": "npm run lint -- --fix",
+				"security": "nsp check",
+				"test": "jasmine-node --matchall tests/spec/",
+				"browserify": "browserify -p browserify-derequire -e index.js -o lib/property-is-enumerable-x.js -u 'crypto' -s returnExports",
+				"uglify": "uglifyjs lib/property-is-enumerable-x.js -o lib/property-is-enumerable-x.min.js --config-file .uglifyjsrc.json",
+				"precommit": "npm run production",
+				"prepush": "npm run production"
+			},
+			"gitHead": "522dfbc87598c934780bff6b3f19598b336ea2a9",
+			"_id": "property-is-enumerable-x@1.0.1",
+			"_npmVersion": "5.4.0",
+			"_nodeVersion": "6.11.2",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-DT6SxlrASrtHyPycSM/L2GGLhsjtcXS5tPJCLpKcy3rePM8spx0O06Cx3l+FyK5r5O071Ep/l73gwWpxPYTeEA==",
+				"shasum": "5ee553b51fac7c5a73ffd1f78ccfb0c760b739e9",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-1.0.1.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCICxEezDAZn6qBQIAtj4n30roeBukh/DLABAw9oKgUuHCAiB6GOWtRplFnH18T7svH0neXfY5tYMXwd6IrST3IJaJjg=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x-1.0.1.tgz_1504391044087_0.8509460473433137"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.1.0": {
+			"name": "property-is-enumerable-x",
+			"version": "1.1.0",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"main": "index.js",
+			"engines": {
+				"node": "*"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^1.4.1",
+				"to-property-key-x": "^2.0.1"
+			},
+			"devDependencies": {
+				"@xotic750/eslint-config-standard-x": "^2.2.1",
+				"browserify": "^14.4.0",
+				"browserify-derequire": "^0.9.4",
+				"cross-env": "^5.0.1",
+				"es5-shim": "^4.5.9",
+				"es6-shim": "^0.35.3",
+				"es7-shim": "^6.0.0",
+				"eslint": "^4.2.0",
+				"eslint-plugin-compat": "^1.0.4",
+				"eslint-plugin-css-modules": "^2.7.2",
+				"eslint-plugin-eslint-comments": "^1.0.2",
+				"eslint-plugin-jsdoc": "^3.1.1",
+				"eslint-plugin-json": "^1.2.0",
+				"eslint-plugin-no-use-extend-native": "^0.3.12",
+				"husky": "^0.13.4",
+				"jasmine-node": "^1.14.5",
+				"jsdoc-to-markdown": "^3.0.0",
+				"json3": "^3.3.2",
+				"make-jasmine-spec-runner-html": "^1.3.0",
+				"ncp": "^2.0.0",
+				"nodemon": "^1.11.0",
+				"nsp": "^2.6.3",
+				"parallelshell": "^3.0.1",
+				"replace-x": "^1.5.0",
+				"rimraf": "^2.6.1",
+				"serve": "^6.0.2",
+				"uglify-js": "^3.0.24"
+			},
+			"scripts": {
+				"clean": "rimraf README.md lib/*",
+				"clean:jasmine": "rimraf tests/index.html tests/run.js",
+				"clean:all": "npm run clean:jasmine && npm run clean",
+				"build": "npm run clean && npm run lint && npm run browserify && npm run uglify && npm run docs && npm test && npm run security",
+				"build:jasmine": "npm run clean:jasmine && make-jasmine-spec-runner-html",
+				"build:setver": "replace-x \" @version .*\" \" @version $(node -p -e \"require('./package.json').version\")\" index.js",
+				"build:name": "replace-x \" @module .*\" \" @module $(node -p -e \"require('./package.json').name\")\" index.js",
+				"build:description": "replace-x \" @file .*\" \" @file $(node -p -e \"require('./package.json').description\")\" index.js",
+				"build:replace": "npm run build:setver && npm run build:name && npm run build:description",
+				"production": "npm run clean:all && npm run build:jasmine && npm run build:replace && npm run build",
+				"start": "parallelshell \"serve\" \"nodemon --watch index.js --exec 'npm run build'\"",
+				"docs:name": "replace-x \"@{PACKAGE-NAME}\" \"$(node -p -e \"require('./package.json').name\")\" README.md",
+				"docs:badges": "ncp badges.html README.md && npm run docs:name",
+				"docs": "npm run docs:badges && jsdoc2md --name-format --example-lang js index.js >> README.md",
+				"lint": "eslint *.js tests/spec/*.js",
+				"lint-fix": "npm run lint -- --fix",
+				"security": "nsp check",
+				"test": "jasmine-node --matchall tests/spec/",
+				"browserify": "browserify -p browserify-derequire -e index.js -o lib/property-is-enumerable-x.js -u 'crypto' -s returnExports",
+				"uglify": "uglifyjs lib/property-is-enumerable-x.js -o lib/property-is-enumerable-x.min.js --config-file .uglifyjsrc.json",
+				"precommit": "npm run production",
+				"prepush": "npm run production"
+			},
+			"gitHead": "b4f4640012688e88e0ef66557beac37e5b0fe5df",
+			"_id": "property-is-enumerable-x@1.1.0",
+			"_npmVersion": "5.4.0",
+			"_nodeVersion": "6.11.2",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-22cKy3w3OpRswU6to9iKWDDlg+F9vF2REcwGlGW23jyLjHb1U/jJEWA44sWupOnkhGfDgotU6Lw+N2oyhNi+5A==",
+				"shasum": "7ca48917476cd0914b37809bfd05776a0d942f6f",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-1.1.0.tgz",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCICBTxgUr7YEbCDM4rVt9r6t30NqsUXHy8NW1BbSGi5LZAiEA93QR3dppLhjMpNeME7VCjmm3SxgA6R7/STi2Nsva/UA="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x-1.1.0.tgz_1504966386530_0.2508973979856819"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"2.0.0": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.0",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.1",
+				"to-property-key-x": "^3.0.1"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.2",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000983",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.5",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "a020cf0700e156af94102645eeeec749a63e1b5f",
+			"_id": "property-is-enumerable-x@2.0.0",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-IkdBzy9oOtBzjRgLsimiEUAoqC9h+mrDT+HztQedvJH7pSMBDtAHGuBLgdZdQm0Q4MZAcn0n8PbJhJHFg6gr5Q==",
+				"shasum": "1770f1ecb2c0fe024d47cf191546a4a590f8ad37",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.0.tgz",
+				"fileCount": 10,
+				"unpackedSize": 152904,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLF0cCRA9TVsSAnZWagAAhfYP/1dqLzezFivvuKhjeD+U\nxTrqJtCoAZFVZJZvuuG96QpSWXjH0EWp3hg4xTuLz5HBd5QBRsFDMaCG5HiJ\nht6au7e6aBYOP5ZAptwlOPXMYBe529WLbmyOMkrP0c2QM+tSsWCzOmvtja2E\nMGGUVrKVi7JRpGUz7dDkrWdWfxUavIILNZ7fkE30ijHOiSj1CaBU5mOAstiM\n86fbk4VnACyxFkNjk5f+WmPTum/zC0UDlJrYxuOb/ZGbX4IAUjNEr8sTIv7p\njZCmI+WdzPH8jk0fnv9bSMofRhzMGyw0IRRqaMw1yqJe9yHXYLsIji26uqve\n64jFJPjU9cGy7tViQNmthtK/QahuH8VIS2GT6ToZ+XJjF/lBbEwFNLRbnm0E\nh/ModyrM69+/s6sHljH7JV+1QSpZcqwpTOQ47tQDZNiM1y3K5hcmqr9pX5b6\nCMhaoXMr6Pj6lp7hnHxTi0A7MMMxPqBVUuf7gXl0yY+qmJh475/+WUszivon\nBbXgvAoypnQcESmk/xEvUlDh+q8xVKxZrIpxuOjoM0HTaWijE/51Un7F+XKh\nSnojobBEeMWWNr7vlXSEPT9ygDh57BxaW/MRQxHfPkiqT7UL+RDt/38jw1jr\npiJ8ojuPenAlsp/DNUJCaok3FvMrdUPWW1AooszajrFblsAnJNUrISdCloOq\n84R2\r\n=UEc5\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHE3MyVLgjUZnnS6nLcuhqlT49eQVM8KElKuzZE5lT9tAiAoz40b2AqOXCN860I3MXTf1ZSO6EJYqnHWPs/7OaaasQ=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.0_1563188507380_0.01308521641055993"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.1": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.1",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.1",
+				"to-property-key-x": "^3.0.2"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.2",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000983",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.5",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "54328c9eab0e50ce991a88291e5b9d878c2e0ba3",
+			"_id": "property-is-enumerable-x@2.0.1",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-yIvV849SDbELeJVpeTN9YNwfT98vCYF3TdEUT4RQdH3/qXMXYa3Kb4RtLoM4AOR4EIVR/+CHICEmbt9TyY5bgg==",
+				"shasum": "22c7f6b090d25fabd405403980ad29310d18bb3c",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.1.tgz",
+				"fileCount": 10,
+				"unpackedSize": 152904,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLHjeCRA9TVsSAnZWagAACv4QAJYPb6zgCxP5kbjto7DV\nIPJ8YcjShHW1DqACzBYqbANL3S6B5DWW67zSHALyIoEdPRKUqYsYJ3zAGiFt\nldwcJ4SLiGHOznT1rwSfY08EMMfrQUXCuXBnO5WtiQ7ezC8OvtK8jhGiaTQ/\nDt0JtN8uf52212KZV1EFPjg0xL7q7N918x3lfSeo9hyBs+eVhG8HOoAf4608\ny0OBIyrM/4rpUuO+iWOOxDab0/Ordze4UreRzTe/i8jM0/Iw+hcSOaii/TQv\nDx0NuXItlwuGUJ+CZh8C1QLk5it410Kpy5GyAtC/rf09xCI8863zUnykXMhc\nfr/h1Z0he1M/1QG5OEcYHNaq2bFZ5+VGXqQ+ICNMyxkl7Ra4ZwhDU5yDp0nG\nEILxKRBFrJ6vYn1RvJG+wp5bXioS0H7Syz5pRbV0vk0RoAVeer5wwabyNqYg\nI7rFWD/t4mAFOjsp11/Vs8NTdHbWIRGQq1bnKTGZB+sOSF2XMhM8cO8fKlQJ\nEektkrNYaENPyAvzERnzojf7wujq4qVnuRmxKzgW4+/3tJRM2jEFaE7dA/r7\noHUR4JRQaO3Vl74WqzZl2tC5c76B6Mz3pA82Ou0LGrZPItFY5Tqd8pJZUKOo\nLfLjfOLaEXt3i9V/LwZDKRaDivOayQ02FUTTDhe7AnADBWFBGHf+2xgjGqv/\ncN9M\r\n=w2Wg\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQCJrBYJwDH7tHNDzR8IR8lJ7el1azWrUu7W7cGNOCOFIQIhAKxW+6edUEA2mwa3Pm35mzJt+Ps3AkYppFR9VfJMjzPY"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.1_1563195613989_0.2621294655682376"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.2": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.2",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.2",
+				"to-property-key-x": "^3.0.3"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.3",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "f82d23629225b0289d30317fa7b9336525a6abcf",
+			"_id": "property-is-enumerable-x@2.0.2",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-z7FFkxybiqNbst53yL0vcysv1rH0D54mt28TwNM0zlyIqfYUIyLnUxTXkjgzlH01r8HLOPQZKhIYp4tz9DeXkQ==",
+				"shasum": "ee688dab3ab130014d63919b43053aa532fe7554",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.2.tgz",
+				"fileCount": 10,
+				"unpackedSize": 152904,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLaxyCRA9TVsSAnZWagAAwQUP/3/dQQEUPUXEnZfUjRUf\n6UEh4prHNZLIXsVSwr+U9wqAsjKiahe1x8CWU/MxNV/2jHdBFw+/mbxVI8At\nvkufA+fgIKjC+djMgimqMu6VMpA8IG0Y4uaX+MqQrVQZTht5VXMZ1ppMDidI\n8PVLrSfhO9Qdh0GTzrdhnVr1c6Ff8VCgWO9IMjtp9wMdRpY0BqK2E8wkyZ6W\nA5RaO01w/VVeoRiDjzS3gcepaUKK4DBrRz44vXXico1baHkk40X16l0ocUXQ\nenF9YC7DUPM0VT90SmOvlz19yfBAQ8mGQby633oMej71+Mccao6OBQQmS0Xk\nePhTxTFYR2sut3kotmPa5ucnUW5qwHkNZa7BVTC8S+otEShr9A3rOvLZdXGd\n3A2Ul6a4XRhKvDpdIE9BTA0vTUZtSBAgFJXhadXIxmqYyVKL1ARH0usLJC2y\nnOZqriyTA8ehz3RYjgzwVEtsoA5x70u7AUvyROp6NGE2h4R60mvBwo2NdujP\n7J8s8d+WnEbMRDoUBvNuW313N65dwrUbUcaXAVEzuHhgcr+9qzHCcwE5v7fl\nGBPo35O2CMzgIzmtSObKsWJvppxvJSPV537RHrDFwbvpsUEZh/4Ip/Tf2R5b\nORFTwc4JvtY9EtKwhOYNJC5vs7ADSsx83uRIR5bEJDgpsNDjbssfnhLivIDS\ne10K\r\n=VVHs\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCnopD22w0k4nxoP4LgrCJERMVie86I2UDYnmeLEsJs4wIgXWgwF8M7NdZcT9PPmM1uvJN5laN07U//+EJCyghmwLQ="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.2_1563274353789_0.5483640781241026"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.3": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.3",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.3",
+				"to-property-key-x": "^3.0.4"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.3",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "2dc463c3eea2b79bc3dbb902cb019113295f7ebb",
+			"_id": "property-is-enumerable-x@2.0.3",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-1TJB7y25NlNZpv4JVAvgECQQbJZ1ay/3qcoON8KiAncXc1VKEzJTOuS1MMtwFRHduVqUZU+Y7FGl/EJjA6ej2g==",
+				"shasum": "25459fe8e94fc5ec49e564fb830402db2c516ad4",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.3.tgz",
+				"fileCount": 10,
+				"unpackedSize": 152904,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLcO8CRA9TVsSAnZWagAARtkP/jroL7aQKHHnX4mQrMJV\nH7srQbN/dOeND4Sav7frzArNGKlb2D+r/NGFiLg+7pKF6dtEftxB5Vz5yc8k\nZmhT/+3pbR19WMXp9y0hVsw2jG4CMCMKM8quigN79hOxaySBip1iBoeWZ05+\nxD0UTUCc0xhnP+63XBoBnpdBcn/ZFbWfiB9Mjt9w6SaazzAiSag7lPa0kTVc\nSFiv6nrqO3J4wVf3MgCVQBfbSsXD4K2QMu3HO1aE1pCzNyKykJTXMC8BnLI7\nQwYQ/ybHVbP7Tv5gydOAvweglPUoZTx912vf3BfE+slqcc+DKDcbNpruiC9H\nolWAbuR66hbIpWRvscaEPQjKB8NgujqTyhdRRwfbaTALy+5prG59Dt9PvSOB\nTUv+AmKqZPXH7EFZVJs/sNF2sm9cDgPb1T8Ctiy/S23YiIlPYyShFuQudlzU\nWesYempTnyuoZ2d22/vYyHrfPVef4Auef1Y+LNp7x7zMl4EtLujkWoj6uZTU\n99EwqWGNjH065uI++odJGpFJwFAjtorvPFqRGPNeOREam6ADX9FDXDxnxBIi\n4gtt2PbOuGPIzZeH4BoCG3mowwFlCuD5UMVJAu2I9ps33wQAJ7JMjswwQa2g\neJDE0Cd7X1xUnFNqDYgMeTnv/ai6b58hYwQK8RUKUnaGatS5e4U2MS4toavl\n9lzw\r\n=s/li\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIHC/AlHNSLRcHKpwMAC/qVCTdrQvVyXAgPqhdAx8mxDmAiEAy+UbhdLMBJyGAqVQ5aSc3OFR1Sy17KTr6CqBtq4mAQw="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.3_1563280316345_0.7621948482785712"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.4": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.4",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.4",
+				"to-property-key-x": "^3.0.5"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.3",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.2.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.7.2",
+				"eslint-plugin-jsdoc": "^15.3.5",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.35.3",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "d910c8162184a5e35a6fa4b2094514010f4a1768",
+			"_id": "property-is-enumerable-x@2.0.4",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-47vOIXbFuCkrfNcR9BKH8Ib3/nEMtPYvv2gfUmS0kviJ7L2qRGz1yPKhdpFcr2ZcM94XfXzpsGefQpWJ2OleWg==",
+				"shasum": "5c545cd5db6f91d36b678f2d012b6f3953aa3013",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.4.tgz",
+				"fileCount": 10,
+				"unpackedSize": 152904,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdLkRsCRA9TVsSAnZWagAAtTkP/jGfE893XUjjH5M0uZNa\ni72R5wmWayUoXpjnVB0AOELy4PbCCzVEyIZzUYbuI91rWiUiJBfvGnwvYkQw\nm1OAC30wto4f0/YvDJMWWIuH1tcREk8JxV/WMPi6X7bp9nnez5iAf0h/DgYU\nTOAxQY7qpsS71nB5B9HoRljqIbwM2UWWbe8BvAssbFykatEdhefs1ARf5zrN\njAC8nkeRKNDUAl98YPpTlCbuUYawaZWc4VcCPetAK1ZPEHwGJuIgVVGjmIs3\n2iLy/mZ/MSo8CXb8zbZ6ojpvmGqHGt+khmTmZfHx590xCkmtOn9EZMklNpwz\nP05ZPWGgVSEnYvyC2M6lNU84ENIkgDFdN2r+/IQV7qs1MQ7MtvU6+JjAfZ0C\nkaN9djeMMkVPlccOHpyUH8pwZ2Z8S8qHiWCFwR4Ttl6Lp8R9gsOLAgAcmutY\nQBLMoTNo/cAqnSnj1eZkwEr/jdHyKEUw4Rqv/QqjqTN9vKBOcNzd+XdenOLd\nDt3XwVSZdqsTrrTsOlu6DS0tLwTbja+FER9EKPdbccbHOXm9NExKrppxOE/f\nY/melWDEfyUhejTlxuRr1bFI59KgZLUaDTJsRSeVdf9LgUnfPkJp3NvwnTPv\ncv6viZX2D+6uSfF3qnHESzGSkxAfCVi93i7itLBMvaWUSNJq1rJbvLQeqJ2k\nvfbh\r\n=LbgH\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDtmn2nP8KdCV+6BPGUGVuOu2hMn/EIIti629enV3uiigIgH0FZT8gl0QG6rN1Lr2IkpDKBw4GRREYiOlfv5uGQdFo="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.4_1563313259465_0.15471124281082416"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.5": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.5",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.5",
+				"to-property-key-x": "^3.0.6"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.6",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.9.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "295fc5d1b5b6ffbbb0960e2c761609190d94255b",
+			"_id": "property-is-enumerable-x@2.0.5",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-tOxemlSqSNMQEuxZVqhZERoSFOW77RyT9brgcU8FawkA/b2yWPGqGl9k5ZOL1uAg22pg9mann2bmpTctKMIayA==",
+				"shasum": "ea7ef8fcff082907c1d47e185c228dfcb3b41378",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.5.tgz",
+				"fileCount": 10,
+				"unpackedSize": 156448,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdL1V0CRA9TVsSAnZWagAASjoP/RzxN2z/2AfsDUTxp7Hb\nUYWgs98cBSmu/hz2cStf8A9GwansTqkCzD0l8PA2sBIceev0OUhKyxqVFppG\nw1uBc5x31eQifoJuxAveMoiofiqXLNOxCyADB/7pkvm6wqEa7VobR43BQS+l\nvrpJzEexxETDDq1KCcWiU1CjkUbQO8uPqMqISuRvF/st++KjRF69UcuA2SO1\n8KC2juQroN3MpwbiUMTx+hLY7RqINnT8ZxJLCFoYc5E8n+5rSop++ZwUnsps\nmr1mco/EveoH7eA3quXQyxKS9O0H35x6+SOmD1nyW+TSfpYQMw8SrS07AjU/\nsNw9STcJHtiPCT0mn6DuJdV3Cdwg+aq/piwXkc1UUqco4HDtXmHaL4aSVjku\nmdBri9dEIKmM48krz1GYcPRPUgBhWrxjOfvUDaK6iHQZwG4vSGESxEJAyYgP\nnhO0vuu+iSupfZV38nHLlcGJkRTFW4WRf8p0N/3Plh6UXMgJL9OJW5XGjEio\nXkZNyHpxMaIFBYwk33kgj8f4I+kvR3HAG2mSHpJ7v6OEEWskhReP5qoxhTmT\nu+UdIyIf8uSrv1mmWTP39PnTk1pn0wtiY32iIl2NeRkafTLEX7D18u9UNcpV\nrHUsCc8a9Uy+ny6TO3UboHvE4oIlsnTsc14Zi+qMqGq+lTIXhdUmfaUemttj\nTVTg\r\n=KFkQ\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQD+rWsW7jEd/otbXAn2POgSG2+/qd4MXeBeu1C/kJjuggIgekOElohoVyrukgsd2cleDMzuL5VnP3zV/XWHUidLL/o="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.5_1563383155857_0.6987255734929216"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.6": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.6",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.6",
+				"to-property-key-x": "^3.0.7"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.6",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.6",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.9.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "9976ebf024378e0d53637a040ca15032a3ae827a",
+			"_id": "property-is-enumerable-x@2.0.6",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-Mb6Zvt9kfrBlG0D4yDrqKVkEEATpPrsK7fm+yPGOib0LbuqcwSd4ZKiXMBydYzw5cWaK4JombL/Zda1fmUQ4zg==",
+				"shasum": "b62975a71cdd43a0faacfdeb91553389e4102a2f",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.6.tgz",
+				"fileCount": 10,
+				"unpackedSize": 156448,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdL1zQCRA9TVsSAnZWagAA/GsP/0q0ieqlyDOM9xwdOdMZ\n2V3XWnUI4fbu3GH40MQFZTBbLQPFF7THpyMMbI98tYPhibVbfY9Afuvc/TBT\nxoJLDeRE7EtWU8VYtj48W+k/UdIzpMj5WXZljFHZ0cx3t+RQFNFI7ovkB3A/\n5lboAgJ2vnWBllwQaNzG49fSGbEX/+nOC0goCvA3AFlOhUyX88EDVOSMvBw8\nNfpjdGmUjqm8HyfHW76sU4m9wId//yZ+VNgZQ290uPV3nhWHgBMILn73y7Kh\n8juJ6/sbhMl69uQBsQx76/Fpf9os8hlcN6s0CJhchBaKpZl4kU9gMUWV4MYr\nLS1459t9ISiDDStFF1+OvSiKCbwD5m4GZdeGvAQCdMVhstor6GTtXBW2nhSA\n3puib4rHtxiP/jv5lGI9DWPutG0ojCna+IWa+tRLKszN/LRiSMlfGKdyXJTu\n93QLVe/xgMJ/xdkF0zY5mrfDCExOpOzN7fsrN5kcWTWS+QwlRLbMy0+lV9ox\n/oouOF7xCejJpfZDQEBt2dzjvwyYnWOI2wVEf73I+fbLVhwkvrT8FISPrgQI\nweE4SlSMjXhlk1NbBWTSeE+2JImu20bDmyWAvQsDgy/fiSAYrnytyQAnhNL4\nH8zK7M0FaSs7Qdr/NKa1tO1PeynUDYcFrAY6Vg9Qb5eQ+AczzZGVSp3290yx\nAeig\r\n=2SZj\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCYpDUSOqC/2KM2ClvSaQoTFuSOPqYaj4oDI+pbb8IjuQIgKgAfqsrKtVn+9WD8rDZWVTRL++dYfDlYKrSrO6xt9hc="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.6_1563385039928_0.7351694859518478"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.7": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.7",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.7",
+				"to-property-key-x": "^3.0.8"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.0",
+				"@babel/core": "^7.5.4",
+				"@babel/node": "^7.5.0",
+				"@babel/plugin-proposal-class-properties": "^7.5.0",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.0",
+				"@babel/preset-env": "^7.5.4",
+				"@babel/runtime": "^7.5.4",
+				"@prorenata/eslint-config-vue": "^1.13.7",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.6",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.10.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "98cf3ec22dec4349e635bf7664da1fe719f50df7",
+			"_id": "property-is-enumerable-x@2.0.7",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-DZFL7ITp1rYeqNJn8+BJfoDhR40cpjoB5bte2QLbzZFCtyHZJo7FLiVtk/qv9MSlGCBmvgmedeO3LWNIraVyDA==",
+				"shasum": "be651f68e072d54d5d0e701b0cc6b4759193a070",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.7.tgz",
+				"fileCount": 10,
+				"unpackedSize": 156449,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdL2yECRA9TVsSAnZWagAASi4P/jccgoUtTnCK5aqpmSYM\nc6lciG004igZNfGRa6dxBOIZDuNO4Wl8QwecGRGVZgVyy1Ig9gnvfr3ritez\n5Z4Exnv+5KRL6fWhn7CPxj4UGUAG/uyGd8doflWHd9HUWOUYEQcdMQhZtoFo\nJX1cqsQdag4iZct0tjt7QKdFj1mfN/2wVNU1h0ZndJlewUtjho7y7tHmsE/q\nWZ9IpUEr5TAIRiLwFLhL8CYY6e9TyLX00GQmIcWu00pOVDrGu67FXuBe74N7\ngYpGTpmQKa4RFhSJe+mfRkDDXyx+DtekD1Qu0xdOk1HGsoznV1B4duvzy7KS\nJn3JGevfRiqY7W9hiSbkOyFrmvmMEp9Ishl4wVVAnPVezjNnLQFWP7SigP0O\niwHjDgWWPi+e5dKDb+EjDdAYRwbsjOWpM988Cw54RqvR+Ulr+YZyCE6sn02G\nlfzW10oFdGzxHSpmdvulVTTx3qAEGuksuNUlv0cA80JdDekvzxF58UxtbZnv\n5cVB/NAA9GDwfsHPUnOlukEkO1lnGzIWIR/n2SbWYH9Rx8cSDQlDd+9cMvwW\niF9LhjW1qJXuwuEkoxdiqYr1fWB1U5bh7m0ozRMjgs6uw4l662zN3C5IizUH\nbYUtME5wqQuG+krc1kMbW0GE/rA2mL7YAnfDZ2cijm3iWGYzo6zpvoR6E0f/\noDwm\r\n=Ego3\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCsoWrtfpfxt53mp/lo2LPMS4nhedD9kQtMxHVEAtUm/AIgW0QlFqHxHH42ijuKJif4iXufn2pRXQYV+ySO3OCN55A="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.7_1563389059362_0.32615421033333525"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.8": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.8",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.8",
+				"to-property-key-x": "^3.0.9"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.7",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.10.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "50a737e576cf54ea7f746bd9e8ab2a0e8508a599",
+			"_id": "property-is-enumerable-x@2.0.8",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-mxdE0cbynjXXMhyWutSvTfzaIvfo8CasU95vu3nVnHGLmQQqlNH/lvK24D7IpSg740uhyWqAwniHw9cNUWNYLw==",
+				"shasum": "df63a4b10ced99feac2ea930f0fbbf5e96244023",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.8.tgz",
+				"fileCount": 10,
+				"unpackedSize": 156449,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdL7VSCRA9TVsSAnZWagAAZ1QQAJscPKXX0FBFlorOfrnN\n/4sbQR3X7uq8997bzy5wI6GYDsAnOPRv5NibnA9U9RxhifTzAFF52RKNY85/\n/qsfGY1YFXqhAMIF6jl5y2txQY4RgltUj/U1kaNwT6ahYSCs8XGB5SSnURRO\nRDop78KxynRR/MiBCSh8yufAaEqcipKVglid3O+JIsKc7vvCfnmrsQsPcMzk\npsfqMlqYqSPxkHdhVA+UHepBLJdqLsAV5VGGgHKl+6Soi2SSUSL72qE6ZOOr\n0Sd8gv5AHER9tKuQQ3AOSkbFUwGBPRe3iHVJVXtsJRtIJLc7CuaZ/M9mcNLB\nWo3BV/xjNGTz+ANJIRs5rrQI0XKi5DeazQg/6iIXDq56NaW8F3cjjHkkZYYY\n7qBcvnyEIJxAbMBT4dcDCDTJlDvP9swq/2Zer3y0/MPta4wwLyRAJzrljeiP\nixbnkPdre+IVWO1M3IJ9F3Eau1bAO9ULbeNCh3JSQ5nny5PCBOPuCxwrE86x\n7pZl7esoM3i5VbrkjN5PU1+/2sT215kElhAiTxHSmUrItWP9hQn8fARcjjM3\n7MXpJhjHlVIRUH7TS98AgbdWJjOkMZuz1pXnnlIYRn5x+ns+M7uhrGZ3rbeF\nrdeRpd2aGPC15zXQaRM6IbgFBpE5Cs2wpoebXu4e7tHIxK7Servd5SsMMdjV\n6HtT\r\n=zvPB\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCimai5sSHobqZt+vZlUeb8SgfPnVoOIfWN8pjDqcRspgIgT4FkWLHQUhkSolyjmcUUZs0avegH4b5076mg/BYTOlA="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.8_1563407697912_0.1841268273020502"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.9": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.9",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.10",
+				"to-property-key-x": "^3.0.10"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.7",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.10.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "b89c10dd691bd1544b151f1e2d41e0b0414c9e5e",
+			"_id": "property-is-enumerable-x@2.0.9",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-Zlq90NUmUb+XIRR6rKCjrAbtS5HnhKNGrOJ3MC/mmKeN/CqDdy2ISOXR4jzBLbJ/aC7eEszjjKWc9fERK/vwMw==",
+				"shasum": "4879012eb9ebff50ddb5c52df972a2ea385b6175",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.9.tgz",
+				"fileCount": 10,
+				"unpackedSize": 156451,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdML7mCRA9TVsSAnZWagAAXvEP/iAbKzj3bxkfntC/cT0Z\nGB3mZoV8WCB2iFFrqkRp43Tz0Ecl2YrGh+zHStQopGYx0rT+BiMwUDIDinFm\nFwwZ2rWWus/mw5eM6PCrS3Y8c5qmEfijW/RlVHkTwZ6vGN9fB7To77Q0z9Gf\nYX+PCUkemTd39rF08xrk2CaqpUMaFXUEFHy7Rj92IrI0EWLYRKlnbvUx+JYf\nxo8dnXY8bPYmo6wqBIa/ha7pwaK4+/uAXur1+HU5NeNAJ1Tf+DpTEj5uWT1A\n6HNXNhlpK2XzsGTUQmUKn7pdPSLoRQm+uXEhkE+vE8Za6/tzYo/HQa8d1b5h\ngHzkVAq75YKH2mH2qOwlLwNxlZvynIwpVxTH8FLjpAE1Sc0y2Eu1OSrjXWi9\nt6V66OC3s88l/59Ch5EH2hIk2YTxBPbxM8wzfe3j+txpZ4a4BBNEnnaQcaAw\nyrvfD6UEJ1dKUqEOnZt4J4ChasQnyEnfawsD4LXpTAviYLqdNn9MCfPU5ik+\nk2Gdw5m3jEjK9Xs4vWac6pgntSQExxmOUCZVlJGJYSk5Ditbcag2TAG4qiF9\nZbNGu34FWs8UMsFWDkMkp8dL63knxeok9TpqwMav+UZQ3q5YA8rKXBpaQrFF\n2EK9j9kNDEW2sKCrtWlinSmOHTu2/GYW6U1r5GWjCNNnPtxoQNCFlotntQ8Z\nqWqQ\r\n=muk3\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIHEmUno8Cj6mQYUDi6SpvVnL3GbLoPR8niQFLdznlS8TAiEA4Mc6Qi2naRJYtdQIpOIe5b/jyPSkZHb6hIjO55UJ7yw="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.9_1563475685218_0.8298070427555255"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.10": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.10",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.11",
+				"to-property-key-x": "^3.0.11"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.7",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000984",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.0",
+				"eslint-plugin-jest": "^22.10.0",
+				"eslint-plugin-jsdoc": "^15.5.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.14",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "659d12169a13c1ba49582a2947dbf97bb5d335a2",
+			"_id": "property-is-enumerable-x@2.0.10",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-t193BYana0cqV8ehbioZXLwtoRMQbhqxBEBD6t6Lr4cOeDU8j3okUvsLWhYmtp+jRYrxeOJ/xa+b4SP7gyHd2g==",
+				"shasum": "cfb42fe85e614a38a653122d29c33273f0e27478",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.10.tgz",
+				"fileCount": 10,
+				"unpackedSize": 156454,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdMjyxCRA9TVsSAnZWagAAk5AP/0C/4sW00crpQzNs26uf\nt7XSAXUgG4+vNu1KQgQzRTojvJpd1MsxOL5mFJ+ijVi0tllu9ai+JFW4/N0R\ncMcVSiFdYidlci+rwsCK+fM8KanpT1+T+oi/Bw0ohwGU/a5R2lnZlIqnx9Wt\nyJYG0frmAbaAxmA+kCmdd83adtd/OX+nxOfQzdLuliQzun/rPaxZr9cGRSIo\nizGCvjLiQ+9wlYnVv79D5BaiTsJkOvr5Nn/nMpOP6IEzu25KZYa6hK7CNHk3\n4kxRG3bNwfa1PnwdRHvg3CZqwnteVkNMsCxz+YKgs7PgwnaoswoX1T9zaEIv\nhtBVDUhjZMjZfnw8xFZkINapdURJYKzV8x21cXO8hMuKc8hoNPrnUfGNt/U4\nXvTOuYoYywUQ+xBFvnN1ErIaPznQ71B8A4hX+nQybAp/kaVqT1q20LKPEfeg\nk/Li6AOoVGJQsCy38bVPOGELDGYz3P2Tshash53B9SbY6R9HX2hbzWvdcAeR\nEUvKJSJr6sx+ML2qRxgPIcdK4q/wWEF2aBkY0dukXTu2rNSgy9pZ7RIThwPf\nL6xUpypRKV9+OwBiqJEFJQdXhBERTyZFY4wdB1ZB1uTIy9xrZyOtE5ap7ayb\n/5Ww+NsKhZ2L8SpEf1U1Isl0zVmRTpXU6O1k6u1I2U+DK3DaAnV/3zryOJzh\nwlMG\r\n=gLDu\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCICmamDDj/cVfayyd/fzZehIdaFBBFqG3rcB+OW5SzDLjAiEAwGoRgXEkwm6ri19epoaJVvBlNG2ao9tx7FQIfxFNvjs="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.10_1563573424787_0.4385260641197446"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.11": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.11",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.12",
+				"to-property-key-x": "^3.0.12"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.9",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.0",
+				"eslint-plugin-jsdoc": "^15.6.0",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.4.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "8ed4c8e7fa3377ee735acb38bfd84e7994609d07",
+			"_id": "property-is-enumerable-x@2.0.11",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-PI/6ZaqguA0KGBQDPr4ALcQ04PJL58IhucfuEbIFuJBw5UKmK1xKxe82PuyUnNNMZa7/LpyUyCLm5qjbiJe5hQ==",
+				"shasum": "e9a6f22a1d96a02e3a1a70163ce52ce663d0b428",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.11.tgz",
+				"fileCount": 10,
+				"unpackedSize": 156482,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdNOrxCRA9TVsSAnZWagAArOEP/1nWDp/Jf3Umlg0bUiAY\nMEUnokoBj/70Ma/NDXiAE90y1xYAK/o8nqFQF5M/Hel7O4Qr7HC54DXaP8Rb\n111TPBX4uOzSOge/BaVdrOw7+rp34AC6qxhT1ld7TDSwK1SKDt91FGXZzp2Z\nCfSOOgYRg+YrhkK+aZob2kmJ2v2Lcj/6fBygbNG4Ue+Z+e02eMtK+K+l1UE0\nF22/LJuPj8EWf7YP/90FZ01Q6ZYlNwDaN/hy7YbtTA20ctmNrMEcGOG0IGHs\n+pnfROcGrq81f7RRuRY/VLKnXYF+P5uX5rnroGmrOQw9IWbVyRll7U/JDBQa\nKM2ssAMDRRLWOaVS+HF6K/uFXFuCGQNdTeccbA+gBmbFn1iQCcD2OYELpoCc\nhvEqFi2o6hqHP5Ac27VHfF5VgN8p1YfeO62QSDabH2Ge6Ww2dkGxOvSHDnSN\nRAZUaaMmcoq3anTeTZ8TW5yf4PSD4p/3iZr6tDbYGIU8SLhBDEu2kbcayHDH\n0qkxQP6U0IjvcqAvaA5wIvdnTp/UeBWZESTMCgZG/DDJ8W4BYgxF9PrINUl4\noq3om3M+svSELeq/gN3A9plfZUZ/dEJWu3Pf6c4mOlV8lKHcG5OWFNRgPfEz\nXc3u93Yg5zmcMg97V+nAUSBO74l7dTdGIv+1ExydGvklpuGzrlMag8UcQp2E\nKzWW\r\n=CQAh\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDz/HaQ4gzXPwh5+Jo9ADpcBDm6stYuQADSS5+0w3Xy0gIhAJ3QcvSUdiqJNUl98hSF8jMDHz36iqacyHxqlIoLLnBS"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.11_1563749104979_0.859678058850385"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.12": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.12",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.13",
+				"to-property-key-x": "^3.0.13"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.10",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.0",
+				"eslint-plugin-jsdoc": "^15.6.1",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.2.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.36.1",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "8e78437ebaf531e9b2c9b2fbd583d91ce7f8fa83",
+			"_id": "property-is-enumerable-x@2.0.12",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-QDqnckTL8AzgyAdXoYKpPtpETMTsoLsUV8GBoyen2yazxa8MPbv5rrxNBGLLAghsml36mG10tRk0fd68EEU2zA==",
+				"shasum": "8bee6bd40a833909c52c0f4bfc4a95abcac2347b",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.12.tgz",
+				"fileCount": 10,
+				"unpackedSize": 156484,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdNa9gCRA9TVsSAnZWagAA3KEP/1uiRPVs6rgcua5DMiTa\nCLtRhHLNBz2Y52X8KtD+DCfGmmFFCJ+hdmZo1mbN0kpC2DglIgE9s+5cXax6\ncCsXwcmFN52bzR3o03m/SgW7Sdiq6qEx8PZqsHm6dtn8M8lQnXoCdT1VTasK\nXjvF9OChzcT1hJ8AvpVQyTZUlA7dr4H6141+dFuoqvYNOd9HXovvK29luWcR\nyuhO4tBJ4kMmxfeooSORHGlFPxnX2QQqmj1fKxpLKur7RK6VY+DSLRaUm2vk\ngn5QigMGhArQt9IZemqm7clZIVYNoe5WExcdAUkBG8Pzl48sObIzPq6WZIN3\nG+/5genCVvOyHf2RV8vflZACigs2XyFYKRWtgJEiVMJvkW2eLJCr9Ia7ls0H\nkCLp8iLeny5J0IPx+317GlQruHBICgovsJJn+49PHBYDpR0+LXc7dvDQBau7\nfuajMBCJoJooEL1rQOa6XQLbeJPMND3exBLxwq0ccATNPrBW/AMt4j7KMWpU\nc/k4lpTcoVuoYvyLmmo8guBTYKWVyG3FAxE7v8ipv8D9pOW/WbvsdhhwFijF\nEVJGSD/eV1c8HDHZe66QSuyrpCbZ793vYWQZqHKYbGGfRSPDEqzm5Esso+U3\nU9SdxEIlB+74wxLTaOFniCZgrHJYlQ0szHBU37Sli016yl3zG3J3EXwKapP7\nPGz1\r\n=jolh\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHDdp2mTbCOwOGUufwfnUerBEje/ahyX8F3l5djPqQ0yAiBCeGaSuf14gV/CbWneNvYQ9RiU9ZIPgbG9vY4nPL+QkA=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.12_1563799391946_0.5077508086106857"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.13": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.13",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.14",
+				"to-property-key-x": "^3.0.14"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.11",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.6",
+				"eslint-plugin-jsdoc": "^15.7.1",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.37.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "bd16e0d0b184a5cbcb4e6f9eec91db682d6534eb",
+			"_id": "property-is-enumerable-x@2.0.13",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-PiUaysV82zRefCvagAOfjK+2AR+7qfWZWtn+pxVkiMEI6XaZUhjUZIjXjcGtT7kpozPuykeUnovsR78FCbJjzA==",
+				"shasum": "442833ffc435684569c559c639c04771fb4ae96f",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.13.tgz",
+				"fileCount": 10,
+				"unpackedSize": 149220,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdN6VHCRA9TVsSAnZWagAAkGkQAJJHXmnEfPLgN09NYDwh\nMetMn7w+GwoURolG+UP7InVp3HyqhFLqqll6ImUFklTEuXo62D1x3k3Es/ri\nMQzkcTnTUsp5lnjZLT32iq8yk8xw9SPbPLcMCTBRhSjYXjIBrLAXcR917ZN+\nARCVqzidiJElaWiI7FwAkzFrCCiOa1Ns+ySSlZOEfqB5ZuV3Vi42P33OkUBb\nJDpo9zs3/lKYMzSVuofM7a/PabawCn/sTo3CUtLX78A5HFkPp8YHZYyLjz/n\ndMW9lZx9l7228R7AANwax8v+kACfAUpE+n9xk7+VQo87xlHZswREauPHdUkS\nh87n6JVu3iMCVcvuI5Z3XfXh7+uEdegSgrdGhHRGmbqgFPlH24hYa63Y2h9N\nrck+7znx4NN9/+8RL1XWakSu2MuqFFSVD6dl6Of7SEUAYOgCbCvSdX7J7q81\n2bP1HlWPwG0CbBAgkbkCFEwQC+2f9pNQRDsM9rrdqewmwcyx8i/xg2UPnvCm\nTmw2SxcGowYYvl+SAxB8x62NazTcVi/W9AXLzalPXLGaCtdXqohkXbQU0O7C\nlQVo8usG+0EVWg2Uok0qNt6zymSMmgcyAWvzHfMm1M9GcUt4rKVgVf+6htR2\nfbm0FIhwFxBcI8E0h5c7W69N8p5qWqu2kFYUfSDoLCUZL81UK92Fhbeh5SuN\nMCN+\r\n=DO6v\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQCDBmrbj7VnwFmMJkOEVywC4D3IwWU5gk3LV94uhzihAQIhAPh/l1OlJPF/92O/YCwU2Nnr3U641WPDcy1z36XYRvpp"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.13_1563927878470_0.502525139542243"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.14": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.14",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"jsdelivr": "dist/property-is-enumerable-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.16",
+				"to-property-key-x": "^3.0.15"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.11",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.6",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.37.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "74955f4b27c3bb7c1a1db536f2cbfb7eeb0d0916",
+			"_id": "property-is-enumerable-x@2.0.14",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-974THQETdudRJFmCcfOfSMfSxJU+FqOePcQ6FJoHlyifzaRLFlTemmV4X+B0ADSMnQu89BlNPwB6uMSBsedSUQ==",
+				"shasum": "78f11a15f097b7275a7328f9a432de6c64c44fa6",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.14.tgz",
+				"fileCount": 10,
+				"unpackedSize": 149498,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdOIfICRA9TVsSAnZWagAAYiwP/iS2oYrJuApfPsFEUzdQ\nXzo/gJDantOCNeAiwQo19JMt88c9LexqJCRvdY+5zrbvFdNWR+VlKBH4CE2d\nqBTfRLzuHbOeCxeGAjuPIjQBrVGOrXOE+pVMz26Pr4xlJ/nUnGXIsPiaRqb5\nLoJDlfN85XWWXNyFDQFGSaSrFuTIs8I/sDtZ8hTovA5xDAlnhTrMmBHwPlRX\nwEWVi9BQTa+C/Pb5FEfgKLliLSouDyUXbIBItEj7sBKQ7/4FPV3p04ktUsX4\nT2NyUmx229FBNUP3jGlL0dcz3WUPpWveAekv4KoDf2PDI1jZSFnyInqaIuVi\nQ9aNvGMdMrtRhp1rj8PEgu3lK9BkTYdpH+Vepr9xcRSgCsyyuOBXk4BlF88Z\nwCkNS5tB7g6RQSW1GP9+lb6gXLMMCZDqA4JkiWhIP3LWub327yr0uzVGGlEl\nWucf7RyptoyP5M/Lb/XIe347BXBDDValiLLpbFzOf1+b9LhOA4gxsQ1hOiZe\n48ON7GdiDazwHF+sD+tR/ykwsnUvYVgWl8ORqQwNjdHed6kMg4em4CNGPgKp\n0euCvtMOh+fxNUudzWSHG0sF/ddNqMaY0AfbW4ZAZ/H3H775KZnep3R4L5av\nIBtXonHsr0hh10ocecE4hLMuw6p1qPjju5saw2TFM2v2Hc6vryPSYnX+3vZU\nyzu6\r\n=u4l/\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCICMJA0DeHNQ0/8BHTEZqlvYwpl1zC0jfk0YxOKCtYyOJAiEAuRyxL403xgmzUWsGWQa9vBCKBdyljMJhX7O/dzXWzfI="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.14_1563985864026_0.8030214541640852"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.15": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.15",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"jsdelivr": "dist/property-is-enumerable-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.17",
+				"to-property-key-x": "^3.0.16"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.12",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.6",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.37.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "3d6d2887a302e56f9a9467a4e3c5371025a46a4b",
+			"_id": "property-is-enumerable-x@2.0.15",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-dxvC7VdakrraRLFQE3p1I10nkN+oHVd19Jq9ap73QM/BAWkNvC/fXz+NMGVWgpF/yjGmnABV1ta/1dYc3AqGjg==",
+				"shasum": "cfc840e2ba2e47e4a849b4cb406a7cc3af5056a3",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.15.tgz",
+				"fileCount": 10,
+				"unpackedSize": 149498,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdOieKCRA9TVsSAnZWagAA2bsP/iKwSBAbc7tbYhcysrHn\nPwcFR0KLwDxdLubQM0t9a5OgeOU29xl9mxjGdR34BQrIu79C5UOR/qRc7NUi\nCEuVDluPx6O6HW9y+bPzxP2qnwp9hCTV2yip0b2TnGw7YbaM2lK+KqOJMHMe\n87bfBAozkSKWJHQo+emUdwtOi3vzJhvAlS5jFde3TznM6SMb+RhitbcAPTdE\nM59rhtw9hc7BumpaJEdSWtzM4hbZyjMFsidyKeRkVWRnIzBzE50g4Q7mtBx3\nn7UUvIhcmsOIaX4hgU5Bma6OraZyH2nkEDYC4NzlKoeC1NjxPGmADkT8Vw7b\nQ1knpGuTIpOo5mYS/zh/XqMpWoQHHfzxQd30RY6H1FgN8Rl+kvggSV4lKeBv\n3LE0Dm5OqgDnb7e98N1ObIrSiwPhPxWwfpF31xd9VTpw0Yz3tdIB2+p1pPfh\n8LbAcMHLjbXx2BNEdo2LJC0PkbTD9TlmHCYcbPhXqWQNX2/C6xRfWnKdbEr2\nTmSUBx2eAwvJETAWXHo8GfjY2e5DdOfIjI0b5udmSJc5m1LgFDJdJuNm2tCP\nt23kIiRgwSRyhh4CDAn/v9NRsDV1RcdfDqGGkG0ciVWOkUM9WOhGgNCdxPcH\nCmi4HwVP6sYgOC34L2hpgVLaW4p8AO1KIXOG6CF7DEX0cblBJvX9yAs9CN1w\nXPVY\r\n=hfEo\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHWhllYoUhCApbea3RBaH79nt69oY5gOir2NnGz5sc7ZAiBq5GmDRFyWd88rqXGO+ZGb9qO+EFymiNwmkEoSPCMyHg=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.15_1564092298205_0.6044287256797607"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.16": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.16",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"jsdelivr": "dist/property-is-enumerable-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.18",
+				"to-property-key-x": "^3.0.17"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.12",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.13.7",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.38.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "4b586daf02c86b31453339fb918e3c146c44ea45",
+			"_id": "property-is-enumerable-x@2.0.16",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-Wv45+J4hd/CnYNbrvT8EOQmARg96oirpqXtZbY5ioVjC1ygK2QylvSGAEizoAVKjzG6mfoMI/FCyfRq+xlV4ZQ==",
+				"shasum": "e4e5040625ad8b2253b9c217d8b90ca6f83773ec",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.16.tgz",
+				"fileCount": 10,
+				"unpackedSize": 149759,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdOwtICRA9TVsSAnZWagAA394P/iLluUrBBTz/NkeNf6ct\nONMyiXEQqYfuZ6PW1TQva42VPNEkNyKT3DounIRx1tqBvrh5MJBXgZeI1IVs\nwXsYlDyIyxoHGl8RRbxOcKs1Zy7mmd8c4td82yrp0iYP5V/MHicNnY6jQmgr\njxM3VIdSz1+o58XMBRROVP0AwEjZS6IsitgvAopTUvSUzcypB25N9qean07I\njueZH+KvV/dCdWmqn6haQQUzYWjb6w9E8GOsfAJKyj05d9QFqNrhE5P+NTsM\nkisUwsAWtwcEmxXN3T34F6a2nar0I2DaFRoSODUh71bj5mhUD4uk644BqF//\nw6QjCwT5bPTuDPTQrJ7EsTnDK8JR9lMsLvaxZX/ceUJAyQ4DVTzwHnhlSQ4O\noFXNzybwxqipHVu3NpsUb3zIlldDmodbNh8PKAku6eanTlve17NiJtAQ+G1E\nbFNW9sRG5IGW8AOjhYNkfxLgnxz6aLzUmxZZgQ42344f5jGRugD29IFW0N3K\naGQ5cXVWZKMptNIibE892V4DECWp+uhCMk1W7otC7HlcRnfB38foElV73RaJ\ntDu9e2YzDWhb7FqLMjzPnzPFTl/46DqulaX8jj8G371LQdeg9a088p9hOS3U\n3oXUA1+Z5AJUR5brr2k8H1G9nS7Nmh2pHx69THFKzParekIxaVtpu3cDJ5Im\nRewz\r\n=WGeG\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDw5vGGLAEmGMUx3lhSmfzzyC04vwTLN/onCEQ2203NqwIhANdOIPAYNYzMLg7bp80KzWSVzHNcBVNEOVLH3KdfgmSM"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.16_1564150599469_0.5997448190298116"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.17": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.17",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"jsdelivr": "dist/property-is-enumerable-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.19",
+				"to-property-key-x": "^3.0.18"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.14",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000985",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.14.0",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.38.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "a32da6716cc3f54196d55b489319325332fb3cf2",
+			"_id": "property-is-enumerable-x@2.0.17",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-kyutSBCJaIABGZIWE3nvemL9C6B92FYlMkXIup07JYPz07TeRBVxAZ3HJ5KwOoew1EpVsChWLA6W7RquOCkUoQ==",
+				"shasum": "95defd572742a92e52f5595474bdae2738404719",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.17.tgz",
+				"fileCount": 10,
+				"unpackedSize": 149765,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdO6P6CRA9TVsSAnZWagAA9yoP+gPd8CguBsjP50dyuP0N\nL67E0Dn+kPBukaRNB85N3D9dL39n6mbmCt3NcoKSwjKUxIkDeLujmYbCBq3t\ny9KCs1VUuOAaqjIpNRetYID2BjFQ+zrxapiHWWjZWzR7T98ETgxSryJBusYZ\nvWRfBTBR8KQsYCIMPoVStQ80SSAianE41Xa2/pnOQ9saGHGOCSvbVeLDHl0D\nP+p5f93YJfMwRptU/0TNS3gzK8I8QdYYnj139vjyhUCL4H1a+Ykb8EnydpNR\nJN7Y/b0JRM2OAyZAVCwp8fZh+qcwU4qA8YYPxEe7JU+gFFMSYzm6JiREFf5q\nEjSlUKFM/K+EQ4MpHqL88qjC2FuFjhS4v19zdlAd6x1odPpw7N4Ga0izZblW\nMElRg8kBJq1H6hqthDDPGpctcJsha1bXN0ZAlxSnwUGd+HggCm3wtdgQnOjK\n5cdU/j4yRGYigOPKd9f5Qc/peHQT+mds9RS1jnFfN5XnUHX1LVuQRHyyZJx5\nbnhDSfriB9vAbeBWsiQUsIepKsSyIow4XvlUKzwvMaLvJkhhVV77EFlILcfa\nqmLSWhia80Cb+ES2jD+d2QrkE3zBCDnuEuzuOiNYGldFCUQ+7eFWv9vGYdVg\nf+6j5MQLPiS5IZin5aoYIfPNuKENy5F6/Fs1F7mdHzisbMCUux0fvSw6JHga\nGcbO\r\n=WZiI\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQC+I6FGjGWY5w+wgvsDqEtSrQpjiwwF7yd4dwHXtIveOQIgV4IP7dF/dVAooFM7QlLLHydIkuMOXE424rriJzbdq8w="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.17_1564189690203_0.48950564381959816"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.18": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.18",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"jsdelivr": "dist/property-is-enumerable-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.20",
+				"to-property-key-x": "^3.0.19"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-proposal-class-properties": "^7.5.5",
+				"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+				"@babel/plugin-syntax-export-default-from": "^7.2.0",
+				"@babel/plugin-syntax-export-namespace-from": "^7.2.0",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@prorenata/eslint-config-vue": "^1.13.14",
+				"@types/jest": "^24.0.15",
+				"@types/node": "^12.6.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000986",
+				"chalk": "^2.4.2",
+				"concurrently": "^4.1.1",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-config-airbnb-base": "^13.2.0",
+				"eslint-config-prettier": "^6.0.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.14.0",
+				"eslint-plugin-jsdoc": "^15.7.2",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"eslint-plugin-vue": "^5.2.3",
+				"friendly-errors-webpack-plugin": "^1.7.0",
+				"identity-obj-proxy": "^3.0.0",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"jsdoc-to-markdown": "^5.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"node-notifier": "^5.4.0",
+				"nodemon": "^1.19.1",
+				"prettier": "=1.14.3",
+				"rimraf": "^2.6.3",
+				"semver": "^6.3.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.3.0",
+				"typescript": "^3.5.3",
+				"webpack": "^4.38.0",
+				"webpack-bundle-analyzer": "^3.3.2",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "76c6e78c7a70367b6fc26c4ff978e1b9a6f82d6d",
+			"_id": "property-is-enumerable-x@2.0.18",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-Jn1L1sfPdSh6dNGuXP1ozRsKggdG/HJG1w83g9oKtHAuTGUrOP75G7xcRHFGiMwCDqHBXtb4/KacteflAEHAKQ==",
+				"shasum": "efaf8b8e48f61ff0469ac256403489c7cd9643aa",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.18.tgz",
+				"fileCount": 10,
+				"unpackedSize": 149765,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdPF4oCRA9TVsSAnZWagAA9ZUQAJHJZVacWSsv7p88XSdC\neZ24feZYSXuKivM+HLNIir1QCsmUm8MVXMpDaz4rPWQE2mGDJt4EvEHjvuG3\nGsYvs0csiKAS5eswd970nO0ubezP+JrSwgpyTV+ieTwBUjHCHrATZnDFKehA\nEYEVpYEaJ9CbDZ4KYkwMvYIVKh+3gLty83w50DpFxEaRiTRHScvFwjIPY1Bb\nxLZt8C4aHaHN5P6YjbM/NzR70xuPDPwlmXuz8bfdfkHEIYR2shTmLqiyq5Io\nVgtjuxOIQ3LQtNb0kt/+jCoYVoOCTxjvwxRLSRTnqHfr/uFesg34N/oQ2bBI\njBp+2UmOj3YZ+Wf87N3fIoXci1S0d+YgR+FziBNmigLs1o5Tk77kErZebBxM\nHXby8uhhRTN6cmXQ+wV34djlspfwKhuQxw6F9dwJOL39ppHhfs+gJasktPf7\nUQTmEeCEvx6mb39rj5xoB44ygqkGE0Z0Wd2YDOjS3AuAL4vvzbTRQJ/V20Ma\nm+FlHAnPCV/N5+M7E8oTM76Da9DXZB7yI5Dpr+CZdJTGe5ww3JCTGohiuzcO\n0ttCPAVtx8MUbhOIlVOPgIrh3A1QzNWtlP9ltYeYC3e/bSq3j0TpBA3mCD+5\n7dpgCVX7ZXnmi0izuOCxoSM5TyJtIgePYfvXZxlsu3TqxV0XMn5kxepyjxGB\nD3B3\r\n=+Ffw\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIFIIj2Hpz8Qxq5YEIXAGGtBQ11Se0Dad5MUbqyfWZ4asAiEAnMxHEWQsNlq7reIdtRqAJAebPAGQDVkWXrZ3ded2rMM="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.18_1564237351753_0.40921887506824306"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.19": {
+			"name": "property-is-enumerable-x",
+			"version": "2.0.19",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"jsdelivr": "dist/property-is-enumerable-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.0.21",
+				"to-property-key-x": "^3.0.20"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@types/jest": "^24.0.16",
+				"@types/node": "^12.6.8",
+				"@xotic750/eslint-config-recommended": "^1.0.5",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000988",
+				"cross-env": "^5.2.0",
+				"eslint": "=5.16.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.14.1",
+				"eslint-plugin-jsdoc": "^15.8.0",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^5.1.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"nodemon": "^1.19.1",
+				"prettier": "^1.18.2",
+				"rimraf": "^2.6.3",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.4.1",
+				"typescript": "^3.5.3",
+				"webpack": "^4.38.0",
+				"webpack-bundle-analyzer": "^3.4.1",
+				"webpack-cli": "^3.3.6",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "c92c83a9b3d77cfd714959425a034742ae75fba1",
+			"_id": "property-is-enumerable-x@2.0.19",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-Iqkdd0E+zUVHt4WGMrZ4RNMK+gckceUAE3Tu5lZPc2ylnKf22z1EAswkCy+x2NRWEECVCSFJP6boC/KjFTTmmg==",
+				"shasum": "e9906cd0e2975a06ac7a2ef13663caef0d5d4649",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.19.tgz",
+				"fileCount": 11,
+				"unpackedSize": 151120,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdQhXlCRA9TVsSAnZWagAAkxsP/REZ5OtK/ZhFpPcQRzcX\nCzRjEDiQByMi6dPyoGXfNjfYmlZqRlvT5CRhqQcW+Bj0WWhJar+wmAIUiFKQ\nCF2OkxGyRYZmILS1YKViMXiKHUSd91Jve/p51x8d3wcfdXlLBPJg1YGsVSPP\nl7AFH8+LPsFWjCQuzHdD60bg7w3zweLXf+Wxg+iHl1ti5l2aMD2z8gYOeKAk\n9ITcafI3y5XwtgvRKZhnm1L8u3e349nZQjUR7+mp+Hw6F7ff3ro0mL6S1tnr\nccZjsRLjVlDHpfgsqAzcxEuuh0CJjjAPc7wbU9zZjAvinrlF/VPZXMTZBBXM\ncUn/o3Jp9aBxevQyXe+xxyltj4TC/1xNQ6CmDPqeejW19PzZQ6QU8OgFyQ6N\nIg46J2fgVowmg22Xc7jR53LzYxUNrun0Aq5K9VelCOUpH4JbyHUFd14Bir/e\nq93Slj3/4mQx/+5rMFEDEGXrTyAGe8ugO3ZIDeuwYM5qwEAmtTI8UHLALLk/\nl7JoVsIIdBdH2zXkkS+m2mdy9FsH0u1hvCu3Md0SpW7EoE799BDb6s/9nWgY\naaMhR9bp5PpHpjS/FJb6Dl6ktiwq5/2XotRWlwz4R9zYhZ3rM8ndWHAX/QbD\nEWuf3xkB4ZzPvwxWqED9nRtBtJ6cGh+47dc51QeUtZmlEvsAGVBLtfpF/Q7g\nc7lz\r\n=QG/N\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQD4DGRGXu/D3dgFRemcGHBMPln4uXbJ4/ERvr297kcGfAIhAMrjgc0puK8DrjWJflFn39EcaFwKG9LKSQm41uiUkBhd"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.0.19_1564612068890_0.501192615313953"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.1.0": {
+			"name": "property-is-enumerable-x",
+			"version": "2.1.0",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"jsdelivr": "dist/property-is-enumerable-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:ci-coveralls": "npm run test:ci -- --coverage --coverageReporters=text-lcov | coveralls",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"to-object-x": "^2.2.0",
+				"to-property-key-x": "^3.1.0"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@types/jest": "^24.0.17",
+				"@types/node": "^12.7.1",
+				"@types/webpack": "^4.32.1",
+				"@xotic750/eslint-config-recommended": "^1.1.2",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000989",
+				"coveralls": "^3.0.6",
+				"cross-env": "^5.2.0",
+				"eslint": "^6.1.0",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.15.1",
+				"eslint-plugin-jsdoc": "^15.8.0",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^6.0.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"jest": "^24.8.0",
+				"jest-cli": "^24.8.0",
+				"jest-file": "^1.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"nodemon": "^1.19.1",
+				"prettier": "^1.18.2",
+				"rimraf": "^2.6.3",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.4.1",
+				"typescript": "^3.5.3",
+				"webpack": "^4.39.1",
+				"webpack-bundle-analyzer": "^3.4.1",
+				"webpack-cli": "^3.3.6",
+				"webpack-global-object-x": "^1.0.0",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "1e066fbc123cf4a532f81d53781c7858e4ecc7a7",
+			"_id": "property-is-enumerable-x@2.1.0",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-33EMOmUHGGXKoYWHf0nNb9Oa1bMKpzjVLQnz34ggJyTAJG2/F8irVmHxGwGSxe6ytCdH/ShbpMkvZ1BKqTXJmw==",
+				"shasum": "482dbe7d8a2cad6fd98a5ddfe905007ce8ed871a",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.1.0.tgz",
+				"fileCount": 11,
+				"unpackedSize": 154725,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdVCMsCRA9TVsSAnZWagAABM0QAJEcIuvhlJn9Ykczbwy+\nEK72zoEULTX9YcqroBQtdqjkvrZOVgKFkH486SpcbvOCZL/b/ybzXGIHDyhM\noEncl44SCD7KizPTaOk0iw9KCEnpO0ln0AG9HD6Ka0QtxOBEt8fsj1aoGp1w\nSFOXD5va39ESBhlhHH3+T3+o9ctzxosPOQczViqcorHXEY+Dlgxqp1C2i0eY\ns7EPMM0K0rpBOBQnr/qh4dMvU705Z7lBWGutXFG6ASb9UdZEJPDTGLqU8KEh\nGJsNjkUFPGnAqBYtjKzWEATO7wYSYZfc+Ds55seV4sqJ+wNqa8l1IrpNGxbM\nS6dLTGAxEp5hv8Lj8in051N8TFRZ0n5cOFMCkcCMoC6KTYMXg3cQxmw8bE7k\nRZcPdIS/7s3FBpEhg1jeIQPrTBtTm+ovu5OF0itdnmk6CS+rqM0WXXYycUXi\nInMK2OO+hPZbPB0IIlN5+rksytcnrT8wmT/fGmnfa0487JDy0SwpIvekWzN0\ndnexKVCq711jnc1Vxs6SckQs8FMFT7tBQraDBN+W2YPpRp7czR4B0oM33Lgb\ntBwGZUcGjnpekdSE2Q3pe26zYZ1Wp9dvDTCfH4ar8opQT9yke/qjI2q4sHp7\ndJOWL9pQvtznLxwzGQzzHr+Z9AdLTVuvlKGhEonHumcfwKU1dUONsaR1Ow3J\njGnq\r\n=xksN\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIA3vz1BVzRYrcHjOs+yPH9HdeKl3d39eLtK3neBWofSUAiAW6v5XzLHgJwR5NTg9LdKPdTEmoaDRK5DCtAl90EOYuw=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.1.0_1565795115545_0.4591569724939528"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.1.1": {
+			"name": "property-is-enumerable-x",
+			"version": "2.1.1",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"jsdelivr": "dist/property-is-enumerable-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:ci-coveralls": "npm run test:ci -- --coverage --coverageReporters=text-lcov | coveralls",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"simple-methodize-x": "^1.0.3",
+				"to-object-x": "^2.2.0",
+				"to-property-key-x": "^3.1.1"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@types/jest": "^24.0.18",
+				"@types/node": "^12.7.2",
+				"@types/webpack": "^4.39.0",
+				"@xotic750/eslint-config-recommended": "^1.1.5",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.2",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000989",
+				"coveralls": "^3.0.6",
+				"cross-env": "^5.2.0",
+				"eslint": "^6.2.1",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^2.2.1",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.15.1",
+				"eslint-plugin-jsdoc": "^15.8.3",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^6.0.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.5.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"jest": "^24.9.0",
+				"jest-cli": "^24.9.0",
+				"jest-file": "^1.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"nodemon": "^1.19.1",
+				"prettier": "^1.18.2",
+				"rimraf": "^3.0.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.4.1",
+				"typescript": "^3.5.3",
+				"webpack": "^4.39.2",
+				"webpack-bundle-analyzer": "^3.4.1",
+				"webpack-cli": "^3.3.7",
+				"webpack-global-object-x": "^1.0.0",
+				"webpack-merge": "^4.2.1"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "4093754633c44a61254ce9b772c6289102505b43",
+			"_id": "property-is-enumerable-x@2.1.1",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-m+jXJ/uhS9XtQ+RC15jiIJWtMeMgxF4KUDPkGuiA/MfRK3yAjdgexgxasC+DVxvzNWYSgIEVglBLpIfWiwqiDg==",
+				"shasum": "0d41901edbb81154ed996f77fdf55f55085720b0",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.1.1.tgz",
+				"fileCount": 11,
+				"unpackedSize": 214381,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdXEtiCRA9TVsSAnZWagAAsbAP/1G5sDGCVZy9csKdNaSN\nJ2Yzw8U0b2kV0o3QPCyWahVpEtNpuLDqCuHS75798LFu2Hvc/H55aexOuvWb\nmSHNyZTN/SMpynBSRYvdD1k2eNRTn2cph3rPnuSf3YFyRORHml46GeqfvSzC\nTmatm5Q02xKb4WLnJY8tNX1VV8wsqc9u2r5bXUzSFdeL2+ue31nm6hBDk22s\no2oBmofbolYn938SJDOGG/KAjjnR06GX5XqnSa+ytwRspmVaa0VZo32dXyn+\nkvUZcaeh/f2m0Kd7hFzWQHEEjHbb/CcWQOCgtnXnKw6/RzpPcHkgMQ+Rp88s\nnMyPe/SMSbDW7F6/tL/B0Or3qlgo9NdNCTMj8e2HBFLh8VTLu7LDlDklpzx4\nBomxwpw7ZWrjboxRCWdT3AFWnFEl+7gyGBjjP55TAHO5qiYyPh5ZVrRwS9Tx\nctptgIT3UfADYo0dLVWW6OZoAgITS+cbUAOfTgKGGATj48QamlNCAw/pcuMr\nQbG5Gr+juwovGmV2Y8OEopdwMXPvO5t/I+X8WhSgedxHuHuV7cBpu7u9zn7k\nPNwy/xcPGylAH+FdF4autdy82oTgJx/GB79VxhvssQDT7BstvU9I7deq/2bY\nKTAdSfB4ooGCe1Ia9gszJ0JuZ/HkDT3W4MDguBRTHNsrjpEwpV/F1Owky/pJ\nYWNF\r\n=o8oB\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHc35QkqJOL78hw+D7TXkgq5zPuPJYUr3AivsfAp3JDpAiAa/cD0BiVwUxrv5W0b2G7QMkpyE722FvQVK+c6SV9n9Q=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.1.1_1566329698094_0.19526223185101133"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.1.2": {
+			"name": "property-is-enumerable-x",
+			"version": "2.1.2",
+			"description": "Indicates whether the specified property is enumerable.",
+			"homepage": "https://github.com/Xotic750/property-is-enumerable-x",
+			"author": {
+				"name": "Graham Fairweather",
+				"email": "xotic750@gmail.com"
+			},
+			"copyright": "Copyright (c) 2017",
+			"keywords": [
+				"propertyIsEnumerable",
+				"module",
+				"javascript",
+				"nodejs",
+				"browser"
+			],
+			"module": "dist/property-is-enumerable-x.esm.js",
+			"main": "dist/property-is-enumerable-x.js",
+			"jsdelivr": "dist/property-is-enumerable-x.min.js",
+			"scripts": {
+				"build:esm": "mkdirp dist && babel -s true --env-name esm src/property-is-enumerable-x.js -o dist/property-is-enumerable-x.esm.js",
+				"build:base": "webpack --bail --progress --profile --colors",
+				"build": "npm run build:esm && cross-env NODE_ENV=production npm run build:base --",
+				"build:dev": "npm run build:base --",
+				"clean": "rimraf dist && npm run clean:coverage",
+				"clean:coverage": "rimraf __tests__/coverage",
+				"lint": "eslint -f 'node_modules/eslint-friendly-formatter' --ext .js,.json .",
+				"lint-fix": "npm run lint -- --fix",
+				"report": "npm run build -- --env.report",
+				"report:dev": "npm run build:dev -- --env.report",
+				"security": "npm audit",
+				"security-fix": "npm run security -- fix",
+				"start": "nodemon --exec \"npm run build\" --watch src",
+				"test": "npm run clean:coverage && jest",
+				"test:ci": "npm run test -- --ci --maxWorkers=2",
+				"test:ci-coveralls": "npm run test:ci -- --coverage --coverageReporters=text-lcov | coveralls",
+				"test:coverage": "npm run test -- --coverage"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/Xotic750/property-is-enumerable-x.git"
+			},
+			"bugs": {
+				"url": "https://github.com/Xotic750/property-is-enumerable-x/issues"
+			},
+			"dependencies": {
+				"simple-methodize-x": "^1.0.4",
+				"to-object-x": "^2.2.1",
+				"to-property-key-x": "^3.1.2"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.5.5",
+				"@babel/core": "^7.5.5",
+				"@babel/node": "^7.5.5",
+				"@babel/plugin-transform-property-mutators": "^7.2.0",
+				"@babel/plugin-transform-runtime": "^7.5.5",
+				"@babel/preset-env": "^7.5.5",
+				"@babel/runtime": "^7.5.5",
+				"@types/jest": "^24.0.18",
+				"@types/node": "^12.7.2",
+				"@types/webpack": "^4.39.1",
+				"@xotic750/eslint-config-recommended": "^1.1.8",
+				"babel-core": "^7.0.0-0",
+				"babel-eslint": "^10.0.3",
+				"babel-loader": "^8.0.6",
+				"babel-plugin-lodash": "^3.3.4",
+				"caniuse-lite": "^1.0.30000989",
+				"coveralls": "^3.0.6",
+				"cross-env": "^5.2.0",
+				"eslint": "^6.2.2",
+				"eslint-friendly-formatter": "^4.0.1",
+				"eslint-import-resolver-webpack": "^0.11.1",
+				"eslint-loader": "^3.0.0",
+				"eslint-plugin-babel": "^5.3.0",
+				"eslint-plugin-compat": "^3.3.0",
+				"eslint-plugin-css-modules": "^2.11.0",
+				"eslint-plugin-eslint-comments": "^3.1.2",
+				"eslint-plugin-html": "^6.0.0",
+				"eslint-plugin-import": "^2.18.2",
+				"eslint-plugin-jest": "^22.15.2",
+				"eslint-plugin-jsdoc": "^15.8.3",
+				"eslint-plugin-json": "^1.4.0",
+				"eslint-plugin-lodash": "^6.0.0",
+				"eslint-plugin-no-use-extend-native": "^0.4.1",
+				"eslint-plugin-prefer-object-spread": "^1.2.1",
+				"eslint-plugin-prettier": "^3.1.0",
+				"eslint-plugin-promise": "^4.2.1",
+				"eslint-plugin-sort-class-members": "^1.6.0",
+				"eslint-plugin-switch-case": "^1.1.2",
+				"jest": "^24.9.0",
+				"jest-cli": "^24.9.0",
+				"jest-file": "^1.0.0",
+				"lodash": "^4.17.15",
+				"lodash-webpack-plugin": "^0.11.5",
+				"mkdirp": "^0.5.1",
+				"nodemon": "^1.19.1",
+				"prettier": "^1.18.2",
+				"rimraf": "^3.0.0",
+				"source-map-loader": "^0.2.4",
+				"strip-ansi": "^5.2.0",
+				"terser-webpack-plugin": "^1.4.1",
+				"typescript": "^3.5.3",
+				"webpack": "^4.39.3",
+				"webpack-bundle-analyzer": "^3.4.1",
+				"webpack-cli": "^3.3.7",
+				"webpack-global-object-x": "^1.0.0",
+				"webpack-merge": "^4.2.2"
+			},
+			"engines": {
+				"node": ">=8.11.4",
+				"npm": "6.10.1"
+			},
+			"browserslist": [
+				"> 1%",
+				"Explorer >= 9"
+			],
+			"gitHead": "de7a0f707f0cf80e681ed7df18385f8c360670ef",
+			"_id": "property-is-enumerable-x@2.1.2",
+			"_npmVersion": "5.10.0",
+			"_nodeVersion": "8.11.4",
+			"_npmUser": {
+				"name": "xotic750",
+				"email": "xotic750@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-lRqJh4yGnwiZUx7x8abWhfucNsImqwxbFoCQzRjfwJflOBenZoFq/YMlWJShdzBmqd9i2/RrrvFW8cBs1+H+3w==",
+				"shasum": "9da86cfbfdbfce1c1b37d17cc11ffdbf94f785e9",
+				"tarball": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.1.2.tgz",
+				"fileCount": 11,
+				"unpackedSize": 214381,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdZrdvCRA9TVsSAnZWagAAZ30P/0qrofeIQHT4+cQcN4x6\nlBq/8GHVqkxKNlmT30Mk39Xe40fGjWFJthAZ52XeNhSJ6OzDwt6qYjERRRVz\nzwAITRcag3XjRglClTWsnKtSVbygQAfu1d0K3maUcdbfTfgaNxhLMGLIzOwW\nMm7lUZovOcrYe43x64FZD65nySh3WmppIZ0OBWQKTybEhDjX+/G4c2x5MJwo\nqJjHKvgqAT8lz8qVvmmiUz1zIJ9Sriv33Ao30E3u/szcMW3lQ3GePwYCs6eO\nxGEnGi0Dw/cJP6jQlwAnG079p/LnzgFS9xYltbSfkLxY14mSLS2r5gShFJmX\nP0ytB0dSBamo38qhBfKefPGB+Ee7Shvk0QW31A8HniPYDopti1jbyUynDGmg\njLq9b470tJ9wVC7GNM1UiImn3wJx6qiOEk+m25odc3mpdx6yOKel9QYTdy+G\nlFhh9pgd5KOwPAQBX6dFaymmp2uA6wj+2jLoXAjxwbYOmKPMWscmSMd/QenS\nuWN7UwMsFybr2N3bjaXW1+53aoRtjbIaun0nUzRNwG6ecINHgG6Swo84PY7b\nvWi32tvTaD7JjFNYXp4yOLYuX/icZmtUhsHgcbyPO1fHD4NtGpCCTNtXzYaj\n8S0aPKX722sGPYzp0ClYHsD19c7zDb7CZCH5e7q0Hh37MI30WWwW7J3eMf1m\nkIxj\r\n=f85b\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDzx6cG2WggVdTH7sRRY96M7pKWGmcKxYrYAKrwNBT+KAIgLrkREh/omGyiQaLy6w496Coj5eOudjFWMh/kDudIrR4="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "xotic750",
+					"email": "xotic750@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/property-is-enumerable-x_2.1.2_1567012718820_0.005250072691297625"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-05-13T13:10:52.843Z",
+		"created": "2017-09-02T21:47:26.372Z",
+		"1.0.0": "2017-09-02T21:47:26.372Z",
+		"1.0.1": "2017-09-02T22:24:05.062Z",
+		"1.1.0": "2017-09-09T14:13:07.631Z",
+		"2.0.0": "2019-07-15T11:01:47.503Z",
+		"2.0.1": "2019-07-15T13:00:14.120Z",
+		"2.0.2": "2019-07-16T10:52:33.959Z",
+		"2.0.3": "2019-07-16T12:31:56.484Z",
+		"2.0.4": "2019-07-16T21:40:59.588Z",
+		"2.0.5": "2019-07-17T17:05:56.003Z",
+		"2.0.6": "2019-07-17T17:37:20.063Z",
+		"2.0.7": "2019-07-17T18:44:19.506Z",
+		"2.0.8": "2019-07-17T23:54:58.053Z",
+		"2.0.9": "2019-07-18T18:48:05.342Z",
+		"2.0.10": "2019-07-19T21:57:05.063Z",
+		"2.0.11": "2019-07-21T22:45:05.106Z",
+		"2.0.12": "2019-07-22T12:43:12.093Z",
+		"2.0.13": "2019-07-24T00:24:38.633Z",
+		"2.0.14": "2019-07-24T16:31:04.381Z",
+		"2.0.15": "2019-07-25T22:04:58.363Z",
+		"2.0.16": "2019-07-26T14:16:39.622Z",
+		"2.0.17": "2019-07-27T01:08:10.306Z",
+		"2.0.18": "2019-07-27T14:22:31.934Z",
+		"2.0.19": "2019-07-31T22:27:49.000Z",
+		"2.1.0": "2019-08-14T15:05:15.680Z",
+		"2.1.1": "2019-08-20T19:34:58.198Z",
+		"2.1.2": "2019-08-28T17:18:38.937Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "2.1.2"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"0e5fabb62f9ff0bb7d26a8de6aca98f2\"",
+			"fetched": 1734527709735
+		}
+	},
+	"_distfiles": {
+		"property-is-enumerable-x-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-1.0.0.tgz",
+			"sha": "ffc0de8eeec70d1997890ccd298c8c7c31a2102d",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-1.0.1.tgz",
+			"sha": "5ee553b51fac7c5a73ffd1f78ccfb0c760b739e9",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-1.1.0.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-1.1.0.tgz",
+			"sha": "7ca48917476cd0914b37809bfd05776a0d942f6f",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.0.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.0.tgz",
+			"sha": "1770f1ecb2c0fe024d47cf191546a4a590f8ad37",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.1.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.1.tgz",
+			"sha": "22c7f6b090d25fabd405403980ad29310d18bb3c",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.2.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.2.tgz",
+			"sha": "ee688dab3ab130014d63919b43053aa532fe7554",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.3.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.3.tgz",
+			"sha": "25459fe8e94fc5ec49e564fb830402db2c516ad4",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.4.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.4.tgz",
+			"sha": "5c545cd5db6f91d36b678f2d012b6f3953aa3013",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.5.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.5.tgz",
+			"sha": "ea7ef8fcff082907c1d47e185c228dfcb3b41378",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.6.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.6.tgz",
+			"sha": "b62975a71cdd43a0faacfdeb91553389e4102a2f",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.7.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.7.tgz",
+			"sha": "be651f68e072d54d5d0e701b0cc6b4759193a070",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.8.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.8.tgz",
+			"sha": "df63a4b10ced99feac2ea930f0fbbf5e96244023",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.9.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.9.tgz",
+			"sha": "4879012eb9ebff50ddb5c52df972a2ea385b6175",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.10.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.10.tgz",
+			"sha": "cfb42fe85e614a38a653122d29c33273f0e27478",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.11.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.11.tgz",
+			"sha": "e9a6f22a1d96a02e3a1a70163ce52ce663d0b428",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.12.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.12.tgz",
+			"sha": "8bee6bd40a833909c52c0f4bfc4a95abcac2347b",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.13.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.13.tgz",
+			"sha": "442833ffc435684569c559c639c04771fb4ae96f",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.14.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.14.tgz",
+			"sha": "78f11a15f097b7275a7328f9a432de6c64c44fa6",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.15.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.15.tgz",
+			"sha": "cfc840e2ba2e47e4a849b4cb406a7cc3af5056a3",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.16.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.16.tgz",
+			"sha": "e4e5040625ad8b2253b9c217d8b90ca6f83773ec",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.17.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.17.tgz",
+			"sha": "95defd572742a92e52f5595474bdae2738404719",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.18.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.18.tgz",
+			"sha": "efaf8b8e48f61ff0469ac256403489c7cd9643aa",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.0.19.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.0.19.tgz",
+			"sha": "e9906cd0e2975a06ac7a2ef13663caef0d5d4649",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.1.0.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.1.0.tgz",
+			"sha": "482dbe7d8a2cad6fd98a5ddfe905007ce8ed871a",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.1.1.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.1.1.tgz",
+			"sha": "0d41901edbb81154ed996f77fdf55f55085720b0",
+			"registry": "npmjs"
+		},
+		"property-is-enumerable-x-2.1.2.tgz": {
+			"url": "https://registry.npmjs.org/property-is-enumerable-x/-/property-is-enumerable-x-2.1.2.tgz",
+			"sha": "9da86cfbfdbfce1c1b37d17cc11ffdbf94f785e9",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {
+		"property-is-enumerable-x-1.1.0.tgz": {
+			"shasum": "7ca48917476cd0914b37809bfd05776a0d942f6f"
+		}
+	},
+	"_rev": "2-418a71b7ab97c914",
+	"_id": "property-is-enumerable-x",
+	"readme": "<a\n  href=\"https://travis-ci.org/Xotic750/property-is-enumerable-x\"\n  title=\"Travis status\">\n<img\n  src=\"https://travis-ci.org/Xotic750/property-is-enumerable-x.svg?branch=master\"\n  alt=\"Travis status\" height=\"18\">\n</a>\n<a\n  href=\"https://david-dm.org/Xotic750/property-is-enumerable-x\"\n  title=\"Dependency status\">\n<img src=\"https://david-dm.org/Xotic750/property-is-enumerable-x/status.svg\"\n  alt=\"Dependency status\" height=\"18\"/>\n</a>\n<a\n  href=\"https://david-dm.org/Xotic750/property-is-enumerable-x?type=dev\"\n  title=\"devDependency status\">\n<img src=\"https://david-dm.org/Xotic750/property-is-enumerable-x/dev-status.svg\"\n  alt=\"devDependency status\" height=\"18\"/>\n</a>\n<a\n  href=\"https://badge.fury.io/js/property-is-enumerable-x\"\n  title=\"npm version\">\n<img src=\"https://badge.fury.io/js/property-is-enumerable-x.svg\"\n  alt=\"npm version\" height=\"18\">\n</a>\n<a\n  href=\"https://www.jsdelivr.com/package/npm/property-is-enumerable-x\"\n  title=\"jsDelivr hits\">\n<img src=\"https://data.jsdelivr.com/v1/package/npm/property-is-enumerable-x/badge?style=rounded\"\n  alt=\"jsDelivr hits\" height=\"18\">\n</a>\n<a\n  href=\"https://bettercodehub.com/results/Xotic750/property-is-enumerable-x\"\n  title=\"bettercodehub score\">\n<img src=\"https://bettercodehub.com/edge/badge/Xotic750/property-is-enumerable-x?branch=master\"\n  alt=\"bettercodehub score\" height=\"18\">\n</a>\n<a\n  href=\"https://coveralls.io/github/Xotic750/property-is-enumerable-x?branch=master\"\n  title=\"Coverage Status\">\n<img src=\"https://coveralls.io/repos/github/Xotic750/property-is-enumerable-x/badge.svg?branch=master\"\n  alt=\"Coverage Status\" height=\"18\">\n</a>\n\n<a name=\"module_property-is-enumerable-x\"></a>\n\n## property-is-enumerable-x\n\nIndicates whether the specified property is enumerable.\n\n<a name=\"exp_module_property-is-enumerable-x--module.exports\"></a>\n\n### `module.exports(object, property)` ⇒ <code>boolean</code> ⏏\n\nThis method returns a Boolean indicating whether the specified property is\nenumerable. Does not attempt to fix bugs in IE<9 or old Opera, otherwise it\ndoes ES6ify the method.\n\n**Kind**: Exported function  \n**Returns**: <code>boolean</code> - A Boolean indicating whether the specified property is\nenumerable.  \n**Throws**:\n\n- <code>TypeError</code> If target is null or undefined.\n\n| Param    | Type                                       | Description                               |\n| -------- | ------------------------------------------ | ----------------------------------------- |\n| object   | <code>Object</code>                        | The object on which to test the property. |\n| property | <code>string</code> \\| <code>Symbol</code> | The name of the property to test.         |\n\n**Example**\n\n```js\nimport propertyIsEnumerable from 'property-is-enumerable-x';\n\nconst o = {};\nconst a = [];\no.prop = 'is enumerable';\na[0] = 'is enumerable';\n\nconsole.log(propertyIsEnumerable(o, 'prop')); // true\nconsole.log(propertyIsEnumerable(a, 0)); // true\n```"
+}
