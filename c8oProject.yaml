@@ -1,5 +1,5 @@
 ↑convertigo: 8.0.0.m006
-↓verdaccio [core.Project]: 
+↓lib_Verdaccio [core.Project]: 
   comment: Convertigo NGX builder Project
   contextTimeout: 59
   corsOrigin: =Origin
